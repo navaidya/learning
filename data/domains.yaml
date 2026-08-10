@@ -1,0 +1,36 @@
+- slug: foundations
+  name: Foundations
+- slug: containers
+  name: Containers
+- slug: kubernetes
+  name: Kubernetes
+- slug: oke
+  name: OKE
+- slug: helm
+  name: Helm
+- slug: terraform
+  name: Terraform
+- slug: gitops
+  name: GitOps
+- slug: prometheus
+  name: Prometheus
+- slug: grafana
+  name: Grafana
+- slug: opentelemetry
+  name: OpenTelemetry
+- slug: logging
+  name: Logging
+- slug: tracing
+  name: Tracing
+- slug: ebpf-cilium
+  name: eBPF / Cilium
+- slug: sre
+  name: SRE
+- slug: platform-engineering
+  name: Platform Engineering
+- slug: aiops
+  name: AIOps
+- slug: mcp
+  name: MCP
+- slug: agentic-operations
+  name: Agentic Operations

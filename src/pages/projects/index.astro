@@ -1,0 +1,6 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+const entries = await getCollection('projects');
+---
+<BaseLayout title="Projects"><h1>Projects</h1><p class="lede">Hands-on work that connects learning domains into working systems.</p><div class="grid">{entries.map((entry) => <a class="panel" href={`/projects/${entry.id}`}><h2>{entry.data.title}</h2><p>{entry.data.status} · {entry.data.progress}%</p></a>)}</div></BaseLayout>

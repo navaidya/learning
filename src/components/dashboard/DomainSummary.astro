@@ -1,0 +1,5 @@
+---
+import ProgressBar from '../common/ProgressBar.astro';
+const { domain } = Astro.props;
+---
+<a class="domain-card" href={`/skills/${domain.slug}`}><div class="split"><h3>{domain.name}</h3><strong>{domain.progress}%</strong></div><ProgressBar value={domain.progress} label={`${domain.name} progress`} /><small>{domain.topics.length} tracked topic{domain.topics.length === 1 ? '' : 's'}</small></a>

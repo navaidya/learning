@@ -1,0 +1,4 @@
+---
+const { value = 0, label = 'Progress' } = Astro.props;
+---
+<div class="progress-wrap"><div class="progress-label"><span>{label}</span><strong>{Math.round(value)}%</strong></div><div class="progress" role="progressbar" aria-label={label} aria-valuemin="0" aria-valuemax="100" aria-valuenow={value}><span style={`width:${Math.max(0, Math.min(100, value))}%`}></span></div></div>

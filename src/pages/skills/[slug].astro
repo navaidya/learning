@@ -1,0 +1,9 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProgressBar from '../../components/common/ProgressBar.astro';
+import { domains, getDomainModel } from '../../lib/content';
+export function getStaticPaths() { return domains.map((domain) => ({ params: { slug: domain.slug } })); }
+const model = await getDomainModel(Astro.params.slug!);
+if (!model) return Astro.redirect('/skills');
+---
+<BaseLayout title={`${model.name} · Skill Map`}><a href="/skills">← Skill Map</a><h1>{model.name}</h1><ProgressBar value={model.progress} label="Domain progress" /><h2 class="section-heading">Topics</h2>{model.topics.length ? <div class="grid">{model.topics.map((item) => <div class="panel split"><div><h3>{item.topic.title}</h3><small>{item.debt?.reasons[0] ?? 'On track'}</small></div><strong>{item.progress.score}%</strong></div>)}</div> : <div class="panel">No topics have been added to this domain yet.</div>}<h2 class="section-heading">Recommended next</h2><ol class="list">{model.recommendations.map((item) => <li><strong>{item.topic.title}</strong><span>{item.reason}</span></li>)}</ol></BaseLayout>

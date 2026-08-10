@@ -1,0 +1,10 @@
+domain: kubernetes
+questions:
+  - id: k8s-001
+    topic: architecture
+    question: What component assigns a Pod to a node?
+    type: multiple_choice
+    options: [kubelet, kube-scheduler, kube-proxy, etcd]
+    answer: kube-scheduler
+    explanation: kube-scheduler selects an appropriate node for unscheduled Pods.
+    difficulty: beginner

@@ -1,0 +1,10 @@
+- date: 2026-08-10
+  type: learning
+  domain: opentelemetry
+  topic: collector
+  minutes: 45
+- date: 2026-08-09
+  type: lab
+  domain: kubernetes
+  topic: troubleshooting
+  minutes: 60

@@ -1,0 +1,7 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import DomainSummary from '../../components/dashboard/DomainSummary.astro';
+import { getDashboardModel } from '../../lib/content';
+const model = await getDashboardModel();
+---
+<BaseLayout title="Skill Map"><h1>Skill Map</h1><p class="lede">The complete learning surface across infrastructure, observability, SRE, and AIOps.</p><div class="grid grid-3">{model.domains.map((domain) => <DomainSummary domain={domain} />)}</div></BaseLayout>

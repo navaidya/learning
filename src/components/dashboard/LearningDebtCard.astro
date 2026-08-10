@@ -1,0 +1,4 @@
+---
+const { item } = Astro.props;
+---
+<li><strong>{item.topic.title}</strong><span class={`severity-${item.debt.severity}`}>{item.debt.severity}</span><small>{item.debt.reasons[0]}</small></li>

@@ -1,0 +1,5 @@
+---
+import { statusLabel, type LearningStatus } from '../../lib/types';
+const { status = 'not_started' as LearningStatus } = Astro.props;
+---
+<span class={`badge badge-${status}`}>{statusLabel(status)}</span>

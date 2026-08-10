@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProgressBar from '../components/common/ProgressBar.astro';
+import MetricSummary from '../components/dashboard/MetricSummary.astro';
+import DomainSummary from '../components/dashboard/DomainSummary.astro';
+import RecommendedTopicCard from '../components/dashboard/RecommendedTopicCard.astro';
+import LearningDebtCard from '../components/dashboard/LearningDebtCard.astro';
+import { getDashboardModel } from '../lib/content';
+const model = await getDashboardModel(new Date('2026-08-10'));
+---
+<BaseLayout><div class="split"><div><p class="eyebrow">Personal engineering curriculum</p><h1>AI Infrastructure Learning OS</h1><p class="lede">A living map of what you know, what needs practice, and what to learn next.</p></div><div class="panel" style="min-width:220px"><ProgressBar value={model.overallProgress} label="Overall progress" /></div></div><div class="grid grid-4 section-heading"><MetricSummary label="Learning streak" value={`${model.streak} days`} /><MetricSummary label="Tracked topics" value={model.topics.length} /><MetricSummary label="Active projects" value={model.activeProjects.length} /><MetricSummary label="Inbox items" value={model.inboxCount} /></div><h2 class="section-heading">Skill map</h2><div class="grid grid-3">{model.domains.map((domain) => <DomainSummary domain={domain} />)}</div><div class="grid grid-3 section-heading"><section class="panel"><h2>Recommended next</h2><ol class="list">{model.recommendations.map((item) => <RecommendedTopicCard item={item} />)}</ol></section><section class="panel"><h2>Learning debt</h2><ul class="list">{model.debts.map((item) => <LearningDebtCard item={item} />)}</ul></section><section class="panel"><h2>Active labs & projects</h2><ul class="list">{model.activeProjects.map((project) => <li><strong>{project.title}</strong><ProgressBar value={project.progress} label={`${project.title} progress`} /></li>)}</ul></section></div></BaseLayout>

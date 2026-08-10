@@ -1,0 +1,6 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+const entries = await getCollection('inbox');
+---
+<BaseLayout title="Learning Inbox"><h1>Learning Inbox</h1><p class="lede">Capture raw ideas, links, questions, commands, and research topics before organizing them.</p>{entries.length ? <div class="grid">{entries.map((entry) => <article class="panel"><h2>{entry.data.title}</h2><p>{entry.body}</p></article>)}</div> : <div class="panel">Your inbox is clear.</div>}</BaseLayout>
