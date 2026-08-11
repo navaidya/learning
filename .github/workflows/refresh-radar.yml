@@ -2,11 +2,14 @@ name: Refresh Engineering Radar
 
 on:
   schedule:
-    - cron: '17 6 * * *'
+    # Four times a day, so the published Radar is never more than ~6 hours behind its sources.
+    - cron: '17 1,7,13,19 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
+  # Needed to dispatch the deploy workflow below.
+  actions: write
 
 concurrency:
   group: refresh-radar
@@ -24,8 +27,20 @@ jobs:
       - run: npm cache clean --force
       - run: npm ci
       - run: npm run news:collect
-      - run: |
+      - id: commit
+        run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git diff --quiet -- data/news.json data/releases.json || git commit -am 'chore: refresh engineering radar'
-      - run: git push
+          if git diff --quiet -- data/news.json data/releases.json data/radar-meta.json; then
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+          else
+            git commit -m 'chore: refresh engineering radar' -- data/news.json data/releases.json data/radar-meta.json
+            git push
+            echo 'changed=true' >> "$GITHUB_OUTPUT"
+          fi
+      # A push made with GITHUB_TOKEN does not fire deploy.yml's `push` trigger, so without an
+      # explicit dispatch the freshly collected news would sit in the repo and never reach the site.
+      - if: steps.commit.outputs.changed == 'true'
+        run: gh workflow run deploy.yml --ref "${GITHUB_REF_NAME}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
