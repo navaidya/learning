@@ -3,7 +3,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import RadarView from '../../components/news/RadarView.astro';
 import { getEngineeringRadarModel } from '../../lib/news/radar';
 
-const model = await getEngineeringRadarModel('for-you', new Date('2026-08-10'));
+// Build time is the site's "now": the Radar is rebuilt on every collector refresh.
+const model = await getEngineeringRadarModel('for-you', new Date());
 ---
 
 <BaseLayout title="Engineering Radar · For You">

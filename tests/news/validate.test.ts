@@ -49,3 +49,46 @@ describe('news validation', () => {
     })).not.toThrow();
   });
 });
+
+describe('parseRadarCollectionMeta', () => {
+  const valid = { collectedAt: '2026-08-10T06:17:00Z', sourceIds: ['kubernetes'], failedSourceIds: [], itemCount: 12 };
+
+  it('accepts well-formed collection metadata', async () => {
+    const { parseRadarCollectionMeta } = await import('../../src/lib/news/validate');
+    expect(() => parseRadarCollectionMeta(valid)).not.toThrow();
+  });
+
+  it('rejects an unparseable collectedAt', async () => {
+    const { parseRadarCollectionMeta } = await import('../../src/lib/news/validate');
+    expect(() => parseRadarCollectionMeta({ ...valid, collectedAt: 'yesterday' })).toThrow();
+  });
+
+  it('rejects a negative item count', async () => {
+    const { parseRadarCollectionMeta } = await import('../../src/lib/news/validate');
+    expect(() => parseRadarCollectionMeta({ ...valid, itemCount: -1 })).toThrow();
+  });
+});
+
+describe('parseRadarCollectionMetaSafe', () => {
+  it('returns undefined for malformed metadata rather than throwing, so a bad file cannot fail the build', async () => {
+    const { parseRadarCollectionMetaSafe } = await import('../../src/lib/news/validate');
+    expect(parseRadarCollectionMetaSafe({ collectedAt: 'nope' })).toBeUndefined();
+    expect(parseRadarCollectionMetaSafe(undefined)).toBeUndefined();
+  });
+
+  it('returns the parsed metadata when it is valid', async () => {
+    const { parseRadarCollectionMetaSafe } = await import('../../src/lib/news/validate');
+    const parsed = parseRadarCollectionMetaSafe({ collectedAt: '2026-08-10T06:17:00Z', sourceIds: ['a', 'b'], failedSourceIds: ['c'], itemCount: 3 });
+    expect(parsed?.sourceIds).toEqual(['a', 'b']);
+    expect(parsed?.failedSourceIds).toEqual(['c']);
+  });
+});
+
+describe('data/radar-meta.json', () => {
+  it('is valid on disk, so the Radar can always report when sources were last checked', async () => {
+    const { readFile } = await import('node:fs/promises');
+    const { parseRadarCollectionMeta } = await import('../../src/lib/news/validate');
+    const raw = JSON.parse(await readFile(new URL('../../data/radar-meta.json', import.meta.url), 'utf8'));
+    expect(() => parseRadarCollectionMeta(raw)).not.toThrow();
+  });
+});

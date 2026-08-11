@@ -1,0 +1,23 @@
+---
+import type { NewsItem } from '../../lib/news/types';
+import { relativeTimeLabel } from '../../lib/news/recency';
+
+const { items, asOf } = Astro.props as { items: NewsItem[]; asOf: Date };
+---
+
+<section class="panel">
+  <h2>Latest</h2>
+  <p class="lede">Newest first, ignoring ranking.</p>
+  {items.length ? (
+    <ul class="list">
+      {items.map((item) => (
+        <li>
+          <a href={item.url} target="_blank" rel="noopener noreferrer">{item.title} <span class="visually-hidden">(opens {item.source}, external)</span></a>
+          <small>{item.source} · <time datetime={item.publishedDate}>{relativeTimeLabel(item.publishedDate, asOf)}</time></small>
+        </li>
+      ))}
+    </ul>
+  ) : (
+    <p class="lede">Nothing collected for this area yet.</p>
+  )}
+</section>

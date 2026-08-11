@@ -1,10 +1,13 @@
 ---
+import LatestFeed from './LatestFeed.astro';
 import NewsCard from './NewsCard.astro';
 import NewsFilters from './NewsFilters.astro';
+import RadarFreshness from './RadarFreshness.astro';
 import ReleaseWatch from './ReleaseWatch.astro';
 import type { EngineeringRadarModel } from '../../lib/news/types';
 
 const { model } = Astro.props as { model: EngineeringRadarModel };
+const asOf = new Date(model.generatedAt);
 const heading: Record<EngineeringRadarModel['category'], string> = {
   'for-you': 'For You',
   kubernetes: 'Kubernetes',
@@ -13,19 +16,34 @@ const heading: Record<EngineeringRadarModel['category'], string> = {
   aiops: 'AIOps',
   infrastructure: 'Infrastructure',
 };
+const lede: Record<EngineeringRadarModel['category'], string> = {
+  'for-you': "Ranked by what you're learning now and how new it is.",
+  kubernetes: 'Newest Kubernetes developments first, with architecture shifts pinned while still current.',
+  observability: 'Newest observability developments first, with architecture shifts pinned while still current.',
+  'platform-engineering': 'Newest platform engineering developments first, with architecture shifts pinned while still current.',
+  aiops: 'Newest AIOps developments first, with architecture shifts pinned while still current.',
+  infrastructure: 'Newest infrastructure developments first, with architecture shifts pinned while still current.',
+};
 ---
 
 <p class="eyebrow">Engineering Radar</p>
 <h1>{heading[model.category]}</h1>
-<p class="lede">Trusted infrastructure developments, connected to what you're already learning.</p>
+<p class="lede">{lede[model.category]}</p>
 <NewsFilters current={model.category} />
+<RadarFreshness freshness={model.freshness} asOf={asOf} />
 <div class="news-layout section-heading">
   <div class="news-list">
     {model.items.length ? (
-      model.items.map((item) => <NewsCard item={item} />)
+      model.items.map((item) => <NewsCard item={item} asOf={asOf} />)
     ) : (
       <div class="panel">No developments in this category yet. Run <code>npm run news:collect</code> to populate the Radar.</div>
     )}
+    {model.freshness.totalCount > model.items.length && (
+      <p class="lede">Showing the top {model.items.length} of {model.freshness.totalCount} retained items in this area.</p>
+    )}
   </div>
-  <ReleaseWatch releases={model.releases} />
+  <div class="news-aside">
+    <LatestFeed items={model.latest} asOf={asOf} />
+    <ReleaseWatch releases={model.releases} />
+  </div>
 </div>

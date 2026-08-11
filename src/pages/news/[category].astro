@@ -11,7 +11,7 @@ export function getStaticPaths() {
 const { category } = Astro.params;
 if (!category || !isRadarCategory(category)) return Astro.redirect('/news');
 
-const model = await getEngineeringRadarModel(category, new Date('2026-08-10'));
+const model = await getEngineeringRadarModel(category, new Date());
 ---
 
 <BaseLayout title={`Engineering Radar · ${category}`}>

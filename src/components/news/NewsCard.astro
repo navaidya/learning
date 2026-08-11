@@ -1,10 +1,13 @@
 ---
 import { domains } from '../../lib/content';
 import type { NewsItem } from '../../lib/news/types';
+import { isNew, relativeTimeLabel } from '../../lib/news/recency';
 import { withBase } from '../../lib/url';
 
-const { item } = Astro.props as { item: NewsItem };
+const { item, asOf } = Astro.props as { item: NewsItem; asOf: Date };
 const publishedLabel = new Date(item.publishedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+const relativeLabel = relativeTimeLabel(item.publishedDate, asOf);
+const fresh = isNew(item.publishedDate, asOf);
 const relatedDomain = domains.find((domain) => domain.slug === item.domain);
 ---
 
@@ -15,10 +18,11 @@ const relatedDomain = domains.find((domain) => domain.slug === item.domain);
       <span class="visually-hidden">(opens {item.source}, external)</span>
     </a>
   </h3>
-  <p class="news-meta"><span>{item.source}</span> · <time datetime={item.publishedDate}>{publishedLabel}</time></p>
+  <p class="news-meta"><span>{item.source}</span> · <time datetime={item.publishedDate}>{relativeLabel}</time> · <span>{publishedLabel}</span></p>
   {item.summary && <p>{item.summary}</p>}
-  {(item.architectureShift || item.releaseRelated || item.importance === 'high' || item.importance === 'critical') && (
+  {(fresh || item.architectureShift || item.releaseRelated || item.importance === 'high' || item.importance === 'critical') && (
     <div class="news-badges">
+      {fresh && <span class="badge badge-new">New</span>}
       {item.architectureShift && <span class="badge badge-shift">Architecture Shift</span>}
       {item.releaseRelated && <span class="badge badge-release">New Release{item.releaseVersion ? ` · ${item.releaseVersion}` : ''}</span>}
       {item.importance === 'critical' && <span class="badge badge-critical">Critical</span>}

@@ -126,3 +126,187 @@
   priority: 2
   enabled: true
   tags: [openai, ai-agent, mcp]
+  # A general company feed: most of it is product and business news. Keep only the posts that
+  # touch agentic operations and developer infrastructure, the areas this Radar tracks.
+  filterKeywords:
+    - mcp
+    - model context protocol
+    - agent
+    - agentic
+    - tool use
+    - function calling
+    - developer
+    - sdk
+    - api
+    - infrastructure
+    - kubernetes
+    - deployment
+    - reliability
+    - observability
+
+# --- Kubernetes ---
+- id: kubernetes-releases
+  name: Kubernetes Releases
+  category: kubernetes
+  websiteUrl: https://github.com/kubernetes/kubernetes
+  feedUrl: https://github.com/kubernetes/kubernetes/releases.atom
+  priority: 1
+  enabled: true
+  tags: [kubernetes, release]
+
+- id: gateway-api
+  name: Gateway API
+  category: kubernetes
+  websiteUrl: https://gateway-api.sigs.k8s.io
+  feedUrl: https://github.com/kubernetes-sigs/gateway-api/releases.atom
+  priority: 2
+  enabled: true
+  tags: [kubernetes, gateway-api, networking]
+
+- id: helm
+  name: Helm
+  category: kubernetes
+  websiteUrl: https://helm.sh
+  feedUrl: https://github.com/helm/helm/releases.atom
+  priority: 2
+  enabled: true
+  tags: [helm, packaging]
+
+- id: istio
+  name: Istio
+  category: kubernetes
+  websiteUrl: https://istio.io
+  feedUrl: https://istio.io/latest/feed.xml
+  priority: 2
+  enabled: true
+  tags: [istio, service-mesh, networking]
+
+- id: containerd
+  name: containerd
+  category: kubernetes
+  websiteUrl: https://containerd.io
+  feedUrl: https://github.com/containerd/containerd/releases.atom
+  priority: 3
+  enabled: true
+  tags: [containerd, containers, runtime]
+
+- id: etcd
+  name: etcd
+  category: kubernetes
+  websiteUrl: https://etcd.io
+  feedUrl: https://github.com/etcd-io/etcd/releases.atom
+  priority: 3
+  enabled: true
+  tags: [etcd, kubernetes, control-plane]
+
+- id: karpenter
+  name: Karpenter
+  category: kubernetes
+  websiteUrl: https://karpenter.sh
+  feedUrl: https://github.com/kubernetes-sigs/karpenter/releases.atom
+  priority: 3
+  enabled: true
+  tags: [karpenter, kubernetes, autoscaling]
+
+- id: kyverno
+  name: Kyverno
+  category: kubernetes
+  websiteUrl: https://kyverno.io
+  feedUrl: https://github.com/kyverno/kyverno/releases.atom
+  priority: 3
+  enabled: true
+  tags: [kyverno, kubernetes, policy]
+
+# --- Observability ---
+- id: opentelemetry-collector
+  name: OpenTelemetry Collector
+  category: observability
+  websiteUrl: https://github.com/open-telemetry/opentelemetry-collector
+  feedUrl: https://github.com/open-telemetry/opentelemetry-collector/releases.atom
+  priority: 1
+  enabled: true
+  tags: [opentelemetry, collector, otel, observability]
+
+- id: loki
+  name: Grafana Loki
+  category: observability
+  websiteUrl: https://grafana.com/oss/loki/
+  feedUrl: https://github.com/grafana/loki/releases.atom
+  priority: 2
+  enabled: true
+  tags: [loki, logging, observability]
+
+- id: tempo
+  name: Grafana Tempo
+  category: observability
+  websiteUrl: https://grafana.com/oss/tempo/
+  feedUrl: https://github.com/grafana/tempo/releases.atom
+  priority: 3
+  enabled: true
+  tags: [tempo, tracing, observability]
+
+- id: vector
+  name: Vector
+  category: observability
+  websiteUrl: https://vector.dev
+  feedUrl: https://github.com/vectordotdev/vector/releases.atom
+  priority: 3
+  enabled: true
+  tags: [vector, logging, pipelines]
+
+# --- Platform engineering ---
+- id: flux
+  name: Flux
+  category: platform-engineering
+  websiteUrl: https://fluxcd.io
+  feedUrl: https://github.com/fluxcd/flux2/releases.atom
+  priority: 2
+  enabled: true
+  tags: [flux, gitops, cd]
+
+- id: crossplane
+  name: Crossplane
+  category: platform-engineering
+  websiteUrl: https://www.crossplane.io
+  feedUrl: https://github.com/crossplane/crossplane/releases.atom
+  priority: 2
+  enabled: true
+  tags: [crossplane, platform-engineering, control-plane]
+
+# --- Infrastructure ---
+- id: hashicorp
+  name: HashiCorp
+  category: infrastructure
+  websiteUrl: https://www.hashicorp.com
+  feedUrl: https://www.hashicorp.com/blog/feed.xml
+  priority: 2
+  enabled: true
+  tags: [terraform, vault, iac]
+
+- id: pulumi
+  name: Pulumi
+  category: infrastructure
+  websiteUrl: https://www.pulumi.com
+  feedUrl: https://github.com/pulumi/pulumi/releases.atom
+  priority: 3
+  enabled: true
+  tags: [pulumi, iac]
+
+# --- AIOps / agentic operations ---
+- id: mcp-spec
+  name: Model Context Protocol
+  category: aiops
+  websiteUrl: https://modelcontextprotocol.io
+  feedUrl: https://github.com/modelcontextprotocol/modelcontextprotocol/releases.atom
+  priority: 1
+  enabled: true
+  tags: [mcp, ai-agent, protocol]
+
+- id: robusta
+  name: Robusta
+  category: aiops
+  websiteUrl: https://home.robusta.dev
+  feedUrl: https://github.com/robusta-dev/robusta/releases.atom
+  priority: 3
+  enabled: true
+  tags: [robusta, ai-sre]

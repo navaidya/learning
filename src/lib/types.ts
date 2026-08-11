@@ -1,4 +1,4 @@
-import type { NewsItem } from './news/types';
+import type { NewsItem, RadarFreshness } from './news/types';
 
 export const learningStatuses = ['not_started', 'learning', 'practicing', 'review', 'mastered'] as const;
 export type LearningStatus = (typeof learningStatuses)[number];
@@ -11,7 +11,7 @@ export interface LearningDebt { score: number; severity: DebtSeverity; reasons: 
 export interface RecommendedTopic { topic: TopicMetadata; priority: number; reason: string; }
 export interface ActivityEntry { date: string; type: 'learning' | 'lab' | 'review' | string; domain?: string; topic?: string; minutes?: number; }
 export interface DomainDefinition { slug: string; name: string; description?: string; }
-export interface RadarSummary { items: NewsItem[]; }
+export interface RadarSummary { items: NewsItem[]; freshness: RadarFreshness; }
 
 export function statusLabel(status: LearningStatus = 'not_started'): string {
   return ({ not_started: 'Not Started', learning: 'Learning', practicing: 'Practicing', review: 'Needs Review', mastered: 'Mastered' } as Record<LearningStatus, string>)[status];

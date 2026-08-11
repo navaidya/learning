@@ -68,3 +68,74 @@ describe('collectRadar', () => {
     expect(result.items).toEqual([existing]);
   });
 });
+
+describe('collectRadar concurrency', () => {
+  it('fetches sources in parallel up to the concurrency limit', async () => {
+    const { collectRadar } = await import('../../scripts/news/collect.mjs');
+    const sources: NewsSource[] = Array.from({ length: 8 }, (_, index) => ({
+      ...healthySource, id: `s${index}`, name: `S${index}`, feedUrl: `https://healthy.test/${index}.xml`,
+    }));
+
+    let inFlight = 0;
+    let peakInFlight = 0;
+    const rss = await readFile(path.join(fixturesDir, 'rss.xml'), 'utf8');
+    const trackingFetch = async () => {
+      inFlight += 1;
+      peakInFlight = Math.max(peakInFlight, inFlight);
+      await new Promise((resolve) => setTimeout(resolve, 5));
+      inFlight -= 1;
+      return { ok: true, status: 200, text: async () => rss };
+    };
+
+    const result = await collectRadar({ sources, fetchImpl: trackingFetch, asOf: new Date('2026-08-10T00:00:00Z'), concurrency: 3 });
+
+    expect(peakInFlight).toBeGreaterThan(1);
+    expect(peakInFlight).toBeLessThanOrEqual(3);
+    expect(result.fetchedSourceIds).toHaveLength(8);
+  });
+
+  it('reports sources in configured order however the parallel fetches resolve', async () => {
+    const { collectRadar } = await import('../../scripts/news/collect.mjs');
+    const rss = await readFile(path.join(fixturesDir, 'rss.xml'), 'utf8');
+    const sources: NewsSource[] = ['alpha', 'beta', 'gamma'].map((id) => ({ ...healthySource, id, name: id, feedUrl: `https://healthy.test/${id}.xml` }));
+
+    // Resolve in reverse order: alpha is slowest, gamma fastest.
+    const delays: Record<string, number> = { 'https://healthy.test/alpha.xml': 30, 'https://healthy.test/beta.xml': 15, 'https://healthy.test/gamma.xml': 1 };
+    const staggeredFetch = async (url: string) => {
+      await new Promise((resolve) => setTimeout(resolve, delays[url]));
+      return { ok: true, status: 200, text: async () => rss };
+    };
+
+    const result = await collectRadar({ sources, fetchImpl: staggeredFetch, asOf: new Date('2026-08-10T00:00:00Z'), concurrency: 3 });
+    expect(result.fetchedSourceIds).toEqual(['alpha', 'beta', 'gamma']);
+  });
+
+  it('isolates a failing source from the sources running alongside it', async () => {
+    const { collectRadar } = await import('../../scripts/news/collect.mjs');
+    const rss = await readFile(path.join(fixturesDir, 'rss.xml'), 'utf8');
+    const sources: NewsSource[] = [
+      { ...healthySource, id: 'ok-1', feedUrl: 'https://healthy.test/1.xml' },
+      { ...failedSource, id: 'boom', feedUrl: 'https://failed.test/feed.xml' },
+      { ...healthySource, id: 'ok-2', feedUrl: 'https://healthy.test/2.xml' },
+    ];
+    const mixedFetch = async (url: string) => (url.startsWith('https://healthy.test')
+      ? { ok: true, status: 200, text: async () => rss }
+      : { ok: false, status: 503, text: async () => '' });
+
+    const result = await collectRadar({ sources, fetchImpl: mixedFetch, asOf: new Date('2026-08-10T00:00:00Z'), concurrency: 3 });
+    expect(result.fetchedSourceIds).toEqual(['ok-1', 'ok-2']);
+    expect(result.failures.map((failure: { sourceId: string }) => failure.sourceId)).toEqual(['boom']);
+  });
+
+  it('skips disabled and feedless sources without counting them as failures', async () => {
+    const { collectRadar } = await import('../../scripts/news/collect.mjs');
+    const sources: NewsSource[] = [
+      { ...healthySource, id: 'on' },
+      { ...healthySource, id: 'off', enabled: false },
+      { ...healthySource, id: 'no-feed', feedUrl: undefined },
+    ];
+    const result = await collectRadar({ sources, fetchImpl: fixtureFetch, asOf: new Date('2026-08-10T00:00:00Z') });
+    expect(result.fetchedSourceIds).toEqual(['on']);
+    expect(result.failures).toEqual([]);
+  });
+});

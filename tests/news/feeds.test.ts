@@ -35,3 +35,25 @@ describe('normalizeFeedItem', () => {
     expect(a?.id).toBe(b?.id);
   });
 });
+
+describe('matchesSourceFilter', () => {
+  const unfiltered = { filterKeywords: undefined };
+  const filtered = { filterKeywords: ['mcp', 'agentic operations'] };
+
+  it('accepts everything from a source with no keyword filter', async () => {
+    const { matchesSourceFilter } = await import('../../src/lib/news/feeds');
+    expect(matchesSourceFilter('Anything at all', unfiltered)).toBe(true);
+    expect(matchesSourceFilter('Anything at all', { filterKeywords: [] })).toBe(true);
+  });
+
+  it('accepts an item that mentions any one keyword, case-insensitively', async () => {
+    const { matchesSourceFilter } = await import('../../src/lib/news/feeds');
+    expect(matchesSourceFilter('New MCP server registry', filtered)).toBe(true);
+    expect(matchesSourceFilter('Introducing Agentic Operations', filtered)).toBe(true);
+  });
+
+  it('rejects an off-topic item from a filtered source', async () => {
+    const { matchesSourceFilter } = await import('../../src/lib/news/feeds');
+    expect(matchesSourceFilter('What building an AI-native finance function taught me', filtered)).toBe(false);
+  });
+});

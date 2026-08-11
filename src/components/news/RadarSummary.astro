@@ -1,21 +1,28 @@
 ---
-import type { NewsItem } from '../../lib/news/types';
+import type { RadarSummary } from '../../lib/types';
+import { relativeTimeLabel } from '../../lib/news/recency';
 import { withBase } from '../../lib/url';
 
-const { items } = Astro.props as { items: NewsItem[] };
+const { items, freshness, asOf } = Astro.props as RadarSummary & { asOf: Date };
 ---
 
 <section class="panel">
   <h2>Engineering Radar</h2>
   {items.length ? (
-    <ul class="list">
-      {items.map((item) => (
-        <li>
-          <a href={item.url} target="_blank" rel="noopener noreferrer">{item.title} <span class="visually-hidden">(opens {item.source}, external)</span></a>
-          <small>{item.source} · {new Date(item.publishedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</small>
-        </li>
-      ))}
-    </ul>
+    <>
+      <ul class="list">
+        {items.map((item) => (
+          <li>
+            <a href={item.url} target="_blank" rel="noopener noreferrer">{item.title} <span class="visually-hidden">(opens {item.source}, external)</span></a>
+            <small>{item.source} · <time datetime={item.publishedDate}>{relativeTimeLabel(item.publishedDate, asOf)}</time></small>
+          </li>
+        ))}
+      </ul>
+      <p class="news-meta">
+        {freshness.newCount} new this week
+        {freshness.collectedAt && <> · checked <time datetime={freshness.collectedAt}>{relativeTimeLabel(freshness.collectedAt, asOf)}</time></>}
+      </p>
+    </>
   ) : (
     <p class="lede">No radar items yet. Run the collector to populate the Engineering Radar.</p>
   )}

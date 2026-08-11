@@ -82,9 +82,20 @@ const domainRules: DomainRule[] = [
     ],
   },
   {
+    domain: 'containers',
+    pattern: /containerd|\bruncs?\b|cri-o|oci image/i,
+    topicPatterns: [
+      { topic: 'containerd', pattern: /containerd/i },
+      { topic: 'runtime', pattern: /runtime/i },
+    ],
+  },
+  {
     domain: 'kubernetes',
-    pattern: /kubernetes|\bk8s\b|gateway api/i,
-    topicPatterns: [{ topic: 'gateway-api', pattern: /gateway api/i }],
+    pattern: /kubernetes|\bk8s\b|gateway api|istio|service mesh/i,
+    topicPatterns: [
+      { topic: 'gateway-api', pattern: /gateway api/i },
+      { topic: 'service-mesh', pattern: /istio|service mesh/i },
+    ],
   },
   {
     domain: 'grafana',
@@ -108,7 +119,7 @@ const knownDomains = domainRules.map((rule) => rule.domain);
 // Most configured sources are terse GitHub release feeds (e.g. "v1.2.0") with
 // no keyword to match, so each source needs an explicit default domain to
 // fall back to safely instead of collapsing everything into "infrastructure".
-const sourceDomainFallback: Record<string, string> = {
+export const sourceDefaultDomains: Record<string, string> = {
   cncf: 'infrastructure',
   kubernetes: 'kubernetes',
   opentelemetry: 'opentelemetry',
@@ -123,6 +134,24 @@ const sourceDomainFallback: Record<string, string> = {
   holmesgpt: 'aiops',
   k8sgpt: 'aiops',
   openai: 'agentic-operations',
+  'kubernetes-releases': 'kubernetes',
+  'gateway-api': 'kubernetes',
+  helm: 'helm',
+  istio: 'kubernetes',
+  containerd: 'containers',
+  etcd: 'kubernetes',
+  karpenter: 'kubernetes',
+  kyverno: 'kubernetes',
+  'opentelemetry-collector': 'opentelemetry',
+  loki: 'logging',
+  tempo: 'tracing',
+  vector: 'logging',
+  flux: 'gitops',
+  crossplane: 'platform-engineering',
+  hashicorp: 'terraform',
+  pulumi: 'terraform',
+  'mcp-spec': 'mcp',
+  robusta: 'aiops',
 };
 
 const architectureSignalPattern = /gateway api|dynamic resource allocation|\bdra\b|opentelemetry pipeline|platform api|\bmcp\b|agent-assisted investigation|replaces|replacement|deprecat(ed|ion|es)?|new api|graduat(ed|es|ion)?|gpu scheduling|ai scheduling/i;
@@ -135,7 +164,7 @@ export function classifyNews(input: ClassifyNewsInput): ClassifyNewsResult {
   const text = `${input.title} ${input.summary ?? ''}`;
   const matchedRule = domainRules.find((rule) => rule.pattern.test(text));
   const tagFallback = input.sourceTags.find((tag) => knownDomains.includes(tag));
-  const fallbackDomain = tagFallback ?? sourceDomainFallback[input.sourceId] ?? (knownDomains.includes(input.sourceId) ? input.sourceId : 'infrastructure');
+  const fallbackDomain = tagFallback ?? sourceDefaultDomains[input.sourceId] ?? (knownDomains.includes(input.sourceId) ? input.sourceId : 'infrastructure');
   const domain = matchedRule?.domain ?? fallbackDomain;
 
   const topics = new Set<string>();

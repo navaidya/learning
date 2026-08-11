@@ -58,6 +58,16 @@ export function stableCandidateId(sourceId: string, canonicalUrl: string): strin
   return `${sourceId}-${createHash('sha1').update(canonicalUrl).digest('hex').slice(0, 12)}`;
 }
 
+/**
+ * Whether an item clears its source's on-topic gate. Sources without `filterKeywords` accept
+ * everything; broad company feeds use it so unrelated corporate posts never reach the Radar.
+ */
+export function matchesSourceFilter(text: string, source: Pick<NewsSource, 'filterKeywords'>): boolean {
+  if (!source.filterKeywords?.length) return true;
+  const haystack = text.toLowerCase();
+  return source.filterKeywords.some((keyword) => haystack.includes(keyword.toLowerCase()));
+}
+
 export function normalizeFeedItem(raw: RawFeedItem, source: NewsSource): NormalizedCandidate | undefined {
   if (!raw.title || !raw.url || !raw.publishedDate) return undefined;
 

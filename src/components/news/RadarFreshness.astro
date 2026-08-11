@@ -1,0 +1,31 @@
+---
+import type { RadarFreshness } from '../../lib/news/types';
+import { NEW_ITEM_DAYS, relativeTimeLabel } from '../../lib/news/recency';
+
+const { freshness, asOf } = Astro.props as { freshness: RadarFreshness; asOf: Date };
+
+const dateTime = (value: string) => new Date(value).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+const collectedLabel = freshness.collectedAt ? `${dateTime(freshness.collectedAt)} (${relativeTimeLabel(freshness.collectedAt, asOf)})` : 'not recorded yet';
+---
+
+<dl class="radar-freshness" aria-label="Radar freshness">
+  <div>
+    <dt>Sources last checked</dt>
+    <dd>
+      {freshness.collectedAt
+        ? <time datetime={freshness.collectedAt}>{collectedLabel}</time>
+        : <span>{collectedLabel}</span>}
+    </dd>
+  </div>
+  <div>
+    <dt>New in {NEW_ITEM_DAYS} days</dt>
+    <dd>{freshness.newCount} of {freshness.totalCount}</dd>
+  </div>
+  <div>
+    <dt>Feeds tracked</dt>
+    <dd>
+      {freshness.sourceCount || '—'}
+      {freshness.failedSourceCount > 0 && <span class="radar-freshness-warn"> · {freshness.failedSourceCount} unreachable</span>}
+    </dd>
+  </div>
+</dl>

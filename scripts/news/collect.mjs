@@ -2,10 +2,10 @@ import { readFile } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
 import { XMLParser } from 'fast-xml-parser';
 import { classifyNews } from '../../src/lib/news/classifier.ts';
-import { normalizeFeedItem } from '../../src/lib/news/feeds.ts';
+import { matchesSourceFilter, normalizeFeedItem } from '../../src/lib/news/feeds.ts';
 import { scoreImportance } from '../../src/lib/news/importance.ts';
 import { deriveReleaseWatch, mergeNews } from '../../src/lib/news/retention.ts';
-import { parseNewsItem, parseNewsItems } from '../../src/lib/news/validate.ts';
+import { parseNewsItem, parseNewsItems, parseRadarCollectionMeta } from '../../src/lib/news/validate.ts';
 import { loadSources } from './load-sources.mjs';
 import { writeIfChanged } from './write-data.mjs';
 
@@ -19,6 +19,8 @@ import { writeIfChanged } from './write-data.mjs';
  */
 
 const DEFAULT_TIMEOUT_MS = 15_000;
+/** Sources are independent, so fetch a few at a time — bounded so a long source list stays polite. */
+const DEFAULT_CONCURRENCY = 6;
 
 const xmlParser = new XMLParser({ ignoreAttributes: false, attributeNamePrefix: '@_', textNodeName: '#text' });
 
@@ -120,6 +122,7 @@ async function fetchSourceItems(source, fetchImpl, signal) {
   for (const raw of parseFeedXml(text)) {
     const candidate = normalizeFeedItem(raw, source);
     if (!candidate) continue;
+    if (!matchesSourceFilter(`${candidate.title} ${candidate.summary ?? ''}`, source)) continue;
     try {
       items.push(buildNewsItem(candidate, source));
     } catch {
@@ -132,10 +135,36 @@ async function fetchSourceItems(source, fetchImpl, signal) {
 /**
  * Fetches every enabled, feed-bearing source independently. One failure never blocks the rest,
  * and prior valid items always survive the merge even if every source fails this run.
- * @param {{ sources: NewsSource[]; existingItems?: NewsItem[]; fetchImpl?: FetchLike; asOf?: Date; timeoutMs?: number }} options
+ * @param {{ sources: NewsSource[]; existingItems?: NewsItem[]; fetchImpl?: FetchLike; asOf?: Date; timeoutMs?: number; concurrency?: number }} options
  * @returns {Promise<CollectionResult>}
  */
-export async function collectRadar({ sources, existingItems = [], fetchImpl = /** @type {FetchLike} */ (/** @type {unknown} */ (fetch)), asOf = new Date(), timeoutMs = DEFAULT_TIMEOUT_MS }) {
+export async function collectRadar({ sources, existingItems = [], fetchImpl = /** @type {FetchLike} */ (/** @type {unknown} */ (fetch)), asOf = new Date(), timeoutMs = DEFAULT_TIMEOUT_MS, concurrency = DEFAULT_CONCURRENCY }) {
+  const active = sources.filter((source) => source.enabled && source.feedUrl);
+
+  /** @type {({ ok: true; items: NewsItem[] } | { ok: false; message: string })[]} */
+  const outcomes = new Array(active.length);
+
+  let cursor = 0;
+  const worker = async () => {
+    while (cursor < active.length) {
+      const index = cursor++;
+      const source = active[index];
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), timeoutMs);
+      try {
+        outcomes[index] = { ok: true, items: await fetchSourceItems(source, fetchImpl, controller.signal) };
+      } catch (error) {
+        const message = error instanceof Error ? error.message : 'unknown error';
+        console.error(`[news:collect] source "${source.id}" failed: ${message}`);
+        outcomes[index] = { ok: false, message };
+      } finally {
+        clearTimeout(timer);
+      }
+    }
+  };
+
+  await Promise.all(Array.from({ length: Math.max(1, Math.min(concurrency, active.length)) }, worker));
+
   /** @type {string[]} */
   const fetchedSourceIds = [];
   /** @type {CollectionFailure[]} */
@@ -143,23 +172,27 @@ export async function collectRadar({ sources, existingItems = [], fetchImpl = /*
   /** @type {NewsItem[]} */
   const incoming = [];
 
-  for (const source of sources) {
-    if (!source.enabled || !source.feedUrl) continue;
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), timeoutMs);
-    try {
-      incoming.push(...(await fetchSourceItems(source, fetchImpl, controller.signal)));
+  // Reassembled in source order so the result is identical whatever order the fetches finished in.
+  active.forEach((source, index) => {
+    const outcome = outcomes[index];
+    if (outcome.ok) {
       fetchedSourceIds.push(source.id);
-    } catch (error) {
-      const message = error instanceof Error ? error.message : 'unknown error';
-      console.error(`[news:collect] source "${source.id}" failed: ${message}`);
-      failures.push({ sourceId: source.id, message });
-    } finally {
-      clearTimeout(timer);
+      incoming.push(...outcome.items);
+    } else {
+      failures.push({ sourceId: source.id, message: outcome.message });
     }
-  }
+  });
 
-  const items = mergeNews(existingItems, incoming, asOf);
+  // Previously-collected items are re-checked against the current source config, so tightening a
+  // source's keyword filter takes effect on the next run instead of leaving old noise in place.
+  // Items whose source has since been removed are kept rather than silently dropped.
+  const sourceById = new Map(sources.map((source) => [source.id, source]));
+  const retainedExisting = existingItems.filter((item) => {
+    const source = sourceById.get(item.sourceId);
+    return !source || matchesSourceFilter(`${item.title} ${item.summary ?? ''}`, source);
+  });
+
+  const items = mergeNews(retainedExisting, incoming, asOf);
   const releases = deriveReleaseWatch(items);
   return { items, releases, fetchedSourceIds, failures };
 }
@@ -168,6 +201,7 @@ async function main() {
   const sourcesPath = new URL('../../data/news-sources.yaml', import.meta.url);
   const newsPath = new URL('../../data/news.json', import.meta.url);
   const releasesPath = new URL('../../data/releases.json', import.meta.url);
+  const metaPath = new URL('../../data/radar-meta.json', import.meta.url);
 
   const sources = await loadSources(sourcesPath);
 
@@ -179,7 +213,8 @@ async function main() {
     console.error(`[news:collect] could not read existing data/news.json, starting from empty: ${error instanceof Error ? error.message : 'unknown error'}`);
   }
 
-  const result = await collectRadar({ sources, existingItems, asOf: new Date() });
+  const collectedAt = new Date();
+  const result = await collectRadar({ sources, existingItems, asOf: collectedAt });
   const attempted = sources.filter((source) => source.enabled && source.feedUrl).length;
 
   if (result.fetchedSourceIds.length === 0) {
@@ -189,6 +224,14 @@ async function main() {
 
   const newsChanged = await writeIfChanged(newsPath, result.items);
   const releasesChanged = await writeIfChanged(releasesPath, result.releases);
+  // Always rewritten, even when no item changed: "we checked and nothing is new" is itself
+  // the freshness signal the Radar page reports.
+  await writeIfChanged(metaPath, parseRadarCollectionMeta({
+    collectedAt: collectedAt.toISOString(),
+    sourceIds: result.fetchedSourceIds,
+    failedSourceIds: result.failures.map((failure) => failure.sourceId),
+    itemCount: result.items.length,
+  }));
   console.log(`[news:collect] fetched ${result.fetchedSourceIds.length}/${attempted} source(s), ${result.failures.length} failed, ${result.items.length} item(s) retained (news ${newsChanged ? 'updated' : 'unchanged'}, releases ${releasesChanged ? 'updated' : 'unchanged'}).`);
 }
 
