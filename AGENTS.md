@@ -23,10 +23,18 @@
 - Supported statuses are exactly: `not_started`, `learning`, `practicing`, `review`, and `mastered`.
 - Use semantic HTML, keyboard-accessible controls, visible focus states, sufficient contrast, and responsive layouts. Prioritize readability and information density over decoration.
 
+## Engineering Radar
+
+- Stay static/serverless: the Radar is a Node collector script run in GitHub Actions or manually, writing plain JSON that the Astro build reads. Never add a runtime API, database, or server for it.
+- Sources must be primary: official project blogs or their own release feeds only (e.g. a repo's GitHub `releases.atom`). No generic aggregators, no scraped HTML.
+- Treat remote feed content as untrusted: normalize it to plain text (strip tags/scripts, decode entities, cap length) and never render raw remote HTML on the page.
+- Classification, importance, architecture-shift, and relevance scoring must stay deterministic, rule-based logic in `src/lib/news/` — no LLM or external API call, per the no-backend/no-LLM constraint above.
+- Degrade gracefully: one source failing must never block others or erase previously-collected data; if every source fails, retain prior data and exit successfully rather than writing an empty result.
+
 ## Quality and workflow
 
 - Add or update automated tests whenever calculations or content validation changes, including missing data and boundaries.
 - Before declaring work complete, run `npm test` and `npm run build`; do not suppress TypeScript errors or add `any` merely to make a build pass.
 - Keep commits small and single-purpose. Preserve established structure and patterns unless a change is justified.
-- Treat interactive quizzes, search, news ingestion, spaced repetition, and all AI features as out of scope unless explicitly requested.
+- Treat interactive quizzes, search, spaced repetition, and general AI features as out of scope unless explicitly requested.
 

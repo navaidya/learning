@@ -7,12 +7,15 @@
     "dev": "astro dev",
     "build": "astro check && astro build",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "news:collect": "node --experimental-strip-types scripts/news/collect.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "latest",
     "@astrojs/sitemap": "latest",
     "astro": "latest",
+    "fast-xml-parser": "^5.10.1",
+    "yaml": "^2.9.0",
     "zod": "latest"
   },
   "devDependencies": {

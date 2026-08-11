@@ -1,0 +1,22 @@
+---
+import { radarCategories, type RadarCategory } from '../../lib/news/types';
+
+const { current } = Astro.props as { current: RadarCategory };
+
+const labels: Record<RadarCategory, string> = {
+  'for-you': 'For You',
+  kubernetes: 'Kubernetes',
+  observability: 'Observability',
+  'platform-engineering': 'Platform Engineering',
+  aiops: 'AIOps',
+  infrastructure: 'Infrastructure',
+};
+
+const hrefFor = (category: RadarCategory) => (category === 'for-you' ? '/news' : `/news/${category}`);
+---
+
+<nav class="category-filters" aria-label="Engineering Radar categories">
+  {radarCategories.map((category) => (
+    <a href={hrefFor(category)} aria-current={category === current ? 'page' : undefined}>{labels[category]}</a>
+  ))}
+</nav>

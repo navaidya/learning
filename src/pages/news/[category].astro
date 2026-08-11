@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import RadarView from '../../components/news/RadarView.astro';
+import { getEngineeringRadarModel, isRadarCategory } from '../../lib/news/radar';
+import { newsCategories } from '../../lib/news/types';
+
+export function getStaticPaths() {
+  return newsCategories.map((category) => ({ params: { category } }));
+}
+
+const { category } = Astro.params;
+if (!category || !isRadarCategory(category)) return Astro.redirect('/news');
+
+const model = await getEngineeringRadarModel(category, new Date('2026-08-10'));
+---
+
+<BaseLayout title={`Engineering Radar · ${category}`}>
+  <RadarView model={model} />
+</BaseLayout>

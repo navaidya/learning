@@ -1,0 +1,21 @@
+---
+import type { ReleaseWatchItem } from '../../lib/news/types';
+
+const { releases } = Astro.props as { releases: ReleaseWatchItem[] };
+---
+
+<section class="panel">
+  <h2>Release Watch</h2>
+  {releases.length ? (
+    <ul class="list">
+      {releases.map((release) => (
+        <li>
+          <strong>{release.project}</strong> <span>{release.version}</span>
+          <a href={release.url} target="_blank" rel="noopener noreferrer">Release notes <span class="visually-hidden">(opens {release.project}, external)</span></a>
+        </li>
+      ))}
+    </ul>
+  ) : (
+    <p class="lede">No tracked releases yet. Run the collector to populate Release Watch.</p>
+  )}
+</section>

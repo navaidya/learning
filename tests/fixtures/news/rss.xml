@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Fixture Blog</title>
+    <link>https://example.test/blog</link>
+    <description>Fixture RSS feed for tests</description>
+    <item>
+      <title>Fixture Release 1.0 shipped</title>
+      <link>https://example.test/blog/fixture-release-1-0</link>
+      <guid>https://example.test/blog/fixture-release-1-0</guid>
+      <pubDate>Mon, 03 Aug 2026 08:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Plain announcement text.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fixture item with rich HTML summary</title>
+      <link>https://example.test/blog/rich-html?utm_source=rss&amp;utm_medium=feed</link>
+      <guid>https://example.test/blog/rich-html</guid>
+      <pubDate>Sun, 02 Aug 2026 08:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Safe &lt;strong&gt;bold&lt;/strong&gt; text with a &lt;a href="https://example.test"&gt;link&lt;/a&gt;.&lt;/p&gt;&lt;script&gt;alert('unsafe')&lt;/script&gt;</description>
+    </item>
+    <item>
+      <title>Fixture item missing a link</title>
+      <guid>https://example.test/blog/missing-link</guid>
+      <pubDate>Sat, 01 Aug 2026 08:00:00 GMT</pubDate>
+      <description>This item has no link element and should be skipped.</description>
+    </item>
+    <item>
+      <title>Fixture item sharing a canonical URL (first copy)</title>
+      <link>https://example.test/blog/shared?utm_source=rss</link>
+      <guid>https://example.test/blog/shared-a</guid>
+      <pubDate>Fri, 31 Jul 2026 08:00:00 GMT</pubDate>
+      <description>First copy of a syndicated post.</description>
+    </item>
+    <item>
+      <title>Fixture item sharing a canonical URL (second copy)</title>
+      <link>https://example.test/blog/shared?utm_source=newsletter</link>
+      <guid>https://example.test/blog/shared-b</guid>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 GMT</pubDate>
+      <description>Second, newer copy of the same syndicated post.</description>
+    </item>
+  </channel>
+</rss>

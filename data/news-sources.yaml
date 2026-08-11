@@ -1,0 +1,128 @@
+# Official/primary RSS or Atom feeds only. Every feedUrl below was verified live
+# before being added; keep that bar for future additions. `enabled: false` is
+# reserved for sources whose feed later goes stale or is not yet reliable.
+- id: cncf
+  name: CNCF
+  category: infrastructure
+  websiteUrl: https://www.cncf.io
+  feedUrl: https://www.cncf.io/feed/
+  priority: 1
+  enabled: true
+  tags: [cncf, cloud-native]
+
+- id: kubernetes
+  name: Kubernetes
+  category: kubernetes
+  websiteUrl: https://kubernetes.io
+  feedUrl: https://kubernetes.io/feed.xml
+  priority: 1
+  enabled: true
+  tags: [kubernetes]
+
+- id: opentelemetry
+  name: OpenTelemetry
+  category: observability
+  websiteUrl: https://opentelemetry.io
+  feedUrl: https://opentelemetry.io/blog/index.xml
+  priority: 1
+  enabled: true
+  tags: [opentelemetry, otel, observability]
+
+- id: prometheus
+  name: Prometheus
+  category: observability
+  websiteUrl: https://prometheus.io
+  feedUrl: https://github.com/prometheus/prometheus/releases.atom
+  priority: 1
+  enabled: true
+  tags: [prometheus, promql, observability]
+
+- id: grafana
+  name: Grafana Labs
+  category: observability
+  websiteUrl: https://grafana.com
+  feedUrl: https://grafana.com/blog/index.xml
+  priority: 1
+  enabled: true
+  tags: [grafana, observability]
+
+- id: cilium
+  name: Cilium
+  category: observability
+  websiteUrl: https://cilium.io
+  feedUrl: https://github.com/cilium/cilium/releases.atom
+  priority: 2
+  enabled: true
+  tags: [cilium, ebpf, networking]
+
+- id: terraform
+  name: Terraform
+  category: infrastructure
+  websiteUrl: https://www.terraform.io
+  feedUrl: https://github.com/hashicorp/terraform/releases.atom
+  priority: 1
+  enabled: true
+  tags: [terraform, iac]
+
+- id: opentofu
+  name: OpenTofu
+  category: infrastructure
+  websiteUrl: https://opentofu.org
+  feedUrl: https://github.com/opentofu/opentofu/releases.atom
+  priority: 2
+  enabled: true
+  tags: [opentofu, iac]
+
+- id: argo
+  name: Argo
+  category: platform-engineering
+  websiteUrl: https://argoproj.github.io
+  feedUrl: https://github.com/argoproj/argo-cd/releases.atom
+  priority: 2
+  enabled: true
+  tags: [argo, argocd, gitops]
+
+- id: backstage
+  name: Backstage
+  category: platform-engineering
+  websiteUrl: https://backstage.io
+  feedUrl: https://github.com/backstage/backstage/releases.atom
+  priority: 2
+  enabled: true
+  tags: [backstage, developer-portal, idp]
+
+- id: oci-oke
+  name: OCI / OKE
+  category: infrastructure
+  websiteUrl: https://www.oracle.com/cloud/cloud-native/kubernetes-engine/
+  feedUrl: https://github.com/oracle/terraform-provider-oci/releases.atom
+  priority: 2
+  enabled: true
+  tags: [oci, oke, oracle]
+
+- id: holmesgpt
+  name: HolmesGPT (Robusta)
+  category: aiops
+  websiteUrl: https://github.com/robusta-dev/holmesgpt
+  feedUrl: https://github.com/robusta-dev/holmesgpt/releases.atom
+  priority: 2
+  enabled: true
+  tags: [holmesgpt, robusta, ai-sre]
+
+- id: k8sgpt
+  name: K8sGPT
+  category: aiops
+  websiteUrl: https://k8sgpt.ai
+  feedUrl: https://github.com/k8sgpt-ai/k8sgpt/releases.atom
+  priority: 2
+  enabled: true
+  tags: [k8sgpt, ai-sre]
+
+- id: openai
+  name: OpenAI Developer Updates
+  category: aiops
+  websiteUrl: https://openai.com/news/
+  feedUrl: https://openai.com/news/rss.xml
+  priority: 2
+  enabled: true
+  tags: [openai, ai-agent, mcp]

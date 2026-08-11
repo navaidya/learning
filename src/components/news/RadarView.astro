@@ -1,0 +1,31 @@
+---
+import NewsCard from './NewsCard.astro';
+import NewsFilters from './NewsFilters.astro';
+import ReleaseWatch from './ReleaseWatch.astro';
+import type { EngineeringRadarModel } from '../../lib/news/types';
+
+const { model } = Astro.props as { model: EngineeringRadarModel };
+const heading: Record<EngineeringRadarModel['category'], string> = {
+  'for-you': 'For You',
+  kubernetes: 'Kubernetes',
+  observability: 'Observability',
+  'platform-engineering': 'Platform Engineering',
+  aiops: 'AIOps',
+  infrastructure: 'Infrastructure',
+};
+---
+
+<p class="eyebrow">Engineering Radar</p>
+<h1>{heading[model.category]}</h1>
+<p class="lede">Trusted infrastructure developments, connected to what you're already learning.</p>
+<NewsFilters current={model.category} />
+<div class="news-layout section-heading">
+  <div class="news-list">
+    {model.items.length ? (
+      model.items.map((item) => <NewsCard item={item} />)
+    ) : (
+      <div class="panel">No developments in this category yet. Run <code>npm run news:collect</code> to populate the Radar.</div>
+    )}
+  </div>
+  <ReleaseWatch releases={model.releases} />
+</div>

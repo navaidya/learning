@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "id": "kubernetes-gateway-api-v1-6-release",
+    "title": "Gateway API v1.6: TCPRoute and UDPRoute Graduate to Standard",
+    "summary": "Gateway API v1.6 promotes TCPRoute and UDPRoute from experimental to the standard channel.",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/08/03/gateway-api-v1-6-release/",
+    "publishedDate": "2026-08-03T08:00:00-08:00",
+    "domain": "kubernetes",
+    "topics": ["gateway-api"],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes",
+    "releaseVersion": "v1.6"
+  },
+  {
+    "id": "prometheus-v3-13-2",
+    "title": "Prometheus v3.13.2",
+    "summary": "Security patches for dependencies and a bugfix for PromQL's active query tracker.",
+    "source": "Prometheus",
+    "sourceId": "prometheus",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.13.2",
+    "publishedDate": "2026-07-30T13:25:26Z",
+    "domain": "prometheus",
+    "topics": ["promql"],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "prometheus",
+    "releaseVersion": "v3.13.2"
+  }
+]

@@ -1,0 +1,36 @@
+---
+import { domains } from '../../lib/content';
+import type { NewsItem } from '../../lib/news/types';
+
+const { item } = Astro.props as { item: NewsItem };
+const publishedLabel = new Date(item.publishedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+const relatedDomain = domains.find((domain) => domain.slug === item.domain);
+---
+
+<article class="panel news-card">
+  <h3>
+    <a href={item.url} target="_blank" rel="noopener noreferrer">
+      {item.title}
+      <span class="visually-hidden">(opens {item.source}, external)</span>
+    </a>
+  </h3>
+  <p class="news-meta"><span>{item.source}</span> · <time datetime={item.publishedDate}>{publishedLabel}</time></p>
+  {item.summary && <p>{item.summary}</p>}
+  {(item.architectureShift || item.releaseRelated || item.importance === 'high' || item.importance === 'critical') && (
+    <div class="news-badges">
+      {item.architectureShift && <span class="badge badge-shift">Architecture Shift</span>}
+      {item.releaseRelated && <span class="badge badge-release">New Release{item.releaseVersion ? ` · ${item.releaseVersion}` : ''}</span>}
+      {item.importance === 'critical' && <span class="badge badge-critical">Critical</span>}
+      {item.importance === 'high' && <span class="badge badge-high">High Priority</span>}
+    </div>
+  )}
+  {item.topics.length > 0 && (
+    <ul class="tag-list">
+      {item.topics.map((topic) => <li>{topic}</li>)}
+    </ul>
+  )}
+  <div class="split news-card-footer">
+    <a class="external-link" href={item.url} target="_blank" rel="noopener noreferrer">Read source <span class="visually-hidden">(opens {item.source}, external)</span></a>
+    {relatedDomain && <a href={`/skills/${relatedDomain.slug}`}>Related learning: {relatedDomain.name}</a>}
+  </div>
+</article>
