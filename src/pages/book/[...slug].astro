@@ -1,8 +1,9 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BookLayout from '../../layouts/BookLayout.astro';
+import { withBase } from '../../lib/url';
 export async function getStaticPaths() { const entries = await getCollection('book'); return entries.map((entry) => ({ params: { slug: entry.id }, props: { entry } })); }
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 ---
-<BookLayout title={entry.data.title}><nav slot="sidebar"><a href="/book">All topics</a></nav><p class="eyebrow">{entry.data.domain ?? 'Knowledge book'}</p><h1>{entry.data.title}</h1><Content /></BookLayout>
+<BookLayout title={entry.data.title}><nav slot="sidebar"><a href={withBase('/book')}>All topics</a></nav><p class="eyebrow">{entry.data.domain ?? 'Knowledge book'}</p><h1>{entry.data.title}</h1><Content /></BookLayout>

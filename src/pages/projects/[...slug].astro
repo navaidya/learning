@@ -1,7 +1,8 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { withBase } from '../../lib/url';
 export async function getStaticPaths() { return (await getCollection('projects')).map((entry) => ({ params: { slug: entry.id }, props: { entry } })); }
 const { entry } = Astro.props; const { Content } = await render(entry);
 ---
-<BaseLayout title={entry.data.title}><a href="/projects">← Projects</a><h1>{entry.data.title}</h1><p class="eyebrow">{entry.data.status} · {entry.data.progress}%</p><Content /></BaseLayout>
+<BaseLayout title={entry.data.title}><a href={withBase('/projects')}>← Projects</a><h1>{entry.data.title}</h1><p class="eyebrow">{entry.data.status} · {entry.data.progress}%</p><Content /></BaseLayout>

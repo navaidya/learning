@@ -1,5 +1,6 @@
 ---
 import { radarCategories, type RadarCategory } from '../../lib/news/types';
+import { withBase } from '../../lib/url';
 
 const { current } = Astro.props as { current: RadarCategory };
 
@@ -12,7 +13,7 @@ const labels: Record<RadarCategory, string> = {
   infrastructure: 'Infrastructure',
 };
 
-const hrefFor = (category: RadarCategory) => (category === 'for-you' ? '/news' : `/news/${category}`);
+const hrefFor = (category: RadarCategory) => withBase(category === 'for-you' ? '/news' : `/news/${category}`);
 ---
 
 <nav class="category-filters" aria-label="Engineering Radar categories">

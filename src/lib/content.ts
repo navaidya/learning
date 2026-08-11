@@ -4,11 +4,9 @@ import { recommendTopics } from './recommendations';
 import { calculateDomainProgress } from './progress';
 import { getRadarSummary } from './news/radar';
 import { sampleTopics, getTopicProgress } from './topicProgress';
-import type { DomainDefinition } from './types';
+import { domains } from './domains';
 
-export const domains: DomainDefinition[] = [
-  ['foundations','Foundations'], ['containers','Containers'], ['kubernetes','Kubernetes'], ['oke','OKE'], ['helm','Helm'], ['terraform','Terraform'], ['gitops','GitOps'], ['prometheus','Prometheus'], ['grafana','Grafana'], ['opentelemetry','OpenTelemetry'], ['logging','Logging'], ['tracing','Tracing'], ['ebpf-cilium','eBPF / Cilium'], ['sre','SRE'], ['platform-engineering','Platform Engineering'], ['aiops','AIOps'], ['mcp','MCP'], ['agentic-operations','Agentic Operations'],
-].map(([slug, name]) => ({ slug, name }));
+export { domains };
 
 export async function getDashboardModel(asOf = new Date()) {
   const activity = [{ date: '2026-08-10', type: 'learning', domain: 'opentelemetry', topic: 'collector', minutes: 45 }, { date: '2026-08-09', type: 'lab', domain: 'kubernetes', topic: 'troubleshooting', minutes: 60 }];

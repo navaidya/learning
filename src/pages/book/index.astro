@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getBookEntries } from '../../lib/content';
+import { withBase } from '../../lib/url';
 const entries = await getBookEntries();
 ---
-<BaseLayout title="Knowledge Book"><h1>Knowledge Book</h1><p class="lede">Markdown-first notes on modern infrastructure engineering and AIOps.</p><div class="grid">{entries.map((entry) => <a class="panel" href={`/book/${entry.id}`}><h2>{entry.data.title}</h2><p>{entry.data.domain ?? 'Technical notes'}</p></a>)}</div></BaseLayout>
+<BaseLayout title="Knowledge Book"><h1>Knowledge Book</h1><p class="lede">Markdown-first notes on modern infrastructure engineering and AIOps.</p><div class="grid">{entries.map((entry) => <a class="panel" href={withBase(`/book/${entry.id}`)}><h2>{entry.data.title}</h2><p>{entry.data.domain ?? 'Technical notes'}</p></a>)}</div></BaseLayout>

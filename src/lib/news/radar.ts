@@ -43,6 +43,14 @@ export async function getEngineeringRadarModel(category: RadarCategory, asOf = n
   return { category, items: scoped, releases, generatedAt: asOf.toISOString() };
 }
 
+/** Recent Radar items whose classified domain matches a skill-map domain, newest first. */
+export function getDomainRadarItems(domain: string, limit = 5): NewsItem[] {
+  return parseNewsItems(newsRaw)
+    .filter((item) => item.domain === domain)
+    .sort((a, b) => new Date(b.publishedDate).getTime() - new Date(a.publishedDate).getTime())
+    .slice(0, limit);
+}
+
 export async function getRadarSummary(asOf = new Date()): Promise<RadarSummary> {
   const model = await getEngineeringRadarModel('for-you', asOf);
   return { items: model.items.slice(0, DASHBOARD_SUMMARY_SIZE) };

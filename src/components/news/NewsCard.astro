@@ -1,6 +1,7 @@
 ---
 import { domains } from '../../lib/content';
 import type { NewsItem } from '../../lib/news/types';
+import { withBase } from '../../lib/url';
 
 const { item } = Astro.props as { item: NewsItem };
 const publishedLabel = new Date(item.publishedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
@@ -31,6 +32,6 @@ const relatedDomain = domains.find((domain) => domain.slug === item.domain);
   )}
   <div class="split news-card-footer">
     <a class="external-link" href={item.url} target="_blank" rel="noopener noreferrer">Read source <span class="visually-hidden">(opens {item.source}, external)</span></a>
-    {relatedDomain && <a href={`/skills/${relatedDomain.slug}`}>Related learning: {relatedDomain.name}</a>}
+    {relatedDomain && <a href={withBase(`/skills/${relatedDomain.slug}`)}>Related learning: {relatedDomain.name}</a>}
   </div>
 </article>

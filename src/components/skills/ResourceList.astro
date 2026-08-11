@@ -1,0 +1,35 @@
+---
+import { groupResourcesByType, type LearningResource, type ResourceType } from '../../lib/resources';
+
+const { resources } = Astro.props as { resources: LearningResource[] };
+const groups = groupResourcesByType(resources);
+
+const groupLabels: Record<ResourceType, string> = {
+  docs: 'Documentation & reference',
+  course: 'Courses & hands-on',
+  book: 'Books & long reads',
+  video: 'YouTube & video',
+  podcast: 'Podcasts',
+  newsletter: 'Blogs & newsletters',
+  tool: 'Tools & playgrounds',
+  community: 'Communities & curated lists',
+  certification: 'Certification',
+};
+---
+
+{groups.map((group) => (
+  <section class="resource-group">
+    <h3>{groupLabels[group.type]}</h3>
+    <ul class="resource-list">
+      {group.resources.map((resource) => (
+        <li>
+          <a href={resource.url} target="_blank" rel="noopener noreferrer">
+            {resource.title}
+            <span class="visually-hidden">(external link)</span>
+          </a>
+          <small>{resource.description}</small>
+        </li>
+      ))}
+    </ul>
+  </section>
+))}

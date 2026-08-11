@@ -1,0 +1,562 @@
+# Curated learning resources per skill-map domain.
+#
+# Every `url` here was verified to resolve (HTTP 200) when added. Prefer primary
+# sources: a project's own docs, its maintainers' talks, and community-run
+# podcasts/newsletters over vendor marketing pages.
+#
+# `type` is one of: docs, course, video, podcast, newsletter, book, tool, community.
+# `latest` captures where the domain actually stands, so the page stays useful
+# even when you already know the fundamentals.
+
+foundations:
+  summary: >-
+    Linux, networking, and systems thinking. Everything above this layer leaks
+    down to it — most "Kubernetes problems" are really DNS, cgroup, or filesystem problems.
+  latest:
+    - Systemd and cgroup v2 are now the default on every mainstream distribution, which is what container CPU/memory limits actually bind to.
+    - eBPF has moved kernel-level observability into everyday operations work, making kernel literacy far more valuable than it was five years ago.
+  resources:
+    - title: MIT — The Missing Semester of Your CS Education
+      url: https://missing.csail.mit.edu/
+      type: course
+      description: Shell, scripting, editors, data wrangling, and version control — the tooling fluency formal courses skip.
+    - title: Linux Upskill Challenge
+      url: https://linuxupskillchallenge.com/
+      type: course
+      description: A free month-long, hands-on challenge that takes you to comfortable Linux server administration.
+    - title: Beej's Guide to Network Programming
+      url: https://beej.us/guide/bgnet/
+      type: book
+      description: The classic, free introduction to sockets and TCP/IP that makes networking concrete rather than abstract.
+    - title: The Twelve-Factor App
+      url: https://12factor.net/
+      type: docs
+      description: Short, still-relevant manifesto on config, processes, and disposability that underpins container-native design.
+    - title: LearnLinuxTV
+      url: https://www.youtube.com/@LearnLinuxTV
+      type: video
+      description: Practical Linux administration walkthroughs, distribution deep dives, and home-lab builds.
+    - title: NetworkChuck
+      url: https://www.youtube.com/@NetworkChuck
+      type: video
+      description: Approachable networking and Linux fundamentals, useful when you want a concept explained quickly.
+    - title: DevOps Roadmap
+      url: https://roadmap.sh/devops
+      type: community
+      description: A community-maintained dependency graph of the skills in this space, handy for spotting your own gaps.
+
+containers:
+  summary: >-
+    Images, runtimes, and the OS primitives (namespaces, cgroups, layered filesystems)
+    that Kubernetes orchestrates. Understand these and most pod behaviour stops being surprising.
+  latest:
+    - The OCI image and runtime specs mean images are portable across Docker, containerd, CRI-O, and Podman — Docker is one implementation, not the standard.
+    - Rootless containers and multi-architecture (arm64) images are now routine, driven by Apple Silicon laptops and ARM cloud instances.
+  resources:
+    - title: Docker — Get Started
+      url: https://docs.docker.com/get-started/
+      type: docs
+      description: The official onboarding path from first container through images, volumes, and Compose.
+    - title: Play with Docker
+      url: https://labs.play-with-docker.com/
+      type: tool
+      description: Free browser-based Docker hosts — useful for testing something without touching your machine.
+    - title: Container Training
+      url: https://container.training/
+      type: course
+      description: Jérôme Petazzoni's open-source container and orchestration workshops, slides and exercises included.
+    - title: Open Container Initiative
+      url: https://opencontainers.org/
+      type: docs
+      description: The actual image, runtime, and distribution specifications behind every container tool you use.
+    - title: Awesome Compose
+      url: https://github.com/docker/awesome-compose
+      type: tool
+      description: Reference Compose files for realistic multi-service stacks, good for spinning up lab environments.
+    - title: Bret Fisher — DevOps and Docker
+      url: https://www.youtube.com/@BretFisher
+      type: video
+      description: Long-running live show on containers, Compose, and production Docker practice.
+
+kubernetes:
+  summary: >-
+    The orchestration layer and its control loops. The reconciliation model —
+    declare desired state, let controllers converge — is the single idea worth internalising first.
+  latest:
+    - Gateway API has largely superseded Ingress for new traffic routing, with TCPRoute and UDPRoute reaching the standard channel in v1.6.
+    - Dynamic Resource Allocation (DRA) is reshaping how GPUs and specialised devices are scheduled, which matters directly for AI workloads.
+    - Sidecar containers are now a first-class native feature rather than a pattern bolted on with init containers.
+  resources:
+    - title: Kubernetes Documentation
+      url: https://kubernetes.io/docs/home/
+      type: docs
+      description: The canonical reference — concepts, tasks, and API docs maintained by the project itself.
+    - title: Kubernetes Tutorials
+      url: https://kubernetes.io/docs/tutorials/
+      type: course
+      description: Official interactive walkthroughs covering basics, stateful apps, and cluster administration.
+    - title: Kubernetes The Hard Way
+      url: https://github.com/kelseyhightower/kubernetes-the-hard-way
+      type: course
+      description: Kelsey Hightower's bootstrap-everything-manually guide — the fastest way to truly understand the control plane.
+    - title: Killercoda — CKA Scenarios
+      url: https://killercoda.com/killer-shell-cka
+      type: tool
+      description: Free browser terminals with timed, exam-style troubleshooting scenarios.
+    - title: learnk8s
+      url: https://learnk8s.io/
+      type: course
+      description: In-depth articles and diagrams on scheduling, networking, and scaling internals.
+    - title: Kubernetes Podcast from Google
+      url: https://kubernetespodcast.com/
+      type: podcast
+      description: Weekly news plus interviews with the maintainers actually building the features.
+    - title: KubeFM
+      url: https://kube.fm/
+      type: podcast
+      description: Practitioner interviews focused on running and scaling Kubernetes in production, including the failures.
+    - title: TechWorld with Nana
+      url: https://www.youtube.com/@TechWorldwithNana
+      type: video
+      description: The most widely used free Kubernetes video course, strong on visual explanation of the moving parts.
+    - title: CNCF YouTube
+      url: https://www.youtube.com/@cncf
+      type: video
+      description: Full KubeCon session recordings — the best source for deep, current, vendor-neutral talks.
+    - title: Kubernetes Blog
+      url: https://kubernetes.io/blog/
+      type: newsletter
+      description: Release announcements and deep dives straight from the project, and a Radar source in this repo.
+
+oke:
+  summary: >-
+    Oracle Container Engine for Kubernetes — managed Kubernetes on OCI. Mostly standard
+    Kubernetes; the differences are in networking, IAM, node pools, and load balancer integration.
+  latest:
+    - Virtual nodes provide a serverless node experience, billing per pod rather than per worker node.
+    - OCI's Always Free ARM capacity makes it genuinely practical to keep a personal cluster running at zero cost.
+  resources:
+    - title: OKE — Service Overview
+      url: https://docs.oracle.com/en-us/iaas/Content/ContEng/Concepts/contengoverview.htm
+      type: docs
+      description: Architecture, cluster types, and core concepts for Kubernetes Engine on OCI.
+    - title: OKE Documentation Home
+      url: https://docs.oracle.com/en-us/iaas/Content/ContEng/home.htm
+      type: docs
+      description: Full task-oriented documentation set for provisioning and operating clusters.
+    - title: Creating a Cluster with OKE
+      url: https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengcreatingclusterusingoke.htm
+      type: docs
+      description: Step-by-step cluster creation, the practical starting point for a first lab.
+    - title: OCI Kubernetes Engine Specialist — Learning Path
+      url: https://learn.oracle.com/ols/learning-path/become-an-oci-kubernetes-engine-specialist/118071/134984
+      type: certification
+      description: Oracle University's free specialist path, ending in an assessment and badge.
+    - title: Kubernetes Engine — Product Page
+      url: https://www.oracle.com/cloud/cloud-native/kubernetes-engine/
+      type: docs
+      description: Feature and pricing overview, useful for comparing virtual versus managed node economics.
+
+helm:
+  summary: >-
+    Templating and release management for Kubernetes manifests. The value is in
+    versioned, repeatable releases; the pain is almost always in the templating layer.
+  latest:
+    - Helm 3 removed Tiller entirely, so releases are stored as secrets in-cluster and permissions follow normal RBAC.
+    - OCI registries are now the standard way to distribute charts, replacing classic chart repositories.
+  resources:
+    - title: Helm Documentation
+      url: https://helm.sh/docs/
+      type: docs
+      description: Official reference for charts, releases, hooks, and the CLI.
+    - title: Helm Quickstart
+      url: https://helm.sh/docs/intro/quickstart/
+      type: course
+      description: The shortest path from install to a deployed release.
+    - title: Chart Template Developer's Guide
+      url: https://helm.sh/docs/chart_template_guide/
+      type: docs
+      description: The section worth reading properly — functions, pipelines, scoping, and why your template renders oddly.
+    - title: Artifact Hub
+      url: https://artifacthub.io/
+      type: tool
+      description: Searchable index of public charts; reading well-built ones is the fastest way to learn chart structure.
+
+terraform:
+  summary: >-
+    Declarative infrastructure provisioning. State management and module design are
+    where real projects succeed or fail, far more than resource syntax.
+  latest:
+    - OpenTofu is now an established MPL-licensed fork after Terraform moved to the BUSL, and is a genuine option for new work.
+    - Stacks and improved testing frameworks are pushing IaC toward proper software engineering practice rather than ad-hoc scripts.
+  resources:
+    - title: Terraform Documentation
+      url: https://developer.hashicorp.com/terraform/docs
+      type: docs
+      description: Language reference, CLI, state, and provider documentation.
+    - title: HashiCorp Terraform Tutorials
+      url: https://developer.hashicorp.com/terraform/tutorials
+      type: course
+      description: Guided, provider-specific tracks from first apply through modules and remote state.
+    - title: OpenTofu Documentation
+      url: https://opentofu.org/docs/
+      type: docs
+      description: Docs for the open-source fork, including migration guidance from Terraform.
+    - title: Terraform Registry
+      url: https://registry.terraform.io/
+      type: tool
+      description: Providers and community modules — read their source before adopting them.
+    - title: Terraform Best Practices
+      url: https://www.terraform-best-practices.com/
+      type: book
+      description: Community handbook on structure, naming, and state layout for codebases that grow.
+
+gitops:
+  summary: >-
+    Git as the single source of truth, with controllers continuously reconciling
+    the cluster toward the committed state. Deployment becomes a pull request, and rollback becomes a revert.
+  latest:
+    - The OpenGitOps project has settled the four core principles, so "GitOps" now has an agreed definition rather than being vendor-specific.
+    - Argo CD and Flux are both CNCF graduated; progressive delivery and drift detection are the current areas of active work.
+  resources:
+    - title: Argo CD Documentation
+      url: https://argo-cd.readthedocs.io/
+      type: docs
+      description: The most widely deployed GitOps controller — application sets, sync waves, and health assessment.
+    - title: Flux
+      url: https://fluxcd.io/
+      type: docs
+      description: The other graduated CNCF GitOps toolkit, built as composable controllers.
+    - title: Flux — Get Started
+      url: https://fluxcd.io/flux/get-started/
+      type: course
+      description: Hands-on bootstrap of a real GitOps loop against your own repository.
+    - title: OpenGitOps
+      url: https://opengitops.dev/
+      type: docs
+      description: The four principles and vocabulary, worth reading before choosing tooling.
+    - title: GitOps.tech
+      url: https://www.gitops.tech/
+      type: docs
+      description: Concise vendor-neutral explanation of the model and its trade-offs.
+    - title: Argo Project
+      url: https://argoproj.github.io/
+      type: community
+      description: Home of Argo CD, Workflows, Rollouts, and Events — Rollouts is the progressive delivery piece.
+
+prometheus:
+  summary: >-
+    Pull-based metrics and the PromQL query language. Learning to think in labels
+    and time series matters more than memorising functions.
+  latest:
+    - Prometheus 3.x brought a substantially faster query engine and a modernised UI.
+    - Native histograms dramatically reduce the cost and bucket-guessing of latency measurement.
+    - Remote-write v2 is standardising long-term storage integration with backends like Mimir, Thanos, and Cortex.
+  resources:
+    - title: Prometheus — Overview
+      url: https://prometheus.io/docs/introduction/overview/
+      type: docs
+      description: Data model, architecture, and where Prometheus deliberately stops.
+    - title: Querying Basics (PromQL)
+      url: https://prometheus.io/docs/prometheus/latest/querying/basics/
+      type: docs
+      description: Selectors, matchers, and operators — reread this once you have real data to query.
+    - title: PromLabs
+      url: https://promlabs.com/
+      type: course
+      description: Training and PromQL exercises from Julius Volz, a Prometheus co-founder.
+    - title: Robust Perception Blog
+      url: https://www.robustperception.io/blog
+      type: newsletter
+      description: Deep archive of Prometheus internals, cardinality, and alerting design posts.
+    - title: Grafana Mimir
+      url: https://grafana.com/docs/mimir/latest/
+      type: tool
+      description: Horizontally scalable long-term storage for Prometheus metrics.
+
+grafana:
+  summary: >-
+    Visualisation and dashboarding across metrics, logs, and traces. The skill is
+    designing dashboards that answer a question, not ones that display everything.
+  latest:
+    - Grafana 12 pushes dashboards-as-code and Git-backed dashboard workflows.
+    - Grafana's assistant and agentic investigation features are folding AI into the observability workflow directly.
+  resources:
+    - title: Grafana Documentation
+      url: https://grafana.com/docs/grafana/latest/
+      type: docs
+      description: Panels, data sources, variables, alerting, and provisioning.
+    - title: Grafana Tutorials
+      url: https://grafana.com/tutorials/
+      type: course
+      description: Task-focused guides, including building your first dashboard and alert.
+    - title: Grafana Play
+      url: https://play.grafana.org/
+      type: tool
+      description: A live public Grafana with real data — the fastest way to inspect how good dashboards are built.
+    - title: Grafana YouTube
+      url: https://www.youtube.com/@Grafana
+      type: video
+      description: GrafanaCON talks, release walkthroughs, and LGTM stack deep dives.
+
+opentelemetry:
+  summary: >-
+    The vendor-neutral standard for traces, metrics, and logs. Instrument once with
+    OTel and you can change backends without reinstrumenting your applications.
+  latest:
+    - OpenTelemetry is a CNCF graduated project and is now the default instrumentation choice for new systems.
+    - Continuous profiling has been added as a fourth signal alongside traces, metrics, and logs.
+    - The Collector's OTTL transformation language is where most real pipeline logic now lives.
+  resources:
+    - title: OpenTelemetry Documentation
+      url: https://opentelemetry.io/docs/
+      type: docs
+      description: Concepts, signals, and the specification behind the whole project.
+    - title: OpenTelemetry Collector
+      url: https://opentelemetry.io/docs/collector/
+      type: docs
+      description: Receivers, processors, exporters, and pipeline configuration — the component you will operate most.
+    - title: Language APIs & SDKs
+      url: https://opentelemetry.io/docs/languages/
+      type: docs
+      description: Per-language instrumentation guides, including auto-instrumentation options.
+    - title: OpenTelemetry Demo
+      url: https://github.com/open-telemetry/opentelemetry-demo
+      type: tool
+      description: A full polyglot microservice application, pre-instrumented — the best hands-on lab in this domain.
+    - title: OpenTelemetry Blog
+      url: https://opentelemetry.io/blog/
+      type: newsletter
+      description: Project updates and practitioner deep dives, and a Radar source in this repo.
+    - title: CNCF TAG Observability
+      url: https://github.com/cncf/tag-observability
+      type: community
+      description: Whitepapers and working groups defining where cloud-native observability is heading.
+
+logging:
+  summary: >-
+    Structured, queryable event records. The discipline is emitting logs designed
+    to be queried and correlated, rather than prose written for a human tailing a file.
+  latest:
+    - OpenTelemetry logs are stable, giving logs the same semantic conventions and correlation IDs as traces.
+    - Label-indexed stores like Loki have shifted cost control away from indexing everything toward disciplined label design.
+  resources:
+    - title: Grafana Loki Documentation
+      url: https://grafana.com/docs/loki/latest/
+      type: docs
+      description: Architecture and operation of a label-indexed log store.
+    - title: LogQL Query Language
+      url: https://grafana.com/docs/loki/latest/query/
+      type: docs
+      description: Loki's query language — deliberately close to PromQL, which makes correlation natural.
+    - title: OpenTelemetry Logs
+      url: https://opentelemetry.io/docs/concepts/signals/logs/
+      type: docs
+      description: The log data model and how trace context gets attached to log records.
+    - title: Vector
+      url: https://vector.dev/docs/
+      type: tool
+      description: High-performance pipeline for collecting, transforming, and routing logs before they reach storage.
+
+tracing:
+  summary: >-
+    Following a single request across service boundaries. Tracing is what turns
+    "the system is slow" into "this call, in this service, on this dependency".
+  latest:
+    - OTLP is now the de facto wire protocol, and Jaeger has adopted it natively.
+    - Trace-to-logs and trace-to-metrics correlation is the current focus, moving from three separate tools to one investigation flow.
+  resources:
+    - title: OpenTelemetry Traces
+      url: https://opentelemetry.io/docs/concepts/signals/traces/
+      type: docs
+      description: Spans, context propagation, and sampling — the concepts every backend shares.
+    - title: Grafana Tempo
+      url: https://grafana.com/docs/tempo/latest/
+      type: docs
+      description: Object-storage-backed tracing backend with TraceQL and tight Loki correlation.
+    - title: Jaeger Documentation
+      url: https://www.jaegertracing.io/docs/
+      type: docs
+      description: The original CNCF tracing backend, useful for understanding sampling strategies.
+
+ebpf-cilium:
+  summary: >-
+    Running sandboxed programs in the Linux kernel, and the networking and observability
+    layer built on top of it. This is where kernel-level visibility meets cloud-native networking.
+  latest:
+    - Cilium is a CNCF graduated project and increasingly the default CNI on managed Kubernetes.
+    - eBPF-based service meshes are removing the per-pod sidecar, cutting latency and resource overhead.
+    - Tetragon extends the same machinery into runtime security enforcement.
+  resources:
+    - title: eBPF — Get Started
+      url: https://ebpf.io/get-started/
+      type: docs
+      description: The canonical entry point — what eBPF is, how programs load, and where to begin.
+    - title: Cilium Documentation
+      url: https://docs.cilium.io/
+      type: docs
+      description: CNI, network policy, Hubble observability, and cluster mesh.
+    - title: eBPF Foundation Resources
+      url: https://ebpf.foundation/ebpf-resources/
+      type: community
+      description: Curated reference guides, talks, and reading maintained by the foundation.
+    - title: Isovalent Labs
+      url: https://isovalent.com/labs/
+      type: course
+      description: Free hands-on browser labs from the team that created Cilium.
+    - title: Cilium on GitHub
+      url: https://github.com/cilium/cilium
+      type: tool
+      description: Source and release notes — a Radar source in this repo.
+    - title: Isovalent YouTube
+      url: https://www.youtube.com/@Isovalent
+      type: video
+      description: eBPF and Cilium deep dives, including eBPF Summit recordings.
+
+sre:
+  summary: >-
+    Reliability as an engineering discipline: SLOs, error budgets, and making
+    reliability a deliberate trade-off rather than an aspiration.
+  latest:
+    - Error-budget-driven release policy is now mainstream practice rather than a Google-specific idea.
+    - AI-assisted incident response is the fastest-moving area, shifting SRE work toward reviewing agent findings.
+  resources:
+    - title: Google SRE Books
+      url: https://sre.google/books/
+      type: book
+      description: The full set, free to read online — still the foundational texts for the field.
+    - title: Site Reliability Engineering — Contents
+      url: https://sre.google/sre-book/table-of-contents/
+      type: book
+      description: Start with the chapters on SLOs, error budgets, and eliminating toil.
+    - title: The SRE Workbook
+      url: https://sre.google/workbook/table-of-contents/
+      type: book
+      description: The practical companion — how to actually implement SLOs in your own organisation.
+    - title: Google SRE Prodcast
+      url: https://sre.google/prodcast/
+      type: podcast
+      description: Google SREs discussing reliability practice with guests.
+    - title: SRE Weekly
+      url: https://sreweekly.com/
+      type: newsletter
+      description: Long-running weekly roundup of incidents, postmortems, and reliability writing.
+    - title: Google Cloud DevOps & SRE Blog
+      url: https://cloud.google.com/blog/products/devops-sre
+      type: newsletter
+      description: DORA research and applied reliability engineering posts.
+
+platform-engineering:
+  summary: >-
+    Building the internal platform other engineers build on — golden paths, self-service,
+    and treating developer experience as a product with real users.
+  latest:
+    - Backstage is the dominant open-source developer portal, with the portal itself now a commodity and the differentiator being the golden paths behind it.
+    - Platform-as-a-product, with adoption metrics and internal user research, is displacing "we built a wiki and a Terraform module".
+  resources:
+    - title: What is Backstage?
+      url: https://backstage.io/docs/overview/what-is-backstage
+      type: docs
+      description: The CNCF developer portal framework — software catalog, templates, and TechDocs.
+    - title: PlatformEngineering.org
+      url: https://platformengineering.org/
+      type: community
+      description: Community hub with talks, a Slack, and the PlatformCon archive.
+    - title: Internal Developer Platform
+      url: https://internaldeveloperplatform.org/
+      type: docs
+      description: Vendor-neutral explanation of IDP components and reference architectures.
+    - title: Team Topologies
+      url: https://teamtopologies.com/
+      type: book
+      description: The organisational model — stream-aligned versus platform teams — that platform work depends on.
+
+aiops:
+  summary: >-
+    Applying AI to operations: anomaly detection, alert correlation, and increasingly
+    LLM agents that investigate incidents end to end rather than just classifying alerts.
+  latest:
+    - AI SRE agents now perform full investigations — query telemetry, read recent changes, form a hypothesis, propose a fix — rather than only clustering alerts.
+    - Open-source tools like K8sGPT and HolmesGPT put agent-assisted diagnosis within reach without a commercial platform.
+    - The current hard problem is guardrails — deciding what an agent may execute versus only recommend.
+  resources:
+    - title: K8sGPT
+      url: https://k8sgpt.ai/
+      type: tool
+      description: Scans clusters and explains failures in plain language — the easiest entry point to AI-assisted diagnosis.
+    - title: K8sGPT on GitHub
+      url: https://github.com/k8sgpt-ai/k8sgpt
+      type: tool
+      description: Source, analyzers, and release notes — a Radar source in this repo.
+    - title: HolmesGPT
+      url: https://github.com/robusta-dev/holmesgpt
+      type: tool
+      description: Agentic investigation tool that pulls in logs, traces, and alerts to reason about incidents.
+    - title: Robusta
+      url: https://robusta.dev/
+      type: docs
+      description: Kubernetes alerting and automation platform behind HolmesGPT.
+    - title: Awesome DevOps AI
+      url: https://github.com/hammadhaqqani/awesome-devops-ai
+      type: community
+      description: Actively maintained list of AI tools, agents, and MCP servers for operations work.
+
+mcp:
+  summary: >-
+    The Model Context Protocol — an open standard for connecting AI models to tools
+    and data. For infrastructure work it is how an agent safely reaches your cluster, tickets, and dashboards.
+  latest:
+    - MCP has become the common integration layer, so an agent from one vendor can use tools built by another.
+    - The official registry has made server discovery and distribution far more practical.
+    - Authorization, scoping, and audit of what a server exposes are the live design concerns.
+  resources:
+    - title: Model Context Protocol
+      url: https://modelcontextprotocol.io/
+      type: docs
+      description: Official documentation — architecture, concepts, and the tool/resource/prompt model.
+    - title: Build an MCP Server
+      url: https://modelcontextprotocol.io/quickstart/server
+      type: course
+      description: The quickstart worth doing first; a working server makes the protocol concrete.
+    - title: MCP on GitHub
+      url: https://github.com/modelcontextprotocol
+      type: tool
+      description: Specification, SDKs, and reference implementations.
+    - title: Reference Servers
+      url: https://github.com/modelcontextprotocol/servers
+      type: tool
+      description: Working servers to read and adapt — the best template for writing your own.
+    - title: MCP Registry
+      url: https://registry.modelcontextprotocol.io/
+      type: tool
+      description: Official discovery registry for published MCP servers.
+    - title: Anthropic MCP Documentation
+      url: https://docs.claude.com/en/docs/mcp
+      type: docs
+      description: Connecting MCP servers to Claude, including transport and configuration details.
+
+agentic-operations:
+  summary: >-
+    Letting agents take real action against infrastructure — with scoping, approval
+    gates, and audit trails. The engineering problem is the guardrails, not the model.
+  latest:
+    - MCP has standardised the tool layer, moving the hard work to permissioning and blast-radius control.
+    - The emerging practice is read-only investigation by default, with writes behind explicit human approval.
+    - Agent actions are increasingly expected to be as auditable as a CI pipeline run.
+  resources:
+    - title: Model Context Protocol
+      url: https://modelcontextprotocol.io/
+      type: docs
+      description: The protocol layer nearly all agent tooling now builds on.
+    - title: Anthropic Engineering Blog
+      url: https://www.anthropic.com/engineering
+      type: newsletter
+      description: Practical writing on agent design, tool use, and evaluation from the team behind MCP.
+    - title: Awesome DevOps AI
+      url: https://github.com/hammadhaqqani/awesome-devops-ai
+      type: community
+      description: Curated agents and MCP servers aimed specifically at operations workflows.
+    - title: CNCF Blog
+      url: https://www.cncf.io/blog/
+      type: newsletter
+      description: Where cloud-native projects publish their agentic and AI-adjacent work — a Radar source in this repo.

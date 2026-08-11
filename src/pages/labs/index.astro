@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { withBase } from '../../lib/url';
 const entries = await getCollection('labs');
 ---
-<BaseLayout title="Labs"><h1>Labs</h1><p class="lede">Practical exercises that turn concepts into operational confidence.</p><div class="grid">{entries.map((entry) => <a class="panel" href={`/labs/${entry.id}`}><h2>{entry.data.title}</h2><p>{entry.data.difficulty} · {entry.data.completed ? 'Completed' : 'Open'}</p></a>)}</div></BaseLayout>
+<BaseLayout title="Labs"><h1>Labs</h1><p class="lede">Practical exercises that turn concepts into operational confidence.</p><div class="grid">{entries.map((entry) => <a class="panel" href={withBase(`/labs/${entry.id}`)}><h2>{entry.data.title}</h2><p>{entry.data.difficulty} · {entry.data.completed ? 'Completed' : 'Open'}</p></a>)}</div></BaseLayout>

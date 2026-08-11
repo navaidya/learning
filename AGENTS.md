@@ -22,6 +22,8 @@
 - Prefer pure functions. Missing learning metrics must normalize available weights rather than be treated as zero.
 - Supported statuses are exactly: `not_started`, `learning`, `practicing`, `review`, and `mastered`.
 - Use semantic HTML, keyboard-accessible controls, visible focus states, sufficient contrast, and responsive layouts. Prioritize readability and information density over decoration.
+- Build every internal link with `withBase()` from `src/lib/url.ts`. The site is served from a `/<repo>` base on GitHub Pages, so hardcoded root-relative hrefs 404 in production while still working locally.
+- Curated learning resources live in `data/resources.yaml`, never inline in components. Only add a URL after verifying it resolves, and prefer primary sources over vendor marketing pages.
 
 ## Engineering Radar
 

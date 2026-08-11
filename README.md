@@ -26,7 +26,7 @@ npm run build
 - `content/labs/`: practical lab guides
 - `content/projects/`: project objectives and milestones
 - `content/inbox/`: raw learning captures
-- `data/`: domain, activity, quiz, and news data
+- `data/`: domain, activity, quiz, curated-resource, and news data
 - `src/lib/`: typed business logic
 - `src/pages/`: statically generated routes
 - `tests/`: Vitest unit tests
@@ -48,6 +48,26 @@ importance: high
 Use the supported statuses `not_started`, `learning`, `practicing`, `review`, and `mastered`. Coverage is 0–100 and confidence is 0–5. Add labs and quiz counts when evidence exists; missing metrics are excluded and available progress weights are normalized.
 
 Labs belong in `content/labs/` and should include objective, setup, task, commands, expected observation, investigation, solution, and lessons learned. Projects belong in `content/projects/` with objective, architecture, milestones, outcomes, progress, and open tasks.
+
+## Skill map pages
+
+Each domain in the skill map has a page at `/skills/<slug>` combining your tracked progress with curated learning resources from `data/resources.yaml`:
+
+```yaml
+kubernetes:
+  summary: One-paragraph orientation for the domain.
+  latest:                    # where the domain actually stands, refreshed by hand
+    - Gateway API has largely superseded Ingress for new traffic routing.
+  resources:
+    - title: Kubernetes Documentation
+      url: https://kubernetes.io/docs/home/
+      type: docs             # docs | course | video | podcast | newsletter | book | tool | community | certification
+      description: One line on why this resource is worth your time.
+```
+
+Resources are grouped by `type` on the page. Prefer primary sources — a project's own docs, its maintainers' talks, community-run podcasts and newsletters — over vendor marketing pages, and **verify a URL resolves before adding it**. `npm test` enforces that every skill-map domain has a summary and at least three resources, that all URLs are https, and that no URL is duplicated within a domain.
+
+Internal links must be built with `withBase()` from `src/lib/url.ts`. GitHub Pages serves the site from `/<repo>`, so a bare `/skills/kubernetes` resolves to the domain root and 404s.
 
 ## Engineering Radar
 

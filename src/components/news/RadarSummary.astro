@@ -1,5 +1,6 @@
 ---
 import type { NewsItem } from '../../lib/news/types';
+import { withBase } from '../../lib/url';
 
 const { items } = Astro.props as { items: NewsItem[] };
 ---
@@ -18,5 +19,5 @@ const { items } = Astro.props as { items: NewsItem[] };
   ) : (
     <p class="lede">No radar items yet. Run the collector to populate the Engineering Radar.</p>
   )}
-  <a href="/news">View full Radar →</a>
+  <a href={withBase('/news')}>View full Radar →</a>
 </section>
