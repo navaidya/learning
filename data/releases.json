@@ -1,1 +1,106 @@
-[]
+[
+  {
+    "project": "holmesgpt",
+    "version": "0.39.0",
+    "publishedDate": "2026-08-10T15:02:51.000Z",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.39.0",
+    "sourceId": "holmesgpt",
+    "title": "0.39.0"
+  },
+  {
+    "project": "argo",
+    "version": "v3.5.0",
+    "publishedDate": "2026-08-07T15:56:38.000Z",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.0",
+    "sourceId": "argo",
+    "title": "v3.5.0"
+  },
+  {
+    "project": "openai",
+    "version": "5.6",
+    "publishedDate": "2026-08-06T10:00:00.000Z",
+    "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+    "sourceId": "openai",
+    "title": "Improving GPT‑5.6 Sol in ChatGPT—and expanding access to GPT-5.6 Luna for free users"
+  },
+  {
+    "project": "terraform",
+    "version": "v1.16.0-beta2",
+    "publishedDate": "2026-08-05T18:07:50.000Z",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-beta2",
+    "sourceId": "terraform",
+    "title": "v1.16.0-beta2"
+  },
+  {
+    "project": "oci-oke",
+    "version": "v8.26.0",
+    "publishedDate": "2026-08-05T13:23:38.000Z",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v8.26.0",
+    "sourceId": "oci-oke",
+    "title": "v8.26.0"
+  },
+  {
+    "project": "cncf",
+    "version": "1.121.0",
+    "publishedDate": "2026-08-05T11:00:00.000Z",
+    "url": "https://www.cncf.io/blog/2026/08/05/opencost-1-121-0-first-of-a-kind-kubernetes-inference-cost-tracking/",
+    "sourceId": "cncf",
+    "title": "OpenCost 1.121.0: First-of-a-kind Kubernetes inference cost tracking"
+  },
+  {
+    "project": "backstage",
+    "version": "v1.54.0-next.2",
+    "publishedDate": "2026-08-04T15:54:54.000Z",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.0-next.2",
+    "sourceId": "backstage",
+    "title": "v1.54.0-next.2"
+  },
+  {
+    "project": "cilium",
+    "version": "1.21.0-pre.0",
+    "publishedDate": "2026-08-03T20:16:05.000Z",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.21.0-pre.0",
+    "sourceId": "cilium",
+    "title": "1.21.0-pre.0"
+  },
+  {
+    "project": "kubernetes",
+    "version": "v1.6",
+    "publishedDate": "2026-08-03T16:00:00.000Z",
+    "url": "https://kubernetes.io/blog/2026/08/03/gateway-api-v1-6-release/",
+    "sourceId": "kubernetes",
+    "title": "Gateway API v1.6: TCPRoute and UDPRoute Graduate to Standard"
+  },
+  {
+    "project": "prometheus",
+    "version": "v0.313.2",
+    "publishedDate": "2026-07-30T13:27:56.000Z",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v0.313.2",
+    "sourceId": "prometheus",
+    "title": "v0.313.2"
+  },
+  {
+    "project": "opentelemetry",
+    "version": "v0.157.0",
+    "publishedDate": "2026-07-22T20:04:49.000Z",
+    "url": "https://opentelemetry.io/blog/2026/lambda-powered-function-land-in-ottl/",
+    "sourceId": "opentelemetry",
+    "title": "Lambda-powered functions land in OTTL"
+  },
+  {
+    "project": "opentofu",
+    "version": "v1.12.5",
+    "publishedDate": "2026-07-21T11:39:19.000Z",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.5",
+    "sourceId": "opentofu",
+    "title": "v1.12.5"
+  },
+  {
+    "project": "k8sgpt",
+    "version": "v0.4.36",
+    "publishedDate": "2026-07-10T14:00:05.000Z",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.36",
+    "sourceId": "k8sgpt",
+    "title": "v0.4.36"
+  }
+]
