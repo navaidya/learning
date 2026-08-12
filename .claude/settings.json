@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "permissions": {
+    "allow": [
+      "Read",
+
+      "Bash(ls)",
+      "Bash(ls *)",
+      "Bash(pwd)",
+      "Bash(cd *)",
+      "Bash(echo *)",
+      "Bash(cat *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(wc *)",
+      "Bash(file *)",
+      "Bash(stat *)",
+      "Bash(tree *)",
+      "Bash(du *)",
+      "Bash(realpath *)",
+      "Bash(basename *)",
+      "Bash(dirname *)",
+
+      "Bash(grep *)",
+      "Bash(rg *)",
+      "Bash(find *)",
+      "Bash(fd *)",
+
+      "Bash(sed *)",
+      "Bash(awk *)",
+      "Bash(cut *)",
+      "Bash(sort *)",
+      "Bash(uniq *)",
+      "Bash(tr *)",
+      "Bash(diff *)",
+      "Bash(jq *)",
+
+      "Bash(which *)",
+      "Bash(command -v *)",
+      "Bash(node --version)",
+      "Bash(npm --version)",
+
+      "Bash(git status)",
+      "Bash(git status *)",
+      "Bash(git log *)",
+      "Bash(git diff *)",
+      "Bash(git show *)",
+      "Bash(git branch)",
+      "Bash(git branch -a)",
+      "Bash(git remote -v)",
+      "Bash(git ls-files *)",
+      "Bash(git rev-parse *)",
+      "Bash(git blame *)",
+      "Bash(git config --get *)",
+      "Bash(git fetch *)",
+
+      "Bash(npm ci)",
+      "Bash(npm install)",
+      "Bash(npm test)",
+      "Bash(npm run build)",
+      "Bash(npm run news:collect)",
+      "Bash(npm ls *)",
+      "Bash(npm outdated *)",
+      "Bash(npx vitest *)",
+      "Bash(npx astro check *)",
+      "Bash(npx astro check)",
+      "Bash(npx astro build)"
+    ],
+    "deny": [
+      "Bash(sed -i *)",
+      "Bash(sed --in-place *)",
+      "Bash(find * -delete*)",
+      "Bash(find * -exec*)",
+      "Bash(find * -ok*)",
+
+      "Bash(npm install *)",
+      "Bash(npm i *)",
+      "Bash(npm add *)"
+    ]
+  }
+}

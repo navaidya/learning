@@ -3,3 +3,7 @@ node_modules/
 dist/
 .DS_Store
 .env
+
+# Per-machine Claude Code overrides. Shared config lives in .claude/settings.json
+# so cloud sessions inherit it; this file must not travel.
+.claude/settings.local.json
