@@ -1,5 +1,25 @@
 [
   {
+    "id": "oci-oke-45ff1b206f77",
+    "title": "v8.27.0",
+    "summary": "8.27.0 (August 11, 2026) Added Support for Compute Host Group API - Quick Recycle Settings Enhancement Support for Exadata Live Update for ExaDB-C@C DomU update |ExaDB-D/C@C/XS Support for HDDP Control Plane DEXREQ Oracle Cloud Infrastructure (OCI) Healthcare Device Data Platform (HDDP) Service Support for Local Timezone in Resource Scheduler Support for ADBS: Availability Domain Selection During and Post Provisioning Bug Fix DATASEC-11511 Fix ZPR configuration discovery import ID",
+    "source": "OCI / OKE",
+    "sourceId": "oci-oke",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v8.27.0",
+    "publishedDate": "2026-08-12T01:00:29.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "oci",
+      "oke",
+      "oracle"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "oci-oke",
+    "releaseVersion": "v8.27.0"
+  },
+  {
     "id": "backstage-2aa6681f1f61",
     "title": "v1.54.0-next.3",
     "summary": "See docs/releases/v1.54.0-next.3-changelog.md for more information.",
@@ -6925,25 +6945,5 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "helm-49ebfa9af015",
-    "title": "Helm v4.2.0",
-    "summary": "Helm v4.2.0 is a feature release. Users are encouraged to upgrade for the best experience. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/packages Notable Changes Switch to goreleaser for release builds Kubernetes client libraries to v1.36 Add mustToToml t",
-    "source": "Helm",
-    "sourceId": "helm",
-    "url": "https://github.com/helm/helm/releases/tag/v4.2.0",
-    "publishedDate": "2026-05-14T01:31:58.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "helm",
-      "packaging"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "helm",
-    "releaseVersion": "v4.2.0"
   }
 ]
