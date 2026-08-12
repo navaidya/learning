@@ -1,5 +1,21 @@
 [
   {
+    "project": "argo",
+    "version": "v3.5.1",
+    "publishedDate": "2026-08-12T12:16:52.000Z",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.1",
+    "sourceId": "argo",
+    "title": "v3.5.1"
+  },
+  {
+    "project": "terraform",
+    "version": "v1.17.0-alpha20260812",
+    "publishedDate": "2026-08-12T12:01:24.000Z",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-alpha20260812",
+    "sourceId": "terraform",
+    "title": "v1.17.0-alpha20260812"
+  },
+  {
     "project": "kyverno",
     "version": "v1.19.0-rc.3",
     "publishedDate": "2026-08-12T08:22:59.000Z",
@@ -56,14 +72,6 @@
     "title": "0.39.0"
   },
   {
-    "project": "argo",
-    "version": "v3.5.0",
-    "publishedDate": "2026-08-07T15:56:38.000Z",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.0",
-    "sourceId": "argo",
-    "title": "v3.5.0"
-  },
-  {
     "project": "flux",
     "version": "v2.9.4",
     "publishedDate": "2026-08-07T14:32:26.000Z",
@@ -86,14 +94,6 @@
     "url": "https://github.com/grafana/loki/releases/tag/v3.6.15",
     "sourceId": "loki",
     "title": "v3.6.15"
-  },
-  {
-    "project": "terraform",
-    "version": "v1.16.0-beta2",
-    "publishedDate": "2026-08-05T18:07:50.000Z",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-beta2",
-    "sourceId": "terraform",
-    "title": "v1.16.0-beta2"
   },
   {
     "project": "cncf",
