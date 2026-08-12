@@ -1,5 +1,13 @@
 [
   {
+    "project": "kyverno",
+    "version": "v1.19.0-rc.3",
+    "publishedDate": "2026-08-12T08:22:59.000Z",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.0-rc.3",
+    "sourceId": "kyverno",
+    "title": "v1.19.0-rc.3"
+  },
+  {
     "project": "oci-oke",
     "version": "v8.27.0",
     "publishedDate": "2026-08-12T01:00:29.000Z",
@@ -22,14 +30,6 @@
     "url": "https://github.com/prometheus/prometheus/releases/tag/v3.14.0-rc.0",
     "sourceId": "prometheus",
     "title": "3.14.0-rc.0 / 2026-08-06"
-  },
-  {
-    "project": "kyverno",
-    "version": "v1.19.0-rc.2",
-    "publishedDate": "2026-08-11T10:10:22.000Z",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.0-rc.2",
-    "sourceId": "kyverno",
-    "title": "v1.19.0-rc.2"
   },
   {
     "project": "robusta",

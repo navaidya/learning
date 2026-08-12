@@ -1,5 +1,63 @@
 [
   {
+    "id": "kyverno-f7d1bee6f036",
+    "title": "v1.19.0-rc.3",
+    "summary": "No content.",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.0-rc.3",
+    "publishedDate": "2026-08-12T08:22:59.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno",
+    "releaseVersion": "v1.19.0-rc.3"
+  },
+  {
+    "id": "kyverno-91ec84b68e4b",
+    "title": "kyverno-policies-chart-3.9.0-rc.3",
+    "summary": "kyverno-policies-chart-3.9.0-rc.3",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-policies-chart-3.9.0-rc.3",
+    "publishedDate": "2026-08-12T07:09:29.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno"
+  },
+  {
+    "id": "kyverno-0704fea0f000",
+    "title": "kyverno-chart-3.9.0-rc.3",
+    "summary": "kyverno-chart-3.9.0-rc.3",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-chart-3.9.0-rc.3",
+    "publishedDate": "2026-08-12T07:09:29.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno"
+  },
+  {
     "id": "oci-oke-45ff1b206f77",
     "title": "v8.27.0",
     "summary": "8.27.0 (August 11, 2026) Added Support for Compute Host Group API - Quick Recycle Settings Enhancement Support for Exadata Live Update for ExaDB-C@C DomU update |ExaDB-D/C@C/XS Support for HDDP Control Plane DEXREQ Oracle Cloud Infrastructure (OCI) Healthcare Device Data Platform (HDDP) Service Support for Local Timezone in Resource Scheduler Support for ADBS: Availability Domain Selection During and Post Provisioning Bug Fix DATASEC-11511 Fix ZPR configuration discovery import ID",
