@@ -1,5 +1,64 @@
 [
   {
+    "id": "containerd-4faa18896850",
+    "title": "containerd 2.2.7",
+    "summary": "Welcome to the v2.2.7 release of containerd! The seventh patch release for containerd 2.2 contains various fixes and updates. Highlights Container Runtime Interface (CRI) Disable checkpoint restore in CreateContainer by default, requiring the enable_experimental_restore_via_create configuration option to enable (#13937) Deprecate checkpoint restore in CreateContainer (#13872) Support non-UTF-8 binary environment variable values in CRI (#13455) Disable checkpoint restore codepaths when CRIU is no",
+    "source": "containerd",
+    "sourceId": "containerd",
+    "url": "https://github.com/containerd/containerd/releases/tag/v2.2.7",
+    "publishedDate": "2026-08-12T18:02:29.000Z",
+    "domain": "containers",
+    "topics": [
+      "containers",
+      "containerd",
+      "runtime"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "containerd",
+    "releaseVersion": "2.2.7"
+  },
+  {
+    "id": "containerd-3427cac90dc0",
+    "title": "containerd 2.3.4",
+    "summary": "Welcome to the v2.3.4 release of containerd! The fourth patch release for containerd 2.3 contains various fixes and updates. Highlights Container Runtime Interface (CRI) Disable checkpoint restore in CreateContainer by default, requiring the enable_experimental_restore_via_create configuration option to enable (#13913) Set default runtimeFeatures.UserNamespacesHostNetwork to true in CRI (#13914) Deprecate checkpoint restore in CreateContainer (#13868) Support non-UTF-8 binary environment variabl",
+    "source": "containerd",
+    "sourceId": "containerd",
+    "url": "https://github.com/containerd/containerd/releases/tag/v2.3.4",
+    "publishedDate": "2026-08-12T17:59:47.000Z",
+    "domain": "containers",
+    "topics": [
+      "containers",
+      "containerd",
+      "runtime"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "containerd",
+    "releaseVersion": "2.3.4"
+  },
+  {
+    "id": "terraform-6cd25af6ca46",
+    "title": "v1.16.0-rc1",
+    "summary": "1.16.0-rc1 (August 12, 2026) NEW FEATURES: Terraform now stores planned private data for providers, allowing provider-specific state to be preserved across plan and apply. (#37986) terraform_data: The new store block can hold ephemeral and sensitive values across plan and apply. (#38298) Providers can now use nested blocks as computed values (#38305) import: import blocks inside modules are now supported. (#38352) Terraform is now available as a pre-built binary for Linux s390x (zLinux). (#38384",
+    "source": "Terraform",
+    "sourceId": "terraform",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-rc1",
+    "publishedDate": "2026-08-12T15:22:32.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "terraform",
+    "releaseVersion": "v1.16.0-rc1"
+  },
+  {
     "id": "argo-56632baf4317",
     "title": "v3.5.1",
     "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.1/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.1/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container imag",
@@ -7092,62 +7151,6 @@
       "openai",
       "ai-agent",
       "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "kubernetes-f23572fc961c",
-    "title": "Kubernetes v1.36: Deprecation and removal of Service ExternalIPs",
-    "summary": "The .spec.externalIPs field for Service was an early attempt to provide cloud-load-balancer-like functionality for non-cloud clusters. Unfortunately, the API assumes that every user in the cluster is fully trusted, and in any situation where that is not the case, it enables various security exploits, as described in CVE-2020-8554. Since Kubernetes 1.21, the Kubernetes project has recommended that all users disable .spec.externalIPs. To make that easier, Kubernetes also added an admission control",
-    "source": "Kubernetes",
-    "sourceId": "kubernetes",
-    "url": "https://kubernetes.io/blog/2026/05/14/kubernetes-v1-36-deprecation-and-removal-of-service-externalips/",
-    "publishedDate": "2026-05-14T18:35:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes"
-    ],
-    "importance": "critical",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "kubernetes",
-    "releaseVersion": "v1.36"
-  },
-  {
-    "id": "helm-a2a3bd2f4a79",
-    "title": "Helm v3.21.0",
-    "summary": "Helm v3.21.0 is a feature release. Users are encouraged to upgrade for the best experience. WarningHelm v3 is approaching end-of-life. Please update to Helm v4. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/packages Notable Changes Kubernetes client libra",
-    "source": "Helm",
-    "sourceId": "helm",
-    "url": "https://github.com/helm/helm/releases/tag/v3.21.0",
-    "publishedDate": "2026-05-14T17:41:50.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "helm",
-      "packaging"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "helm",
-    "releaseVersion": "v3.21.0"
-  },
-  {
-    "id": "opentelemetry-6c9203505e82",
-    "title": "Inside the LLM Call: GenAI Observability with OpenTelemetry",
-    "summary": "Your AI agent just took 45 seconds to answer a simple question. Was it the model? A slow tool call? A retry loop? Every time an application calls an LLM, a chain of model calls, tool invocations, and token exchanges happens behind the scenes — and without observability, you are guessing. The OpenTelemetry Semantic Conventions for Generative AI give you that visibility. They standardize how GenAI operations are recorded — the model being called, input and output token counts, and when opted in, t",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/genai-observability/",
-    "publishedDate": "2026-05-14T15:05:07.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
     ],
     "importance": "medium",
     "architectureShift": false,
