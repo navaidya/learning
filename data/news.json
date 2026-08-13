@@ -1,5 +1,163 @@
 [
   {
+    "id": "vector-dcdc0946f8da",
+    "title": "vdev-v0.3.14",
+    "summary": "No content.",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.14",
+    "publishedDate": "2026-08-13T19:56:38.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
+    "id": "tempo-1f1ad87d236d",
+    "title": "v3.0.3",
+    "summary": "v3.0.3",
+    "source": "Grafana Tempo",
+    "sourceId": "tempo",
+    "url": "https://github.com/grafana/tempo/releases/tag/v3.0.3",
+    "publishedDate": "2026-08-13T19:51:32.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tempo",
+      "tracing",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "tempo",
+    "releaseVersion": "v3.0.3"
+  },
+  {
+    "id": "crossplane-e4d559ecc60e",
+    "title": "v2.5.0-rc.0",
+    "summary": "Release candidate v2.5.0-rc.0",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.5.0-rc.0",
+    "publishedDate": "2026-08-13T19:07:26.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.5.0-rc.0"
+  },
+  {
+    "id": "tempo-9408bf2f67c0",
+    "title": "v2.10.8",
+    "summary": "v2.10.8",
+    "source": "Grafana Tempo",
+    "sourceId": "tempo",
+    "url": "https://github.com/grafana/tempo/releases/tag/v2.10.8",
+    "publishedDate": "2026-08-13T17:07:09.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tempo",
+      "tracing",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "tempo",
+    "releaseVersion": "v2.10.8"
+  },
+  {
+    "id": "pulumi-5c26e3a618dc",
+    "title": "pkg/v3.257.0: Changelog and go.mod updates for v3.257.0 (#24314)",
+    "summary": "Co-authored-by: github-actions github-actions@github.com Co-authored-by: Julien Poissonnier julien@caffeine.lu",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.257.0",
+    "publishedDate": "2026-08-13T16:45:04.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.257.0"
+  },
+  {
+    "id": "hashicorp-834619ec0684",
+    "title": "Packer v1.16.0 brings verifiable provenance to machine images",
+    "summary": "Packer v1.16.0 adds native SLSA provenance generation and verification for machine images, along with new HCL2 features for provisioners and variables.",
+    "source": "HashiCorp",
+    "sourceId": "hashicorp",
+    "url": "https://www.hashicorp.com/blog/packer-v1160-brings-verifiable-provenance-to-machine-images",
+    "publishedDate": "2026-08-13T16:00:00.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "vault",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "hashicorp",
+    "releaseVersion": "v1.16.0"
+  },
+  {
+    "id": "helm-a6e2fbd6632c",
+    "title": "Helm v4.2.4",
+    "summary": "Helm v4.2.4 is a patch release. Users are encouraged to upgrade for the best experience. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/packages Notable Changes fix: Improve error reporting for helm template --debug with --show-only- #31185 by @kyokuping f",
+    "source": "Helm",
+    "sourceId": "helm",
+    "url": "https://github.com/helm/helm/releases/tag/v4.2.4",
+    "publishedDate": "2026-08-13T15:33:04.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "helm",
+      "packaging"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "helm",
+    "releaseVersion": "v4.2.4"
+  },
+  {
+    "id": "pulumi-58d71ae0fb83",
+    "title": "v3.257.0",
+    "summary": "3.257.0 (2026-08-13) Features [cli] Offer to create a first project after logging in to an account with no stacks #24133 [cli/do] Auto-assign identifiers to existing stack resources in pulumi do input expressions, and add pulumi do show-resources to list them #24184 [cli/do] Make \"pulumi do <pkg> <resource> patch <name> work in stateful mode, overlaying the supplied inputs onto the existing snippet\" #24295 [cli/state] Implement pulumi state get to show individual resources #24191 [cli/do] Fall b",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.257.0",
+    "publishedDate": "2026-08-13T14:42:12.000Z",
+    "domain": "logging",
+    "topics": [
+      "logging",
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.257.0"
+  },
+  {
     "id": "tempo-07195f07df3f",
     "title": "v2.9.5",
     "summary": "v2.9.5",
@@ -18,6 +176,25 @@
     "releaseRelated": true,
     "releaseProject": "tempo",
     "releaseVersion": "v2.9.5"
+  },
+  {
+    "id": "pulumi-6412575f873b",
+    "title": "sdk/v3.257.0: TestNewDefaultOrgResolution: make sure promises are done (#24307)",
+    "summary": "This test currently triggers the race detector occasionally, because we are still writing to diagtest.LogSink (which in turn calls t.Logf, which is not allowed after the test is done). This comes from goroutines not being finished before the test exits. Wait for these goroutines to avoid this issue. Noticed this in https://github.com/pulumi/pulumi/actions/runs/31688936692/job/94412993439",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.257.0",
+    "publishedDate": "2026-08-13T12:30:24.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.257.0"
   },
   {
     "id": "cncf-5f75f92b386e",
@@ -52,6 +229,46 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
+  },
+  {
+    "id": "openai-855fa77e93e1",
+    "title": "The builder’s guide to GPT‑5.6",
+    "summary": "Learn how startups use GPT-5.6 to build faster, more cost-efficient AI agents with smarter model selection and new Responses API capabilities.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/builders-guide-to-gpt-5-6",
+    "publishedDate": "2026-08-13T11:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "openai",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "openai",
+    "releaseVersion": "5.6"
+  },
+  {
+    "id": "openai-6357d7795d21",
+    "title": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
+    "summary": "Preview Ultrafast, a new OpenAI API service tier that runs GPT-5.6 Sol up to 14× faster. Powered by Cerebras, it delivers up to 750 output tokens per second.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/previewing-ultrafast",
+    "publishedDate": "2026-08-13T10:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "openai"
   },
   {
     "id": "containerd-4faa18896850",
@@ -7136,41 +7353,5 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "kubernetes-bc0a83ee3533",
-    "title": "Kubernetes v1.36: New Metric for Route Sync in the Cloud Controller Manager",
-    "summary": "This article was originally published with the wrong date. It was later republished, dated the 15th of May 2026. Kubernetes v1.36 introduces a new alpha counter metric route_controller_route_sync_total to the Cloud Controller Manager (CCM) route controller implementation at k8s.io/cloud-provider. This metric increments each time routes are synced with the cloud provider. A/B testing watch-based route reconciliationThis metric was added to help operators validate the CloudControllerManagerWatchBa",
-    "source": "Kubernetes",
-    "sourceId": "kubernetes",
-    "url": "https://kubernetes.io/blog/2026/05/15/ccm-new-metric-route-sync-total/",
-    "publishedDate": "2026-05-15T18:35:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kubernetes",
-    "releaseVersion": "v1.36"
-  },
-  {
-    "id": "kubernetes-0d3c3269260f",
-    "title": "Kubernetes v1.36: Mixed Version Proxy Graduates to Beta",
-    "summary": "Back in Kubernetes 1.28, we introduced the Mixed Version Proxy (MVP) as an Alpha feature (under the feature gate UnknownVersionInteroperabilityProxy) in a previous blog post. The goal was simple but critical: make cluster upgrades safer by ensuring that requests for resources not yet known to an older API server are correctly routed to a newer peer API server, instead of returning an incorrect 404 Not Found. We are excited to announce that the Mixed Version Proxy is moving to Beta in Kubernetes ",
-    "source": "Kubernetes",
-    "sourceId": "kubernetes",
-    "url": "https://kubernetes.io/blog/2026/05/15/kubernetes-1-36-feature-mixed-version-proxy-beta/",
-    "publishedDate": "2026-05-15T18:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes"
-    ],
-    "importance": "critical",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "kubernetes",
-    "releaseVersion": "v1.36"
   }
 ]

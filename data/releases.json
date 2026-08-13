@@ -1,11 +1,51 @@
 [
   {
     "project": "tempo",
-    "version": "v2.9.5",
-    "publishedDate": "2026-08-13T14:11:57.000Z",
-    "url": "https://github.com/grafana/tempo/releases/tag/v2.9.5",
+    "version": "v3.0.3",
+    "publishedDate": "2026-08-13T19:51:32.000Z",
+    "url": "https://github.com/grafana/tempo/releases/tag/v3.0.3",
     "sourceId": "tempo",
-    "title": "v2.9.5"
+    "title": "v3.0.3"
+  },
+  {
+    "project": "crossplane",
+    "version": "v2.5.0-rc.0",
+    "publishedDate": "2026-08-13T19:07:26.000Z",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.5.0-rc.0",
+    "sourceId": "crossplane",
+    "title": "v2.5.0-rc.0"
+  },
+  {
+    "project": "pulumi",
+    "version": "v3.257.0",
+    "publishedDate": "2026-08-13T16:45:04.000Z",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.257.0",
+    "sourceId": "pulumi",
+    "title": "pkg/v3.257.0: Changelog and go.mod updates for v3.257.0 (#24314)"
+  },
+  {
+    "project": "hashicorp",
+    "version": "v1.16.0",
+    "publishedDate": "2026-08-13T16:00:00.000Z",
+    "url": "https://www.hashicorp.com/blog/packer-v1160-brings-verifiable-provenance-to-machine-images",
+    "sourceId": "hashicorp",
+    "title": "Packer v1.16.0 brings verifiable provenance to machine images"
+  },
+  {
+    "project": "helm",
+    "version": "v4.2.4",
+    "publishedDate": "2026-08-13T15:33:04.000Z",
+    "url": "https://github.com/helm/helm/releases/tag/v4.2.4",
+    "sourceId": "helm",
+    "title": "Helm v4.2.4"
+  },
+  {
+    "project": "openai",
+    "version": "5.6",
+    "publishedDate": "2026-08-13T11:00:00.000Z",
+    "url": "https://openai.com/index/builders-guide-to-gpt-5-6",
+    "sourceId": "openai",
+    "title": "The builder’s guide to GPT‑5.6"
   },
   {
     "project": "containerd",
@@ -112,14 +152,6 @@
     "title": "OpenCost 1.121.0: First-of-a-kind Kubernetes inference cost tracking"
   },
   {
-    "project": "pulumi",
-    "version": "v3.256.0",
-    "publishedDate": "2026-08-04T20:17:53.000Z",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.256.0",
-    "sourceId": "pulumi",
-    "title": "pkg/v3.256.0: Changelog and go.mod updates for v3.256.0 (#24195)"
-  },
-  {
     "project": "opentelemetry-collector",
     "version": "v1.64.0",
     "publishedDate": "2026-08-04T13:44:21.000Z",
@@ -152,28 +184,12 @@
     "title": "vdev-v0.3.11: chore(ci): bump actions/labeler from 6.1.0 to 7.0.0 (#25998)"
   },
   {
-    "project": "hashicorp",
-    "version": "2.0",
-    "publishedDate": "2026-07-31T07:00:00.000Z",
-    "url": "https://www.hashicorp.com/blog/consul-cyberark-wim-external-ca-for-the-service-mesh",
-    "sourceId": "hashicorp",
-    "title": "Consul + CyberArk WIM: External CA for the service mesh"
-  },
-  {
     "project": "etcd",
     "version": "v3.7.1",
     "publishedDate": "2026-07-23T19:37:53.000Z",
     "url": "https://github.com/etcd-io/etcd/releases/tag/v3.7.1",
     "sourceId": "etcd",
     "title": "v3.7.1"
-  },
-  {
-    "project": "crossplane",
-    "version": "v2.3.4",
-    "publishedDate": "2026-07-23T14:12:29.000Z",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.3.4",
-    "sourceId": "crossplane",
-    "title": "v2.3.4"
   },
   {
     "project": "opentelemetry",
@@ -222,13 +238,5 @@
     "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.36",
     "sourceId": "k8sgpt",
     "title": "v0.4.36"
-  },
-  {
-    "project": "helm",
-    "version": "v3.21.3",
-    "publishedDate": "2026-07-09T21:20:27.000Z",
-    "url": "https://github.com/helm/helm/releases/tag/v3.21.3",
-    "sourceId": "helm",
-    "title": "Helm v3.21.3"
   }
 ]
