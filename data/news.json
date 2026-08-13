@@ -1,5 +1,59 @@
 [
   {
+    "id": "tempo-07195f07df3f",
+    "title": "v2.9.5",
+    "summary": "v2.9.5",
+    "source": "Grafana Tempo",
+    "sourceId": "tempo",
+    "url": "https://github.com/grafana/tempo/releases/tag/v2.9.5",
+    "publishedDate": "2026-08-13T14:11:57.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tempo",
+      "tracing",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "tempo",
+    "releaseVersion": "v2.9.5"
+  },
+  {
+    "id": "cncf-5f75f92b386e",
+    "title": "Lightweight Dragonfly Deployment: P2P Distribution Without the Database Stack",
+    "summary": "Dragonfly speeds up file and container image distribution using peer-to-peer (P2P) technology, but a standard installation deploys several components and dependencies. Beyond the Scheduler, Seed Client, and Client that move data, a traditional setup requires a...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/08/13/lightweight-dragonfly-deployment-p2p-distribution-without-the-database-stack/",
+    "publishedDate": "2026-08-13T11:30:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-40b75ac77627",
+    "title": "LLMOps and platform engineering: Who should own the AI pipeline?",
+    "summary": "A few years ago, getting a model into production meant a data scientist, a DevOps engineer, and a narrow set of tools: train it, test it, ship it, watch the dashboards. Large language models broke that...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/08/13/llmops-and-platform-engineering-who-should-own-the-ai-pipeline/",
+    "publishedDate": "2026-08-13T11:00:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "containerd-4faa18896850",
     "title": "containerd 2.2.7",
     "summary": "Welcome to the v2.2.7 release of containerd! The seventh patch release for containerd 2.2 contains various fixes and updates. Highlights Container Runtime Interface (CRI) Disable checkpoint restore in CreateContainer by default, requiring the enable_experimental_restore_via_create configuration option to enable (#13937) Deprecate checkpoint restore in CreateContainer (#13872) Support non-UTF-8 binary environment variable values in CRI (#13455) Disable checkpoint restore codepaths when CRIU is no",

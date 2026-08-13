@@ -1,5 +1,13 @@
 [
   {
+    "project": "tempo",
+    "version": "v2.9.5",
+    "publishedDate": "2026-08-13T14:11:57.000Z",
+    "url": "https://github.com/grafana/tempo/releases/tag/v2.9.5",
+    "sourceId": "tempo",
+    "title": "v2.9.5"
+  },
+  {
     "project": "containerd",
     "version": "2.2.7",
     "publishedDate": "2026-08-12T18:02:29.000Z",
@@ -150,14 +158,6 @@
     "url": "https://www.hashicorp.com/blog/consul-cyberark-wim-external-ca-for-the-service-mesh",
     "sourceId": "hashicorp",
     "title": "Consul + CyberArk WIM: External CA for the service mesh"
-  },
-  {
-    "project": "tempo",
-    "version": "v2.9.4",
-    "publishedDate": "2026-07-24T12:29:33.000Z",
-    "url": "https://github.com/grafana/tempo/releases/tag/v2.9.4",
-    "sourceId": "tempo",
-    "title": "v2.9.4"
   },
   {
     "project": "etcd",
