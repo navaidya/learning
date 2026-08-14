@@ -1,19 +1,27 @@
 [
   {
+    "project": "crossplane",
+    "version": "v2.4.0-rc.1",
+    "publishedDate": "2026-08-14T00:18:19.000Z",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.4.0-rc.1",
+    "sourceId": "crossplane",
+    "title": "apis/v2.4.0-rc.1"
+  },
+  {
     "project": "tempo",
     "version": "v3.0.3",
-    "publishedDate": "2026-08-13T19:51:32.000Z",
+    "publishedDate": "2026-08-13T20:37:13.000Z",
     "url": "https://github.com/grafana/tempo/releases/tag/v3.0.3",
     "sourceId": "tempo",
     "title": "v3.0.3"
   },
   {
-    "project": "crossplane",
-    "version": "v2.5.0-rc.0",
-    "publishedDate": "2026-08-13T19:07:26.000Z",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.5.0-rc.0",
-    "sourceId": "crossplane",
-    "title": "v2.5.0-rc.0"
+    "project": "helm",
+    "version": "v3.21.4",
+    "publishedDate": "2026-08-13T20:16:41.000Z",
+    "url": "https://github.com/helm/helm/releases/tag/v3.21.4",
+    "sourceId": "helm",
+    "title": "v3.21.4"
   },
   {
     "project": "pulumi",
@@ -30,14 +38,6 @@
     "url": "https://www.hashicorp.com/blog/packer-v1160-brings-verifiable-provenance-to-machine-images",
     "sourceId": "hashicorp",
     "title": "Packer v1.16.0 brings verifiable provenance to machine images"
-  },
-  {
-    "project": "helm",
-    "version": "v4.2.4",
-    "publishedDate": "2026-08-13T15:33:04.000Z",
-    "url": "https://github.com/helm/helm/releases/tag/v4.2.4",
-    "sourceId": "helm",
-    "title": "Helm v4.2.4"
   },
   {
     "project": "openai",

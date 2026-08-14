@@ -1,5 +1,147 @@
 [
   {
+    "id": "crossplane-d7389d9963e2",
+    "title": "apis/v2.4.0-rc.1",
+    "summary": "Release candidate v2.4.0-rc.1",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.4.0-rc.1",
+    "publishedDate": "2026-08-14T00:18:19.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.4.0-rc.1"
+  },
+  {
+    "id": "crossplane-c05a27fa3cd1",
+    "title": "apis/v2.5.0-rc.0",
+    "summary": "Release candidate v2.5.0-rc.0",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.5.0-rc.0",
+    "publishedDate": "2026-08-14T00:18:15.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.5.0-rc.0"
+  },
+  {
+    "id": "crossplane-a96c06b0166e",
+    "title": "v2.4.0-rc.1",
+    "summary": "Release candidate v2.4.0-rc.1",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.0-rc.1",
+    "publishedDate": "2026-08-13T23:48:34.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.4.0-rc.1"
+  },
+  {
+    "id": "tempo-1f1ad87d236d",
+    "title": "v3.0.3",
+    "summary": "Security operations: Update Go to 1.26.5 (CVE-2026-39822, CVE-2026-27145, CVE-2026-42504, CVE-2026-42505, CVE-2026-42507), google.golang.org/grpc to v1.82.1 (GHSA-hrxh-6v49-42gf), golang.org/x/net to v0.56.0 (CVE-2026-46600), golang.org/x/text to v0.39.0 (CVE-2026-56852), and go.opentelemetry.io/otel to v1.44.0 (CVE-2026-41178) (#7726) (@mattdurham) Enhancements query-frontend: Add Tempo configuration documentation to the MCP server via the docs-config tool and docs://config/overview and docs://",
+    "source": "Grafana Tempo",
+    "sourceId": "tempo",
+    "url": "https://github.com/grafana/tempo/releases/tag/v3.0.3",
+    "publishedDate": "2026-08-13T20:37:13.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "tempo",
+      "tracing",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "tempo",
+    "releaseVersion": "v3.0.3"
+  },
+  {
+    "id": "tempo-9408bf2f67c0",
+    "title": "v2.10.8",
+    "summary": "Security operations: Update Go to 1.26.5 (CVE-2026-39822, CVE-2026-27145, CVE-2026-42504, CVE-2026-42505, CVE-2026-42507), google.golang.org/grpc to v1.82.1 (GHSA-hrxh-6v49-42gf), golang.org/x/net to v0.56.0 (CVE-2026-46600), golang.org/x/text to v0.39.0 (CVE-2026-56852), and go.opentelemetry.io/otel to v1.44.0 (CVE-2026-41178) (#7725) (@mattdurham)",
+    "source": "Grafana Tempo",
+    "sourceId": "tempo",
+    "url": "https://github.com/grafana/tempo/releases/tag/v2.10.8",
+    "publishedDate": "2026-08-13T20:37:12.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "tempo",
+      "tracing",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "tempo",
+    "releaseVersion": "v2.10.8"
+  },
+  {
+    "id": "tempo-07195f07df3f",
+    "title": "v2.9.5",
+    "summary": "Security operations: Update google.golang.org/grpc to v1.82.1 (GHSA-hrxh-6v49-42gf) and go.opentelemetry.io/otel to v1.44.0 (CVE-2026-41178) (#7724) (@mattdurham)",
+    "source": "Grafana Tempo",
+    "sourceId": "tempo",
+    "url": "https://github.com/grafana/tempo/releases/tag/v2.9.5",
+    "publishedDate": "2026-08-13T20:37:04.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "tempo",
+      "tracing",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "tempo",
+    "releaseVersion": "v2.9.5"
+  },
+  {
+    "id": "helm-b268bf26ffb8",
+    "title": "v3.21.4",
+    "summary": "Helm release v3.21.4",
+    "source": "Helm",
+    "sourceId": "helm",
+    "url": "https://github.com/helm/helm/releases/tag/v3.21.4",
+    "publishedDate": "2026-08-13T20:16:41.000Z",
+    "domain": "helm",
+    "topics": [
+      "helm",
+      "packaging"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "helm",
+    "releaseVersion": "v3.21.4"
+  },
+  {
     "id": "vector-dcdc0946f8da",
     "title": "vdev-v0.3.14",
     "summary": "No content.",
@@ -17,26 +159,6 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "vector"
-  },
-  {
-    "id": "tempo-1f1ad87d236d",
-    "title": "v3.0.3",
-    "summary": "v3.0.3",
-    "source": "Grafana Tempo",
-    "sourceId": "tempo",
-    "url": "https://github.com/grafana/tempo/releases/tag/v3.0.3",
-    "publishedDate": "2026-08-13T19:51:32.000Z",
-    "domain": "tracing",
-    "topics": [
-      "tempo",
-      "tracing",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "tempo",
-    "releaseVersion": "v3.0.3"
   },
   {
     "id": "crossplane-e4d559ecc60e",
@@ -57,26 +179,6 @@
     "releaseRelated": true,
     "releaseProject": "crossplane",
     "releaseVersion": "v2.5.0-rc.0"
-  },
-  {
-    "id": "tempo-9408bf2f67c0",
-    "title": "v2.10.8",
-    "summary": "v2.10.8",
-    "source": "Grafana Tempo",
-    "sourceId": "tempo",
-    "url": "https://github.com/grafana/tempo/releases/tag/v2.10.8",
-    "publishedDate": "2026-08-13T17:07:09.000Z",
-    "domain": "tracing",
-    "topics": [
-      "tempo",
-      "tracing",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "tempo",
-    "releaseVersion": "v2.10.8"
   },
   {
     "id": "pulumi-5c26e3a618dc",
@@ -156,26 +258,6 @@
     "releaseRelated": true,
     "releaseProject": "pulumi",
     "releaseVersion": "v3.257.0"
-  },
-  {
-    "id": "tempo-07195f07df3f",
-    "title": "v2.9.5",
-    "summary": "v2.9.5",
-    "source": "Grafana Tempo",
-    "sourceId": "tempo",
-    "url": "https://github.com/grafana/tempo/releases/tag/v2.9.5",
-    "publishedDate": "2026-08-13T14:11:57.000Z",
-    "domain": "tracing",
-    "topics": [
-      "tempo",
-      "tracing",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "tempo",
-    "releaseVersion": "v2.9.5"
   },
   {
     "id": "pulumi-6412575f873b",
