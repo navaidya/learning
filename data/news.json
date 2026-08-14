@@ -1,5 +1,23 @@
 [
   {
+    "id": "opentelemetry-1de267160b15",
+    "title": "What can you do with OpenTelemetry entity events?",
+    "summary": "Metrics, logs, and traces tell you how your systems behave. They are much quieter about what actually exists: which hosts, interfaces, switches, services, and volumes are out there right now, and, crucially, how that picture changed over the last hour, day, or quarter. That living inventory has stayed a blind spot in the open observability stack. OpenTelemetry&rsquo;s entity events, coming out of the Entities SIG and described in the Entity Data Model, are the piece that starts to close it. Enti",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/consuming-opentelemetry-entity-events/",
+    "publishedDate": "2026-08-14T07:10:08.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "crossplane-d7389d9963e2",
     "title": "apis/v2.4.0-rc.1",
     "summary": "Release candidate v2.4.0-rc.1",
