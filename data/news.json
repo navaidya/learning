@@ -1,5 +1,65 @@
 [
   {
+    "id": "crossplane-a96c06b0166e",
+    "title": "v2.4.0-rc.1",
+    "summary": "❗ Important Crossplane version v2.4.0-rc.1 is a release candidate intended to collect input from the community and offer users an opportunity to experiment with Crossplane in non-production environments before the official release of version v2.4.0. WarningThis is a pre-release; do not use it in production environments! To install Crossplane with this release: helm repo add crossplane-stable https://charts.crossplane.io/stable --force-update helm install crossplane --namespace crossplane-system ",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.0-rc.1",
+    "publishedDate": "2026-08-14T16:06:42.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.4.0-rc.1"
+  },
+  {
+    "id": "helm-a6e2fbd6632c",
+    "title": "Helm v4.2.4",
+    "summary": "Helm v4.2.4 is a patch release. Users are encouraged to upgrade for the best experience. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/packages Notable Changes fix: Improve error reporting for helm template --debug with --show-only- #31185 by @kyokuping f",
+    "source": "Helm",
+    "sourceId": "helm",
+    "url": "https://github.com/helm/helm/releases/tag/v4.2.4",
+    "publishedDate": "2026-08-14T15:03:07.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "helm",
+      "packaging"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "helm",
+    "releaseVersion": "v4.2.4"
+  },
+  {
+    "id": "helm-b268bf26ffb8",
+    "title": "Helm v3.21.4",
+    "summary": "Helm v3.21.4 is a patch release. Users are encouraged to upgrade for the best experience. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/packages Notable Changes fix(engine): prevent Files.Lines panic on empty file (backport to v3)- #32303 by @mahesh-sadup",
+    "source": "Helm",
+    "sourceId": "helm",
+    "url": "https://github.com/helm/helm/releases/tag/v3.21.4",
+    "publishedDate": "2026-08-14T15:00:06.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "helm",
+      "packaging"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "helm",
+    "releaseVersion": "v3.21.4"
+  },
+  {
     "id": "cncf-f6206decda04",
     "title": "Eleven minutes, zero humans: Building a self-healing Kubernetes upgrade pipeline on Kairos",
     "summary": "Once upon a time, upgrading a Kubernetes control plane meant staying awake for it. SSH into every node. Run the upgrade by hand. Watch etcd health the whole time, hoping quorum holds through every reboot. This...",
@@ -76,26 +136,6 @@
     "releaseVersion": "v2.5.0-rc.0"
   },
   {
-    "id": "crossplane-a96c06b0166e",
-    "title": "v2.4.0-rc.1",
-    "summary": "Release candidate v2.4.0-rc.1",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.0-rc.1",
-    "publishedDate": "2026-08-13T23:48:34.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v2.4.0-rc.1"
-  },
-  {
     "id": "tempo-1f1ad87d236d",
     "title": "v3.0.3",
     "summary": "Security operations: Update Go to 1.26.5 (CVE-2026-39822, CVE-2026-27145, CVE-2026-42504, CVE-2026-42505, CVE-2026-42507), google.golang.org/grpc to v1.82.1 (GHSA-hrxh-6v49-42gf), golang.org/x/net to v0.56.0 (CVE-2026-46600), golang.org/x/text to v0.39.0 (CVE-2026-56852), and go.opentelemetry.io/otel to v1.44.0 (CVE-2026-41178) (#7726) (@mattdurham) Enhancements query-frontend: Add Tempo configuration documentation to the MCP server via the docs-config tool and docs://config/overview and docs://",
@@ -157,25 +197,6 @@
     "releaseRelated": true,
     "releaseProject": "tempo",
     "releaseVersion": "v2.9.5"
-  },
-  {
-    "id": "helm-b268bf26ffb8",
-    "title": "v3.21.4",
-    "summary": "Helm release v3.21.4",
-    "source": "Helm",
-    "sourceId": "helm",
-    "url": "https://github.com/helm/helm/releases/tag/v3.21.4",
-    "publishedDate": "2026-08-13T20:16:41.000Z",
-    "domain": "helm",
-    "topics": [
-      "helm",
-      "packaging"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "helm",
-    "releaseVersion": "v3.21.4"
   },
   {
     "id": "vector-dcdc0946f8da",
@@ -254,26 +275,6 @@
     "releaseRelated": true,
     "releaseProject": "hashicorp",
     "releaseVersion": "v1.16.0"
-  },
-  {
-    "id": "helm-a6e2fbd6632c",
-    "title": "Helm v4.2.4",
-    "summary": "Helm v4.2.4 is a patch release. Users are encouraged to upgrade for the best experience. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/packages Notable Changes fix: Improve error reporting for helm template --debug with --show-only- #31185 by @kyokuping f",
-    "source": "Helm",
-    "sourceId": "helm",
-    "url": "https://github.com/helm/helm/releases/tag/v4.2.4",
-    "publishedDate": "2026-08-13T15:33:04.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "helm",
-      "packaging"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "helm",
-    "releaseVersion": "v4.2.4"
   },
   {
     "id": "pulumi-58d71ae0fb83",

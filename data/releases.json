@@ -2,10 +2,18 @@
   {
     "project": "crossplane",
     "version": "v2.4.0-rc.1",
-    "publishedDate": "2026-08-14T00:18:19.000Z",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.4.0-rc.1",
+    "publishedDate": "2026-08-14T16:06:42.000Z",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.0-rc.1",
     "sourceId": "crossplane",
-    "title": "apis/v2.4.0-rc.1"
+    "title": "v2.4.0-rc.1"
+  },
+  {
+    "project": "helm",
+    "version": "v4.2.4",
+    "publishedDate": "2026-08-14T15:03:07.000Z",
+    "url": "https://github.com/helm/helm/releases/tag/v4.2.4",
+    "sourceId": "helm",
+    "title": "Helm v4.2.4"
   },
   {
     "project": "tempo",
@@ -14,14 +22,6 @@
     "url": "https://github.com/grafana/tempo/releases/tag/v3.0.3",
     "sourceId": "tempo",
     "title": "v3.0.3"
-  },
-  {
-    "project": "helm",
-    "version": "v3.21.4",
-    "publishedDate": "2026-08-13T20:16:41.000Z",
-    "url": "https://github.com/helm/helm/releases/tag/v3.21.4",
-    "sourceId": "helm",
-    "title": "v3.21.4"
   },
   {
     "project": "pulumi",
