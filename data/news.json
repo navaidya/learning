@@ -1,5 +1,23 @@
 [
   {
+    "id": "cncf-f6206decda04",
+    "title": "Eleven minutes, zero humans: Building a self-healing Kubernetes upgrade pipeline on Kairos",
+    "summary": "Once upon a time, upgrading a Kubernetes control plane meant staying awake for it. SSH into every node. Run the upgrade by hand. Watch etcd health the whole time, hoping quorum holds through every reboot. This...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/08/14/eleven-minutes-zero-humans-building-a-self-healing-kubernetes-upgrade-pipeline-on-kairos/",
+    "publishedDate": "2026-08-14T11:14:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "opentelemetry-1de267160b15",
     "title": "What can you do with OpenTelemetry entity events?",
     "summary": "Metrics, logs, and traces tell you how your systems behave. They are much quieter about what actually exists: which hosts, interfaces, switches, services, and volumes are out there right now, and, crucially, how that picture changed over the last hour, day, or quarter. That living inventory has stayed a blind spot in the open observability stack. OpenTelemetry&rsquo;s entity events, coming out of the Entities SIG and described in the Entity Data Model, are the piece that starts to close it. Enti",
