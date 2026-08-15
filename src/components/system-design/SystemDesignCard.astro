@@ -1,0 +1,10 @@
+---
+import { withBase } from '../../lib/url';
+const { entry } = Astro.props;
+---
+<a class="system-design-card" href={withBase(`/system-design/${entry.id}`)}>
+  <div class="system-design-card__topline"><span class="badge">{entry.data.difficulty}</span><span>{entry.data.interviewMinutes} min</span></div>
+  <h2>{entry.data.title}</h2><p>{entry.data.summary}</p>
+  <dl><div><dt>Core scaling challenge</dt><dd>{entry.data.scaleChallenge}</dd></div><div><dt>AI focus</dt><dd>{entry.data.aiFocus.join(' · ')}</dd></div></dl>
+  <span class="system-design-card__cta">Open case study →</span>
+</a>
