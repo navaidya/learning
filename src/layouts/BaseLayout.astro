@@ -1,8 +1,9 @@
 ---
 import '../styles/global.css';
+import '../styles/system-design.css';
 import { withBase as path } from '../lib/url';
 const { title = 'AI Infrastructure Learning OS', description = 'A personal learning system for infrastructure engineering and AIOps.' } = Astro.props;
-const nav = [['/','Dashboard'], ['/skills','Skill Map'], ['/book','Knowledge Book'], ['/labs','Labs'], ['/projects','Projects'], ['/inbox','Inbox'], ['/news','News']];
+const nav = [['/','Dashboard'], ['/skills','Skill Map'], ['/system-design','System Design'], ['/book','Knowledge Book'], ['/labs','Labs'], ['/projects','Projects'], ['/inbox','Inbox'], ['/news','News']];
 ---
 <!doctype html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width" /><meta name="description" content={description} /><title>{title}</title></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><a class="brand" href={path('/')}>AI Infrastructure<span>Learning OS</span></a><nav aria-label="Primary">{nav.map(([href, label]) => <a href={path(href)}>{label}</a>)}</nav></header><main id="main" class="page"><slot /></main><footer class="site-footer">Git-backed personal learning system · Markdown is the source of truth.</footer>
 <script>

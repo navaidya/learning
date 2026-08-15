@@ -10,4 +10,14 @@ export const collections = {
   labs: defineCollection(content('./content/labs', z.object({ title: z.string(), domain: z.string().optional(), difficulty: z.enum(['beginner', 'intermediate', 'advanced']).default('beginner'), status: z.enum(['planned', 'in_progress', 'completed']).default('planned'), completed: z.boolean().default(false), completed_date: z.coerce.date().optional(), topics: z.array(z.string()).default([]) }))),
   projects: defineCollection(content('./content/projects', z.object({ title: z.string(), status: z.enum(['active', 'paused', 'completed']).default('active'), progress: z.number().min(0).max(100).default(0), started: z.coerce.date().optional(), domains: z.array(z.string()).default([]) }))),
   inbox: defineCollection(content('./content/inbox', z.object({ title: z.string(), captured: z.coerce.date().optional(), type: z.string().default('note') }))),
+  'system-design': defineCollection(content('./content/system-design', z.object({
+    title: z.string(),
+    summary: z.string(),
+    order: z.number().int().min(1),
+    difficulty: z.enum(['intermediate', 'advanced']),
+    interviewMinutes: z.number().int().min(30).max(60),
+    scaleChallenge: z.string(),
+    aiFocus: z.array(z.string()).min(1),
+    tags: z.array(z.string()).default([]),
+  }))),
 };

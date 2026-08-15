@@ -1,0 +1,11 @@
+---
+import { getCollection } from 'astro:content';
+import SystemDesignCard from '../../components/system-design/SystemDesignCard.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const entries = (await getCollection('system-design')).sort((a, b) => a.data.order - b.data.order);
+---
+<BaseLayout title="AI-Native System Design Library" description="Original, diagram-driven reference architectures for system design interview preparation.">
+  <p class="eyebrow">Interview preparation</p><h1>AI-Native System Design Library</h1>
+  <p class="lede">Practice requirements, capacity, APIs, data, scale, reliability, and trade-offs—then add privacy-bounded AI where it earns its cost. These are original reference architectures, not descriptions of company internals.</p>
+  <div class="system-design-grid">{entries.map((entry) => <SystemDesignCard entry={entry} />)}</div>
+</BaseLayout>
