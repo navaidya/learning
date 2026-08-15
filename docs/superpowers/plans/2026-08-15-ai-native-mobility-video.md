@@ -155,6 +155,8 @@ Expected: exit `0`. Do not run this marker again during the build.
 
 Create DOT sources for the regional container architecture, dispatch pipeline, and complete request sequence. Use short node labels, left-to-right flow where possible, cyan primary edges, amber fallback edges, and red failure edges. Export transparent SVGs sized for 16:9 placement.
 
+If no permitted Graphviz `dot` executable is available in the local environment, retain the DOT files as topology specifications and render the same topology with editable native PowerPoint shapes and connectors. Do not substitute hand-authored SVGs while describing them as Graphviz output; record the fallback in the task report.
+
 - [ ] **Step 5: Implement the Technical Blueprint deck**
 
 Use `@oai/artifact-tool` in `build-deck.mjs`. Define shared palette, typography, title/footer helpers, term-definition treatment, diagram placement, and page markers. Create connectors before diagram nodes for native-shape flows. Add speaker notes containing the slide narration followed by:
