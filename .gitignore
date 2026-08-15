@@ -3,6 +3,11 @@ node_modules/
 dist/
 .DS_Store
 .env
+.superpowers/
+.worktrees/
+video/**/*.mp4
+video/**/*.aiff
+video/**/*.m4a
 
 # Per-machine Claude Code overrides. Shared config lives in .claude/settings.json
 # so cloud sessions inherit it; this file must not travel.
