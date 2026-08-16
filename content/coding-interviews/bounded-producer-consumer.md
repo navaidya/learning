@@ -12,7 +12,7 @@ status: planned
 tags: [threads, workload-control, backend]
 ---
 
-Runnable code will live in [coding-labs/bounded-producer-consumer](../../coding-labs/bounded-producer-consumer/).
+The detail page provides the canonical link to this lab’s runnable Java and Python code.
 
 ## Interview prompt
 

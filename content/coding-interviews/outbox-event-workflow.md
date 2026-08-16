@@ -12,7 +12,7 @@ status: planned
 tags: [events, transactions, backend]
 ---
 
-Runnable code will live in [coding-labs/outbox-event-workflow](../../coding-labs/outbox-event-workflow/).
+The detail page provides the canonical link to this lab’s runnable Java and Python code.
 
 ## Interview prompt
 

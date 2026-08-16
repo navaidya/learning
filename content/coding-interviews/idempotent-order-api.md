@@ -12,7 +12,7 @@ status: planned
 tags: [orders, APIs, distributed-systems]
 ---
 
-Runnable code will live in [coding-labs/idempotent-order-api](../../coding-labs/idempotent-order-api/).
+The detail page provides the canonical link to this lab’s runnable Java and Python code.
 
 ## Interview prompt
 

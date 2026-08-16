@@ -12,7 +12,7 @@ status: planned
 tags: [traffic-control, resilience, backend]
 ---
 
-Runnable code will live in [coding-labs/token-bucket-rate-limiter](../../coding-labs/token-bucket-rate-limiter/).
+The detail page provides the canonical link to this lab’s runnable Java and Python code.
 
 ## Interview prompt
 

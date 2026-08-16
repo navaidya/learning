@@ -12,7 +12,7 @@ status: planned
 tags: [strings, interview-foundation, backend]
 ---
 
-Runnable code will live in [coding-labs/hashmaps-sliding-window](../../coding-labs/hashmaps-sliding-window/).
+The detail page provides the canonical link to this lab’s runnable Java and Python code.
 
 ## Interview prompt
 

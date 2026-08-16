@@ -12,7 +12,7 @@ status: planned
 tags: [cache, backend, state]
 ---
 
-Runnable code will live in [coding-labs/lru-ttl-cache](../../coding-labs/lru-ttl-cache/).
+The detail page provides the canonical link to this lab’s runnable Java and Python code.
 
 ## Interview prompt
 

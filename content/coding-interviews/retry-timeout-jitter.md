@@ -12,7 +12,7 @@ status: planned
 tags: [resilience, distributed-systems, backend]
 ---
 
-Runnable code will live in [coding-labs/retry-timeout-jitter](../../coding-labs/retry-timeout-jitter/).
+The detail page provides the canonical link to this lab’s runnable Java and Python code.
 
 ## Interview prompt
 

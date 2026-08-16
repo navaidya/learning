@@ -12,11 +12,11 @@ status: planned
 tags: [SRE, telemetry, microservices]
 ---
 
-Runnable code will live in [coding-labs/microservice-observability-failure-lab](../../coding-labs/microservice-observability-failure-lab/).
+The detail page provides the canonical link to this lab’s runnable Java and Python code.
 
 ## Interview prompt
 
-Implement a request pipeline that calls a dependency with a deadline and emits structured events, latency metrics, and outcome counters. The senior question is: what evidence lets an on-call engineer distinguish caller cancellation, dependency outage, and slow recovery?
+Implement a request pipeline that calls a dependency with a deadline and emits structured events, latency metrics, and outcome counters. The senior question is: what evidence lets an on-call engineer distinguish a deadline timeout, dependency outage, and slow recovery? Caller cancellation propagation is a production follow-up rather than a behavior modeled by this local lab.
 
 ## What you will build
 
