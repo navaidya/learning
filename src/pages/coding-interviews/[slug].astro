@@ -37,9 +37,10 @@ const labHref = `https://github.com/${repository}/tree/main/${entry.data.labPath
       <div><dt>Status</dt><dd>{entry.data.status}</dd></div>
     </dl>
 
-    <section class="coding-interview-metadata" aria-label="Lab skills and categories">
+    <section class="coding-interview-metadata" aria-label="Lab skills, categories, and tags">
       <div><h2>Categories</h2><ul class="coding-interview-tag-list">{entry.data.categories.map((category) => <li>{category}</li>)}</ul></div>
       <div><h2>Skills</h2><ul class="coding-interview-tag-list">{entry.data.skills.map((skill) => <li>{skill}</li>)}</ul></div>
+      {entry.data.tags.length > 0 && <div><h2>Tags</h2><ul class="coding-interview-tag-list">{entry.data.tags.map((tag) => <li>{tag}</li>)}</ul></div>}
     </section>
 
     <p class="coding-interview-lab-link"><a href={labHref}>Open the runnable lab on GitHub →</a></p>
