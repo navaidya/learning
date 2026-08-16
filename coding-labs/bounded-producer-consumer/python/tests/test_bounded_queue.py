@@ -1,4 +1,5 @@
 import sys
+import threading
 import unittest
 sys.path.insert(0, "src")
 from bounded_queue import BoundedQueue
@@ -14,5 +15,9 @@ class BoundedQueueTest(unittest.TestCase):
         self.assertEqual(queue.poll(0), ("item", "drain"))
         self.assertEqual(queue.poll(0)[0], "closed")
         self.assertFalse(queue.offer("late", 0))
+        handoff = BoundedQueue(1); received = []
+        thread = threading.Thread(target=lambda: received.append(handoff.poll(0.1)))
+        thread.start(); self.assertTrue(handoff.offer("handoff", 0.1)); thread.join()
+        self.assertEqual(received, [("item", "handoff")])
 
 if __name__ == "__main__": unittest.main()

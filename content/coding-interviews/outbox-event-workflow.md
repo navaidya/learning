@@ -8,7 +8,7 @@ categories: [microservices, reliability, concurrency]
 languages: [java, python]
 skills: [outbox, eventing, idempotency, consistency]
 labPath: coding-labs/outbox-event-workflow
-status: planned
+status: ready
 tags: [events, transactions, backend]
 ---
 

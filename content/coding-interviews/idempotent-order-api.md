@@ -8,7 +8,7 @@ categories: [coding, microservices, reliability]
 languages: [java, python]
 skills: [idempotency, state-machines, API-design, consistency]
 labPath: coding-labs/idempotent-order-api
-status: planned
+status: ready
 tags: [orders, APIs, distributed-systems]
 ---
 

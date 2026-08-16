@@ -15,5 +15,9 @@ class RetryPolicyTest(unittest.TestCase):
         self.assertTrue(result.success); self.assertEqual(result.attempts, 2); self.assertEqual(delays, [5])
         self.assertEqual(RetryPolicy(3, 0, 10, 50, lambda: 0, lambda _: None, lambda: 1).execute(lambda: (_ for _ in ()).throw(RetryableFailure("x"))).attempts, 1)
         self.assertFalse(policy.execute(lambda: (_ for _ in ()).throw(PermanentFailure("bad"))).success)
+        capped = []
+        exhausted = RetryPolicy(3, 1000, 100, 150, lambda: 0, capped.append, lambda: 1)
+        self.assertEqual(exhausted.execute(lambda: (_ for _ in ()).throw(RetryableFailure("x"))).attempts, 3)
+        self.assertEqual(capped, [100, 150])
 
 if __name__ == "__main__": unittest.main()

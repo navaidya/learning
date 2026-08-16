@@ -8,7 +8,7 @@ categories: [coding, concurrency, reliability]
 languages: [java, python]
 skills: [rate-limiting, synchronization, clocks, API-contracts]
 labPath: coding-labs/token-bucket-rate-limiter
-status: planned
+status: ready
 tags: [traffic-control, resilience, backend]
 ---
 

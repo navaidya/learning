@@ -9,7 +9,7 @@ public final class TokenBucketRateLimiter {
   }
   public synchronized Decision tryAcquire(int cost) {
     if (cost <= 0 || cost > capacity) throw new IllegalArgumentException("cost must be within capacity");
-    long now = clock.getAsLong(); long elapsed = Math.max(0, now - updatedAt); updatedAt = now;
+    long now = Math.max(clock.getAsLong(), updatedAt); long elapsed = now - updatedAt; updatedAt = now;
     tokens = Math.min(capacity, tokens + elapsed * perSecond / 1000.0);
     if (tokens >= cost) { tokens -= cost; return new Decision(true, (int) Math.floor(tokens), 0); }
     long retry = perSecond == 0 ? Long.MAX_VALUE : (long) Math.ceil((cost - tokens) * 1000 / perSecond);

@@ -11,6 +11,12 @@ class TokenBucketTest(unittest.TestCase):
         self.assertTrue(bucket.try_acquire(1).allowed); self.assertTrue(bucket.try_acquire(1).allowed)
         self.assertFalse(bucket.try_acquire(1).allowed)
         now[0] = 1000; self.assertTrue(bucket.try_acquire(1).allowed)
+        now[0] = 101000; self.assertTrue(bucket.try_acquire(1).allowed); self.assertTrue(bucket.try_acquire(1).allowed)
+        retry = TokenBucket(3, 2, lambda: now[0]); retry.try_acquire(3)
+        self.assertEqual(retry.try_acquire(1).retry_after_ms, 500)
+        self.assertEqual(retry.try_acquire(1).retry_after_ms, 500)
+        now[0] = 101500; retry.try_acquire(1); now[0] = 101000
+        self.assertFalse(retry.try_acquire(1).allowed)
         with self.assertRaises(ValueError): bucket.try_acquire(0)
         burst = TokenBucket(2, 0, lambda: 0); allowed = []
         threads = [threading.Thread(target=lambda: allowed.append(burst.try_acquire(1).allowed)) for _ in range(5)]

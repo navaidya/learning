@@ -10,10 +10,12 @@ public final class LruTtlCache<K, V> {
   public LruTtlCache(int capacity, LongSupplier clock) { if (capacity <= 0) throw new IllegalArgumentException("capacity must be positive"); this.capacity = capacity; this.clock = clock; }
   public synchronized void put(K key, V value, long ttlMs) {
     if (ttlMs < 0) throw new IllegalArgumentException("ttl must be non-negative");
+    if (key == null || value == null) throw new IllegalArgumentException("key and value are required");
     entries.put(key, new Entry<>(value, clock.getAsLong() + ttlMs));
     while (entries.size() > capacity) entries.remove(entries.keySet().iterator().next());
   }
   public synchronized Optional<V> get(K key) {
+    if (key == null) throw new IllegalArgumentException("key is required");
     Entry<V> entry = entries.get(key);
     if (entry == null) return Optional.empty();
     if (clock.getAsLong() >= entry.expiresAt()) { entries.remove(key); return Optional.empty(); }

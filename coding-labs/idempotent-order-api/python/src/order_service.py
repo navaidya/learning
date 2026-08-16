@@ -11,7 +11,7 @@ class Result: status: Status; order: Order | None
 class OrderService:
     def __init__(self): self._records, self._next_id, self._lock = {}, 0, Lock()
     def create(self, key, item, amount_cents):
-        if not key or not item or amount_cents <= 0: return Result(Status.INVALID, None)
+        if not key or not key.strip() or not item or not item.strip() or amount_cents <= 0: return Result(Status.INVALID, None)
         fingerprint = f"{item}:{amount_cents}"
         with self._lock:
             existing = self._records.get(key)

@@ -11,6 +11,9 @@ public final class BoundedQueueTest {
     check(queue.poll(Duration.ZERO).item().equals("drain"), "drains after close");
     check(queue.poll(Duration.ZERO).status() == BoundedQueue.Status.CLOSED, "closed when drained");
     check(!queue.offer("late", Duration.ZERO), "closed rejects producers");
+    BoundedQueue<String> handoff = new BoundedQueue<>(1); String[] received = {null};
+    Thread consumer = new Thread(() -> { try { received[0] = handoff.poll(Duration.ofMillis(100)).item(); } catch (InterruptedException exception) { throw new AssertionError(exception); } });
+    consumer.start(); check(handoff.offer("handoff", Duration.ofMillis(100)), "producer hands off to waiting consumer"); consumer.join(); check("handoff".equals(received[0]), "consumer receives handoff");
   }
   private static void check(boolean c, String m) { if (!c) throw new AssertionError(m); }
 }

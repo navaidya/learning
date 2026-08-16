@@ -8,7 +8,7 @@ categories: [microservices, reliability, concurrency]
 languages: [java, python]
 skills: [observability, timeouts, tracing, metrics, failure-modeling]
 labPath: coding-labs/microservice-observability-failure-lab
-status: planned
+status: ready
 tags: [SRE, telemetry, microservices]
 ---
 

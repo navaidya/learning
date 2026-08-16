@@ -13,6 +13,8 @@ public final class RetryPolicyTest {
     check(!permanent.success() && permanent.attempts() == 1, "permanent failure is not retried");
     RetryPolicy<String> tiny = new RetryPolicy<>(3, 0, 10, 50, clock::get, delay -> {}, () -> 1.0);
     check(tiny.execute(RetryPolicyTest::throwRetry).attempts() == 1, "budget stops retry");
+    List<Long> cappedDelays = new ArrayList<>(); RetryPolicy<String> exhausted = new RetryPolicy<>(3, 1_000, 100, 150, () -> 0, cappedDelays::add, () -> 1.0);
+    check(exhausted.execute(RetryPolicyTest::throwRetry).attempts() == 3 && cappedDelays.equals(List.of(100L, 150L)), "caps delay and exhausts attempts");
   }
   private static String throwRetry() { throw new RetryPolicy.RetryableFailure("temporary"); }
   private static void check(boolean c, String m) { if (!c) throw new AssertionError(m); }

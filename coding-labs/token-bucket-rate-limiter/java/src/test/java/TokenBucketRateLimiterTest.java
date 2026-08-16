@@ -11,6 +11,11 @@ public final class TokenBucketRateLimiterTest {
     check(!limiter.tryAcquire(1).allowed(), "empty denied");
     now.set(500); check(!limiter.tryAcquire(1).allowed(), "partial refill denied");
     now.set(1_000); check(limiter.tryAcquire(1).allowed(), "full token refilled");
+    now.set(101_000); check(limiter.tryAcquire(1).allowed() && limiter.tryAcquire(1).allowed(), "refill clamps at capacity");
+    TokenBucketRateLimiter retry = new TokenBucketRateLimiter(3, 2.0, now::get);
+    retry.tryAcquire(3); check(retry.tryAcquire(1).retryAfterMillis() == 500, "exact retry after");
+    check(!retry.tryAcquire(1).allowed() && retry.tryAcquire(1).retryAfterMillis() == 500, "repeated denials do not mutate bucket");
+    now.set(100_500); retry.tryAcquire(1); now.set(100_000); check(!retry.tryAcquire(1).allowed(), "clock rollback does not mint tokens");
     expectIllegal(() -> limiter.tryAcquire(0));
     TokenBucketRateLimiter concurrent = new TokenBucketRateLimiter(2, 0, now::get);
     List<Thread> threads = new ArrayList<>(); int[] allowed = {0};

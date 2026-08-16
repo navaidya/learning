@@ -8,7 +8,7 @@ categories: [coding, reliability]
 languages: [java, python]
 skills: [retries, timeouts, jitter, error-classification]
 labPath: coding-labs/retry-timeout-jitter
-status: planned
+status: ready
 tags: [resilience, distributed-systems, backend]
 ---
 

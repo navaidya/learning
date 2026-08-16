@@ -8,7 +8,7 @@ categories: [coding, reliability]
 languages: [java, python]
 skills: [caching, LRU, TTL, testability, clocks]
 labPath: coding-labs/lru-ttl-cache
-status: planned
+status: ready
 tags: [cache, backend, state]
 ---
 

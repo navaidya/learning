@@ -16,7 +16,7 @@ class TokenBucket:
     def try_acquire(self, cost):
         if cost <= 0 or cost > self._capacity: raise ValueError("cost must be within capacity")
         with self._lock:
-            now = self._now(); elapsed = max(0, now - self._updated_at); self._updated_at = now
+            now = max(self._now(), self._updated_at); elapsed = now - self._updated_at; self._updated_at = now
             self._tokens = min(self._capacity, self._tokens + elapsed * self._rate / 1000)
             if self._tokens >= cost:
                 self._tokens -= cost

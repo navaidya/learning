@@ -8,6 +8,7 @@ class LongestUniqueTest(unittest.TestCase):
         self.assertEqual(longest_unique_length(""), 0)
         self.assertEqual(longest_unique_length("abba"), 2)
         self.assertEqual(longest_unique_length("pwwkew"), 3)
+        self.assertEqual(longest_unique_length("😀a😀"), 2)
 
     def test_unicode_and_invalid_input(self):
         self.assertEqual(longest_unique_length("åßå"), 2)

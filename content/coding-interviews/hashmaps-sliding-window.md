@@ -8,7 +8,7 @@ categories: [coding]
 languages: [java, python]
 skills: [hashmaps, sliding-window, complexity-analysis, API-design]
 labPath: coding-labs/hashmaps-sliding-window
-status: planned
+status: ready
 tags: [strings, interview-foundation, backend]
 ---
 
@@ -40,7 +40,7 @@ Support empty text, repeated characters, Unicode code points as documented by ea
 
 ## Java and/or Python implementation notes
 
-Use `HashMap<Character, Integer>` or `dict[str, int]` for the introductory version. Keep the map update after the window adjustment. Java implementations should explain UTF-16 `char` versus code points; Python strings already iterate Unicode code points.
+Use `HashMap<Integer, Integer>` over Java code points or `dict[str, int]` for the introductory version. Keep the map update after the window adjustment. The runnable Java lab deliberately iterates code points so one emoji is one logical character; Python strings already iterate Unicode code points.
 
 ## Test cases and edge cases
 

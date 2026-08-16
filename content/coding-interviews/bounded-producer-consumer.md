@@ -8,7 +8,7 @@ categories: [coding, concurrency, reliability]
 languages: [java, python]
 skills: [concurrency, backpressure, queues, shutdown]
 labPath: coding-labs/bounded-producer-consumer
-status: planned
+status: ready
 tags: [threads, workload-control, backend]
 ---
 
