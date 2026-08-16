@@ -1,0 +1,1213 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.653
+Welcome to AI-Native Mobility Marketplace. For the next half hour, we will follow one rider, Aisha,
+
+2
+00:00:05.653 --> 00:00:09.539
+as she asks for a ride home during a busy evening.
+
+3
+00:00:09.539 --> 00:00:13.072
+Our goal is not to copy any company's internal system.
+
+4
+00:00:13.072 --> 00:00:17.665
+We are designing an original marketplace that performs the same kind of job:
+
+5
+00:00:17.665 --> 00:00:21.198
+connect a rider and a driver safely, quickly, and fairly.
+
+6
+00:00:21.198 --> 00:00:24.731
+Along the way, we will build a reusable interview method.
+
+7
+00:00:24.731 --> 00:00:31.090
+System design is the practice of choosing components and rules that let a product work reliably at scale.
+
+8
+00:00:31.090 --> 00:00:32.150
+In plain English,
+
+9
+00:00:32.150 --> 00:00:37.803
+it is the blueprint for how many moving parts cooperate when real people depend on them.
+
+10
+00:00:37.803 --> 00:00:43.809
+A good blueprint starts with the user story, then asks what can fail, what must be fast,
+
+11
+00:00:43.809 --> 00:00:49.815
+and which facts must never be wrong. Notice the order: we do not begin with fashionable tools.
+
+12
+00:00:49.815 --> 00:00:51.935
+We begin with promises to people,
+
+13
+00:00:51.935 --> 00:00:58.294
+then prove that our choices can keep those promises under ordinary load and stressful failure. By the end,
+
+14
+00:00:58.294 --> 00:01:04.654
+you will be able to explain the ride flow to a beginner and defend the choices in an
+
+15
+00:01:04.654 --> 00:01:11.700
+interview. Let’s follow one ride request from the first tap to the final receipt.
+
+16
+00:01:11.700 --> 00:01:14.953
+Aisha opens the rider app outside a concert.
+
+17
+00:01:14.953 --> 00:01:20.239
+She enters a pickup point, chooses a destination, and asks for a price.
+
+18
+00:01:20.239 --> 00:01:26.745
+Marco is driving nearby and may receive an offer. The third participant is our marketplace platform,
+
+19
+00:01:26.745 --> 00:01:32.031
+which coordinates the request without pretending it can control traffic or human decisions.
+
+20
+00:01:32.031 --> 00:01:37.724
+An actor is a person or external system that participates in a product flow.
+
+21
+00:01:37.724 --> 00:01:43.010
+Here, Aisha, Marco, the mapping provider, and the payment provider are all actors.
+
+22
+00:01:43.010 --> 00:01:49.923
+Naming actors matters because each has different needs. Aisha wants a clear price and a safe pickup.
+
+23
+00:01:49.923 --> 00:01:53.989
+Marco needs a useful offer before another driver takes it.
+
+24
+00:01:53.989 --> 00:01:59.275
+The mapping provider supplies routes, while the payment provider handles regulated money movement.
+
+25
+00:01:59.275 --> 00:02:05.374
+If we blur those responsibilities, our design becomes vague and failures become hard to explain.
+
+26
+00:02:05.374 --> 00:02:07.407
+Keep Aisha’s story in mind:
+
+27
+00:02:07.407 --> 00:02:15.200
+every box we add should solve a problem she or Marco can actually feel.
+
+28
+00:02:15.200 --> 00:02:19.897
+At the moment Aisha requests, three drivers appear close on the map.
+
+29
+00:02:19.897 --> 00:02:24.595
+One is turning away from the pickup. One is finishing a ride.
+
+30
+00:02:24.595 --> 00:02:31.641
+Marco is slightly farther away but is free, facing the right direction, and has a fresh location update.
+
+31
+00:02:31.641 --> 00:02:33.598
+Distance alone is not enough.
+
+32
+00:02:33.598 --> 00:02:39.861
+A strong match balances pickup time, whether a driver can truly respond, rider safety, cancellation risk,
+
+33
+00:02:39.861 --> 00:02:42.210
+and a fair distribution of opportunities.
+
+34
+00:02:42.210 --> 00:02:49.256
+Prediction question: is the nearest map dot always the best driver for Aisha? Take a moment to decide.
+
+35
+00:02:49.256 --> 00:02:55.128
+The answer is no. A stale dot may represent a driver who is already occupied,
+
+36
+00:02:55.128 --> 00:02:59.434
+and a very close driver may be headed the wrong way.
+
+37
+00:02:59.434 --> 00:03:05.697
+Without a matching process that considers live constraints, riders see failed offers, drivers get confusing work,
+
+38
+00:03:05.697 --> 00:03:07.654
+and the marketplace loses trust.
+
+39
+00:03:07.654 --> 00:03:19.800
+So we will first make the product promises clear, then build only the machinery needed to keep them.
+
+40
+00:03:19.800 --> 00:03:24.640
+Before naming storage or models, write down what the product must do.
+
+41
+00:03:24.640 --> 00:03:31.497
+A functional requirement is a specific capability the product must provide to a user or another system.
+
+42
+00:03:31.497 --> 00:03:37.548
+For Aisha, the platform must produce a quote, accept her ride request, find a driver,
+
+43
+00:03:37.548 --> 00:03:43.195
+show the trip progressing, settle payment, and let either person report a safety concern.
+
+44
+00:03:43.195 --> 00:03:46.018
+Those are observable outcomes, not implementation choices.
+
+45
+00:03:46.018 --> 00:03:52.472
+The phrase ‘match a driver’ is a useful requirement; the phrase ‘use a queue’ is not,
+
+46
+00:03:52.472 --> 00:03:58.119
+because it jumps ahead to a solution. This distinction keeps an interview answer grounded.
+
+47
+00:03:58.119 --> 00:04:04.572
+If we skip functional requirements, we may optimize an impressive architecture that forgets a vital action,
+
+48
+00:04:04.572 --> 00:04:09.009
+such as expiring an unanswered offer or preventing a second charge.
+
+49
+00:04:09.009 --> 00:04:13.043
+In this lesson, we exclude pooled rides and autonomous vehicles.
+
+50
+00:04:13.043 --> 00:04:24.000
+Narrow scope is a strength: it lets us make the normal ride dependable before adding harder variations.
+
+51
+00:04:24.000 --> 00:04:27.364
+Now ask how well each capability must work.
+
+52
+00:04:27.364 --> 00:04:32.830
+A non-functional requirement describes a quality target such as speed, reliability, or security.
+
+53
+00:04:32.830 --> 00:04:37.455
+It turns ‘fast’ into a number and ‘reliable’ into a promise.
+
+54
+00:04:37.455 --> 00:04:43.762
+For example, we want Aisha’s quote to return with p99 latency under five hundred milliseconds.
+
+55
+00:04:43.762 --> 00:04:49.228
+P99 latency is the response time below which 99 percent of requests complete:
+
+56
+00:04:49.228 --> 00:04:55.115
+if one hundred quote requests arrive, at least ninety-nine should finish within that limit.
+
+57
+00:04:55.115 --> 00:05:01.001
+The consequence is that a slow dependency cannot sit on the critical path forever.
+
+58
+00:05:01.001 --> 00:05:06.467
+Availability is the proportion of time a system can successfully serve intended requests.
+
+59
+00:05:06.467 --> 00:05:09.411
+If availability is poor at commute time,
+
+60
+00:05:09.411 --> 00:05:14.456
+a beautiful prediction model is irrelevant because Aisha cannot request a ride.
+
+61
+00:05:14.456 --> 00:05:21.604
+We also set match completion under five seconds, location freshness under ten seconds, and no double charge.
+
+62
+00:05:21.604 --> 00:05:27.068
+These targets will guide every trade-off that follows.
+
+63
+00:05:27.068 --> 00:05:31.418
+Not every fact in a marketplace needs the same agreement rule.
+
+64
+00:05:31.418 --> 00:05:38.140
+Strong consistency means a completed write is immediately reflected by later reads that require the same truth.
+
+65
+00:05:38.140 --> 00:05:41.699
+Think of one shared ledger: after Aisha’s payment succeeds,
+
+66
+00:05:41.699 --> 00:05:46.048
+a later payment check must not claim it is still unpaid.
+
+67
+00:05:46.048 --> 00:05:50.793
+The consequence is that trip assignment and money movement need careful coordination,
+
+68
+00:05:50.793 --> 00:05:53.561
+even if that costs a little latency.
+
+69
+00:05:53.561 --> 00:05:58.702
+Eventual consistency means copies may briefly differ but converge when updates finish propagating.
+
+70
+00:05:58.702 --> 00:06:05.820
+A driver’s moving map dot can tolerate a small delay because the next update will arrive seconds later.
+
+71
+00:06:05.820 --> 00:06:12.542
+Prediction question: should every ride datum wait for one shared truth? Take a moment to decide. No.
+
+72
+00:06:12.542 --> 00:06:18.473
+If every location update waited for global agreement, the map would lag and cost more.
+
+73
+00:06:18.473 --> 00:06:22.823
+If payment used only eventual agreement, we could charge Aisha twice.
+
+74
+00:06:22.823 --> 00:06:32.668
+Use the strongest promise only where an incorrect answer would be unacceptable.
+
+75
+00:06:32.668 --> 00:06:35.771
+A diagram without numbers is only a guess.
+
+76
+00:06:35.771 --> 00:06:41.201
+A capacity estimate is a transparent approximation of expected requests, data, and storage needs.
+
+77
+00:06:41.201 --> 00:06:44.304
+It is not a claim of perfect forecasting;
+
+78
+00:06:44.304 --> 00:06:50.510
+it is a way to show your assumptions and test whether a design can survive them.
+
+79
+00:06:50.510 --> 00:06:55.165
+We will assume two million trips per day, one million active drivers,
+
+80
+00:06:55.165 --> 00:06:58.656
+and a commute peak ten times busier than average.
+
+81
+00:06:58.656 --> 00:07:05.250
+We will calculate ride requests, location updates, and retained history separately because they have very different shapes.
+
+82
+00:07:05.250 --> 00:07:09.129
+Aisha creates one important command when she requests a trip.
+
+83
+00:07:09.129 --> 00:07:14.171
+Marco creates a steady stream of lightweight location updates while he is available.
+
+84
+00:07:14.171 --> 00:07:19.601
+If we size the system only for trip requests, the location stream overwhelms it.
+
+85
+00:07:19.601 --> 00:07:23.092
+If we size every record like a location sample,
+
+86
+00:07:23.092 --> 00:07:27.747
+we waste effort on the few trip transitions that demand durable correctness.
+
+87
+00:07:27.747 --> 00:07:33.953
+Start with questions: how many users, how often do they act, how big is each message,
+
+88
+00:07:33.953 --> 00:07:40.768
+and what happens at the busiest hour?
+
+89
+00:07:40.768 --> 00:07:43.917
+Let’s do the first piece of math slowly.
+
+90
+00:07:43.917 --> 00:07:51.003
+Two million trips per day divided by eighty-six thousand four hundred seconds in a day is about twenty-three
+
+91
+00:07:51.003 --> 00:07:53.365
+trip creations per second on average.
+
+92
+00:07:53.365 --> 00:08:00.058
+Throughput is the amount of work a system completes in a fixed time, often requests per second.
+
+93
+00:08:00.058 --> 00:08:04.782
+Average throughput is useful, but it is not what stresses the platform.
+
+94
+00:08:04.782 --> 00:08:10.293
+Peak load is the highest expected demand period used to size a system safely.
+
+95
+00:08:10.293 --> 00:08:16.592
+With a ten-times commute peak, we plan for about two hundred thirty trip creations per second.
+
+96
+00:08:16.592 --> 00:08:23.678
+That is modest enough for a well-designed regional transactional path, but every trip creates related work: quotes, offers,
+
+97
+00:08:23.678 --> 00:08:26.040
+state changes, notifications, and later payments.
+
+98
+00:08:26.040 --> 00:08:31.158
+The interview move is to say the arithmetic aloud and label the assumption.
+
+99
+00:08:31.158 --> 00:08:35.488
+If peak is actually twenty times average in a dense city,
+
+100
+00:08:35.488 --> 00:08:39.031
+we can scale regional capacity or shed nonessential work.
+
+101
+00:08:39.031 --> 00:08:45.068
+Hidden math produces hidden outages; transparent math creates a conversation.
+
+102
+00:08:45.068 --> 00:08:47.417
+The second calculation changes the scale.
+
+103
+00:08:47.417 --> 00:08:52.506
+One million active drivers send one roughly one-hundred-byte location update every four seconds.
+
+104
+00:08:52.506 --> 00:08:58.769
+That is two hundred fifty thousand updates per second at peak: one million divided by four.
+
+105
+00:08:58.769 --> 00:09:03.857
+An event is an immutable record that something happened at a particular time.
+
+106
+00:09:03.857 --> 00:09:07.381
+Marco’s position at a given time is an event;
+
+107
+00:09:07.381 --> 00:09:11.686
+it is not the same as rewriting the entire trip record.
+
+108
+00:09:11.686 --> 00:09:14.818
+At two hundred fifty thousand events per second,
+
+109
+00:09:14.818 --> 00:09:20.298
+raw payload volume is about twenty-five megabytes per second before protocol overhead or copies.
+
+110
+00:09:20.298 --> 00:09:25.387
+This is why a marketplace cannot treat moving positions like ordinary account edits.
+
+111
+00:09:25.387 --> 00:09:31.650
+We need a path that accepts a burst, keeps the most recent location easy to find,
+
+112
+00:09:31.650 --> 00:09:34.782
+and stores history more cheaply. Without that separation,
+
+113
+00:09:34.782 --> 00:09:41.828
+the large location stream competes with Aisha’s small but critical ride request and turns the core record store
+
+114
+00:09:41.828 --> 00:09:46.668
+into a bottleneck precisely when demand rises.
+
+115
+00:09:46.668 --> 00:09:50.268
+Now let storage follow the meaning of the data.
+
+116
+00:09:50.268 --> 00:09:55.468
+Live positions are hot: dispatch needs Marco’s current cell and a recent timestamp,
+
+117
+00:09:55.468 --> 00:10:01.868
+not every point from last week. We keep that compact, indexed state with a short expiration.
+
+118
+00:10:01.868 --> 00:10:07.468
+Raw historical telemetry can move to lower-cost object storage for approved analysis and retention.
+
+119
+00:10:07.468 --> 00:10:12.268
+Seven days of raw locations is roughly fifteen terabytes under our assumptions;
+
+120
+00:10:12.268 --> 00:10:17.068
+with three copies plus index and metadata overhead, budget around fifty terabytes.
+
+121
+00:10:17.068 --> 00:10:23.868
+Replication keeps multiple copies of data so a failure of one copy does not make it unavailable.
+
+122
+00:10:23.868 --> 00:10:30.268
+The practical consequence is different for different data: trip and payment state need durable replicated truth,
+
+123
+00:10:30.268 --> 00:10:33.868
+while an old map dot can expire. Recap question:
+
+124
+00:10:33.868 --> 00:10:40.668
+where would you store Marco’s last ten seconds of position versus a week of approved route history?
+
+125
+00:10:40.668 --> 00:10:46.668
+Take a moment. Keep the fresh position close to dispatch; keep history durable and cheaper.
+
+126
+00:10:46.668 --> 00:10:58.968
+Without these layers, either the hot path becomes slow or the storage bill grows without improving Aisha’s ride.
+
+127
+00:10:58.968 --> 00:11:03.417
+We have enough requirements and scale to draw the outside boundary.
+
+128
+00:11:03.417 --> 00:11:07.461
+The rider app and driver app are on one side.
+
+129
+00:11:07.461 --> 00:11:12.314
+On the other side are a routing provider, a licensed payment provider,
+
+130
+00:11:12.314 --> 00:11:15.954
+and emergency or safety services governed by explicit policy.
+
+131
+00:11:15.954 --> 00:11:20.807
+Our platform sits in the middle and decides which interactions it owns.
+
+132
+00:11:20.807 --> 00:11:26.469
+It owns trip state, matching, location handling, and the audit trail around safety workflow.
+
+133
+00:11:26.469 --> 00:11:33.344
+It does not pretend to own road maps or card networks. This context diagram is intentionally simple.
+
+134
+00:11:33.344 --> 00:11:40.624
+It helps an interviewer see where data enters, where trust boundaries exist, and where a dependency might fail.
+
+135
+00:11:40.624 --> 00:11:46.286
+For Aisha, routing gives an estimated path. For Marco, the app receives an offer.
+
+136
+00:11:46.286 --> 00:11:50.330
+For both, payment and emergency actions have stricter external obligations.
+
+137
+00:11:50.330 --> 00:11:54.374
+If we open the architecture before agreeing on these boundaries,
+
+138
+00:11:54.374 --> 00:11:58.419
+we risk hiding a vendor dependency inside an unexplained box.
+
+139
+00:11:58.419 --> 00:12:06.563
+Next, we build the inside one layer at a time.
+
+140
+00:12:06.563 --> 00:12:09.598
+Aisha’s request enters through an API edge.
+
+141
+00:12:09.598 --> 00:12:16.101
+An API edge is the controlled entry layer that authenticates, routes, and protects client requests.
+
+142
+00:12:16.101 --> 00:12:23.905
+In everyday terms, it is the guarded front door: it checks who is calling, rejects obviously bad traffic,
+
+143
+00:12:23.905 --> 00:12:27.374
+and sends valid calls to the right place.
+
+144
+00:12:27.374 --> 00:12:33.877
+Behind it, a service is a focused deployable component responsible for one bounded business capability.
+
+145
+00:12:33.877 --> 00:12:41.681
+We separate trip, location, dispatch, payment, and safety responsibilities so one change does not accidentally rewrite every rule.
+
+146
+00:12:41.681 --> 00:12:48.618
+A regional shard is an isolated deployment and data partition that serves a geographic area independently.
+
+147
+00:12:48.618 --> 00:12:54.687
+Imagine a city-sized neighborhood of the platform with its own capacity and recovery plan.
+
+148
+00:12:54.687 --> 00:13:02.058
+Its consequence is containment: a failure in one region should not make another region stop matching rides.
+
+149
+00:13:02.058 --> 00:13:06.393
+Without an edge, unsafe or malformed traffic reaches every component.
+
+150
+00:13:06.393 --> 00:13:14.563
+Without focused services and regional shards, a small fault becomes a wide, confusing outage.
+
+151
+00:13:14.563 --> 00:13:18.671
+The next layer holds durable truth and shares changes safely.
+
+152
+00:13:18.671 --> 00:13:24.012
+A database is a durable system for storing and querying authoritative application state.
+
+153
+00:13:24.012 --> 00:13:29.764
+The trip database holds Aisha’s ride status, its version, and the confirmed driver assignment.
+
+154
+00:13:29.764 --> 00:13:34.694
+It is where we insist that one transition follows the last one.
+
+155
+00:13:34.694 --> 00:13:41.267
+An event log is a durable ordered record of changes that other components can consume independently.
+
+156
+00:13:41.267 --> 00:13:47.840
+When the trip changes from requested to matched, the log lets notifications, payment preparation, safety workflows,
+
+157
+00:13:47.840 --> 00:13:53.592
+and analytics learn about that fact without every component calling the trip service directly.
+
+158
+00:13:53.592 --> 00:13:59.343
+The consequence is loose coupling: a delayed notification does not block a driver assignment.
+
+159
+00:13:59.343 --> 00:14:05.095
+We partition both trip data and the log by region, then by trip identifier,
+
+160
+00:14:05.095 --> 00:14:12.079
+so related work stays close together. Without a durable database, we cannot confidently answer who is assigned.
+
+161
+00:14:12.079 --> 00:14:21.163
+Without an event log, every new downstream feature makes the synchronous request path slower and more fragile.
+
+162
+00:14:21.163 --> 00:14:26.660
+Here is a subtle but important failure. Suppose the trip database records that Marco accepted,
+
+163
+00:14:26.660 --> 00:14:30.691
+but the process crashes just before it tells the event log.
+
+164
+00:14:30.691 --> 00:14:36.554
+Aisha might wait on a stale screen while payment and safety systems never learn the assignment.
+
+165
+00:14:36.554 --> 00:14:43.150
+An outbox is a durable record written with business state so its event can be published reliably after
+
+166
+00:14:43.150 --> 00:14:49.747
+the transaction. Think of it as a message placed in the same sealed envelope as the trip update.
+
+167
+00:14:49.747 --> 00:14:54.877
+A separate publisher reads the envelope and delivers the event, retrying safely if necessary.
+
+168
+00:14:54.877 --> 00:15:00.740
+The consequence is that a completed state change does not disappear between two unreliable network calls.
+
+169
+00:15:00.740 --> 00:15:06.970
+This is more dependable than trying to update the database and send a message as unrelated steps.
+
+170
+00:15:06.970 --> 00:15:12.833
+Without an outbox, we get the worst kind of bug: the core truth says one thing,
+
+171
+00:15:12.833 --> 00:15:21.163
+while everything around it silently believes another. It is a small pattern with a large reliability payoff.
+
+172
+00:15:21.163 --> 00:15:26.644
+Look at our architecture as a set of owners, not a pile of boxes.
+
+173
+00:15:26.644 --> 00:15:32.516
+The trip component owns the authoritative ride state. The location path owns fresh moving positions.
+
+174
+00:15:32.516 --> 00:15:37.605
+Dispatch owns the process of proposing an assignment, and payment owns settlement records.
+
+175
+00:15:37.605 --> 00:15:43.869
+Other components can react to published changes, but they do not casually rewrite another owner’s truth.
+
+176
+00:15:43.869 --> 00:15:49.742
+Prediction question: should every component edit the same tables to save time? Take a moment.
+
+177
+00:15:49.742 --> 00:15:56.397
+The answer is no. Shared writes create hidden coupling: a payment change can accidentally alter a trip,
+
+178
+00:15:56.397 --> 00:15:59.920
+and an emergency repair becomes impossible to reason about.
+
+179
+00:15:59.920 --> 00:16:06.184
+Clear ownership lets us test a state transition, audit it, and recover it in one place.
+
+180
+00:16:06.184 --> 00:16:12.448
+It also makes each team or module smaller to understand. For Aisha, the effect is simple:
+
+181
+00:16:12.448 --> 00:16:19.495
+one part of the platform can be late without allowing two parts to decide she has two different
+
+182
+00:16:19.495 --> 00:16:28.901
+drivers. Now we can zoom into the hardest owner-to-owner handoff: dispatch.
+
+183
+00:16:28.901 --> 00:16:34.099
+Aisha taps request, and dispatch needs possible drivers before it can choose one.
+
+184
+00:16:34.099 --> 00:16:40.897
+Searching every driver in the city would be wasteful. Instead, we divide the map into small hexagons.
+
+185
+00:16:40.897 --> 00:16:47.695
+An H3 cell is an addressable hexagonal area used to group nearby geographic positions for efficient search.
+
+186
+00:16:47.695 --> 00:16:52.094
+Think of it as a labeled tile on a honeycomb map.
+
+187
+00:16:52.094 --> 00:16:56.492
+Marco’s latest position updates the tile where he is currently available.
+
+188
+00:16:56.492 --> 00:17:00.891
+Aisha’s pickup identifies its own tile, and dispatch searches that tile,
+
+189
+00:17:00.891 --> 00:17:04.090
+then expands outward in rings only if needed.
+
+190
+00:17:04.090 --> 00:17:10.887
+Hexagons have convenient neighboring shapes, but the key idea is spatial bucketing, not the brand of index.
+
+191
+00:17:10.887 --> 00:17:17.285
+The consequence is bounded work: a request looks at nearby candidates rather than a city-wide list.
+
+192
+00:17:17.285 --> 00:17:18.885
+Without a geographic index,
+
+193
+00:17:18.885 --> 00:17:25.683
+rush-hour matching becomes a repeated full scan and latency rises just when Aisha most needs an answer.
+
+194
+00:17:25.683 --> 00:17:34.981
+Next we narrow the nearby list to drivers who can actually take her.
+
+195
+00:17:34.981 --> 00:17:37.845
+The H3 search returns possibilities, not promises.
+
+196
+00:17:37.845 --> 00:17:43.573
+A candidate filter quickly removes options that cannot satisfy a request before expensive scoring.
+
+197
+00:17:43.573 --> 00:17:49.301
+It might remove drivers whose last location is too old, who are already leased,
+
+198
+00:17:49.301 --> 00:17:55.439
+whose vehicle does not fit the requested service, or who are outside a safety boundary.
+
+199
+00:17:55.439 --> 00:18:01.985
+Eligibility is the set of non-negotiable rules an option must satisfy before it can be offered.
+
+200
+00:18:01.985 --> 00:18:06.076
+In plain English, eligibility is the bouncer at the door;
+
+201
+00:18:06.076 --> 00:18:10.986
+no amount of clever prediction lets an unavailable driver accept a ride.
+
+202
+00:18:10.986 --> 00:18:17.942
+Marco passes because he is active, his location is fresh, and he is not finishing another trip.
+
+203
+00:18:17.942 --> 00:18:20.397
+The consequence is efficiency and safety:
+
+204
+00:18:20.397 --> 00:18:27.761
+our ranking model sees a manageable set of viable choices instead of trying to repair impossible ones later.
+
+205
+00:18:27.761 --> 00:18:34.717
+Without this filter, the platform may offer Aisha a driver who cannot respond, causing timeouts and cancellations.
+
+206
+00:18:34.717 --> 00:18:39.681
+Hard rules come first; preference comes after.
+
+207
+00:18:39.681 --> 00:18:43.514
+Among viable drivers, we choose the most useful offer.
+
+208
+00:18:43.514 --> 00:18:49.477
+An online feature is a fresh input, such as current traffic or driver state,
+
+209
+00:18:49.477 --> 00:18:51.606
+used during a live decision.
+
+210
+00:18:51.606 --> 00:18:58.847
+For Marco and the other candidates, features might include route time, recent acceptance behavior, rain, road closures,
+
+211
+00:18:58.847 --> 00:19:01.828
+and how long each driver has waited.
+
+212
+00:19:01.828 --> 00:19:09.494
+A learned ranker is a model that orders options by predicted usefulness using historical patterns and current inputs.
+
+213
+00:19:09.494 --> 00:19:15.457
+It can estimate pickup time, acceptance chance, and cancellation risk better than distance alone.
+
+214
+00:19:15.457 --> 00:19:19.290
+But no model gets to be the only path.
+
+215
+00:19:19.290 --> 00:19:26.956
+A deterministic scorer ranks options with fixed, explainable rules that produce the same result for the same inputs.
+
+216
+00:19:26.956 --> 00:19:30.789
+Ours combines map ETA, distance, and a fairness adjustment.
+
+217
+00:19:30.789 --> 00:19:37.604
+The consequence is graceful operation: if inference is late, low-confidence, too costly, or disallowed by policy,
+
+218
+00:19:37.604 --> 00:19:45.270
+dispatch still makes a transparent choice. Without a fallback, a model incident would turn into a marketplace outage.
+
+219
+00:19:45.270 --> 00:19:52.481
+AI improves the choice; it never becomes permission to stop serving Aisha.
+
+220
+00:19:52.481 --> 00:19:57.210
+Ranking one driver is not enough when many riders ask at once.
+
+221
+00:19:57.210 --> 00:20:04.304
+An optimizer selects the best allowed assignment across options while respecting constraints such as fairness and detour limits.
+
+222
+00:20:04.304 --> 00:20:08.639
+Rather than greedily give every nearby request the same attractive driver,
+
+223
+00:20:08.639 --> 00:20:15.733
+it considers a small batch of offers and chooses a combination that gives the marketplace a better overall
+
+224
+00:20:15.733 --> 00:20:21.644
+result. We keep the optimization bounded so it finishes inside the match target; under overload,
+
+225
+00:20:21.644 --> 00:20:28.738
+we can fall back to a simpler greedy rule. After selecting Marco for Aisha, dispatch creates a lease.
+
+226
+00:20:28.738 --> 00:20:34.649
+A lease is a time-limited reservation that grants one worker temporary ownership of a resource.
+
+227
+00:20:34.649 --> 00:20:40.561
+It says, for example, that Marco is reserved for Aisha’s offer for a short window.
+
+228
+00:20:40.561 --> 00:20:46.866
+The consequence is no double booking: another rider cannot win the same driver while Marco decides.
+
+229
+00:20:46.866 --> 00:20:55.666
+Without a lease, two dispatch workers may race, both send offers, and create an impossible real-world conflict.
+
+230
+00:20:55.666 --> 00:20:58.275
+Let’s pause at the decision point.
+
+231
+00:20:58.275 --> 00:21:04.797
+The dispatch pipeline is map search, hard eligibility rules, scoring, bounded assignment, reservation, and offer.
+
+232
+00:21:04.797 --> 00:21:10.450
+It is deliberately a sequence from cheap, certain checks to more sophisticated choices.
+
+233
+00:21:10.450 --> 00:21:16.972
+Prediction question: where should a slow model stop Aisha’s ride? Take a moment to answer.
+
+234
+00:21:16.972 --> 00:21:18.711
+It should stop nowhere.
+
+235
+00:21:18.711 --> 00:21:26.103
+If the learned ranker exceeds its latency budget, returns low confidence, or cannot use a sensitive input,
+
+236
+00:21:26.103 --> 00:21:28.277
+the deterministic fallback takes over.
+
+237
+00:21:28.277 --> 00:21:36.103
+A deterministic fallback is a fixed safe path used when a model is slow, unavailable, low-confidence, or disallowed.
+
+238
+00:21:36.103 --> 00:21:42.625
+Here it uses route time, distance, availability, and fairness rules to select a viable driver.
+
+239
+00:21:42.625 --> 00:21:48.713
+The model result may improve efficiency, but the fixed path protects the product promise.
+
+240
+00:21:48.713 --> 00:21:56.105
+This boundary is the core of an AI-native design: models are valuable advisors inside a dependable system,
+
+241
+00:21:56.105 --> 00:21:59.148
+not fragile gatekeepers in front of it.
+
+242
+00:21:59.148 --> 00:22:09.466
+Now we will trace exactly how Aisha’s request moves through that system.
+
+243
+00:22:09.466 --> 00:22:16.614
+Aisha first asks for a quote, which returns a price range, an ETA, and an expiration time.
+
+244
+00:22:16.614 --> 00:22:22.080
+When she confirms, the app sends a trip command with an idempotency key.
+
+245
+00:22:22.080 --> 00:22:27.967
+Idempotency means repeating the same command has the same effect as performing it once.
+
+246
+00:22:27.967 --> 00:22:33.013
+In plain language, if her train-station network drops just after the tap,
+
+247
+00:22:33.013 --> 00:22:36.797
+the app can retry without accidentally creating two rides.
+
+248
+00:22:36.797 --> 00:22:43.525
+The trip service stores the request, records an outbox item, and asks dispatch for a match.
+
+249
+00:22:43.525 --> 00:22:48.991
+Dispatch searches H3 cells, filters candidates, scores them, reserves Marco with a lease,
+
+250
+00:22:48.991 --> 00:22:56.560
+and sends his app an offer. If the model path is unhealthy, it uses the deterministic route instead.
+
+251
+00:22:56.560 --> 00:22:57.401
+Marco accepts;
+
+252
+00:22:57.401 --> 00:23:04.970
+the trip service confirms the assignment using a version check so a late duplicate acceptance cannot overwrite the
+
+253
+00:23:04.970 --> 00:23:12.538
+truth. Aisha sees Marco’s car and ETA. Each transition creates an event for the rest of the platform.
+
+254
+00:23:12.538 --> 00:23:23.366
+Without idempotency and version checks, ordinary mobile retries become double trips, duplicated offers, and support tickets.
+
+255
+00:23:23.366 --> 00:23:30.719
+Real systems fail in uneven ways. During a concert exit, location updates may surge before trip requests do.
+
+256
+00:23:30.719 --> 00:23:37.663
+Backpressure is a controlled slowdown that keeps a fast producer from overwhelming a slower consumer. For example,
+
+257
+00:23:37.663 --> 00:23:45.016
+the platform can lower noncritical location sampling or coalesce repeated points before it rejects an important ride command.
+
+258
+00:23:45.016 --> 00:23:50.734
+That preserves Aisha’s ability to request a trip even when the map is busy.
+
+259
+00:23:50.734 --> 00:23:57.270
+A circuit breaker temporarily blocks calls to an unhealthy dependency to prevent repeated failures from spreading.
+
+260
+00:23:57.270 --> 00:24:03.806
+If a routing provider starts timing out, the breaker opens after a small number of failures,
+
+261
+00:24:03.806 --> 00:24:09.116
+returns a bounded estimate or cached route data, and probes later for recovery.
+
+262
+00:24:09.116 --> 00:24:15.652
+We also use bounded retries, dead-letter review for events that cannot be processed, and regional isolation.
+
+263
+00:24:15.652 --> 00:24:17.694
+If a region is unhealthy,
+
+264
+00:24:17.694 --> 00:24:25.047
+we may finish active trips from replicated state but stop new matching until safety and payment dependencies are
+
+265
+00:24:25.047 --> 00:24:34.866
+safe. Without these controls, retry storms turn one slow service into a full outage.
+
+266
+00:24:34.866 --> 00:24:42.198
+A map dot represents a person, so this system must protect people before it optimizes them.
+
+267
+00:24:42.198 --> 00:24:49.529
+Privacy is the disciplined control of personal information so it is used only for legitimate, limited,
+
+268
+00:24:49.529 --> 00:24:57.777
+and understandable purposes. Precise location should be encrypted, access should be restricted to carefully defined roles and workflows,
+
+269
+00:24:57.777 --> 00:25:02.818
+and raw route history should expire under a documented retention policy.
+
+270
+00:25:02.818 --> 00:25:09.233
+Payment details are tokenized so the marketplace avoids handling more sensitive data than necessary.
+
+271
+00:25:09.233 --> 00:25:17.481
+Safety tools can detect suspicious GPS patterns or collusion signals, but a model should not silently punish someone.
+
+272
+00:25:17.481 --> 00:25:25.729
+High-impact actions such as suspension, emergency escalation, cancellation, or refund require auditable policy and, where appropriate, human confirmation.
+
+273
+00:25:25.729 --> 00:25:31.686
+The consequence is that AI assistants operate with scoped tools and minimized context,
+
+274
+00:25:31.686 --> 00:25:34.894
+not broad access to every rider history.
+
+275
+00:25:34.894 --> 00:25:41.767
+Without these boundaries, a technically clever platform can create surveillance, unfair enforcement, and irreversible harm.
+
+276
+00:25:41.767 --> 00:25:49.366
+Trust is not an add-on feature; it is part of the architecture.
+
+277
+00:25:49.366 --> 00:25:53.991
+A deployed model is not finished when it first looks accurate.
+
+278
+00:25:53.991 --> 00:26:01.560
+Model drift is a decline or change in prediction quality because real-world patterns no longer match training data.
+
+279
+00:26:01.560 --> 00:26:07.447
+A new road closure pattern or seasonal demand can make yesterday’s ETA model misleading.
+
+280
+00:26:07.447 --> 00:26:13.334
+Shadow testing sends live-like inputs to a new model without letting it control outcomes,
+
+281
+00:26:13.334 --> 00:26:17.539
+so results can be compared safely against the current path.
+
+282
+00:26:17.539 --> 00:26:24.688
+A canary release exposes a new version to a small controlled share of traffic before wider rollout.
+
+283
+00:26:24.688 --> 00:26:28.893
+Cost control is the use of budgets, caching, smaller models,
+
+284
+00:26:28.893 --> 00:26:32.677
+and measurement to keep an operating path economically sustainable.
+
+285
+00:26:32.677 --> 00:26:40.246
+Prediction question: when a model looks promising offline, should we turn it on for everyone? Take a moment.
+
+286
+00:26:40.246 --> 00:26:45.292
+No. First measure ETA error, cancellation, acceptance, fairness slices, latency, overrides, drift,
+
+287
+00:26:45.292 --> 00:26:51.179
+and cost using trace context across the request. Then expand only if it helps.
+
+288
+00:26:51.179 --> 00:27:02.166
+If it does not, the deterministic path remains available and the product still works.
+
+289
+00:27:02.166 --> 00:27:06.296
+You can now reconstruct this system in an interview.
+
+290
+00:27:06.296 --> 00:27:12.720
+Start with Aisha’s outcome: a quote, a safe match, live tracking, and exactly-once settlement.
+
+291
+00:27:12.720 --> 00:27:19.602
+Clarify scope and quality targets. Estimate trip commands separately from the much larger location stream.
+
+292
+00:27:19.602 --> 00:27:23.732
+Separate authoritative trip and payment truth from approximate telemetry.
+
+293
+00:27:23.732 --> 00:27:30.615
+Use a regional boundary, a protected entry layer, focused owners, durable state, and published changes.
+
+294
+00:27:30.615 --> 00:27:37.498
+For dispatch, explain spatial lookup, hard eligibility, learned advice, a transparent rules path, bounded optimization,
+
+295
+00:27:37.498 --> 00:27:45.757
+and a temporary reservation. Then earn confidence by discussing overload, dependency failure, privacy, safety, model evaluation, and cost.
+
+296
+00:27:45.757 --> 00:27:51.722
+Finally, ask yourself three follow-up questions. How do driver leases prevent double assignment?
+
+297
+00:27:51.722 --> 00:27:59.064
+What happens when a GPS point is stale? How would scheduled rides change capacity and dispatch?
+
+298
+00:27:59.064 --> 00:28:03.194
+The enduring lesson is not a list of technologies.
+
+299
+00:28:03.194 --> 00:28:09.618
+It is a habit: make the product reliable first, make the AI helpful second,
+
+300
+00:28:09.618 --> 00:28:15.124
+and always explain what happens when a component is missing or wrong.
+
+301
+00:28:15.124 --> 00:28:20.171
+Practice this story aloud once, then redraw the flow from memory.
+
+302
+00:28:20.171 --> 00:28:25.677
+That is how an architecture becomes an explanation you can confidently share.
+
+303
+00:28:25.677 --> 00:28:35.366
+That is a design others can understand, critique, and improve.
