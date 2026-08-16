@@ -42,6 +42,10 @@ Every created order gets a stable event ID and payload. A failed publish leaves 
 
 The core uses in-memory collections to illustrate state transitions, not a fake transaction manager. Inject a publisher that can fail. Keep consumer deduplication durable in the production discussion, because memory resets are not safe.
 
+### Framework adapter discussion
+
+In Spring Boot, a controller accepts the command, an injected application service writes the aggregate and outbox row in one `@Transactional` boundary, and a separate relay publishes pending rows after commit. In FastAPI, use dependency injection for the repository and publisher, keep the transaction boundary in the service/database adapter, and return an accepted result before relay delivery. Instrument relay attempts and consumer deduplication with injected telemetry; the HTTP framework must not claim exactly-once delivery.
+
 ## Test cases and edge cases
 
 Test order/event creation, failed publication remaining pending, successful retry, duplicate broker delivery, repeated consumer call, a malformed event rejection, and events for two aggregates. Assert no duplicate consumer side effect.

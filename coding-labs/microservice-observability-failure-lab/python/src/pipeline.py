@@ -22,6 +22,8 @@ class Metric: name: str; outcome: str; value: int
 class RequestPipeline:
     def __init__(self, dependency, event_sink, metric_sink, now_ms, dependency_name): self._dependency, self._events, self._metrics, self._now, self._name = dependency, event_sink, metric_sink, now_ms, dependency_name
     def handle(self, request_id, deadline_ms):
+        if not isinstance(request_id, str): raise ValueError("request id and deadline required")
+        request_id = request_id.strip()
         if not request_id or deadline_ms < 0: raise ValueError("request id and deadline required")
         started = self._now(); self._emit(Event("request_started", request_id, "in_progress", 0, self._name))
         try: result = self._dependency(request_id)

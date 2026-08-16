@@ -42,6 +42,10 @@ Every event includes request ID, outcome, duration, and dependency name; do not 
 
 Use immutable event objects and a test sink that records them in memory. Model timeout as a dependency result or deterministic elapsed time rather than an actual thread interrupt. Keep logs, metrics, and traces conceptually distinct.
 
+### Framework adapter discussion
+
+A Spring Boot adapter can use a controller plus constructor-injected dependency client and telemetry facade, carrying the request deadline from HTTP metadata into the framework-neutral pipeline. A FastAPI adapter can use typed request models and `Depends` providers for the dependency and telemetry sink. Keep timeout/error classification in the core, persistence only for durable audit needs, and OpenTelemetry export at the adapter boundary so telemetry failure never changes the HTTP outcome.
+
 ## Test cases and edge cases
 
 Test success, dependency exception, deadline exceeded, a repeated request with distinct IDs, missing correlation ID rejection, telemetry-sink failure isolation, and recovery after a dependency becomes healthy. Ensure no secret payload appears in emitted fields.

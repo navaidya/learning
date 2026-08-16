@@ -42,6 +42,10 @@ Require a non-blank key and validated request. Canonicalize or fingerprint the r
 
 Keep fingerprinting deterministic and explain which fields are intentionally excluded. In-memory locking demonstrates the critical section but is not a multi-instance solution. Make generated IDs injectable for repeatable tests.
 
+### Framework adapter discussion
+
+For a Spring Boot adapter, map the HTTP `Idempotency-Key` header in a controller, inject the service and repository through constructor DI, and put the uniqueness insert plus order side effect behind one database transaction. A FastAPI adapter follows the same boundary with a typed request/header dependency and injected repository; keep the core service framework-neutral. Return the stored response for a replay and expose conflict/validation statuses without leaking the key. Persistence, transaction isolation, and key retention belong below the HTTP layer.
+
 ## Test cases and edge cases
 
 Test valid creation, identical duplicate replay, conflicting duplicate, blank key, invalid amount, a retry after a simulated response loss, and concurrent same-key requests. Verify only one stored order exists.

@@ -21,5 +21,8 @@ class LruTtlCacheTest(unittest.TestCase):
         with self.assertRaises(ValueError): cache.put(None, "x", 1)
         with self.assertRaises(ValueError): cache.put("x", None, 1)
         with self.assertRaises(ValueError): cache.get(None)
+        eviction_now = [0]; expired_newest = LruTtlCache(2, lambda: eviction_now[0])
+        expired_newest.put("live", "L", 100); expired_newest.put("expired", "E", 1); eviction_now[0] = 2; expired_newest.put("new", "N", 100)
+        self.assertEqual(expired_newest.get("live"), "L"); self.assertIsNone(expired_newest.get("expired"))
 
 if __name__ == "__main__": unittest.main()

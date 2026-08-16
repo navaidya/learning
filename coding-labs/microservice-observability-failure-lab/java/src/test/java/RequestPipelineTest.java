@@ -14,6 +14,7 @@ public final class RequestPipelineTest {
     RequestPipeline timeout = new RequestPipeline(request -> { now.addAndGet(50); return RequestPipeline.DependencyResult.success("late"); }, event -> { throw new RuntimeException("sink down"); }, metric -> { throw new RuntimeException("sink down"); }, now::get, "catalog");
     check(timeout.handle("r-3", 20).outcome() == RequestPipeline.Outcome.TIMEOUT, "deadline timeout isolated from telemetry failure");
     check(pipeline.handle("r-4", 20).outcome() == RequestPipeline.Outcome.SUCCESS && events.stream().map(RequestPipeline.Event::requestId).distinct().count() == 3, "recovery uses distinct request ids");
+    pipeline.handle("  r-trim  ", 20); check(events.stream().anyMatch(event -> event.requestId().equals("r-trim")), "normalizes request id");
     expectIllegal(() -> pipeline.handle("", 10));
   }
   private static void check(boolean c, String m) { if (!c) throw new AssertionError(m); }

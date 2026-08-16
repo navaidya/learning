@@ -16,6 +16,9 @@ public final class LruTtlCacheTest {
     cache.put("z", "Z", 0); check(cache.get("z").isEmpty(), "zero ttl");
     expectIllegal(() -> cache.put(null, "x", 1)); expectIllegal(() -> cache.put("x", null, 1)); expectIllegal(() -> cache.get(null));
     expectIllegal(() -> new LruTtlCache<String, String>(0, now::get));
+    AtomicLong evictionClock = new AtomicLong(0); LruTtlCache<String, String> expiredNewest = new LruTtlCache<>(2, evictionClock::get);
+    expiredNewest.put("live", "L", 100); expiredNewest.put("expired", "E", 1); evictionClock.set(2); expiredNewest.put("new", "N", 100);
+    check(expiredNewest.get("live").equals(Optional.of("L")) && expiredNewest.get("expired").isEmpty(), "purges expired entry before live LRU eviction");
   }
   private static void check(boolean c, String m) { if (!c) throw new AssertionError(m); }
   private static void expectIllegal(Runnable a) { try { a.run(); throw new AssertionError("expected IllegalArgumentException"); } catch (IllegalArgumentException expected) {} }

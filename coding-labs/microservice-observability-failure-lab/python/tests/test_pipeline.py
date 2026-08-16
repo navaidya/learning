@@ -17,6 +17,8 @@ class PipelineTest(unittest.TestCase):
         self.assertEqual(timeout.handle("r-3", 20).outcome, Outcome.TIMEOUT)
         self.assertEqual(pipeline.handle("r-4", 20).outcome, Outcome.SUCCESS)
         self.assertEqual(len({event.request_id for event in events}), 3)
+        pipeline.handle("  r-trim  ", 20)
+        self.assertTrue(any(event.request_id == "r-trim" for event in events))
         with self.assertRaises(ValueError): pipeline.handle("", 20)
 
 if __name__ == "__main__": unittest.main()

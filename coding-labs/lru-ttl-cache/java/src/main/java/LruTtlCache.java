@@ -1,6 +1,7 @@
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Optional;
+import java.util.Iterator;
 import java.util.function.LongSupplier;
 
 public final class LruTtlCache<K, V> {
@@ -11,7 +12,7 @@ public final class LruTtlCache<K, V> {
   public synchronized void put(K key, V value, long ttlMs) {
     if (ttlMs < 0) throw new IllegalArgumentException("ttl must be non-negative");
     if (key == null || value == null) throw new IllegalArgumentException("key and value are required");
-    entries.put(key, new Entry<>(value, clock.getAsLong() + ttlMs));
+    long now = clock.getAsLong(); purgeExpired(now); entries.put(key, new Entry<>(value, now + ttlMs));
     while (entries.size() > capacity) entries.remove(entries.keySet().iterator().next());
   }
   public synchronized Optional<V> get(K key) {
@@ -22,4 +23,5 @@ public final class LruTtlCache<K, V> {
     return Optional.ofNullable(entry.value());
   }
   public synchronized int size() { return entries.size(); }
+  private void purgeExpired(long now) { Iterator<Map.Entry<K, Entry<V>>> iterator = entries.entrySet().iterator(); while (iterator.hasNext()) if (now >= iterator.next().getValue().expiresAt()) iterator.remove(); }
 }

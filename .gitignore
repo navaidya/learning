@@ -13,6 +13,7 @@ video/**/*.m4a
 coding-labs/**/out/
 coding-labs/**/*.class
 coding-labs/**/__pycache__/
+coding-labs/**/.venv/
 
 # Per-machine Claude Code overrides. Shared config lives in .claude/settings.json
 # so cloud sessions inherit it; this file must not travel.

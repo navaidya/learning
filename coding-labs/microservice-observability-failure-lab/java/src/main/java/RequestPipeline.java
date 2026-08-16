@@ -11,6 +11,7 @@ public final class RequestPipeline {
   private final Dependency dependency; private final Consumer<Event> eventSink; private final Consumer<Metric> metricSink; private final LongSupplier clock; private final String dependencyName;
   public RequestPipeline(Dependency dependency, Consumer<Event> eventSink, Consumer<Metric> metricSink, LongSupplier clock, String dependencyName) { this.dependency = dependency; this.eventSink = eventSink; this.metricSink = metricSink; this.clock = clock; this.dependencyName = dependencyName; }
   public Response handle(String requestId, long deadlineMs) {
+    requestId = requestId == null ? null : requestId.trim();
     if (requestId == null || requestId.isBlank() || deadlineMs < 0) throw new IllegalArgumentException("request id and deadline required");
     long started = clock.getAsLong(); emit(new Event("request_started", requestId, "IN_PROGRESS", 0, dependencyName)); DependencyResult result;
     try { result = dependency.call(requestId); } catch (RuntimeException failure) { result = DependencyResult.failure(); }
