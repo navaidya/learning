@@ -9,6 +9,8 @@ public final class RetryPolicyTest {
     RetryPolicy<String> policy = new RetryPolicy<>(3, 100, 10, 50, clock::get, delay -> { sleeps.add(delay); clock.addAndGet(delay); }, () -> 0.5);
     RetryPolicy.Result<String> success = policy.execute(() -> attempts.incrementAndGet() < 2 ? throwRetry() : "ok");
     check(success.success() && success.attempts() == 2 && sleeps.equals(List.of(5L)), "retries with jitter");
+    List<Long> immediateSleeps = new ArrayList<>(); RetryPolicy<String> immediate = new RetryPolicy<>(3, 100, 10, 50, () -> 0, immediateSleeps::add, () -> 1.0);
+    RetryPolicy.Result<String> immediateResult = immediate.execute(() -> "first-attempt"); check(immediateResult.success() && immediateResult.attempts() == 1 && immediateSleeps.isEmpty(), "immediate success does not sleep");
     RetryPolicy.Result<String> permanent = policy.execute(() -> { throw new RetryPolicy.PermanentFailure("bad request"); });
     check(!permanent.success() && permanent.attempts() == 1, "permanent failure is not retried");
     RetryPolicy<String> tiny = new RetryPolicy<>(3, 0, 10, 50, clock::get, delay -> {}, () -> 1.0);

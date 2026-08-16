@@ -13,6 +13,10 @@ class RetryPolicyTest(unittest.TestCase):
             return "ok"
         result = policy.execute(operation)
         self.assertTrue(result.success); self.assertEqual(result.attempts, 2); self.assertEqual(delays, [5])
+        immediate_sleeps = []
+        immediate = RetryPolicy(3, 100, 10, 50, lambda: 0, immediate_sleeps.append, lambda: 1)
+        immediate_result = immediate.execute(lambda: "first-attempt")
+        self.assertTrue(immediate_result.success); self.assertEqual(immediate_result.attempts, 1); self.assertEqual(immediate_sleeps, [])
         self.assertEqual(RetryPolicy(3, 0, 10, 50, lambda: 0, lambda _: None, lambda: 1).execute(lambda: (_ for _ in ()).throw(RetryableFailure("x"))).attempts, 1)
         self.assertFalse(policy.execute(lambda: (_ for _ in ()).throw(PermanentFailure("bad"))).success)
         capped = []
