@@ -7351,25 +7351,5 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "vector"
-  },
-  {
-    "id": "tempo-876440455279",
-    "title": "v3.0.0-rc.1",
-    "summary": "Tempo v3.0.0-rc.1 Tempo 3.0 is a major release candidate focused on the new ingest/write architecture, removal of deprecated 2.x components, migration tooling, TraceQL metrics improvements, and live-store/block-builder correctness and observability fixes. Breaking Changes Remove duplicate \"compaction\" prefix from CompactorConfig CLI flags. Affected flags: compaction.block-retention, compaction.max-objects-per-block, compaction.max-block-bytes, compaction.compaction-window by @electron0zero in #6",
-    "source": "Grafana Tempo",
-    "sourceId": "tempo",
-    "url": "https://github.com/grafana/tempo/releases/tag/v3.0.0-rc.1",
-    "publishedDate": "2026-05-18T18:19:23.000Z",
-    "domain": "tracing",
-    "topics": [
-      "tempo",
-      "tracing",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "tempo",
-    "releaseVersion": "v3.0.0-rc.1"
   }
 ]
