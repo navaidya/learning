@@ -1,0 +1,19 @@
+import sys
+import unittest
+sys.path.insert(0, "src")
+from retry_policy import RetryPolicy, RetryableFailure, PermanentFailure
+
+class RetryPolicyTest(unittest.TestCase):
+    def test_retry_jitter_permanent_and_budget(self):
+        now, delays, attempts = [0], [], [0]
+        policy = RetryPolicy(3, 100, 10, 50, lambda: now[0], lambda delay: (delays.append(delay), now.__setitem__(0, now[0] + delay)), lambda: 0.5)
+        def operation():
+            attempts[0] += 1
+            if attempts[0] == 1: raise RetryableFailure("temporary")
+            return "ok"
+        result = policy.execute(operation)
+        self.assertTrue(result.success); self.assertEqual(result.attempts, 2); self.assertEqual(delays, [5])
+        self.assertEqual(RetryPolicy(3, 0, 10, 50, lambda: 0, lambda _: None, lambda: 1).execute(lambda: (_ for _ in ()).throw(RetryableFailure("x"))).attempts, 1)
+        self.assertFalse(policy.execute(lambda: (_ for _ in ()).throw(PermanentFailure("bad"))).success)
+
+if __name__ == "__main__": unittest.main()
