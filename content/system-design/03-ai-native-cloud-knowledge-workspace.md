@@ -1,13 +1,15 @@
 ---
 title: AI-Native Cloud Knowledge Workspace (Dropbox-like)
 summary: A secure file-sync workspace with content-addressed storage, offline collaboration, ACL-aware retrieval, and grounded assistants.
-order: 3
+order: 4
 difficulty: advanced
 interviewMinutes: 45
 scaleChallenge: Correct multi-device synchronization of huge blobs and tiny metadata changes
 aiFocus: [multimodal indexing, ACL-aware RAG, collaborative agents]
 tags: [object-storage, sync, search, rag]
 ---
+
+_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 

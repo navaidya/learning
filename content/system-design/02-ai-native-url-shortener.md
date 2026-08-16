@@ -1,13 +1,15 @@
 ---
 title: AI-Native URL Shortener (TinyURL-like)
 summary: A low-latency redirect service with global caching, streaming analytics, semantic safety, and agent-resistant abuse controls.
-order: 2
+order: 3
 difficulty: intermediate
 interviewMinutes: 45
 scaleChallenge: Read-heavy global redirects while preserving safe, mutable link metadata
 aiFocus: [destination risk classification, semantic link discovery, agent abuse detection]
 tags: [url-shortener, edge, caching, abuse-prevention]
 ---
+
+_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 

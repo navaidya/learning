@@ -1,13 +1,15 @@
 ---
 title: AI-Native Public Conversation Network (Twitter-like)
 summary: A real-time public posting network with hybrid fan-out, provenance-aware media, transparent ranking, and defenses against coordinated agents.
-order: 5
+order: 6
 difficulty: advanced
 interviewMinutes: 45
 scaleChallenge: Producing fresh personalized feeds across a highly skewed follower graph
 aiFocus: [multimodal ranking, provenance, coordinated-agent detection]
 tags: [social-feed, fanout, graph, moderation]
 ---
+
+_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 
