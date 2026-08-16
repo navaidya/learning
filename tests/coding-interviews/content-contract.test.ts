@@ -36,6 +36,7 @@ type GuideFrontmatter = {
   summary: unknown;
   order: unknown;
   difficulty: unknown;
+  estimatedMinutes: unknown;
   categories: unknown;
   languages: unknown;
   skills: unknown;
@@ -88,9 +89,14 @@ describe('coding interview guide contract', () => {
       expect(data.labPath, `${file} needs a labPath`).toEqual(expect.any(String));
       expect((data.labPath as string).trim(), `${file} needs a non-empty labPath`).not.toBe('');
       expect(data.difficulty, `${file} has an invalid difficulty`).toMatch(/^(beginner|intermediate|advanced)$/);
+      expect(data.estimatedMinutes, `${file} needs an estimatedMinutes value`).toEqual(expect.any(Number));
+      expect(Number.isInteger(data.estimatedMinutes), `${file} estimatedMinutes must be an integer`).toBe(true);
+      expect(data.estimatedMinutes as number, `${file} estimatedMinutes must be at least 15`).toBeGreaterThanOrEqual(15);
+      expect(data.estimatedMinutes as number, `${file} estimatedMinutes must be at most 180`).toBeLessThanOrEqual(180);
       expect(data.status, `${file} has an invalid status`).toMatch(/^(planned|ready|in_progress|completed)$/);
       expectNonEmptyStrings(data.categories, 'categories', file);
       expectNonEmptyStrings(data.languages, 'languages', file);
+      expect(data.languages, `${file} must provide both Java and Python`).toEqual(expect.arrayContaining(['java', 'python']));
       expectNonEmptyStrings(data.skills, 'skills', file);
     }
   });

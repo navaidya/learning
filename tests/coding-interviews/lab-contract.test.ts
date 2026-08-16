@@ -34,7 +34,9 @@ async function guideFor(file: string): Promise<LabGuide> {
 }
 
 async function filesRecursively(directory: string): Promise<string[]> {
-  return readdir(directory, { recursive: true }).then((entries) => entries.filter((entry) => typeof entry === 'string'));
+  return readdir(directory, { recursive: true })
+    .catch(() => [] as string[])
+    .then((entries) => entries.filter((entry) => typeof entry === 'string'));
 }
 
 describe('coding interview runnable lab contract', () => {
