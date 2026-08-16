@@ -8,6 +8,7 @@ dist/
 video/**/*.mp4
 video/**/*.aiff
 video/**/*.m4a
+~$*.pptx
 
 # Per-machine Claude Code overrides. Shared config lives in .claude/settings.json
 # so cloud sessions inherit it; this file must not travel.
