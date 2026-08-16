@@ -1,0 +1,30 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+type Props = {
+  entry: CollectionEntry<'coding-interviews'>;
+  href: string;
+};
+
+const { entry, href } = Astro.props as Props;
+---
+
+<a class="coding-interview-card" href={href}>
+  <div class="coding-interview-card__topline">
+    <span class="coding-interview-badge">{entry.data.difficulty}</span>
+    <span>{entry.data.estimatedMinutes} min</span>
+  </div>
+  <h2>{entry.data.title}</h2>
+  <p>{entry.data.summary}</p>
+  <dl>
+    <div>
+      <dt>Practice areas</dt>
+      <dd>{entry.data.categories.join(' · ')}</dd>
+    </div>
+    <div>
+      <dt>Languages</dt>
+      <dd>{entry.data.languages.join(' · ')}</dd>
+    </div>
+  </dl>
+  <span class="coding-interview-card__cta">Open lab guide →</span>
+</a>

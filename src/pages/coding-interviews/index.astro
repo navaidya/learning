@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content';
+import CodingInterviewCard from '../../components/coding-interviews/CodingInterviewCard.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { withBase } from '../../lib/url';
+import '../../styles/coding-interviews.css';
+
+const entries = (await getCollection('coding-interviews')).sort((left, right) => left.data.order - right.data.order);
+---
+
+<BaseLayout title="Senior Coding Interview Library" description="Independent Java and Python coding and microservices labs for senior engineering interview preparation.">
+  <p class="coding-interviews-eyebrow">Hands-on interview preparation</p>
+  <h1>Senior Coding Interview Library</h1>
+  <p class="coding-interviews-lede">Choose any lab that matches the skill you want to practice. Each guide explains the interview problem, senior-level trade-offs, and a runnable Java and Python implementation.</p>
+  <p class="coding-interviews-count" aria-live="polite">{entries.length} independent lab{entries.length === 1 ? '' : 's'} available</p>
+  <div class="coding-interviews-grid">
+    {entries.map((entry) => <CodingInterviewCard entry={entry} href={withBase(`/coding-interviews/${entry.id}`)} />)}
+  </div>
+</BaseLayout>

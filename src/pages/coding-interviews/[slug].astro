@@ -1,0 +1,54 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { withBase } from '../../lib/url';
+import '../../styles/coding-interviews.css';
+
+type Props = {
+  entry: CollectionEntry<'coding-interviews'>;
+  entries: CollectionEntry<'coding-interviews'>[];
+  index: number;
+};
+
+export async function getStaticPaths() {
+  const entries = (await getCollection('coding-interviews')).sort((left, right) => left.data.order - right.data.order);
+  return entries.map((entry, index) => ({ params: { slug: entry.id }, props: { entry, entries, index } }));
+}
+
+const { entry, entries, index } = Astro.props as Props;
+const { Content } = await render(entry);
+const previous = entries[index - 1];
+const next = entries[index + 1];
+const repository = import.meta.env.GITHUB_REPOSITORY ?? 'navaidya/learning';
+const labHref = `https://github.com/${repository}/tree/main/${entry.data.labPath}`;
+---
+
+<BaseLayout title={`${entry.data.title} | Coding Interviews`} description={entry.data.summary}>
+  <article class="coding-interview-detail">
+    <a class="coding-interview-back-link" href={withBase('/coding-interviews')}>← All coding interview labs</a>
+    <p class="coding-interviews-eyebrow">Independent coding lab</p>
+    <h1>{entry.data.title}</h1>
+    <p class="coding-interviews-lede">{entry.data.summary}</p>
+
+    <dl class="coding-interview-summary">
+      <div><dt>Difficulty</dt><dd>{entry.data.difficulty}</dd></div>
+      <div><dt>Practice time</dt><dd>{entry.data.estimatedMinutes} minutes</dd></div>
+      <div><dt>Languages</dt><dd><span class="coding-interview-badges">{entry.data.languages.map((language) => <span class="coding-interview-badge">{language}</span>)}</span></dd></div>
+      <div><dt>Status</dt><dd>{entry.data.status}</dd></div>
+    </dl>
+
+    <section class="coding-interview-metadata" aria-label="Lab skills and categories">
+      <div><h2>Categories</h2><ul class="coding-interview-tag-list">{entry.data.categories.map((category) => <li>{category}</li>)}</ul></div>
+      <div><h2>Skills</h2><ul class="coding-interview-tag-list">{entry.data.skills.map((skill) => <li>{skill}</li>)}</ul></div>
+    </section>
+
+    <p class="coding-interview-lab-link"><a href={labHref}>Open the runnable lab on GitHub →</a></p>
+
+    <div class="coding-interview-content"><Content /></div>
+
+    <nav class="coding-interview-pagination" aria-label="Adjacent coding interview labs">
+      {previous && <a href={withBase(`/coding-interviews/${previous.id}`)}>← {previous.data.title}</a>}
+      {next && <a href={withBase(`/coding-interviews/${next.id}`)}>{next.data.title} →</a>}
+    </nav>
+  </article>
+</BaseLayout>
