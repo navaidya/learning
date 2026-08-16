@@ -1,5 +1,13 @@
 [
   {
+    "project": "holmesgpt",
+    "version": "0.39.1-alpha",
+    "publishedDate": "2026-08-16T12:43:41.000Z",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.39.1-alpha",
+    "sourceId": "holmesgpt",
+    "title": "0.39.1-alpha"
+  },
+  {
     "project": "crossplane",
     "version": "v2.4.0-rc.1",
     "publishedDate": "2026-08-14T16:06:42.000Z",
@@ -110,14 +118,6 @@
     "url": "https://github.com/robusta-dev/robusta/releases/tag/0.47.0",
     "sourceId": "robusta",
     "title": "0.47.0"
-  },
-  {
-    "project": "holmesgpt",
-    "version": "0.39.0",
-    "publishedDate": "2026-08-10T15:02:51.000Z",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.39.0",
-    "sourceId": "holmesgpt",
-    "title": "0.39.0"
   },
   {
     "project": "flux",
