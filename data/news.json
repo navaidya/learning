@@ -7332,24 +7332,5 @@
     "importance": "high",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "vector-4ff20369b357",
-    "title": "vdev-v0.3.4-pr.25456",
-    "summary": "test(vdev): intentional check-markdown failure for pre-release CI val…",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.4-pr.25456",
-    "publishedDate": "2026-05-18T22:40:44.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector"
   }
 ]
