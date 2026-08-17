@@ -75,15 +75,15 @@ The effective resolution path is:
 
 ```mermaid
 flowchart TD
-  B[bootstrap.properties] --> BC[Bootstrap context]
-  BE[bootstrap-{environment}.properties] --> BC
-  BC --> R[Remote or distributed configuration]
-  A[application.properties] --> AC[Application context]
-  AE[application-{environment}.properties] --> AC
+  B["bootstrap.properties"] --> BC["Bootstrap context"]
+  BE["bootstrap-{environment}.properties"] --> BC
+  BC --> R["Remote or distributed configuration"]
+  A["application.properties"] --> AC["Application context"]
+  AE["application-{environment}.properties"] --> AC
   R --> AC
-  ENV[Environment variables, system properties, CLI] --> AC
-  AC --> T[@ConfigurationProperties typed bean]
-  T --> S[Constructor-injected service]
+  ENV["Environment variables, system properties, CLI"] --> AC
+  AC --> T["@ConfigurationProperties typed bean"]
+  T --> S["Constructor-injected service"]
 ```
 
 In an interview, explain the distinction this way: `application-stage.properties` changes the main application’s stage-specific behavior; `bootstrap-stage.properties` supplies stage-specific values needed to build or locate that application context in the first place. See the [Micronaut application configuration guide](https://docs.micronaut.io/4.9.10/guide/index.html) and [Environment API](https://docs.micronaut.io/4.9.10/api/io/micronaut/context/env/Environment.html).
@@ -171,14 +171,14 @@ Micronaut resolves the constructor dependencies from the application context. Th
 
 ```mermaid
 flowchart LR
-  A[application.yml] --> E[Environment]
-  B[Environment variables] --> E
-  C[System or test PropertySource] --> E
-  E --> N[Property name normalization]
-  N --> BIND[Compile-time configuration binding]
-  BIND --> T[Typed CatalogConfiguration bean]
-  T --> I[Constructor injection]
-  I --> S[CatalogClient or CatalogService]
+  A["application.yml"] --> E["Environment"]
+  B["Environment variables"] --> E
+  C["System or test PropertySource"] --> E
+  E --> N["Property name normalization"]
+  N --> BIND["Compile-time configuration binding"]
+  BIND --> T["Typed CatalogConfiguration bean"]
+  T --> I["Constructor injection"]
+  I --> S["CatalogClient or CatalogService"]
 ```
 
 ### What happens automatically, and what does not?
@@ -232,18 +232,18 @@ This is a framework-level flow, not a representation of any private project:
 
 ```mermaid
 flowchart LR
-  Client[Caller] --> Filter[Security and correlation filter]
-  Filter --> Controller[HTTP Controller]
-  Controller --> Validate[Request validation]
-  Validate --> Service[Application service]
-  Service --> Downstream[Declarative HTTP client]
-  Service --> Repo[Repository]
-  Service --> Events[Event publisher]
-  Service --> Telemetry[Metrics and tracing]
-  Downstream --> Config[Typed client configuration]
+  Client["Caller"] --> Filter["Security and correlation filter"]
+  Filter --> Controller["HTTP Controller"]
+  Controller --> Validate["Request validation"]
+  Validate --> Service["Application service"]
+  Service --> Downstream["Declarative HTTP client"]
+  Service --> Repo["Repository"]
+  Service --> Events["Event publisher"]
+  Service --> Telemetry["Metrics and tracing"]
+  Downstream --> Config["Typed client configuration"]
   Repo --> DB[(Database)]
   Events --> Broker[(Message broker)]
-  Service -. blocking work .-> Pool[Blocking executor]
+  Service -. blocking work .-> Pool["Blocking executor"]
 ```
 
 The controller translates HTTP into an application command. The service owns the use case and transaction boundary. The client, repository, and publisher isolate external systems. Filters handle cross-cutting request concerns. Configuration supplies policy; it should not become a second business-logic layer.
