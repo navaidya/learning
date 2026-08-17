@@ -6,6 +6,7 @@ import YAML from 'yaml';
 const contentDirectory = fileURLToPath(new URL('../../content/system-design/', import.meta.url));
 
 const expectedSlugs = [
+  '00-system-design-template',
   '01-ai-native-mobility-marketplace',
   '02-ai-native-url-shortener',
   '03-ai-native-cloud-knowledge-workspace',
@@ -13,6 +14,22 @@ const expectedSlugs = [
   '05-ai-native-public-conversation-network',
   '06-ai-native-social-network',
   '07-ai-native-delivery-marketplace',
+  '08-rate-limiter',
+  '09-distributed-cache',
+  '10-distributed-message-queue',
+  '11-observability-platform',
+  '12-video-streaming-platform',
+  '13-web-crawler',
+  '14-search-autocomplete',
+  '15-notification-system',
+  '16-ecommerce-platform',
+  '17-payments-ledger',
+  '18-event-ticketing',
+  '19-travel-booking',
+  '20-collaborative-doc-editor',
+  '21-multi-agent-orchestration',
+  '22-ml-feature-store-serving',
+  '23-llm-search-rag',
 ];
 
 const requiredHeadings = [
@@ -49,12 +66,12 @@ function splitMarkdown(source: string) {
 }
 
 describe('system design content contract', () => {
-  it('publishes the complete, ordered seven-case catalog', async () => {
+  it('publishes the complete, ordered catalog', async () => {
     const files = await markdownFiles();
     expect(files.map((file) => file.replace(/\.md$/, ''))).toEqual(expectedSlugs);
 
     const entries = await Promise.all(files.map(async (file) => splitMarkdown(await readFile(`${contentDirectory}/${file}`, 'utf8'))));
-    expect(entries.map(({ data }) => data.order)).toEqual([1, 2, 3, 4, 5, 6, 7]);
+    expect(entries.map(({ data }) => data.order)).toEqual(expectedSlugs.map((_, index) => index + 1));
 
     for (const { data } of entries) {
       expect(data).toEqual(expect.objectContaining({
@@ -74,7 +91,7 @@ describe('system design content contract', () => {
 
   it('keeps every case interview-complete and diagram-driven', async () => {
     const files = await markdownFiles();
-    expect(files).toHaveLength(7);
+    expect(files).toHaveLength(expectedSlugs.length);
     for (const file of files) {
       const { body } = splitMarkdown(await readFile(`${contentDirectory}/${file}`, 'utf8'));
       for (const heading of requiredHeadings) {

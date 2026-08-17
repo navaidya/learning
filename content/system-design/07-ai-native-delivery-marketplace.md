@@ -1,13 +1,15 @@
 ---
 title: AI-Native Delivery Marketplace (DoorDash-like)
 summary: A local-commerce marketplace with durable order workflows, geospatial dispatch, predictive demand and ETA, and human-governed exception agents.
-order: 7
+order: 8
 difficulty: advanced
 interviewMinutes: 45
 scaleChallenge: Coordinating merchant, courier, customer, inventory, and payment state under real-world uncertainty
 aiFocus: [demand forecasting, constrained dispatch, exception-resolution agents]
 tags: [marketplace, delivery, workflow, optimization]
 ---
+
+_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 

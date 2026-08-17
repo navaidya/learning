@@ -1,13 +1,15 @@
 ---
 title: AI-Native Social Network (Facebook-like)
 summary: A privacy-bounded social graph with multimodal feeds, audience policy enforcement, consent-aware memory, and scoped personal agents.
-order: 6
+order: 7
 difficulty: advanced
 interviewMinutes: 45
 scaleChallenge: Enforcing changing audience permissions across graph, feed, media, search, and AI projections
 aiFocus: [personal agents, consent-aware memory, multimodal recommendation]
 tags: [social-graph, privacy, feeds, agents]
 ---
+
+_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 

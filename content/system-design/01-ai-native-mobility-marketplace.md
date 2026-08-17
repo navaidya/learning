@@ -1,13 +1,15 @@
 ---
 title: AI-Native Mobility Marketplace (Uber-like)
 summary: A regional ride marketplace with real-time dispatch, predictive ETAs, safety-aware automation, and deterministic fallbacks.
-order: 1
+order: 2
 difficulty: advanced
 interviewMinutes: 45
 scaleChallenge: Geospatial matching against fast-moving supply during bursty demand
 aiFocus: [ETA prediction, dispatch optimization, safety copilots]
 tags: [marketplace, geospatial, streaming, machine-learning]
 ---
+
+_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 

@@ -1,13 +1,15 @@
 ---
 title: AI-Native Private Messaging (WhatsApp-like)
 summary: End-to-end encrypted messaging with durable offline delivery, multi-device groups, on-device intelligence, and opt-in confidential assistance.
-order: 4
+order: 5
 difficulty: advanced
 interviewMinutes: 45
 scaleChallenge: Ordered, durable delivery to intermittently connected devices without server-visible plaintext
 aiFocus: [on-device models, confidential inference, metadata-minimizing safety]
 tags: [messaging, e2ee, realtime, privacy]
 ---
+
+_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 
