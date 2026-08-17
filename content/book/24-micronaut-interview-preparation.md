@@ -259,18 +259,53 @@ Avoid claiming that one framework is universally faster or safer. Describe the w
 
 ## Senior interview questions
 
-1. How does Micronaut create a bean without scanning every class at startup?
-2. Walk through a value from `application.yml` to a constructor-injected Java object.
-3. When would you use `@Value` instead of `@ConfigurationProperties`?
-4. How would you configure ten downstream clients without writing ten factory methods?
-5. What happens when a required configuration property is missing?
-6. How do environment variables and test properties override file configuration?
-7. How do you keep a blocking database call off an event-loop thread?
-8. Where would you apply retries, timeouts, idempotency, and circuit breaking?
-9. How would you test a controller while keeping the downstream service deterministic?
-10. What metrics tell you that a Micronaut service is failing because of its dependency pool rather than its own CPU?
-11. How do you protect secrets from logs and accidental configuration exposure?
-12. What evidence would make you choose Micronaut over Spring for a new service?
+### 1. How does Micronaut create a bean without scanning every class at startup?
+
+Micronaut’s annotation processors generate bean-definition metadata during compilation. At startup, the application context reads that generated metadata to discover scopes, constructor dependencies, qualifiers, and conditions instead of scanning every class and building reflection metadata. Runtime work still exists—configuration is loaded, conditions are evaluated, and objects are instantiated—but the discovery path is more explicit and generally smaller. I would verify the benefit with startup-time, memory, and throughput measurements for the actual service rather than promising a universal speedup.
+
+### 2. Walk through a value from `application.yml` to a constructor-injected Java object.
+
+Micronaut loads the property sources into its environment, normalizes the property path, and binds the `service.catalog` subtree to a `@ConfigurationProperties("service.catalog")` bean. Supported conversion turns values such as `500ms` into a `Duration`, a URL into a `URI`, and text into numbers or booleans. Validation constraints run while the configuration bean is created. The application context then resolves that bean as a constructor argument of the client or service. If a required value is missing or invalid, startup should fail clearly instead of allowing the first production request to discover the problem.
+
+### 3. When would you use `@Value` instead of `@ConfigurationProperties`?
+
+I use `@Value` for one small, local value where a configuration type would add no structure—for example, a single optional message. I use `@ConfigurationProperties` for related settings such as a downstream URL, timeout policy, retry count, and feature switches. Grouping gives the configuration one validation boundary, one test seam, and one obvious contract. Repeated `@Value` fields spread configuration knowledge across the codebase and make it easier to miss a required setting.
+
+### 4. How would you configure ten downstream clients without writing ten factory methods?
+
+Represent the clients as named configuration entries and bind them with `@EachProperty`. Then use an `@EachBean` factory to create one qualified client for each configuration bean. The factory applies shared defaults—TLS, connection limits, timeouts, metrics labels—and the configured name becomes the qualifier. Adding an eleventh client becomes a configuration change rather than another branch or factory method. I would still validate names, prevent duplicate identities, and cap the total connection/resource footprint.
+
+### 5. What happens when a required configuration property is missing?
+
+The configuration bean cannot be created or validated, so application startup should fail with the property path and constraint that caused the failure. That is preferable to starting “mostly healthy” and failing later on a live request. For optional integrations, I would make the absence explicit with a default or `@Requires`-controlled fallback. I would never silently substitute an unsafe production URL, credential, or permissive security setting.
+
+### 6. How do environment variables and test properties override file configuration?
+
+Micronaut combines property sources according to its environment and precedence rules. Deployment-specific environment or system properties can override packaged defaults, while a test can provide a programmatic `PropertySource` or test environment values. I verify the effective configuration in the target environment rather than relying on memory about precedence. Tests should assert the selected value and avoid logging secrets; production should use the organization’s approved secret/configuration source.
+
+### 7. How do you keep a blocking database call off an event-loop thread?
+
+First identify whether the driver is blocking. If it is, execute the repository call on a bounded blocking executor or use a truly non-blocking driver. Propagate the request deadline, bound queue depth, and expose executor saturation metrics. I would test that the call is dispatched to the intended executor and that overload produces timeout or rejection behavior. Creating an unbounded thread per request only hides the problem and can exhaust the process or database.
+
+### 8. Where would you apply retries, timeouts, idempotency, and circuit breaking?
+
+Timeouts belong at every network boundary, with a total request deadline so nested calls cannot exceed the caller’s budget. Retries belong only around transient failures and only when the operation is safe to repeat; use bounded exponential backoff and jitter. Idempotency keys protect externally visible writes when a client may retry after a response loss. Circuit breaking or load shedding protects the caller when a dependency is persistently unhealthy. These controls should be placed at the client/service boundary and tested together, not added independently as annotations without a failure policy.
+
+### 9. How would you test a controller while keeping the downstream service deterministic?
+
+Use a Micronaut application-context or embedded-server test for routing, validation, serialization, filters, and error responses. Replace the downstream client with a fake bean or point the client at a deterministic test server. Supply explicit test properties through the test environment, then exercise success, timeout, malformed input, dependency failure, and idempotent replay. Keep pure retry, mapping, and business-policy tests separate so a failure identifies whether wiring or domain logic broke.
+
+### 10. What metrics tell you that a Micronaut service is failing because of its dependency pool rather than its own CPU?
+
+Compare request latency and error rate with dependency-call latency, timeout/retry counts, connection-pool utilization, pending-acquire time, executor queue depth, and downstream status codes. If CPU is normal but pool wait, dependency latency, and request deadlines rise together, the bottleneck is likely the dependency or its client pool. Correlate traces to confirm where time is spent, and check whether pool limits, timeout budgets, and downstream capacity are aligned.
+
+### 11. How do you protect secrets from logs and accidental configuration exposure?
+
+Keep secrets out of source control and ordinary application YAML. Load them through the approved secret/configuration source, inject only the component that needs them, and redact values in startup diagnostics, exception messages, request logs, and actuator/management output. Log presence and non-sensitive metadata rather than the secret itself. Test redaction and review configuration changes as security-sensitive code.
+
+### 12. What evidence would make you choose Micronaut over Spring for a new service?
+
+I would compare the service’s startup and memory budget, deployment model, native-image goals, ecosystem integrations, team familiarity, debugging experience, and operational standards. I would build a representative thin slice in both frameworks and measure startup time, RSS, throughput, tail latency, build complexity, and incident ergonomics. Micronaut’s compile-time model may be attractive for small, fast-starting services; Spring’s ecosystem may win for an organization with deep Spring expertise or required integrations. The choice should follow measured constraints, not framework slogans.
 
 ## A practical debugging checklist
 
@@ -303,4 +338,3 @@ When a service does not start or a bean is missing:
 - [EachBean API](https://docs.micronaut.io/4.9.10/api/io/micronaut/context/annotation/EachBean.html)
 - [Controller API](https://docs.micronaut.io/4.9.10/api/io/micronaut/http/annotation/Controller.html)
 - [ServerFilter API](https://docs.micronaut.io/4.9.10/api/io/micronaut/http/annotation/ServerFilter.html)
-
