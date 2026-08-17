@@ -34,6 +34,60 @@ Micronaut provides conventions and generated metadata for concerns that are othe
 
 The interview trade-off is explicitness versus magic. An annotation can remove boilerplate, but a senior engineer should still be able to explain the generated bean, its lifecycle, its qualifier, its thread model, and its failure mode.
 
+## Configuration file naming and bootstrap context
+
+Micronaut uses the active environment name to select environment-specific configuration files:
+
+| File | Meaning |
+| --- | --- |
+| `application.properties` | Base application configuration |
+| `application-dev.properties` | Overrides for the active `dev` environment |
+| `application-stage.properties` | Overrides for the active `stage` environment |
+| `bootstrap.properties` | Configuration needed before the main context starts |
+| `bootstrap-stage.properties` | Early configuration for the active `stage` environment |
+
+The general naming pattern is:
+
+```text
+application-{environment}.{extension}
+bootstrap-{environment}.{extension}
+```
+
+Creating `application-stage.properties` does not activate the `stage` environment. Activate it explicitly, for example:
+
+```bash
+MICRONAUT_ENVIRONMENTS=stage java -jar service.jar
+```
+
+or:
+
+```bash
+java -Dmicronaut.environments=stage -jar service.jar
+```
+
+Once `stage` is active, Micronaut can load both `application.properties` and `application-stage.properties`, with the environment-specific values overriding matching base values. Tests commonly activate `TEST` automatically, and an application can have more than one active environment.
+
+`bootstrap` is not merely another profile name. It represents an early configuration context that runs before the main application context when bootstrap is enabled. Use it for settings required to discover or retrieve the rest of the configuration, such as distributed configuration clients, service discovery, or a remote configuration location. `bootstrap-stage.properties` requires both an active `stage` environment and an enabled bootstrap context; the file is not automatically used just because it exists.
+
+Bootstrap configuration is carried into the main context and has higher precedence than regular application configuration when the same key appears in both contexts. Keep ordinary service settings in `application*.properties`; put only startup-critical configuration in `bootstrap*.properties` so the lifecycle remains understandable. The bootstrap name can also be customized with Micronaut’s bootstrap-name system property.
+
+The effective resolution path is:
+
+```mermaid
+flowchart TD
+  B[bootstrap.properties] --> BC[Bootstrap context]
+  BE[bootstrap-{environment}.properties] --> BC
+  BC --> R[Remote or distributed configuration]
+  A[application.properties] --> AC[Application context]
+  AE[application-{environment}.properties] --> AC
+  R --> AC
+  ENV[Environment variables, system properties, CLI] --> AC
+  AC --> T[@ConfigurationProperties typed bean]
+  T --> S[Constructor-injected service]
+```
+
+In an interview, explain the distinction this way: `application-stage.properties` changes the main application’s stage-specific behavior; `bootstrap-stage.properties` supplies stage-specific values needed to build or locate that application context in the first place. See the [Micronaut application configuration guide](https://docs.micronaut.io/4.9.10/guide/index.html) and [Environment API](https://docs.micronaut.io/4.9.10/api/io/micronaut/context/env/Environment.html).
+
 ## The configuration-to-object path
 
 Suppose a service calls a catalog API. The same application artifact should work in local development, CI, staging, and production without recompiling for every URL or timeout. Configuration belongs outside the business logic.
