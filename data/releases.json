@@ -1,5 +1,29 @@
 [
   {
+    "project": "pulumi",
+    "version": "v3.258.0",
+    "publishedDate": "2026-08-17T19:04:32.000Z",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.258.0",
+    "sourceId": "pulumi",
+    "title": "v3.258.0"
+  },
+  {
+    "project": "opentelemetry-collector",
+    "version": "v1.65.0",
+    "publishedDate": "2026-08-17T17:37:33.000Z",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.159.0",
+    "sourceId": "opentelemetry-collector",
+    "title": "v1.65.0/v0.159.0"
+  },
+  {
+    "project": "prometheus",
+    "version": "v0.314.0",
+    "publishedDate": "2026-08-17T15:42:14.000Z",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v0.314.0",
+    "sourceId": "prometheus",
+    "title": "v0.314.0"
+  },
+  {
     "project": "holmesgpt",
     "version": "0.39.1-alpha",
     "publishedDate": "2026-08-16T12:43:41.000Z",
@@ -30,14 +54,6 @@
     "url": "https://github.com/grafana/tempo/releases/tag/v3.0.3",
     "sourceId": "tempo",
     "title": "v3.0.3"
-  },
-  {
-    "project": "pulumi",
-    "version": "v3.257.0",
-    "publishedDate": "2026-08-13T16:45:04.000Z",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.257.0",
-    "sourceId": "pulumi",
-    "title": "pkg/v3.257.0: Changelog and go.mod updates for v3.257.0 (#24314)"
   },
   {
     "project": "hashicorp",
@@ -104,14 +120,6 @@
     "title": "v1.54.0-next.3"
   },
   {
-    "project": "prometheus",
-    "version": "3.14.0-rc.0",
-    "publishedDate": "2026-08-11T11:05:32.000Z",
-    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.14.0-rc.0",
-    "sourceId": "prometheus",
-    "title": "3.14.0-rc.0 / 2026-08-06"
-  },
-  {
     "project": "robusta",
     "version": "0.47.0",
     "publishedDate": "2026-08-11T05:38:41.000Z",
@@ -150,14 +158,6 @@
     "url": "https://www.cncf.io/blog/2026/08/05/opencost-1-121-0-first-of-a-kind-kubernetes-inference-cost-tracking/",
     "sourceId": "cncf",
     "title": "OpenCost 1.121.0: First-of-a-kind Kubernetes inference cost tracking"
-  },
-  {
-    "project": "opentelemetry-collector",
-    "version": "v1.64.0",
-    "publishedDate": "2026-08-04T13:44:21.000Z",
-    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.158.0",
-    "sourceId": "opentelemetry-collector",
-    "title": "v1.64.0/v0.158.0"
   },
   {
     "project": "cilium",
