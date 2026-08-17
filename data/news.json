@@ -1,5 +1,328 @@
 [
   {
+    "id": "pulumi-c5fc5e76a116",
+    "title": "v3.258.0",
+    "summary": "3.258.0 (2026-08-17) Features [cli] Add opt-in encryption of stored credentials with a key protected by the operating system, selected with PULUMI_CREDENTIAL_STORE #24212 [cli/new] Ask for a cloud provider and language in interactive pulumi new instead of listing every template #24226 [sdk/go] Add policyx.NewStackValidationPolicy and wire up the analyzer's AnalyzeStack RPC so Go policy packs can validate the full stack #24232 Bug Fixes [sdkgen/go] Generate valid Go package clauses for schema mod",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.258.0",
+    "publishedDate": "2026-08-17T19:04:32.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.258.0"
+  },
+  {
+    "id": "cncf-258d9cb2aad3",
+    "title": "Welcome Falkey the Falco and Ky the Kyverno Pyrenees",
+    "summary": "If you have yet to meet Phippy, she’s a friendly PHP app exploring the cloud native world with her pals. Over the last decade, Phippy’s circle has grown to include eighteen friends, with the newest members...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/08/17/welcome-falkey-the-falco-and-ky-the-kyverno-pyrenees/",
+    "publishedDate": "2026-08-17T17:50:06.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "opentelemetry-collector-09fcd0869f7d",
+    "title": "v1.65.0/v0.159.0",
+    "summary": "Images and binaries here: https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.159.0 End User Changelog 💡 Enhancements 💡 pkg/exporterhelper: Add the pkg.exporterhelper.queueBatchEnabled feature gate (#14038, #13582, #12022) When enabled, the batch settings returned by NewDefaultQueueConfig() have batch::enabled true. See migration RFC. 🧰 Bug fixes 🧰 pkg/exporterhelper: Record otelcol_exporter_queue_batch_send_size and otelcol_exporter_queue_batch_send_size_bytes",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.159.0",
+    "publishedDate": "2026-08-17T17:37:33.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v1.65.0"
+  },
+  {
+    "id": "opentelemetry-collector-f57666357df8",
+    "title": "service/v0.159.0",
+    "summary": "Module set beta, Version v0.159.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/service%2Fv0.159.0",
+    "publishedDate": "2026-08-17T17:22:35.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.159.0"
+  },
+  {
+    "id": "opentelemetry-collector-4a520325cc1a",
+    "title": "service/telemetry/telemetrytest/v0.159.0",
+    "summary": "Module set beta, Version v0.159.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/service%2Ftelemetry%2Ftelemetrytest%2Fv0.159.0",
+    "publishedDate": "2026-08-17T17:22:35.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.159.0"
+  },
+  {
+    "id": "opentelemetry-collector-ba05fa772b1e",
+    "title": "service/hostcapabilities/v0.159.0",
+    "summary": "Module set beta, Version v0.159.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/service%2Fhostcapabilities%2Fv0.159.0",
+    "publishedDate": "2026-08-17T17:22:35.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.159.0"
+  },
+  {
+    "id": "opentelemetry-collector-699e3b0da3d3",
+    "title": "scraper/xscraper/v0.159.0",
+    "summary": "Module set beta, Version v0.159.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fxscraper%2Fv0.159.0",
+    "publishedDate": "2026-08-17T17:22:35.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.159.0"
+  },
+  {
+    "id": "opentelemetry-collector-35d9c3181bfb",
+    "title": "scraper/scrapertest/v0.159.0",
+    "summary": "Module set beta, Version v0.159.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fscrapertest%2Fv0.159.0",
+    "publishedDate": "2026-08-17T17:22:35.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.159.0"
+  },
+  {
+    "id": "opentelemetry-collector-5b872e012dbc",
+    "title": "scraper/scraperhelper/xscraperhelper/v0.159.0",
+    "summary": "Module set beta, Version v0.159.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fscraperhelper%2Fxscraperhelper%2Fv0.159.0",
+    "publishedDate": "2026-08-17T17:22:35.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.159.0"
+  },
+  {
+    "id": "opentelemetry-collector-00d59c58aeb0",
+    "title": "scraper/scraperhelper/v0.159.0",
+    "summary": "Module set beta, Version v0.159.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fscraperhelper%2Fv0.159.0",
+    "publishedDate": "2026-08-17T17:22:35.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.159.0"
+  },
+  {
+    "id": "opentelemetry-collector-a201a6fd700f",
+    "title": "scraper/v0.159.0",
+    "summary": "Module set beta, Version v0.159.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fv0.159.0",
+    "publishedDate": "2026-08-17T17:22:34.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.159.0"
+  },
+  {
+    "id": "opentelemetry-collector-e27aa565fd5e",
+    "title": "receiver/xreceiver/v0.159.0",
+    "summary": "Module set beta, Version v0.159.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/receiver%2Fxreceiver%2Fv0.159.0",
+    "publishedDate": "2026-08-17T17:22:34.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.159.0"
+  },
+  {
+    "id": "cncf-63a9b329673e",
+    "title": "CNCF Announces Kubeflow’s Graduation, Solidifying a Standard for Cloud Native AI Operations",
+    "summary": "Milestone marks widespread enterprise adoption for automating end-to-end AI and machine learning lifecycles on Kubernetes Key Highlights SAN FRANCISCO — August 17, 2026 — The Cloud Native Computing Foundation® (CNCF®), which builds sustainable ecosystems for cloud...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/announcements/2026/08/17/cncf-announces-kubeflows-graduation-solidifying-the-standard-for-cloud-native-ai-operations/",
+    "publishedDate": "2026-08-17T16:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": false
+  },
+  {
+    "id": "prometheus-d7b2a0adfb8d",
+    "title": "v0.314.0",
+    "summary": "v0.314.0",
+    "source": "Prometheus",
+    "sourceId": "prometheus",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v0.314.0",
+    "publishedDate": "2026-08-17T15:42:14.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "promql",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "prometheus",
+    "releaseVersion": "v0.314.0"
+  },
+  {
+    "id": "prometheus-5e7ae51a3085",
+    "title": "v3.14.0",
+    "summary": "v3.14.0",
+    "source": "Prometheus",
+    "sourceId": "prometheus",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.14.0",
+    "publishedDate": "2026-08-17T15:41:51.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "promql",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "prometheus",
+    "releaseVersion": "v3.14.0"
+  },
+  {
+    "id": "pulumi-51374f4f33b0",
+    "title": "sdk/v3.258.0: Update language runtimes (#24345)",
+    "summary": "Overview Bumps language runtime versions: dotnet v3.111.1 → v3.112.0, java v1.36.0 → v1.36.1, yaml v1.38.2 → v1.38.3.",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.258.0",
+    "publishedDate": "2026-08-17T12:36:26.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.258.0"
+  },
+  {
     "id": "openai-f137d9ea2f9f",
     "title": "The Defender’s Window",
     "summary": "AI is reshaping cybersecurity for attackers and defenders alike. Learn how OpenAI is strengthening its defenses and what security teams can do now.",
