@@ -1,0 +1,37 @@
+.coding-interviews-eyebrow { margin: 0 0 .35rem; color: var(--accent); font-size: .75rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+.coding-interviews-lede { max-width: 780px; color: var(--muted); font-size: 1.08rem; }
+.coding-interviews-count { margin: 1.5rem 0 0; color: var(--muted); font-size: .9rem; }
+.coding-interviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 1rem; margin-top: 1rem; }
+.coding-interview-card { display: flex; flex-direction: column; gap: .75rem; min-width: 0; padding: 1.25rem; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; text-decoration: none; }
+.coding-interview-card:hover, .coding-interview-card:focus-visible { border-color: var(--accent); box-shadow: 0 8px 24px rgb(37 99 235 / 10%); outline: 3px solid transparent; }
+.coding-interview-card:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.coding-interview-detail a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.coding-interview-card h2, .coding-interview-card p, .coding-interview-card dl { margin: 0; }
+.coding-interview-card p, .coding-interview-card dd { color: var(--muted); }
+.coding-interview-card__topline { display: flex; align-items: center; justify-content: space-between; gap: .75rem; color: var(--muted); font-size: .8rem; }
+.coding-interview-card dl { display: grid; gap: .65rem; }
+.coding-interview-card dt, .coding-interview-summary dt { color: var(--muted); font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; }
+.coding-interview-card dd, .coding-interview-summary dd { margin: 0; }
+.coding-interview-card__cta, .coding-interview-lab-link a { margin-top: auto; color: var(--accent); font-weight: 700; }
+.coding-interview-badge { display: inline-block; padding: .18rem .55rem; border-radius: 99px; background: #e7ebf2; color: #253247; font-size: .75rem; line-height: 1.35; }
+.coding-interview-detail { max-width: 900px; padding: 1.25rem; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; }
+.coding-interview-back-link { display: inline-block; margin-bottom: 1.5rem; color: var(--accent); font-weight: 700; text-decoration: none; }
+.coding-interview-back-link:hover, .coding-interview-back-link:focus-visible, .coding-interview-lab-link a:hover, .coding-interview-lab-link a:focus-visible, .coding-interview-pagination a:hover, .coding-interview-pagination a:focus-visible { text-decoration: underline; }
+.coding-interview-summary { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; margin: 1.5rem 0; }
+.coding-interview-summary div, .coding-interview-metadata > div { min-width: 0; padding: .8rem; background: #f7f9fc; border: 1px solid var(--line); border-radius: 8px; }
+.coding-interview-badges, .coding-interview-tag-list { display: flex; flex-wrap: wrap; gap: .4rem; }
+.coding-interview-metadata { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; margin: 1.5rem 0; }
+.coding-interview-metadata h2 { margin: 0 0 .65rem; font-size: .8rem; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
+.coding-interview-tag-list { list-style: none; padding: 0; margin: 0; }
+.coding-interview-tag-list li { padding: .15rem .5rem; border-radius: 6px; background: #e7ebf2; color: #253247; font-size: .78rem; }
+.coding-interview-lab-link { margin: 1.5rem 0; }
+.coding-interview-lab-link a { text-decoration: none; }
+.coding-interview-content { min-width: 0; }
+.coding-interview-content h2 { margin-top: 2.5rem; }
+.coding-interview-content pre { overflow: auto; padding: 1rem; border-radius: 8px; background: #111827; color: #e5e7eb; }
+.coding-interview-content table { display: block; overflow-x: auto; border-collapse: collapse; }
+.coding-interview-content th, .coding-interview-content td { padding: .55rem; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+.coding-interview-pagination { display: flex; gap: 1rem; margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.coding-interview-pagination a { color: var(--accent); font-weight: 700; text-decoration: none; }
+.coding-interview-pagination a:last-child { margin-left: auto; text-align: right; }
+@media (max-width: 480px) { .coding-interviews-grid { grid-template-columns: 1fr; } .coding-interview-summary, .coding-interview-metadata { grid-template-columns: 1fr; } .coding-interview-detail { padding: 1rem; } .coding-interview-pagination { flex-direction: column; } .coding-interview-pagination a:last-child { margin-left: 0; text-align: left; } }
