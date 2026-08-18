@@ -1,5 +1,220 @@
 [
   {
+    "id": "cncf-5ca4d1b0e097",
+    "title": "Cloud Native platform sovereignty through multi-plane architecture",
+    "summary": "When people talk about cloud sovereignty, the conversation often starts with regions: where a workload runs and where its data is stored. But choosing a region is only part of the story. The architecture of the...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/08/18/cloud-native-platform-sovereignty-through-multi-plane-architecture/",
+    "publishedDate": "2026-08-18T11:30:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cilium-daeee3a4fe84",
+    "title": "1.20.1",
+    "summary": "Summary of Changes Major Changes: docs/clustermesh: overhaul Cluster Mesh documentation with a new introduction, improved load-balancing guidance, and Helm-first setup and certificate configuration instructions (Backport PR #47615, Upstream PR #47351, @MrFreezeex) Minor Changes: envoy: demote stale ADS endpoint warning (Backport PR #47805, Upstream PR #47148, @nezdolik) Speed up recovery time for disrupted TCP connections that access a DSR-enabled Service. (Backport PR #47881, Upstream PR #47529",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.20.1",
+    "publishedDate": "2026-08-18T10:36:16.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.20.1"
+  },
+  {
+    "id": "cilium-229019c484c4",
+    "title": "1.19.7",
+    "summary": "Summary of Changes Bugfixes: envoy: restore http-idle-timeout as the route idle timeout source (Backport PR #47688, Upstream PR #47583, @aanm) Fix a BPF verifier reject on pre-v5.12 kernels, when IPv6 is enabled. (Backport PR #47723, Upstream PR #47765, @julianwiedmann) Fix a spurious \"unable to find ifindex for interface MAC\" agent warning on EKS ENI IPAM by waiting for the ENI netlink interface before configuring ingress routes and rules. (Backport PR #47545, Upstream PR #47295, @aanm) Fix abn",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.19.7",
+    "publishedDate": "2026-08-18T10:35:54.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.19.7"
+  },
+  {
+    "id": "cilium-a5eb30abf33b",
+    "title": "1.18.13",
+    "summary": "Summary of Changes Major Changes: Add support for VRRP and IGMP protocols in host firewall (Backport PR #47619, Upstream PR #39872, @aditighag) Bugfixes: bpf: hostfw: tolerate unknown CT protocols and rely on policies (Backport PR #47619, Upstream PR #47343, @smagnani96) Fix abnormal ip allocation caused by hostnetwork pod (Backport PR #47687, Upstream PR #47552, @haozhangami) Fix potential hangs caused by Netlink errors in filterAndDestroySockets. (Backport PR #47799, Upstream PR #46967, @ysksu",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.18.13",
+    "publishedDate": "2026-08-18T10:35:40.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.18.13"
+  },
+  {
+    "id": "cilium-328442215ca7",
+    "title": "1.20.1",
+    "summary": "Release v1.20.1",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/1.20.1",
+    "publishedDate": "2026-08-18T09:35:14.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.20.1"
+  },
+  {
+    "id": "cilium-f0a867efa019",
+    "title": "1.19.7",
+    "summary": "Release v1.19.7",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/1.19.7",
+    "publishedDate": "2026-08-18T09:33:50.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.19.7"
+  },
+  {
+    "id": "cilium-112524f1b931",
+    "title": "1.18.13",
+    "summary": "Release v1.18.13",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/1.18.13",
+    "publishedDate": "2026-08-18T09:32:48.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.18.13"
+  },
+  {
+    "id": "kyverno-eb26cd7795b3",
+    "title": "v1.19.0-rc.4",
+    "summary": "No content.",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.0-rc.4",
+    "publishedDate": "2026-08-18T09:32:05.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno",
+    "releaseVersion": "v1.19.0-rc.4"
+  },
+  {
+    "id": "prometheus-5e7ae51a3085",
+    "title": "3.14.0 / 2026-08-17",
+    "summary": "[CHANGE] API: Deprecate the stats query parameter of /api/v1/query and /api/v1/query_range for values other than true and all. Other values still enable basic statistics but now return a deprecation warning; they will be rejected in the next major release. #19124 [CHANGE] API: /api/v1/status/config now correctly shows separator: \"\" and replacement: \"\" in relabel configs when explicitly set to empty, instead of omitting them. #18653 [CHANGE] Discovery/Hetzner: Drop the __meta_hetzner_datacenter l",
+    "source": "Prometheus",
+    "sourceId": "prometheus",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.14.0",
+    "publishedDate": "2026-08-18T08:49:40.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "promql",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "prometheus",
+    "releaseVersion": "3.14.0"
+  },
+  {
+    "id": "kyverno-bc2fb6f81727",
+    "title": "kyverno-policies-chart-3.9.0-rc.4",
+    "summary": "kyverno-policies-chart-3.9.0-rc.4",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-policies-chart-3.9.0-rc.4",
+    "publishedDate": "2026-08-18T08:33:24.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno"
+  },
+  {
+    "id": "kyverno-671d94c7c666",
+    "title": "kyverno-chart-3.9.0-rc.4",
+    "summary": "kyverno-chart-3.9.0-rc.4",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-chart-3.9.0-rc.4",
+    "publishedDate": "2026-08-18T08:33:17.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno"
+  },
+  {
     "id": "pulumi-3f11a735762f",
     "title": "pkg/v3.258.0: Changelog and go.mod updates for v3.258.0 (#24355)",
     "summary": "Co-authored-by: github-actions github-actions@github.com",
@@ -301,26 +516,6 @@
     "releaseRelated": true,
     "releaseProject": "prometheus",
     "releaseVersion": "v0.314.0"
-  },
-  {
-    "id": "prometheus-5e7ae51a3085",
-    "title": "v3.14.0",
-    "summary": "v3.14.0",
-    "source": "Prometheus",
-    "sourceId": "prometheus",
-    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.14.0",
-    "publishedDate": "2026-08-17T15:41:51.000Z",
-    "domain": "prometheus",
-    "topics": [
-      "prometheus",
-      "promql",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "prometheus",
-    "releaseVersion": "v3.14.0"
   },
   {
     "id": "pulumi-51374f4f33b0",
@@ -7618,25 +7813,5 @@
     "importance": "high",
     "architectureShift": true,
     "releaseRelated": false
-  },
-  {
-    "id": "flux-569c5b0f9433",
-    "title": "v2.8.8",
-    "summary": "Highlights Flux v2.8.8 is a patch release that includes CVE fixes via go-git v5.19.1 (source-controller, image-automation-controller), reliability fixes in helm-controller and source-controller, the move of Helm back to upstream v4.2.0, support for GCP sovereign cloud artifact registries, and dependency updates. Users are encouraged to upgrade for the best experience. ℹ️ Please follow the Upgrade Procedure for Flux v2.7+ for a smooth upgrade from Flux v2.6 to the latest version. Fixes: Add a con",
-    "source": "Flux",
-    "sourceId": "flux",
-    "url": "https://github.com/fluxcd/flux2/releases/tag/v2.8.8",
-    "publishedDate": "2026-05-20T11:54:37.000Z",
-    "domain": "gitops",
-    "topics": [
-      "flux",
-      "gitops",
-      "cd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "flux",
-    "releaseVersion": "v2.8.8"
   }
 ]

@@ -1,5 +1,29 @@
 [
   {
+    "project": "cilium",
+    "version": "1.20.1",
+    "publishedDate": "2026-08-18T10:36:16.000Z",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.20.1",
+    "sourceId": "cilium",
+    "title": "1.20.1"
+  },
+  {
+    "project": "kyverno",
+    "version": "v1.19.0-rc.4",
+    "publishedDate": "2026-08-18T09:32:05.000Z",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.0-rc.4",
+    "sourceId": "kyverno",
+    "title": "v1.19.0-rc.4"
+  },
+  {
+    "project": "prometheus",
+    "version": "3.14.0",
+    "publishedDate": "2026-08-18T08:49:40.000Z",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.14.0",
+    "sourceId": "prometheus",
+    "title": "3.14.0 / 2026-08-17"
+  },
+  {
     "project": "pulumi",
     "version": "v3.258.0",
     "publishedDate": "2026-08-18T06:42:41.000Z",
@@ -14,14 +38,6 @@
     "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.159.0",
     "sourceId": "opentelemetry-collector",
     "title": "v1.65.0/v0.159.0"
-  },
-  {
-    "project": "prometheus",
-    "version": "v0.314.0",
-    "publishedDate": "2026-08-17T15:42:14.000Z",
-    "url": "https://github.com/prometheus/prometheus/releases/tag/v0.314.0",
-    "sourceId": "prometheus",
-    "title": "v0.314.0"
   },
   {
     "project": "holmesgpt",
@@ -96,14 +112,6 @@
     "title": "v3.5.1"
   },
   {
-    "project": "kyverno",
-    "version": "v1.19.0-rc.3",
-    "publishedDate": "2026-08-12T08:22:59.000Z",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.0-rc.3",
-    "sourceId": "kyverno",
-    "title": "v1.19.0-rc.3"
-  },
-  {
     "project": "oci-oke",
     "version": "v8.27.0",
     "publishedDate": "2026-08-12T01:00:29.000Z",
@@ -158,14 +166,6 @@
     "url": "https://www.cncf.io/blog/2026/08/05/opencost-1-121-0-first-of-a-kind-kubernetes-inference-cost-tracking/",
     "sourceId": "cncf",
     "title": "OpenCost 1.121.0: First-of-a-kind Kubernetes inference cost tracking"
-  },
-  {
-    "project": "cilium",
-    "version": "1.21.0-pre.0",
-    "publishedDate": "2026-08-03T20:16:05.000Z",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.21.0-pre.0",
-    "sourceId": "cilium",
-    "title": "1.21.0-pre.0"
   },
   {
     "project": "kubernetes",
