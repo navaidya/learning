@@ -7619,41 +7619,5 @@
     "releaseRelated": true,
     "releaseProject": "flux",
     "releaseVersion": "v2.8.8"
-  },
-  {
-    "id": "kubernetes-abc8dcffe044",
-    "title": "Announcing etcd 3.7.0-beta.0",
-    "summary": "SIG-Etcd announces the availability of the first beta release of etcd v3.7.0. This new version of the popular distributed database and key Kubernetes component includes the long-requested RangeStream feature, as well as a refactoring and cleanup of multiple legacy components and interfaces. v3.7 will deliver improved security, better operational reliability, and an improved experience for working with large resultsets. First, however, the project needs users to test the beta. You can find v3.7.0",
-    "source": "Kubernetes",
-    "sourceId": "kubernetes",
-    "url": "https://kubernetes.io/blog/2026/05/20/etcd-370-beta/",
-    "publishedDate": "2026-05-20T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kubernetes",
-    "releaseVersion": "3.7.0-beta.0"
-  },
-  {
-    "id": "openai-e0640ad0320c",
-    "title": "Introducing OpenAI for Singapore",
-    "summary": "OpenAI for Singapore launches a multi-year AI partnership to expand deployment, build local talent, and support businesses and public services with AI.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/introducing-openai-for-singapore",
-    "publishedDate": "2026-05-19T20:30:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   }
 ]
