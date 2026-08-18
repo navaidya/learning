@@ -1,5 +1,24 @@
 [
   {
+    "id": "pulumi-3f11a735762f",
+    "title": "pkg/v3.258.0: Changelog and go.mod updates for v3.258.0 (#24355)",
+    "summary": "Co-authored-by: github-actions github-actions@github.com",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.258.0",
+    "publishedDate": "2026-08-18T06:42:41.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.258.0"
+  },
+  {
     "id": "pulumi-c5fc5e76a116",
     "title": "v3.258.0",
     "summary": "3.258.0 (2026-08-17) Features [cli] Add opt-in encryption of stored credentials with a key protected by the operating system, selected with PULUMI_CREDENTIAL_STORE #24212 [cli/new] Ask for a cloud provider and language in interactive pulumi new instead of listing every template #24226 [sdk/go] Add policyx.NewStackValidationPolicy and wire up the analyzer's AnalyzeStack RPC so Go policy packs can validate the full stack #24232 Bug Fixes [sdkgen/go] Generate valid Go package clauses for schema mod",

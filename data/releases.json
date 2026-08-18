@@ -2,10 +2,10 @@
   {
     "project": "pulumi",
     "version": "v3.258.0",
-    "publishedDate": "2026-08-17T19:04:32.000Z",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.258.0",
+    "publishedDate": "2026-08-18T06:42:41.000Z",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.258.0",
     "sourceId": "pulumi",
-    "title": "v3.258.0"
+    "title": "pkg/v3.258.0: Changelog and go.mod updates for v3.258.0 (#24355)"
   },
   {
     "project": "opentelemetry-collector",
