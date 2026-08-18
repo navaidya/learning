@@ -1,0 +1,35 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import { withBase } from '../lib/url';
+const {
+  title,
+  summary,
+  deploymentStyle,
+  availabilityTarget,
+  regions,
+  parentTitle,
+  parentHref,
+} = Astro.props;
+---
+<BaseLayout title={`${title} | System Design`} description={summary}>
+  <div class="book-layout system-design-layout">
+    <aside class="book-sidebar">
+      <a href={withBase('/system-design')}><strong>← All system designs</strong></a>
+      <nav aria-label="Case studies"><slot name="sidebar" /></nav>
+    </aside>
+    <article class="book-article system-design-article deployment-article">
+      <a class="deployment-back-link" href={parentHref}>← Back to {parentTitle}</a>
+      <p class="eyebrow">Cloud-neutral deployment architecture</p>
+      <h1>{title}</h1>
+      <p class="lede">{summary}</p>
+      <dl class="deployment-summary">
+        <div><dt>Topology</dt><dd>{deploymentStyle}</dd></div>
+        <div><dt>Availability objective</dt><dd>{availabilityTarget}</dd></div>
+        <div><dt>Placement model</dt><dd>{regions}</dd></div>
+      </dl>
+      <aside class="originality-note"><strong>Learning note:</strong> This is an illustrative, cloud-neutral deployment for interview practice. Capability names describe architectural roles rather than a specific vendor product.</aside>
+      <slot />
+      <nav class="case-pagination" aria-label="Adjacent deployment architectures"><slot name="pagination" /></nav>
+    </article>
+  </div>
+</BaseLayout>

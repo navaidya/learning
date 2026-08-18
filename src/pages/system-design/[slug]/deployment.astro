@@ -1,0 +1,48 @@
+---
+import { getCollection, render } from 'astro:content';
+import DeploymentArchitectureLayout from '../../../layouts/DeploymentArchitectureLayout.astro';
+import { withBase } from '../../../lib/url';
+
+export async function getStaticPaths() {
+  const [deployments, parents] = await Promise.all([
+    getCollection('system-design-deployments').then((items) => items.sort((a, b) => a.data.order - b.data.order)),
+    getCollection('system-design').then((items) => items.sort((a, b) => a.data.order - b.data.order)),
+  ]);
+  const parentById = new Map(parents.map((parent) => [parent.id, parent]));
+
+  return deployments.map((deployment, index) => {
+    const parent = parentById.get(deployment.data.systemDesign);
+    if (!parent) {
+      throw new Error(`Deployment "${deployment.id}" references missing system design "${deployment.data.systemDesign}"`);
+    }
+    return {
+      params: { slug: deployment.data.systemDesign },
+      props: { deployment, parent, deployments, parents, index },
+    };
+  });
+}
+
+const { deployment, parent, deployments, parents, index } = Astro.props;
+const { Content } = await render(deployment);
+const previous = deployments[index - 1];
+const next = deployments[index + 1];
+---
+<DeploymentArchitectureLayout
+  {...deployment.data}
+  parentTitle={parent.data.title}
+  parentHref={withBase(`/system-design/${parent.id}`)}
+>
+  {parents.map((item) => (
+    <a
+      slot="sidebar"
+      class:list={{ active: item.id === parent.id }}
+      aria-current={item.id === parent.id ? 'page' : undefined}
+      href={withBase(`/system-design/${item.id}`)}
+    >
+      {item.data.title}
+    </a>
+  ))}
+  <Content />
+  {previous && <a slot="pagination" href={withBase(`/system-design/${previous.data.systemDesign}/deployment`)}>← {previous.data.title}</a>}
+  {next && <a slot="pagination" href={withBase(`/system-design/${next.data.systemDesign}/deployment`)}>{next.data.title} →</a>}
+</DeploymentArchitectureLayout>

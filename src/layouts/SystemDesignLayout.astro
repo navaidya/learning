@@ -1,7 +1,7 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import { withBase } from '../lib/url';
-const { title, summary, difficulty, interviewMinutes, scaleChallenge, aiFocus } = Astro.props;
+const { title, summary, difficulty, interviewMinutes, scaleChallenge, aiFocus, deploymentHref } = Astro.props;
 ---
 <BaseLayout title={`${title} | System Design`} description={summary}>
   <div class="book-layout system-design-layout">
@@ -9,6 +9,7 @@ const { title, summary, difficulty, interviewMinutes, scaleChallenge, aiFocus } 
     <article class="book-article system-design-article">
       <p class="eyebrow">Original AI-native reference architecture</p><h1>{title}</h1><p class="lede">{summary}</p>
       <dl class="interview-summary"><div><dt>Difficulty</dt><dd>{difficulty}</dd></div><div><dt>Interview plan</dt><dd>{interviewMinutes} minutes</dd></div><div><dt>Scaling challenge</dt><dd>{scaleChallenge}</dd></div><div><dt>AI focus</dt><dd>{aiFocus.join(' · ')}</dd></div></dl>
+      {deploymentHref && <a class="deployment-cta" href={deploymentHref}><span>Deployment view</span><strong>View deployment architecture →</strong></a>}
       <aside class="originality-note"><strong>Learning note:</strong> This is an original design for the product category. It does not describe or claim to reproduce any named company’s internal architecture.</aside>
       <slot /><nav class="case-pagination" aria-label="Adjacent case studies"><slot name="pagination" /></nav>
     </article>
