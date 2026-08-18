@@ -17,7 +17,31 @@ Design a ride marketplace that lets riders request trips, matches nearby drivers
 
 ## 2. Requirements and scope
 
-**Functional:** quote and request a ride; accept/expire offers; track a trip; settle payment; report safety issues. **Non-functional:** p99 quote under 500 ms, match under 5 seconds, location freshness under 10 seconds, regional isolation, and no double charge. Exclude pooled rides and autonomous vehicles. Assume city-local supply and a licensed payment provider.
+### Functional requirements
+
+| ID | Requirement | Priority | Interview significance |
+|---|---|---|---|
+| FR-1 | A rider can request a price and ETA quote, then create a trip from an unexpired quote. | Must | Defines the synchronous read and command APIs plus quote-expiration semantics. |
+| FR-2 | The platform finds eligible nearby drivers, sends leased offers, and confirms exactly one assignment. | Must | Drives the geospatial index, dispatch pipeline, and concurrency control. |
+| FR-3 | Rider and driver apps receive current trip state, driver position, and arrival updates in near real time. | Must | Separates high-volume ephemeral location traffic from durable trip state. |
+| FR-4 | The platform authorizes, captures, refunds, and reconciles payment without charging a trip twice. | Must | Requires idempotency, a ledger boundary, and asynchronous reconciliation. |
+| FR-5 | Riders and drivers can trigger safety workflows, share trip context, and reach human or emergency support. | Must | Introduces a protected safety path that must work when automation is unavailable. |
+| FR-6 | Operations can manage service areas, pricing policies, driver eligibility, and incident review. | Should | Establishes control-plane configuration, audit, and policy-distribution needs. |
+
+### Non-functional requirements
+
+| Quality | Measurable target | Why it matters | Architecture consequence |
+|---|---|---|---|
+| Quote latency | p99 below 500 ms inside a serving region | Slow quotes reduce conversion and make prices stale. | Keep routing features and pricing inputs region-local and enforce strict dependency timeouts. |
+| Match latency | 95% of normal requests assigned within 5 seconds | Supply disappears quickly and users perceive matching as the core experience. | Maintain a low-latency geo index, precomputed features, and independently scalable dispatch workers. |
+| Location freshness | Latest usable driver position under 10 seconds old for 99% of active trips | Stale locations produce unsafe pickup guidance and poor ETAs. | Use persistent realtime connections, TTL-based geo state, and backpressure-aware ingestion. |
+| Trip availability | 99.99% availability for active-trip reads and commands; one zone may fail without interrupting active trips | Trips already in progress are safety-critical. | Spread stateless workloads across three zones and keep durable trip state synchronously replicated across zones. |
+| Payment correctness | Zero duplicate captures for the same trip and idempotency key | Financial correctness is more important than immediate capture. | Use a transactional ledger, unique idempotency constraints, and retryable outbox events. |
+| Durability | No acknowledged trip-state transition lost; regional location history may have an RPO up to 60 seconds | Trip history supports disputes and safety, while raw telemetry has a lower consistency need. | Separate strongly consistent trip state from buffered telemetry and object-storage archives. |
+| Privacy | Precise location encrypted in transit and at rest, access logged, and raw routes deleted by policy | Location history is highly sensitive personal data. | Isolate data-plane networks, enforce scoped identities, and apply lifecycle deletion. |
+| Peak scale | Sustain 250k driver-location events/s and a 10× commute burst in trip creation | Location load is orders of magnitude larger than trip-command load. | Partition by region and H3 cell, autoscale consumers on lag, and shed sampling frequency before commands. |
+
+**Scope exclusions:** pooled rides, autonomous vehicles, driver payroll, and proprietary mapping are outside this interview. **Assumptions:** supply is assigned within a city-local serving region, a licensed payment provider handles card data, and emergency integrations vary by jurisdiction.
 
 ## 3. Capacity estimate
 
@@ -35,12 +59,23 @@ At 10M daily riders and 2M trips/day, average trip creation is 23/s and a 10× c
 flowchart LR
   accTitle: Mobility marketplace system context
   accDescr: Riders and drivers use the platform, which integrates with routing, payments, and emergency services.
-  Rider --> Platform[Mobility platform]
-  Driver --> Platform
-  Platform --> Maps[Routing provider]
-  Platform --> PSP[Payment provider]
-  Platform --> Emergency[Emergency services]
+  Rider["Rider<br/>Requests, tracks, and pays for trips"] --> Platform["Mobility platform<br/>Quotes, matches, tracks, and settles rides"]
+  Driver["Driver<br/>Shares availability and completes trips"] --> Platform
+  Platform --> Maps["Routing provider<br/>Returns routes, distance, and baseline ETA"]
+  Platform --> PSP["Payment provider<br/>Authorizes and captures regulated payments"]
+  Platform --> Emergency["Emergency services<br/>Receives policy-approved safety escalations"]
 ```
+
+### Context component roles
+
+| Component | Role |
+|---|---|
+| Rider | Requests transportation, reviews the quote, follows the trip, and pays. |
+| Driver | Publishes availability and location, accepts an offer, and performs the trip. |
+| Mobility platform | Owns quotes, matching, trip state, safety orchestration, and payment intent. |
+| Routing provider | Supplies road routes, distances, and deterministic ETA inputs; it does not assign drivers. |
+| Payment provider | Handles regulated payment authorization and capture while the platform owns idempotent trip settlement. |
+| Emergency services | Receives a deliberately limited, audited safety escalation when policy permits. |
 
 ## 6. Container architecture
 
@@ -48,18 +83,34 @@ flowchart LR
 flowchart TB
   accTitle: Mobility marketplace container architecture
   accDescr: API, trip, location, dispatch, model, event, payment, and safety components are separated by consistency and latency needs.
-  Apps[Rider and driver apps] --> Edge[API and realtime edge]
-  Edge --> Trip[Trip service]
-  Edge --> Location[Location ingestion]
-  Trip --> Dispatch[Dispatch orchestrator]
-  Location --> Geo[(H3 geo index)]
+  Apps["Rider and driver apps<br/>Send commands and receive live updates"] --> Edge["API and realtime edge<br/>Authenticates, routes, and holds connections"]
+  Edge --> Trip["Trip service<br/>Owns durable trip state transitions"]
+  Edge --> Location["Location ingestion<br/>Validates and batches high-rate positions"]
+  Trip --> Dispatch["Dispatch orchestrator<br/>Finds and leases one eligible driver"]
+  Location --> Geo[("H3 geo index<br/>Keeps nearby live supply with TTL")]
   Dispatch --> Geo
-  Dispatch --> Models[Feature and model gateway]
-  Trip --> SQL[(Regional SQL)]
-  Trip --> Bus[(Event log)]
-  Bus --> Payment[Payment ledger]
-  Bus --> Safety[Safety workflow]
+  Dispatch --> Models["Feature and model gateway<br/>Serves bounded ETA and ranking predictions"]
+  Trip --> SQL[("Regional SQL<br/>Stores consistent trips, offers, and idempotency")]
+  Trip --> Bus[("Event log<br/>Publishes ordered durable domain events")]
+  Bus --> Payment["Payment ledger<br/>Captures once and reconciles asynchronously"]
+  Bus --> Safety["Safety workflow<br/>Escalates incidents with human fallback"]
 ```
+
+### Container component roles
+
+| Component | Role |
+|---|---|
+| Rider and driver apps | Submit commands, stream location, and consume realtime trip updates. |
+| API and realtime edge | Terminates authenticated HTTP and persistent connections, applies quotas, and routes traffic to regional services. |
+| Trip service | Enforces the trip state machine, optimistic concurrency, and idempotent rider or driver commands. |
+| Location ingestion | Absorbs the highest-volume stream, rejects impossible samples, and reduces sampling under backpressure. |
+| Dispatch orchestrator | Queries nearby supply, applies eligibility rules, scores candidates, and leases a single driver. |
+| H3 geo index | Holds eventually consistent, expiring driver availability grouped by map cell for low-latency proximity lookup. |
+| Feature and model gateway | Provides versioned online features and deadline-bounded predictions with deterministic fallback. |
+| Regional SQL | Stores durable trip, offer, idempotency, and audit state with transactional consistency. |
+| Event log | Decouples committed trip transitions from payment, safety, notifications, analytics, and model features. |
+| Payment ledger | Converts trip-completion events into exactly-once business effects through idempotency and reconciliation. |
+| Safety workflow | Prioritizes incident signals, gathers scoped context, and routes consequential decisions to trained humans. |
 
 ## 7. Component deep dive
 
