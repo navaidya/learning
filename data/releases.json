@@ -1,5 +1,21 @@
 [
   {
+    "project": "backstage",
+    "version": "v1.54.0",
+    "publishedDate": "2026-08-18T19:17:38.000Z",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.0",
+    "sourceId": "backstage",
+    "title": "v1.54.0"
+  },
+  {
+    "project": "loki",
+    "version": "v0.11.0",
+    "publishedDate": "2026-08-18T15:48:41.000Z",
+    "url": "https://github.com/grafana/loki/releases/tag/operator%2Fv0.11.0",
+    "sourceId": "loki",
+    "title": "operator: v0.11.0"
+  },
+  {
     "project": "cilium",
     "version": "1.20.1",
     "publishedDate": "2026-08-18T10:36:16.000Z",
@@ -120,14 +136,6 @@
     "title": "v8.27.0"
   },
   {
-    "project": "backstage",
-    "version": "v1.54.0-next.3",
-    "publishedDate": "2026-08-11T19:38:57.000Z",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.0-next.3",
-    "sourceId": "backstage",
-    "title": "v1.54.0-next.3"
-  },
-  {
     "project": "robusta",
     "version": "0.47.0",
     "publishedDate": "2026-08-11T05:38:41.000Z",
@@ -150,14 +158,6 @@
     "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.0-rc.0",
     "sourceId": "kubernetes-releases",
     "title": "v1.37.0-rc.0"
-  },
-  {
-    "project": "loki",
-    "version": "v3.6.15",
-    "publishedDate": "2026-08-06T09:59:23.000Z",
-    "url": "https://github.com/grafana/loki/releases/tag/v3.6.15",
-    "sourceId": "loki",
-    "title": "v3.6.15"
   },
   {
     "project": "cncf",

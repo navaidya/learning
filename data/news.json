@@ -1,5 +1,46 @@
 [
   {
+    "id": "backstage-9a13b1b6b242",
+    "title": "v1.54.0",
+    "summary": "These are the release notes for the v1.54.0 release of Backstage. A huge thanks to the whole team of maintainers and contributors as well as the amazing Backstage Community for the hard work in getting this release developed and done. Highlights BREAKING: Stricter OAuth redirect URI allowlist matching The OAuth redirect URI and client ID metadata document allowlists in @backstage/plugin-auth-backend now match patterns against each URL component separately instead of against the full URL string. ",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.0",
+    "publishedDate": "2026-08-18T19:17:38.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "platform-engineering",
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.54.0"
+  },
+  {
+    "id": "loki-f22f5c601561",
+    "title": "operator: v0.11.0",
+    "summary": "0.11.0 (2026-08-18) ⚠ BREAKING CHANGES Remove support for experimental LogQL variants() queries (#23823) Features operator: Enable multi-variant queries (#21009) (709e318) operator: Support private VPC S3 endpoints in endpoint validation (#22395) (394caef) operator: Watch object storage Services for NetworkPolicy updates and surface ports in status (#22436) (12822d5) Remove support for experimental LogQL variants() queries (#23823) (132e5f9) Bug Fixes operator: Move telemetry recording rules to ",
+    "source": "Grafana Loki",
+    "sourceId": "loki",
+    "url": "https://github.com/grafana/loki/releases/tag/operator%2Fv0.11.0",
+    "publishedDate": "2026-08-18T15:48:41.000Z",
+    "domain": "logging",
+    "topics": [
+      "loki",
+      "logging",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "loki",
+    "releaseVersion": "v0.11.0"
+  },
+  {
     "id": "cncf-5ca4d1b0e097",
     "title": "Cloud Native platform sovereignty through multi-plane architecture",
     "summary": "When people talk about cloud sovereignty, the conversation often starts with regions: where a workload runs and where its data is stored. But choosing a region is only part of the story. The architecture of the...",
