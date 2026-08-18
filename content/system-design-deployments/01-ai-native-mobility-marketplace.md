@@ -9,7 +9,7 @@ regions: multi-region
 tags: [kubernetes, regional-cells, realtime, geospatial, disaster-recovery]
 ---
 
-This page turns the [logical mobility design](../01-ai-native-mobility-marketplace) into a physical runtime view. The central idea is a **regional cell**: one serving region owns the low-latency path for a group of nearby cities, survives a zone failure locally, and uses another region for controlled disaster recovery.
+This page turns the logical mobility design into a physical runtime view. The central idea is a **regional cell**: one serving region owns the low-latency path for a group of nearby cities, survives a zone failure locally, and uses another region for controlled disaster recovery.
 
 ## 1. Deployment goals and assumptions
 
@@ -56,38 +56,31 @@ Payment, notifications, analytics, safety enrichment, and model-feature generati
 ```mermaid
 sequenceDiagram
   accTitle: Mobility trip request across deployed tiers
-  accDescr: A rider request passes through edge and gateway tiers to the trip and dispatch services. Dispatch reads regional geo state and calls the model with a deadline, falls back to deterministic scoring when needed, leases one driver, and commits the trip plus outbox before asynchronous workers run.
+  accDescr: A rider request passes through the gateway to regional trip and dispatch pods. The core reads geo state and calls the model with a deadline, falls back to deterministic scoring when needed, then commits one driver assignment and an outbox record before asynchronous workers run.
   participant App as Rider app
-  participant Edge as Edge and regional gateway
-  participant Trip as Trip service pod
-  participant Dispatch as Dispatch worker
-  participant Geo as Regional geo tier
-  participant Model as Model-serving pool
+  participant Gateway as Edge and gateway
+  participant Core as Trip and dispatch pods
+  participant Geo as Geo state
+  participant AI as Model serving
   participant SQL as Regional SQL
-  participant Relay as Outbox relay
-  participant Stream as Event stream
-  participant Async as Payment and safety workers
+  participant Async as Event stream and workers
 
-  App->>Edge: create trip with quote and idempotency key
-  Edge->>Trip: authenticated regional command
-  Trip->>SQL: reserve idempotency key and create REQUESTED trip
-  Trip->>Dispatch: match trip within deadline
-  Dispatch->>Geo: fetch fresh eligible nearby supply
-  Dispatch->>Model: score candidates with feature and latency budget
+  App->>Gateway: create trip with idempotency key
+  Gateway->>Core: authenticated regional command
+  Core->>SQL: create REQUESTED trip and reserve key
+  Core->>Geo: fetch fresh eligible nearby supply
+  Core->>AI: score candidates within deadline
   alt model healthy, fresh, and policy-approved
-    Model-->>Dispatch: ranked candidates and confidence
+    AI-->>Core: ranked candidates and confidence
   else timeout, stale input, low confidence, or cost cap
-    Dispatch->>Dispatch: deterministic distance, ETA, and fairness score
+    Core->>Core: deterministic distance, ETA, and fairness score
   end
-  Dispatch->>SQL: compare-and-set driver lease
-  SQL-->>Dispatch: one winning assignment
-  Dispatch->>Trip: assignment confirmed
-  Trip->>SQL: commit ASSIGNED state and outbox record
-  Trip-->>Edge: durable trip version, driver, and ETA
-  Edge-->>App: assignment response and realtime cursor
-  Relay->>SQL: read committed outbox
-  Relay->>Stream: publish TripAssigned
-  Stream-->>Async: trigger payment preparation, safety, and notifications
+  Core->>SQL: lease one driver then commit ASSIGNED and outbox
+  SQL-->>Core: durable trip version and assignment
+  Core-->>Gateway: driver, ETA, and realtime cursor
+  Gateway-->>App: assignment confirmed
+  SQL-->>Async: outbox relay publishes TripAssigned
+  Async->>Async: payment preparation, safety, and notifications
 ```
 
 ## 3. Deployment architecture
@@ -95,114 +88,82 @@ sequenceDiagram
 ```mermaid
 flowchart TB
   accTitle: Cloud-neutral mobility marketplace deployment
-  accDescr: Mobile clients enter through global edge protection and a regional load balancer, then reach a three-zone Kubernetes workload cluster. Managed SQL, geo state, event streaming, object storage, model serving, secrets, observability, external payments, and a disaster-recovery region sit outside the workload cluster. The managed Kubernetes API server controls workloads but is not in the customer request path.
+  accDescr: Mobile clients enter through edge protection and regional routing, then a load balancer and Kubernetes Gateway reach replicas spread across three availability zones. Private endpoints connect workloads to managed SQL, geo state, streaming, object storage, secrets, model serving, and observability. A separate managed Kubernetes control plane manages pods, and a warm recovery region receives asynchronous copies.
 
-  Clients["Rider and driver apps<br/>HTTPS, QUIC, and persistent realtime sessions"]
+  Apps["Rider and driver apps<br/>Commands, locations, and live updates"]
+  Edge["Global edge and WAF<br/>Protects TLS traffic and rejects attacks"]
+  Route["Traffic manager<br/>Pins each city to one healthy home region"]
+  Apps --> Edge --> Route
 
-  subgraph Global["Global edge and traffic layer"]
-    Edge["Anycast edge, DDoS protection, and WAF<br/>Rejects attacks and terminates public TLS"]
-    GTM["Global traffic manager<br/>Routes each city to its healthy home region"]
-    Edge --> GTM
-  end
-
-  Clients --> Edge
-
-  subgraph RegionA["Serving region A - owns active city cells"]
-    LB["Regional load balancer<br/>Health checks and zonal distribution"]
+  subgraph Primary["Serving region - active city ownership"]
+    LB["Regional load balancer<br/>Distributes only to healthy zones"]
     CP["Managed Kubernetes control plane<br/>API server, scheduler, and controllers"]
-    Ops["Delivery and operations identity<br/>Applies signed desired state"]
 
-    subgraph Cluster["Private Kubernetes workload cluster"]
-      GW["Gateway fleet<br/>Authenticates routes and limits requests"]
+    subgraph Workloads["Private Kubernetes workload cluster"]
+      GW["Gateway pods<br/>Authenticate, limit, and route traffic"]
 
-      subgraph ZoneA["Availability zone A"]
-        ZAEdge["API and realtime pods<br/>Commands and live connections"]
-        ZACore["Trip and dispatch pods<br/>State machine and driver leasing"]
-        ZALoc["Location workers<br/>Validate, batch, and partition positions"]
-        ZAEdge --> ZACore
+      subgraph Zones["Three availability zones"]
+        direction LR
+        ZA["Zone A replicas<br/>Realtime, trip, dispatch, and location"]
+        ZB["Zone B replicas<br/>Realtime, trip, dispatch, and location"]
+        ZC["Zone C replicas<br/>Realtime, trip, dispatch, and location"]
       end
 
-      subgraph ZoneB["Availability zone B"]
-        ZBEdge["API and realtime pods<br/>Commands and live connections"]
-        ZBCore["Trip and dispatch pods<br/>State machine and driver leasing"]
-        ZBLoc["Location workers<br/>Validate, batch, and partition positions"]
-        ZBEdge --> ZBCore
-      end
+      Model["Isolated model-serving pool<br/>Deadline-bounded ETA and ranking"]
+      Async["Async worker pool<br/>Payment, safety, notifications, and archive"]
+      Telemetry["Telemetry collectors<br/>Batch and redact signals"]
 
-      subgraph ZoneC["Availability zone C"]
-        ZCEdge["API and realtime pods<br/>Commands and live connections"]
-        ZCCore["Trip and dispatch pods<br/>State machine and driver leasing"]
-        ZCLoc["Location workers<br/>Validate, batch, and partition positions"]
-        ZCEdge --> ZCCore
-      end
-
-      Async["Async workflow pods on CPU pools<br/>Payment, safety, notifications, and reconciliation"]
-      Model["Model-serving pods on isolated pools<br/>Bounded ETA and ranking inference"]
-      OTel["Telemetry collectors<br/>Batch and export metrics, logs, and traces"]
-
-      GW --> ZAEdge
-      GW --> ZBEdge
-      GW --> ZCEdge
-      ZAEdge --> ZALoc
-      ZBEdge --> ZBLoc
-      ZCEdge --> ZCLoc
-      ZACore --> Model
-      ZBCore --> Model
-      ZCCore --> Model
+      GW --> ZA
+      GW --> ZB
+      GW --> ZC
+      ZA --> Model
+      ZB --> Model
+      ZC --> Model
     end
 
-    SQL[("Managed regional SQL<br/>Trips, offers, idempotency, and ledger")]
-    Geo[("Distributed geo and cache tier<br/>TTL driver supply and hot features")]
-    Stream[("Managed event stream<br/>Ordered domain and location partitions")]
-    Object[("Object storage<br/>Telemetry archive, backups, and model artifacts")]
-    Secrets["Secrets and key management<br/>Envelope keys, certificates, and rotation"]
-    Observe["Telemetry backend<br/>SLOs, traces, logs, and audit retention"]
-    PSP["Payment provider<br/>Tokenized authorization and capture"]
-    Maps["Routing provider<br/>Routes, distance, and baseline ETA"]
+    Private["Private service endpoints<br/>Only approved workload identities"]
+
+    subgraph State["Managed regional state services"]
+      SQL[("SQL<br/>Trips, leases, idempotency, and ledger")]
+      Geo[("Geo and cache<br/>Fresh supply and online features")]
+      Stream[("Event stream<br/>Domain and location partitions")]
+      Object[("Object storage<br/>Archive, backups, and model artifacts")]
+    end
+
+    Secrets["Secrets and key management<br/>Short-lived identity and encryption keys"]
+    Observe["Observability backend<br/>SLOs, traces, logs, and audit"]
+    Providers["Controlled external providers<br/>Routing, payment, and emergency"]
 
     LB --> GW
-    ZACore --> SQL
-    ZBCore --> SQL
-    ZCCore --> SQL
-    ZALoc --> Stream
-    ZBLoc --> Stream
-    ZCLoc --> Stream
-    ZALoc --> Geo
-    ZBLoc --> Geo
-    ZCLoc --> Geo
-    ZACore --> Geo
-    ZBCore --> Geo
-    ZCCore --> Geo
-    ZACore --> Stream
-    ZBCore --> Stream
-    ZCCore --> Stream
+    ZA --> Private
+    ZB --> Private
+    ZC --> Private
+    Private --> SQL
+    Private --> Geo
+    Private --> Stream
     Stream --> Async
     Stream --> Object
-    Async --> PSP
-    ZACore --> Maps
-    ZBCore --> Maps
-    ZCCore --> Maps
-    Secrets -. "short-lived credentials" .-> Cluster
-    OTel --> Observe
-    Ops --> CP
-    CP -. "manages desired workload state" .-> GW
+    Async --> Providers
+    ZA --> Providers
+    ZB --> Providers
+    ZC --> Providers
+    Secrets -. "credentials and keys" .-> GW
+    Telemetry --> Observe
+    CP -. "manages workloads only" .-> GW
   end
 
-  GTM --> LB
+  Route --> LB
 
-  subgraph RegionB["Recovery region B - warm capacity"]
-    DRIngress["Disabled or low-traffic ingress<br/>Activated by controlled failover"]
-    DRCluster["Warm Kubernetes cluster<br/>Minimum safe service replicas"]
-    DRSQL[("Standby SQL<br/>Asynchronous regional replica")]
-    DRObject[("Recovery object storage<br/>Copied backups and artifacts")]
-    DRStream[("Recovery event stream<br/>Replicated critical topics")]
-    DRIngress --> DRCluster
+  subgraph Recovery["Recovery region - warm and fenced"]
+    DRCell["Warm Kubernetes cell<br/>Minimum safe replicas; ingress disabled"]
+    DRState[("Standby state<br/>SQL, critical streams, backups, and artifacts")]
+    DRCell --> DRState
   end
 
-  SQL -. "encrypted async replication" .-> DRSQL
-  Stream -. "critical-topic replication" .-> DRStream
-  Object -. "versioned cross-region copy" .-> DRObject
-  GTM -. "failover after ownership fencing" .-> DRIngress
+  SQL -. "encrypted async replication" .-> DRState
+  Stream -. "critical-topic replication" .-> DRState
+  Object -. "versioned regional copy" .-> DRState
+  Route -. "fail over after ownership fencing" .-> DRCell
 ```
 
 ### How to read the diagram

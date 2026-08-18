@@ -55,6 +55,9 @@ describe('mobility deployment content contract', () => {
     for (const diagram of diagrams) {
       expect(diagram).toMatch(/^\s*\w+[^\n]*\n\s+accTitle: .+/m);
       expect(diagram).toMatch(/^\s*accDescr: .+/m);
+      if (/^\s*sequenceDiagram/m.test(diagram)) {
+        expect(diagram, 'Mermaid treats semicolons in sequence messages as statement separators').not.toMatch(/(?:->>|-->>)[^\n]*;/);
+      }
     }
 
     expect(body).toContain('| Component | Runtime and placement | Scaling unit | Stateful | Failure behavior |');
@@ -62,5 +65,6 @@ describe('mobility deployment content contract', () => {
     expect(body).toMatch(/\bRTO\b/);
     expect((body.match(/^\| Failure:/gm) ?? []).length).toBeGreaterThanOrEqual(3);
     expect(body).toMatch(/deterministic[\s\S]{0,120}fallback/i);
+    expect(body, 'internal Markdown links bypass withBase() and can break under the GitHub Pages base path').not.toMatch(/\]\((?:\/|\.\.\/)[^)]+\)/);
   });
 });
