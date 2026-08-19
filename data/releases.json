@@ -1,8 +1,24 @@
 [
   {
+    "project": "terraform",
+    "version": "v1.16.0-rc2",
+    "publishedDate": "2026-08-19T12:08:45.000Z",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-rc2",
+    "sourceId": "terraform",
+    "title": "v1.16.0-rc2"
+  },
+  {
+    "project": "opentofu",
+    "version": "v1.12.6",
+    "publishedDate": "2026-08-19T11:40:07.000Z",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.6",
+    "sourceId": "opentofu",
+    "title": "v1.12.6"
+  },
+  {
     "project": "backstage",
     "version": "v1.54.0",
-    "publishedDate": "2026-08-18T19:17:38.000Z",
+    "publishedDate": "2026-08-19T11:20:23.000Z",
     "url": "https://github.com/backstage/backstage/releases/tag/v1.54.0",
     "sourceId": "backstage",
     "title": "v1.54.0"
@@ -112,14 +128,6 @@
     "title": "containerd 2.2.7"
   },
   {
-    "project": "terraform",
-    "version": "v1.16.0-rc1",
-    "publishedDate": "2026-08-12T15:22:32.000Z",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-rc1",
-    "sourceId": "terraform",
-    "title": "v1.16.0-rc1"
-  },
-  {
     "project": "argo",
     "version": "v3.5.1",
     "publishedDate": "2026-08-12T12:16:52.000Z",
@@ -198,14 +206,6 @@
     "url": "https://opentelemetry.io/blog/2026/lambda-powered-function-land-in-ottl/",
     "sourceId": "opentelemetry",
     "title": "Lambda-powered functions land in OTTL"
-  },
-  {
-    "project": "opentofu",
-    "version": "v1.12.5",
-    "publishedDate": "2026-07-21T11:39:19.000Z",
-    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.5",
-    "sourceId": "opentofu",
-    "title": "v1.12.5"
   },
   {
     "project": "gateway-api",

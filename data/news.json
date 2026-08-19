@@ -1,5 +1,102 @@
 [
   {
+    "id": "terraform-ccfe76ae1574",
+    "title": "v1.16.0-rc2",
+    "summary": "1.16.0-rc2 (August 19, 2026) NEW FEATURES: Terraform now stores planned private data for providers, allowing provider-specific state to be preserved across plan and apply. (#37986) terraform_data: The new store block can hold ephemeral and sensitive values across plan and apply. (#38298) Providers can now use nested blocks as computed values (#38305) import: import blocks inside modules are now supported. (#38352) Terraform is now available as a pre-built binary for Linux s390x (zLinux). (#38384",
+    "source": "Terraform",
+    "sourceId": "terraform",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-rc2",
+    "publishedDate": "2026-08-19T12:08:45.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "terraform",
+    "releaseVersion": "v1.16.0-rc2"
+  },
+  {
+    "id": "opentofu-84ed80b3eb7f",
+    "title": "v1.12.6",
+    "summary": "SECURITY ADVISORIES: When interacting with OCI Distribution registries for module or provider package installation, earlier versions of OpenTofu could incorrectly resend credentials intended for the original origin to the target of an HTTP redirect. (#4422) When interacting with an attacker-controlled remote state backend or provider/module registry, tofu init in earlier versions of OpenTofu could potentially cause high CPU usage and/or high memory usage resolving crafted relative URLs in the AP",
+    "source": "OpenTofu",
+    "sourceId": "opentofu",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.6",
+    "publishedDate": "2026-08-19T11:40:07.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "opentofu",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentofu",
+    "releaseVersion": "v1.12.6"
+  },
+  {
+    "id": "opentofu-eec7f5642539",
+    "title": "v1.11.14",
+    "summary": "SECURITY ADVISORIES: When interacting with OCI Distribution registries for module or provider package installation, previous versions of OpenTofu could incorrectly resend credentials intended for the original origin to the target of an HTTP redirect. (#4423) When interacting with an attacker-controlled remote state backend or provider/module registry, tofu init in earlier versions of OpenTofu could potentially cause high CPU usage and/or high memory usage resolving crafted relative URLs in the A",
+    "source": "OpenTofu",
+    "sourceId": "opentofu",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.11.14",
+    "publishedDate": "2026-08-19T11:39:12.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "opentofu",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentofu",
+    "releaseVersion": "v1.11.14"
+  },
+  {
+    "id": "cncf-c6c4bf55ed34",
+    "title": "Kyverno is a platform primitive, not a security tool",
+    "summary": "Where does Kyverno live in your organization? I don’t mean which cluster! On which team’s slide deck does it show up? Whose budget line? For most companies I’ve talked to, the answer is security. Kyverno is...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/08/19/kyverno-is-a-platform-primitive-not-a-security-tool/",
+    "publishedDate": "2026-08-19T11:21:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "backstage-9a13b1b6b242",
+    "title": "v1.54.0",
+    "summary": "These are the release notes for the v1.54.0 release of Backstage. A huge thanks to the whole team of maintainers and contributors as well as the amazing Backstage Community for the hard work in getting this release developed and done. Highlights BREAKING: Stricter OAuth redirect URI allowlist matching The OAuth redirect URI and client ID metadata document allowlists in @backstage/plugin-auth-backend now match patterns against each URL component separately instead of against the full URL string. ",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.0",
+    "publishedDate": "2026-08-19T11:20:23.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "platform-engineering",
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.54.0"
+  },
+  {
     "id": "vector-96d1960fe4da",
     "title": "vdev-v0.3.15",
     "summary": "No content.",
@@ -17,27 +114,6 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "vector"
-  },
-  {
-    "id": "backstage-9a13b1b6b242",
-    "title": "v1.54.0",
-    "summary": "These are the release notes for the v1.54.0 release of Backstage. A huge thanks to the whole team of maintainers and contributors as well as the amazing Backstage Community for the hard work in getting this release developed and done. Highlights BREAKING: Stricter OAuth redirect URI allowlist matching The OAuth redirect URI and client ID metadata document allowlists in @backstage/plugin-auth-backend now match patterns against each URL component separately instead of against the full URL string. ",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.0",
-    "publishedDate": "2026-08-18T19:17:38.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "platform-engineering",
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.54.0"
   },
   {
     "id": "loki-f22f5c601561",
