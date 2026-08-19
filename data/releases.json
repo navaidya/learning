@@ -1,11 +1,19 @@
 [
   {
+    "project": "oci-oke",
+    "version": "v8.28.0",
+    "publishedDate": "2026-08-19T15:13:38.000Z",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v8.28.0",
+    "sourceId": "oci-oke",
+    "title": "v8.28.0"
+  },
+  {
     "project": "terraform",
-    "version": "v1.16.0-rc2",
-    "publishedDate": "2026-08-19T12:08:45.000Z",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-rc2",
+    "version": "v1.15.9",
+    "publishedDate": "2026-08-19T14:29:32.000Z",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.15.9",
     "sourceId": "terraform",
-    "title": "v1.16.0-rc2"
+    "title": "v1.15.9"
   },
   {
     "project": "opentofu",
@@ -134,14 +142,6 @@
     "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.1",
     "sourceId": "argo",
     "title": "v3.5.1"
-  },
-  {
-    "project": "oci-oke",
-    "version": "v8.27.0",
-    "publishedDate": "2026-08-12T01:00:29.000Z",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v8.27.0",
-    "sourceId": "oci-oke",
-    "title": "v8.27.0"
   },
   {
     "project": "robusta",

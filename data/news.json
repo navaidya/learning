@@ -1,5 +1,63 @@
 [
   {
+    "id": "openai-e396b6baa03e",
+    "title": "Offering Zero Data Retention for frontier models",
+    "summary": "OpenAI reaffirms Zero Data Retention for eligible API customers and previews Private Safety Processing for advanced AI safety without compromising data privacy.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/our-commitment-to-zero-data-retention",
+    "publishedDate": "2026-08-19T19:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "oci-oke-cf0f0ec1f144",
+    "title": "v8.28.0",
+    "summary": "8.28.0 (August 19, 2026) Added Support for Support out-of-place restore (iRestore) - ZDRLA | ExaDB-C@C IPv4-IPv6 dualStack support for computeinstanceagent Data sources Bug Fix support Hosted Deployment IAM application Tolerate released private IP during mount target read (GetPrivateIp 404 wedges refresh) Notice to Deprecate 2025 Terraform Support for distributed_database remove hardcoded local path",
+    "source": "OCI / OKE",
+    "sourceId": "oci-oke",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v8.28.0",
+    "publishedDate": "2026-08-19T15:13:38.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "oci",
+      "oke",
+      "oracle"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "oci-oke",
+    "releaseVersion": "v8.28.0"
+  },
+  {
+    "id": "terraform-f30144931aa0",
+    "title": "v1.15.9",
+    "summary": "1.15.9 (August 19, 2026) BUG FIXES: validate: Child module validation has been fixed and will now raise errors or warning diagnostics for invalid blocks. (list, import, backend, and cloud) (#38994) NOTES: Update go-slug to v0.18.3 to mitigate CVE-2026-14978, which is a Unicode normalization issue that could lead to files not being correctly excluded via .terraformignore from upload to a Terraform Enterprise or HCP Terraform during a run (#39036)",
+    "source": "Terraform",
+    "sourceId": "terraform",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.15.9",
+    "publishedDate": "2026-08-19T14:29:32.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "terraform",
+    "releaseVersion": "v1.15.9"
+  },
+  {
     "id": "terraform-ccfe76ae1574",
     "title": "v1.16.0-rc2",
     "summary": "1.16.0-rc2 (August 19, 2026) NEW FEATURES: Terraform now stores planned private data for providers, allowing provider-specific state to be preserved across plan and apply. (#37986) terraform_data: The new store block can hold ephemeral and sensitive values across plan and apply. (#38298) Providers can now use nested blocks as computed values (#38305) import: import blocks inside modules are now supported. (#38352) Terraform is now available as a pre-built binary for Linux s390x (zLinux). (#38384",
@@ -7930,24 +7988,6 @@
     ],
     "importance": "medium",
     "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "opentelemetry-4627fa1a6f5a",
-    "title": "OpenTelemetry is a CNCF Graduated Project",
-    "summary": "Today, the Cloud Native Computing Foundation (CNCF) announced that OpenTelemetry has graduated. Graduation is an important milestone for the project and reflects the strength of the OpenTelemetry community and ecosystem. Since the merger of OpenTracing and OpenCensus, thousands of contributors, maintainers, end users, and organizations have helped shape OpenTelemetry into an open, vendor-neutral observability framework used across the industry. This milestone belongs to the community. We want to",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/otel-graduates/",
-    "publishedDate": "2026-05-21T14:27:48.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": true,
     "releaseRelated": false
   }
 ]
