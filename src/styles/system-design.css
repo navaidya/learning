@@ -28,8 +28,8 @@
 .deployment-summary dt { color: var(--muted); font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; }
 .deployment-summary dd { margin: .25rem 0 0; overflow-wrap: anywhere; }
 .deployment-article h3 { margin-top: 1.75rem; }
-.deployment-article .mermaid-diagram { margin: 1.5rem 0; padding: 1rem; overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
-.deployment-article .mermaid-diagram svg { display: block; max-width: 100%; height: auto; margin: 0 auto; }
+.deployment-article .mermaid-diagram { margin: 1.5rem 0; padding: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+.deployment-article .mermaid-diagram svg { display: block; max-width: none; height: auto; margin: 0 auto; }
 .originality-note { border-left: 4px solid var(--accent); background: #eff6ff; padding: .85rem 1rem; margin: 1.5rem 0; }
 .system-design-article table { display: block; overflow-x: auto; border-collapse: collapse; }
 .system-design-article th, .system-design-article td { border: 1px solid var(--line); padding: .55rem; text-align: left; vertical-align: top; }
@@ -38,4 +38,4 @@
 .case-pagination a { text-decoration: none; color: var(--accent); font-weight: 700; }
 .case-pagination a:last-child { margin-left: auto; text-align: right; }
 @media (max-width: 800px) { .system-design-layout { grid-template-columns: minmax(0, 1fr); } .system-design-layout .book-sidebar nav { max-height: 18rem; overflow-y: auto; padding-right: .25rem; } .deployment-summary { grid-template-columns: 1fr; } }
-@media (max-width: 480px) { .system-design-article h1 { font-size: 1.9rem; } .interview-summary { grid-template-columns: 1fr; } .deployment-cta { align-items: flex-start; flex-direction: column; } .deployment-cta strong { text-align: left; } .deployment-article .mermaid-diagram { padding: .5rem; } }
+@media (max-width: 480px) { .system-design-article h1 { font-size: 1.9rem; } .interview-summary { grid-template-columns: 1fr; } .deployment-cta { align-items: flex-start; flex-direction: column; } .deployment-cta strong { text-align: left; } }
