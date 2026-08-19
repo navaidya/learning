@@ -1,5 +1,24 @@
 [
   {
+    "id": "vector-96d1960fe4da",
+    "title": "vdev-v0.3.15",
+    "summary": "No content.",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.15",
+    "publishedDate": "2026-08-18T20:43:56.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
     "id": "backstage-9a13b1b6b242",
     "title": "v1.54.0",
     "summary": "These are the release notes for the v1.54.0 release of Backstage. A huge thanks to the whole team of maintainers and contributors as well as the amazing Backstage Community for the hard work in getting this release developed and done. Highlights BREAKING: Stricter OAuth redirect URI allowlist matching The OAuth redirect URI and client ID metadata document allowlists in @backstage/plugin-auth-backend now match patterns against each URL component separately instead of against the full URL string. ",
