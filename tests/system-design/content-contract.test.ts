@@ -105,4 +105,28 @@ describe('system design content contract', () => {
       }
     }
   });
+
+  it('makes every design requirements and logical diagrams self-explaining', async () => {
+    const files = await markdownFiles();
+    for (const file of files) {
+      const { body } = splitMarkdown(await readFile(`${contentDirectory}/${file}`, 'utf8'));
+
+      expect(body, `${file} needs functional requirements`).toContain('### Functional requirements');
+      expect(body).toContain('| ID | Requirement | Priority | Interview significance |');
+      expect(body, `${file} needs non-functional requirements`).toContain('### Non-functional requirements');
+      expect(body).toContain('| Quality | Measurable target | Why it matters | Architecture consequence |');
+      expect(body, `${file} needs explicit exclusions`).toMatch(/\*\*Scope exclusions:\*\*/);
+      expect(body, `${file} needs explicit assumptions`).toMatch(/\*\*Assumptions:\*\*/);
+      expect(body, `${file} needs context roles`).toContain('### Context component roles');
+      expect(body, `${file} needs container roles`).toContain('### Container component roles');
+
+      const context = body.match(/## 5\. System context[\s\S]*?```mermaid\n([\s\S]*?)```/)?.[1] ?? '';
+      const container = body.match(/## 6\. Container architecture[\s\S]*?```mermaid\n([\s\S]*?)```/)?.[1] ?? '';
+      for (const diagram of [context, container]) {
+        expect(diagram, `${file} needs visible role phrases`).toContain('<br/>');
+        expect(diagram).toMatch(/accTitle: .+/);
+        expect(diagram).toMatch(/accDescr: .+/);
+      }
+    }
+  });
 });

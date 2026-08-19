@@ -9,7 +9,7 @@ aiFocus: [cross-signal anomaly detection, automated root-cause correlation, adap
 tags: [observability, tracing, opentelemetry, metrics]
 ---
 
-_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
+_Follows the [System Design Template](../00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 
@@ -17,7 +17,26 @@ Design an observability platform ingesting metrics, logs, and OpenTelemetry-inst
 
 ## 2. Requirements and scope
 
-**Functional:** ingest metrics (counters/gauges/histograms) with tags, structured logs, and traces with span/context propagation; support ad hoc query, dashboards, and alerting; correlate traces to metrics and logs via trace ID. **Non-functional:** ingestion must never backpressure instrumented services, query latency must support interactive dashboards, and cost must scale sublinearly with raw telemetry volume through sampling and aggregation. Exclude long-term (multi-year) compliance log archival — a separate cold-storage pipeline. Assume services are instrumented with OpenTelemetry SDKs emitting standard semantic-convention data.
+### Functional requirements
+
+| ID | Requirement | Priority | Interview significance |
+|---|---|---|---|
+| FR-1 | The system must ingest metrics, logs, traces, profiles, and audit signals. | Must | Defines the authoritative synchronous command boundary and its invariants. |
+| FR-2 | The system must query correlated telemetry, dashboards, alerts, and service health. | Must | Defines the dominant read path, caches, indexes, and acceptable staleness. |
+| FR-3 | The system must buffer, normalize, sample, index, compact, and tier telemetry. | Must | Separates durable acceptance from retryable fan-out and derived work. |
+| FR-4 | The system must manage tenants, retention, cardinality, redaction, and SLO policy. | Should | Requires versioned configuration, least privilege, audit, and rollback. |
+
+### Non-functional requirements
+
+| Quality | Measurable target | Why it matters | Architecture consequence |
+|---|---|---|---|
+| Latency | critical metrics query p99 below 2 seconds and alert evaluation within 30 seconds | Users experience this path directly. | Keep the critical path local, bounded, and independently scalable. |
+| Availability | telemetry ingestion survives backend degradation without impacting instrumented applications | A partial infrastructure failure must have an explicit outcome. | Spread workloads across failure zones and define degradation before failover. |
+| Correctness | tenant isolation, timestamps, trace correlation, and alert evaluation remain auditable | The system is not useful if its central invariant can be violated. | Use idempotency, ownership epochs, transactions, leases, or version checks where required. |
+| Peak scale | ingest millions of events/s with burst buffers and petabyte retention | Peak traffic and skew determine partitions and isolation. | Partition by the domain ownership key, autoscale on work, and reserve burst headroom. |
+| Security and privacy | redact secrets, isolate tenants, encrypt storage, and restrict raw-log access | Abuse or data disclosure can outweigh availability. | Authenticate at the edge, authorize at the data boundary, encrypt, minimize, and audit. |
+
+**Scope exclusions:** being on the customer request path and unlimited high-cardinality retention. **Assumptions:** OpenTelemetry-compatible collectors batch locally and losing low-priority debug telemetry is preferable to application impact.
 
 ## 3. Capacity estimate
 
@@ -34,35 +53,60 @@ At 100K services emitting ~50 spans/sec each at peak, platform-wide ingress is 5
 ```mermaid
 flowchart LR
   accTitle: Observability platform system context
-  accDescr: Instrumented services send telemetry through OpenTelemetry collectors into the platform, which engineers query and which drives alert notifications.
-  Service[Instrumented services] --> Collector[OTel collector]
-  Collector --> Platform[Observability platform]
-  Engineer --> Platform
-  Platform --> Alerting[Alert and notification channels]
+  accDescr: Human and system actors use Observability platform, which integrates with explicitly bounded external capabilities.
+  A1["Instrumented service<br/>Emits bounded telemetry asynchronously"] --> System
+  A2["Engineer<br/>Queries incidents, dashboards, and traces"] --> System
+  A3["SRE operator<br/>Defines SLOs, alerts, and retention"] --> System
+  System["Observability platform<br/>Owns the product capability and domain guarantees"]
+  System --> E1["Incident system<br/>Receives deduplicated actionable alerts"]
+  System --> E2["Archive storage<br/>Holds compressed long-retention telemetry"]
 ```
+
+### Context component roles
+
+| Component | Role |
+|---|---|
+| Instrumented service | Emits bounded telemetry asynchronously. |
+| Engineer | Queries incidents, dashboards, and traces. |
+| SRE operator | Defines SLOs, alerts, and retention. |
+| Observability platform | Owns the product boundary, core policy, and durable outcome. |
+| Incident system | Receives deduplicated actionable alerts. |
+| Archive storage | Holds compressed long-retention telemetry. |
 
 ## 6. Container architecture
 
 ```mermaid
 flowchart TB
   accTitle: Observability platform container architecture
-  accDescr: OpenTelemetry SDKs send data through a collector that tail-samples traces before separate metrics, trace, and log stores feed a shared query engine and an anomaly correlation model driving alerts.
-  SDK[OTel SDKs] --> Collector[OTel collector: batch and sample]
-  Collector --> MetricsPipe[Metrics ingest]
-  Collector --> TracePipe[Trace ingest, tail sampler]
-  Collector --> LogPipe[Log ingest]
-  MetricsPipe --> TSDB[(Time-series store)]
-  TracePipe --> SpanStore[(Indexed span store)]
-  LogPipe --> LogStore[(Log store)]
-  TSDB --> Query[Query engine]
-  SpanStore --> Query
-  LogStore --> Query
-  TSDB --> Anomaly[Anomaly and correlation model]
-  SpanStore --> Anomaly
-  LogStore --> Anomaly
-  Anomaly --> Alerting[Alert manager]
-  Query --> Alerting
+  accDescr: Deployable components separate the critical request, durable state, asynchronous work, and bounded AI path.
+  C1["Telemetry collector<br/>Batches, redacts, and buffers signals"]
+  C2["Ingestion gateway<br/>Authenticates tenants and enforces quotas"]
+  C3["Durable buffer<br/>Absorbs bursts and backend outages"]
+  C4[("Stream processors<br/>Normalize, sample, and derive metrics")]
+  C5["Hot stores<br/>Serve recent metrics, logs, and traces"]
+  C6[("Cold store<br/>Retains compressed historical data")]
+  C7["Query service<br/>Fans out and correlates bounded queries"]
+  C8["Alert engine<br/>Evaluates SLO and rule windows"]
+  C1 --> C2 --> C3 --> C4
+  C4 --> C5
+  C4 --> C6
+  C7 --> C5
+  C7 --> C6
+  C4 --> C8
 ```
+
+### Container component roles
+
+| Component | Role |
+|---|---|
+| Telemetry collector | Batches, redacts, and buffers signals. |
+| Ingestion gateway | Authenticates tenants and enforces quotas. |
+| Durable buffer | Absorbs bursts and backend outages. |
+| Stream processors | Normalize, sample, and derive metrics. |
+| Hot stores | Serve recent metrics, logs, and traces. |
+| Cold store | Retains compressed historical data. |
+| Query service | Fans out and correlates bounded queries. |
+| Alert engine | Evaluates SLO and rule windows. |
 
 ## 7. Component deep dive
 

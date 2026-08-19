@@ -9,7 +9,7 @@ aiFocus: [demand forecasting, constrained dispatch, exception-resolution agents]
 tags: [marketplace, delivery, workflow, optimization]
 ---
 
-_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
+_Follows the [System Design Template](../00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 
@@ -17,7 +17,26 @@ Design local delivery from merchant discovery through order, preparation, courie
 
 ## 2. Requirements and scope
 
-Browse menus, place/cancel orders, merchant acceptance, courier assignment, pickup/drop-off, live tracking, refunds, payouts, substitutions, and support. Target exactly-once financial effects, five-second dispatch decisions, graceful store/device outages, and regional isolation. Exclude warehouse fulfillment and autonomous delivery.
+### Functional requirements
+
+| ID | Requirement | Priority | Interview significance |
+|---|---|---|---|
+| FR-1 | The system must quote, place, accept, prepare, dispatch, deliver, and settle orders. | Must | Defines the authoritative synchronous command boundary and its invariants. |
+| FR-2 | The system must track courier position, order state, ETA, and merchant readiness. | Must | Defines the dominant read path, caches, indexes, and acceptable staleness. |
+| FR-3 | The system must optimize dispatch, forecast demand, notify parties, and reconcile payment. | Must | Separates durable acceptance from retryable fan-out and derived work. |
+| FR-4 | The system must resolve exceptions, refunds, fraud, safety, and marketplace imbalance. | Should | Requires versioned configuration, least privilege, audit, and rollback. |
+
+### Non-functional requirements
+
+| Quality | Measurable target | Why it matters | Architecture consequence |
+|---|---|---|---|
+| Latency | quote p99 below 500 ms and normal courier assignment below 10 seconds | Users experience this path directly. | Keep the critical path local, bounded, and independently scalable. |
+| Availability | 99.99% active-order state availability across a zone failure | A partial infrastructure failure must have an explicit outcome. | Spread workloads across failure zones and define degradation before failover. |
+| Correctness | one valid order state transition, courier lease, inventory reservation, and payment capture | The system is not useful if its central invariant can be violated. | Use idempotency, ownership epochs, transactions, leases, or version checks where required. |
+| Peak scale | ingest high-rate courier locations and meal-time order bursts per market | Peak traffic and skew determine partitions and isolation. | Partition by the domain ownership key, autoscale on work, and reserve burst headroom. |
+| Security and privacy | protect precise location and payment data with scoped operational access | Abuse or data disclosure can outweigh availability. | Authenticate at the edge, authorize at the data boundary, encrypt, minimize, and audit. |
+
+**Scope exclusions:** merchant kitchen software, payroll, autonomous delivery, and proprietary map infrastructure. **Assumptions:** each order belongs to one market cell, external providers handle maps and regulated card data, and AI has constrained fallback.
 
 ## 3. Capacity estimate
 
@@ -34,32 +53,62 @@ At 20M orders/day, average creation is 230/s and meal peaks reach 2.3k/s. If 2M 
 ```mermaid
 flowchart LR
   accTitle: Delivery marketplace system context
-  accDescr: Customers, merchants, couriers, and support coordinate delivery through payment and mapping providers.
-  Customer --> Market[Delivery marketplace]
-  Merchant --> Market
-  Courier --> Market
-  Support --> Market
-  Market --> PSP[Payment provider]
-  Market --> Maps[Maps and traffic]
+  accDescr: Human and system actors use Delivery marketplace, which integrates with explicitly bounded external capabilities.
+  A1["Customer<br/>Places and tracks an order"] --> System
+  A2["Merchant<br/>Accepts and prepares items"] --> System
+  A3["Courier<br/>Accepts work and completes delivery"] --> System
+  A4["Operator<br/>Resolves exceptions and safety cases"] --> System
+  System["Delivery marketplace<br/>Owns the product capability and domain guarantees"]
+  System --> E1["Routing provider<br/>Returns routes and baseline travel time"]
+  System --> E2["Payment provider<br/>Authorizes and captures regulated payments"]
 ```
+
+### Context component roles
+
+| Component | Role |
+|---|---|
+| Customer | Places and tracks an order. |
+| Merchant | Accepts and prepares items. |
+| Courier | Accepts work and completes delivery. |
+| Operator | Resolves exceptions and safety cases. |
+| Delivery marketplace | Owns the product boundary, core policy, and durable outcome. |
+| Routing provider | Returns routes and baseline travel time. |
+| Payment provider | Authorizes and captures regulated payments. |
 
 ## 6. Container architecture
 
 ```mermaid
 flowchart TB
   accTitle: Delivery marketplace container architecture
-  accDescr: Catalog, durable order workflow, event log, geospatial supply, dispatch models, ledger, and approved exception handling are separated.
-  Apps --> Edge[API and realtime edge]
-  Edge --> Catalog[Catalog/search]
-  Edge --> Order[Order workflow] --> SQL[(Order DB)]
-  Order --> Bus[(Event log)]
-  Bus --> Dispatch[Dispatch optimizer]
-  Courier --> Location[Location ingestion] --> Geo[(H3 supply index)]
-  Dispatch --> Geo
-  Dispatch --> Models[ETA, prep, demand models]
-  Order --> Ledger[Payment ledger]
-  Bus --> Agent[Exception agent] --> Approval[Human approval queue]
+  accDescr: Deployable components separate the critical request, durable state, asynchronous work, and bounded AI path.
+  C1["Customer, merchant, courier apps<br/>Issue commands and receive live updates"]
+  C2["API and realtime edge<br/>Authenticates and holds sessions"]
+  C3["Order service<br/>Owns the durable order state machine"]
+  C4["Marketplace service<br/>Quotes catalog, fees, and availability"]
+  C5["Dispatch service<br/>Leases one eligible courier"]
+  C6["Geo state<br/>Maintains fresh courier supply by cell"]
+  C7[("Event stream<br/>Drives notifications and settlement")]
+  C8["Model gateway<br/>Serves bounded ETA, demand, and ranking"]
+  C1 --> C2
+  C2 --> C3
+  C2 --> C4
+  C3 --> C5 --> C6
+  C3 -. durable event .-> C7
+  C5 -. bounded prediction .-> C8
 ```
+
+### Container component roles
+
+| Component | Role |
+|---|---|
+| Customer, merchant, courier apps | Issue commands and receive live updates. |
+| API and realtime edge | Authenticates and holds sessions. |
+| Order service | Owns the durable order state machine. |
+| Marketplace service | Quotes catalog, fees, and availability. |
+| Dispatch service | Leases one eligible courier. |
+| Geo state | Maintains fresh courier supply by cell. |
+| Event stream | Drives notifications and settlement. |
+| Model gateway | Serves bounded ETA, demand, and ranking. |
 
 ## 7. Component deep dive
 

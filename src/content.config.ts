@@ -23,6 +23,16 @@ export const collections = {
     aiFocus: z.array(z.string()).min(1),
     tags: z.array(z.string()).default([]),
   }))),
+  'system-design-deployments': defineCollection(content('./content/system-design-deployments', z.object({
+    title: z.string(),
+    summary: z.string(),
+    systemDesign: z.string().regex(/^\d{2}-[a-z0-9]+(?:-[a-z0-9]+)*$/),
+    order: z.number().int().min(1),
+    deploymentStyle: z.string(),
+    availabilityTarget: z.string(),
+    regions: z.enum(['single-region', 'multi-region', 'global']),
+    tags: z.array(z.string()).min(1),
+  }))),
   'coding-interviews': defineCollection(content('./content/coding-interviews', z.object({
     title: z.string(),
     summary: z.string(),

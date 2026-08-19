@@ -9,7 +9,7 @@ aiFocus: [online/offline feature consistency, model registry and versioning, can
 tags: [mlops, feature-store, model-serving, observability]
 ---
 
-_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
+_Follows the [System Design Template](../00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 
@@ -17,7 +17,26 @@ Design a feature store and serving platform that lets teams define a feature onc
 
 ## 2. Requirements and scope
 
-**Functional:** define feature transformations once; materialize features to both an offline store (for training) and an online store (for serving); register and version models; serve low-latency predictions; canary/shadow new model versions; detect drift and data-quality regressions. **Non-functional:** p99 online feature retrieval under 10 ms, point-in-time-correct offline joins for training (no label leakage), and provable parity between the feature value a model saw offline during training and online at serving time. Exclude the model training infrastructure itself (assume training happens elsewhere and produces artifacts this platform registers).
+### Functional requirements
+
+| ID | Requirement | Priority | Interview significance |
+|---|---|---|---|
+| FR-1 | The system must register feature definitions, ingest values, materialize, and request online vectors. | Must | Defines the authoritative synchronous command boundary and its invariants. |
+| FR-2 | The system must serve point-in-time-correct online and offline features with lineage. | Must | Defines the dominant read path, caches, indexes, and acceptable staleness. |
+| FR-3 | The system must process streams and batches, backfill, validate, publish, and monitor freshness. | Must | Separates durable acceptance from retryable fan-out and derived work. |
+| FR-4 | The system must manage schemas, ownership, access, TTL, quality, and training-serving compatibility. | Should | Requires versioned configuration, least privilege, audit, and rollback. |
+
+### Non-functional requirements
+
+| Quality | Measurable target | Why it matters | Architecture consequence |
+|---|---|---|---|
+| Latency | online multi-feature read p99 below 10 ms inside a region | Users experience this path directly. | Keep the critical path local, bounded, and independently scalable. |
+| Availability | 99.99% online serving with last-known-good feature fallback | A partial infrastructure failure must have an explicit outcome. | Spread workloads across failure zones and define degradation before failover. |
+| Correctness | event-time semantics, point-in-time joins, feature versions, and tenant access stay consistent | The system is not useful if its central invariant can be violated. | Use idempotency, ownership epochs, transactions, leases, or version checks where required. |
+| Peak scale | ingest millions of updates/s and serve high-QPS model inference | Peak traffic and skew determine partitions and isolation. | Partition by the domain ownership key, autoscale on work, and reserve burst headroom. |
+| Security and privacy | classify PII, restrict feature sets, encrypt values, audit access, and enforce deletion | Abuse or data disclosure can outweigh availability. | Authenticate at the edge, authorize at the data boundary, encrypt, minimize, and audit. |
+
+**Scope exclusions:** training arbitrary models and silently deriving features from unapproved raw data. **Assumptions:** feature definitions are versioned code, offline truth can repair online state, and inference has defaults for missing features.
 
 ## 3. Capacity estimate
 
@@ -34,31 +53,64 @@ At 500 registered features across 50 models, 100k predictions/second at peak, an
 
 ```mermaid
 flowchart LR
-  accTitle: Feature store and serving platform system context
-  accDescr: Data scientists, training pipelines, and online applications interact with the feature store and serving platform, which pulls from upstream event and batch data sources.
-  DataScientist --> Platform[Feature store and serving platform]
-  TrainingPipeline --> Platform
-  OnlineApp[Online application] --> Platform
-  Platform --> Sources[Batch and streaming data sources]
+  accTitle: ML feature store and serving platform system context
+  accDescr: Human and system actors use ML feature store and serving platform, which integrates with explicitly bounded external capabilities.
+  A1["Data producer<br/>Publishes governed raw events and batches"] --> System
+  A2["ML engineer<br/>Defines features and builds training sets"] --> System
+  A3["Model service<br/>Reads low-latency online feature vectors"] --> System
+  System["ML feature store and serving platform<br/>Owns the product capability and domain guarantees"]
+  System --> E1["Data lake<br/>Stores historical source and offline features"]
+  System --> E2["Model registry<br/>Links models to exact feature versions"]
 ```
+
+### Context component roles
+
+| Component | Role |
+|---|---|
+| Data producer | Publishes governed raw events and batches. |
+| ML engineer | Defines features and builds training sets. |
+| Model service | Reads low-latency online feature vectors. |
+| ML feature store and serving platform | Owns the product boundary, core policy, and durable outcome. |
+| Data lake | Stores historical source and offline features. |
+| Model registry | Links models to exact feature versions. |
 
 ## 6. Container architecture
 
 ```mermaid
 flowchart TB
-  accTitle: Feature store and serving platform container architecture
-  accDescr: A shared feature definition layer materializes to both an offline store for training and an online store for low-latency serving, feeding a model registry and inference service with shadow and canary routing.
-  Sources[Batch + streaming sources] --> Materialize[Feature materialization engine]
-  Materialize --> Offline[(Offline store: columnar / data lake)]
-  Materialize --> Online[(Online store: KV / in-memory)]
-  Offline --> TrainJoin[Point-in-time training join]
-  Online --> ServeAPI[Feature serving API]
-  ServeAPI --> InferenceGW[Inference gateway]
-  InferenceGW --> Registry[Model registry]
-  InferenceGW --> Prod[Production model]
-  InferenceGW --> Shadow[Shadow/canary model]
-  InferenceGW --> Monitor[Drift and quality monitor]
+  accTitle: ML feature store and serving platform container architecture
+  accDescr: Deployable components separate the critical request, durable state, asynchronous work, and bounded AI path.
+  C1["Feature registry<br/>Owns definitions, lineage, and schemas"]
+  C2[("Stream ingestion<br/>Validates event-time updates")]
+  C3["Batch materializer<br/>Backfills and computes historical values"]
+  C4[("Offline store<br/>Serves point-in-time training datasets")]
+  C5[("Online store<br/>Serves latest low-latency vectors")]
+  C6["Serving API<br/>Authorizes and assembles feature requests"]
+  C7["Quality monitor<br/>Detects freshness, skew, and drift"]
+  C8["Publication controller<br/>Promotes compatible feature versions"]
+  C1 --> C2 --> C4
+  C2 --> C5
+  C3 --> C4
+  C3 --> C5
+  C6 --> C5
+  C7 --> C4
+  C7 --> C5
+  C8 --> C2
+  C8 --> C3
 ```
+
+### Container component roles
+
+| Component | Role |
+|---|---|
+| Feature registry | Owns definitions, lineage, and schemas. |
+| Stream ingestion | Validates event-time updates. |
+| Batch materializer | Backfills and computes historical values. |
+| Offline store | Serves point-in-time training datasets. |
+| Online store | Serves latest low-latency vectors. |
+| Serving API | Authorizes and assembles feature requests. |
+| Quality monitor | Detects freshness, skew, and drift. |
+| Publication controller | Promotes compatible feature versions. |
 
 ## 7. Component deep dive
 

@@ -9,7 +9,7 @@ aiFocus: [multimodal indexing, ACL-aware RAG, collaborative agents]
 tags: [object-storage, sync, search, rag]
 ---
 
-_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
+_Follows the [System Design Template](../00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 
@@ -17,7 +17,26 @@ Design a multi-device cloud drive with sharing, resumable sync, version history,
 
 ## 2. Requirements and scope
 
-Upload/download, offline edits, folders, sharing, conflict copies, deletion recovery, full-text/multimodal search, and cited answers. Target durable blobs, p99 metadata operations under 300 ms, resumable transfer, and read-your-writes metadata. Exclude live document editing and public-web search.
+### Functional requirements
+
+| ID | Requirement | Priority | Interview significance |
+|---|---|---|---|
+| FR-1 | The system must upload, download, move, share, and version files. | Must | Defines the authoritative synchronous command boundary and its invariants. |
+| FR-2 | The system must synchronize changed content across authorized devices and collaborators. | Must | Defines the dominant read path, caches, indexes, and acceptable staleness. |
+| FR-3 | The system must index content, compute embeddings, and publish change notifications. | Must | Separates durable acceptance from retryable fan-out and derived work. |
+| FR-4 | The system must manage tenancy, retention, legal hold, and access review. | Should | Requires versioned configuration, least privilege, audit, and rollback. |
+
+### Non-functional requirements
+
+| Quality | Measurable target | Why it matters | Architecture consequence |
+|---|---|---|---|
+| Latency | metadata reads p99 below 200 ms and resumable chunk transfer saturates the client link | Users experience this path directly. | Keep the critical path local, bounded, and independently scalable. |
+| Availability | 99.99% metadata availability with eleven-nines object durability target | A partial infrastructure failure must have an explicit outcome. | Spread workloads across failure zones and define degradation before failover. |
+| Correctness | ACL checks precede every metadata, search, and grounded-answer result | The system is not useful if its central invariant can be violated. | Use idempotency, ownership epochs, transactions, leases, or version checks where required. |
+| Peak scale | support petabytes of deduplicated chunks and millions of concurrent sync clients | Peak traffic and skew determine partitions and isolation. | Partition by the domain ownership key, autoscale on work, and reserve burst headroom. |
+| Security and privacy | encrypt tenant content, isolate keys, audit access, and prevent cross-tenant retrieval | Abuse or data disclosure can outweigh availability. | Authenticate at the edge, authorize at the data boundary, encrypt, minimize, and audit. |
+
+**Scope exclusions:** full office editing, arbitrary public web indexing, and model training on customer content. **Assumptions:** large blobs use multipart transfer, metadata is region-affine, and AI search is tenant-authorized and opt-in.
 
 ## 3. Capacity estimate
 
@@ -33,30 +52,61 @@ For 100M users, 10M daily users, and 2 GB average stored, logical data is 200 PB
 
 ```mermaid
 flowchart LR
-  accTitle: Cloud workspace system context
-  accDescr: Users, administrators, and agents access the workspace through identity and key-management boundaries.
-  User --> Workspace[Cloud knowledge workspace]
-  Admin --> Workspace
-  Agent --> Workspace
-  Workspace --> Identity[Identity provider]
-  Workspace --> KMS[Key management]
+  accTitle: Cloud knowledge workspace system context
+  accDescr: Human and system actors use Cloud knowledge workspace, which integrates with explicitly bounded external capabilities.
+  A1["Workspace member<br/>Synchronizes and collaborates on files"] --> System
+  A2["Administrator<br/>Controls tenancy, retention, and access"] --> System
+  A3["Knowledge agent<br/>Retrieves authorized grounded context"] --> System
+  System["Cloud knowledge workspace<br/>Owns the product capability and domain guarantees"]
+  System --> E1["Identity provider<br/>Authenticates users and groups"]
+  System --> E2["Notification provider<br/>Delivers change and sharing alerts"]
 ```
+
+### Context component roles
+
+| Component | Role |
+|---|---|
+| Workspace member | Synchronizes and collaborates on files. |
+| Administrator | Controls tenancy, retention, and access. |
+| Knowledge agent | Retrieves authorized grounded context. |
+| Cloud knowledge workspace | Owns the product boundary, core policy, and durable outcome. |
+| Identity provider | Authenticates users and groups. |
+| Notification provider | Delivers change and sharing alerts. |
 
 ## 6. Container architecture
 
 ```mermaid
 flowchart TB
-  accTitle: Cloud workspace container architecture
-  accDescr: Metadata and chunk transfer paths feed a change log, device notifications, protected search, and a grounded assistant.
-  Clients --> Edge[Sync and API edge]
-  Edge --> Metadata[Metadata service] --> SQL[(Sharded metadata DB)]
-  Edge --> Transfer[Chunk transfer] --> Blob[(Object storage)]
-  Metadata --> Bus[(Change log)]
-  Bus --> Notify[Device notifier]
-  Bus --> Index[Index pipeline] --> Search[(Lexical + vector index)]
-  Search --> RAG[Grounded assistant gateway]
-  RAG --> Policy[ACL policy engine]
+  accTitle: Cloud knowledge workspace container architecture
+  accDescr: Deployable components separate the critical request, durable state, asynchronous work, and bounded AI path.
+  C1["Sync client<br/>Chunks content and resumes transfers"]
+  C2["API edge<br/>Authenticates and routes tenant traffic"]
+  C3["Metadata service<br/>Owns namespace, versions, and ACLs"]
+  C4["Chunk service<br/>Deduplicates immutable content blocks"]
+  C5["Object storage<br/>Durably stores encrypted chunks"]
+  C6[("Change stream<br/>Orders sync and indexing events")]
+  C7["Hybrid search<br/>Combines lexical and vector retrieval"]
+  C8["RAG gateway<br/>Generates ACL-filtered grounded answers"]
+  C1 --> C2 --> C3
+  C1 --> C4 --> C5
+  C3 --> C4
+  C3 -. committed change .-> C6 --> C7
+  C7 --> C8
+  C8 -. authorize candidates .-> C3
 ```
+
+### Container component roles
+
+| Component | Role |
+|---|---|
+| Sync client | Chunks content and resumes transfers. |
+| API edge | Authenticates and routes tenant traffic. |
+| Metadata service | Owns namespace, versions, and ACLs. |
+| Chunk service | Deduplicates immutable content blocks. |
+| Object storage | Durably stores encrypted chunks. |
+| Change stream | Orders sync and indexing events. |
+| Hybrid search | Combines lexical and vector retrieval. |
+| RAG gateway | Generates ACL-filtered grounded answers. |
 
 ## 7. Component deep dive
 

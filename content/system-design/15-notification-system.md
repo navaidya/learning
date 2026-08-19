@@ -9,7 +9,7 @@ aiFocus: [send-time optimization, channel selection]
 tags: [notifications, messaging, reliability, fan-out]
 ---
 
-_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
+_Follows the [System Design Template](../00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 
@@ -17,7 +17,26 @@ Design a notification platform that fans events out across push, SMS, and email,
 
 ## 2. Requirements and scope
 
-**Functional:** accept notification requests from upstream services, render templated content, apply preference/quiet-hour/frequency rules, select channel(s), deliver via push/SMS/email providers, track delivery status, support scheduled sends. **Non-functional:** at-least-once delivery with user-visible dedup, p99 enqueue-to-dispatch under a few seconds for transactional notifications, automatic provider failover, 100M+ users. Exclude in-app real-time chat delivery and marketing-audience-building tooling.
+### Functional requirements
+
+| ID | Requirement | Priority | Interview significance |
+|---|---|---|---|
+| FR-1 | The system must submit, schedule, cancel, and query a notification intent. | Must | Defines the authoritative synchronous command boundary and its invariants. |
+| FR-2 | The system must return delivery state and user preference outcome. | Must | Defines the dominant read path, caches, indexes, and acceptable staleness. |
+| FR-3 | The system must fan out channel work, retry providers, suppress duplicates, and record receipts. | Must | Separates durable acceptance from retryable fan-out and derived work. |
+| FR-4 | The system must manage templates, channel policy, quiet hours, quotas, and provider health. | Should | Requires versioned configuration, least privilege, audit, and rollback. |
+
+### Non-functional requirements
+
+| Quality | Measurable target | Why it matters | Architecture consequence |
+|---|---|---|---|
+| Latency | transactional notifications enqueue below 200 ms and urgent delivery begins within seconds | Users experience this path directly. | Keep the critical path local, bounded, and independently scalable. |
+| Availability | 99.99% intent acceptance with durable schedules and no duplicate user-visible send | A partial infrastructure failure must have an explicit outcome. | Spread workloads across failure zones and define degradation before failover. |
+| Correctness | idempotency, preference, suppression, and per-channel ordering policy are enforced | The system is not useful if its central invariant can be violated. | Use idempotency, ownership epochs, transactions, leases, or version checks where required. |
+| Peak scale | handle burst campaigns across email, SMS, push, and in-app channels | Peak traffic and skew determine partitions and isolation. | Partition by the domain ownership key, autoscale on work, and reserve burst headroom. |
+| Security and privacy | protect contact data, restrict templates, verify webhooks, and prevent spam abuse | Abuse or data disclosure can outweigh availability. | Authenticate at the edge, authorize at the data boundary, encrypt, minimize, and audit. |
+
+**Scope exclusions:** marketing campaign authoring and building telecom or email provider networks. **Assumptions:** providers are unreliable external dependencies, channels differ in guarantees, and AI copy is never sent without policy validation.
 
 ## 3. Capacity estimate
 
@@ -33,38 +52,59 @@ At 100M users averaging 5 notifications/user/day, volume is 500M/day: ~5,800/s a
 
 ```mermaid
 flowchart LR
-  accTitle: Notification system context
-  accDescr: Upstream producer services send requests to the notification platform, which delivers through push, SMS, and email providers to user devices.
-  Producer[Upstream services] --> Platform[Notification platform]
-  Platform --> APNs[APNs]
-  Platform --> FCM[FCM]
-  Platform --> SMS[SMS gateway]
-  Platform --> Email[Email provider]
-  APNs --> User
-  FCM --> User
-  SMS --> User
-  Email --> User
+  accTitle: Notification platform system context
+  accDescr: Human and system actors use Notification platform, which integrates with explicitly bounded external capabilities.
+  A1["Product service<br/>Submits transactional notification intent"] --> System
+  A2["End user<br/>Receives messages and controls preferences"] --> System
+  A3["Operator<br/>Manages templates, policy, and provider incidents"] --> System
+  System["Notification platform<br/>Owns the product capability and domain guarantees"]
+  System --> E1["Channel providers<br/>Deliver email, SMS, and push externally"]
+  System --> E2["Identity service<br/>Resolves verified destinations and consent"]
 ```
+
+### Context component roles
+
+| Component | Role |
+|---|---|
+| Product service | Submits transactional notification intent. |
+| End user | Receives messages and controls preferences. |
+| Operator | Manages templates, policy, and provider incidents. |
+| Notification platform | Owns the product boundary, core policy, and durable outcome. |
+| Channel providers | Deliver email, SMS, and push externally. |
+| Identity service | Resolves verified destinations and consent. |
 
 ## 6. Container architecture
 
 ```mermaid
 flowchart TB
-  accTitle: Notification system container architecture
-  accDescr: Ingest applies preference filtering and dedup, an orchestrator schedules send time, and per-channel dispatch workers deliver through provider adapters with failover, updating a delivery ledger.
-  Producer --> Ingest[Ingest API]
-  Ingest --> Dedup[(Dedup store)]
-  Ingest --> Filter[Preference and rate-limit filter]
-  Filter --> Orchestrator[Send-time orchestrator]
-  Orchestrator --> Router[Channel router]
-  Router --> PushWorker[Push dispatch] --> APNs
-  Router --> SMSWorker[SMS dispatch] --> SMSGW[SMS gateway]
-  Router --> EmailWorker[Email dispatch] --> EmailP[Email provider]
-  PushWorker --> Ledger[(Delivery ledger)]
-  SMSWorker --> Ledger
-  EmailWorker --> Ledger
-  Ledger --> Engagement[Engagement tracking]
+  accTitle: Notification platform container architecture
+  accDescr: Deployable components separate the critical request, durable state, asynchronous work, and bounded AI path.
+  C1["Notification API<br/>Validates intent and idempotency"]
+  C2["Preference service<br/>Applies consent, quiet hours, and suppression"]
+  C3["Scheduler<br/>Releases durable delayed work"]
+  C4[("Channel queues<br/>Isolate email, SMS, push, and in-app load")]
+  C5["Channel workers<br/>Render and send provider-specific messages"]
+  C6["Provider adapters<br/>Bound retries and normalize receipts"]
+  C7["Delivery ledger<br/>Stores attempts and final outcomes"]
+  C8["Content assistant<br/>Suggests bounded template variants"]
+  C1 --> C2 --> C3 --> C4 --> C5 --> C6
+  C5 --> C7
+  C6 -. receipt .-> C7
+  C8 -. policy-validated suggestion .-> C5
 ```
+
+### Container component roles
+
+| Component | Role |
+|---|---|
+| Notification API | Validates intent and idempotency. |
+| Preference service | Applies consent, quiet hours, and suppression. |
+| Scheduler | Releases durable delayed work. |
+| Channel queues | Isolate email, SMS, push, and in-app load. |
+| Channel workers | Render and send provider-specific messages. |
+| Provider adapters | Bound retries and normalize receipts. |
+| Delivery ledger | Stores attempts and final outcomes. |
+| Content assistant | Suggests bounded template variants. |
 
 ## 7. Component deep dive
 

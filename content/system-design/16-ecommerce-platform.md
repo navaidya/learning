@@ -9,7 +9,7 @@ aiFocus: [search and ranking relevance, product recommendations, review and list
 tags: [marketplace, inventory, search, saga, machine-learning]
 ---
 
-_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
+_Follows the [System Design Template](../00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 
@@ -17,7 +17,26 @@ Design an e-commerce platform where sellers list products, buyers search/browse,
 
 ## 2. Requirements and scope
 
-**Functional:** catalog CRUD, faceted search, cart with reservation holds, checkout, order tracking, cancellation/return. **Non-functional:** never oversell a SKU, p99 search under 300 ms, checkout under 2 seconds, survive 20x traffic on flash sales, regional data residency. Exclude third-party marketplace payouts and physical warehouse robotics.
+### Functional requirements
+
+| ID | Requirement | Priority | Interview significance |
+|---|---|---|---|
+| FR-1 | The system must manage catalog, cart, checkout, order, return, and fulfillment state. | Must | Defines the authoritative synchronous command boundary and its invariants. |
+| FR-2 | The system must browse searchable catalog, price, availability, cart, and order status. | Must | Defines the dominant read path, caches, indexes, and acceptable staleness. |
+| FR-3 | The system must index products, reserve inventory, capture payment, notify fulfillment, and recommend items. | Must | Separates durable acceptance from retryable fan-out and derived work. |
+| FR-4 | The system must manage sellers, fraud, disputes, promotions, and fulfillment exceptions. | Should | Requires versioned configuration, least privilege, audit, and rollback. |
+
+### Non-functional requirements
+
+| Quality | Measurable target | Why it matters | Architecture consequence |
+|---|---|---|---|
+| Latency | catalog p99 below 300 ms and checkout command acceptance below 1 second | Users experience this path directly. | Keep the critical path local, bounded, and independently scalable. |
+| Availability | 99.99% browse availability and 99.95% checkout availability | A partial infrastructure failure must have an explicit outcome. | Spread workloads across failure zones and define degradation before failover. |
+| Correctness | price snapshot, inventory reservation, order state, and payment capture reconcile exactly once | The system is not useful if its central invariant can be violated. | Use idempotency, ownership epochs, transactions, leases, or version checks where required. |
+| Peak scale | serve flash-sale hot products and globally read-heavy catalog traffic | Peak traffic and skew determine partitions and isolation. | Partition by the domain ownership key, autoscale on work, and reserve burst headroom. |
+| Security and privacy | isolate seller data, tokenize payment, prevent account takeover, and audit price/inventory changes | Abuse or data disclosure can outweigh availability. | Authenticate at the edge, authorize at the data boundary, encrypt, minimize, and audit. |
+
+**Scope exclusions:** warehouse robotics, ad auctions, and proprietary marketplace internals. **Assumptions:** catalog tolerates staleness, checkout uses a regional writer, and recommendations have deterministic fallback.
 
 ## 3. Capacity estimate
 
@@ -34,32 +53,61 @@ At 50M daily active shoppers and a 3% search-to-cart rate, baseline cart creatio
 ```mermaid
 flowchart LR
   accTitle: E-commerce platform system context
-  accDescr: Buyers and sellers use the platform, which integrates with payment, shipping, and tax providers.
-  Buyer --> Platform[E-commerce platform]
-  Seller --> Platform
-  Platform --> PSP[Payment provider]
-  Platform --> Carrier[Shipping carriers]
-  Platform --> Tax[Tax and compliance service]
+  accDescr: Human and system actors use E-commerce platform, which integrates with explicitly bounded external capabilities.
+  A1["Shopper<br/>Browses, buys, tracks, and returns products"] --> System
+  A2["Seller<br/>Manages catalog, price, and stock"] --> System
+  A3["Operations agent<br/>Resolves fraud and fulfillment exceptions"] --> System
+  System["E-commerce platform<br/>Owns the product capability and domain guarantees"]
+  System --> E1["Payment provider<br/>Authorizes and captures regulated payment"]
+  System --> E2["Fulfillment network<br/>Picks, ships, and reports delivery"]
 ```
+
+### Context component roles
+
+| Component | Role |
+|---|---|
+| Shopper | Browses, buys, tracks, and returns products. |
+| Seller | Manages catalog, price, and stock. |
+| Operations agent | Resolves fraud and fulfillment exceptions. |
+| E-commerce platform | Owns the product boundary, core policy, and durable outcome. |
+| Payment provider | Authorizes and captures regulated payment. |
+| Fulfillment network | Picks, ships, and reports delivery. |
 
 ## 6. Container architecture
 
 ```mermaid
 flowchart TB
   accTitle: E-commerce platform container architecture
-  accDescr: Catalog, search, cart, order saga, inventory, ranking, and fulfillment components are separated by consistency needs.
-  Apps[Web and mobile apps] --> Edge[API edge]
-  Edge --> Catalog[Catalog service] --> SearchIdx[(Search index)]
-  Edge --> Ranker[Ranking and recs service]
-  Ranker --> SearchIdx
-  Edge --> Cart[Cart service] --> Inv[(Inventory ledger)]
-  Cart --> Order[Order saga orchestrator]
-  Order --> Inv
-  Order --> Bus[(Event log)]
-  Bus --> Payment[Payment service]
-  Bus --> Fulfillment[Fulfillment service]
-  Bus --> Notify[Notifications]
+  accDescr: Deployable components separate the critical request, durable state, asynchronous work, and bounded AI path.
+  C1["Storefront<br/>Renders browse, cart, and account experiences"]
+  C2["API edge<br/>Authenticates and protects requests"]
+  C3["Catalog service<br/>Owns product and price versions"]
+  C4["Search service<br/>Serves denormalized discovery indexes"]
+  C5["Cart service<br/>Maintains expiring shopper intent"]
+  C6["Checkout orchestrator<br/>Coordinates reservation and payment saga"]
+  C7["Inventory service<br/>Owns sellable stock and leases"]
+  C8["Order ledger<br/>Stores durable order and settlement state"]
+  C1 --> C2
+  C2 --> C3
+  C2 --> C4
+  C1 --> C5
+  C1 --> C6 --> C7
+  C6 --> C8
+  C3 -. index update .-> C4
 ```
+
+### Container component roles
+
+| Component | Role |
+|---|---|
+| Storefront | Renders browse, cart, and account experiences. |
+| API edge | Authenticates and protects requests. |
+| Catalog service | Owns product and price versions. |
+| Search service | Serves denormalized discovery indexes. |
+| Cart service | Maintains expiring shopper intent. |
+| Checkout orchestrator | Coordinates reservation and payment saga. |
+| Inventory service | Owns sellable stock and leases. |
+| Order ledger | Stores durable order and settlement state. |
 
 ## 7. Component deep dive
 

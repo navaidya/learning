@@ -9,7 +9,7 @@ aiFocus: [consumer lag anomaly detection, predictive partition autoscaling, thro
 tags: [kafka, streaming, partitioning, replication]
 ---
 
-_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
+_Follows the [System Design Template](../00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 
@@ -17,7 +17,26 @@ Design a distributed, partitioned message queue that producers publish to and co
 
 ## 2. Requirements and scope
 
-**Functional:** topics split into partitions, producers publish with an optional partition key, consumer groups with automatic partition assignment and offset tracking, configurable retention. **Non-functional:** durability once acknowledged by a quorum of replicas, ordering guaranteed only within a partition, consumer-group rebalance completing within seconds, horizontal scalability by adding brokers/partitions. Exclude cross-topic transactions spanning unrelated consumer groups and global total ordering across partitions. Assume producers accept per-partition ordering as sufficient and shard keys accordingly.
+### Functional requirements
+
+| ID | Requirement | Priority | Interview significance |
+|---|---|---|---|
+| FR-1 | The system must create topics and publish keyed durable records. | Must | Defines the authoritative synchronous command boundary and its invariants. |
+| FR-2 | The system must consume ordered partition records with explicit offsets. | Must | Defines the dominant read path, caches, indexes, and acceptable staleness. |
+| FR-3 | The system must replicate partitions, compact or retain logs, and tier old segments. | Must | Separates durable acceptance from retryable fan-out and derived work. |
+| FR-4 | The system must rebalance leaders, quotas, schemas, retention, and consumer access. | Should | Requires versioned configuration, least privilege, audit, and rollback. |
+
+### Non-functional requirements
+
+| Quality | Measurable target | Why it matters | Architecture consequence |
+|---|---|---|---|
+| Latency | p99 acknowledged publish below 20 ms within a region | Users experience this path directly. | Keep the critical path local, bounded, and independently scalable. |
+| Availability | continue reads and writes through one broker or zone failure | A partial infrastructure failure must have an explicit outcome. | Spread workloads across failure zones and define degradation before failover. |
+| Correctness | acknowledged records meet configured durability and per-partition ordering | The system is not useful if its central invariant can be violated. | Use idempotency, ownership epochs, transactions, leases, or version checks where required. |
+| Peak scale | sustain millions of records/s and petabytes of retained segments | Peak traffic and skew determine partitions and isolation. | Partition by the domain ownership key, autoscale on work, and reserve burst headroom. |
+| Security and privacy | authenticate producers and consumers, authorize topics, encrypt links, and audit administrative changes | Abuse or data disclosure can outweigh availability. | Authenticate at the edge, authorize at the data boundary, encrypt, minimize, and audit. |
+
+**Scope exclusions:** cross-partition total order and exactly-once arbitrary external side effects. **Assumptions:** keys choose partitions, consumers tolerate replay, and tiered storage is eventually available.
 
 ## 3. Capacity estimate
 
@@ -33,33 +52,60 @@ At 2M messages/sec platform-wide with 1KB average size, ingress is 2GB/s; with r
 
 ```mermaid
 flowchart LR
-  accTitle: Message queue system context
-  accDescr: Producers publish and consumers poll through the queue cluster, which persists to replicated log storage and exposes lag metrics.
-  Producer --> Queue[Message queue cluster]
-  Consumer --> Queue
-  Queue --> Storage[(Replicated log storage)]
-  Ops --> Controller[Cluster controller]
-  Queue --> Metrics[Lag and throughput metrics]
+  accTitle: Distributed message queue system context
+  accDescr: Human and system actors use Distributed message queue, which integrates with explicitly bounded external capabilities.
+  A1["Producer<br/>Publishes keyed records with durability policy"] --> System
+  A2["Consumer group<br/>Processes partitions and commits offsets"] --> System
+  A3["Operator<br/>Manages topics, quotas, and recovery"] --> System
+  System["Distributed message queue<br/>Owns the product capability and domain guarantees"]
+  System --> E1["Schema registry<br/>Validates compatible record contracts"]
+  System --> E2["Object storage<br/>Holds tiered immutable log segments"]
 ```
+
+### Context component roles
+
+| Component | Role |
+|---|---|
+| Producer | Publishes keyed records with durability policy. |
+| Consumer group | Processes partitions and commits offsets. |
+| Operator | Manages topics, quotas, and recovery. |
+| Distributed message queue | Owns the product boundary, core policy, and durable outcome. |
+| Schema registry | Validates compatible record contracts. |
+| Object storage | Holds tiered immutable log segments. |
 
 ## 6. Container architecture
 
 ```mermaid
 flowchart TB
-  accTitle: Message queue container architecture
-  accDescr: Brokers hold partition leaders replicated to followers, coordinate consumer groups, and stream lag metrics to an anomaly model that can trigger autoscaling.
-  Producer --> Broker[Broker: partition leader]
-  Broker --> Followers[(Follower replicas, ISR)]
-  Consumer --> GroupCoord[Consumer group coordinator]
-  GroupCoord --> Broker
-  Broker --> Log[(Partitioned commit log)]
-  Broker --> Metrics[Lag and throughput stream]
-  Metrics --> Anomaly[Anomaly detection model]
-  Anomaly --> Scaler[Partition and consumer autoscaler]
-  Scaler --> Broker
-  Controller[Cluster controller] --> Broker
-  Controller --> GroupCoord
+  accTitle: Distributed message queue container architecture
+  accDescr: Deployable components separate the critical request, durable state, asynchronous work, and bounded AI path.
+  C1["Producer client<br/>Batches, compresses, and retries records"]
+  C2["Broker ingress<br/>Authenticates and routes publishes"]
+  C3["Partition leaders<br/>Append ordered records"]
+  C4["Partition followers<br/>Replicate across failure zones"]
+  C5["Controller quorum<br/>Owns metadata and leader epochs"]
+  C6["Group coordinator<br/>Assigns partitions and tracks offsets"]
+  C7["Tiering service<br/>Moves sealed segments to object storage"]
+  C8["Consumer client<br/>Fetches, processes, and checkpoints"]
+  C1 --> C2 --> C3
+  C3 -. replicate .-> C4
+  C5 -. leader epoch .-> C3
+  C8 --> C6 --> C3
+  C3 -. sealed segment .-> C7
 ```
+
+### Container component roles
+
+| Component | Role |
+|---|---|
+| Producer client | Batches, compresses, and retries records. |
+| Broker ingress | Authenticates and routes publishes. |
+| Partition leaders | Append ordered records. |
+| Partition followers | Replicate across failure zones. |
+| Controller quorum | Owns metadata and leader epochs. |
+| Group coordinator | Assigns partitions and tracks offsets. |
+| Tiering service | Moves sealed segments to object storage. |
+| Consumer client | Fetches, processes, and checkpoints. |
 
 ## 7. Component deep dive
 

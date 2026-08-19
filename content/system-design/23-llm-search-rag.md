@@ -9,7 +9,7 @@ aiFocus: [embedding-based retrieval and ANN search, re-ranking, citation groundi
 tags: [rag, search, vector-search, llm]
 ---
 
-_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
+_Follows the [System Design Template](../00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 
@@ -17,7 +17,26 @@ Design a search product where a user's query is answered by an LLM-generated sum
 
 ## 2. Requirements and scope
 
-**Functional:** accept a natural-language query; retrieve relevant sources via hybrid lexical + vector search; re-rank and select a context set; generate a cited answer; fall back to plain ranked links if generation fails or confidence is low. **Non-functional:** p99 time-to-first-token under 1.5 s, retrieval recall high enough that the generation step isn't starved of relevant context, and a hard requirement that every generated claim maps to at least one retrieved source or is flagged as unsupported. Exclude live web crawling infrastructure (assume an index is fed by an existing crawl/ingestion pipeline) and exclude multi-turn conversational memory beyond the current query.
+### Functional requirements
+
+| ID | Requirement | Priority | Interview significance |
+|---|---|---|---|
+| FR-1 | The system must ingest, update, delete, and authorize documents and sources. | Must | Defines the authoritative synchronous command boundary and its invariants. |
+| FR-2 | The system must answer a query with ACL-filtered evidence, citations, and confidence. | Must | Defines the dominant read path, caches, indexes, and acceptable staleness. |
+| FR-3 | The system must parse, chunk, classify, embed, index, evaluate, and delete content. | Must | Separates durable acceptance from retryable fan-out and derived work. |
+| FR-4 | The system must manage sources, tenancy, retention, model policy, evaluation, and incident review. | Should | Requires versioned configuration, least privilege, audit, and rollback. |
+
+### Non-functional requirements
+
+| Quality | Measurable target | Why it matters | Architecture consequence |
+|---|---|---|---|
+| Latency | retrieval p95 below 500 ms and first answer token below 2 seconds for normal queries | Users experience this path directly. | Keep the critical path local, bounded, and independently scalable. |
+| Availability | 99.9% grounded-answer availability with retrieval-only fallback | A partial infrastructure failure must have an explicit outcome. | Spread workloads across failure zones and define degradation before failover. |
+| Correctness | ACL enforcement and source deletion precede retrieval, prompt construction, and citations | The system is not useful if its central invariant can be violated. | Use idempotency, ownership epochs, transactions, leases, or version checks where required. |
+| Peak scale | index billions of chunks and serve bursty hybrid retrieval plus inference | Peak traffic and skew determine partitions and isolation. | Partition by the domain ownership key, autoscale on work, and reserve burst headroom. |
+| Security and privacy | treat documents as untrusted, isolate tenants, prevent prompt injection, redact secrets, and audit access | Abuse or data disclosure can outweigh availability. | Authenticate at the edge, authorize at the data boundary, encrypt, minimize, and audit. |
+
+**Scope exclusions:** training foundation models on tenant content and allowing generated text to perform side effects. **Assumptions:** documents have authoritative ACLs, indexes are versioned, and the deterministic fallback returns ranked evidence without generation.
 
 ## 3. Capacity estimate
 
@@ -33,34 +52,64 @@ At 20M queries/day averaging 230/s with 10x peaks near 2,300/s, each query fans 
 
 ```mermaid
 flowchart LR
-  accTitle: LLM search platform system context
-  accDescr: Users query the search platform, which retrieves from a document index and generates grounded answers via an LLM provider.
-  User --> Platform[LLM search platform]
-  Platform --> Index[Document and vector index]
-  Platform --> LLM[LLM generation provider]
-  Platform --> Ingestion[Upstream ingestion pipeline]
+  accTitle: LLM search and RAG platform system context
+  accDescr: Human and system actors use LLM search and RAG platform, which integrates with explicitly bounded external capabilities.
+  A1["Knowledge user<br/>Asks questions and inspects citations"] --> System
+  A2["Content owner<br/>Connects sources and controls ACLs"] --> System
+  A3["Administrator<br/>Manages tenant, retention, and model policy"] --> System
+  System["LLM search and RAG platform<br/>Owns the product capability and domain guarantees"]
+  System --> E1["Source systems<br/>Provide versioned documents and access policy"]
+  System --> E2["Model providers<br/>Serve routed embedding and generation inference"]
 ```
+
+### Context component roles
+
+| Component | Role |
+|---|---|
+| Knowledge user | Asks questions and inspects citations. |
+| Content owner | Connects sources and controls ACLs. |
+| Administrator | Manages tenant, retention, and model policy. |
+| LLM search and RAG platform | Owns the product boundary, core policy, and durable outcome. |
+| Source systems | Provide versioned documents and access policy. |
+| Model providers | Serve routed embedding and generation inference. |
 
 ## 6. Container architecture
 
 ```mermaid
 flowchart TB
-  accTitle: LLM search platform container architecture
-  accDescr: A query fans out to hybrid retrieval and re-ranking, which feeds a grounded generation service with citation checking and a deterministic link-only fallback.
-  Client --> Edge[Query API edge]
-  Edge --> QueryUnderstand[Query understanding]
-  QueryUnderstand --> Retrieval[Hybrid retrieval]
-  Retrieval --> Vector[(ANN vector index)]
-  Retrieval --> Lexical[(Lexical index)]
-  Retrieval --> Rerank[Re-ranker]
-  Rerank --> ContextBuilder[Context packing]
-  ContextBuilder --> GenGW[Generation gateway]
-  GenGW --> LLM[LLM provider]
-  GenGW --> CitationCheck[Citation / grounding checker]
-  CitationCheck --> Edge
-  GenGW -->|timeout or low confidence| Fallback[Deterministic ranked-links fallback]
-  Fallback --> Edge
+  accTitle: LLM search and RAG platform container architecture
+  accDescr: Deployable components separate the critical request, durable state, asynchronous work, and bounded AI path.
+  C1["Ingestion API<br/>Accepts authorized source changes"]
+  C2["Parser sandbox<br/>Extracts untrusted content safely"]
+  C3["Chunk pipeline<br/>Classifies, redacts, and embeds text"]
+  C4[("Lexical index<br/>Finds exact terms and filters")]
+  C5[("Vector index<br/>Finds semantic candidates")]
+  C6["ACL service<br/>Filters every candidate before use"]
+  C7["Query orchestrator<br/>Merges retrieval and builds grounded prompts"]
+  C8["Model gateway<br/>Routes bounded generation and safety policy"]
+  C1 --> C2 --> C3
+  C3 --> C4
+  C3 --> C5
+  C6 --> C4
+  C6 --> C5
+  C7 --> C4
+  C7 --> C5
+  C7 --> C6
+  C7 -. bounded prompt .-> C8
 ```
+
+### Container component roles
+
+| Component | Role |
+|---|---|
+| Ingestion API | Accepts authorized source changes. |
+| Parser sandbox | Extracts untrusted content safely. |
+| Chunk pipeline | Classifies, redacts, and embeds text. |
+| Lexical index | Finds exact terms and filters. |
+| Vector index | Finds semantic candidates. |
+| ACL service | Filters every candidate before use. |
+| Query orchestrator | Merges retrieval and builds grounded prompts. |
+| Model gateway | Routes bounded generation and safety policy. |
 
 ## 7. Component deep dive
 
