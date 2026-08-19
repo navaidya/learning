@@ -9,7 +9,7 @@ aiFocus: [destination risk classification, semantic link discovery, agent abuse 
 tags: [url-shortener, edge, caching, abuse-prevention]
 ---
 
-_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
+_Follows the [System Design Template](../00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 
@@ -17,7 +17,26 @@ Design a global short-link product supporting custom aliases, expiration, analyt
 
 ## 2. Requirements and scope
 
-Create, resolve, disable, and inspect links; support owner quotas and aggregated analytics. Target p99 redirect below 50 ms at the edge and 99.99% redirect availability. Exclude ad targeting and crawling the entire destination web. Safety decisions must be appealable.
+### Functional requirements
+
+| ID | Requirement | Priority | Interview significance |
+|---|---|---|---|
+| FR-1 | The system must create, update, expire, disable, and resolve short links. | Must | Defines the authoritative synchronous command boundary and its invariants. |
+| FR-2 | The system must redirect visitors from a code to the current safe destination. | Must | Defines the dominant read path, caches, indexes, and acceptable staleness. |
+| FR-3 | The system must aggregate redirect analytics and classify destination risk off the redirect path. | Must | Separates durable acceptance from retryable fan-out and derived work. |
+| FR-4 | The system must review abuse decisions, appeals, quotas, and global tombstones. | Should | Requires versioned configuration, least privilege, audit, and rollback. |
+
+### Non-functional requirements
+
+| Quality | Measurable target | Why it matters | Architecture consequence |
+|---|---|---|---|
+| Latency | p99 redirect below 50 ms at a healthy edge | Users experience this path directly. | Keep the critical path local, bounded, and independently scalable. |
+| Availability | 99.99% redirect availability during a regional failure | A partial infrastructure failure must have an explicit outcome. | Spread workloads across failure zones and define degradation before failover. |
+| Correctness | a disabled or expired code must not resolve after its invalidation bound | The system is not useful if its central invariant can be violated. | Use idempotency, ownership epochs, transactions, leases, or version checks where required. |
+| Peak scale | sustain 40k peak redirects/s and 400 link creates/s | Peak traffic and skew determine partitions and isolation. | Partition by the domain ownership key, autoscale on work, and reserve burst headroom. |
+| Security and privacy | block unsafe schemes, phishing, malware, SSRF targets, and automated enumeration | Abuse or data disclosure can outweigh availability. | Authenticate at the edge, authorize at the data boundary, encrypt, minimize, and audit. |
+
+**Scope exclusions:** advertising, crawling the entire destination web, and executing destination content. **Assumptions:** redirect traffic is globally read-heavy, editable links use 302, and safety inference is asynchronous.
 
 ## 3. Capacity estimate
 
@@ -33,30 +52,60 @@ Assume 100M links created/month (39 writes/s average, 400/s peak) and 10B redire
 
 ```mermaid
 flowchart LR
-  accTitle: URL shortener system context
-  accDescr: Creators, visitors, and AI agents use a short-link platform backed by DNS, CDN, and threat intelligence.
-  Creator --> Links[Short-link platform]
-  Visitor --> Links
-  Agent[AI agent] --> Links
-  Links --> DNS[DNS and CDN]
-  Links --> Threats[Threat intelligence]
+  accTitle: Short-link platform system context
+  accDescr: Human and system actors use Short-link platform, which integrates with explicitly bounded external capabilities.
+  A1["Creator<br/>Creates links and reviews analytics"] --> System
+  A2["Visitor<br/>Resolves a short code into a destination"] --> System
+  A3["AI agent<br/>Uses scoped create and resolve tools"] --> System
+  System["Short-link platform<br/>Owns the product capability and domain guarantees"]
+  System --> E1["DNS and CDN<br/>Routes and caches global redirects"]
+  System --> E2["Threat intelligence<br/>Supplies reputation and malware signals"]
 ```
+
+### Context component roles
+
+| Component | Role |
+|---|---|
+| Creator | Creates links and reviews analytics. |
+| Visitor | Resolves a short code into a destination. |
+| AI agent | Uses scoped create and resolve tools. |
+| Short-link platform | Owns the product boundary, core policy, and durable outcome. |
+| DNS and CDN | Routes and caches global redirects. |
+| Threat intelligence | Supplies reputation and malware signals. |
 
 ## 6. Container architecture
 
 ```mermaid
 flowchart TB
-  accTitle: URL shortener container architecture
-  accDescr: Edge redirects use cache and sharded storage while creation, safety scanning, and analytics run on decoupled paths.
-  Client --> Edge[CDN edge redirect]
-  Edge --> Cache[(Regional cache)]
-  Cache --> KV[(Sharded link KV)]
-  Creator --> API[Link management API] --> IDs[ID allocator]
-  API --> KV
-  API --> Scan[Safety pipeline]
-  Edge -. click event .-> Bus[(Event stream)] --> Analytics[Aggregation]
-  Scan --> Models[Classifier and sandbox]
+  accTitle: Short-link platform container architecture
+  accDescr: Deployable components separate the critical request, durable state, asynchronous work, and bounded AI path.
+  C1["Client<br/>Creates or resolves short links"]
+  C2["Edge redirect<br/>Serves cached redirects without model calls"]
+  C3["Link API<br/>Validates commands and ownership"]
+  C4["ID allocator<br/>Produces collision-resistant Base62 codes"]
+  C5["Link KV<br/>Stores versioned destination and safety state"]
+  C6["Safety pipeline<br/>Classifies destinations asynchronously"]
+  C7[("Event stream<br/>Buffers redirect observations")]
+  C8["Analytics<br/>Builds privacy-safe aggregates"]
+  C1 --> C2 --> C5
+  C1 --> C3 --> C4
+  C3 --> C5
+  C3 -. scan request .-> C6 -. versioned verdict .-> C5
+  C2 -. redirect observed .-> C7 --> C8
 ```
+
+### Container component roles
+
+| Component | Role |
+|---|---|
+| Client | Creates or resolves short links. |
+| Edge redirect | Serves cached redirects without model calls. |
+| Link API | Validates commands and ownership. |
+| ID allocator | Produces collision-resistant Base62 codes. |
+| Link KV | Stores versioned destination and safety state. |
+| Safety pipeline | Classifies destinations asynchronously. |
+| Event stream | Buffers redirect observations. |
+| Analytics | Builds privacy-safe aggregates. |
 
 ## 7. Component deep dive
 

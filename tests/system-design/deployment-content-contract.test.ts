@@ -1,10 +1,10 @@
-import { readFile } from 'node:fs/promises';
+import { readFile, readdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { describe, expect, it } from 'vitest';
 import YAML from 'yaml';
 
-const pilotSlug = '01-ai-native-mobility-marketplace';
-const deploymentFile = fileURLToPath(new URL('../../content/system-design-deployments/01-ai-native-mobility-marketplace.md', import.meta.url));
+const designDirectory = fileURLToPath(new URL('../../content/system-design/', import.meta.url));
+const deploymentDirectory = fileURLToPath(new URL('../../content/system-design-deployments/', import.meta.url));
 const deploymentHeadings = [
   'Deployment goals and assumptions',
   'Traffic classes and critical paths',
@@ -31,40 +31,56 @@ function splitMarkdown(source: string) {
   return { data: YAML.parse(match[1]), body: match[2] };
 }
 
-describe('mobility deployment content contract', () => {
-  it('publishes typed metadata and the complete deployment analysis', async () => {
-    const { data, body } = splitMarkdown(await readFile(deploymentFile, 'utf8'));
+async function markdownFiles(directory: string) {
+  return (await readdir(directory).catch(() => [] as string[])).filter((file) => file.endsWith('.md')).sort();
+}
 
-    expect(data).toEqual({
-      title: expect.any(String),
-      summary: expect.any(String),
-      systemDesign: pilotSlug,
-      order: 2,
-      deploymentStyle: expect.any(String),
-      availabilityTarget: expect.any(String),
-      regions: 'multi-region',
-      tags: expect.arrayContaining(['kubernetes', 'regional-cells']),
-    });
+describe('system design deployment content contract', () => {
+  it('maps exactly one deployment architecture to every parent in catalog order', async () => {
+    const designFiles = await markdownFiles(designDirectory);
+    const deploymentFiles = await markdownFiles(deploymentDirectory);
+    expect(deploymentFiles).toEqual(designFiles);
 
-    for (const heading of deploymentHeadings) {
-      expect(body, 'missing deployment section: ' + heading).toMatch(new RegExp('^## \\d+\\. ' + heading + '$', 'm'));
-    }
+    const systemDesignValues: string[] = [];
+    for (const [index, file] of deploymentFiles.entries()) {
+      const slug = file.replace(/\.md$/, '');
+      const { data, body } = splitMarkdown(await readFile(`${deploymentDirectory}/${file}`, 'utf8'));
+      systemDesignValues.push(data.systemDesign);
 
-    const diagrams = [...body.matchAll(/```mermaid\n([\s\S]*?)```/g)].map((match) => match[1]);
-    expect(diagrams.length).toBeGreaterThanOrEqual(2);
-    for (const diagram of diagrams) {
-      expect(diagram).toMatch(/^\s*\w+[^\n]*\n\s+accTitle: .+/m);
-      expect(diagram).toMatch(/^\s*accDescr: .+/m);
-      if (/^\s*sequenceDiagram/m.test(diagram)) {
-        expect(diagram, 'Mermaid treats semicolons in sequence messages as statement separators').not.toMatch(/(?:->>|-->>)[^\n]*;/);
+      expect(data).toEqual(expect.objectContaining({
+        title: expect.any(String),
+        summary: expect.any(String),
+        systemDesign: slug,
+        order: index + 1,
+        deploymentStyle: expect.any(String),
+        availabilityTarget: expect.any(String),
+        regions: expect.stringMatching(/^(single-region|multi-region|global)$/),
+        tags: expect.any(Array),
+      }));
+      expect(data.tags.length, `${file} needs deployment tags`).toBeGreaterThan(0);
+
+      for (const heading of deploymentHeadings) {
+        expect(body, `${file} is missing deployment section: ${heading}`).toMatch(new RegExp(`^## \\d+\\. ${heading}$`, 'm'));
       }
+
+      const diagrams = [...body.matchAll(/```mermaid\n([\s\S]*?)```/g)].map((match) => match[1]);
+      expect(diagrams.length, `${file} needs a deployment and request/data-path diagram`).toBeGreaterThanOrEqual(2);
+      for (const diagram of diagrams) {
+        expect(diagram, `${file} has a diagram without an accessible title`).toMatch(/^\s*\w+[^\n]*\n\s+accTitle: .+/m);
+        expect(diagram, `${file} has a diagram without an accessible description`).toMatch(/^\s*accDescr: .+/m);
+        if (/^\s*sequenceDiagram/m.test(diagram)) {
+          expect(diagram, 'Mermaid treats semicolons in sequence messages as statement separators').not.toMatch(/(?:->>|-->>)[^\n]*;/);
+        }
+      }
+
+      expect(body).toContain('| Component | Runtime and placement | Scaling unit | Stateful | Failure behavior |');
+      expect(body, `${file} needs an explicit recovery-point discussion`).toMatch(/\bRPO\b/);
+      expect(body, `${file} needs an explicit recovery-time discussion`).toMatch(/\bRTO\b/);
+      expect((body.match(/^\| Failure:/gm) ?? []).length, `${file} needs at least three failure rows`).toBeGreaterThanOrEqual(3);
+      expect(body, `${file} needs a deterministic AI fallback`).toMatch(/deterministic[\s\S]{0,160}fallback/i);
+      expect(body, `${file} contains an unsafe internal Markdown link`).not.toMatch(/\]\((?:\/|\.\.\/)[^)]+\)/);
     }
 
-    expect(body).toContain('| Component | Runtime and placement | Scaling unit | Stateful | Failure behavior |');
-    expect(body).toMatch(/\bRPO\b/);
-    expect(body).toMatch(/\bRTO\b/);
-    expect((body.match(/^\| Failure:/gm) ?? []).length).toBeGreaterThanOrEqual(3);
-    expect(body).toMatch(/deterministic[\s\S]{0,120}fallback/i);
-    expect(body, 'internal Markdown links bypass withBase() and can break under the GitHub Pages base path').not.toMatch(/\]\((?:\/|\.\.\/)[^)]+\)/);
+    expect(new Set(systemDesignValues).size).toBe(systemDesignValues.length);
   });
 });

@@ -9,7 +9,7 @@ aiFocus: [learned cache admission, reuse-probability-weighted eviction, hot-key 
 tags: [caching, consistent-hashing, redis, replication]
 ---
 
-_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
+_Follows the [System Design Template](../00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 
@@ -17,7 +17,26 @@ Design a distributed in-memory cache sitting in front of a slower backing store 
 
 ## 2. Requirements and scope
 
-**Functional:** get/set/delete with TTL, batch multi-get, per-key expiration, cluster-aware client routing. **Non-functional:** p99 get latency under 1ms intra-region, survive single-node failure without client-visible errors, hit rate above a target threshold under normal load, bounded memory per node. Exclude cross-region active-active replication and durability guarantees beyond best-effort — this is a cache, not a source of truth. Assume the backing store is authoritative and can always be re-read on a miss.
+### Functional requirements
+
+| ID | Requirement | Priority | Interview significance |
+|---|---|---|---|
+| FR-1 | The system must get, set, delete, compare-and-set, and expire cached values. | Must | Defines the authoritative synchronous command boundary and its invariants. |
+| FR-2 | The system must route keys to healthy shards and return bounded-stale or primary values. | Must | Defines the dominant read path, caches, indexes, and acceptable staleness. |
+| FR-3 | The system must replicate, rebalance, persist optional snapshots, and detect hot keys. | Must | Separates durable acceptance from retryable fan-out and derived work. |
+| FR-4 | The system must change membership, capacity, eviction, and durability policy safely. | Should | Requires versioned configuration, least privilege, audit, and rollback. |
+
+### Non-functional requirements
+
+| Quality | Measurable target | Why it matters | Architecture consequence |
+|---|---|---|---|
+| Latency | p99 get below 2 ms inside a region | Users experience this path directly. | Keep the critical path local, bounded, and independently scalable. |
+| Availability | 99.99% cache availability while one node or zone fails | A partial infrastructure failure must have an explicit outcome. | Spread workloads across failure zones and define degradation before failover. |
+| Correctness | declared consistency and TTL semantics must hold across failover | The system is not useful if its central invariant can be violated. | Use idempotency, ownership epochs, transactions, leases, or version checks where required. |
+| Peak scale | serve millions of operations/s with skewed keys and bounded memory | Peak traffic and skew determine partitions and isolation. | Partition by the domain ownership key, autoscale on work, and reserve burst headroom. |
+| Security and privacy | authenticate tenants, encrypt transport, enforce quotas, and prevent cross-tenant key access | Abuse or data disclosure can outweigh availability. | Authenticate at the edge, authorize at the data boundary, encrypt, minimize, and audit. |
+
+**Scope exclusions:** a durable database replacement and arbitrary relational queries. **Assumptions:** keys are tenant-namespaced, misses are acceptable, and applications own source-of-truth recovery.
 
 ## 3. Capacity estimate
 
@@ -34,30 +53,58 @@ At 2M reads/sec and 200K writes/sec with 2KB average values, a 50M-key hot worki
 ```mermaid
 flowchart LR
   accTitle: Distributed cache system context
-  accDescr: Application servers read and write through a cache client that talks to a sharded cluster, falling back to the backing store on misses.
-  App[Application servers] --> ClientLib[Cache client]
-  ClientLib --> Cluster[Cache cluster]
-  Cluster -. miss .-> Backing[(Backing store)]
-  Ops --> Coordinator[Cluster coordinator]
+  accDescr: Human and system actors use Distributed cache, which integrates with explicitly bounded external capabilities.
+  A1["Application service<br/>Reads and writes transient values"] --> System
+  A2["Platform operator<br/>Manages capacity and consistency policy"] --> System
+  System["Distributed cache<br/>Owns the product capability and domain guarantees"]
+  System --> E1["Source database<br/>Remains authoritative on cache miss"]
+  System --> E2["Object storage<br/>Stores optional snapshots and logs"]
 ```
+
+### Context component roles
+
+| Component | Role |
+|---|---|
+| Application service | Reads and writes transient values. |
+| Platform operator | Manages capacity and consistency policy. |
+| Distributed cache | Owns the product boundary, core policy, and durable outcome. |
+| Source database | Remains authoritative on cache miss. |
+| Object storage | Stores optional snapshots and logs. |
 
 ## 6. Container architecture
 
 ```mermaid
 flowchart TB
   accTitle: Distributed cache container architecture
-  accDescr: Clients route through a hash ring to primary shards with replicas, coordinated by gossip, with a learned admission model informing eviction alongside deterministic LRU.
-  App --> ClientLib[Cache client: hash ring plus local L1]
-  ClientLib --> Shard1[(Shard 1 primary)]
-  ClientLib --> ShardN[(Shard N primary)]
-  Shard1 --> Replica1[(Replica)]
-  ShardN --> ReplicaN[(Replica)]
-  ClientLib --> Coordinator[Cluster coordinator, gossip]
-  ClientLib -. miss .-> Backing[(Backing store)]
-  Backing --> Admission[Admission and eviction model]
-  Admission --> Shard1
-  Admission --> ShardN
+  accDescr: Deployable components separate the critical request, durable state, asynchronous work, and bounded AI path.
+  C1["Client library<br/>Hashes keys and retries safely"]
+  C2["Routing proxy<br/>Tracks membership and replica health"]
+  C3[("Cache shards<br/>Store partitioned in-memory values")]
+  C4["Replica nodes<br/>Provide zonal failover copies"]
+  C5["Membership quorum<br/>Publishes shard ownership epochs"]
+  C6["Hot-key detector<br/>Finds skew and replication candidates"]
+  C7["Snapshot worker<br/>Persists optional recovery images"]
+  C8["Metrics pipeline<br/>Measures latency, evictions, and imbalance"]
+  C1 --> C2 --> C3
+  C3 -. replicate .-> C4
+  C5 -. ownership epoch .-> C2
+  C3 -. access signal .-> C6
+  C3 -. snapshot .-> C7
+  C3 -. telemetry .-> C8
 ```
+
+### Container component roles
+
+| Component | Role |
+|---|---|
+| Client library | Hashes keys and retries safely. |
+| Routing proxy | Tracks membership and replica health. |
+| Cache shards | Store partitioned in-memory values. |
+| Replica nodes | Provide zonal failover copies. |
+| Membership quorum | Publishes shard ownership epochs. |
+| Hot-key detector | Finds skew and replication candidates. |
+| Snapshot worker | Persists optional recovery images. |
+| Metrics pipeline | Measures latency, evictions, and imbalance. |
 
 ## 7. Component deep dive
 

@@ -9,7 +9,7 @@ aiFocus: [task decomposition and routing, tool-call sandboxing, context window m
 tags: [agents, orchestration, llm-infrastructure, tool-use]
 ---
 
-_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
+_Follows the [System Design Template](../00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 
@@ -17,7 +17,26 @@ Design a platform that accepts a high-level task, decomposes it across specializ
 
 ## 2. Requirements and scope
 
-**Functional:** submit a task; decompose it into a plan executed by a lead agent and delegated subagents; route tool calls through a permissioned sandbox; checkpoint and resume runs; require human approval before irreversible actions (payments, deletions, external sends). **Non-functional:** bound every run's wall-clock time, token spend, and tool-call count; guarantee a stuck run is killed within a fixed budget regardless of model behavior; make every tool call auditable. Exclude training new models and exclude fully autonomous execution of irreversible actions without a human gate.
+### Functional requirements
+
+| ID | Requirement | Priority | Interview significance |
+|---|---|---|---|
+| FR-1 | The system must submit, pause, resume, cancel, and inspect a durable agent workflow. | Must | Defines the authoritative synchronous command boundary and its invariants. |
+| FR-2 | The system must stream workflow state, approvals, artifacts, costs, and audit history. | Must | Defines the dominant read path, caches, indexes, and acceptable staleness. |
+| FR-3 | The system must schedule isolated steps, invoke models and tools, checkpoint state, and evaluate outcomes. | Must | Separates durable acceptance from retryable fan-out and derived work. |
+| FR-4 | The system must manage tenants, tool policy, budgets, model routes, approvals, and incident replay. | Should | Requires versioned configuration, least privilege, audit, and rollback. |
+
+### Non-functional requirements
+
+| Quality | Measurable target | Why it matters | Architecture consequence |
+|---|---|---|---|
+| Latency | workflow acceptance p99 below 500 ms while step latency is deadline-bound by tool policy | Users experience this path directly. | Keep the critical path local, bounded, and independently scalable. |
+| Availability | durable workflows resume after worker or region failure without duplicate unsafe side effects | A partial infrastructure failure must have an explicit outcome. | Spread workloads across failure zones and define degradation before failover. |
+| Correctness | idempotent step epochs, approval gates, budget limits, and tool authorization cannot be bypassed | The system is not useful if its central invariant can be violated. | Use idempotency, ownership epochs, transactions, leases, or version checks where required. |
+| Peak scale | run millions of heterogeneous long-lived workflows with bursty model and tool usage | Peak traffic and skew determine partitions and isolation. | Partition by the domain ownership key, autoscale on work, and reserve burst headroom. |
+| Security and privacy | sandbox workers, isolate tenants, broker credentials, validate untrusted tool output, and prevent prompt injection | Abuse or data disclosure can outweigh availability. | Authenticate at the edge, authorize at the data boundary, encrypt, minimize, and audit. |
+
+**Scope exclusions:** giving models unrestricted network or credential access and guaranteeing deterministic model text. **Assumptions:** workflow state is authoritative, side effects use idempotency keys, and humans approve high-impact actions.
 
 ## 3. Capacity estimate
 
@@ -33,36 +52,62 @@ At 50k task submissions/day averaging 4 subagents per lead run and 15 tool calls
 
 ```mermaid
 flowchart LR
-  accTitle: Multi-agent orchestration system context
-  accDescr: Task submitters and reviewers interact with the orchestration platform, which integrates model providers, a sandboxed tool execution layer, and external systems.
-  Submitter --> Platform[Multi-agent orchestration platform]
-  Reviewer --> Platform
-  Platform --> Models[Model providers]
-  Platform --> Sandbox[Sandboxed tool execution]
-  Sandbox --> External[External systems and APIs]
+  accTitle: Multi-agent orchestration platform system context
+  accDescr: Human and system actors use Multi-agent orchestration platform, which integrates with explicitly bounded external capabilities.
+  A1["Application user<br/>Submits goals and reviews outcomes"] --> System
+  A2["Human approver<br/>Authorizes high-impact steps"] --> System
+  A3["Platform operator<br/>Defines tool, model, and budget policy"] --> System
+  System["Multi-agent orchestration platform<br/>Owns the product capability and domain guarantees"]
+  System --> E1["Model providers<br/>Serve routed inference under deadlines"]
+  System --> E2["Tool providers<br/>Expose scoped external capabilities"]
 ```
+
+### Context component roles
+
+| Component | Role |
+|---|---|
+| Application user | Submits goals and reviews outcomes. |
+| Human approver | Authorizes high-impact steps. |
+| Platform operator | Defines tool, model, and budget policy. |
+| Multi-agent orchestration platform | Owns the product boundary, core policy, and durable outcome. |
+| Model providers | Serve routed inference under deadlines. |
+| Tool providers | Expose scoped external capabilities. |
 
 ## 6. Container architecture
 
 ```mermaid
 flowchart TB
-  accTitle: Multi-agent orchestration container architecture
-  accDescr: A lead agent decomposes tasks and spawns subagents, routed through a tool gateway with sandboxing, a context store for handoff, and a watchdog that enforces budgets independently of model output.
-  Client --> API[Run submission API]
-  API --> Lead[Lead agent controller]
-  Lead --> Spawner[Subagent spawner]
-  Spawner --> Sub1[Subagent worker]
-  Spawner --> Sub2[Subagent worker]
-  Sub1 --> ToolGW[Tool call gateway]
-  Sub2 --> ToolGW
-  ToolGW --> Sandbox[Sandboxed executor]
-  Lead --> ContextStore[(Context and transcript store)]
-  Sub1 --> ContextStore
-  Sub2 --> ContextStore
-  Lead --> Watchdog[Deterministic watchdog]
-  ToolGW --> ApprovalSvc[Human approval service]
-  Watchdog --> Lead
+  accTitle: Multi-agent orchestration platform container architecture
+  accDescr: Deployable components separate the critical request, durable state, asynchronous work, and bounded AI path.
+  C1["Workflow API<br/>Authenticates and records durable intent"]
+  C2["Scheduler<br/>Leases runnable step epochs"]
+  C3["Worker sandbox<br/>Executes one isolated agent step"]
+  C4["Model gateway<br/>Routes models, budgets, and fallbacks"]
+  C5["Tool gateway<br/>Brokers scoped credentials and validates calls"]
+  C6[("Workflow store<br/>Persists state, checkpoints, and approvals")]
+  C7[("Event stream<br/>Coordinates retries and audit events")]
+  C8["Evaluation service<br/>Scores traces and rollout quality"]
+  C1 --> C2 --> C3
+  C3 --> C4
+  C3 --> C5
+  C2 --> C6
+  C2 -. step event .-> C7
+  C7 --> C3
+  C7 --> C8
 ```
+
+### Container component roles
+
+| Component | Role |
+|---|---|
+| Workflow API | Authenticates and records durable intent. |
+| Scheduler | Leases runnable step epochs. |
+| Worker sandbox | Executes one isolated agent step. |
+| Model gateway | Routes models, budgets, and fallbacks. |
+| Tool gateway | Brokers scoped credentials and validates calls. |
+| Workflow store | Persists state, checkpoints, and approvals. |
+| Event stream | Coordinates retries and audit events. |
+| Evaluation service | Scores traces and rollout quality. |
 
 ## 7. Component deep dive
 

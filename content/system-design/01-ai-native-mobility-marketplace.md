@@ -9,7 +9,7 @@ aiFocus: [ETA prediction, dispatch optimization, safety copilots]
 tags: [marketplace, geospatial, streaming, machine-learning]
 ---
 
-_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
+_Follows the [System Design Template](../00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 

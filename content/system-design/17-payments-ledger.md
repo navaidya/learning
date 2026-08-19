@@ -9,7 +9,7 @@ aiFocus: [real-time fraud and anomaly scoring, transaction risk explanation for 
 tags: [payments, ledger, consistency, fraud, machine-learning]
 ---
 
-_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
+_Follows the [System Design Template](../00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 
@@ -17,7 +17,26 @@ Design a payments platform that holds account balances, moves money between acco
 
 ## 2. Requirements and scope
 
-**Functional:** create accounts, hold balances, initiate transfers/charges/payouts, record every movement as balanced double-entry, reconcile against external processor statements, flag/hold suspicious transactions. **Non-functional:** every transaction is exactly-once and auditable, balances are strongly consistent, p99 transfer decision under 300 ms, full replayability for audits. Exclude currency-exchange trading and card-issuing/BIN sponsorship mechanics.
+### Functional requirements
+
+| ID | Requirement | Priority | Interview significance |
+|---|---|---|---|
+| FR-1 | The system must authorize, capture, refund, transfer, and query payment state. | Must | Defines the authoritative synchronous command boundary and its invariants. |
+| FR-2 | The system must return authoritative balance, transaction, and reconciliation status. | Must | Defines the dominant read path, caches, indexes, and acceptable staleness. |
+| FR-3 | The system must publish immutable ledger events, settle externally, reconcile, and investigate exceptions. | Must | Separates durable acceptance from retryable fan-out and derived work. |
+| FR-4 | The system must manage risk, disputes, limits, keys, and dual-control financial operations. | Should | Requires versioned configuration, least privilege, audit, and rollback. |
+
+### Non-functional requirements
+
+| Quality | Measurable target | Why it matters | Architecture consequence |
+|---|---|---|---|
+| Latency | payment command p99 below 1 second excluding external challenge flows | Users experience this path directly. | Keep the critical path local, bounded, and independently scalable. |
+| Availability | 99.99% ledger read and 99.95% write availability with zero acknowledged ledger loss | A partial infrastructure failure must have an explicit outcome. | Spread workloads across failure zones and define degradation before failover. |
+| Correctness | double-entry balance, idempotency, monotonic status, and no duplicate external capture | The system is not useful if its central invariant can be violated. | Use idempotency, ownership epochs, transactions, leases, or version checks where required. |
+| Peak scale | sustain peak commerce traffic while retaining immutable audit history | Peak traffic and skew determine partitions and isolation. | Partition by the domain ownership key, autoscale on work, and reserve burst headroom. |
+| Security and privacy | isolate card data, use HSM-backed keys, dual control, tamper-evident audit, and strict egress | Abuse or data disclosure can outweigh availability. | Authenticate at the edge, authorize at the data boundary, encrypt, minimize, and audit. |
+
+**Scope exclusions:** building card networks, foreign-exchange markets, and lending decisions. **Assumptions:** a licensed processor handles regulated card rails and financial correctness outranks immediate success.
 
 ## 3. Capacity estimate
 
@@ -34,30 +53,57 @@ At 5M transactions/day, average throughput is roughly 60/s with peaks (paydays, 
 ```mermaid
 flowchart LR
   accTitle: Payments ledger system context
-  accDescr: Merchants and users initiate transfers through the platform, which integrates with card networks, banking rails, and fraud data providers.
-  User --> Platform[Payments platform]
-  Merchant --> Platform
-  Platform --> Networks[Card networks and banking rails]
-  Platform --> FraudData[External fraud signal providers]
-  Platform --> Auditor[Reconciliation and audit]
+  accDescr: Human and system actors use Payments ledger, which integrates with explicitly bounded external capabilities.
+  A1["Merchant service<br/>Submits idempotent payment commands"] --> System
+  A2["Finance operator<br/>Reconciles settlement and investigates exceptions"] --> System
+  A3["Customer<br/>Reviews payment and refund state"] --> System
+  System["Payments ledger<br/>Owns the product capability and domain guarantees"]
+  System --> E1["Payment processor<br/>Connects to regulated payment rails"]
+  System --> E2["Banking network<br/>Settles external money movement"]
 ```
+
+### Context component roles
+
+| Component | Role |
+|---|---|
+| Merchant service | Submits idempotent payment commands. |
+| Finance operator | Reconciles settlement and investigates exceptions. |
+| Customer | Reviews payment and refund state. |
+| Payments ledger | Owns the product boundary, core policy, and durable outcome. |
+| Payment processor | Connects to regulated payment rails. |
+| Banking network | Settles external money movement. |
 
 ## 6. Container architecture
 
 ```mermaid
 flowchart TB
   accTitle: Payments ledger container architecture
-  accDescr: API, transfer orchestrator, ledger, fraud scoring, reconciliation, and event log components are separated by consistency and latency needs.
-  Clients[Client apps and APIs] --> Edge[API edge]
-  Edge --> Transfer[Transfer orchestrator]
-  Transfer --> Fraud[Fraud scoring gateway]
-  Transfer --> Ledger[(Double-entry ledger DB)]
-  Transfer --> Bus[(Event log)]
-  Bus --> Recon[Reconciliation service]
-  Recon --> Ledger
-  Bus --> Notify[Notifications]
-  Transfer --> Rails[Card network / bank rail adapter]
+  accDescr: Deployable components separate the critical request, durable state, asynchronous work, and bounded AI path.
+  C1["Payment API<br/>Authenticates and validates idempotent commands"]
+  C2["Risk rules<br/>Applies deterministic hard controls"]
+  C3["Payment orchestrator<br/>Runs bounded processor workflows"]
+  C4["Ledger service<br/>Commits balanced immutable entries"]
+  C5[("Ledger database<br/>Stores serializable journal and balances")]
+  C6[("Outbox stream<br/>Publishes committed payment facts")]
+  C7["Reconciliation workers<br/>Compare internal and processor records"]
+  C8["Model gateway<br/>Adds advisory fraud scoring within policy"]
+  C1 --> C2 --> C3 --> C4 --> C5
+  C4 -. committed entries .-> C6 --> C7
+  C3 -. bounded risk signal .-> C8
 ```
+
+### Container component roles
+
+| Component | Role |
+|---|---|
+| Payment API | Authenticates and validates idempotent commands. |
+| Risk rules | Applies deterministic hard controls. |
+| Payment orchestrator | Runs bounded processor workflows. |
+| Ledger service | Commits balanced immutable entries. |
+| Ledger database | Stores serializable journal and balances. |
+| Outbox stream | Publishes committed payment facts. |
+| Reconciliation workers | Compare internal and processor records. |
+| Model gateway | Adds advisory fraud scoring within policy. |
 
 ## 7. Component deep dive
 

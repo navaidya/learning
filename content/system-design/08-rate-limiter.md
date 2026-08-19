@@ -9,7 +9,7 @@ aiFocus: [adaptive anomaly-aware limit tightening, bot/abuse pattern detection, 
 tags: [rate-limiting, redis, distributed-systems, abuse-prevention]
 ---
 
-_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
+_Follows the [System Design Template](../00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 
@@ -17,7 +17,26 @@ Design a rate limiter that throttles API requests per user, API key, and IP acro
 
 ## 2. Requirements and scope
 
-**Functional:** enforce per-key limits scoped by user, API key, and IP; support multiple algorithms per endpoint (steady rate plus burst); return `429` with `Retry-After` and remaining-quota headers; update rules without redeploying edge nodes. **Non-functional:** p99 decision latency under 5ms, graceful degradation instead of becoming the outage, and only approximate global accuracy (brief over-admission during failover is fine, silently blocking legitimate traffic is not). Exclude long-window billing quotas — a separate metering system. Assume authentication has already resolved caller identity before the limiter runs.
+### Functional requirements
+
+| ID | Requirement | Priority | Interview significance |
+|---|---|---|---|
+| FR-1 | The system must evaluate a request cost against user, credential, IP, and endpoint policy. | Must | Defines the authoritative synchronous command boundary and its invariants. |
+| FR-2 | The system must return allow or deny with remaining quota and reset metadata. | Must | Defines the dominant read path, caches, indexes, and acceptable staleness. |
+| FR-3 | The system must distribute configuration and analyze violation patterns. | Must | Separates durable acceptance from retryable fan-out and derived work. |
+| FR-4 | The system must publish, audit, canary, and roll back limit rules. | Should | Requires versioned configuration, least privilege, audit, and rollback. |
+
+### Non-functional requirements
+
+| Quality | Measurable target | Why it matters | Architecture consequence |
+|---|---|---|---|
+| Latency | p99 decision latency below 5 ms at the enforcement point | Users experience this path directly. | Keep the critical path local, bounded, and independently scalable. |
+| Availability | limiter failure must not become a platform-wide outage | A partial infrastructure failure must have an explicit outcome. | Spread workloads across failure zones and define degradation before failover. |
+| Correctness | bounded over-admission is explicit while unauthorized fail-open is prohibited for protected endpoints | The system is not useful if its central invariant can be violated. | Use idempotency, ownership epochs, transactions, leases, or version checks where required. |
+| Peak scale | sustain 500k checks/s with hot-key and burst protection | Peak traffic and skew determine partitions and isolation. | Partition by the domain ownership key, autoscale on work, and reserve burst headroom. |
+| Security and privacy | derive keys from authenticated identity and restrict high-impact rule changes | Abuse or data disclosure can outweigh availability. | Authenticate at the edge, authorize at the data boundary, encrypt, minimize, and audit. |
+
+**Scope exclusions:** billing-grade metering and long-window invoice quotas. **Assumptions:** authentication precedes enforcement and each endpoint declares fail-open or fail-closed policy.
 
 ## 3. Capacity estimate
 
@@ -33,31 +52,57 @@ At 500K requests/sec platform-wide, every request needs a check, so naive centra
 
 ```mermaid
 flowchart LR
-  accTitle: Rate limiter system context
-  accDescr: Clients call backend services through an edge gateway that embeds limit checks against a shared store and reports violations to abuse detection.
-  Client --> Gateway[API gateway with embedded limiter]
-  Gateway --> Backend[Backend services]
-  Gateway --> Store[(Rate limit store)]
-  Gateway --> AbuseStream[Abuse detection stream]
-  Ops --> Config[Limit rule config]
+  accTitle: Distributed rate limiter system context
+  accDescr: Human and system actors use Distributed rate limiter, which integrates with explicitly bounded external capabilities.
+  A1["API client<br/>Sends requests carrying authenticated identity"] --> System
+  A2["Platform operator<br/>Defines limits and failure policy"] --> System
+  System["Distributed rate limiter<br/>Owns the product capability and domain guarantees"]
+  System --> E1["Backend services<br/>Receive only admitted requests"]
+  System --> E2["Identity system<br/>Provides trusted caller and credential scopes"]
 ```
+
+### Context component roles
+
+| Component | Role |
+|---|---|
+| API client | Sends requests carrying authenticated identity. |
+| Platform operator | Defines limits and failure policy. |
+| Distributed rate limiter | Owns the product boundary, core policy, and durable outcome. |
+| Backend services | Receive only admitted requests. |
+| Identity system | Provides trusted caller and credential scopes. |
 
 ## 6. Container architecture
 
 ```mermaid
 flowchart TB
-  accTitle: Rate limiter container architecture
-  accDescr: Edge proxies hold local buckets synced against sharded Redis, publish violations to an anomaly model, and consult dynamic overrides alongside static config.
-  Clients --> Edge[Edge proxy: local token bucket cache]
-  Edge --> Lua[Rate limit service: Lua scripts]
-  Lua --> Redis[(Sharded Redis, consistent hash)]
-  Edge --> ConfigStore[(Limit rule config)]
-  Edge --> Bus[(Abuse event stream)]
-  Bus --> Anomaly[Anomaly detection model]
-  Anomaly --> Overrides[(Dynamic override store)]
-  Edge --> Overrides
-  Edge --> Backend[Backend services]
+  accTitle: Distributed rate limiter container architecture
+  accDescr: Deployable components separate the critical request, durable state, asynchronous work, and bounded AI path.
+  C1["Edge proxy<br/>Enforces local token buckets"]
+  C2["Rule distributor<br/>Pushes versioned policy snapshots"]
+  C3["Rate service<br/>Reconciles shared counters atomically"]
+  C4[("Counter shards<br/>Store short-lived quota state")]
+  C5[("Override store<br/>Holds bounded abuse multipliers")]
+  C6[("Violation stream<br/>Buffers enforcement signals")]
+  C7["Anomaly detector<br/>Suggests time-limited tightening"]
+  C8["Backend<br/>Serves admitted application traffic"]
+  C1 --> C2 --> C8
+  C2 --> C3 --> C4
+  C5 --> C2
+  C2 -. violation .-> C6 --> C7 -. bounded override .-> C5
 ```
+
+### Container component roles
+
+| Component | Role |
+|---|---|
+| Edge proxy | Enforces local token buckets. |
+| Rule distributor | Pushes versioned policy snapshots. |
+| Rate service | Reconciles shared counters atomically. |
+| Counter shards | Store short-lived quota state. |
+| Override store | Holds bounded abuse multipliers. |
+| Violation stream | Buffers enforcement signals. |
+| Anomaly detector | Suggests time-limited tightening. |
+| Backend | Serves admitted application traffic. |
 
 ## 7. Component deep dive
 

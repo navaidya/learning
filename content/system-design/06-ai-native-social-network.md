@@ -9,7 +9,7 @@ aiFocus: [personal agents, consent-aware memory, multimodal recommendation]
 tags: [social-graph, privacy, feeds, agents]
 ---
 
-_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
+_Follows the [System Design Template](../00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 
@@ -17,7 +17,26 @@ Design a social network for profiles, friendships, groups, media, feeds, and a p
 
 ## 2. Requirements and scope
 
-Profiles, reciprocal friendships, groups, posts/media, comments, audience selection, feed, search, notifications, and user-controlled agent tasks. Target p99 feed under 700 ms, fast revocation, regional data controls, and explainable ranking. Exclude advertising and face identification.
+### Functional requirements
+
+| ID | Requirement | Priority | Interview significance |
+|---|---|---|---|
+| FR-1 | The system must create profiles, relationships, posts, media, groups, and privacy policy. | Must | Defines the authoritative synchronous command boundary and its invariants. |
+| FR-2 | The system must serve privacy-filtered feeds, profiles, media, and graph discovery. | Must | Defines the dominant read path, caches, indexes, and acceptable staleness. |
+| FR-3 | The system must fan out content, transcode media, update graph indexes, and evaluate recommendations. | Must | Separates durable acceptance from retryable fan-out and derived work. |
+| FR-4 | The system must manage privacy incidents, moderation, consent, and data lifecycle. | Should | Requires versioned configuration, least privilege, audit, and rollback. |
+
+### Non-functional requirements
+
+| Quality | Measurable target | Why it matters | Architecture consequence |
+|---|---|---|---|
+| Latency | feed p99 below 400 ms and profile reads below 200 ms | Users experience this path directly. | Keep the critical path local, bounded, and independently scalable. |
+| Availability | 99.99% read availability with durable user-authored content | A partial infrastructure failure must have an explicit outcome. | Spread workloads across failure zones and define degradation before failover. |
+| Correctness | privacy-policy enforcement must precede every feed, search, agent, and media response | The system is not useful if its central invariant can be violated. | Use idempotency, ownership epochs, transactions, leases, or version checks where required. |
+| Peak scale | serve billions of graph edges, media objects, and skewed high-degree accounts | Peak traffic and skew determine partitions and isolation. | Partition by the domain ownership key, autoscale on work, and reserve burst headroom. |
+| Security and privacy | enforce consent-aware access, isolate personal-agent memory, and audit sensitive graph queries | Abuse or data disclosure can outweigh availability. | Authenticate at the edge, authorize at the data boundary, encrypt, minimize, and audit. |
+
+**Scope exclusions:** ad exchange internals, private E2EE chat, and importing private contacts without consent. **Assumptions:** graph and content are region-affine, media is immutable by version, and feeds allow bounded staleness.
 
 ## 3. Capacity estimate
 
@@ -34,31 +53,61 @@ At 1B monthly and 500M daily users, 2 posts and 200 feed items/user/day yield 12
 ```mermaid
 flowchart LR
   accTitle: Social network system context
-  accDescr: Members, group administrators, and personal agents use the network through identity, media, and provenance services.
-  Member --> Social[Social network]
-  GroupAdmin --> Social
-  Agent[Personal agent] --> Social
-  Social --> Identity[Identity and recovery]
-  Social --> CDN[Media CDN]
-  Social --> Provenance[Content credentials]
+  accDescr: Human and system actors use Social network, which integrates with explicitly bounded external capabilities.
+  A1["Member<br/>Builds a profile, graph, and shared content"] --> System
+  A2["Community administrator<br/>Manages groups and policy"] --> System
+  A3["Personal agent<br/>Acts only within explicit user scopes"] --> System
+  System["Social network<br/>Owns the product capability and domain guarantees"]
+  System --> E1["Media CDN<br/>Caches versioned media close to viewers"]
+  System --> E2["Identity provider<br/>Supports secure login and account recovery"]
 ```
+
+### Context component roles
+
+| Component | Role |
+|---|---|
+| Member | Builds a profile, graph, and shared content. |
+| Community administrator | Manages groups and policy. |
+| Personal agent | Acts only within explicit user scopes. |
+| Social network | Owns the product boundary, core policy, and durable outcome. |
+| Media CDN | Caches versioned media close to viewers. |
+| Identity provider | Supports secure login and account recovery. |
 
 ## 6. Container architecture
 
 ```mermaid
 flowchart TB
   accTitle: Social network container architecture
-  accDescr: Graph, content, media, feed, ranking, agent, policy, and protected search components enforce audience-aware experiences.
-  Apps --> Edge[API edge]
-  Edge --> Graph[Social graph] --> GraphDB[(Graph shards)]
-  Edge --> Content[Content service] --> SQL[(Metadata store)]
-  Content --> Media[Media pipeline] --> Blob[(Object storage/CDN)]
-  Content --> Bus[(Event log)] --> Feed[Feed materializer]
-  Edge --> Mixer[Feed mixer] --> Feed
-  Mixer --> Rank[Ranking models]
-  Edge --> AgentGW[Scoped agent gateway] --> Policy[Audience and consent engine]
-  AgentGW --> Search[(ACL-aware hybrid index)]
+  accDescr: Deployable components separate the critical request, durable state, asynchronous work, and bounded AI path.
+  C1["Clients<br/>Create and consume social content"]
+  C2["API edge<br/>Authenticates and routes requests"]
+  C3["Graph service<br/>Owns sharded relationship edges"]
+  C4["Content service<br/>Stores posts and visibility metadata"]
+  C5["Privacy engine<br/>Evaluates policy before every disclosure"]
+  C6["Feed service<br/>Merges and ranks authorized candidates"]
+  C7["Media pipeline<br/>Uploads, scans, and transcodes assets"]
+  C8["Agent gateway<br/>Constrains tools, memory, and data access"]
+  C1 --> C2
+  C2 --> C3
+  C2 --> C4
+  C3 --> C5
+  C4 --> C5 --> C6
+  C4 --> C7
+  C8 --> C5
 ```
+
+### Container component roles
+
+| Component | Role |
+|---|---|
+| Clients | Create and consume social content. |
+| API edge | Authenticates and routes requests. |
+| Graph service | Owns sharded relationship edges. |
+| Content service | Stores posts and visibility metadata. |
+| Privacy engine | Evaluates policy before every disclosure. |
+| Feed service | Merges and ranks authorized candidates. |
+| Media pipeline | Uploads, scans, and transcodes assets. |
+| Agent gateway | Constrains tools, memory, and data access. |
 
 ## 7. Component deep dive
 

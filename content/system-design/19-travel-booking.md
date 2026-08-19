@@ -9,7 +9,7 @@ aiFocus: [dynamic pricing suggestions, search ranking and personalization]
 tags: [marketplace, booking, geospatial, concurrency, machine-learning]
 ---
 
-_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
+_Follows the [System Design Template](../00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 
@@ -17,7 +17,26 @@ Design a travel booking platform where hosts list properties with calendars, gue
 
 ## 2. Requirements and scope
 
-**Functional:** list a property with a calendar and base price, search by geo/date-range/price/amenities, book a date range, cancel/refund per policy, host accepts/instant-books. **Non-functional:** zero double-booking for overlapping date ranges, p99 search under 400 ms, booking confirmation under 2 seconds, regional data residency. Exclude in-house payment processing internals and dynamic multi-night pricing negotiation chat.
+### Functional requirements
+
+| ID | Requirement | Priority | Interview significance |
+|---|---|---|---|
+| FR-1 | The system must search, price, reserve, book, cancel, and reconcile travel inventory. | Must | Defines the authoritative synchronous command boundary and its invariants. |
+| FR-2 | The system must return normalized options, current price, itinerary, and booking state. | Must | Defines the dominant read path, caches, indexes, and acceptable staleness. |
+| FR-3 | The system must refresh supplier caches, run booking sagas, issue documents, notify travelers, and reconcile. | Must | Separates durable acceptance from retryable fan-out and derived work. |
+| FR-4 | The system must resolve partial bookings, schedule changes, refunds, and supplier disputes. | Should | Requires versioned configuration, least privilege, audit, and rollback. |
+
+### Non-functional requirements
+
+| Quality | Measurable target | Why it matters | Architecture consequence |
+|---|---|---|---|
+| Latency | cached search p95 below 2 seconds and booking state visible immediately after acceptance | Users experience this path directly. | Keep the critical path local, bounded, and independently scalable. |
+| Availability | 99.9% booking workflow availability with durable recovery from partial supplier success | A partial infrastructure failure must have an explicit outcome. | Spread workloads across failure zones and define degradation before failover. |
+| Correctness | never claim confirmation without supplier proof and never duplicate charge or reservation | The system is not useful if its central invariant can be violated. | Use idempotency, ownership epochs, transactions, leases, or version checks where required. |
+| Peak scale | fan out search across many suppliers with seasonal bursts and slow dependencies | Peak traffic and skew determine partitions and isolation. | Partition by the domain ownership key, autoscale on work, and reserve burst headroom. |
+| Security and privacy | protect passport/contact/payment data, constrain supplier credentials, and audit operator access | Abuse or data disclosure can outweigh availability. | Authenticate at the edge, authorize at the data boundary, encrypt, minimize, and audit. |
+
+**Scope exclusions:** operating airlines or hotels and guaranteeing external inventory before supplier confirmation. **Assumptions:** supplier APIs are inconsistent, search is eventually consistent, and booking uses durable sagas and human recovery.
 
 ## 3. Capacity estimate
 
@@ -34,29 +53,57 @@ At 5M nightly stays booked/month, average booking creation is roughly 2/s with w
 ```mermaid
 flowchart LR
   accTitle: Travel booking platform system context
-  accDescr: Guests and hosts use the platform, which integrates with payment and geocoding/mapping providers.
-  Guest --> Platform[Travel booking platform]
-  Host --> Platform
-  Platform --> PSP[Payment provider]
-  Platform --> Geocoding[Geocoding and maps provider]
+  accDescr: Human and system actors use Travel booking platform, which integrates with explicitly bounded external capabilities.
+  A1["Traveler<br/>Searches, books, and manages an itinerary"] --> System
+  A2["Travel operator<br/>Resolves disruptions and partial bookings"] --> System
+  System["Travel booking platform<br/>Owns the product capability and domain guarantees"]
+  System --> E1["Travel suppliers<br/>Provide inventory, price, and confirmation"]
+  System --> E2["Payment provider<br/>Authorizes and captures regulated payment"]
 ```
+
+### Context component roles
+
+| Component | Role |
+|---|---|
+| Traveler | Searches, books, and manages an itinerary. |
+| Travel operator | Resolves disruptions and partial bookings. |
+| Travel booking platform | Owns the product boundary, core policy, and durable outcome. |
+| Travel suppliers | Provide inventory, price, and confirmation. |
+| Payment provider | Authorizes and captures regulated payment. |
 
 ## 6. Container architecture
 
 ```mermaid
 flowchart TB
   accTitle: Travel booking platform container architecture
-  accDescr: Search, calendar/availability, booking transaction, pricing model, and payment components are separated by consistency and latency needs.
-  Apps[Guest and host apps] --> Edge[API edge]
-  Edge --> Search[Search service] --> Idx[(Geo + date search index)]
-  Edge --> Calendar[Calendar/availability service] --> Cal[(Per-listing calendar store)]
-  Edge --> Booking[Booking transaction service]
-  Booking --> Cal
-  Booking --> Bus[(Event log)]
-  Bus --> Payment[Payment service]
-  Bus --> Idx
-  Search --> Pricing[Pricing suggestion model]
+  accDescr: Deployable components separate the critical request, durable state, asynchronous work, and bounded AI path.
+  C1["Search API<br/>Validates and fans out queries"]
+  C2["Supplier adapters<br/>Normalize quotas, schemas, and failures"]
+  C3[("Search cache<br/>Serves bounded-stale availability")]
+  C4["Offer service<br/>Pins price and terms for checkout"]
+  C5["Booking orchestrator<br/>Runs durable supplier and payment saga"]
+  C6[("Booking store<br/>Owns itinerary and recovery state")]
+  C7[("Event stream<br/>Drives documents, notifications, and reconciliation")]
+  C8["Ranking service<br/>Orders valid options with deterministic fallback"]
+  C1 --> C2 --> C3
+  C1 --> C4
+  C1 --> C5 --> C6
+  C5 -. booking event .-> C7
+  C1 -. bounded ranking .-> C8
 ```
+
+### Container component roles
+
+| Component | Role |
+|---|---|
+| Search API | Validates and fans out queries. |
+| Supplier adapters | Normalize quotas, schemas, and failures. |
+| Search cache | Serves bounded-stale availability. |
+| Offer service | Pins price and terms for checkout. |
+| Booking orchestrator | Runs durable supplier and payment saga. |
+| Booking store | Owns itinerary and recovery state. |
+| Event stream | Drives documents, notifications, and reconciliation. |
+| Ranking service | Orders valid options with deterministic fallback. |
 
 ## 7. Component deep dive
 

@@ -9,7 +9,7 @@ aiFocus: [personalized suggestion reranking, semantic related-query expansion]
 tags: [search, autocomplete, caching, low-latency]
 ---
 
-_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
+_Follows the [System Design Template](../00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 
@@ -17,7 +17,26 @@ Design a typeahead service that returns ranked query suggestions as a user types
 
 ## 2. Requirements and scope
 
-**Functional:** top-K prefix suggestions, typo-tolerant fuzzy matching, trending-query boost, personalized reranking, per-locale suggestions. **Non-functional:** p99 under 100ms end-to-end including per-keystroke calls, trending signal reflected within minutes, base index covers 1B+ historical unique queries. Exclude full search result serving and query execution itself; assume a downstream search backend consumes the submitted query.
+### Functional requirements
+
+| ID | Requirement | Priority | Interview significance |
+|---|---|---|---|
+| FR-1 | The system must publish and retire query, entity, and policy signals. | Must | Defines the authoritative synchronous command boundary and its invariants. |
+| FR-2 | The system must return ranked prefix completions within a keystroke budget. | Must | Defines the dominant read path, caches, indexes, and acceptable staleness. |
+| FR-3 | The system must aggregate trends, build indexes, evaluate safety, and atomically publish versions. | Must | Separates durable acceptance from retryable fan-out and derived work. |
+| FR-4 | The system must manage languages, suppression, experiments, and rollback. | Should | Requires versioned configuration, least privilege, audit, and rollback. |
+
+### Non-functional requirements
+
+| Quality | Measurable target | Why it matters | Architecture consequence |
+|---|---|---|---|
+| Latency | p99 suggestion response below 50 ms from the nearest serving region | Users experience this path directly. | Keep the critical path local, bounded, and independently scalable. |
+| Availability | 99.99% serving availability with last-known-good index fallback | A partial infrastructure failure must have an explicit outcome. | Spread workloads across failure zones and define degradation before failover. |
+| Correctness | suppressed or unsafe terms disappear within the declared invalidation bound | The system is not useful if its central invariant can be violated. | Use idempotency, ownership epochs, transactions, leases, or version checks where required. |
+| Peak scale | serve millions of requests/s with strong prefix hot spots | Peak traffic and skew determine partitions and isolation. | Partition by the domain ownership key, autoscale on work, and reserve burst headroom. |
+| Security and privacy | minimize raw query retention, protect children and sensitive terms, and prevent trend manipulation | Abuse or data disclosure can outweigh availability. | Authenticate at the edge, authorize at the data boundary, encrypt, minimize, and audit. |
+
+**Scope exclusions:** full search-result ranking and storing identifiable query histories indefinitely. **Assumptions:** indexes are immutable by version, personalization is consent-bounded, and serving never calls a large model synchronously.
 
 ## 3. Capacity estimate
 
@@ -32,30 +51,57 @@ At 200M DAU averaging 3 searches/session and ~5 keystroke-triggered suggestion c
 
 ```mermaid
 flowchart LR
-  accTitle: Autocomplete system context
-  accDescr: Users type into a client that queries the typeahead service, which is fed by a trending signal ingestion pipeline and forwards submitted queries to a downstream search backend.
-  User --> Client
-  Client --> Typeahead[Typeahead service]
-  Typeahead --> TrendFeed[Trending signal ingestion]
-  Client --> SearchBackend[Downstream search backend]
+  accTitle: Search autocomplete service system context
+  accDescr: Human and system actors use Search autocomplete service, which integrates with explicitly bounded external capabilities.
+  A1["Search user<br/>Types a prefix and selects a suggestion"] --> System
+  A2["Content operator<br/>Manages entities, suppression, and policy"] --> System
+  System["Search autocomplete service<br/>Owns the product capability and domain guarantees"]
+  System --> E1["Search corpus<br/>Supplies entities and popularity signals"]
+  System --> E2["Privacy service<br/>Provides consent and retention policy"]
 ```
+
+### Context component roles
+
+| Component | Role |
+|---|---|
+| Search user | Types a prefix and selects a suggestion. |
+| Content operator | Manages entities, suppression, and policy. |
+| Search autocomplete service | Owns the product boundary, core policy, and durable outcome. |
+| Search corpus | Supplies entities and popularity signals. |
+| Privacy service | Provides consent and retention policy. |
 
 ## 6. Container architecture
 
 ```mermaid
 flowchart TB
-  accTitle: Autocomplete container architecture
-  accDescr: An edge API queries an in-memory prefix index, merges typo-tolerant candidates, applies a trending boost, and optionally reranks with personalization under a strict timeout.
-  Client --> Edge[Suggest API edge]
-  Edge --> Index[(In-memory FST/trie index, per locale)]
-  Edge --> Fuzzy[(Typo-tolerant fuzzy index)]
-  Edge --> Trend[(Streaming trend counters)]
-  Edge --> Personalize[Personalization reranker]
-  Client -. impressions/clicks .-> Bus[(Event stream)] --> Builder[Offline index builder]
-  Builder --> Index
-  Bus --> Trainer[Reranking model trainer]
-  Trainer --> Personalize
+  accTitle: Search autocomplete service container architecture
+  accDescr: Deployable components separate the critical request, durable state, asynchronous work, and bounded AI path.
+  C1["Client<br/>Debounces prefixes and caches recent results"]
+  C2[("Edge cache<br/>Serves common prefixes near users")]
+  C3["Suggestion service<br/>Retrieves and merges candidate sources"]
+  C4[("Prefix index<br/>Stores immutable language-specific completions")]
+  C5[("Trend stream<br/>Aggregates recent popularity safely")]
+  C6[("Index builder<br/>Builds and validates new versions")]
+  C7["Policy filter<br/>Suppresses unsafe or disallowed candidates"]
+  C8["Personalization model<br/>Reranks within explicit consent bounds"]
+  C1 --> C2 --> C3 --> C4
+  C5 --> C6 --> C4
+  C3 --> C7
+  C3 -. consented rerank .-> C8
 ```
+
+### Container component roles
+
+| Component | Role |
+|---|---|
+| Client | Debounces prefixes and caches recent results. |
+| Edge cache | Serves common prefixes near users. |
+| Suggestion service | Retrieves and merges candidate sources. |
+| Prefix index | Stores immutable language-specific completions. |
+| Trend stream | Aggregates recent popularity safely. |
+| Index builder | Builds and validates new versions. |
+| Policy filter | Suppresses unsafe or disallowed candidates. |
+| Personalization model | Reranks within explicit consent bounds. |
 
 ## 7. Component deep dive
 

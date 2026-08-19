@@ -9,7 +9,7 @@ aiFocus: [inline co-writing suggestions, semantic diff summarization, comment-th
 tags: [collaboration, crdt, operational-transformation, real-time]
 ---
 
-_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
+_Follows the [System Design Template](../00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 
@@ -17,7 +17,26 @@ Design a multi-user document editor where collaborators type concurrently, see e
 
 ## 2. Requirements and scope
 
-**Functional:** concurrent text editing, presence/cursors, comments, offline edit buffering with reconnect merge, version history/restore, and AI suggestions (rewrite, continue, summarize). **Non-functional:** local keystroke latency under 20 ms, remote edit propagation under 250 ms at p99, convergence guaranteed regardless of network order, and no silent data loss on reconnect. Exclude spreadsheet-style cell dependencies and binary file formats (images are opaque attachments).
+### Functional requirements
+
+| ID | Requirement | Priority | Interview significance |
+|---|---|---|---|
+| FR-1 | The system must create, edit, comment, share, rename, and restore documents. | Must | Defines the authoritative synchronous command boundary and its invariants. |
+| FR-2 | The system must join a session, receive operations, presence, and durable catch-up. | Must | Defines the dominant read path, caches, indexes, and acceptable staleness. |
+| FR-3 | The system must persist operation logs, compact snapshots, index content, and notify collaborators. | Must | Separates durable acceptance from retryable fan-out and derived work. |
+| FR-4 | The system must manage tenancy, retention, sharing policy, and region evacuation. | Should | Requires versioned configuration, least privilege, audit, and rollback. |
+
+### Non-functional requirements
+
+| Quality | Measurable target | Why it matters | Architecture consequence |
+|---|---|---|---|
+| Latency | local edit echo immediate and remote operation propagation p99 below 200 ms | Users experience this path directly. | Keep the critical path local, bounded, and independently scalable. |
+| Availability | 99.99% active-session availability with no acknowledged operation loss | A partial infrastructure failure must have an explicit outcome. | Spread workloads across failure zones and define degradation before failover. |
+| Correctness | all replicas converge while ACL and document ownership remain authoritative | The system is not useful if its central invariant can be violated. | Use idempotency, ownership epochs, transactions, leases, or version checks where required. |
+| Peak scale | support millions of concurrent sessions and hot documents with many editors | Peak traffic and skew determine partitions and isolation. | Partition by the domain ownership key, autoscale on work, and reserve burst headroom. |
+| Security and privacy | authorize every session, encrypt content, isolate tenants, and prevent agent access beyond document ACLs | Abuse or data disclosure can outweigh availability. | Authenticate at the edge, authorize at the data boundary, encrypt, minimize, and audit. |
+
+**Scope exclusions:** pixel-perfect office suite compatibility and offline conflict semantics for every rich object. **Assumptions:** documents have session affinity, operations are idempotent, and AI assistance is explicit and bounded.
 
 ## 3. Capacity estimate
 
@@ -33,31 +52,60 @@ At 5M daily active documents and an average of 4 concurrent editors producing ro
 
 ```mermaid
 flowchart LR
-  accTitle: Collaborative editor system context
-  accDescr: Editors and viewers connect through the document platform, which integrates identity, storage, and an AI co-writing service.
-  Editor --> Platform[Collaborative document platform]
-  Viewer --> Platform
-  Platform --> Identity[Identity provider]
-  Platform --> Storage[Snapshot and history storage]
-  Platform --> AI[AI co-writer service]
+  accTitle: Collaborative document editor system context
+  accDescr: Human and system actors use Collaborative document editor, which integrates with explicitly bounded external capabilities.
+  A1["Editor<br/>Creates operations and sees collaborators"] --> System
+  A2["Viewer<br/>Reads authorized snapshots and comments"] --> System
+  A3["Document agent<br/>Suggests changes within explicit ACL scope"] --> System
+  System["Collaborative document editor<br/>Owns the product capability and domain guarantees"]
+  System --> E1["Identity provider<br/>Authenticates users and groups"]
+  System --> E2["Notification provider<br/>Delivers sharing and mention alerts"]
 ```
+
+### Context component roles
+
+| Component | Role |
+|---|---|
+| Editor | Creates operations and sees collaborators. |
+| Viewer | Reads authorized snapshots and comments. |
+| Document agent | Suggests changes within explicit ACL scope. |
+| Collaborative document editor | Owns the product boundary, core policy, and durable outcome. |
+| Identity provider | Authenticates users and groups. |
+| Notification provider | Delivers sharing and mention alerts. |
 
 ## 6. Container architecture
 
 ```mermaid
 flowchart TB
-  accTitle: Collaborative editor container architecture
-  accDescr: Client sessions connect through a realtime gateway to a per-document sequencer that applies CRDT merges, persists snapshots, and forwards AI suggestions as ordinary edits.
-  Clients --> Gateway[Realtime edge / WebSocket gateway]
-  Gateway --> Sequencer[Per-document sequencer]
-  Sequencer --> Merge[CRDT merge engine]
-  Merge --> Log[(Ordered op log)]
-  Log --> Snapshot[Snapshot service] --> Blob[(Snapshot + history store)]
-  Sequencer --> Presence[Presence and cursor broadcast]
-  Sequencer --> Comments[Comment service] --> SQL[(Comment metadata DB)]
-  Sequencer --> AIGateway[AI co-writer gateway]
-  AIGateway --> Merge
+  accTitle: Collaborative document editor container architecture
+  accDescr: Deployable components separate the critical request, durable state, asynchronous work, and bounded AI path.
+  C1["Editor client<br/>Applies local operations optimistically"]
+  C2["Session gateway<br/>Maintains document-affine realtime sessions"]
+  C3["Collaboration engine<br/>Orders or transforms concurrent operations"]
+  C4[("Operation log<br/>Durably records acknowledged edits")]
+  C5[("Snapshot store<br/>Compacts document state for fast join")]
+  C6["Presence service<br/>Tracks ephemeral cursors and sessions"]
+  C7["Search indexer<br/>Indexes authorized document versions"]
+  C8["AI gateway<br/>Generates bounded suggestions from authorized context"]
+  C1 --> C2 --> C3 --> C4
+  C3 --> C5
+  C2 -. ephemeral state .-> C6
+  C4 -. committed operation .-> C7
+  C1 -. authorized suggestion .-> C8
 ```
+
+### Container component roles
+
+| Component | Role |
+|---|---|
+| Editor client | Applies local operations optimistically. |
+| Session gateway | Maintains document-affine realtime sessions. |
+| Collaboration engine | Orders or transforms concurrent operations. |
+| Operation log | Durably records acknowledged edits. |
+| Snapshot store | Compacts document state for fast join. |
+| Presence service | Tracks ephemeral cursors and sessions. |
+| Search indexer | Indexes authorized document versions. |
+| AI gateway | Generates bounded suggestions from authorized context. |
 
 ## 7. Component deep dive
 

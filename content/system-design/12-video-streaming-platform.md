@@ -9,7 +9,7 @@ aiFocus: [recommendation ranking, content moderation classification, automatic c
 tags: [video, streaming, cdn, transcoding, recommendation]
 ---
 
-_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
+_Follows the [System Design Template](../00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 
@@ -17,7 +17,26 @@ Design a video platform where creators upload videos, the platform transcodes th
 
 ## 2. Requirements and scope
 
-**Functional:** resumable chunked upload; transcode into an adaptive-bitrate ladder; publish and serve via HLS/DASH; track watch-time and engagement; rank a personalized home feed. **Non-functional:** playback start under 2s p99, upload resumable across network drops, global edge latency under 100ms, catalog spans both viral hits and long-tail archive. Exclude live streaming and ad-auction bidding. Assume a licensed CDN partner and durable object storage.
+### Functional requirements
+
+| ID | Requirement | Priority | Interview significance |
+|---|---|---|---|
+| FR-1 | The system must upload, validate, publish, update, and remove video assets. | Must | Defines the authoritative synchronous command boundary and its invariants. |
+| FR-2 | The system must start adaptive playback from a nearby edge with entitlement checks. | Must | Defines the dominant read path, caches, indexes, and acceptable staleness. |
+| FR-3 | The system must transcode, package, caption, moderate, index, and recommend content. | Must | Separates durable acceptance from retryable fan-out and derived work. |
+| FR-4 | The system must manage rights, takedowns, encoding ladders, quality, and creator analytics. | Should | Requires versioned configuration, least privilege, audit, and rollback. |
+
+### Non-functional requirements
+
+| Quality | Measurable target | Why it matters | Architecture consequence |
+|---|---|---|---|
+| Latency | playback start p95 below 2 seconds on a healthy broadband link | Users experience this path directly. | Keep the critical path local, bounded, and independently scalable. |
+| Availability | 99.99% playback-control availability with durable source media | A partial infrastructure failure must have an explicit outcome. | Spread workloads across failure zones and define degradation before failover. |
+| Correctness | entitlement, takedown, and publication state override stale CDN objects within policy bounds | The system is not useful if its central invariant can be violated. | Use idempotency, ownership epochs, transactions, leases, or version checks where required. |
+| Peak scale | store exabytes and deliver globally skewed playback bandwidth | Peak traffic and skew determine partitions and isolation. | Partition by the domain ownership key, autoscale on work, and reserve burst headroom. |
+| Security and privacy | signed playback tokens, DRM where required, upload scanning, and rights audit | Abuse or data disclosure can outweigh availability. | Authenticate at the edge, authorize at the data boundary, encrypt, minimize, and audit. |
+
+**Scope exclusions:** live broadcast production and claims about a specific company implementation. **Assumptions:** media segments are immutable by version, CDN serves bytes, and recommendation failure falls back to editorial/popular lists.
 
 ## 3. Capacity estimate
 
@@ -33,30 +52,59 @@ At 500K uploads/day (5.8/s average, 60/s peak) with an 8-minute average source a
 
 ```mermaid
 flowchart LR
-  accTitle: Video platform system context
-  accDescr: Creators upload and viewers watch through the platform, which depends on a CDN, DRM/token service, and trust and safety review.
-  Creator --> Platform[Video platform]
-  Viewer --> Platform
-  Platform --> CDN[Global CDN]
-  Platform --> DRM[Signed-URL and DRM service]
-  Platform --> Trust[Trust and safety review]
+  accTitle: Video streaming platform system context
+  accDescr: Human and system actors use Video streaming platform, which integrates with explicitly bounded external capabilities.
+  A1["Creator<br/>Uploads and manages video"] --> System
+  A2["Viewer<br/>Discovers and plays authorized content"] --> System
+  A3["Rights operator<br/>Applies policy and takedowns"] --> System
+  System["Video streaming platform<br/>Owns the product capability and domain guarantees"]
+  System --> E1["Global CDN<br/>Caches packaged segments near viewers"]
+  System --> E2["Rights provider<br/>Supplies entitlement and licensing constraints"]
 ```
+
+### Context component roles
+
+| Component | Role |
+|---|---|
+| Creator | Uploads and manages video. |
+| Viewer | Discovers and plays authorized content. |
+| Rights operator | Applies policy and takedowns. |
+| Video streaming platform | Owns the product boundary, core policy, and durable outcome. |
+| Global CDN | Caches packaged segments near viewers. |
+| Rights provider | Supplies entitlement and licensing constraints. |
 
 ## 6. Container architecture
 
 ```mermaid
 flowchart TB
-  accTitle: Video platform container architecture
-  accDescr: Upload feeds a transcode pipeline to origin storage and CDN edge, while watch events feed aggregation, ranking, and moderation.
-  Creator --> Upload[Upload service] --> Chunks[(Raw chunk store)]
-  Chunks --> Transcode[Transcode worker pool] --> Renditions[(Rendition store)]
-  Renditions --> Packager[Manifest packager] --> Origin[(Origin store)] --> CDN[CDN edge]
-  Viewer --> Edge[Playback API] --> CDN
-  Edge --> Meta[(Video metadata DB)]
-  Viewer -. watch heartbeat .-> Bus[(Event stream)] --> Agg[Watch-time aggregator]
-  Bus --> Rec[Recommendation service]
-  Transcode --> Models[Moderation classifier]
+  accTitle: Video streaming platform container architecture
+  accDescr: Deployable components separate the critical request, durable state, asynchronous work, and bounded AI path.
+  C1["Upload client<br/>Resumes multipart source transfer"]
+  C2["Control API<br/>Owns metadata and publication state"]
+  C3["Upload service<br/>Validates and stores immutable source"]
+  C4["Transcode workers<br/>Build bitrate and codec ladders"]
+  C5["Object origin<br/>Stores sources, manifests, and segments"]
+  C6["CDN<br/>Delivers globally cached media"]
+  C7["Playback service<br/>Issues signed manifests and tokens"]
+  C8["Recommendation service<br/>Ranks discoverable authorized videos"]
+  C1 --> C2 --> C3 --> C5
+  C3 -. transcode job .-> C4 --> C5
+  C7 --> C5 --> C6
+  C7 -. discovery .-> C8
 ```
+
+### Container component roles
+
+| Component | Role |
+|---|---|
+| Upload client | Resumes multipart source transfer. |
+| Control API | Owns metadata and publication state. |
+| Upload service | Validates and stores immutable source. |
+| Transcode workers | Build bitrate and codec ladders. |
+| Object origin | Stores sources, manifests, and segments. |
+| CDN | Delivers globally cached media. |
+| Playback service | Issues signed manifests and tokens. |
+| Recommendation service | Ranks discoverable authorized videos. |
 
 ## 7. Component deep dive
 

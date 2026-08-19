@@ -9,7 +9,7 @@ aiFocus: [multimodal ranking, provenance, coordinated-agent detection]
 tags: [social-feed, fanout, graph, moderation]
 ---
 
-_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
+_Follows the [System Design Template](../00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 
@@ -17,7 +17,26 @@ Design a public short-post network with follows, replies, reposts, media, search
 
 ## 2. Requirements and scope
 
-Publish/delete posts, follow, home feed, conversation threads, search, moderation, provenance labels, and user-selectable chronological/recommended views. Target sub-second publishing, feed p99 below 500 ms, high read availability, and rapid abuse response. Exclude ads and private direct messages.
+### Functional requirements
+
+| ID | Requirement | Priority | Interview significance |
+|---|---|---|---|
+| FR-1 | The system must publish, reply, repost, delete, and moderate public posts. | Must | Defines the authoritative synchronous command boundary and its invariants. |
+| FR-2 | The system must serve personalized home, conversation, search, and trending views. | Must | Defines the dominant read path, caches, indexes, and acceptable staleness. |
+| FR-3 | The system must fan out posts, index media, rank feeds, and evaluate moderation signals. | Must | Separates durable acceptance from retryable fan-out and derived work. |
+| FR-4 | The system must apply transparent policy, appeals, provenance, and coordinated-abuse controls. | Should | Requires versioned configuration, least privilege, audit, and rollback. |
+
+### Non-functional requirements
+
+| Quality | Measurable target | Why it matters | Architecture consequence |
+|---|---|---|---|
+| Latency | feed reads p99 below 300 ms and post acceptance below 500 ms | Users experience this path directly. | Keep the critical path local, bounded, and independently scalable. |
+| Availability | 99.99% read availability and 99.9% write availability | A partial infrastructure failure must have an explicit outcome. | Spread workloads across failure zones and define degradation before failover. |
+| Correctness | authoritative post state and visibility policy override stale cache or index entries | The system is not useful if its central invariant can be violated. | Use idempotency, ownership epochs, transactions, leases, or version checks where required. |
+| Peak scale | handle celebrity fan-out, bursty news events, and globally distributed reads | Peak traffic and skew determine partitions and isolation. | Partition by the domain ownership key, autoscale on work, and reserve burst headroom. |
+| Security and privacy | protect accounts, label provenance, rate-limit agents, and prevent coordinated manipulation | Abuse or data disclosure can outweigh availability. | Authenticate at the edge, authorize at the data boundary, encrypt, minimize, and audit. |
+
+**Scope exclusions:** private encrypted messaging, ad auctions, and claims about proprietary company internals. **Assumptions:** posts have a home region, feeds tolerate bounded staleness, and ranking has chronological fallback.
 
 ## 3. Capacity estimate
 
@@ -34,32 +53,61 @@ For 300M daily users, 100M posts/day averages 1,160 writes/s and peaks near 12k/
 ```mermaid
 flowchart LR
   accTitle: Public conversation network system context
-  accDescr: Readers, creators, agents, and moderators use a public network connected to provenance verification and media delivery.
-  Reader --> Network[Public conversation network]
-  Creator --> Network
-  Agent[Disclosed agent] --> Network
-  Moderator --> Network
-  Network --> C2PA[Provenance verifier]
-  Network --> CDN[Media CDN]
+  accDescr: Human and system actors use Public conversation network, which integrates with explicitly bounded external capabilities.
+  A1["Author<br/>Publishes posts and participates in conversations"] --> System
+  A2["Reader<br/>Consumes feeds, search, and trends"] --> System
+  A3["Moderator<br/>Reviews policy decisions and appeals"] --> System
+  System["Public conversation network<br/>Owns the product capability and domain guarantees"]
+  System --> E1["Media CDN<br/>Distributes images and video globally"]
+  System --> E2["Provenance service<br/>Verifies signed content credentials"]
 ```
+
+### Context component roles
+
+| Component | Role |
+|---|---|
+| Author | Publishes posts and participates in conversations. |
+| Reader | Consumes feeds, search, and trends. |
+| Moderator | Reviews policy decisions and appeals. |
+| Public conversation network | Owns the product boundary, core policy, and durable outcome. |
+| Media CDN | Distributes images and video globally. |
+| Provenance service | Verifies signed content credentials. |
 
 ## 6. Container architecture
 
 ```mermaid
 flowchart TB
-  accTitle: Public conversation container architecture
-  accDescr: Posts and graph events feed timelines, retrieval, ranking, moderation, and provenance while the feed mixer serves readers.
-  Apps --> Edge[API and stream edge]
-  Edge --> Posts[Post service] --> Store[(Post store)]
-  Edge --> Graph[Follow graph] --> GraphDB[(Graph shards)]
-  Posts --> Bus[(Event log)]
-  Bus --> Fanout[Fan-out workers] --> Inbox[(Home timelines)]
-  Edge --> Feed[Feed mixer]
-  Feed --> Inbox
-  Feed --> Retrieval[Search and vector retrieval]
-  Feed --> Rank[Ranking gateway]
-  Bus --> Trust[Moderation and provenance]
+  accTitle: Public conversation network container architecture
+  accDescr: Deployable components separate the critical request, durable state, asynchronous work, and bounded AI path.
+  C1["Web and mobile clients<br/>Create posts and read conversations"]
+  C2["API edge<br/>Authenticates, limits, and routes traffic"]
+  C3["Post service<br/>Owns durable post and visibility state"]
+  C4["Graph service<br/>Stores follow relationships"]
+  C5["Fan-out pipeline<br/>Builds candidate inboxes asynchronously"]
+  C6["Feed service<br/>Ranks and merges feed candidates"]
+  C7[("Search index<br/>Serves lexical and vector discovery")]
+  C8["Moderation service<br/>Applies rules, models, and appeal state"]
+  C1 --> C2 --> C3
+  C3 --> C4
+  C3 -. publish .-> C5 --> C6
+  C6 --> C4
+  C6 --> C7
+  C3 --> C8
+  C8 -. visibility decision .-> C6
 ```
+
+### Container component roles
+
+| Component | Role |
+|---|---|
+| Web and mobile clients | Create posts and read conversations. |
+| API edge | Authenticates, limits, and routes traffic. |
+| Post service | Owns durable post and visibility state. |
+| Graph service | Stores follow relationships. |
+| Fan-out pipeline | Builds candidate inboxes asynchronously. |
+| Feed service | Ranks and merges feed candidates. |
+| Search index | Serves lexical and vector discovery. |
+| Moderation service | Applies rules, models, and appeal state. |
 
 ## 7. Component deep dive
 

@@ -9,7 +9,7 @@ aiFocus: [recrawl priority prediction, page classification]
 tags: [crawler, distributed-systems, dedup, scheduling]
 ---
 
-_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
+_Follows the [System Design Template](../00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 
@@ -17,7 +17,26 @@ Design a distributed crawler that discovers, fetches, and stores billions of URL
 
 ## 2. Requirements and scope
 
-**Functional:** accept seed URLs, discover outlinks, honor robots.txt/sitemaps, fetch and store pages, dedupe exact and near-duplicate content, prioritize recrawl by freshness. **Non-functional:** sustain 10B page fetches/month, bound per-host request rate, bound frontier memory, survive crawler traps (infinite pagination, session-ID loops). Exclude full JS-SPA rendering at scale (headless rendering only for a flagged subset) and downstream search ranking/serving.
+### Functional requirements
+
+| ID | Requirement | Priority | Interview significance |
+|---|---|---|---|
+| FR-1 | The system must submit seeds and policy for discoverable URLs. | Must | Defines the authoritative synchronous command boundary and its invariants. |
+| FR-2 | The system must inspect crawl status, freshness, and indexed results. | Must | Defines the dominant read path, caches, indexes, and acceptable staleness. |
+| FR-3 | The system must schedule polite fetches, parse content, deduplicate, and update the index. | Must | Separates durable acceptance from retryable fan-out and derived work. |
+| FR-4 | The system must control allowlists, robots policy, egress, retries, and recrawl priority. | Should | Requires versioned configuration, least privilege, audit, and rollback. |
+
+### Non-functional requirements
+
+| Quality | Measurable target | Why it matters | Architecture consequence |
+|---|---|---|---|
+| Latency | fresh high-priority pages within minutes while respecting host budgets | Users experience this path directly. | Keep the critical path local, bounded, and independently scalable. |
+| Availability | frontier and checkpoints survive worker or zone loss without duplicate storms | A partial infrastructure failure must have an explicit outcome. | Spread workloads across failure zones and define degradation before failover. |
+| Correctness | robots, per-host politeness, canonicalization, and content deduplication are enforced | The system is not useful if its central invariant can be violated. | Use idempotency, ownership epochs, transactions, leases, or version checks where required. |
+| Peak scale | coordinate billions of URLs with bounded per-host concurrency | Peak traffic and skew determine partitions and isolation. | Partition by the domain ownership key, autoscale on work, and reserve burst headroom. |
+| Security and privacy | sandbox parsers, block private-network SSRF, isolate egress, and treat fetched content as untrusted | Abuse or data disclosure can outweigh availability. | Authenticate at the edge, authorize at the data boundary, encrypt, minimize, and audit. |
+
+**Scope exclusions:** bypassing robots or authentication and executing arbitrary page instructions. **Assumptions:** DNS and HTTP are adversarial, fetch work is at-least-once, and indexing tolerates bounded delay.
 
 ## 3. Capacity estimate
 
@@ -34,31 +53,56 @@ At 10B pages/month, average throughput is ~3,860 fetches/s with bursty peaks nea
 ```mermaid
 flowchart LR
   accTitle: Web crawler system context
-  accDescr: Operators seed the crawler, which fetches from target web hosts subject to DNS resolution and a legal or safety blocklist, and feeds a downstream indexer.
-  Operator --> Crawler[Crawl platform]
-  Crawler --> Hosts[Target web hosts]
-  Crawler --> DNS[DNS resolver]
-  Crawler --> Blocklist[Legal and safety blocklist feed]
-  Crawler --> Indexer[Downstream search indexer]
+  accDescr: Human and system actors use Web crawler, which integrates with explicitly bounded external capabilities.
+  A1["Search operator<br/>Supplies seeds, policy, and priorities"] --> System
+  A2["Index consumer<br/>Reads fresh normalized documents"] --> System
+  System["Web crawler<br/>Owns the product capability and domain guarantees"]
+  System --> E1["Public websites<br/>Expose robots rules and crawlable content"]
+  System --> E2["DNS resolver<br/>Resolves hosts through controlled egress"]
 ```
+
+### Context component roles
+
+| Component | Role |
+|---|---|
+| Search operator | Supplies seeds, policy, and priorities. |
+| Index consumer | Reads fresh normalized documents. |
+| Web crawler | Owns the product boundary, core policy, and durable outcome. |
+| Public websites | Expose robots rules and crawlable content. |
+| DNS resolver | Resolves hosts through controlled egress. |
 
 ## 6. Container architecture
 
 ```mermaid
 flowchart TB
   accTitle: Web crawler container architecture
-  accDescr: A sharded frontier and scheduler enforce politeness before fetcher workers pull pages, deduplicate content, extract links, and feed indexing and a priority model.
-  Frontier[(Sharded frontier, by host)] --> Scheduler[Politeness scheduler]
-  Scheduler --> Robots[(Robots.txt cache)]
-  Scheduler --> Fetchers[Fetcher worker pool]
-  Fetchers --> Dedup[Dedup service: URL and simhash]
-  Dedup --> Store[(Content store)]
-  Store --> Extractor[Link extractor]
-  Extractor --> Frontier
-  Store --> Indexer[Indexing pipeline]
-  Fetchers --> Priority[Recrawl priority model]
-  Priority --> Frontier
+  accDescr: Deployable components separate the critical request, durable state, asynchronous work, and bounded AI path.
+  C1["Seed API<br/>Accepts crawl scope and priority"]
+  C2[("URL frontier<br/>Partitions canonical URLs and next-fetch time")]
+  C3["Politeness scheduler<br/>Enforces per-host budgets and robots"]
+  C4["Fetcher pool<br/>Uses isolated public egress"]
+  C5["Parser sandbox<br/>Extracts text, metadata, and links safely"]
+  C6[("Dedup store<br/>Rejects duplicate URL and content fingerprints")]
+  C7[("Document stream<br/>Decouples indexing and recrawl signals")]
+  C8["Search indexer<br/>Publishes searchable documents"]
+  C1 --> C2 --> C3 --> C4 --> C5
+  C5 --> C6
+  C5 -. document .-> C7 --> C8
+  C5 -. discovered URL .-> C2
 ```
+
+### Container component roles
+
+| Component | Role |
+|---|---|
+| Seed API | Accepts crawl scope and priority. |
+| URL frontier | Partitions canonical URLs and next-fetch time. |
+| Politeness scheduler | Enforces per-host budgets and robots. |
+| Fetcher pool | Uses isolated public egress. |
+| Parser sandbox | Extracts text, metadata, and links safely. |
+| Dedup store | Rejects duplicate URL and content fingerprints. |
+| Document stream | Decouples indexing and recrawl signals. |
+| Search indexer | Publishes searchable documents. |
 
 ## 7. Component deep dive
 

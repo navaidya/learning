@@ -31,9 +31,26 @@ Restate the one-line prompt you were given, in your own words, before doing anyt
 
 ## 2. Requirements and scope
 
-Split into **functional** (what the system does — the verbs: create, request, match, charge, notify) and **non-functional** (the qualities it must have — latency, availability, consistency, read/write ratio). State what's explicitly *out* of scope; naming an exclusion is as valuable as naming an inclusion.
+### Functional requirements
 
-> **What's being evaluated:** scoping discipline. A senior signal is proposing to exclude something reasonable ("I'll assume single-currency, no refunds v1") and defending why — not silently assuming it, and not trying to design everything.
+| ID | Requirement | Priority | Interview significance |
+|---|---|---|---|
+| FR-1 | The system must define the primary user command and its success response. | Must | Defines the authoritative synchronous command boundary and its invariants. |
+| FR-2 | The system must define the dominant read or realtime experience. | Must | Defines the dominant read path, caches, indexes, and acceptable staleness. |
+| FR-3 | The system must name every event-driven side effect and its delivery contract. | Must | Separates durable acceptance from retryable fan-out and derived work. |
+| FR-4 | The system must configure policy and inspect auditable outcomes. | Should | Requires versioned configuration, least privilege, audit, and rollback. |
+
+### Non-functional requirements
+
+| Quality | Measurable target | Why it matters | Architecture consequence |
+|---|---|---|---|
+| Latency | State a measurable p99 target for the critical request | Users experience this path directly. | Keep the critical path local, bounded, and independently scalable. |
+| Availability | State an explicit availability or durability objective | A partial infrastructure failure must have an explicit outcome. | Spread workloads across failure zones and define degradation before failover. |
+| Correctness | Identify the invariant that must never be violated | The system is not useful if its central invariant can be violated. | Use idempotency, ownership epochs, transactions, leases, or version checks where required. |
+| Peak scale | Quantify average and peak QPS, bandwidth, and storage growth | Peak traffic and skew determine partitions and isolation. | Partition by the domain ownership key, autoscale on work, and reserve burst headroom. |
+| Security and privacy | Classify sensitive data and enforce least-privilege access | Abuse or data disclosure can outweigh availability. | Authenticate at the edge, authorize at the data boundary, encrypt, minimize, and audit. |
+
+**Scope exclusions:** features not required to demonstrate the central architecture and vendor-specific implementation details. **Assumptions:** the interviewer will confirm actors, scale, consistency, geography, retention, and compliance before architecture selection.
 
 ## 3. Capacity estimate
 
@@ -49,34 +66,58 @@ Define the handful of endpoints/RPCs that matter, with request/response shapes. 
 
 ## 5. System context
 
-One diagram: the system as a single box, its human/system actors, and its external dependencies. Nothing internal yet.
-
 ```mermaid
 flowchart LR
-  accTitle: Generic system context
-  accDescr: Two actor types interact with the system, which depends on one or more external providers.
-  ActorA[Primary actor] --> System((The System))
-  ActorB[Secondary actor] --> System
-  System --> Ext[External dependency]
+  accTitle: System under design system context
+  accDescr: Human and system actors use System under design, which integrates with explicitly bounded external capabilities.
+  A1["Primary actor<br/>Issues the critical command and consumes its result"] --> System
+  A2["Secondary actor<br/>Uses the dominant read or collaboration path"] --> System
+  System["System under design<br/>Owns the product capability and domain guarantees"]
+  System --> E1["External dependency<br/>Provides a capability outside the system boundary"]
 ```
 
-> **What's being evaluated:** whether you can zoom out before zooming in. This diagram is usually what an interviewer wants to see within the first 5-10 minutes — skipping straight to internals is a common and costly mistake.
+### Context component roles
+
+| Component | Role |
+|---|---|
+| Primary actor | Issues the critical command and consumes its result. |
+| Secondary actor | Uses the dominant read or collaboration path. |
+| System under design | Owns the product boundary, core policy, and durable outcome. |
+| External dependency | Provides a capability outside the system boundary. |
 
 ## 6. Container architecture
 
-Open the box. Show the real, deployable pieces — services, caches, queues, databases — and how they connect. This is where the read/write ratio and the capacity numbers from section 3 start dictating actual boxes (a cache exists because of a QPS number, not by default).
-
 ```mermaid
 flowchart TB
-  accTitle: Generic container architecture
-  accDescr: Clients reach a stateless service layer through an edge, which reads from a cache backed by a database and emits events asynchronously.
-  Client --> Edge[API edge] --> Service[Stateless service layer]
-  Service --> Cache[(Cache)]
-  Service --> DB[(Database)]
-  Service -. async .-> Bus[(Event bus)] --> Downstream[Downstream consumers]
+  accTitle: System under design container architecture
+  accDescr: Deployable components separate the critical request, durable state, asynchronous work, and bounded AI path.
+  C1["Client<br/>Initiates commands and reads"]
+  C2["Edge<br/>Authenticates, protects, and routes traffic"]
+  C3["Core service<br/>Enforces domain rules and invariants"]
+  C4[("Cache<br/>Accelerates safe repeat reads")]
+  C5[("Database<br/>Owns durable system-of-record state")]
+  C6[("Event stream<br/>Decouples committed side effects")]
+  C7["Workers<br/>Process retryable asynchronous work"]
+  C8["AI gateway<br/>Adds bounded advisory inference"]
+  C1 --> C2 --> C3
+  C3 --> C4
+  C3 --> C5
+  C3 -. committed work .-> C6 --> C7
+  C3 -. bounded advice .-> C8
 ```
 
-> **What's being evaluated:** whether every box traces back to a requirement or a number. If you can't say *why* a box exists, an interviewer will ask, and "because that's standard" is not an answer that survives a follow-up.
+### Container component roles
+
+| Component | Role |
+|---|---|
+| Client | Initiates commands and reads. |
+| Edge | Authenticates, protects, and routes traffic. |
+| Core service | Enforces domain rules and invariants. |
+| Cache | Accelerates safe repeat reads. |
+| Database | Owns durable system-of-record state. |
+| Event stream | Decouples committed side effects. |
+| Workers | Process retryable asynchronous work. |
+| AI gateway | Adds bounded advisory inference. |
 
 ## 7. Component deep dive
 

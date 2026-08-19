@@ -9,7 +9,7 @@ aiFocus: [bot and scalper detection, queue fairness anomaly scoring]
 tags: [ticketing, flash-sale, concurrency, queueing, machine-learning]
 ---
 
-_Follows the [System Design Template](/system-design/00-system-design-template) — the reusable method behind every design in this library._
+_Follows the [System Design Template](../00-system-design-template) — the reusable method behind every design in this library._
 
 ## 1. Interview prompt
 
@@ -17,7 +17,26 @@ Design a ticketing platform for on-sale events where demand can exceed inventory
 
 ## 2. Requirements and scope
 
-**Functional:** browse events, join a waiting room at on-sale time, select/hold seats, checkout, refund/transfer tickets. **Non-functional:** zero double-booking of a seat, predictable admission order, checkout availability even at 100x baseline load, sub-minute seat hold expiry. Exclude dynamic resale marketplace pricing and physical box-office integration.
+### Functional requirements
+
+| ID | Requirement | Priority | Interview significance |
+|---|---|---|---|
+| FR-1 | The system must publish events, admit buyers, hold seats, purchase, transfer, and refund tickets. | Must | Defines the authoritative synchronous command boundary and its invariants. |
+| FR-2 | The system must browse events, seat maps, availability, queue position, and ticket state. | Must | Defines the dominant read path, caches, indexes, and acceptable staleness. |
+| FR-3 | The system must expire holds, settle payment, issue tickets, notify buyers, and detect abuse. | Must | Separates durable acceptance from retryable fan-out and derived work. |
+| FR-4 | The system must manage onsales, venue inventory, fraud, disputes, and incident controls. | Should | Requires versioned configuration, least privilege, audit, and rollback. |
+
+### Non-functional requirements
+
+| Quality | Measurable target | Why it matters | Architecture consequence |
+|---|---|---|---|
+| Latency | admitted seat selection p99 below 300 ms during onsale | Users experience this path directly. | Keep the critical path local, bounded, and independently scalable. |
+| Availability | waiting room and browse remain available while purchase correctness is protected | A partial infrastructure failure must have an explicit outcome. | Spread workloads across failure zones and define degradation before failover. |
+| Correctness | one active lease or sale per seat with no oversell and no duplicate capture | The system is not useful if its central invariant can be violated. | Use idempotency, ownership epochs, transactions, leases, or version checks where required. |
+| Peak scale | absorb extreme onsale bursts and hot-event concentration | Peak traffic and skew determine partitions and isolation. | Partition by the domain ownership key, autoscale on work, and reserve burst headroom. |
+| Security and privacy | bot resistance, signed admission tokens, account protection, ticket authenticity, and payment tokenization | Abuse or data disclosure can outweigh availability. | Authenticate at the edge, authorize at the data boundary, encrypt, minimize, and audit. |
+
+**Scope exclusions:** venue access hardware and secondary-market price optimization. **Assumptions:** each event is a consistency partition, admission is controlled, and AI cannot bypass seat or payment invariants.
 
 ## 3. Capacity estimate
 
@@ -33,30 +52,59 @@ A single high-demand on-sale (e.g., 50k-seat stadium) can see 5M concurrent queu
 
 ```mermaid
 flowchart LR
-  accTitle: Event ticketing system context
-  accDescr: Fans join a waiting room and book seats through the platform, which integrates with payment and bot-detection providers.
-  Fan --> Platform[Ticketing platform]
-  Venue --> Platform
-  Platform --> PSP[Payment provider]
-  Platform --> BotDefense[Bot/CAPTCHA provider]
+  accTitle: Event ticketing platform system context
+  accDescr: Human and system actors use Event ticketing platform, which integrates with explicitly bounded external capabilities.
+  A1["Buyer<br/>Queues, selects, purchases, and presents tickets"] --> System
+  A2["Organizer<br/>Publishes event and inventory"] --> System
+  A3["Operations agent<br/>Controls incidents, fraud, and refunds"] --> System
+  System["Event ticketing platform<br/>Owns the product capability and domain guarantees"]
+  System --> E1["Payment provider<br/>Authorizes and captures purchases"]
+  System --> E2["Venue scanner<br/>Validates signed ticket presentation"]
 ```
+
+### Context component roles
+
+| Component | Role |
+|---|---|
+| Buyer | Queues, selects, purchases, and presents tickets. |
+| Organizer | Publishes event and inventory. |
+| Operations agent | Controls incidents, fraud, and refunds. |
+| Event ticketing platform | Owns the product boundary, core policy, and durable outcome. |
+| Payment provider | Authorizes and captures purchases. |
+| Venue scanner | Validates signed ticket presentation. |
 
 ## 6. Container architecture
 
 ```mermaid
 flowchart TB
-  accTitle: Event ticketing container architecture
-  accDescr: Waiting room, admission controller, seat inventory, order, and bot detection components are separated to shed load before the booking critical section.
-  Fans --> Edge[Edge / CDN]
-  Edge --> Queue[Waiting room service] --> QStore[(Queue token store)]
-  Queue --> Admission[Admission controller]
-  Admission --> Booking[Booking API]
-  Booking --> Seats[(Seat inventory - conditional writes)]
-  Booking --> Order[Order service]
-  Order --> Bus[(Event log)]
-  Bus --> Payment[Payment service]
-  Booking --> BotScore[Bot detection gateway]
+  accTitle: Event ticketing platform container architecture
+  accDescr: Deployable components separate the critical request, durable state, asynchronous work, and bounded AI path.
+  C1["Waiting room<br/>Absorbs burst and issues signed admission"]
+  C2["Storefront API<br/>Serves event and seat-map reads"]
+  C3["Inventory service<br/>Owns seat state and leases"]
+  C4["Reservation service<br/>Creates expiring buyer holds"]
+  C5["Checkout saga<br/>Coordinates hold and payment"]
+  C6["Ticket issuer<br/>Creates signed transferable tickets"]
+  C7[("Event stream<br/>Drives expiration, notifications, and audit")]
+  C8["Abuse detector<br/>Scores bots without granting admission"]
+  C1 --> C2 --> C3 --> C4 --> C5
+  C5 --> C6
+  C4 -. lifecycle event .-> C7
+  C8 -. restriction only .-> C2
 ```
+
+### Container component roles
+
+| Component | Role |
+|---|---|
+| Waiting room | Absorbs burst and issues signed admission. |
+| Storefront API | Serves event and seat-map reads. |
+| Inventory service | Owns seat state and leases. |
+| Reservation service | Creates expiring buyer holds. |
+| Checkout saga | Coordinates hold and payment. |
+| Ticket issuer | Creates signed transferable tickets. |
+| Event stream | Drives expiration, notifications, and audit. |
+| Abuse detector | Scores bots without granting admission. |
 
 ## 7. Component deep dive
 
