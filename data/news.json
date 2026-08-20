@@ -1,5 +1,24 @@
 [
   {
+    "id": "kubernetes-releases-dbd5f4fee98c",
+    "title": "v1.37.0-rc.1",
+    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
+    "source": "Kubernetes Releases",
+    "sourceId": "kubernetes-releases",
+    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.0-rc.1",
+    "publishedDate": "2026-08-20T02:44:01.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes-releases",
+    "releaseVersion": "v1.37.0-rc.1"
+  },
+  {
     "id": "crossplane-58b7ae4e1f5b",
     "title": "apis/v2.4.0",
     "summary": "Release v2.4.0",

@@ -1,5 +1,13 @@
 [
   {
+    "project": "kubernetes-releases",
+    "version": "v1.37.0-rc.1",
+    "publishedDate": "2026-08-20T02:44:01.000Z",
+    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.0-rc.1",
+    "sourceId": "kubernetes-releases",
+    "title": "v1.37.0-rc.1"
+  },
+  {
     "project": "crossplane",
     "version": "v2.4.0",
     "publishedDate": "2026-08-20T00:40:39.000Z",
@@ -158,14 +166,6 @@
     "url": "https://github.com/fluxcd/flux2/releases/tag/v2.9.4",
     "sourceId": "flux",
     "title": "v2.9.4"
-  },
-  {
-    "project": "kubernetes-releases",
-    "version": "v1.37.0-rc.0",
-    "publishedDate": "2026-08-06T12:04:57.000Z",
-    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.0-rc.0",
-    "sourceId": "kubernetes-releases",
-    "title": "v1.37.0-rc.0"
   },
   {
     "project": "cncf",
