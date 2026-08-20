@@ -1,5 +1,81 @@
 [
   {
+    "id": "kubernetes-releases-9b849e2d008a",
+    "title": "v1.35.8",
+    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
+    "source": "Kubernetes Releases",
+    "sourceId": "kubernetes-releases",
+    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.35.8",
+    "publishedDate": "2026-08-20T18:59:55.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes-releases",
+    "releaseVersion": "v1.35.8"
+  },
+  {
+    "id": "kubernetes-releases-34039fa5f983",
+    "title": "v1.34.11",
+    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
+    "source": "Kubernetes Releases",
+    "sourceId": "kubernetes-releases",
+    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.34.11",
+    "publishedDate": "2026-08-20T18:45:38.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes-releases",
+    "releaseVersion": "v1.34.11"
+  },
+  {
+    "id": "cncf-e1a855057d57",
+    "title": "Announcing H1 2027 KCDs",
+    "summary": "Get ready to connect, learn, and innovate right in your backyard. Kubernetes Community Days (KCDs) are officially kicking off for H1! Supported by the Cloud Native Computing Foundation (CNCF), these community-organized events bring open source adopters...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/08/20/announcing-h1-2027-kcds/",
+    "publishedDate": "2026-08-20T16:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "crossplane-fb20888ef904",
+    "title": "v2.4.0",
+    "summary": "The v2.4.0 release is a regular quarterly Crossplane release that is focused on maturing a number of key areas of functionality across the project, as Crossplane continues to become more capable, more reliable, and more performant for your production workloads. This release includes the ability to watch required resources and reconcile XRs immediately when they change, scale to zero for safe-start capable providers, release artifacts that are vulnerability scannable, and a wide range of fixes an",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.0",
+    "publishedDate": "2026-08-20T14:42:33.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.4.0"
+  },
+  {
     "id": "backstage-ebf08ccb6348",
     "title": "v1.54.1",
     "summary": "v1.54.1",
@@ -159,26 +235,6 @@
     "sourceId": "crossplane",
     "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.4.0",
     "publishedDate": "2026-08-20T00:40:39.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v2.4.0"
-  },
-  {
-    "id": "crossplane-fb20888ef904",
-    "title": "v2.4.0",
-    "summary": "Release v2.4.0",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.0",
-    "publishedDate": "2026-08-20T00:40:38.000Z",
     "domain": "platform-engineering",
     "topics": [
       "crossplane",
