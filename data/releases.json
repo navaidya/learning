@@ -1,5 +1,21 @@
 [
   {
+    "project": "crossplane",
+    "version": "v2.4.0",
+    "publishedDate": "2026-08-20T00:40:39.000Z",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.4.0",
+    "sourceId": "crossplane",
+    "title": "apis/v2.4.0"
+  },
+  {
+    "project": "pulumi",
+    "version": "v3.259.0",
+    "publishedDate": "2026-08-19T20:04:11.000Z",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.259.0",
+    "sourceId": "pulumi",
+    "title": "v3.259.0"
+  },
+  {
     "project": "oci-oke",
     "version": "v8.28.0",
     "publishedDate": "2026-08-19T15:13:38.000Z",
@@ -64,14 +80,6 @@
     "title": "3.14.0 / 2026-08-17"
   },
   {
-    "project": "pulumi",
-    "version": "v3.258.0",
-    "publishedDate": "2026-08-18T06:42:41.000Z",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.258.0",
-    "sourceId": "pulumi",
-    "title": "pkg/v3.258.0: Changelog and go.mod updates for v3.258.0 (#24355)"
-  },
-  {
     "project": "opentelemetry-collector",
     "version": "v1.65.0",
     "publishedDate": "2026-08-17T17:37:33.000Z",
@@ -86,14 +94,6 @@
     "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.39.1-alpha",
     "sourceId": "holmesgpt",
     "title": "0.39.1-alpha"
-  },
-  {
-    "project": "crossplane",
-    "version": "v2.4.0-rc.1",
-    "publishedDate": "2026-08-14T16:06:42.000Z",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.0-rc.1",
-    "sourceId": "crossplane",
-    "title": "v2.4.0-rc.1"
   },
   {
     "project": "helm",

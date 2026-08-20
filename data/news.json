@@ -1,5 +1,64 @@
 [
   {
+    "id": "crossplane-58b7ae4e1f5b",
+    "title": "apis/v2.4.0",
+    "summary": "Release v2.4.0",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.4.0",
+    "publishedDate": "2026-08-20T00:40:39.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.4.0"
+  },
+  {
+    "id": "crossplane-fb20888ef904",
+    "title": "v2.4.0",
+    "summary": "Release v2.4.0",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.0",
+    "publishedDate": "2026-08-20T00:40:38.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.4.0"
+  },
+  {
+    "id": "pulumi-237ba56fa11f",
+    "title": "v3.259.0",
+    "summary": "3.259.0 (2026-08-19) Features [cli/new] Show a single confirmation of project, stack, and config defaults in interactive pulumi new instead of prompting for each value #24223 [cli] Introduce PULUMI_DEFAULT_ORGANIZATION to be able to set the default org #24384 Bug Fixes [cli/stack] Announce Created stack when creating a stack against the Pulumi Cloud backend #24280 [cli] Retry pulumi neo cancellation requests that the service rejects and keep Esc responsive instead of showing \"Cancelling...\" fore",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.259.0",
+    "publishedDate": "2026-08-19T20:04:11.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.259.0"
+  },
+  {
     "id": "openai-e396b6baa03e",
     "title": "Offering Zero Data Retention for frontier models",
     "summary": "OpenAI reaffirms Zero Data Retention for eligible API customers and previews Private Safety Processing for advanced AI safety without compromising data privacy.",
@@ -16,6 +75,43 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
+  },
+  {
+    "id": "openai-ef913e9fdabc",
+    "title": "Offering Zero Data Retention for frontier models",
+    "summary": "OpenAI reaffirms Zero Data Retention for eligible API customers and previews Private Safety Processing for advanced AI safety without compromising data privacy.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
+    "publishedDate": "2026-08-19T19:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "pulumi-a7aaa409eb91",
+    "title": "sdk/v3.259.0: Collapse guided `pulumi new` prompts into a single confirmation (#24223)",
+    "summary": "What Guided interactive pulumi new shows the proposed project name, description, stack name, and resolved config in a single confirmation block and asks Do these look good?, instead of prompting for each value one question at a time. pulumi-new-demo.mp4 Why Nearly every prompt in the guided flow has a sensible default, so the common path is pressing Enter repeatedly. One confirmation lets that path finish in a single keystroke while keeping every value editable for anyone who wants to change som",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.259.0",
+    "publishedDate": "2026-08-19T16:51:55.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.259.0"
   },
   {
     "id": "oci-oke-cf0f0ec1f144",
@@ -7967,24 +8063,6 @@
     "domain": "kubernetes",
     "topics": [
       "kubernetes"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "openai-ef1db9edff97",
-    "title": "OpenAI named a Leader in enterprise coding agents by Gartner",
-    "summary": "OpenAI is named a leader in the 2026 Gartner Magic Quadrant for Enterprise AI Coding Agents, with Codex recognized for innovation and enterprise-scale deployment.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/gartner-2026-agentic-coding-leader",
-    "publishedDate": "2026-05-22T00:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
     ],
     "importance": "medium",
     "architectureShift": false,
