@@ -1,5 +1,138 @@
 [
   {
+    "id": "backstage-ebf08ccb6348",
+    "title": "v1.54.1",
+    "summary": "v1.54.1",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.1",
+    "publishedDate": "2026-08-20T13:08:39.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.54.1"
+  },
+  {
+    "id": "cncf-bdb8c32a8c7d",
+    "title": "German ciphers, telegrams, and cloud native data sovereignty",
+    "summary": "A lesson from 1917 In January 1917, Germany sent a secret telegram. It went to Mexico. The offer: join the war against the United States, and you can have Texas, Arizona and New Mexico back. The...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/08/20/german-ciphers-telegrams-and-cloud-native-data-sovereignty/",
+    "publishedDate": "2026-08-20T13:00:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "kubernetes-releases-bd6bd0529528",
+    "title": "v1.36.4",
+    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
+    "source": "Kubernetes Releases",
+    "sourceId": "kubernetes-releases",
+    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.36.4",
+    "publishedDate": "2026-08-20T11:48:16.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes-releases",
+    "releaseVersion": "v1.36.4"
+  },
+  {
+    "id": "kyverno-8677fe0f2f2c",
+    "title": "v1.19.0",
+    "summary": "What's Changed fix: limit intermediate certs to mitigate CVE-2026-32280 by @atharrva01 in #15858 ci: fix cosign releaser step by @lucchmielowski in #15932 chore(deps): bump github.com/rs/zerolog from 1.35.0 to 1.35.1 by @dependabot[bot] in #15917 Feat/cli apply cross resource by @SargamPuram in #15846 automate stale PR updates by @JimBugwadia in #15942 fix: revert 15880 - support httpAllowList and httpBlockList for cluster-scoped policies by @JimBugwadia in #15960 fix permissions for pr-branch-u",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.0",
+    "publishedDate": "2026-08-20T09:50:19.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno",
+    "releaseVersion": "v1.19.0"
+  },
+  {
+    "id": "kyverno-46b606c61355",
+    "title": "kyverno-chart-3.9.0",
+    "summary": "kyverno-chart-3.9.0",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-chart-3.9.0",
+    "publishedDate": "2026-08-20T08:53:56.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno"
+  },
+  {
+    "id": "kyverno-46dc84a0fb23",
+    "title": "kyverno-policies-chart-3.9.0",
+    "summary": "kyverno-policies-chart-3.9.0",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-policies-chart-3.9.0",
+    "publishedDate": "2026-08-20T08:53:39.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno"
+  },
+  {
+    "id": "pulumi-5a3174a3cad9",
+    "title": "pkg/v3.259.0: Changelog and go.mod updates for v3.259.0 (#24398)",
+    "summary": "Co-authored-by: github-actions github-actions@github.com",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.259.0",
+    "publishedDate": "2026-08-20T08:44:10.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.259.0"
+  },
+  {
     "id": "kubernetes-releases-dbd5f4fee98c",
     "title": "v1.37.0-rc.1",
     "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
