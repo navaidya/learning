@@ -1,11 +1,11 @@
 [
   {
     "project": "crossplane",
-    "version": "v2.4.0",
-    "publishedDate": "2026-08-20T21:04:00.000Z",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.0",
+    "version": "v1.20.12",
+    "publishedDate": "2026-08-21T17:24:11.000Z",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v1.20.12",
     "sourceId": "crossplane",
-    "title": "v2.4.0"
+    "title": "v1.20.12"
   },
   {
     "project": "kubernetes-releases",

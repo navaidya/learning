@@ -1,5 +1,85 @@
 [
   {
+    "id": "crossplane-97b7caf289fa",
+    "title": "v1.20.12",
+    "summary": "v1.20.12 is a patch release scoped to fixing issues reported by users of Crossplane v1.20 and fixing security related issues in Crossplane's dependencies. 🎉 Highlights Dependency security updates: Bumps the Go toolchain to 1.25.13 (#7755), go-git (#7722), and golang.org/x/mod (#7740), plus two combined sets of vulnerable dependency updates (#7646, #7675), to pick up upstream CVE fixes. crossplane-runtime is also bumped to v1.20.11 (#7767), which carries its own set of security dependency update",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v1.20.12",
+    "publishedDate": "2026-08-21T17:24:11.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v1.20.12"
+  },
+  {
+    "id": "crossplane-6b8f4113a529",
+    "title": "v2.2.5",
+    "summary": "v2.2.5 is a patch release scoped to fixing issues reported by users of Crossplane v2.2 and fixing security related issues in Crossplane's dependencies. 🎉 Highlights Correct crank checksums for amd64 binaries (#7665, originally #7660): The published .sha256 files for linux_amd64 binaries had not matched the binaries themselves since v2.2.0, so any install script or Dockerfile that verified the amd64 checksum failed. Checksums are now calculated after Nix strips the binary, and the release workfl",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.2.5",
+    "publishedDate": "2026-08-21T17:21:51.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.2.5"
+  },
+  {
+    "id": "crossplane-81c63d552ef9",
+    "title": "v2.3.5",
+    "summary": "v2.3.5 is a patch release scoped to fixing issues reported by users of Crossplane v2.3 and fixing security related issues in Crossplane's dependencies. 🎉 Highlights Correct crank checksums for amd64 binaries (#7666, originally #7660): The published .sha256 files for linux_amd64 binaries had not matched the binaries themselves since v2.2.0, so any install script or Dockerfile that verified the amd64 checksum failed. Checksums are now calculated after Nix strips the binary, and the release workfl",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.3.5",
+    "publishedDate": "2026-08-21T17:17:39.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.3.5"
+  },
+  {
+    "id": "crossplane-8c644b3153e8",
+    "title": "apis/v2.3.5",
+    "summary": "Release v2.3.5",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.3.5",
+    "publishedDate": "2026-08-21T16:08:41.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.3.5"
+  },
+  {
     "id": "cncf-9d40b4b64bb1",
     "title": "How to turn slow queries into actionable reliability metrics with OpenTelemetry",
     "summary": "Slow SQL queries degrade user experience, cause cascading failures, and turn simple operations into production incidents. The traditional fix? Collect more telemetry. But more telemetry means more things to look at, not necessarily more understanding. Instead...",
