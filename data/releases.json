@@ -1,19 +1,19 @@
 [
   {
+    "project": "crossplane",
+    "version": "v2.4.0",
+    "publishedDate": "2026-08-20T21:04:00.000Z",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.0",
+    "sourceId": "crossplane",
+    "title": "v2.4.0"
+  },
+  {
     "project": "kubernetes-releases",
     "version": "v1.35.8",
     "publishedDate": "2026-08-20T18:59:55.000Z",
     "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.35.8",
     "sourceId": "kubernetes-releases",
     "title": "v1.35.8"
-  },
-  {
-    "project": "crossplane",
-    "version": "v2.4.0",
-    "publishedDate": "2026-08-20T14:42:33.000Z",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.0",
-    "sourceId": "crossplane",
-    "title": "v2.4.0"
   },
   {
     "project": "backstage",

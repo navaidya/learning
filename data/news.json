@@ -1,5 +1,25 @@
 [
   {
+    "id": "crossplane-fb20888ef904",
+    "title": "v2.4.0",
+    "summary": "The v2.4.0 release is a regular quarterly Crossplane release that is focused on maturing a number of key areas of functionality across the project, as Crossplane continues to become more capable, more reliable, and more performant for your production workloads. This release includes the ability to watch required resources and reconcile XRs immediately when they change, scale to zero for safe-start capable providers, release artifacts that are vulnerability scannable, and a wide range of fixes an",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.0",
+    "publishedDate": "2026-08-20T21:04:00.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.4.0"
+  },
+  {
     "id": "kubernetes-releases-9b849e2d008a",
     "title": "v1.35.8",
     "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
@@ -54,26 +74,6 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "crossplane-fb20888ef904",
-    "title": "v2.4.0",
-    "summary": "The v2.4.0 release is a regular quarterly Crossplane release that is focused on maturing a number of key areas of functionality across the project, as Crossplane continues to become more capable, more reliable, and more performant for your production workloads. This release includes the ability to watch required resources and reconcile XRs immediately when they change, scale to zero for safe-start capable providers, release artifacts that are vulnerability scannable, and a wide range of fixes an",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.0",
-    "publishedDate": "2026-08-20T14:42:33.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v2.4.0"
   },
   {
     "id": "backstage-ebf08ccb6348",
