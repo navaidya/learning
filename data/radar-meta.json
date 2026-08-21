@@ -1,8 +1,7 @@
 {
-  "collectedAt": "2026-08-21T02:37:27.840Z",
+  "collectedAt": "2026-08-21T07:59:26.224Z",
   "sourceIds": [
     "cncf",
-    "kubernetes",
     "opentelemetry",
     "prometheus",
     "grafana",
@@ -34,6 +33,8 @@
     "mcp-spec",
     "robusta"
   ],
-  "failedSourceIds": [],
+  "failedSourceIds": [
+    "kubernetes"
+  ],
   "itemCount": 426
 }
