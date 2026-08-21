@@ -1,5 +1,23 @@
 [
   {
+    "id": "cncf-9d40b4b64bb1",
+    "title": "How to turn slow queries into actionable reliability metrics with OpenTelemetry",
+    "summary": "Slow SQL queries degrade user experience, cause cascading failures, and turn simple operations into production incidents. The traditional fix? Collect more telemetry. But more telemetry means more things to look at, not necessarily more understanding. Instead...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/08/21/how-to-turn-slow-queries-into-actionable-reliability-metrics-with-opentelemetry/",
+    "publishedDate": "2026-08-21T11:00:00.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "crossplane-fb20888ef904",
     "title": "v2.4.0",
     "summary": "The v2.4.0 release is a regular quarterly Crossplane release that is focused on maturing a number of key areas of functionality across the project, as Crossplane continues to become more capable, more reliable, and more performant for your production workloads. This release includes the ability to watch required resources and reconcile XRs immediately when they change, scale to zero for safe-start capable providers, release artifacts that are vulnerability scannable, and a wide range of fixes an",
