@@ -1,11 +1,11 @@
 [
   {
     "project": "backstage",
-    "version": "v1.54.2",
-    "publishedDate": "2026-08-22T13:41:12.000Z",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.2",
+    "version": "v1.54.3",
+    "publishedDate": "2026-08-22T14:16:39.000Z",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.3",
     "sourceId": "backstage",
-    "title": "v1.54.2"
+    "title": "v1.54.3"
   },
   {
     "project": "karpenter",

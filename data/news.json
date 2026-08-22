@@ -1,5 +1,25 @@
 [
   {
+    "id": "backstage-fcd344f8a1c0",
+    "title": "v1.54.3",
+    "summary": "This patch release fixes the following issues: Fixed the unintended removal of support for intrinsic string, number, array, Map, and Set methods in software templates.",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.3",
+    "publishedDate": "2026-08-22T14:16:39.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.54.3"
+  },
+  {
     "id": "backstage-9a69f1bf3ff0",
     "title": "v1.54.2",
     "summary": "v1.54.2",
