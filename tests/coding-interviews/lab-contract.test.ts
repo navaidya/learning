@@ -14,6 +14,10 @@ const expectedSlugs = [
   'idempotent-order-api',
   'outbox-event-workflow',
   'microservice-observability-failure-lab',
+  'senior-technical-screen',
+  'first-occurrence-binary-search',
+  'merge-k-sorted-lists',
+  'low-latency-autosuggest',
 ];
 
 type LabGuide = { labPath: string; languages: string[] };
@@ -50,6 +54,9 @@ describe('coding interview runnable lab contract', () => {
       const labDirectory = `${root}${guide.labPath}/`;
       const labFiles = await filesRecursively(labDirectory);
       expect(labFiles).toContain('README.md');
+      const rootReadme = await readFile(`${labDirectory}README.md`, 'utf8');
+      expect(rootReadme, `${guide.labPath} needs a Java entry command`).toContain('cd java');
+      expect(rootReadme, `${guide.labPath} needs a Python entry command`).toContain('cd python');
 
       for (const language of guide.languages) {
         expect(language).toMatch(/^(java|python)$/);

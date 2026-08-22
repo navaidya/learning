@@ -14,6 +14,10 @@ const expectedSlugs = [
   'idempotent-order-api',
   'outbox-event-workflow',
   'microservice-observability-failure-lab',
+  'senior-technical-screen',
+  'first-occurrence-binary-search',
+  'merge-k-sorted-lists',
+  'low-latency-autosuggest',
 ];
 
 const requiredHeadings = [
@@ -68,7 +72,7 @@ function expectNonEmptyStrings(value: unknown, field: string, file: string) {
 }
 
 describe('coding interview guide contract', () => {
-  it('publishes the complete, ordered eight-lab catalog with valid metadata', async () => {
+  it('publishes the complete, ordered twelve-lab catalog with valid metadata', async () => {
     const files = await markdownFiles();
     expect(files.map((file) => file.replace(/\.md$/, ''))).toEqual(expectedSlugs);
 
@@ -77,7 +81,7 @@ describe('coding interview guide contract', () => {
       ...splitMarkdown(await readFile(`${contentDirectory}/${file}`, 'utf8')),
     })));
     const orders = entries.map(({ data }) => data.order);
-    expect(orders).toEqual([1, 2, 3, 4, 5, 6, 7, 8]);
+    expect(orders).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
     expect(new Set(orders).size).toBe(orders.length);
     expect(new Set(files.map((file) => file.replace(/\.md$/, ''))).size).toBe(files.length);
 
@@ -110,6 +114,15 @@ describe('coding interview guide contract', () => {
       for (const heading of requiredHeadings) {
         expect(body, `${file} is missing "${heading}"`).toMatch(new RegExp(`^## ${heading}$`, 'm'));
       }
+    }
+  });
+
+  it('includes Java and Python examples in every question-pack guide', async () => {
+    const newFiles = expectedSlugs.slice(8).map((slug) => `${slug}.md`);
+    for (const file of newFiles) {
+      const { body } = splitMarkdown(await readFile(`${contentDirectory}/${file}`, 'utf8'));
+      expect(body, `${file} needs a Java sample`).toMatch(/```java\n[\s\S]+?```/);
+      expect(body, `${file} needs a Python sample`).toMatch(/```python\n[\s\S]+?```/);
     }
   });
 });
