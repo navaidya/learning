@@ -1,0 +1,10 @@
+.book-article {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.book-article table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
