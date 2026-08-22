@@ -14,6 +14,27 @@ tags:
 
 Micronaut is a JVM framework for building services with dependency injection, HTTP, configuration, validation, messaging, and testing support. A strong senior-level answer explains not only which annotation to use, but what Micronaut does at build time, where runtime work still happens, and how those choices affect startup, memory, correctness, and operations.
 
+## Table of contents
+
+- [The five-minute interview answer](#the-five-minute-interview-answer)
+- [What Micronaut simplifies](#what-micronaut-simplifies)
+- [Annotations in a real Micronaut service](#annotations-in-a-real-micronaut-service)
+- [Configuration file naming and bootstrap context](#configuration-file-naming-and-bootstrap-context)
+- [The configuration-to-object path](#the-configuration-to-object-path)
+- [How to add a configuration class](#how-to-add-a-configuration-class)
+- [Choosing the configuration mechanism](#choosing-the-configuration-mechanism)
+- [How the LARS API and worker start](#how-the-lars-api-and-worker-start)
+- [Generic service structure](#generic-service-structure)
+- [HTTP, clients, and failure boundaries](#http-clients-and-failure-boundaries)
+- [Blocking versus non-blocking execution](#blocking-versus-non-blocking-execution)
+- [Testing the application context](#testing-the-application-context)
+- [Security and operations](#security-and-operations)
+- [Micronaut versus Spring: interview trade-offs](#micronaut-versus-spring-interview-trade-offs)
+- [Senior interview questions](#senior-interview-questions)
+- [A practical debugging checklist](#a-practical-debugging-checklist)
+- [Key takeaways](#key-takeaways)
+- [Official references](#official-references)
+
 ## The five-minute interview answer
 
 > Micronaut is a modular JVM framework whose dependency-injection and bean-introspection metadata are computed at compile time. That reduces reflection and proxy scanning at startup, while keeping familiar service boundaries: controllers receive requests, services own business decisions, clients call other services, repositories own persistence, and typed configuration supplies environment-specific behavior. I use constructor injection, immutable or validated configuration, explicit timeout and retry policies, and `@MicronautTest` for boundary tests. I also separate non-blocking request work from blocking database or file operations and make health, metrics, traces, and failure behavior part of the design.
@@ -33,6 +54,26 @@ Micronaut provides conventions and generated metadata for concerns that are othe
 - Integration points for metrics, tracing, health endpoints, security, serialization, persistence, and messaging.
 
 The interview trade-off is explicitness versus magic. An annotation can remove boilerplate, but a senior engineer should still be able to explain the generated bean, its lifecycle, its qualifier, its thread model, and its failure mode.
+
+## Annotations in a real Micronaut service
+
+An annotation is a declarative instruction that Micronaut reads while compiling the application. It generates metadata from that instruction and later uses the metadata to create beans, bind configuration, map routes, or schedule work. The annotation does not itself execute the business method.
+
+The LARS project demonstrates three especially useful categories:
+
+| What the annotation declares | LARS example | What Micronaut does with it |
+| --- | --- | --- |
+| An HTTP boundary | `@Controller("/20250625")` on `RemediationEventController` in `oase-devops-lars-api` | Registers the class as a singleton controller and maps the generated API operations below that URI prefix. |
+| An injectable application bean | `@Singleton` on `LarsWorkers` in `oase-devops-lars-worker` | Creates one `LarsWorkers` instance and supplies its constructor dependencies from the application context. |
+| A scheduled background action | `@Scheduled` on `LarsWorkers.tickerPoller()` and `PollingService.run()` | Calls the method repeatedly using the configured delay or rate once the application is running. |
+| A startup action | `@EventListener` receiving `StartupEvent` in `LarsWorkers` | Invokes the method after the context has started; in this case, it begins long-polling work. |
+| A conditional capability | `@Requires(property = "lars.analyzer.fast-enabled", value = "true")` on `analyzeFastPoller` | Enables that listener only when the active configuration has the expected value. |
+| Typed configuration binding | `@ConfigurationProperties("lars.collector.ticket")` on `TicketCollectorConfig` | Generates a configuration bean whose methods read and convert matching `lars.collector.ticket.*` properties. |
+| Input/configuration validation | `@NotNull` and `@NotBlank` methods on `TicketCollectorConfig` | Validates required values during binding so an invalid deployment can fail early. |
+
+The API controller also uses Lombok's `@RequiredArgsConstructor`. Lombok generates the constructor, and Micronaut uses that single constructor for injection. In `LarsWorkers`, the constructor is written explicitly and carries `@Inject`; with one unambiguous constructor, modern Micronaut code can usually omit `@Inject`.
+
+For an interview, describe the distinction clearly: `@Controller` maps an external HTTP boundary; `@Singleton` makes a class available for injection; `@Scheduled` and `@EventListener` determine *when* an already-created bean's methods run; and `@ConfigurationProperties` turns external configuration into a typed dependency.
 
 ## Configuration file naming and bootstrap context
 
@@ -193,6 +234,54 @@ flowchart LR
 | Injection | Wiring constructor dependencies | Dependency boundaries and avoiding cycles |
 | Availability | Startup failure for invalid required config | Readiness, fallback, and operational rollback |
 
+## How to add a configuration class
+
+Micronaut does **not** invent a Java configuration type merely because properties with a common prefix appear in `application.properties`. The property file supplies values; you must define the Java class, record, or interface that declares the configuration contract, annotate it, and then inject that type where it is needed.
+
+LARS provides a useful interface-based example in `oase-devops-lars-worker/src/main/java/com/oracle/pic/oase/lars/worker/config/TicketCollectorConfig.java`:
+
+```java
+@ConfigurationProperties("lars.collector.ticket")
+public interface TicketCollectorConfig {
+    @NotNull
+    Boolean getEnabled();
+
+    @NotNull
+    Duration getPollInterval();
+
+    @NotNull
+    Duration getInitialDelay();
+}
+```
+
+Its base properties are defined in `oase-devops-lars-worker/src/main/resources/application.properties`:
+
+```properties
+lars.collector.ticket.enabled=false
+lars.collector.ticket.poll-interval=30s
+lars.collector.ticket.initial-delay=0s
+```
+
+At compile time, Micronaut generates an implementation that can bind this interface. At startup, it creates that generated configuration bean, reads the active property sources, converts `30s` to a `Duration`, and applies the validation constraints. The worker's `LarsWorkers` bean then refers to the configuration in its `@Scheduled` expression:
+
+```java
+@Scheduled(
+    condition = "#{ ctx[com.oracle.pic.oase.lars.worker.config.TicketCollectorConfig].enabled }",
+    fixedDelay = "#{ ctx[com.oracle.pic.oase.lars.worker.config.TicketCollectorConfig].pollInterval }",
+    initialDelay = "#{ ctx[com.oracle.pic.oase.lars.worker.config.TicketCollectorConfig].initialDelay }")
+void tickerPoller() { /* poll tickets */ }
+```
+
+The answer to “what do I need to write?” is therefore:
+
+1. **Define the type yourself**: a class/record with properties and setters or constructor parameters, or an interface with getter methods.
+2. **Annotate the type** with `@ConfigurationProperties("your.prefix")`.
+3. **Declare each value your code needs** as a field, constructor parameter, or getter. You do not write binding code or an implementation for an annotated interface.
+4. **Add properties** with matching names in `application.properties`, `application-{environment}.properties`, environment variables, or another supported source.
+5. **Inject the configuration type** into the service that uses it, rather than repeatedly reading strings with `@Value`.
+
+Adding a new property alone does nothing until a configuration type or direct `@Value` injection consumes it. Conversely, declaring `getEnabled()` without supplying a valid `lars.collector.ticket.enabled` value causes validation/startup failure when it is required. This explicit contract is intentional: it keeps configuration discoverable, type-safe, and reviewable.
+
 ## Choosing the configuration mechanism
 
 ### `@Value`: a precise escape hatch
@@ -225,6 +314,37 @@ An `@EachBean(DownstreamConfiguration.class)` factory can create one HTTP client
 ### `@Requires`: conditionally load a capability
 
 Use `@Requires(property = "feature.cache-enabled", value = "true")` or a bean/class requirement to conditionally register a bean. This is useful for optional integrations, but avoid hiding core business behavior behind too many flags. An absent optional bean should produce a clear fallback or a clear startup error.
+
+## How the LARS API and worker start
+
+The LARS repository is a Maven multi-module build, but it does not deploy every module. The root `pom.xml` is an aggregator. The API, worker, T2 collector, and canary each have a Java `main` method; common code, data access, specifications, Java clients, and integration tests are packaged as dependencies of those applications.
+
+```mermaid
+flowchart TD
+  Container["Container starts"] --> Supervisor["simple_init.py / runit supervisor"]
+  Supervisor --> Script["Module run.sh"]
+  Script --> JVM["java -cp classes + dependency JARs MAIN_CLASS"]
+  JVM --> Main["Application main(String[] args)"]
+  Main --> MN["Micronaut.run(args)"]
+  MN --> Env["Resolve active environment and properties"]
+  Env --> Context["Create ApplicationContext and beans"]
+  Context --> API["API: controllers and HTTP server"]
+  Context --> Worker["Worker: startup listeners and scheduled jobs"]
+```
+
+### API startup
+
+`OaseDevopsLarsApi.main` first imports dynamic-region configuration, calls `Micronaut.run(args)`, and then logs the resolved environment. In a deployed container, the API's runit entry invokes `run.sh`; outside the local `dev` mode, that script executes Java with a constructed classpath, `MAIN_CLASS`, and `-Dmicronaut.environments` set from the deployment environment.
+
+When `Micronaut.run(args)` returns, the application context has read the active `application.properties` and environment-specific overrides, selected conditional beans, constructed controller/repository/service beans, and started enabled HTTP infrastructure. The API's `RemediationEventController` is therefore ready to receive the generated routes under `/20250625`. `DevDataPopulator` is a contrasting startup listener: it only runs in the development environment because it has `@Requires(env = DEVELOPMENT)`.
+
+### Worker startup
+
+`OaseDevopsLarsWorker.main` follows the same configuration-import and `Micronaut.run(args)` pattern, but its useful work is background work rather than request handling. The context creates `LarsWorkers`, injects its collector, analyzer, dispatcher, and queue dependencies, then processes its `StartupEvent` listeners and schedules its `@Scheduled` methods.
+
+For example, `tickerPoller()` runs only when `TicketCollectorConfig.enabled` is true; its delay and initial delay come from the same typed configuration bean. `analyzeFastPoller` and `dispatchPoller` are startup listeners additionally gated by `@Requires` properties. The worker JVM stays alive because the Micronaut runtime, scheduled executor, and long-running polling work remain active—not because the `main` method itself loops forever.
+
+This is the key interview answer: deployment starts **one Java process per application module**, not one process per bean. `main()` starts Micronaut once; the compiled annotation metadata tells the resulting application context which controllers, configuration beans, listeners, schedulers, and other dependencies belong in that process.
 
 ## Generic service structure
 
