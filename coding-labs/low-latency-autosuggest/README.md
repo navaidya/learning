@@ -8,4 +8,4 @@ Run Python: `cd python && python3 -m unittest discover -s tests -v`.
 
 Java exits silently with status 0 when its assertions pass. Python reports four passing tests. Java cleanup: `rm -rf out`. Python requires no virtual environment or generated files.
 
-For `T` normalized terms and `C` total characters, construction sorts in `O(T log T)` and builds prefixes in `O(C)` insertion work while retaining at most ten results per prefix. A lookup is `O(p + limit)` for normalized prefix length `p`.
+For `T` normalized terms with lengths `Lᵢ`, construction sorts in `O(T log T)`. It visits `O(ΣLᵢ)` prefix positions, but these straightforward Java substring and Python slice implementations copy prefix text, so materialization can take `O(ΣLᵢ²)` character work and space. Each prefix retains at most ten results. A lookup is `O(p + limit)` for normalized prefix length `p`.

@@ -127,7 +127,7 @@ For ranking evaluation, add offline relevance judgments and online guardrail met
 
 ## Complexity and resource analysis
 
-For `T` unique normalized terms and `C` total characters, the lab sorts in `O(T log T)` and materializes prefixes in `O(C)` insertion work, retaining at most ten suggestions per prefix. Lookup is `O(p + limit)` for prefix length `p`, including normalization. Stored prefix keys can still consume substantial memory; compressed representations and hot-prefix materialization are production alternatives.
+For `T` unique normalized terms with lengths `Lᵢ`, the lab sorts in `O(T log T)` and visits `O(ΣLᵢ)` prefix positions. Because these straightforward Java substrings and Python slices copy prefix text, materialization can require `O(ΣLᵢ²)` character work and key space; each prefix retains at most ten suggestions. Lookup is `O(p + limit)` for prefix length `p`, including normalization. A trie or compact finite-state representation can share prefix storage, while hot-prefix materialization avoids building the cold tail.
 
 Network and rendering often dominate an in-memory lookup. Optimize the end-to-end latency distribution rather than celebrating a microsecond data structure while ignoring a 100 ms round trip.
 
