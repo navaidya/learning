@@ -1,5 +1,25 @@
 [
   {
+    "id": "karpenter-397a1d36ba1d",
+    "title": "v1.14.1",
+    "summary": "Chores cherrypicks for v1.14.1 (#3238) #3238 (Ryan Mistretta)",
+    "source": "Karpenter",
+    "sourceId": "karpenter",
+    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.14.1",
+    "publishedDate": "2026-08-21T22:35:30.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "karpenter",
+      "kubernetes",
+      "autoscaling"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "karpenter",
+    "releaseVersion": "v1.14.1"
+  },
+  {
     "id": "crossplane-97b7caf289fa",
     "title": "v1.20.12",
     "summary": "v1.20.12 is a patch release scoped to fixing issues reported by users of Crossplane v1.20 and fixing security related issues in Crossplane's dependencies. 🎉 Highlights Dependency security updates: Bumps the Go toolchain to 1.25.13 (#7755), go-git (#7722), and golang.org/x/mod (#7740), plus two combined sets of vulnerable dependency updates (#7646, #7675), to pick up upstream CVE fixes. crossplane-runtime is also bumped to v1.20.11 (#7767), which carries its own set of security dependency update",

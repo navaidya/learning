@@ -1,5 +1,13 @@
 [
   {
+    "project": "karpenter",
+    "version": "v1.14.1",
+    "publishedDate": "2026-08-21T22:35:30.000Z",
+    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.14.1",
+    "sourceId": "karpenter",
+    "title": "v1.14.1"
+  },
+  {
     "project": "crossplane",
     "version": "v1.20.12",
     "publishedDate": "2026-08-21T17:24:11.000Z",
@@ -222,14 +230,6 @@
     "url": "https://istio.io/latest/news/releases/1.30.x/announcing-1.30.3/",
     "sourceId": "istio",
     "title": "Announcing Istio 1.30.3"
-  },
-  {
-    "project": "karpenter",
-    "version": "v1.14.0",
-    "publishedDate": "2026-07-11T00:17:58.000Z",
-    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.14.0",
-    "sourceId": "karpenter",
-    "title": "v1.14.0"
   },
   {
     "project": "k8sgpt",
