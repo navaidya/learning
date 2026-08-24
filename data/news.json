@@ -1,5 +1,25 @@
 [
   {
+    "id": "backstage-da2fee5e5ad7",
+    "title": "v1.54.4",
+    "summary": "This patch release fixes the following issues: Fixed software template inline conditionals without an else branch to render an empty string when their condition is false.",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.4",
+    "publishedDate": "2026-08-24T18:16:07.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.54.4"
+  },
+  {
     "id": "cncf-982808ab61d7",
     "title": "Automating root cause analysis at scale: Multi-signal correlation for cloud native incident response",
     "summary": "The problem: Humans shouldn’t be correlation engines At Atlassian’s scale, hundreds of interconnected microservices distributed across multiple regions mean a production incident generates an overwhelming volume of telemetry. The problem is that finding the causal factor...",
@@ -8615,21 +8635,5 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "openai"
-  },
-  {
-    "id": "kubernetes-8fcd8732e85e",
-    "title": "Reconciling the Past: Correcting Records for Unfixed Kubernetes CVEs",
-    "summary": "The Kubernetes project relies on transparency to empower cluster administrators and security researchers. One important way we do that is by publishing CVE records into the Common Vulnerabilities and Exposures database. As part of our ongoing effort to mature the official Kubernetes CVE Feed, we have identified some discrepancies. CVE records for a few older, unfixed issues incorrectly include a fixed version field. The Kubernetes Security Response Committee (SRC) will correct the affected CVE r",
-    "source": "Kubernetes",
-    "sourceId": "kubernetes",
-    "url": "https://kubernetes.io/blog/2026/05/26/reconciling-unfixed-kubernetes-cves/",
-    "publishedDate": "2026-05-26T17:30:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   }
 ]
