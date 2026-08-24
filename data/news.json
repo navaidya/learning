@@ -1,5 +1,41 @@
 [
   {
+    "id": "cncf-982808ab61d7",
+    "title": "Automating root cause analysis at scale: Multi-signal correlation for cloud native incident response",
+    "summary": "The problem: Humans shouldn’t be correlation engines At Atlassian’s scale, hundreds of interconnected microservices distributed across multiple regions mean a production incident generates an overwhelming volume of telemetry. The problem is that finding the causal factor...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/08/24/automating-root-cause-analysis-at-scale-multi-signal-correlation-for-cloud-native-incident-response/",
+    "publishedDate": "2026-08-24T11:00:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "istio-a6ccc2f5f55f",
+    "title": "Istio Project Announces 2026 Technical Oversight Committee Election Results",
+    "summary": "Under the governance system introduced in 2024 for the Technical Oversight Committee (TOC), the Istio project holds annual elections for three of the six seats. This ensures continuous technical leadership while maintaining community-driven momentum. This year&rsquo;s election saw four candidates stand for the three available two-year terms. Following the conclusion of the voting process by the Steering Committee, we are pleased to announce that three incumbents have been re-elected to serve ano",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/blog/2026/toc-election-results/",
+    "publishedDate": "2026-08-24T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "backstage-fcd344f8a1c0",
     "title": "v1.54.3",
     "summary": "This patch release fixes the following issues: Fixed the unintended removal of support for intrinsic string, number, array, Map, and Set methods in software templates.",
@@ -140,6 +176,24 @@
     "releaseVersion": "v2.3.5"
   },
   {
+    "id": "grafana-51a757c05522",
+    "title": "How to scale Alloy as a central telemetry gateway: capacity planning, load testing, and production lessons",
+    "summary": "Running Alloy as a single-instance sidecar is simple. Running it as a centralized gateway that absorbs the full telemetry stream of an enterprise platform—tens of millions of active series, terabytes of logs per day, and tens of thousands of trace spans per second—is a different challenge altogether. To get it right, you need deliberate capacity planning, honest load testing, and a monitoring setup that doesn't rely on the very thing you're testing.As part of the Professional Services team here ",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/how-to-scale-alloy-as-a-central-telemetry-gateway-capacity-planning-load-testing-and-production-lessons/",
+    "publishedDate": "2026-08-21T15:12:52.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "cncf-9d40b4b64bb1",
     "title": "How to turn slow queries into actionable reliability metrics with OpenTelemetry",
     "summary": "Slow SQL queries degrade user experience, cause cascading failures, and turn simple operations into production incidents. The traditional fix? Collect more telemetry. But more telemetry means more things to look at, not necessarily more understanding. Instead...",
@@ -232,6 +286,25 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
+  },
+  {
+    "id": "grafana-deeee4bbd29c",
+    "title": "Grafana 13.2 release: easier ways to query and explore your data",
+    "summary": "Grafana 13.2 is here, bringing more improvements to help you and your team explore your data and get to insights faster.In this post, we’ll highlight the latest updates to saved queries, a feature that lets teams share, discover, and reuse queries to get to trusted answers faster and help new teammates get up to speed. We’ll also explore how the new View panel sidebar makes exploring busy panels a breeze. If you want to read about all the latest updates in Grafana 13.2, please refer to the chang",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/grafana-13-2-release-all-the-latest-features/",
+    "publishedDate": "2026-08-20T14:53:01.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "grafana",
+    "releaseVersion": "13.2"
   },
   {
     "id": "backstage-ebf08ccb6348",
@@ -461,6 +534,25 @@
     "releaseRelated": false
   },
   {
+    "id": "grafana-31e923224157",
+    "title": "Knowledge Graph as context for LLMs: demonstrating decisive RCA and faster production performance",
+    "summary": "On the product team here at Grafana Labs, we consider AI agents our users, too. That’s why we set out to test how well agents can debug incidents across the full stack, and how much better they perform with Grafana Cloud’s Knowledge Graph vs. using raw telemetry alone. Our early results are promising. In one real incident we replayed 16 times each way, an agent with Knowledge Graph context found the correct root cause 15 times, compared with just once using raw telemetry alone. Along the way, we",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/knowledge-graph-as-context-for-llms-demonstrating-decisive-rca-and-faster-production-performance/",
+    "publishedDate": "2026-08-19T17:52:35.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "pulumi-a7aaa409eb91",
     "title": "sdk/v3.259.0: Collapse guided `pulumi new` prompts into a single confirmation (#24223)",
     "summary": "What Guided interactive pulumi new shows the proposed project name, description, stack name, and resolved config in a single confirmation block and asks Do these look good?, instead of prompting for each value one question at a time. pulumi-new-demo.mp4 Why Nearly every prompt in the guided flow has a sensible default, so the common path is pressing Enter repeatedly. One confirmation lets that path finish in a single keystroke while keeping every value editable for anyone who wants to change som",
@@ -478,6 +570,23 @@
     "releaseRelated": true,
     "releaseProject": "pulumi",
     "releaseVersion": "v3.259.0"
+  },
+  {
+    "id": "grafana-af2b95d8a8d2",
+    "title": "From failed check to real user impact: Pairing Synthetic Monitoring and Frontend Observability in Grafana Cloud",
+    "summary": "Say you get a support escalation about a page in the app that won’t load. But when you pull up your synthetic checks, they're all green: 100% uptime, probes are passing. Something's not adding up, but which one do you trust?If you’ve run Grafana Cloud Synthetic Monitoring, you’ve been on both sides of this. Sometimes it's the ticket: real users hit a wall on the path but your checks pass cleanly. Other times, it’s the inverse: a check is failing, you're in a panic, and you start trying to reprod",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/from-failed-check-to-real-user-impact-pairing-synthetic-monitoring-and-frontend-observability-in-grafana-cloud/",
+    "publishedDate": "2026-08-19T15:40:21.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "oci-oke-cf0f0ec1f144",
@@ -1174,6 +1283,23 @@
     "releaseVersion": "v0.314.0"
   },
   {
+    "id": "grafana-43c0053cf195",
+    "title": "Visual playback of the user journey: Introducing Session Replay in Grafana Cloud Frontend Observability",
+    "summary": "Grafana Cloud Frontend Observability helps engineering teams quantify the end user experience by bringing metrics, logs, traces, and user session context to client-side web applications. Teams can monitor application health and performance over time, triage errors, and correlate frontend signals with backend telemetry to investigate issues across the stack.Yet some of the hardest frontend problems remain difficult to diagnose. A support ticket might report that a checkout button did nothing, a f",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/visual-playback-of-the-user-journey-introducing-session-replay-in-grafana-cloud-frontend-observability/",
+    "publishedDate": "2026-08-17T14:23:00.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "pulumi-51374f4f33b0",
     "title": "sdk/v3.258.0: Update language runtimes (#24345)",
     "summary": "Overview Bumps language runtime versions: dotnet v3.111.1 → v3.112.0, java v1.36.0 → v1.36.1, yaml v1.38.2 → v1.38.3.",
@@ -1251,6 +1377,25 @@
     "releaseRelated": true,
     "releaseProject": "crossplane",
     "releaseVersion": "v2.4.0-rc.1"
+  },
+  {
+    "id": "grafana-d61916857a72",
+    "title": "Better context, smarter testing: How to give your AI coding agent direct access to k6 docs",
+    "summary": "As testing workflows become more AI-assisted, fast access to accurate documentation matters more than ever. Whether you're writing a new load test, troubleshooting an issue, or having an AI agent generate a script for you, you need reliable guidance that keeps pace with the way you work.But most documentation still lives in a browser. Every time you or your agent needs to verify an API or look up a best practice, you're forced to leave your terminal or editor and interrupt your workflow.That’s w",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/better-context-smarter-testing-how-to-give-your-ai-coding-agent-direct-access-to-k6-docs/",
+    "publishedDate": "2026-08-14T15:18:09.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "helm-a6e2fbd6632c",
@@ -1508,6 +1653,23 @@
     "releaseRelated": true,
     "releaseProject": "hashicorp",
     "releaseVersion": "v1.16.0"
+  },
+  {
+    "id": "grafana-2fd53c73e914",
+    "title": "How volumetric sampling makes the most of your trace budget in Grafana Cloud",
+    "summary": "Tracing is one of the richest observability signals, but it's also noisy and susceptible to data bloat. In a busy system, the vast majority of traces describe the same healthy, fast, successful request over and over, so most organizations downsample their traces to cut costs. But that approach has consequences, since the sampling strategy you choose determines whether you get a faithful picture of your whole system, or just a smaller, blurrier copy of your busiest endpoints.We want to help you g",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/how-volumetric-sampling-makes-the-most-of-your-trace-budget-in-grafana-cloud/",
+    "publishedDate": "2026-08-13T15:16:16.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "pulumi-58d71ae0fb83",
@@ -1912,6 +2074,24 @@
     "releaseRelated": true,
     "releaseProject": "oci-oke",
     "releaseVersion": "v8.27.0"
+  },
+  {
+    "id": "grafana-3090277de770",
+    "title": "How to visualize workflows and business processes in Grafana: Introducing the Graphviz panel",
+    "summary": "Here's a scenario that will likely sound familiar:You’re building an executive overview dashboard that you would put on a wall-mounted screen so the whole room can see how the business is doing at a glance. It’s for a Shopify online store, and displays a mix of business and application signals, including latency panels, error-rate panels, and a big stat panel for revenue-per-week. It looked great. But something is missing.That’s because the majority of the audience don't think in panels; they th",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/how-to-visualize-workflows-and-business-processes-in-grafana-introducing-the-graphviz-panel/",
+    "publishedDate": "2026-08-11T19:46:18.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "dashboards",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "backstage-2aa6681f1f61",
@@ -2543,6 +2723,24 @@
     "releaseRelated": true,
     "releaseProject": "terraform",
     "releaseVersion": "v1.16.0-beta2"
+  },
+  {
+    "id": "grafana-d19626ed74c6",
+    "title": "How to monitor HCP Terraform and Terraform Enterprise with Grafana Cloud",
+    "summary": "When a Terraform run feels slow, most teams are flying blind. The run log in HCP Terraform tells you what happened, but not what took so long—and it certainly doesn't roll up across hundreds of runs so you can spot a trend.The good news: when you run your plans and apply on HCP Terraform or Terraform Enterprise self-hosted Terraform agents, each agent already emits OpenTelemetry data—distributed traces for every run phase and granular runtime metrics—and it writes structured logs to stdout. You ",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/how-to-monitor-hcp-terraform-and-terraform-enterprise-with-grafana-cloud/",
+    "publishedDate": "2026-08-05T17:01:04.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "cncf-fc4f7ceae03f",
