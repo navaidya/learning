@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-08-25T14:06:16.820Z",
+  "collectedAt": "2026-08-25T19:47:26.192Z",
   "sourceIds": [
     "cncf",
     "kubernetes",
@@ -35,5 +35,5 @@
     "robusta"
   ],
   "failedSourceIds": [],
-  "itemCount": 445
+  "itemCount": 448
 }

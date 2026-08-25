@@ -1,11 +1,19 @@
 [
   {
     "project": "backstage",
-    "version": "v1.54.4",
-    "publishedDate": "2026-08-24T18:16:07.000Z",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.4",
+    "version": "v1.55.0-next.0",
+    "publishedDate": "2026-08-25T19:13:49.000Z",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.55.0-next.0",
     "sourceId": "backstage",
-    "title": "v1.54.4"
+    "title": "v1.55.0-next.0"
+  },
+  {
+    "project": "holmesgpt",
+    "version": "0.40.0-alpha",
+    "publishedDate": "2026-08-25T14:25:58.000Z",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.40.0-alpha",
+    "sourceId": "holmesgpt",
+    "title": "0.40.0-alpha"
   },
   {
     "project": "openai",
@@ -118,14 +126,6 @@
     "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.159.0",
     "sourceId": "opentelemetry-collector",
     "title": "v1.65.0/v0.159.0"
-  },
-  {
-    "project": "holmesgpt",
-    "version": "0.39.1-alpha",
-    "publishedDate": "2026-08-16T12:43:41.000Z",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.39.1-alpha",
-    "sourceId": "holmesgpt",
-    "title": "0.39.1-alpha"
   },
   {
     "project": "helm",
