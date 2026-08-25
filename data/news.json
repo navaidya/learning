@@ -8618,23 +8618,5 @@
     "releaseRelated": true,
     "releaseProject": "opentofu",
     "releaseVersion": "v1.12.1"
-  },
-  {
-    "id": "openai-9da64821c60f",
-    "title": "Building self-improving tax agents with Codex",
-    "summary": "See how OpenAI, Thrive, and Crete built a self-improving tax agent with Codex, automating filings, improving accuracy, and accelerating workflows.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/building-self-improving-tax-agents-with-codex",
-    "publishedDate": "2026-05-27T07:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   }
 ]
