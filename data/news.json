@@ -20,6 +20,26 @@
     "releaseVersion": "v1.54.4"
   },
   {
+    "id": "openai-df015003760c",
+    "title": "Advancing price-performance for developers with GPT‑5.6 in Kiro",
+    "summary": "GPT‑5.6 is now available in Kiro, helping developers plan, build, review, and test software with better price-performance.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/gpt-5-6-in-kiro",
+    "publishedDate": "2026-08-24T12:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "openai",
+    "releaseVersion": "5.6"
+  },
+  {
     "id": "cncf-982808ab61d7",
     "title": "Automating root cause analysis at scale: Multi-signal correlation for cloud native incident response",
     "summary": "The problem: Humans shouldn’t be correlation engines At Atlassian’s scale, hundreds of interconnected microservices distributed across multiple regions mean a production incident generates an overwhelming volume of telemetry. The problem is that finding the causal factor...",
@@ -8616,24 +8636,5 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "openai-b36c91942c4f",
-    "title": "Warp’s big bet on building open source with GPT-5.5",
-    "summary": "Warp uses GPT-5.5 and OpenAI models to coordinate coding agents across local, cloud, and open-source development workflows.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/warp",
-    "publishedDate": "2026-05-27T00:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "openai"
   }
 ]
