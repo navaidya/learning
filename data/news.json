@@ -1,5 +1,45 @@
 [
   {
+    "id": "oci-oke-45d2095f941a",
+    "title": "v8.29.0",
+    "summary": "8.29.0 (August 25, 2026) Added Support for ZPR Security Attribute Onboarding for RCV CP Support for BDS 3.5.0 - Feature Enhancements Support for MySQL HeatWave Service: Blue/Green Deployments Bug Fix Remove restrictive DNS zone validation Send optional FastConnect update fields only when changed",
+    "source": "OCI / OKE",
+    "sourceId": "oci-oke",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v8.29.0",
+    "publishedDate": "2026-08-26T01:46:38.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "oci",
+      "oke",
+      "oracle"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "oci-oke",
+    "releaseVersion": "v8.29.0"
+  },
+  {
+    "id": "backstage-17b87fcf7856",
+    "title": "v1.54.5",
+    "summary": "This patch release fixes the following issues: Fixed the catalog import owner autocomplete to write canonical group entity references instead of display names to generated catalog-info.yaml files. Fixed catalog pages opened from ownership cards to normalize legacy bare owner filters before rendering, preventing entity reference errors. Fixed software template inline conditionals without an else branch to render an empty string when their condition is false. Fixed ownership card links to filter t",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.5",
+    "publishedDate": "2026-08-25T21:27:56.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.54.5"
+  },
+  {
     "id": "backstage-99260156b3a0",
     "title": "v1.55.0-next.0",
     "summary": "See docs/releases/v1.55.0-next.0-changelog.md for more information.",
