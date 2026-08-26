@@ -1,5 +1,82 @@
 [
   {
+    "id": "backstage-17b87fcf7856",
+    "title": "v1.54.5",
+    "summary": "This patch release fixes the following issues: Fixed the catalog import owner autocomplete to write canonical group entity references instead of display names to generated catalog-info.yaml files. Fixed catalog pages opened from ownership cards to normalize legacy bare owner filters before rendering, preventing entity reference errors. Fixed ownership card links to filter the catalog by canonical owner entity references instead of mutable presentation titles.",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.5",
+    "publishedDate": "2026-08-26T17:02:51.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.54.5"
+  },
+  {
+    "id": "kubernetes-releases-d9bffbd6a84b",
+    "title": "v1.37.0",
+    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
+    "source": "Kubernetes Releases",
+    "sourceId": "kubernetes-releases",
+    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.0",
+    "publishedDate": "2026-08-26T16:29:12.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes-releases",
+    "releaseVersion": "v1.37.0"
+  },
+  {
+    "id": "vector-dfa46aff4554",
+    "title": "v0.58.0",
+    "summary": "The COSE team is excited to announce version 0.58.0! 🚀 View release notes",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/v0.58.0",
+    "publishedDate": "2026-08-26T15:12:38.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector",
+    "releaseVersion": "v0.58.0"
+  },
+  {
+    "id": "hashicorp-deeceeb9aefb",
+    "title": "Streamline identity lifecycle management on HCP with SCIM provisioning",
+    "summary": "New HCP SCIM provisioning automates user and group lifecycle management from your identity provider to reduce admin overhead and improve secure, consistent access.",
+    "source": "HashiCorp",
+    "sourceId": "hashicorp",
+    "url": "https://www.hashicorp.com/blog/streamline-identity-lifecycle-management-on-hcp-with-scim-provisioning",
+    "publishedDate": "2026-08-26T15:00:00.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "vault",
+      "iac"
+    ],
+    "importance": "low",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "robusta-3b45b7424a2a",
     "title": "0.48.0",
     "summary": "What's Changed Replace CairoSVG with resvg-py and migrate PDF generation to reportlab by @moshemorad in #2136 ROB-906 Document the cluster query param across Send Events docs by @Sheeproid in #2138 ROB-902 - Claude/runner clusterrole privilege 839vtf by @Avi-Robusta in #2141 Upgrade Flask dependency to ^3.1.3 by @moshemorad in #2143 ROB-944 harden pull configs by @Avi-Robusta in #2144 Prevent signing key leakage in email communications by @moshemorad in #2148 Fix shell variable expansion in rele",
@@ -17,26 +94,6 @@
     "releaseRelated": true,
     "releaseProject": "robusta",
     "releaseVersion": "0.48.0"
-  },
-  {
-    "id": "vector-dfa46aff4554",
-    "title": "v0.58.0",
-    "summary": "v0.58.0",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/v0.58.0",
-    "publishedDate": "2026-08-26T13:36:27.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector",
-    "releaseVersion": "v0.58.0"
   },
   {
     "id": "terraform-ab050bf30f7c",
@@ -136,24 +193,22 @@
     "releaseVersion": "v8.29.0"
   },
   {
-    "id": "backstage-17b87fcf7856",
-    "title": "v1.54.5",
-    "summary": "This patch release fixes the following issues: Fixed the catalog import owner autocomplete to write canonical group entity references instead of display names to generated catalog-info.yaml files. Fixed catalog pages opened from ownership cards to normalize legacy bare owner filters before rendering, preventing entity reference errors. Fixed software template inline conditionals without an else branch to render an empty string when their condition is false. Fixed ownership card links to filter t",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.5",
-    "publishedDate": "2026-08-25T21:27:56.000Z",
-    "domain": "platform-engineering",
+    "id": "kubernetes-506ba8d37c8f",
+    "title": "Kubernetes v1.37: Garhwal",
+    "summary": "Editors: Arsh Sharma, Christopher Tineo, Kirti Goyal, Sophia Ugochukwu, Swathi Rao, Troy Connor Similar to previous releases, the release of Kubernetes v1.37 introduces new Stable, Beta, and Alpha features. The consistent delivery of high-quality releases underscores the strength of our development cycle and the vibrant support from our community. This release consists of 67 enhancements. Of those enhancements, 16 have graduated to Stable, 23 have graduated to Beta, 27 are entering Alpha, and 1 ",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
+    "publishedDate": "2026-08-26T00:00:00.000Z",
+    "domain": "kubernetes",
     "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
+      "kubernetes"
     ],
-    "importance": "medium",
-    "architectureShift": false,
+    "importance": "critical",
+    "architectureShift": true,
     "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.54.5"
+    "releaseProject": "kubernetes",
+    "releaseVersion": "v1.37"
   },
   {
     "id": "backstage-99260156b3a0",
@@ -500,6 +555,26 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
+  },
+  {
+    "id": "istio-de15e4ca64c4",
+    "title": "ACTION REQUIRED FOR GOOGLE CONTAINER REGISTRY USERS, scream tests, and our move to AWS",
+    "summary": "This year, Istio is migrating all of our infrastructure from Google Cloud Platform to Amazon Web Services due to changes in our funding model. This post describes the transition of our container images, Helm charts, other release artifacts (RPMs, DEBs, source code, SPDX documents, istioctl, and licenses), signing keys, and upcoming scream tests where we will disable access to all GCP-hosted artifacts. Container Images In a previous blog post, we announced that the gcr.io/istio-release and regist",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/blog/2026/retirement-of-gcp/",
+    "publishedDate": "2026-08-21T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "istio"
   },
   {
     "id": "crossplane-fb20888ef904",
@@ -8810,25 +8885,5 @@
     "releaseRelated": true,
     "releaseProject": "istio",
     "releaseVersion": "1.28"
-  },
-  {
-    "id": "tempo-30af2c969d33",
-    "title": "Tempo v3.0.0",
-    "summary": "Tempo 3.0 is a major release that completes the transition to the new ingest/write architecture, removes deprecated 2.x components, graduates TraceQL metrics to general availability, and adds migration tooling for Tempo 2.x users. This release contains breaking configuration and deployment changes. Review the migration guide before upgrading, especially if you use legacy ingesters, legacy overrides, v2 blocks, OpenCensus, localblocks, or custom live-store/query-frontend settings. Highlights New ",
-    "source": "Grafana Tempo",
-    "sourceId": "tempo",
-    "url": "https://github.com/grafana/tempo/releases/tag/v3.0.0",
-    "publishedDate": "2026-05-28T19:15:58.000Z",
-    "domain": "tracing",
-    "topics": [
-      "tempo",
-      "tracing",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "tempo",
-    "releaseVersion": "v3.0.0"
   }
 ]

@@ -1,19 +1,35 @@
 [
   {
+    "project": "backstage",
+    "version": "v1.54.5",
+    "publishedDate": "2026-08-26T17:02:51.000Z",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.5",
+    "sourceId": "backstage",
+    "title": "v1.54.5"
+  },
+  {
+    "project": "kubernetes-releases",
+    "version": "v1.37.0",
+    "publishedDate": "2026-08-26T16:29:12.000Z",
+    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.0",
+    "sourceId": "kubernetes-releases",
+    "title": "v1.37.0"
+  },
+  {
+    "project": "vector",
+    "version": "v0.58.0",
+    "publishedDate": "2026-08-26T15:12:38.000Z",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/v0.58.0",
+    "sourceId": "vector",
+    "title": "v0.58.0"
+  },
+  {
     "project": "robusta",
     "version": "0.48.0",
     "publishedDate": "2026-08-26T14:00:00.000Z",
     "url": "https://github.com/robusta-dev/robusta/releases/tag/0.48.0",
     "sourceId": "robusta",
     "title": "0.48.0"
-  },
-  {
-    "project": "vector",
-    "version": "v0.58.0",
-    "publishedDate": "2026-08-26T13:36:27.000Z",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/v0.58.0",
-    "sourceId": "vector",
-    "title": "v0.58.0"
   },
   {
     "project": "terraform",
@@ -40,12 +56,12 @@
     "title": "v8.29.0"
   },
   {
-    "project": "backstage",
-    "version": "v1.54.5",
-    "publishedDate": "2026-08-25T21:27:56.000Z",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.5",
-    "sourceId": "backstage",
-    "title": "v1.54.5"
+    "project": "kubernetes",
+    "version": "v1.37",
+    "publishedDate": "2026-08-26T00:00:00.000Z",
+    "url": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
+    "sourceId": "kubernetes",
+    "title": "Kubernetes v1.37: Garhwal"
   },
   {
     "project": "openai",
@@ -70,14 +86,6 @@
     "url": "https://github.com/crossplane/crossplane/releases/tag/v1.20.12",
     "sourceId": "crossplane",
     "title": "v1.20.12"
-  },
-  {
-    "project": "kubernetes-releases",
-    "version": "v1.35.8",
-    "publishedDate": "2026-08-20T18:59:55.000Z",
-    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.35.8",
-    "sourceId": "kubernetes-releases",
-    "title": "v1.35.8"
   },
   {
     "project": "grafana",
@@ -198,14 +206,6 @@
     "url": "https://www.cncf.io/blog/2026/08/05/opencost-1-121-0-first-of-a-kind-kubernetes-inference-cost-tracking/",
     "sourceId": "cncf",
     "title": "OpenCost 1.121.0: First-of-a-kind Kubernetes inference cost tracking"
-  },
-  {
-    "project": "kubernetes",
-    "version": "v1.6",
-    "publishedDate": "2026-08-03T16:00:00.000Z",
-    "url": "https://kubernetes.io/blog/2026/08/03/gateway-api-v1-6-release/",
-    "sourceId": "kubernetes",
-    "title": "Gateway API v1.6: TCPRoute and UDPRoute Graduate to Standard"
   },
   {
     "project": "etcd",
