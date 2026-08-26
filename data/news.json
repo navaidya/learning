@@ -1,5 +1,99 @@
 [
   {
+    "id": "robusta-3b45b7424a2a",
+    "title": "0.48.0",
+    "summary": "What's Changed Replace CairoSVG with resvg-py and migrate PDF generation to reportlab by @moshemorad in #2136 ROB-906 Document the cluster query param across Send Events docs by @Sheeproid in #2138 ROB-902 - Claude/runner clusterrole privilege 839vtf by @Avi-Robusta in #2141 Upgrade Flask dependency to ^3.1.3 by @moshemorad in #2143 ROB-944 harden pull configs by @Avi-Robusta in #2144 Prevent signing key leakage in email communications by @moshemorad in #2148 Fix shell variable expansion in rele",
+    "source": "Robusta",
+    "sourceId": "robusta",
+    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.48.0",
+    "publishedDate": "2026-08-26T14:00:00.000Z",
+    "domain": "aiops",
+    "topics": [
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "robusta",
+    "releaseVersion": "0.48.0"
+  },
+  {
+    "id": "vector-dfa46aff4554",
+    "title": "v0.58.0",
+    "summary": "v0.58.0",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/v0.58.0",
+    "publishedDate": "2026-08-26T13:36:27.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector",
+    "releaseVersion": "v0.58.0"
+  },
+  {
+    "id": "terraform-ab050bf30f7c",
+    "title": "v1.16.0",
+    "summary": "1.16.0 (August 26, 2026) NEW FEATURES: Terraform now stores planned private data for providers, allowing provider-specific state to be preserved across plan and apply. (#37986) terraform_data: The new store block can hold ephemeral and sensitive values across plan and apply. (#38298) Providers can now use nested blocks as computed values (#38305) import: import blocks inside modules are now supported. (#38352) Terraform is now available as a pre-built binary for Linux s390x (zLinux). (#38384) Re",
+    "source": "Terraform",
+    "sourceId": "terraform",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0",
+    "publishedDate": "2026-08-26T13:05:28.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "terraform",
+    "releaseVersion": "v1.16.0"
+  },
+  {
+    "id": "cncf-8a0180c3184e",
+    "title": "Governance guidance for CNCF projects: Choosing the right structure for your project’s size and stage",
+    "summary": "Clear patterns have emerged from governance reviews across 72 CNCF projects, distinguishing between what the CNCF requires at each maturity level versus what the data recommends for long-term project health. This post captures those patterns as...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/08/26/governance-guidance-for-cncf-projects-choosing-the-right-structure-for-your-projects-size-and-stage/",
+    "publishedDate": "2026-08-26T11:30:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "robusta-16b27f48d798",
+    "title": "0.48.0-alpha",
+    "summary": "What's Changed Replace CairoSVG with resvg-py and migrate PDF generation to reportlab by @moshemorad in #2136 ROB-906 Document the cluster query param across Send Events docs by @Sheeproid in #2138 ROB-902 - Claude/runner clusterrole privilege 839vtf by @Avi-Robusta in #2141 Upgrade Flask dependency to ^3.1.3 by @moshemorad in #2143 ROB-944 harden pull configs by @Avi-Robusta in #2144 Prevent signing key leakage in email communications by @moshemorad in #2148 Fix shell variable expansion in rele",
+    "source": "Robusta",
+    "sourceId": "robusta",
+    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.48.0-alpha",
+    "publishedDate": "2026-08-26T09:29:34.000Z",
+    "domain": "aiops",
+    "topics": [
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "robusta",
+    "releaseVersion": "0.48.0-alpha"
+  },
+  {
     "id": "holmesgpt-ce4892e53606",
     "title": "0.40.0",
     "summary": "What's Changed ROB-878 remove stale Sonnet 4.0/4.5 model recommendations from docs by @Sheeproid in #2378 Remove experimental Azure SQL toolset by @moshemorad in #2377 ROB-893 Fix command injection vulnerability in Kubernetes toolset by @naomi-robusta in #2382 Remove MariaDB MCP integration, consolidate to native MariaDB datasource by @moshemorad in #2389 Fix command injection in slab/kubevela/inspektor_gadget/aks toolsets (ROB-893 follow-up) by @naomi-robusta in #2386 Fix SSRF in internet/fetch",
@@ -8736,23 +8830,5 @@
     "releaseRelated": true,
     "releaseProject": "tempo",
     "releaseVersion": "v3.0.0"
-  },
-  {
-    "id": "openai-c4a9a577612d",
-    "title": "How Endava builds an agentic organization with Codex",
-    "summary": "Learn how Endava uses Codex to build an agentic organization, accelerating software delivery and reducing requirements analysis from weeks to hours.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/endava",
-    "publishedDate": "2026-05-28T12:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   }
 ]
