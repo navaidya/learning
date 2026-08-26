@@ -1,5 +1,13 @@
 [
   {
+    "project": "holmesgpt",
+    "version": "0.40.0",
+    "publishedDate": "2026-08-26T07:30:35.000Z",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.40.0",
+    "sourceId": "holmesgpt",
+    "title": "0.40.0"
+  },
+  {
     "project": "oci-oke",
     "version": "v8.29.0",
     "publishedDate": "2026-08-26T01:46:38.000Z",
@@ -14,14 +22,6 @@
     "url": "https://github.com/backstage/backstage/releases/tag/v1.54.5",
     "sourceId": "backstage",
     "title": "v1.54.5"
-  },
-  {
-    "project": "holmesgpt",
-    "version": "0.40.0-alpha",
-    "publishedDate": "2026-08-25T14:25:58.000Z",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.40.0-alpha",
-    "sourceId": "holmesgpt",
-    "title": "0.40.0-alpha"
   },
   {
     "project": "openai",

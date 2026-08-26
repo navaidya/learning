@@ -1,5 +1,27 @@
 [
   {
+    "id": "holmesgpt-ce4892e53606",
+    "title": "0.40.0",
+    "summary": "What's Changed ROB-878 remove stale Sonnet 4.0/4.5 model recommendations from docs by @Sheeproid in #2378 Remove experimental Azure SQL toolset by @moshemorad in #2377 ROB-893 Fix command injection vulnerability in Kubernetes toolset by @naomi-robusta in #2382 Remove MariaDB MCP integration, consolidate to native MariaDB datasource by @moshemorad in #2389 Fix command injection in slab/kubevela/inspektor_gadget/aks toolsets (ROB-893 follow-up) by @naomi-robusta in #2386 Fix SSRF in internet/fetch",
+    "source": "HolmesGPT (Robusta)",
+    "sourceId": "holmesgpt",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.40.0",
+    "publishedDate": "2026-08-26T07:30:35.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "holmesgpt",
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "holmesgpt",
+    "releaseVersion": "0.40.0"
+  },
+  {
     "id": "oci-oke-45d2095f941a",
     "title": "v8.29.0",
     "summary": "8.29.0 (August 25, 2026) Added Support for ZPR Security Attribute Onboarding for RCV CP Support for BDS 3.5.0 - Feature Enhancements Support for MySQL HeatWave Service: Blue/Green Deployments Bug Fix Remove restrictive DNS zone validation Send optional FastConnect update fields only when changed",
