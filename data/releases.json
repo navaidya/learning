@@ -1,5 +1,21 @@
 [
   {
+    "project": "loki",
+    "version": "v3.6.16",
+    "publishedDate": "2026-08-27T21:54:42.000Z",
+    "url": "https://github.com/grafana/loki/releases/tag/v3.6.16",
+    "sourceId": "loki",
+    "title": "v3.6.16"
+  },
+  {
+    "project": "opentofu",
+    "version": "v1.13.0-beta1",
+    "publishedDate": "2026-08-27T18:01:40.000Z",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1",
+    "sourceId": "opentofu",
+    "title": "v1.13.0-beta1"
+  },
+  {
     "project": "terraform",
     "version": "v1.17.0-alpha20260827",
     "publishedDate": "2026-08-27T10:30:11.000Z",
@@ -22,6 +38,14 @@
     "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.37",
     "sourceId": "k8sgpt",
     "title": "v0.4.37"
+  },
+  {
+    "project": "istio",
+    "version": "7.7",
+    "publishedDate": "2026-08-27T00:00:00.000Z",
+    "url": "https://istio.io/latest/news/security/istio-security-2026-006/",
+    "sourceId": "istio",
+    "title": "ISTIO-SECURITY-2026-006"
   },
   {
     "project": "backstage",
@@ -128,22 +152,6 @@
     "title": "pkg/v3.259.0: Changelog and go.mod updates for v3.259.0 (#24398)"
   },
   {
-    "project": "opentofu",
-    "version": "v1.12.6",
-    "publishedDate": "2026-08-19T11:40:07.000Z",
-    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.6",
-    "sourceId": "opentofu",
-    "title": "v1.12.6"
-  },
-  {
-    "project": "loki",
-    "version": "v0.11.0",
-    "publishedDate": "2026-08-18T15:48:41.000Z",
-    "url": "https://github.com/grafana/loki/releases/tag/operator%2Fv0.11.0",
-    "sourceId": "loki",
-    "title": "operator: v0.11.0"
-  },
-  {
     "project": "cilium",
     "version": "1.20.1",
     "publishedDate": "2026-08-18T10:36:16.000Z",
@@ -238,13 +246,5 @@
     "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.1",
     "sourceId": "gateway-api",
     "title": "v1.6.1"
-  },
-  {
-    "project": "istio",
-    "version": "1.30.3",
-    "publishedDate": "2026-07-16T00:00:00.000Z",
-    "url": "https://istio.io/latest/news/releases/1.30.x/announcing-1.30.3/",
-    "sourceId": "istio",
-    "title": "Announcing Istio 1.30.3"
   }
 ]

@@ -1,5 +1,122 @@
 [
   {
+    "id": "loki-735a48674ebe",
+    "title": "v3.6.16",
+    "summary": "3.6.16 (2026-08-27) Features Add flag to ignore missing chunks during deletion of logs with line filter [release-3.6.x] (#24232) (b87159f) Bug Fixes security/UNKNOWN/: Update module go.etcd.io/etcd/client/pkg/v3 to v3.5.33 [SECURITY] (release-3.6.x) (#24062) (bf4b367) storage: Pre-compute SHA-256 to avoid aws-chunked on PutObject [release-3.6.x] (#24214) (0a29895)",
+    "source": "Grafana Loki",
+    "sourceId": "loki",
+    "url": "https://github.com/grafana/loki/releases/tag/v3.6.16",
+    "publishedDate": "2026-08-27T21:54:42.000Z",
+    "domain": "logging",
+    "topics": [
+      "loki",
+      "logging",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "loki",
+    "releaseVersion": "v3.6.16"
+  },
+  {
+    "id": "loki-48d1499ed2e2",
+    "title": "v3.7.7",
+    "summary": "3.7.7 (2026-08-27) Features Add flag to ignore missing chunks during deletion of logs with line filter [release-3.7.x] (#24233) (7a40404) Bug Fixes security/UNKNOWN/: Update module github.com/containerd/containerd/v2 to v2.2.5 [SECURITY] (release-3.7.x) (#24097) (07cd1f0) security/UNKNOWN/: Update module go.etcd.io/etcd/client/pkg/v3 to v3.6.14 [SECURITY] (release-3.7.x) (#24061) (9d1c9ee) security/UNKNOWN/: Update module golang.org/x/mod to v0.40.0 [SECURITY] (release-3.7.x) (#23962) (1d5e027) ",
+    "source": "Grafana Loki",
+    "sourceId": "loki",
+    "url": "https://github.com/grafana/loki/releases/tag/v3.7.7",
+    "publishedDate": "2026-08-27T20:20:03.000Z",
+    "domain": "containers",
+    "topics": [
+      "containers",
+      "containerd",
+      "loki",
+      "logging",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "loki",
+    "releaseVersion": "v3.7.7"
+  },
+  {
+    "id": "vector-6991dad84a90",
+    "title": "vdev-v0.3.16",
+    "summary": "No content.",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.16",
+    "publishedDate": "2026-08-27T19:42:07.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
+    "id": "opentofu-872e2b0b2cd2",
+    "title": "v1.13.0-beta1",
+    "summary": "The v1.13.x release series is supported until August 1 2027. 1.13.0 (Unreleased) UPGRADE NOTES: The \"winrm\" connection type for provisioners is no longer supported. (#4012) This connection type was deprecated in OpenTofu v1.12, and now removed in v1.13. Some of the upstream libraries OpenTofu was using to implement these features are no longer maintained, so it's not viable for us to offer this anymore. Modern Windows versions now support OpenSSH, and so we suggest that anyone currently relying ",
+    "source": "OpenTofu",
+    "sourceId": "opentofu",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1",
+    "publishedDate": "2026-08-27T18:01:40.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "opentofu",
+      "iac"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "opentofu",
+    "releaseVersion": "v1.13.0-beta1"
+  },
+  {
+    "id": "hashicorp-ad9c5ca92bb3",
+    "title": "Stream HCP Vault Dedicated audit logs to Microsoft Sentinel",
+    "summary": "HCP Vault Dedicated has no native Microsoft Sentinel connector. Deploy a Terraform-managed pipeline that streams audit logs into Azure Log Analytics and Microsoft Sentinel.",
+    "source": "HashiCorp",
+    "sourceId": "hashicorp",
+    "url": "https://www.hashicorp.com/blog/hcp-vault-dedicated-audit-logs-microsoft-sentinel",
+    "publishedDate": "2026-08-27T16:00:00.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "vault",
+      "iac"
+    ],
+    "importance": "low",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-86fc1fae0b02",
+    "title": "Building an AI factory on Kubernetes",
+    "summary": "An AI factory is not just a model or a cluster. It is a pool of GPUs that many teams draw from at once: one team fine-tuning, another serving inference, a third running evaluations, all on...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/08/27/building-an-ai-factory-on-kubernetes/",
+    "publishedDate": "2026-08-27T11:30:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "terraform-e33c33aa7500",
     "title": "v1.17.0-alpha20260827",
     "summary": "1.17.0-alpha20260827 (August 27, 2026) NEW FEATURES: A new -minimal-refresh planning option has been added, which will only refresh resources that have proposed changes. (#35290) ENHANCEMENTS: command/init: Enrich log messages with provider versions (#38918) command/login: display warning after successful login if user is subject to an organization's TTL policy BUG FIXES: funcs: pow and log no longer panic when result is not a number (#38912) ephemeral: Terraform will now use and display diagnos",
@@ -117,6 +234,69 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
+  },
+  {
+    "id": "istio-71fa4346196e",
+    "title": "ISTIO-SECURITY-2026-006",
+    "summary": "Disclosure Details CVE(s) CVE-2026-73513 CVE-2026-73552 CVE-2026-73512 CVE-2026-73547 CVE-2026-73549 CVE-2026-50572 CVE-2026-73546 CVE-2026-48521 CVE-2026-73551 CVE-2026-73511 CVE-2026-73548 CVE-2026-73550 CVE-2026-73553 CVSS Impact Score 7.7 CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H Affected Releases 1.29.0 to 1.29.6 1.30.0 to 1.30.3 CVE Envoy CVEs CVE-2026-73513: (CVSS score 7.5): Fixed a heap use-after-free where an untrusted upstream could send HTTP/2 response trailers without the END_STR",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/news/security/istio-security-2026-006/",
+    "publishedDate": "2026-08-27T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "istio",
+    "releaseVersion": "7.7"
+  },
+  {
+    "id": "istio-290d335c73b5",
+    "title": "Announcing Istio 1.30.4",
+    "summary": "This release contains security fixes. This release note describes what&rsquo;s different between Istio 1.30.3 and 1.30.4. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Security update For more information, see ISTIO-SECURITY-2026-006. Envoy CVEs CVE-2026-73513: (CVSS score 7.5): Fixed a heap use-after-free in oghttp2 when HTTP/2 ",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/news/releases/1.30.x/announcing-1.30.4/",
+    "publishedDate": "2026-08-27T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "istio",
+    "releaseVersion": "1.30.4"
+  },
+  {
+    "id": "istio-9812c317a48d",
+    "title": "Announcing Istio 1.29.7",
+    "summary": "This release contains security fixes. This release note describes what&rsquo;s different between Istio 1.29.6 and 1.29.7. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Security update For more information, see ISTIO-SECURITY-2026-006. Envoy CVEs CVE-2026-73513: (CVSS score 7.5): Fixed a heap use-after-free in oghttp2 when HTTP/2 ",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/news/releases/1.29.x/announcing-1.29.7/",
+    "publishedDate": "2026-08-27T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "istio",
+    "releaseVersion": "1.29.7"
   },
   {
     "id": "backstage-17b87fcf7856",
