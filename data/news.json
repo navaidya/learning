@@ -1,5 +1,124 @@
 [
   {
+    "id": "terraform-e33c33aa7500",
+    "title": "v1.17.0-alpha20260827",
+    "summary": "1.17.0-alpha20260827 (August 27, 2026) NEW FEATURES: A new -minimal-refresh planning option has been added, which will only refresh resources that have proposed changes. (#35290) ENHANCEMENTS: command/init: Enrich log messages with provider versions (#38918) command/login: display warning after successful login if user is subject to an organization's TTL policy BUG FIXES: funcs: pow and log no longer panic when result is not a number (#38912) ephemeral: Terraform will now use and display diagnos",
+    "source": "Terraform",
+    "sourceId": "terraform",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-alpha20260827",
+    "publishedDate": "2026-08-27T10:30:11.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "terraform",
+    "releaseVersion": "v1.17.0-alpha20260827"
+  },
+  {
+    "id": "argo-051a22bfe481",
+    "title": "v3.4.8",
+    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.4.8/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.4.8/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container imag",
+    "source": "Argo",
+    "sourceId": "argo",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.4.8",
+    "publishedDate": "2026-08-27T10:00:19.000Z",
+    "domain": "gitops",
+    "topics": [
+      "gitops",
+      "argo-cd",
+      "argo",
+      "argocd"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "argo",
+    "releaseVersion": "v3.4.8"
+  },
+  {
+    "id": "argo-00d098f1d89d",
+    "title": "v3.5.2",
+    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.2/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.2/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container imag",
+    "source": "Argo",
+    "sourceId": "argo",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.2",
+    "publishedDate": "2026-08-27T09:58:55.000Z",
+    "domain": "gitops",
+    "topics": [
+      "gitops",
+      "argo-cd",
+      "argo",
+      "argocd"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "argo",
+    "releaseVersion": "v3.5.2"
+  },
+  {
+    "id": "argo-520b0c0f61df",
+    "title": "stable: chore: bump version to 3.5.2 on release-3.5 branch (#29404)",
+    "summary": "Signed-off-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com> Co-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com> Co-authored-by: Papapetrou Patroklos 1743100+ppapapetrou76@users.noreply.github.com",
+    "source": "Argo",
+    "sourceId": "argo",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/stable",
+    "publishedDate": "2026-08-27T09:03:35.000Z",
+    "domain": "gitops",
+    "topics": [
+      "argo",
+      "argocd",
+      "gitops"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "argo",
+    "releaseVersion": "3.5.2"
+  },
+  {
+    "id": "k8sgpt-7fb9bfd3d2ce",
+    "title": "v0.4.37",
+    "summary": "0.4.37 (2026-08-19) Features add Amazon Bedrock Mantle (OpenAI-compatible) AI provider (#1640) (bdbc3c7) add LiteLLM backend (#1719) (47db90f) Bug Fixes clamp max-concurrency in custom analysis to avoid deadlock and panic (#1700) (6859e9c) deps: update k8s.io/utils digest to cf1189d (#1688) (8bda53b) deps: update module google.golang.org/grpc to v1.82.1 [security] (#1714) (1c8a56c) do not panic on an Ingress path with a resource backend (#1728) (b4a86de) guard against nil backend port in HTTPRou",
+    "source": "K8sGPT",
+    "sourceId": "k8sgpt",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.37",
+    "publishedDate": "2026-08-27T07:08:47.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "k8sgpt",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "k8sgpt",
+    "releaseVersion": "v0.4.37"
+  },
+  {
+    "id": "openai-57e276283c19",
+    "title": "Expanding OpenAI’s presence in Brazil",
+    "summary": "OpenAI is expanding its presence in Brazil, deepening engagement with developers, businesses, and communities to support AI adoption across the country.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/expanding-our-presence-in-brazil",
+    "publishedDate": "2026-08-27T03:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "backstage-17b87fcf7856",
     "title": "v1.54.5",
     "summary": "This patch release fixes the following issues: Fixed the catalog import owner autocomplete to write canonical group entity references instead of display names to generated catalog-info.yaml files. Fixed catalog pages opened from ownership cards to normalize legacy bare owner filters before rendering, preventing entity reference errors. Fixed ownership card links to filter the catalog by canonical owner entity references instead of mutable presentation titles.",
@@ -2268,26 +2387,6 @@
     "releaseRelated": true,
     "releaseProject": "argo",
     "releaseVersion": "v3.4.7"
-  },
-  {
-    "id": "argo-520b0c0f61df",
-    "title": "stable: chore: bump version to 3.5.1 on release-3.5 branch (#29165)",
-    "summary": "Signed-off-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com> Co-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/stable",
-    "publishedDate": "2026-08-12T11:24:40.000Z",
-    "domain": "gitops",
-    "topics": [
-      "argo",
-      "argocd",
-      "gitops"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "3.5.1"
   },
   {
     "id": "cncf-f5797444d326",
@@ -8846,44 +8945,5 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "openai-8337eeb248ea",
-    "title": "Strengthening societal resilience with Rosalind Biodefense",
-    "summary": "OpenAI launches Rosalind Biodefense, expanding trusted access to GPT-Rosalind for vetted developers and U.S. government partners advancing biodefense, public health, and pandemic preparedness through frontier AI.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
-    "publishedDate": "2026-05-29T03:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "istio-90e275f85973",
-    "title": "Support for Istio 1.28 ends on the 28th of June, 2026",
-    "summary": "According to Istio&rsquo;s support policy, minor releases like 1.28 are supported until six weeks after the N+2 minor release (1.30 in this case). Istio 1.30 was released on the 18th of May, 2026, and support for 1.28 will end on the 28th of June, 2026. At that point we will stop back-porting fixes for security issues and critical bugs to 1.28, so we encourage you to upgrade to the latest version of Istio (1.30.3). If you don&rsquo;t do this you may put yourself in the position of having to do a",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/support/announcing-1.28-eol/",
-    "publishedDate": "2026-05-29T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "1.28"
   }
 ]

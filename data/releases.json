@@ -1,5 +1,29 @@
 [
   {
+    "project": "terraform",
+    "version": "v1.17.0-alpha20260827",
+    "publishedDate": "2026-08-27T10:30:11.000Z",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-alpha20260827",
+    "sourceId": "terraform",
+    "title": "v1.17.0-alpha20260827"
+  },
+  {
+    "project": "argo",
+    "version": "v3.4.8",
+    "publishedDate": "2026-08-27T10:00:19.000Z",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.4.8",
+    "sourceId": "argo",
+    "title": "v3.4.8"
+  },
+  {
+    "project": "k8sgpt",
+    "version": "v0.4.37",
+    "publishedDate": "2026-08-27T07:08:47.000Z",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.37",
+    "sourceId": "k8sgpt",
+    "title": "v0.4.37"
+  },
+  {
     "project": "backstage",
     "version": "v1.54.5",
     "publishedDate": "2026-08-26T17:02:51.000Z",
@@ -30,14 +54,6 @@
     "url": "https://github.com/robusta-dev/robusta/releases/tag/0.48.0",
     "sourceId": "robusta",
     "title": "0.48.0"
-  },
-  {
-    "project": "terraform",
-    "version": "v1.16.0",
-    "publishedDate": "2026-08-26T13:05:28.000Z",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0",
-    "sourceId": "terraform",
-    "title": "v1.16.0"
   },
   {
     "project": "holmesgpt",
@@ -184,14 +200,6 @@
     "title": "containerd 2.2.7"
   },
   {
-    "project": "argo",
-    "version": "v3.5.1",
-    "publishedDate": "2026-08-12T12:16:52.000Z",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.1",
-    "sourceId": "argo",
-    "title": "v3.5.1"
-  },
-  {
     "project": "flux",
     "version": "v2.9.4",
     "publishedDate": "2026-08-07T14:32:26.000Z",
@@ -238,13 +246,5 @@
     "url": "https://istio.io/latest/news/releases/1.30.x/announcing-1.30.3/",
     "sourceId": "istio",
     "title": "Announcing Istio 1.30.3"
-  },
-  {
-    "project": "k8sgpt",
-    "version": "v0.4.36",
-    "publishedDate": "2026-07-10T14:00:05.000Z",
-    "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.36",
-    "sourceId": "k8sgpt",
-    "title": "v0.4.36"
   }
 ]
