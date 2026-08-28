@@ -1,5 +1,100 @@
 [
   {
+    "id": "cncf-184f511bf12f",
+    "title": "Scale before the spike: Predictive autoscaling for GPU workloads on Kubernetes",
+    "summary": "The 3 AM Call We got paged one Tuesday morning. A critical production service had crashed under traffic—not gradually degraded, but crashed. Hundreds of pending pods. Users were seeing 15–20% error rates. The incident postmortem was...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/08/28/scale-before-the-spike-predictive-autoscaling-for-gpu-workloads-on-kubernetes/",
+    "publishedDate": "2026-08-28T11:30:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "pulumi-29ad4002d93c",
+    "title": "v3.260.0",
+    "summary": "3.260.0 (2026-08-28) Features [cli/deployment] Make pulumi deployment settings get render every source kind and show environment variable values, changing the --output=json shape of environmentVariables from a list of names to a list of objects #24284 [sdk/go] Support Go 1.27 #24401 [cli/state] Add pulumi state promote to turn stateful snippets into Pulumi program code #24453 Bug Fixes [engine] Replace resources whose deletedWith target is being replaced, instead of leaving them orphaned in stat",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.260.0",
+    "publishedDate": "2026-08-28T11:06:12.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.260.0"
+  },
+  {
+    "id": "cncf-071f2a8b4afd",
+    "title": "Your Kubernetes platform is ready for containers. Is it ready for AI?",
+    "summary": "Kubernetes has given platform teams a consistent way to deploy, scale, and operate containerized applications. Now, many of those same teams are being asked to support AI. The transition is already underway. According to the CNCF...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/08/28/your-kubernetes-platform-is-ready-for-containers-is-it-ready-for-ai/",
+    "publishedDate": "2026-08-28T11:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "pulumi-dcbdefab6b35",
+    "title": "sdk/v3.260.0: redact secrets from URLs (#24488)",
+    "summary": "Currently we don't add secrets from URLs to the global secret filter. This inclueds e.g. postgres passwords in the postgres URL, and others. Add all secrets from URLs to the global secret filter, so they don't end up in logs.",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.260.0",
+    "publishedDate": "2026-08-28T09:51:27.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.260.0"
+  },
+  {
+    "id": "backstage-e821f0fc2f18",
+    "title": "v1.54.6",
+    "summary": "This patch release includes a collection of validation, permission handling, and robustness improvements across Backstage. Scaffolder Improved task visibility, ordering, retry behavior, permission evaluation, error handling, log redaction, and handling of internal task data. Added the opt-in scaffolder.requireScmUserCredentials setting for requiring user-provided credentials in supported GitHub, GitLab, Bitbucket, and Azure DevOps actions. Improved repository path and attachment handling in Bitb",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.6",
+    "publishedDate": "2026-08-28T08:26:31.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "platform-engineering",
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.54.6"
+  },
+  {
     "id": "loki-735a48674ebe",
     "title": "v3.6.16",
     "summary": "3.6.16 (2026-08-27) Features Add flag to ignore missing chunks during deletion of logs with line filter [release-3.6.x] (#24232) (b87159f) Bug Fixes security/UNKNOWN/: Update module go.etcd.io/etcd/client/pkg/v3 to v3.5.33 [SECURITY] (release-3.6.x) (#24062) (bf4b367) storage: Pre-compute SHA-256 to avoid aws-chunked on PutObject [release-3.6.x] (#24214) (0a29895)",
@@ -61,6 +156,24 @@
     "releaseProject": "vector"
   },
   {
+    "id": "kubernetes-f1d9baa9495e",
+    "title": "Kubernetes v1.37: Metrics API graduates to stable",
+    "summary": "Kubernetes v1.37 promotes the metrics.k8s.io API to stable (v1). This API provides CPU and memory usage for nodes and Pods, and is the API behind commands such as kubectl top and resource-metrics-based autoscaling. For cluster operators and application developers, this graduation means that the API now has the stability guarantees associated with a Kubernetes stable API. The v1 API has the same resource types and fields as v1beta1; this is an API-version graduation, not a change to the metrics t",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/08/27/kubernetes-v1-37-metrics-api-ga/",
+    "publishedDate": "2026-08-27T18:30:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes",
+    "releaseVersion": "v1.37"
+  },
+  {
     "id": "opentofu-872e2b0b2cd2",
     "title": "v1.13.0-beta1",
     "summary": "The v1.13.x release series is supported until August 1 2027. 1.13.0 (Unreleased) UPGRADE NOTES: The \"winrm\" connection type for provisioners is no longer supported. (#4012) This connection type was deprecated in OpenTofu v1.12, and now removed in v1.13. Some of the upstream libraries OpenTofu was using to implement these features are no longer maintained, so it's not viable for us to offer this anymore. Modern Windows versions now support OpenSSH, and so we suggest that anyone currently relying ",
@@ -95,6 +208,23 @@
       "iac"
     ],
     "importance": "low",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "grafana-8d913edf3827",
+    "title": "How to measure and improve instrumentation quality for better full-stack observability",
+    "summary": "Modern engineering teams instrument everything, with metrics, logs, traces, and profiles flowing from hundreds of services at once. But full-stack observability isn’t really about collecting more telemetry; it's about having a single, unified picture of how your services connect to every layer beneath them, including their dependencies, the pods and nodes they run on, and the logs, traces, and profiles that explain their behavior. But there's often a quiet problem hiding underneath all that data",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/how-to-measure-and-improve-instrumentation-quality-for-better-full-stack-observability/",
+    "publishedDate": "2026-08-27T13:03:49.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
   },
