@@ -1,19 +1,27 @@
 [
   {
-    "project": "pulumi",
-    "version": "v3.260.0",
-    "publishedDate": "2026-08-28T11:06:12.000Z",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.260.0",
-    "sourceId": "pulumi",
-    "title": "v3.260.0"
+    "project": "containerd",
+    "version": "1.12.0-rc.0",
+    "publishedDate": "2026-08-28T17:59:38.000Z",
+    "url": "https://github.com/containerd/containerd/releases/tag/api%2Fv1.12.0-rc.0",
+    "sourceId": "containerd",
+    "title": "containerd API 1.12.0-rc.0"
   },
   {
     "project": "backstage",
-    "version": "v1.54.6",
-    "publishedDate": "2026-08-28T08:26:31.000Z",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.6",
+    "version": "v1.53.2",
+    "publishedDate": "2026-08-28T16:42:55.000Z",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.53.2",
     "sourceId": "backstage",
-    "title": "v1.54.6"
+    "title": "v1.53.2"
+  },
+  {
+    "project": "pulumi",
+    "version": "v3.260.0",
+    "publishedDate": "2026-08-28T13:01:36.000Z",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.260.0",
+    "sourceId": "pulumi",
+    "title": "pkg/v3.260.0: Changelog and go.mod updates for v3.260.0 (#24490)"
   },
   {
     "project": "loki",
@@ -198,14 +206,6 @@
     "url": "https://www.hashicorp.com/blog/packer-v1160-brings-verifiable-provenance-to-machine-images",
     "sourceId": "hashicorp",
     "title": "Packer v1.16.0 brings verifiable provenance to machine images"
-  },
-  {
-    "project": "containerd",
-    "version": "2.2.7",
-    "publishedDate": "2026-08-12T18:02:29.000Z",
-    "url": "https://github.com/containerd/containerd/releases/tag/v2.2.7",
-    "sourceId": "containerd",
-    "title": "containerd 2.2.7"
   },
   {
     "project": "flux",

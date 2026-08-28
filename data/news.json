@@ -1,5 +1,82 @@
 [
   {
+    "id": "containerd-df2a0d49abb8",
+    "title": "containerd API 1.12.0-rc.0",
+    "summary": "Welcome to the api/v1.12.0-rc.0 release of containerd! This is a pre-release of containerd The 13th release for the containerd 1.x API aligns with the containerd 2.4 release. Highlights Include media type in content create event (#13833) Add parent path to runc checkpoint options (#13699) Deprecations Deprecate \"allow mount handlers\" in shim info and replace with mount capability extension (#14002) Fix sandbox task API endpoints for non-runc runtimes (#13360) Please try out the release binaries ",
+    "source": "containerd",
+    "sourceId": "containerd",
+    "url": "https://github.com/containerd/containerd/releases/tag/api%2Fv1.12.0-rc.0",
+    "publishedDate": "2026-08-28T17:59:38.000Z",
+    "domain": "containers",
+    "topics": [
+      "containers",
+      "containerd",
+      "runtime"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "containerd",
+    "releaseVersion": "1.12.0-rc.0"
+  },
+  {
+    "id": "backstage-7b8ed336ab9f",
+    "title": "v1.53.2",
+    "summary": "This patch release includes robustness improvements across the Scaffolder and Catalog. Scaffolder Improved task response serialization, retry behavior, and permission evaluation. Catalog Improved validation of catalog entity placeholder paths.",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.53.2",
+    "publishedDate": "2026-08-28T16:42:55.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.53.2"
+  },
+  {
+    "id": "hashicorp-6bb72ba32478",
+    "title": "Relaunching HashiCorp Validated Designs with improved usability",
+    "summary": "Learn how the refreshed HashiCorp Validated Designs help teams find field-tested guidance for deploying, operating, and using products in production.",
+    "source": "HashiCorp",
+    "sourceId": "hashicorp",
+    "url": "https://www.hashicorp.com/blog/relaunching-hashicorp-validated-designs-with-improved-usability",
+    "publishedDate": "2026-08-28T16:00:00.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "vault",
+      "iac"
+    ],
+    "importance": "low",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "pulumi-aef4e0bf7358",
+    "title": "pkg/v3.260.0: Changelog and go.mod updates for v3.260.0 (#24490)",
+    "summary": "Co-authored-by: github-actions github-actions@github.com Co-authored-by: Julien Poissonnier julien@caffeine.lu",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.260.0",
+    "publishedDate": "2026-08-28T13:01:36.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.260.0"
+  },
+  {
     "id": "cncf-184f511bf12f",
     "title": "Scale before the spike: Predictive autoscaling for GPU workloads on Kubernetes",
     "summary": "The 3 AM Call We got paged one Tuesday morning. A critical production service had crashed under traffic—not gradually degraded, but crashed. Hundreds of pending pods. Users were seeing 15–20% error rates. The incident postmortem was...",
