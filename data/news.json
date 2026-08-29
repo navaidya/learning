@@ -1,5 +1,67 @@
 [
   {
+    "id": "backstage-745a1d123495",
+    "title": "v1.49.6",
+    "summary": "Backstage 1.49.6 This patch release contains security fixes and is recommended for all users of Backstage 1.49.",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.49.6",
+    "publishedDate": "2026-08-29T11:21:57.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "platform-engineering",
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.49.6"
+  },
+  {
+    "id": "backstage-7d8228ba8ec0",
+    "title": "v1.50.5",
+    "summary": "Backstage 1.50.5 This patch release contains security fixes and is recommended for all users of Backstage 1.50.",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.50.5",
+    "publishedDate": "2026-08-29T10:53:27.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "platform-engineering",
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.50.5"
+  },
+  {
+    "id": "backstage-c7bdd76f2340",
+    "title": "v1.51.3",
+    "summary": "This patch release includes a robustness improvement in the Catalog. Catalog Improved validation of catalog entity placeholder paths.",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.51.3",
+    "publishedDate": "2026-08-29T09:25:31.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.51.3"
+  },
+  {
     "id": "kubernetes-62fba4389f31",
     "title": "Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles",
     "summary": "Pod Certificate / Cluster Trust Bundles Blog PostKubernetes brings a wealth of features that make it easy to run your production workloads securely and reliably. While aspects like scheduling, health checks and resource limits are probably at the front of your mind, one other important feature of Kubernetes is production identity — how your workload can authenticate to other systems in order to do its job. Up until now, the primary production identity mechanism built into Kubernetes has been ser",
