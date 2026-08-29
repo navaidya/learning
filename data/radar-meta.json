@@ -1,22 +1,27 @@
 {
-  "collectedAt": "2026-08-29T07:54:00.576Z",
+  "collectedAt": "2026-08-29T17:09:55.464Z",
   "sourceIds": [
     "cncf",
-    "prometheus",
+    "kubernetes",
+    "opentelemetry",
     "grafana",
     "cilium",
     "terraform",
     "opentofu",
+    "oci-oke",
+    "openai",
+    "istio",
+    "hashicorp"
+  ],
+  "failedSourceIds": [
+    "prometheus",
     "argo",
     "backstage",
-    "oci-oke",
     "holmesgpt",
     "k8sgpt",
-    "openai",
     "kubernetes-releases",
     "gateway-api",
     "helm",
-    "istio",
     "containerd",
     "etcd",
     "karpenter",
@@ -27,14 +32,9 @@
     "vector",
     "flux",
     "crossplane",
-    "hashicorp",
     "pulumi",
     "mcp-spec",
     "robusta"
   ],
-  "failedSourceIds": [
-    "kubernetes",
-    "opentelemetry"
-  ],
-  "itemCount": 481
+  "itemCount": 482
 }

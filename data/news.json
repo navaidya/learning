@@ -1,5 +1,23 @@
 [
   {
+    "id": "kubernetes-62fba4389f31",
+    "title": "Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles",
+    "summary": "Pod Certificate / Cluster Trust Bundles Blog PostKubernetes brings a wealth of features that make it easy to run your production workloads securely and reliably. While aspects like scheduling, health checks and resource limits are probably at the front of your mind, one other important feature of Kubernetes is production identity — how your workload can authenticate to other systems in order to do its job. Up until now, the primary production identity mechanism built into Kubernetes has been ser",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/08/28/kubernetes-v1-37-pod-certificates-and-cluster-trust-bundles/",
+    "publishedDate": "2026-08-28T18:30:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes",
+    "releaseVersion": "v1.37"
+  },
+  {
     "id": "containerd-df2a0d49abb8",
     "title": "containerd API 1.12.0-rc.0",
     "summary": "Welcome to the api/v1.12.0-rc.0 release of containerd! This is a pre-release of containerd The 13th release for the containerd 1.x API aligns with the containerd 2.4 release. Highlights Include media type in content create event (#13833) Add parent path to runc checkpoint options (#13699) Deprecations Deprecate \"allow mount handlers\" in shim info and replace with mount capability extension (#14002) Fix sandbox task API endpoints for non-runc runtimes (#13360) Please try out the release binaries ",
