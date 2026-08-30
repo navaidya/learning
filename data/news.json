@@ -9360,21 +9360,5 @@
     "releaseRelated": true,
     "releaseProject": "vector",
     "releaseVersion": "v0.56.0"
-  },
-  {
-    "id": "kubernetes-fd03f38b6fb4",
-    "title": "From Kubernetes Dashboard to Headlamp: Understanding the Transition",
-    "summary": "For many people, Kubernetes Dashboard was their first window into Kubernetes. It offered a simple visual way to see what was running in a cluster, inspect resources, and build confidence without relying on the command line. For years, it helped developers, students, and operators make sense of Kubernetes, and it served as an important onramp into the ecosystem. The Kubernetes Dashboard project has now been archived. We deeply respect the work the team did and the role Dashboard played in making ",
-    "source": "Kubernetes",
-    "sourceId": "kubernetes",
-    "url": "https://kubernetes.io/blog/2026/06/01/dashboard-to-headlamp/",
-    "publishedDate": "2026-06-01T18:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   }
 ]
