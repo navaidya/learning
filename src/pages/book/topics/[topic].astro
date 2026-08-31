@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import BookNoteCard from '../../../components/book/BookNoteCard.astro';
+import { getBookIndexModel } from '../../../lib/content';
+import { withBase } from '../../../lib/url';
+
+export async function getStaticPaths() {
+  const index = await getBookIndexModel();
+  return index.hubs.map((hub) => ({ params: { topic: hub.slug }, props: { hub } }));
+}
+
+const { hub } = Astro.props;
+const noteLabel = `${hub.entries.length} note${hub.entries.length === 1 ? '' : 's'}`;
+---
+<BaseLayout title={`${hub.title} | Knowledge Book`} description={hub.description}>
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href={withBase('/book')}>Knowledge Book</a><span aria-hidden="true">/</span><span>{hub.title}</span></nav>
+  <h1>{hub.title}</h1>
+  <p class="lede">{hub.description}</p>
+  <p class="topic-count">{noteLabel}</p>
+  <div class="grid note-grid">{hub.entries.map((entry) => <BookNoteCard entry={entry} />)}</div>
+</BaseLayout>

@@ -1,0 +1,9 @@
+---
+import type { TopicCatalogEntry } from '../../lib/bookTopics';
+import { withBase } from '../../lib/url';
+
+const { topics } = Astro.props as { topics: TopicCatalogEntry[] };
+---
+<ul class="topic-pills" aria-label="Related topics">
+  {topics.map((topic) => <li><a href={withBase(`/book/topics/${topic.slug}`)}>{topic.title}</a></li>)}
+</ul>

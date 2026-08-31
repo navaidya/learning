@@ -1,0 +1,12 @@
+---
+import type { TopicHub } from '../../lib/bookIndex';
+import { withBase } from '../../lib/url';
+
+const { hub } = Astro.props as { hub: TopicHub };
+const noteLabel = `${hub.entries.length} note${hub.entries.length === 1 ? '' : 's'}`;
+---
+<a class="topic-hub-card" href={withBase(`/book/topics/${hub.slug}`)}>
+  <h3>{hub.title}</h3>
+  <p>{hub.description}</p>
+  <small>{noteLabel}</small>
+</a>

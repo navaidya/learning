@@ -1,9 +1,12 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BookLayout from '../../layouts/BookLayout.astro';
+import TopicPills from '../../components/book/TopicPills.astro';
+import { getBookIndexModel } from '../../lib/content';
 import { withBase } from '../../lib/url';
 export async function getStaticPaths() { const entries = await getCollection('book'); return entries.map((entry) => ({ params: { slug: entry.id }, props: { entry } })); }
 const { entry } = Astro.props;
 const { Content } = await render(entry);
+const indexedEntry = (await getBookIndexModel()).entries.find((item) => item.id === entry.id);
 ---
-<BookLayout title={entry.data.title}><nav slot="sidebar"><a href={withBase('/book')}>All topics</a></nav><p class="eyebrow">{entry.data.domain ?? 'Knowledge book'}</p><h1>{entry.data.title}</h1><Content /></BookLayout>
+<BookLayout title={entry.data.title}><nav slot="sidebar"><a href={withBase('/book')}>All topics</a>{indexedEntry && <TopicPills topics={indexedEntry.topics} />}</nav><p class="eyebrow">{entry.data.domain ?? 'Knowledge book'}</p><h1>{entry.data.title}</h1><Content /></BookLayout>

@@ -1,0 +1,11 @@
+---
+import type { BookIndexEntry } from '../../lib/bookIndex';
+import { withBase } from '../../lib/url';
+import TopicPills from './TopicPills.astro';
+
+const { entry } = Astro.props as { entry: BookIndexEntry };
+---
+<article class="book-note-card">
+  <h3><a href={withBase(`/book/${entry.id}`)}>{entry.data.title}</a></h3>
+  <TopicPills topics={entry.topics} />
+</article>

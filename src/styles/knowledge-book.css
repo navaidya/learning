@@ -1,0 +1,87 @@
+.topic-grid,
+.note-grid {
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.topic-hub-card,
+.book-note-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1.1rem;
+}
+
+.topic-hub-card {
+  display: grid;
+  gap: .55rem;
+  text-decoration: none;
+}
+
+.topic-hub-card:hover,
+.topic-hub-card:focus-visible,
+.book-note-card:hover {
+  border-color: var(--accent);
+}
+
+.topic-hub-card h3,
+.book-note-card h3 {
+  margin: 0;
+}
+
+.topic-hub-card p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.topic-hub-card small,
+.topic-count {
+  color: var(--muted);
+}
+
+.book-note-card {
+  display: grid;
+  gap: .8rem;
+}
+
+.book-note-card h3 a {
+  text-decoration: none;
+}
+
+.book-note-card h3 a:hover,
+.book-note-card h3 a:focus-visible {
+  text-decoration: underline;
+}
+
+.topic-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topic-pills a {
+  background: #f1f4f9;
+  border-radius: 99px;
+  color: var(--muted);
+  font-size: .8rem;
+  padding: .2rem .55rem;
+  text-decoration: none;
+}
+
+.topic-pills a:hover,
+.topic-pills a:focus-visible {
+  color: var(--accent);
+  outline: 1px solid var(--accent);
+}
+
+.breadcrumb {
+  display: flex;
+  gap: .5rem;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb a {
+  color: var(--accent);
+}

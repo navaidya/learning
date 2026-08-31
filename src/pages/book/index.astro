@@ -1,7 +1,22 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getBookEntries } from '../../lib/content';
-import { withBase } from '../../lib/url';
-const entries = await getBookEntries();
+import BookNoteCard from '../../components/book/BookNoteCard.astro';
+import TopicHubCard from '../../components/book/TopicHubCard.astro';
+import { getBookIndexModel } from '../../lib/content';
+
+const model = await getBookIndexModel();
 ---
-<BaseLayout title="Knowledge Book"><h1>Knowledge Book</h1><p class="lede">Markdown-first notes on modern infrastructure engineering and AIOps.</p><div class="grid">{entries.map((entry) => <a class="panel" href={withBase(`/book/${entry.id}`)}><h2>{entry.data.title}</h2><p>{entry.data.domain ?? 'Technical notes'}</p></a>)}</div></BaseLayout>
+<BaseLayout title="Knowledge Book">
+  <h1>Knowledge Book</h1>
+  <p class="lede">Browse Markdown-first notes by the subjects they connect to.</p>
+
+  <section aria-labelledby="topic-directory-title">
+    <h2 id="topic-directory-title">Topics</h2>
+    <div class="grid topic-grid">{model.hubs.map((hub) => <TopicHubCard hub={hub} />)}</div>
+  </section>
+
+  <section class="section-heading" aria-labelledby="all-notes-title">
+    <h2 id="all-notes-title">All notes</h2>
+    <div class="grid note-grid">{model.entries.map((entry) => <BookNoteCard entry={entry} />)}</div>
+  </section>
+</BaseLayout>
