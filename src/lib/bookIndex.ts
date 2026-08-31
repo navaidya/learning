@@ -23,6 +23,12 @@ export interface BookIndex {
   startHere: BookIndexEntry[];
 }
 
+export interface KnowledgeDashboardModel {
+  startHere: BookIndexEntry[];
+  featuredHubs: TopicHub[];
+  recentlyAdded: BookIndexEntry[];
+}
+
 const otherTopic: TopicCatalogEntry = {
   slug: 'other',
   title: 'Other',
@@ -59,4 +65,14 @@ export function createBookIndex(entries: BookSourceEntry[], catalog: TopicCatalo
   const entriesById = new Map(indexedEntries.map((entry) => [entry.id, entry]));
 
   return { entries: indexedEntries, hubs, startHere: startHereIds.flatMap((id) => entriesById.get(id) ?? []) };
+}
+
+export function createKnowledgeDashboardModel(index: BookIndex): KnowledgeDashboardModel {
+  return {
+    startHere: index.startHere,
+    featuredHubs: index.hubs
+      .filter((hub) => hub.featured !== undefined)
+      .sort((left, right) => left.featured! - right.featured!),
+    recentlyAdded: index.entries.slice().sort((left, right) => right.id.localeCompare(left.id)).slice(0, 5),
+  };
 }

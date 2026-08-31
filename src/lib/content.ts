@@ -5,6 +5,8 @@ import { calculateDomainProgress } from './progress';
 import { getRadarSummary } from './news/radar';
 import { sampleTopics, getTopicProgress } from './topicProgress';
 import { domains } from './domains';
+import { createBookIndex, createKnowledgeDashboardModel } from './bookIndex';
+import { getBookTopicCatalog } from './bookTopics';
 
 export { domains };
 
@@ -17,3 +19,17 @@ export async function getDashboardModel(asOf = new Date()) {
 
 export async function getDomainModel(slug: string, asOf = new Date()) { const model = await getDashboardModel(asOf); const domain = model.domains.find((item) => item.slug === slug); return domain ? { ...domain, recommendations: recommendTopics(domain.topics.map((item) => item.topic), asOf) } : undefined; }
 export async function getBookEntries() { return getCollection('book'); }
+
+export async function getBookIndexModel() {
+  const entries = await getCollection('book');
+  const catalog = getBookTopicCatalog();
+  return createBookIndex(entries, catalog.topics, catalog.startHere);
+}
+
+export async function getKnowledgeDashboardModel() {
+  return createKnowledgeDashboardModel(await getBookIndexModel());
+}
+
+export async function getBookTopicModel(slug: string) {
+  return (await getBookIndexModel()).hubs.find((hub) => hub.slug === slug);
+}

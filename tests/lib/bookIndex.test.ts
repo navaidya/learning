@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { createBookIndex } from '../../src/lib/bookIndex';
+import { createBookIndex, createKnowledgeDashboardModel } from '../../src/lib/bookIndex';
 
 const catalog = [
   { slug: 'kubernetes', title: 'Kubernetes', description: 'Cluster architecture and operations.', featured: 1 },
@@ -43,5 +43,18 @@ describe('createBookIndex', () => {
     ], catalog, ['missing', 'known']);
 
     expect(index.startHere.map((entry) => entry.id)).toEqual(['known']);
+  });
+
+  it('orders featured hubs by configured rank and limits recently added notes', () => {
+    const index = createBookIndex([
+      { id: '2026-01', data: { title: 'One', domain: 'kubernetes' } },
+      { id: '2026-03', data: { title: 'Three', domain: 'aiops' } },
+      { id: '2026-02', data: { title: 'Two', domain: 'kubernetes' } },
+    ], catalog, ['2026-01']);
+
+    const dashboard = createKnowledgeDashboardModel(index);
+    expect(dashboard.featuredHubs.map((hub) => hub.slug)).toEqual(['kubernetes', 'aiops']);
+    expect(dashboard.recentlyAdded.map((entry) => entry.id)).toEqual(['2026-03', '2026-02', '2026-01']);
+    expect(dashboard.startHere.map((entry) => entry.id)).toEqual(['2026-01']);
   });
 });

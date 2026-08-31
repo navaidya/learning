@@ -2,6 +2,7 @@
 title: AI-assisted Kubernetes Troubleshooting
 domain: aiops
 topic: kubernetes-troubleshooting
+topics: [aiops, kubernetes]
 status: learning
 importance: high
 coverage: 35
