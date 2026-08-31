@@ -1,5 +1,85 @@
 [
   {
+    "id": "helm-c28b6c768838",
+    "title": "Helm v3.22.0-rc.1",
+    "summary": "Helm v3.22.0-rc.1 is a pre-release. It is to help gather feedback from the community as well as give users a chance to test Helm in staging environments before v3.22.0 is officially released. The official changelog will come out with the v3.22.0 release. For now, you can see the commit changes from v3.21.4 here. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at th",
+    "source": "Helm",
+    "sourceId": "helm",
+    "url": "https://github.com/helm/helm/releases/tag/v3.22.0-rc.1",
+    "publishedDate": "2026-08-31T22:56:05.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "helm",
+      "packaging"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "helm",
+    "releaseVersion": "v3.22.0-rc.1"
+  },
+  {
+    "id": "helm-7b2623572ac3",
+    "title": "Helm v4.3.0-rc.1",
+    "summary": "Helm v4.3.0-rc.1 is a pre-release. It is to help gather feedback from the community as well as give users a chance to test Helm in staging environments before v4.3.0 is officially released. The official changelog will come out with the v4.3.0 release. For now, you can see the commit changes from v4.2.4 here. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Pu",
+    "source": "Helm",
+    "sourceId": "helm",
+    "url": "https://github.com/helm/helm/releases/tag/v4.3.0-rc.1",
+    "publishedDate": "2026-08-31T22:09:46.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "helm",
+      "packaging"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "helm",
+    "releaseVersion": "v4.3.0-rc.1"
+  },
+  {
+    "id": "flux-690daa9b8fa6",
+    "title": "v2.9.5",
+    "summary": "Highlights Flux v2.9.5 is a patch release that moves helm-controller and source-controller back to upstream Helm, now at v4.2.4, dropping the temporary Flux fork. It hardens the handling of kubeconfig Secrets in helm-controller and kustomize-controller, which now reject kubeconfigs referencing files on the local filesystem and require credentials and certificates to be embedded inline. It also stops kustomize-controller from leaving behind the temporary directories of a previous process that exi",
+    "source": "Flux",
+    "sourceId": "flux",
+    "url": "https://github.com/fluxcd/flux2/releases/tag/v2.9.5",
+    "publishedDate": "2026-08-31T17:07:22.000Z",
+    "domain": "gitops",
+    "topics": [
+      "flux",
+      "gitops",
+      "cd"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "flux",
+    "releaseVersion": "v2.9.5"
+  },
+  {
+    "id": "opentelemetry-b3455561499b",
+    "title": "OpenTelemetry Go Logs API and SDK reach release candidate status",
+    "summary": "OpenTelemetry Go v1.47.0-rc.1 is here. This release promotes the Logs API and SDK to release candidate (RC), the final stage before we provide stable v1 compatibility guarantees. We believe the design is ready, and now we need the community to test it in real applications and integrations before those guarantees take effect. What is included in the release candidate? The RC covers these two modules: go.opentelemetry.io/otel/log go.opentelemetry.io/otel/sdk/log These modules move from v0.22.0, wi",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/go-logs-api-sdk-rc/",
+    "publishedDate": "2026-08-31T15:40:58.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry",
+    "releaseVersion": "v1.47.0-rc.1"
+  },
+  {
     "id": "cncf-a0dd7429df38",
     "title": "OpenTelemetry has graduated… now what?",
     "summary": "In case you missed it: OpenTelemetry (OTel) has officially achieved CNCF graduated status! It now stands proudly alongside amazing open source projects such as Kubernetes and Prometheus, to name just a few. It’s been a long...",
@@ -16,6 +96,49 @@
     "importance": "high",
     "architectureShift": true,
     "releaseRelated": false
+  },
+  {
+    "id": "istio-e9de8974e58b",
+    "title": "Istio 1.31.0 Change Notes",
+    "summary": "Traffic Management Improved logging when a Gateway API CRD installed in the cluster is below the minimum version required by this Istio version. The message is now logged at warn level and explains that resources of that kind will not be processed until the CRDs are upgraded. Previously, this was logged at info level and easy to miss, which made TLS passthrough breakage after upgrading to 1.30 with stale CRDs hard to diagnose. Improved istiod scalability in ambient mode by scoping XDS pushes fro",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/news/releases/1.31.x/announcing-1.31/change-notes/",
+    "publishedDate": "2026-08-31T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "gateway-api",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "istio",
+    "releaseVersion": "1.31.0"
+  },
+  {
+    "id": "istio-8bc4aa5ba033",
+    "title": "Announcing Istio 1.31.0",
+    "summary": "We are pleased to announce the release of Istio 1.31. Thank you to all our contributors, testers, users, and enthusiasts for helping us get the 1.31.0 release published! We would like to thank the Release Managers for this release, Jacek Ewertowski from Red Hat, Jackson Greer from Microsoft, and Jianpeng He from Tetrate. CHANGE NOTES Get a detailed list of what's changed. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the do",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/news/releases/1.31.x/announcing-1.31/",
+    "publishedDate": "2026-08-31T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "istio",
+    "releaseVersion": "1.31.0"
   },
   {
     "id": "backstage-745a1d123495",
@@ -8508,6 +8631,25 @@
     "releaseRelated": true,
     "releaseProject": "helm",
     "releaseVersion": "v3.21.2"
+  },
+  {
+    "id": "istio-684f7c3ecc42",
+    "title": "Hardening Kubernetes Security with Istio Ambient Mode on Flat Networks",
+    "summary": "If you&rsquo;ve moved a workload off AWS and onto on-prem infrastructure, you&rsquo;ve likely run into this: the network isolation you got for free on the cloud does not exist on bare metal. On AWS, Security Groups and VPC boundaries enforce service boundaries quietly in the background. Most teams never have to think about it. On-prem, the network is flat by default. Your payment service, your internal admin panel, your logging agent, and your customer-facing API all sit in the same cluster with",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/blog/2026/istio-network-security-flat-networks-ambient-mode/",
+    "publishedDate": "2026-06-20T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "opentelemetry-b3f6726cebd9",

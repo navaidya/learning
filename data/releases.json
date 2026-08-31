@@ -1,5 +1,37 @@
 [
   {
+    "project": "helm",
+    "version": "v3.22.0-rc.1",
+    "publishedDate": "2026-08-31T22:56:05.000Z",
+    "url": "https://github.com/helm/helm/releases/tag/v3.22.0-rc.1",
+    "sourceId": "helm",
+    "title": "Helm v3.22.0-rc.1"
+  },
+  {
+    "project": "flux",
+    "version": "v2.9.5",
+    "publishedDate": "2026-08-31T17:07:22.000Z",
+    "url": "https://github.com/fluxcd/flux2/releases/tag/v2.9.5",
+    "sourceId": "flux",
+    "title": "v2.9.5"
+  },
+  {
+    "project": "opentelemetry",
+    "version": "v1.47.0-rc.1",
+    "publishedDate": "2026-08-31T15:40:58.000Z",
+    "url": "https://opentelemetry.io/blog/2026/go-logs-api-sdk-rc/",
+    "sourceId": "opentelemetry",
+    "title": "OpenTelemetry Go Logs API and SDK reach release candidate status"
+  },
+  {
+    "project": "istio",
+    "version": "1.31.0",
+    "publishedDate": "2026-08-31T00:00:00.000Z",
+    "url": "https://istio.io/latest/news/releases/1.31.x/announcing-1.31/change-notes/",
+    "sourceId": "istio",
+    "title": "Istio 1.31.0 Change Notes"
+  },
+  {
     "project": "backstage",
     "version": "v1.49.6",
     "publishedDate": "2026-08-29T11:21:57.000Z",
@@ -70,14 +102,6 @@
     "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.37",
     "sourceId": "k8sgpt",
     "title": "v0.4.37"
-  },
-  {
-    "project": "istio",
-    "version": "7.7",
-    "publishedDate": "2026-08-27T00:00:00.000Z",
-    "url": "https://istio.io/latest/news/security/istio-security-2026-006/",
-    "sourceId": "istio",
-    "title": "ISTIO-SECURITY-2026-006"
   },
   {
     "project": "kubernetes-releases",
@@ -184,14 +208,6 @@
     "title": "v1.65.0/v0.159.0"
   },
   {
-    "project": "helm",
-    "version": "v4.2.4",
-    "publishedDate": "2026-08-14T15:03:07.000Z",
-    "url": "https://github.com/helm/helm/releases/tag/v4.2.4",
-    "sourceId": "helm",
-    "title": "Helm v4.2.4"
-  },
-  {
     "project": "tempo",
     "version": "v3.0.3",
     "publishedDate": "2026-08-13T20:37:13.000Z",
@@ -208,14 +224,6 @@
     "title": "Packer v1.16.0 brings verifiable provenance to machine images"
   },
   {
-    "project": "flux",
-    "version": "v2.9.4",
-    "publishedDate": "2026-08-07T14:32:26.000Z",
-    "url": "https://github.com/fluxcd/flux2/releases/tag/v2.9.4",
-    "sourceId": "flux",
-    "title": "v2.9.4"
-  },
-  {
     "project": "cncf",
     "version": "1.121.0",
     "publishedDate": "2026-08-05T11:00:00.000Z",
@@ -230,14 +238,6 @@
     "url": "https://github.com/etcd-io/etcd/releases/tag/v3.7.1",
     "sourceId": "etcd",
     "title": "v3.7.1"
-  },
-  {
-    "project": "opentelemetry",
-    "version": "v0.157.0",
-    "publishedDate": "2026-07-22T20:04:49.000Z",
-    "url": "https://opentelemetry.io/blog/2026/lambda-powered-function-land-in-ottl/",
-    "sourceId": "opentelemetry",
-    "title": "Lambda-powered functions land in OTTL"
   },
   {
     "project": "gateway-api",
