@@ -1,0 +1,27 @@
+topics:
+  - slug: kubernetes
+    title: Kubernetes
+    description: Cluster architecture, workloads, and incident response.
+    featured: 1
+  - slug: aiops
+    title: AIOps
+    description: Evidence-led automation and AI-assisted operations.
+    featured: 2
+  - slug: opentelemetry
+    title: Telemetry
+    description: OpenTelemetry concepts and collector pipelines.
+    featured: 3
+  - slug: sre
+    title: SRE
+    description: Reliability targets and error budgets.
+  - slug: jvm-services
+    title: JVM Services
+    description: JVM framework and service engineering notes.
+  - slug: senior-engineering-interviews
+    title: Senior Engineering Interviews
+    description: Technical and behavioral interview preparation.
+startHere:
+  - 03-kubernetes-architecture
+  - 10-opentelemetry-overview
+  - 15-aiops-overview
+  - 13-sre-sli-slo-error-budgets
