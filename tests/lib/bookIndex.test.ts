@@ -57,4 +57,18 @@ describe('createBookIndex', () => {
     expect(dashboard.recentlyAdded.map((entry) => entry.id)).toEqual(['2026-03', '2026-02', '2026-01']);
     expect(dashboard.startHere.map((entry) => entry.id)).toEqual(['2026-01']);
   });
+
+  it('uses published dates before filename order when listing recent notes', () => {
+    const index = createBookIndex([
+      { id: 'z-new-id', data: { title: 'Filename newest', domain: 'kubernetes' } },
+      { id: 'a-old-id', data: { title: 'Published newest', domain: 'aiops', published: new Date('2026-08-31') } },
+      { id: 'b-old-id', data: { title: 'Published older', domain: 'aiops', published: new Date('2026-08-01') } },
+    ], catalog);
+
+    expect(createKnowledgeDashboardModel(index).recentlyAdded.map((entry) => entry.id)).toEqual([
+      'a-old-id',
+      'b-old-id',
+      'z-new-id',
+    ]);
+  });
 });

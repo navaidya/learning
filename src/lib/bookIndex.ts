@@ -6,6 +6,7 @@ export interface BookSourceEntry {
     title: string;
     domain?: string;
     topics?: string[];
+    published?: Date | string;
   };
 }
 
@@ -73,6 +74,10 @@ export function createKnowledgeDashboardModel(index: BookIndex): KnowledgeDashbo
     featuredHubs: index.hubs
       .filter((hub) => hub.featured !== undefined)
       .sort((left, right) => left.featured! - right.featured!),
-    recentlyAdded: index.entries.slice().sort((left, right) => right.id.localeCompare(left.id)).slice(0, 5),
+    recentlyAdded: index.entries.slice().sort((left, right) => {
+      const leftPublished = left.data.published ? new Date(left.data.published).getTime() : Number.NEGATIVE_INFINITY;
+      const rightPublished = right.data.published ? new Date(right.data.published).getTime() : Number.NEGATIVE_INFINITY;
+      return rightPublished - leftPublished || right.id.localeCompare(left.id);
+    }).slice(0, 5),
   };
 }
