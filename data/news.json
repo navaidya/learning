@@ -1,5 +1,23 @@
 [
   {
+    "id": "cncf-a0dd7429df38",
+    "title": "OpenTelemetry has graduated… now what?",
+    "summary": "In case you missed it: OpenTelemetry (OTel) has officially achieved CNCF graduated status! It now stands proudly alongside amazing open source projects such as Kubernetes and Prometheus, to name just a few. It’s been a long...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/08/31/opentelemetry-has-graduated-now-what-2/",
+    "publishedDate": "2026-08-31T11:30:00.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": false
+  },
+  {
     "id": "backstage-745a1d123495",
     "title": "v1.49.6",
     "summary": "Backstage 1.49.6 This patch release contains security fixes and is recommended for all users of Backstage 1.49.",
