@@ -1,5 +1,44 @@
 [
   {
+    "id": "hashicorp-ae8486cecd19",
+    "title": "HashiCorp Vault agentic IAM is now generally available",
+    "summary": "HashiCorp Vault Enterprise advances AI agent security with recent enhancements now generally available.",
+    "source": "HashiCorp",
+    "sourceId": "hashicorp",
+    "url": "https://www.hashicorp.com/blog/hashicorp-vault-agentic-iam-is-now-generally-available",
+    "publishedDate": "2026-09-01T16:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "terraform",
+      "vault",
+      "iac"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "hashicorp"
+  },
+  {
+    "id": "hashicorp-380e829425a8",
+    "title": "Secure mainframe access with HashiCorp Boundary",
+    "summary": "HashiCorp Boundary modernizes mainframe access with identity-based controls, JIT credentials, and central auditing via a mainframe-adjacent worker.",
+    "source": "HashiCorp",
+    "sourceId": "hashicorp",
+    "url": "https://www.hashicorp.com/blog/secure-mainframe-access-with-hashicorp-boundary",
+    "publishedDate": "2026-09-01T16:00:00.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "vault",
+      "iac"
+    ],
+    "importance": "low",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "cncf-81d8ad0c143c",
     "title": "Platform engineering maturity: From toolchain to self-service",
     "summary": "Most platform engineering conversations tend to split into two rooms pretty quickly. The first room is full of teams who don’t have a platform yet. Scattered scripts, tribal knowledge, and every team is doing the same...",

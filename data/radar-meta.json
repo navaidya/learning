@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-09-01T12:35:56.634Z",
+  "collectedAt": "2026-09-01T17:20:33.293Z",
   "sourceIds": [
     "cncf",
     "opentelemetry",
@@ -36,5 +36,5 @@
   "failedSourceIds": [
     "kubernetes"
   ],
-  "itemCount": 495
+  "itemCount": 497
 }
