@@ -1,5 +1,44 @@
 [
   {
+    "id": "backstage-1b615060bb66",
+    "title": "v1.55.0-next.1",
+    "summary": "See docs/releases/v1.55.0-next.1-changelog.md for more information.",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.55.0-next.1",
+    "publishedDate": "2026-09-01T19:58:09.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.55.0-next.1"
+  },
+  {
+    "id": "openai-3b5f2688fec1",
+    "title": "How AI-native companies turn workflows into operating capability",
+    "summary": "Basis, Clay, and Exa Labs use AI agents to improve onboarding, account management, and developer integrations. See what enterprise leaders can apply.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/ai-native-company-workflows",
+    "publishedDate": "2026-09-01T17:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "openai",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "hashicorp-ae8486cecd19",
     "title": "HashiCorp Vault agentic IAM is now generally available",
     "summary": "HashiCorp Vault Enterprise advances AI agent security with recent enhancements now generally available.",
@@ -9608,46 +9647,5 @@
     "releaseRelated": true,
     "releaseProject": "istio",
     "releaseVersion": "1.28.8"
-  },
-  {
-    "id": "oci-oke-c73bd016541b",
-    "title": "v8.17.0",
-    "summary": "8.17.0 (June 2, 2026) Added Support for DBM - API changes for ZPR Security Attribute Support - API only Support for Support VMware BYOL with VCF 5.2 (Fast Follow) && Bug Fix - Esxi host current_commitment and next_commitment variables do not not apply Support for Exascale Phase 2.5 Ability to Provision More VMs Support for OPSI - API changes for ZPR Security Attribute Support - API only Bug Fix TERSI-5365: Bug 39270780 - OIC3 : Terraform Service tag (system tags) going out of sync; cannot execut",
-    "source": "OCI / OKE",
-    "sourceId": "oci-oke",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v8.17.0",
-    "publishedDate": "2026-06-03T19:42:34.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "oci",
-      "oke",
-      "oracle"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "oci-oke",
-    "releaseVersion": "v8.17.0"
-  },
-  {
-    "id": "vector-531da8120a63",
-    "title": "v0.56.0",
-    "summary": "The COSE team is excited to announce version 0.56.0! 🚀 Release highlights Added a new databricks_zerobus sink that streams log data to Databricks Unity Catalog tables through the Zerobus ingestion service. The sink supports OAuth 2.0 authentication, automatic schema fetching from Unity Catalog, and protobuf batch encoding. Added a new delay transform that delays each event by a fixed duration. Events can also be delayed based on a condition which includes VRL transforms. HTTP-based sinks that u",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/v0.56.0",
-    "publishedDate": "2026-06-03T18:15:32.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector",
-    "releaseVersion": "v0.56.0"
   }
 ]

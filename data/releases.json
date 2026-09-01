@@ -1,5 +1,13 @@
 [
   {
+    "project": "backstage",
+    "version": "v1.55.0-next.1",
+    "publishedDate": "2026-09-01T19:58:09.000Z",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.55.0-next.1",
+    "sourceId": "backstage",
+    "title": "v1.55.0-next.1"
+  },
+  {
     "project": "k8sgpt",
     "version": "v0.4.38",
     "publishedDate": "2026-09-01T11:23:24.000Z",
@@ -46,14 +54,6 @@
     "url": "https://istio.io/latest/news/releases/1.31.x/announcing-1.31/change-notes/",
     "sourceId": "istio",
     "title": "Istio 1.31.0 Change Notes"
-  },
-  {
-    "project": "backstage",
-    "version": "v1.49.6",
-    "publishedDate": "2026-08-29T11:21:57.000Z",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.49.6",
-    "sourceId": "backstage",
-    "title": "v1.49.6"
   },
   {
     "project": "containerd",
