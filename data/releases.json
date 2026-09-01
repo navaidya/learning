@@ -8,6 +8,14 @@
     "title": "Helm v3.22.0-rc.1"
   },
   {
+    "project": "kubernetes",
+    "version": "v1.37",
+    "publishedDate": "2026-08-31T18:30:00.000Z",
+    "url": "https://kubernetes.io/blog/2026/08/31/kubernetes-v1-37-storage-version-migration-ga/",
+    "sourceId": "kubernetes",
+    "title": "Kubernetes v1.37: Storage Version Migration Enabled by Default"
+  },
+  {
     "project": "flux",
     "version": "v2.9.5",
     "publishedDate": "2026-08-31T17:07:22.000Z",
@@ -38,14 +46,6 @@
     "url": "https://github.com/backstage/backstage/releases/tag/v1.49.6",
     "sourceId": "backstage",
     "title": "v1.49.6"
-  },
-  {
-    "project": "kubernetes",
-    "version": "v1.37",
-    "publishedDate": "2026-08-28T18:30:00.000Z",
-    "url": "https://kubernetes.io/blog/2026/08/28/kubernetes-v1-37-pod-certificates-and-cluster-trust-bundles/",
-    "sourceId": "kubernetes",
-    "title": "Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles"
   },
   {
     "project": "containerd",

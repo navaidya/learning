@@ -40,6 +40,24 @@
     "releaseVersion": "v4.3.0-rc.1"
   },
   {
+    "id": "kubernetes-93963e423904",
+    "title": "Kubernetes v1.37: Storage Version Migration Enabled by Default",
+    "summary": "I am excited that storage version migration (SVM) has graduated to General Availability (GA) in Kubernetes v1.37! After a number of releases of work and testing, the built-in StorageVersionMigration API (storagemigration.k8s.io/v1) and control plane controller are now fully stable and enabled by default across all v1.37 Kubernetes clusters. The problem with stale storage versionsIn Kubernetes, stored API resources are written using a specific storage version (schema representation). The way Kube",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/08/31/kubernetes-v1-37-storage-version-migration-ga/",
+    "publishedDate": "2026-08-31T18:30:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes",
+    "releaseVersion": "v1.37"
+  },
+  {
     "id": "flux-690daa9b8fa6",
     "title": "v2.9.5",
     "summary": "Highlights Flux v2.9.5 is a patch release that moves helm-controller and source-controller back to upstream Helm, now at v4.2.4, dropping the temporary Flux fork. It hardens the handling of kubeconfig Secrets in helm-controller and kustomize-controller, which now reject kubeconfigs referencing files on the local filesystem and require credentials and certificates to be embedded inline. It also stops kustomize-controller from leaving behind the temporary directories of a previous process that exi",
@@ -95,6 +113,24 @@
     ],
     "importance": "high",
     "architectureShift": true,
+    "releaseRelated": false
+  },
+  {
+    "id": "openai-7bc341571432",
+    "title": "Polimill builds Japan's next-generation public AI infrastructure",
+    "summary": "Polimill uses OpenAI GPT models and Codex to help municipalities search and use administrative knowledge while accelerating development.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/polimill",
+    "publishedDate": "2026-08-31T07:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
     "releaseRelated": false
   },
   {
