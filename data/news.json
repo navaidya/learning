@@ -1,5 +1,41 @@
 [
   {
+    "id": "cncf-81d8ad0c143c",
+    "title": "Platform engineering maturity: From toolchain to self-service",
+    "summary": "Most platform engineering conversations tend to split into two rooms pretty quickly. The first room is full of teams who don’t have a platform yet. Scattered scripts, tribal knowledge, and every team is doing the same...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/09/01/platform-engineering-maturity-from-toolchain-to-self-service/",
+    "publishedDate": "2026-09-01T11:35:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "k8sgpt-67eb933f6e64",
+    "title": "v0.4.38",
+    "summary": "0.4.38 (2026-09-01) Bug Fixes correct --with-stat flag description (#1734) (ebd79ac) validate namespace exists before running core analyzers (#1735) (c7e91c0) Other deps: update docker/setup-buildx-action digest to 37fe631 (#1744) (92c0091) deps: update softprops/action-gh-release digest to efb3536 (#1763) (7e4e955)",
+    "source": "K8sGPT",
+    "sourceId": "k8sgpt",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.38",
+    "publishedDate": "2026-09-01T11:23:24.000Z",
+    "domain": "aiops",
+    "topics": [
+      "k8sgpt",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "k8sgpt",
+    "releaseVersion": "v0.4.38"
+  },
+  {
     "id": "helm-c28b6c768838",
     "title": "Helm v3.22.0-rc.1",
     "summary": "Helm v3.22.0-rc.1 is a pre-release. It is to help gather feedback from the community as well as give users a chance to test Helm in staging environments before v3.22.0 is officially released. The official changelog will come out with the v3.22.0 release. For now, you can see the commit changes from v3.21.4 here. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at th",
@@ -113,6 +149,24 @@
     ],
     "importance": "high",
     "architectureShift": true,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-df2acc50d56e",
+    "title": "Observability in Kubernetes: From metrics to meaning",
+    "summary": "Kubernetes made infrastructure more programmable, scalable, and resilient. It also made production systems harder to reason about. Workloads move, replicas churn, dependencies multiply, and a single user request can cross ingress, services, queues, storage, and background...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/08/31/observability-in-kubernetes-from-metrics-to-meaning/",
+    "publishedDate": "2026-08-31T11:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
     "releaseRelated": false
   },
   {
