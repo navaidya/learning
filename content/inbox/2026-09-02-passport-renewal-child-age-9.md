@@ -51,9 +51,11 @@ simplifies a couple of things versus a teenager's renewal.
       form, selecting **mail-in** submission and the **5-year/until-18**
       validity option.
 - [ ] Upload all required documents to the portal.
-- [ ] Pay the fee (~US$105 + VFS service charge — confirm current amount
-      on the portal; this is the one figure this checklist can't lock in,
-      since it lives on a page this session couldn't fetch directly).
+- [ ] Pay the fee: researched as **~US$105 (5-year/till-18 passport fee)
+      + ~$19 VFS service charge + ~$2 ICWF contribution ≈ US$126 total**.
+      Confirm the exact current total on the portal at checkout, since
+      fee schedules change and this session couldn't fetch the live fee
+      page to verify it.
 - [ ] Print the completed application, sign it (or use a thumb
       impression if the child can't yet produce a consistent signature —
       check the form for that option), and assemble the mail-in package:

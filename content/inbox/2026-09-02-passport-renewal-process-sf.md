@@ -111,10 +111,18 @@ copy. Annexure D is always notarized, mail-in or not.
 
 ## Fees (as researched — confirm current amount on the VFS portal before paying)
 
+Both kids get the 36-page booklet — the only size issued to minors — but
+the government fee differs by validity choice, since a 10-year passport
+is billed at the adult rate even for a minor.
+
 | Item | Approx. cost |
 |---|---|
-| Minor passport (36-page booklet — the only size issued to minors) | ~US$105 |
-| VFS service charge | ~US$15–25 |
+| Minor passport, 5-year/until-18 validity (age 9 child) | ~US$105 |
+| Minor passport, full 10-year validity (age 16 child) | ~US$167 |
+| VFS service charge | ~US$19 |
+| Indian Community Welfare Fund (ICWF) contribution | ~US$2 |
+| **Estimated total — age 9 child** | **~US$126** |
+| **Estimated total — age 16 child** | **~US$188** |
 | Return mail/postage | Separate, at cost |
 
 ## Sources
