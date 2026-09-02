@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
-const entries = await getCollection('inbox');
+import { withBase } from '../../lib/url';
+const entries = (await getCollection('inbox')).sort((a, b) => (b.data.captured?.getTime() ?? 0) - (a.data.captured?.getTime() ?? 0));
 ---
-<BaseLayout title="Learning Inbox"><h1>Learning Inbox</h1><p class="lede">Capture raw ideas, links, questions, commands, and research topics before organizing them.</p>{entries.length ? <div class="grid">{entries.map((entry) => <article class="panel"><h2>{entry.data.title}</h2><p>{entry.body}</p></article>)}</div> : <div class="panel">Your inbox is clear.</div>}</BaseLayout>
+<BaseLayout title="Learning Inbox"><h1>Learning Inbox</h1><p class="lede">Capture raw ideas, links, questions, commands, and research topics before organizing them.</p>{entries.length ? <div class="grid">{entries.map((entry) => <a class="panel" href={withBase(`/inbox/${entry.id}`)}><h2>{entry.data.title}</h2><p>{entry.data.type}{entry.data.captured ? ` · ${entry.data.captured.toISOString().slice(0, 10)}` : ''}</p></a>)}</div> : <div class="panel">Your inbox is clear.</div>}</BaseLayout>

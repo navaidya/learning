@@ -1,0 +1,8 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { withBase } from '../../lib/url';
+export async function getStaticPaths() { return (await getCollection('inbox')).map((entry) => ({ params: { slug: entry.id }, props: { entry } })); }
+const { entry } = Astro.props; const { Content } = await render(entry);
+---
+<BaseLayout title={entry.data.title}><a href={withBase('/inbox')}>← Inbox</a><p class="eyebrow">{entry.data.type}{entry.data.captured ? ` · captured ${entry.data.captured.toISOString().slice(0, 10)}` : ''}</p><h1>{entry.data.title}</h1><div class="book-article"><Content /></div></BaseLayout>

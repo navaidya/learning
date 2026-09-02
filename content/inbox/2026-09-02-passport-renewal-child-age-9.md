@@ -6,7 +6,8 @@ type: checklist
 # Passport renewal — child, age 9
 
 Child-specific notes on top of the
-[shared San Francisco process](/inbox). This child is under 15, which
+[shared San Francisco process](../2026-09-02-passport-renewal-process-sf/).
+This child is under 15, which
 simplifies a couple of things versus a teenager's renewal.
 
 ## What's different for under-15
@@ -53,5 +54,6 @@ simplifies a couple of things versus a teenager's renewal.
 - [ ] Passport received — verify name, DOB, photo, and validity dates are
       correct before putting it away.
 
-See the [overview page](/inbox) for shared fee/document sourcing and
-citations.
+See the
+[overview page](../2026-09-02-passport-renewal-process-sf/) for shared
+fee/document sourcing and citations.

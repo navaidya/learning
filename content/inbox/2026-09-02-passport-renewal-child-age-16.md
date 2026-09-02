@@ -6,7 +6,8 @@ type: checklist
 # Passport renewal — child, age 16
 
 Child-specific notes on top of the
-[shared San Francisco process](/inbox). Being 16 (in the 15–18 bracket)
+[shared San Francisco process](../2026-09-02-passport-renewal-process-sf/).
+Being 16 (in the 15–18 bracket)
 changes the validity choice and adds a police-verification step that
 doesn't apply to a younger sibling.
 
@@ -66,5 +67,6 @@ doesn't apply to a younger sibling.
       (if applicable) that police verification cleared, before putting it
       away.
 
-See the [overview page](/inbox) for shared fee/document sourcing and
-citations.
+See the
+[overview page](../2026-09-02-passport-renewal-process-sf/) for shared
+fee/document sourcing and citations.

@@ -9,8 +9,8 @@ Shared process notes for renewing Indian passports for both kids under the
 **Consulate General of India, San Francisco (CGI SF)** jurisdiction, which
 covers Northern & Central California (including the Bay Area), Colorado,
 Hawaii, Utah, Wyoming, and Guam. Child-specific checklists are separate
-pages: [Child, age 9](/inbox) and [Child, age 16](/inbox) (see the Inbox
-list for both entries).
+pages: [Child, age 9](2026-09-02-passport-renewal-child-age-9/) and
+[Child, age 16](2026-09-02-passport-renewal-child-age-16/).
 
 > **Verify before you apply.** This was compiled from `cgisf.gov.in` and
 > VFS Global public pages via web search on 2026-09-02 — this session
