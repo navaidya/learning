@@ -1,5 +1,64 @@
 [
   {
+    "id": "pulumi-87a836c27503",
+    "title": "v3.261.0",
+    "summary": "3.261.0 (2026-09-02) Features [engine] Support state migration callbacks on resource registrations #24328 [cli/env] Add pulumi env setup {aws,azure,gcp} to configure cloud OIDC trust and create the ESC environments that use it #23911 Bug Fixes [engine] Report a clear error instead of panicking when the stack's state contains a custom resource with no ID #24438 [cli] Show the agent account's claim URL instead of an inaccessible View Live link when running on ephemeral agent credentials #24476 [pc",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.261.0",
+    "publishedDate": "2026-09-02T16:55:30.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.261.0"
+  },
+  {
+    "id": "terraform-d118300eb4e3",
+    "title": "v1.16.1",
+    "summary": "1.16.1 (September 2, 2026) BUG FIXES: cloud: Fixed a bug causing the CLI to pause indefinitely after a run task failure with pending policy evaluations (#38751) Support referencing modules containing dynamic sources in Terraform Test (#38950) stacks: Fixed validation to ensure the provider versions in the lock file and configuration are compatible. (#38829) Fix panic when import identity references sensitive value (#39013) import: Fixed a bug where import blocks would be ignored when multiple im",
+    "source": "Terraform",
+    "sourceId": "terraform",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.1",
+    "publishedDate": "2026-09-02T14:49:32.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "terraform",
+    "releaseVersion": "v1.16.1"
+  },
+  {
+    "id": "opentelemetry-collector-83668bcc07fe",
+    "title": "v1.66.0/v0.160.0",
+    "summary": "Images and binaries here: https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.160.0 End User Changelog 🚩 Deprecations 🚩 pkg/confighttp: Deprecate flat keepalive fields in client and server config in favor of the new keepalive section. (#14020) The following client configuration fields are deprecated in favor of the keepalive section: idle_conn_timeout -> keepalive::idle_conn_timeout max_idle_conns -> keepalive::max_idle_conns max_idle_conns_per_host -> keepalive:",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.160.0",
+    "publishedDate": "2026-09-02T14:38:58.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v1.66.0"
+  },
+  {
     "id": "cncf-eee5f7728abc",
     "title": "Metal3 meets KubeVirtBMC: Provisioning KubeVirt VMs like bare metal",
     "summary": "In the previous post , we introduced KubeVirtBMC and showed how it provides virtual BMC endpoints for KubeVirt VMs. We tested it with raw IPMI and Redfish commands. That was fun, but the real power of...",
@@ -15,6 +74,25 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
+  },
+  {
+    "id": "pulumi-87660b01a79f",
+    "title": "sdk/v3.261.0: Fix ProgramTest for double-digit major versions (#24499)",
+    "summary": "Summary pkg/testing/integration assumed a single-digit major version in two places, which broke ProgramTest for the Go and .NET SDKs of any provider at v10 or above. getSanitizedModulePath matched v\\d anywhere in the module path and stripped that substring. For github.com/pulumi/pulumi-gcp/sdk/v10 it found the v1 inside v10 and rewrote the path to github.com/pulumi/pulumi-gcp/sdk/0, so every Go program test resolved its replace directive to a directory that does not exist. It also mangled unrela",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.261.0",
+    "publishedDate": "2026-09-02T10:34:53.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.261.0"
   },
   {
     "id": "oci-oke-591b47515714",
@@ -213,27 +291,6 @@
     "sourceId": "opentelemetry-collector",
     "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/receiver%2Fxreceiver%2Fv0.160.0",
     "publishedDate": "2026-09-01T23:39:13.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "collector",
-      "otel",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentelemetry-collector",
-    "releaseVersion": "v0.160.0"
-  },
-  {
-    "id": "opentelemetry-collector-83668bcc07fe",
-    "title": "v0.160.0",
-    "summary": "Module set beta, Version v0.160.0",
-    "source": "OpenTelemetry Collector",
-    "sourceId": "opentelemetry-collector",
-    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.160.0",
-    "publishedDate": "2026-09-01T23:39:10.000Z",
     "domain": "opentelemetry",
     "topics": [
       "opentelemetry",
@@ -6756,24 +6813,6 @@
     "releaseVersion": "1.19.6"
   },
   {
-    "id": "hashicorp-ade8efb63a57",
-    "title": "Understanding Vault performance: Benchmarks from real-world workloads",
-    "summary": "Discover how Vault Enterprise performs under real-world concurrency and payload sizes, with KV, SSH, and PKI benchmarks on HashiCorp Validated Designs.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/understanding-vault-performance-benchmarks-from-real-world-workloads",
-    "publishedDate": "2026-07-16T17:30:00.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "low",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "gateway-api-02f434f02c2f",
     "title": "v1.6.1",
     "summary": "v1.6.1 Major Changes Since v1.6.0 Test & Conformance Change the port used in TCPRouteMultipleRoutesAttachment. (#5053, @davidjumani) Respect CleanupTestResources for BackendTLSPolicy, TCPRouteMultipleRoutesAttachment and UDPRouteMultipleRoutesAttachment(#5065, @snorwin) Fix SetupTimeoutConfig() not respecting defaults for ListenerSetMustHaveCondition, ListenerSetListenersMustHaveConditions, and RequiredConsecutiveSuccesses. (#5066, @immanuwell) Honour tcpRouteMustHaveCondition and udpRouteMustHa",
@@ -6792,24 +6831,6 @@
     "releaseRelated": true,
     "releaseProject": "gateway-api",
     "releaseVersion": "v1.6.1"
-  },
-  {
-    "id": "hashicorp-d50d89419e3e",
-    "title": "Introducing tfpolicy: A declarative policy workflow built for Terraform",
-    "summary": "Terraform policy brings HCL-based policy as code into Terraform, helping teams define and enforce governance policies with more lifecycle context.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/introducing-tfpolicy-a-declarative-policy-workflow-built-for-terraform",
-    "publishedDate": "2026-07-16T16:00:00.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "low",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "cilium-89d3c7fc5963",
@@ -7351,24 +7372,6 @@
       "observability"
     ],
     "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "hashicorp-970e531016de",
-    "title": "Preparing for the post-quantum era: Discover and prioritize now",
-    "summary": "As organizations prepare for the post-quantum era, it may seem natural to immediately dive into quantum-safe cryptography migration efforts.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/preparing-for-the-post-quantum-era-discover-and-prioritize-now",
-    "publishedDate": "2026-07-13T07:00:00.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "low",
     "architectureShift": false,
     "releaseRelated": false
   },
