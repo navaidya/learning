@@ -1,5 +1,24 @@
 [
   {
+    "id": "vector-b0c4b2befbda",
+    "title": "vdev-v0.3.17",
+    "summary": "chore(dev): streamline development checks (#26282) Co-authored-by: Thomas <thomas.schneider@datadoghq.com>",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.17",
+    "publishedDate": "2026-09-02T17:37:06.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
     "id": "pulumi-87a836c27503",
     "title": "v3.261.0",
     "summary": "3.261.0 (2026-09-02) Features [engine] Support state migration callbacks on resource registrations #24328 [cli/env] Add pulumi env setup {aws,azure,gcp} to configure cloud OIDC trust and create the ESC environments that use it #23911 Bug Fixes [engine] Report a clear error instead of panicking when the stack's state contains a custom resource with no ID #24438 [cli] Show the agent account's claim URL instead of an inaccessible View Live link when running on ephemeral agent credentials #24476 [pc",
@@ -6502,24 +6521,6 @@
       "mcp"
     ],
     "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "hashicorp-117607108471",
-    "title": "One service, many doors: Multi-port services in Consul",
-    "summary": "Native multi-port support lets Consul model applications the way teams understand them, resulting in one identity, multiple named ports, and less catalog clutter.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/one-service-many-doors-multi-port-services-in-consul",
-    "publishedDate": "2026-07-22T07:09:00.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "low",
     "architectureShift": false,
     "releaseRelated": false
   },
