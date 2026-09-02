@@ -7,60 +7,58 @@ type: checklist
 
 Child-specific notes on top of the
 [shared San Francisco process](../2026-09-02-passport-renewal-process-sf/).
-Being 16 (in the 15–18 bracket)
-changes the validity choice and adds a police-verification step that
-doesn't apply to a younger sibling.
+Being 16 (in the 15–18 bracket) means there was a validity choice to make
+— resolved below as the 5-year/until-18 option, same style as the
+9-year-old's passport.
 
 ## What's different for 15–18
 
-- **Validity choice**: at 16 you can choose either
-  1. a **minor passport valid until age 18** (same style as a younger
-     child's), or
-  2. a **full 10-year passport** (adult-style validity) *if* police
-     verification is completed.
-  Decide which one you want **before** filling the application — it
-  affects the form fields and expected processing time.
-- **Police verification**: **mandatory** if you choose the 10-year
-  option for a 15–18 year old. Budget extra time and expect the consulate
-  to coordinate this — ask VFS/CGI SF what the process is for someone
-  based in the Bay Area (verification is normally an India-side police
-  check tied to the address on record, which can be slow for NRIs — plan
-  for delay if you pick this route).
+- **Validity**: chosen as the **5-year/until-age-18 minor passport** (not
+  the 10-year adult-style option), so **no police verification** is
+  needed for this application — same as the younger sibling.
 - **Still needs both-parent consent**: even though 16 is old enough to
-  sign, **Annexure D (or C)** is still required because the applicant is
-  still a minor under 18.
-- **Signature**: the 16-year-old should sign the application themselves
-  (no thumb impression needed at this age, typically).
-- **TATKAAL**: same caveat as the younger sibling — not available when
-  Annexure C is used; ask VFS directly if it's available for your
-  specific case if speed matters (e.g. imminent travel).
+  sign, **Annexure D** is still required because the applicant is still a
+  minor under 18.
+- **Signature**: the 16-year-old signs the application themselves — no
+  thumb impression needed at this age.
+- **TATKAAL**: not being used for this application — going through the
+  normal (~3 week) process by mail.
+
+## Locked-in for this child
+
+- Consent: **Annexure D**, notarized, both parents' signatures.
+- Proof of address: parent's **California driving license** (notarized
+  copy).
+- Proof of US status: **I-797 approval notice** + **I-94 record**
+  (notarized copies of both).
+- Submission: **mail-in** — no VFS appointment.
+- Validity: **5 years or until age 18**, 36-page booklet.
 
 ## Checklist
 
-- [ ] Decide: 5-year/until-18 passport, or 10-year passport with police
-      verification.
-- [ ] Confirm which annexure applies: **Annexure D** (both parents
-      consent) vs **Annexure C** (one parent unavailable).
 - [ ] Get Annexure D notarized with both parents' signatures.
-- [ ] Gather current passport (original + copy of first/last pages).
-- [ ] Gather proof of address (utility bill / lease / driving license
-      copy in a parent's name).
-- [ ] Gather proof of the child's current US visa/immigration status.
-- [ ] Take 2 photos to spec (2"×2", plain background, recent).
-- [ ] Copy both parents' passports.
+- [ ] Get the driving license copy notarized.
+- [ ] Print the I-94 record from `i94.cbp.dhs.gov` and get it, plus the
+      I-797 copy, notarized.
+- [ ] Gather current passport (**original** — this goes in the mailed
+      package, not a copy).
+- [ ] Take 2 photos to spec (2"×2", plain background, recent), and get a
+      notarized copy of the photo made.
+- [ ] Get notarized copies of both parents' passports.
 - [ ] Register the child's application on the VFS India portal for the
-      USA and fill the reissue form — select the correct validity option.
-- [ ] If choosing the 10-year option, ask VFS/CGI SF what's needed to
-      initiate police verification and how long it typically takes for
-      Bay Area applicants.
-- [ ] Decide mail-in vs. in-person at the VFS SF center.
+      USA (`https://visa.vfsglobal.com/usa/en/ind`) and fill the reissue
+      form, selecting **mail-in** submission and the
+      **5-year/until-18** validity option (not the 10-year option).
 - [ ] Upload all required documents to the portal.
-- [ ] Pay the fee (~US$105 base + VFS service charge — confirm current
-      amount and whether the 10-year option changes the fee).
-- [ ] Print, have the 16-year-old sign, and assemble the package with
-      notarized copies (if mailing) or originals (if in-person).
-- [ ] Mail/deliver to: VFS Global – San Francisco Center, 642 Harrison
-      Street, Suite 200, San Francisco, CA 94107.
+- [ ] Pay the fee (~US$105 + VFS service charge — confirm current amount
+      on the portal; this is the one figure this checklist can't lock in,
+      since it lives on a page this session couldn't fetch directly).
+- [ ] Print the completed application and have the 16-year-old sign it,
+      then assemble the mail-in package: original passport + notarized
+      Annexure D + notarized copies of driving license, I-797, I-94,
+      photo, and both parents' passports.
+- [ ] Mail to: VFS Global – San Francisco Center, 642 Harrison Street,
+      Suite 200, San Francisco, CA 94107.
 - [ ] Track status on the VFS portal; respond within ~7 days if VFS
       requests anything further.
 - [ ] Passport received — verify name, DOB, photo, validity dates, and

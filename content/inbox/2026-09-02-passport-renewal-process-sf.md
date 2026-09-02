@@ -22,6 +22,20 @@ pages: [Child, age 9](2026-09-02-passport-renewal-child-age-9/) and
 > figure) can bounce an application. Re-check the primary sources below
 > immediately before submitting.
 
+## Decisions locked in for both kids
+
+- **Consent form**: **Annexure D** — both parents sign, notarized.
+- **Proof of address**: a parent's **California driving license** (copy).
+- **Proof of US immigration/visa status**: each child's **I-797 approval
+  notice** (copy). Also print each child's **I-94 arrival/departure
+  record** from `i94.cbp.dhs.gov` and include it alongside the I-797 —
+  VFS/CGI SF commonly wants current status confirmed by both documents
+  together for a dependent, not the approval notice alone.
+- **Submission method**: **mail-in** for both applications — no VFS
+  appointment needed. This means every supporting document photocopy
+  (including the photo) must be **notarized**; only the current passport
+  itself goes in as the original.
+
 ## Who does what
 
 - **CGI San Francisco** — the consulate itself does not accept passport
@@ -49,13 +63,14 @@ pages: [Child, age 9](2026-09-02-passport-renewal-child-age-9/) and
 3. **Upload the required documents** to the portal — uploads are
    mandatory before the application can be submitted/mailed.
 4. **Pay the fee** online (see below).
-5. **Choose mail-in or in-person**: standard renewals in the USA can be
-   done by mail — no in-person appointment is required unless you prefer
-   one. If booking an in-person slot, VFS allows rescheduling up to twice
-   (at least 48 hours before the appointment).
-6. **Send the package** (printed application + originals of every
-   supporting document + notarized copies where applicable) to the VFS SF
-   center address above.
+5. **Get every photocopy notarized** — driving license copy, I-797 copy,
+   I-94 printout, parents' passport copies, and the photo. A notary can
+   do all of these in one visit; bring the originals plus one photocopy
+   of each to the notary.
+6. **Send the package** by mail: printed/signed application + original
+   current passport + notarized Annexure D + notarized photocopies of
+   everything else, to the VFS SF center address above. No appointment
+   needed for mail-in.
 7. **Track status** on the VFS portal. VFS returns incomplete
    applications after ~20 days; if they request more documents, you
    generally have ~7 days to respond.
@@ -65,22 +80,19 @@ pages: [Child, age 9](2026-09-02-passport-renewal-child-age-9/) and
 
 ## Documents common to both kids
 
-- [ ] Current/expiring Indian passport (original) for the child, plus a
-      self-attested photocopy of the first and last pages.
-- [ ] **Annexure D** — notarized parental consent, signed by **both**
-      parents/legal guardians. Required for every minor application.
-- [ ] **Annexure C** instead of D — only if one parent cannot/will not
-      give consent (e.g. sole custody, absent parent). Confirm with CGI
-      SF/VFS which applies to your situation before applying.
-- [ ] Proof of address (self-attested copy): driving license, utility
-      bill, telephone bill, lease agreement, or mortgage deed in a
-      parent's name. Ask VFS about alternatives if none of these are
-      available.
-- [ ] Proof of the child's valid US visa/immigration status (e.g. I-20,
-      visa page, or equivalent), since this is being filed from the USA.
-- [ ] Two recent photographs per photo spec below (even though the
-      portal also captures a digital photo).
-- [ ] Parents' passports (copies) as identity/relationship proof.
+- [ ] Current/expiring Indian passport — **original** — plus a notarized
+      photocopy of the first and last pages.
+- [ ] **Annexure D** — notarized, signed by **both** parents.
+- [ ] Parent's **California driving license** — notarized photocopy — as
+      proof of address.
+- [ ] Child's **I-797 approval notice** — notarized photocopy — as proof
+      of US immigration status.
+- [ ] Child's **I-94 arrival/departure record**, printed from
+      `i94.cbp.dhs.gov` — notarized photocopy — alongside the I-797.
+- [ ] Two recent photographs per photo spec below, plus a notarized
+      photocopy of the photo.
+- [ ] Both parents' passports — notarized photocopies — as
+      identity/relationship proof.
 
 ### Photo spec
 
@@ -90,12 +102,12 @@ pages: [Child, age 9](2026-09-02-passport-renewal-child-age-9/) and
   second stapled to the blank portion on page 4 ("for official use
   only").
 
-### Notarization rule of thumb
+### Notarization
 
-- Applying **by mail**: photocopies of supporting documents (including
-  the photo) must be notarized.
-- Applying **in person** with originals: no notarization needed for the
-  originals themselves — but Annexure D/C is notarized regardless.
+Since both applications are going in by mail: **every photocopy**
+(driving license, I-797, I-94, parents' passports, the photo) must be
+notarized. The current passport itself is sent as the original, not a
+copy. Annexure D is always notarized, mail-in or not.
 
 ## Fees (as researched — confirm current amount on the VFS portal before paying)
 

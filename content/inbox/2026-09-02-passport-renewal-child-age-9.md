@@ -22,33 +22,45 @@ simplifies a couple of things versus a teenager's renewal.
 - **Signature**: a 9-year-old typically cannot give a legally binding
   signature — check the application form for a thumb-impression option if
   the child can't yet produce a consistent signature.
-- **TATKAAL**: generally not available for minor applications that need
-  Annexure C (parental-consent exception cases). If both parents can sign
-  Annexure D, ask VFS whether Tatkaal is available for a straightforward
-  renewal — do not assume it is.
+- **TATKAAL**: not being used for this application — going through the
+  normal (~3 week) process by mail.
+
+## Locked-in for this child
+
+- Consent: **Annexure D**, notarized, both parents' signatures.
+- Proof of address: parent's **California driving license** (notarized
+  copy).
+- Proof of US status: **I-797 approval notice** + **I-94 record**
+  (notarized copies of both).
+- Submission: **mail-in** — no VFS appointment.
+- Validity: **5 years or until age 18**, 36-page booklet.
 
 ## Checklist
 
-- [ ] Confirm which annexure applies: **Annexure D** (both parents
-      consent — normal case) vs **Annexure C** (one parent unavailable).
 - [ ] Get Annexure D notarized with both parents' signatures.
-- [ ] Gather current passport (original + copy of first/last pages).
-- [ ] Gather proof of address (utility bill / lease / driving license
-      copy in a parent's name).
-- [ ] Gather proof of the child's current US visa/immigration status.
-- [ ] Take 2 photos to spec (2"×2", plain background, recent).
-- [ ] Copy both parents' passports.
+- [ ] Get the driving license copy notarized.
+- [ ] Print the I-94 record from `i94.cbp.dhs.gov` and get it, plus the
+      I-797 copy, notarized.
+- [ ] Gather current passport (**original** — this goes in the mailed
+      package, not a copy).
+- [ ] Take 2 photos to spec (2"×2", plain background, recent), and get a
+      notarized copy of the photo made.
+- [ ] Get notarized copies of both parents' passports.
 - [ ] Register the child's application on the VFS India portal for the
-      USA and fill the reissue form.
-- [ ] Decide mail-in vs. in-person at the VFS SF center.
+      USA (`https://visa.vfsglobal.com/usa/en/ind`) and fill the reissue
+      form, selecting **mail-in** submission and the **5-year/until-18**
+      validity option.
 - [ ] Upload all required documents to the portal.
 - [ ] Pay the fee (~US$105 + VFS service charge — confirm current amount
-      on the portal).
-- [ ] Print, sign (or thumb-impression, if applicable), and assemble the
-      package with notarized copies (if mailing) or originals (if
-      in-person).
-- [ ] Mail/deliver to: VFS Global – San Francisco Center, 642 Harrison
-      Street, Suite 200, San Francisco, CA 94107.
+      on the portal; this is the one figure this checklist can't lock in,
+      since it lives on a page this session couldn't fetch directly).
+- [ ] Print the completed application, sign it (or use a thumb
+      impression if the child can't yet produce a consistent signature —
+      check the form for that option), and assemble the mail-in package:
+      original passport + notarized Annexure D + notarized copies of
+      driving license, I-797, I-94, photo, and both parents' passports.
+- [ ] Mail to: VFS Global – San Francisco Center, 642 Harrison Street,
+      Suite 200, San Francisco, CA 94107.
 - [ ] Track status on the VFS portal; respond within ~7 days if VFS
       requests anything further.
 - [ ] Passport received — verify name, DOB, photo, and validity dates are
