@@ -61,9 +61,37 @@ Being 16 (in the 15–18 bracket) means there was a validity choice to make
       Suite 200, San Francisco, CA 94107.
 - [ ] Track status on the VFS portal; respond within ~7 days if VFS
       requests anything further.
-- [ ] Passport received — verify name, DOB, photo, validity dates, and
-      (if applicable) that police verification cleared, before putting it
-      away.
+- [ ] Passport received — verify name, DOB, photo, and validity dates are
+      correct before putting it away.
+
+## Final packing checklist — use this last, right before sealing the envelope
+
+Two groups only: **originals** (never photocopy these into the envelope —
+the real thing goes in) and **notarized photocopies** (a copy, stamped
+and signed by a notary). Nothing else goes in the envelope.
+
+### Originals — go in as-is
+
+- [ ] Printed application form, signed by the 16-year-old
+- [ ] Current/expiring Indian passport — the physical booklet
+
+### Notarized photocopies — one copy of each, notary-stamped
+
+- [ ] Annexure D (both parents' signatures, notarized)
+- [ ] Parent's California driving license
+- [ ] Child's I-797 approval notice
+- [ ] Child's I-94 record (printed from `i94.cbp.dhs.gov`)
+- [ ] Passport-size photo
+- [ ] Parent 1's passport (photo + signature pages)
+- [ ] Parent 2's passport (photo + signature pages)
+
+### Before you seal it
+
+- [ ] Count: 2 originals + 7 notarized copies = 9 items total in the
+      envelope.
+- [ ] Envelope addressed to: VFS Global – San Francisco Center, 642
+      Harrison Street, Suite 200, San Francisco, CA 94107.
+- [ ] A return envelope/label included, if VFS's form asks for one.
 
 See the
 [overview page](../2026-09-02-passport-renewal-process-sf/) for shared
