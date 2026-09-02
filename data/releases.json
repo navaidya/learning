@@ -1,5 +1,13 @@
 [
   {
+    "project": "oci-oke",
+    "version": "v9.0.0",
+    "publishedDate": "2026-09-02T08:54:23.000Z",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.0.0",
+    "sourceId": "oci-oke",
+    "title": "v9.0.0"
+  },
+  {
     "project": "opentelemetry-collector",
     "version": "v0.160.0",
     "publishedDate": "2026-09-01T23:39:14.000Z",
@@ -142,14 +150,6 @@
     "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.40.0",
     "sourceId": "holmesgpt",
     "title": "0.40.0"
-  },
-  {
-    "project": "oci-oke",
-    "version": "v8.29.0",
-    "publishedDate": "2026-08-26T01:46:38.000Z",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v8.29.0",
-    "sourceId": "oci-oke",
-    "title": "v8.29.0"
   },
   {
     "project": "openai",

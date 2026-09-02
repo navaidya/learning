@@ -1,5 +1,43 @@
 [
   {
+    "id": "cncf-eee5f7728abc",
+    "title": "Metal3 meets KubeVirtBMC: Provisioning KubeVirt VMs like bare metal",
+    "summary": "In the previous post , we introduced KubeVirtBMC and showed how it provides virtual BMC endpoints for KubeVirt VMs. We tested it with raw IPMI and Redfish commands. That was fun, but the real power of...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/09/02/metal3-meets-kubevirtbmc-provisioning-kubevirt-vms-like-bare-metal/",
+    "publishedDate": "2026-09-02T11:31:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "oci-oke-591b47515714",
+    "title": "v9.0.0",
+    "summary": "9.0.0 (September 2, 2026) Added Fix for outdated OCI tutorial link and always-free TLS certificate example Support for OCI IoT Service: IoT Flow Runtime (Node-RED) Support for Quick Launch option for BaseDB Support for In Tenancy Validation (ITV) Control Plane Service Support for ADB-S: Ability to Change Maintenance Window Post Provisioning Removed Removed Terraform Support for distributed_database",
+    "source": "OCI / OKE",
+    "sourceId": "oci-oke",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.0.0",
+    "publishedDate": "2026-09-02T08:54:23.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "oci",
+      "oke",
+      "oracle"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "oci-oke",
+    "releaseVersion": "v9.0.0"
+  },
+  {
     "id": "opentelemetry-collector-452129435f3d",
     "title": "service/v0.160.0",
     "summary": "Module set beta, Version v0.160.0",
@@ -7711,24 +7749,6 @@
     "releaseVersion": "v0.305.5"
   },
   {
-    "id": "hashicorp-7f69017cfb44",
-    "title": "Building resiliency into Boundary session recording",
-    "summary": "Build resilient, tamper-evident audit trails using Boundary session recording to ensure durable, verifiable capture of privileged activity despite failures.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/building-resiliency-into-boundary-session-recording",
-    "publishedDate": "2026-07-09T07:09:00.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "low",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "kubernetes-releases-b2f2804c8663",
     "title": "v1.37.0-alpha.3",
     "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
@@ -9700,24 +9720,5 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "gateway-api"
-  },
-  {
-    "id": "openai-d0841d29a362",
-    "title": "How Endava is redesigning software delivery around AI agents",
-    "summary": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/endava-frontiers",
-    "publishedDate": "2026-06-04T12:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "ai-agent",
-      "openai",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   }
 ]
