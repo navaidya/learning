@@ -25,16 +25,31 @@ pages: [Child, age 9](2026-09-02-passport-renewal-child-age-9/) and
 ## Decisions locked in for both kids
 
 - **Consent form**: **Annexure D** — both parents sign, notarized.
+- **Applicant's own declaration**: **Annexure E** — plain-paper
+  declaration, notarized (required in addition to Annexure D).
+- **Affidavit for change of appearance**: a notarized, plain-paper
+  affidavit covering how the child looks different from the photo on the
+  current passport — required for both kids.
 - **Proof of address**: a parent's **California driving license** (copy).
-- **Proof of US immigration/visa status**: each child's **I-797 approval
-  notice** (copy). Also print each child's **I-94 arrival/departure
-  record** from `i94.cbp.dhs.gov` and include it alongside the I-797 —
-  VFS/CGI SF commonly wants current status confirmed by both documents
-  together for a dependent, not the approval notice alone.
+- **Proof of the child's US immigration/visa status**: each child's
+  **I-797 approval notice** (copy). Also print each child's **I-94
+  arrival/departure record** from `i94.cbp.dhs.gov` and include it
+  alongside the I-797 — VFS/CGI SF commonly wants current status
+  confirmed by both documents together for a dependent, not the approval
+  notice alone.
+- **Proof of the parents' own US legal status**: each parent's own
+  **H-1B approval notice (I-797)** — separate from the kids' status
+  documents above.
+- **Birth certificate**: each child's **Indian birth certificate**
+  (copy).
 - **Submission method**: **mail-in** for both applications — no VFS
   appointment needed. This means every supporting document photocopy
   (including the photo) must be **notarized**; only the current passport
   itself goes in as the original.
+- **Open / unconfirmed**: whether a prepaid return shipping label or
+  envelope must be enclosed in the package, on top of paying the fee
+  online. Not resolved yet — confirm with VFS (+1 800 320 9625) before
+  sealing either package. See item 12 below.
 
 ## Who does what
 
@@ -78,21 +93,36 @@ pages: [Child, age 9](2026-09-02-passport-renewal-child-age-9/) and
    CGI SF is **about 3 weeks** from a complete submission (add mailing
    time both directions).
 
-## Documents common to both kids
+## The 12 mandatory documents (both kids)
 
-- [ ] Current/expiring Indian passport — **original** — plus a notarized
-      photocopy of the first and last pages.
-- [ ] **Annexure D** — notarized, signed by **both** parents.
-- [ ] Parent's **California driving license** — notarized photocopy — as
-      proof of address.
-- [ ] Child's **I-797 approval notice** — notarized photocopy — as proof
-      of US immigration status.
-- [ ] Child's **I-94 arrival/departure record**, printed from
-      `i94.cbp.dhs.gov` — notarized photocopy — alongside the I-797.
-- [ ] Two recent photographs per photo spec below, plus a notarized
-      photocopy of the photo.
-- [ ] Both parents' passports — notarized photocopies — as
-      identity/relationship proof.
+This is the master list — numbered to match the mandatory-documents list
+you pulled directly from the official checklist, so it's easy to
+cross-check against the source. Each child's own page turns this into a
+per-child packing list.
+
+| # | Document | Original or notarized copy |
+|---|---|---|
+| 1 | Online application form (filled on the VFS portal, printed, signed) | **Original** |
+| 2 | Photograph (2, to spec below) | **Original** (2 physical prints) + 1 notarized copy |
+| 3 | Current/expiring Indian passport | **Original** + notarized copy of first/last pages |
+| 4 | Affidavit for change of appearance (plain paper, parent-signed) | **Notarized** (original affidavit) |
+| 5 | Annexure E — applicant's declaration, on plain paper | **Notarized** (original declaration) |
+| 6 | Annexure D — both parents' consent | **Notarized** (original consent form) |
+| 7 | Child's valid US immigration status — I-797 approval notice + I-94 record | **Notarized copies** (both documents) |
+| 8 | Proof of address in the USA — parent's California driving license | **Notarized copy** |
+| 9 | Parents' Indian passport copies (both parents) | **Notarized copies** |
+| 10 | Parents' own legal status in the USA — each parent's H-1B approval notice (I-797) | **Notarized copies** |
+| 11 | Birth certificate — child's Indian birth certificate | **Notarized copy** |
+| 12 | Fee payment + courier | Pay online; **return-shipping requirement unconfirmed** — see below |
+
+### Item 12 is still open
+
+Paying the application fee online is confirmed. What's **not** confirmed
+is whether VFS additionally requires a self-provided prepaid return
+shipping label/envelope inside the package, or whether their return
+shipping is handled entirely through the online fee. Don't guess on this
+one — call VFS (**+1 800 320 9625**) before sealing either envelope and
+update this line once you know.
 
 ### Photo spec
 
@@ -105,9 +135,12 @@ pages: [Child, age 9](2026-09-02-passport-renewal-child-age-9/) and
 ### Notarization
 
 Since both applications are going in by mail: **every photocopy**
-(driving license, I-797, I-94, parents' passports, the photo) must be
-notarized. The current passport itself is sent as the original, not a
-copy. Annexure D is always notarized, mail-in or not.
+(passport first/last pages, driving license, I-797/I-94 for the child,
+I-797 for each parent, parents' passports, birth certificate, the photo)
+must be notarized. The Annexure D consent, Annexure E declaration, and
+the affidavit for change of appearance are notarized as originals —
+they're documents you create and sign, not copies of something else. The
+current passport booklet itself is sent as the original, never a copy.
 
 ## Fees (as researched — confirm current amount on the VFS portal before paying)
 

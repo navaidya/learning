@@ -42,25 +42,43 @@ couple of years.
 ## Locked-in for this child
 
 - Consent: **Annexure D**, notarized, both parents' signatures.
+- Applicant's declaration: **Annexure E**, notarized, plain paper.
+- **Affidavit for change of appearance**, notarized, plain paper.
 - Proof of address: parent's **California driving license** (notarized
   copy).
-- Proof of US status: **I-797 approval notice** + **I-94 record**
-  (notarized copies of both).
+- Proof of the child's US status: **I-797 approval notice** + **I-94
+  record** (notarized copies of both).
+- Proof of parents' own US status: each parent's **H-1B approval notice
+  (I-797)** (notarized copies).
+- **Birth certificate**: child's Indian birth certificate (notarized
+  copy).
 - Submission: **mail-in** — no VFS appointment.
 - Validity: **full 10-year passport**, 36-page booklet, PV-exemption
   requested (parents hold valid Indian passports).
+- **Open**: whether a prepaid return shipping label/envelope must be
+  included — not yet confirmed with VFS.
 
 ## Checklist
 
 - [ ] Get Annexure D notarized with both parents' signatures.
+- [ ] Draft and notarize Annexure E (the applicant's own declaration, on
+      plain paper — the 16-year-old can sign this themselves).
+- [ ] Draft and notarize the affidavit for change of appearance
+      (describing how the child looks different from the passport photo
+      on file).
 - [ ] Get the driving license copy notarized.
 - [ ] Print the I-94 record from `i94.cbp.dhs.gov` and get it, plus the
-      I-797 copy, notarized.
+      I-797 copy, notarized (child's status).
+- [ ] Get each parent's own H-1B approval notice (I-797) copied and
+      notarized (parents' status — separate from the child's).
+- [ ] Get a copy of the child's Indian birth certificate notarized.
 - [ ] Gather current passport (**original** — this goes in the mailed
-      package, not a copy).
+      package, not a copy) plus a notarized copy of the first/last pages.
 - [ ] Take 2 photos to spec (2"×2", plain background, recent), and get a
       notarized copy of the photo made.
 - [ ] Get notarized copies of both parents' passports.
+- [ ] Call VFS (+1 800 320 9625) to confirm whether a prepaid return
+      shipping label/envelope must be included in the package.
 - [ ] Register the child's application on the VFS India portal for the
       USA (`https://visa.vfsglobal.com/usa/en/ind`) and fill the reissue
       form, selecting **mail-in** submission and the **full 10-year**
@@ -77,9 +95,8 @@ couple of years.
       current total on the portal at checkout, since fee schedules change
       and this session couldn't fetch the live fee page to verify it.
 - [ ] Print the completed application and have the 16-year-old sign it,
-      then assemble the mail-in package: original passport + notarized
-      Annexure D + notarized copies of driving license, I-797, I-94,
-      photo, and both parents' passports.
+      then assemble the mail-in package using the **final packing
+      checklist** below — it lists all 12 required items.
 - [ ] Mail to: VFS Global – San Francisco Center, 642 Harrison Street,
       Suite 200, San Francisco, CA 94107.
 - [ ] Track status on the VFS portal; respond within ~7 days if VFS
@@ -90,34 +107,53 @@ couple of years.
 
 ## Final packing checklist — use this last, right before sealing the envelope
 
-Two groups only: **originals** (never photocopy these into the envelope —
-the real thing goes in) and **notarized photocopies** (a copy, stamped
-and signed by a notary). Nothing else goes in the envelope — the same
-parents' passport copies below also serve as the PV-exemption evidence,
-so no extra document is needed for that.
+All 12 mandatory items, in three groups: **originals** (the real thing —
+never a photocopy), **notarized declarations** (documents you draft and
+sign yourself, notarized), and **notarized photocopies** (a copy of an
+existing document, notarized). The parents' passport copies below also
+serve as the PV-exemption evidence, so no extra document is needed for
+that. Cross-check against the
+[master list on the overview page](../2026-09-02-passport-renewal-process-sf/#the-12-mandatory-documents-both-kids).
 
-### Originals — go in as-is
+### Originals — go in as-is (items 1–3)
 
-- [ ] Printed application form, signed by the 16-year-old
-- [ ] Current/expiring Indian passport — the physical booklet
+- [ ] 1. Printed application form, signed by the 16-year-old
+- [ ] 2. Two photographs to spec (physical prints)
+- [ ] 3. Current/expiring Indian passport — the physical booklet
 
-### Notarized photocopies — one copy of each, notary-stamped
+### Notarized declarations — you draft + sign these, then notarize (items 4–6)
 
-- [ ] Annexure D (both parents' signatures, notarized)
-- [ ] Parent's California driving license
-- [ ] Child's I-797 approval notice
-- [ ] Child's I-94 record (printed from `i94.cbp.dhs.gov`)
-- [ ] Passport-size photo
-- [ ] Parent 1's passport (photo + signature pages)
-- [ ] Parent 2's passport (photo + signature pages)
+- [ ] 4. Affidavit for change of appearance
+- [ ] 5. Annexure E (applicant's declaration — the 16-year-old can sign)
+- [ ] 6. Annexure D (both parents' consent)
+
+### Notarized photocopies — one copy of each existing document, notary-stamped (items 3, 2, 7–11)
+
+- [ ] Passport — notarized copy of first/last pages (part of item 3)
+- [ ] Passport-size photo — notarized copy (part of item 2)
+- [ ] 7. Child's I-797 approval notice
+- [ ] 7. Child's I-94 record (printed from `i94.cbp.dhs.gov`)
+- [ ] 8. Parent's California driving license
+- [ ] 9. Parent 1's Indian passport (photo + signature pages)
+- [ ] 9. Parent 2's Indian passport (photo + signature pages)
+- [ ] 10. Parent 1's H-1B approval notice (I-797)
+- [ ] 10. Parent 2's H-1B approval notice (I-797), if applicable to your
+      situation
+- [ ] 11. Child's Indian birth certificate
+
+### Item 12 — still open
+
+- [ ] Confirm with VFS whether a prepaid return shipping label/envelope
+      needs to go in the package, and add it here once confirmed.
+- [ ] Fee payment confirmation/receipt printed and included.
 
 ### Before you seal it
 
-- [ ] Count: 2 originals + 7 notarized copies = 9 items total in the
-      envelope.
+- [ ] Count: 3 originals + 3 notarized declarations + up to 10 notarized
+      photocopies (fewer if only one parent has an independent H-1B) —
+      verify against the numbered list above, item by item.
 - [ ] Envelope addressed to: VFS Global – San Francisco Center, 642
       Harrison Street, Suite 200, San Francisco, CA 94107.
-- [ ] A return envelope/label included, if VFS's form asks for one.
 
 See the
 [overview page](../2026-09-02-passport-renewal-process-sf/) for shared
