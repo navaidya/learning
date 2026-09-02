@@ -1,11 +1,27 @@
 [
   {
+    "project": "opentelemetry-collector",
+    "version": "v0.160.0",
+    "publishedDate": "2026-09-01T23:39:14.000Z",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/service%2Fv0.160.0",
+    "sourceId": "opentelemetry-collector",
+    "title": "service/v0.160.0"
+  },
+  {
     "project": "backstage",
     "version": "v1.55.0-next.1",
     "publishedDate": "2026-09-01T19:58:09.000Z",
     "url": "https://github.com/backstage/backstage/releases/tag/v1.55.0-next.1",
     "sourceId": "backstage",
     "title": "v1.55.0-next.1"
+  },
+  {
+    "project": "kubernetes",
+    "version": "v1.37",
+    "publishedDate": "2026-09-01T18:30:00.000Z",
+    "url": "https://kubernetes.io/blog/2026/09/01/kubernetes-v1-37-etcd-range-stream/",
+    "sourceId": "kubernetes",
+    "title": "Kubernetes v1.37: etcd RangeStream Cuts Memory Use on Large List Reads"
   },
   {
     "project": "k8sgpt",
@@ -22,14 +38,6 @@
     "url": "https://github.com/helm/helm/releases/tag/v3.22.0-rc.1",
     "sourceId": "helm",
     "title": "Helm v3.22.0-rc.1"
-  },
-  {
-    "project": "kubernetes",
-    "version": "v1.37",
-    "publishedDate": "2026-08-31T18:30:00.000Z",
-    "url": "https://kubernetes.io/blog/2026/08/31/kubernetes-v1-37-storage-version-migration-ga/",
-    "sourceId": "kubernetes",
-    "title": "Kubernetes v1.37: Storage Version Migration Enabled by Default"
   },
   {
     "project": "flux",
@@ -198,14 +206,6 @@
     "url": "https://github.com/prometheus/prometheus/releases/tag/v3.14.0",
     "sourceId": "prometheus",
     "title": "3.14.0 / 2026-08-17"
-  },
-  {
-    "project": "opentelemetry-collector",
-    "version": "v1.65.0",
-    "publishedDate": "2026-08-17T17:37:33.000Z",
-    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.159.0",
-    "sourceId": "opentelemetry-collector",
-    "title": "v1.65.0/v0.159.0"
   },
   {
     "project": "tempo",

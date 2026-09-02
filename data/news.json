@@ -1,5 +1,215 @@
 [
   {
+    "id": "opentelemetry-collector-452129435f3d",
+    "title": "service/v0.160.0",
+    "summary": "Module set beta, Version v0.160.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/service%2Fv0.160.0",
+    "publishedDate": "2026-09-01T23:39:14.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.160.0"
+  },
+  {
+    "id": "opentelemetry-collector-96245c0d4595",
+    "title": "service/telemetry/telemetrytest/v0.160.0",
+    "summary": "Module set beta, Version v0.160.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/service%2Ftelemetry%2Ftelemetrytest%2Fv0.160.0",
+    "publishedDate": "2026-09-01T23:39:14.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.160.0"
+  },
+  {
+    "id": "opentelemetry-collector-09ace73f42dc",
+    "title": "service/hostcapabilities/v0.160.0",
+    "summary": "Module set beta, Version v0.160.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/service%2Fhostcapabilities%2Fv0.160.0",
+    "publishedDate": "2026-09-01T23:39:14.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.160.0"
+  },
+  {
+    "id": "opentelemetry-collector-b253b6f7c4ef",
+    "title": "scraper/xscraper/v0.160.0",
+    "summary": "Module set beta, Version v0.160.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fxscraper%2Fv0.160.0",
+    "publishedDate": "2026-09-01T23:39:14.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.160.0"
+  },
+  {
+    "id": "opentelemetry-collector-27e8101ff5ab",
+    "title": "scraper/scrapertest/v0.160.0",
+    "summary": "Module set beta, Version v0.160.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fscrapertest%2Fv0.160.0",
+    "publishedDate": "2026-09-01T23:39:14.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.160.0"
+  },
+  {
+    "id": "opentelemetry-collector-3817287a2603",
+    "title": "scraper/scraperhelper/xscraperhelper/v0.160.0",
+    "summary": "Module set beta, Version v0.160.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fscraperhelper%2Fxscraperhelper%2Fv0.160.0",
+    "publishedDate": "2026-09-01T23:39:14.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.160.0"
+  },
+  {
+    "id": "opentelemetry-collector-0ca81176fbbd",
+    "title": "scraper/v0.160.0",
+    "summary": "Module set beta, Version v0.160.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fv0.160.0",
+    "publishedDate": "2026-09-01T23:39:13.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.160.0"
+  },
+  {
+    "id": "opentelemetry-collector-3562face05c0",
+    "title": "scraper/scraperhelper/v0.160.0",
+    "summary": "Module set beta, Version v0.160.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fscraperhelper%2Fv0.160.0",
+    "publishedDate": "2026-09-01T23:39:13.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.160.0"
+  },
+  {
+    "id": "opentelemetry-collector-91ac033515ab",
+    "title": "receiver/xreceiver/v0.160.0",
+    "summary": "Module set beta, Version v0.160.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/receiver%2Fxreceiver%2Fv0.160.0",
+    "publishedDate": "2026-09-01T23:39:13.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.160.0"
+  },
+  {
+    "id": "opentelemetry-collector-83668bcc07fe",
+    "title": "v0.160.0",
+    "summary": "Module set beta, Version v0.160.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.160.0",
+    "publishedDate": "2026-09-01T23:39:10.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.160.0"
+  },
+  {
     "id": "backstage-1b615060bb66",
     "title": "v1.55.0-next.1",
     "summary": "See docs/releases/v1.55.0-next.1-changelog.md for more information.",
@@ -18,6 +228,24 @@
     "releaseRelated": true,
     "releaseProject": "backstage",
     "releaseVersion": "v1.55.0-next.1"
+  },
+  {
+    "id": "kubernetes-b472f2bbba07",
+    "title": "Kubernetes v1.37: etcd RangeStream Cuts Memory Use on Large List Reads",
+    "summary": "I am excited to announce that etcd RangeStream is graduating to beta in Kubernetes v1.37. Paired with etcd v3.7, it reduces the memory the API server and etcd need to read a large collection, and makes peak usage more predictable. The cost of large readsThe API server serves most list and watch requests from its in-memory watch cache. Populating that cache requires reading a resource's full state from etcd, at startup and on every re-initialization. For a resource with many objects, or large one",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/09/01/kubernetes-v1-37-etcd-range-stream/",
+    "publishedDate": "2026-09-01T18:30:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes",
+    "releaseVersion": "v1.37"
   },
   {
     "id": "openai-3b5f2688fec1",
@@ -8054,24 +8282,6 @@
     "releaseVersion": "v1.53.0-next.1"
   },
   {
-    "id": "hashicorp-c92bbb92ebef",
-    "title": "Discover, govern, and scale Azure infrastructure in the AI era",
-    "summary": "Learn how Terraform helps teams discover unmanaged Azure resources, reduce infrastructure drift, and establish governance as cloud and AI environments scale.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/discover-govern-and-scale-azure-infrastructure-in-the-ai-era",
-    "publishedDate": "2026-06-30T16:00:00.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "low",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "flux-b1a2de9b0888",
     "title": "v2.9.0",
     "summary": "Highlights Flux v2.9.0 is a feature release. Users are encouraged to upgrade for the best experience. For a compressive overview of new features and API changes included in this release, please refer to the Announcing Flux 2.9 GA blog post. Overview of the new features: Flux CLI Plugin System with the Mirror and Schema plugins (flux plugin) Server-Side Apply field ignore rules for fine-grained drift control (Kustomization) SOPS decryption with the Age post-quantum cipher (Kustomization) Kubernet",
@@ -8090,24 +8300,6 @@
     "releaseRelated": true,
     "releaseProject": "flux",
     "releaseVersion": "v2.9.0"
-  },
-  {
-    "id": "hashicorp-5f26d3eacbd4",
-    "title": "HCP Terraform powered by Infragraph is now in limited availability",
-    "summary": "Hybrid and multi-cloud estates create data silos. HCP Terraform powered by Infragraph provides a single source of truth to help optimize and secure infrastructure.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/hcp-terraform-powered-by-infragraph-limited-availability-launch",
-    "publishedDate": "2026-06-30T07:00:00.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "low",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "openai-4c4d91d3ce63",
@@ -8349,24 +8541,6 @@
     "releaseVersion": "1.0"
   },
   {
-    "id": "hashicorp-6ecff03cd47c",
-    "title": "Scaling without friction: Aliases at project scope in Boundary",
-    "summary": "Boundary now supports aliases at project scope, aligning access with your organization's infrastructure while enabling teams to scale independently without conflicts.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/scaling-without-friction-aliases-at-project-scope-in-boundary",
-    "publishedDate": "2026-06-25T07:00:00.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "low",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "gateway-api-762ccbbf9dc7",
     "title": "v1.6.0-rc.2",
     "summary": "Major Changes Since v1.6.0-rc.1 Bug or Regression ⚠️ Breaking Change: TLS must now be configured for listeners using the HTTPS protocol. (#4985, @snorwin) Test & Conformance The GRPCRouteWeight conformance test now sends its distribution-sampling requests through the injectable Options.GRPCClient instead of a hardcoded DefaultClient, allowing implementations that supply a custom gRPC client to run it. (#5004, @lexfrei) The HTTPRouteRequestPercentageMirror conformance test now derives its accepta",
@@ -8385,24 +8559,6 @@
     "releaseRelated": true,
     "releaseProject": "gateway-api",
     "releaseVersion": "v1.6.0-rc.2"
-  },
-  {
-    "id": "hashicorp-d02d113a4d0a",
-    "title": "HCP Vault Dedicated introduces cluster disaster recovery (public preview)",
-    "summary": "Cluster DR for HCP Vault Dedicated (public preview) enables DR drills at the cluster level, so teams can simulate cluster failures and prove failover readiness.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/hcp-vault-dedicated-introduces-cluster-disaster-recovery-public-preview",
-    "publishedDate": "2026-06-25T04:13:00.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "low",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "kubernetes-releases-c46ce11c2019",
@@ -9563,89 +9719,5 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "istio-8a8fa1bc53ac",
-    "title": "ISTIO-SECURITY-2026-004",
-    "summary": "Disclosure Details CVE(s) CVE-2026-47774 CVSS Impact Score 7.5 CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H Affected Releases 1.30.0 1.29.0 to 1.29.3 1.28.0 to 1.28.7 CVE Envoy CVEs CVE-2026-47774: (CVSS score 7.5, High): HTTP/2 memory exhaustion via cookie header HPACK amplification. Cookie header bytes are not fully accounted for during request header size validation, and HPACK header block limits are enforced on encoded bytes without a corresponding limit on total decoded header size. An unau",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/security/istio-security-2026-004/",
-    "publishedDate": "2026-06-04T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "7.5"
-  },
-  {
-    "id": "istio-b099284926e2",
-    "title": "Announcing Istio 1.30.1",
-    "summary": "This release contains bug fixes to improve robustness. This release note describes what’s different between Istio 1.30.0 and 1.30.1. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Security Update CVE-2026-47774 (CVSS score 7.5, High): An unauthenticated remote attacker can cause denial of service by exhausting memory in the Envoy ",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/releases/1.30.x/announcing-1.30.1/",
-    "publishedDate": "2026-06-04T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "1.30.1"
-  },
-  {
-    "id": "istio-e45bb6ab580a",
-    "title": "Announcing Istio 1.29.4",
-    "summary": "This release contains bug fixes to improve robustness. This release note describes what’s different between Istio 1.29.3 and 1.29.4. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Security Update CVE-2026-47774 (CVSS score 7.5, High): An unauthenticated remote attacker can cause denial of service by exhausting memory in the Envoy ",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/releases/1.29.x/announcing-1.29.4/",
-    "publishedDate": "2026-06-04T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "1.29.4"
-  },
-  {
-    "id": "istio-e725ccb7f1bd",
-    "title": "Announcing Istio 1.28.8",
-    "summary": "This release contains bug fixes to improve robustness. This release note describes what’s different between Istio 1.28.7 and 1.28.8. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Security Update CVE-2026-47774 (CVSS score 7.5, High): An unauthenticated remote attacker can cause denial of service by exhausting memory in the Envoy ",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/releases/1.28.x/announcing-1.28.8/",
-    "publishedDate": "2026-06-04T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "1.28.8"
   }
 ]
