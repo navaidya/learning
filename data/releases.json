@@ -1,19 +1,27 @@
 [
   {
+    "project": "gateway-api",
+    "version": "v1.6.2",
+    "publishedDate": "2026-09-03T18:49:15.000Z",
+    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.2",
+    "sourceId": "gateway-api",
+    "title": "v1.6.2"
+  },
+  {
+    "project": "kubernetes",
+    "version": "v1.37",
+    "publishedDate": "2026-09-03T18:30:00.000Z",
+    "url": "https://kubernetes.io/blog/2026/09/03/kubernetes-v1-37-dra-updates/",
+    "sourceId": "kubernetes",
+    "title": "Kubernetes v1.37: DRA Updates"
+  },
+  {
     "project": "pulumi",
     "version": "v3.261.0",
     "publishedDate": "2026-09-03T06:26:07.000Z",
     "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.261.0",
     "sourceId": "pulumi",
     "title": "pkg/v3.261.0: Changelog and go.mod updates for v3.261.0 (#24548)"
-  },
-  {
-    "project": "kubernetes",
-    "version": "v1.37",
-    "publishedDate": "2026-09-02T18:30:00.000Z",
-    "url": "https://kubernetes.io/blog/2026/09/02/kubernetes-v1-37-hpa-scale-to-zero-beta/",
-    "sourceId": "kubernetes",
-    "title": "Kubernetes v1.37: Scale Workloads to Zero with HorizontalPodAutoscaler"
   },
   {
     "project": "terraform",
@@ -238,13 +246,5 @@
     "url": "https://github.com/etcd-io/etcd/releases/tag/v3.7.1",
     "sourceId": "etcd",
     "title": "v3.7.1"
-  },
-  {
-    "project": "gateway-api",
-    "version": "v1.6.1",
-    "publishedDate": "2026-07-16T16:30:35.000Z",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.1",
-    "sourceId": "gateway-api",
-    "title": "v1.6.1"
   }
 ]

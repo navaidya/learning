@@ -1,5 +1,62 @@
 [
   {
+    "id": "vector-ca11c1324320",
+    "title": "vdev-v0.3.18",
+    "summary": "No content.",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.18",
+    "publishedDate": "2026-09-03T20:16:14.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
+    "id": "gateway-api-c0aa35ccc88f",
+    "title": "v1.6.2",
+    "summary": "v1.6.2 Major Changes Since v1.6.1 Bug or Regression HTTPRequestRedirectFilter status codes 303, 307, and 308 are Extended conformance, not Core. (#5173, @kflynn) Other (Cleanup or Flake) Fix flaky TCPRouteWeightedRouting and UDPRouteWeightedRouting conformance tests by adding a data-plane readiness check before performing weighted routing assertions. (#5064, @arybolovlev) Fix FailFast not working as expected (#5204, @zirain) Allow disabling parallel tests at the suite level (#5184, @zirain)",
+    "source": "Gateway API",
+    "sourceId": "gateway-api",
+    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.2",
+    "publishedDate": "2026-09-03T18:49:15.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "gateway-api",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "gateway-api",
+    "releaseVersion": "v1.6.2"
+  },
+  {
+    "id": "kubernetes-90b5ee36e2b9",
+    "title": "Kubernetes v1.37: DRA Updates",
+    "summary": "Kubernetes 1.37 is here and Dynamic Resource Allocation (DRA) keeps pushing past where it started! This release brings DRA Extended Resource support to GA, a milestone the team has been building toward for three straight releases. Several more features graduate to Beta or GA. A fresh batch of alpha features rounds out the release. I'll dive into what's new for DRA in Kubernetes 1.37! What's stable in 1.37DRA Extended Resource support has graduated to GA. This is the mechanism that lets DRA drive",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/09/03/kubernetes-v1-37-dra-updates/",
+    "publishedDate": "2026-09-03T18:30:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes",
+    "releaseVersion": "v1.37"
+  },
+  {
     "id": "hashicorp-b7a665faeb00",
     "title": "The common security controls behind India's regulatory wave",
     "summary": "Learn more about how India’s data protection and cybersecurity rules are converging.",
@@ -16,6 +73,26 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
+  },
+  {
+    "id": "gateway-api-8ac5585a8625",
+    "title": "conformance/v1.6.2",
+    "summary": "chore: Prep for v1.6.2 release (#5217)",
+    "source": "Gateway API",
+    "sourceId": "gateway-api",
+    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/conformance%2Fv1.6.2",
+    "publishedDate": "2026-09-03T15:12:20.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "gateway-api",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "gateway-api",
+    "releaseVersion": "v1.6.2"
   },
   {
     "id": "cncf-19c5dfec6174",
@@ -492,24 +569,6 @@
     "releaseProject": "hashicorp"
   },
   {
-    "id": "hashicorp-380e829425a8",
-    "title": "Secure mainframe access with HashiCorp Boundary",
-    "summary": "HashiCorp Boundary modernizes mainframe access with identity-based controls, JIT credentials, and central auditing via a mainframe-adjacent worker.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/secure-mainframe-access-with-hashicorp-boundary",
-    "publishedDate": "2026-09-01T16:00:00.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "low",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "cncf-81d8ad0c143c",
     "title": "Platform engineering maturity: From toolchain to self-service",
     "summary": "Most platform engineering conversations tend to split into two rooms pretty quickly. The first room is full of teams who don’t have a platform yet. Scattered scripts, tribal knowledge, and every team is doing the same...",
@@ -859,24 +918,6 @@
     "releaseRelated": true,
     "releaseProject": "backstage",
     "releaseVersion": "v1.53.2"
-  },
-  {
-    "id": "hashicorp-6bb72ba32478",
-    "title": "Relaunching HashiCorp Validated Designs with improved usability",
-    "summary": "Learn how the refreshed HashiCorp Validated Designs help teams find field-tested guidance for deploying, operating, and using products in production.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/relaunching-hashicorp-validated-designs-with-improved-usability",
-    "publishedDate": "2026-08-28T16:00:00.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "low",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "pulumi-aef4e0bf7358",
@@ -9685,44 +9726,5 @@
     "releaseRelated": true,
     "releaseProject": "tempo",
     "releaseVersion": "v2.9.3"
-  },
-  {
-    "id": "tempo-324af24659fe",
-    "title": "v3.0.1",
-    "summary": "v3.0.1",
-    "source": "Grafana Tempo",
-    "sourceId": "tempo",
-    "url": "https://github.com/grafana/tempo/releases/tag/v3.0.1",
-    "publishedDate": "2026-06-08T18:48:03.000Z",
-    "domain": "tracing",
-    "topics": [
-      "tempo",
-      "tracing",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "tempo",
-    "releaseVersion": "v3.0.1"
-  },
-  {
-    "id": "gateway-api-0d3f18b43dca",
-    "title": "monthly-2026.06: Close only the gRPC client the request helper owns (#4939)",
-    "summary": "MakeRequestAndExpectEventuallyConsistentResponse deferred Close() on the Client it was passed, including a caller-supplied (injected) suite.GRPCClient that it does not own. Closing a shared client as a side effect of one request forces custom clients to tolerate being closed and re-used — an unusual, undocumented contract, and a real hazard once a test re-uses the injected client after the helper runs. Close only the DefaultClient the helper constructs when passed nil; leave a caller-supplied cl",
-    "source": "Gateway API",
-    "sourceId": "gateway-api",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/monthly-2026.06",
-    "publishedDate": "2026-06-05T22:02:32.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "gateway-api",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "gateway-api"
   }
 ]
