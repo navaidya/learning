@@ -1,5 +1,40 @@
 [
   {
+    "id": "hashicorp-b7a665faeb00",
+    "title": "The common security controls behind India's regulatory wave",
+    "summary": "Learn more about how India’s data protection and cybersecurity rules are converging.",
+    "source": "HashiCorp",
+    "sourceId": "hashicorp",
+    "url": "https://www.hashicorp.com/blog/the-common-security-controls-behind-indias-regulatory-wave",
+    "publishedDate": "2026-09-03T16:00:00.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "vault",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-19c5dfec6174",
+    "title": "Join OSPOlogy + OSPO Summit China 2026 in Shanghai",
+    "summary": "There’s still time to join OSPOlogy + OSPO Summit China 2026, taking place on September 7, 2026, in Shanghai, China as part of KubeCon + CloudNativeCon + OpenInfra Summit + PyTorch Conference China. This event will...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/09/03/join-ospology-ospo-summit-china-2026-in-shanghai/",
+    "publishedDate": "2026-09-03T12:32:33.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "cncf-f7348c3c330e",
     "title": "Migrating a critical Kubernetes deployment from the default namespace without any downtime",
     "summary": "Somewhere in your cluster there’s probably a deployment sitting in the default namespace that everyone knows shouldn’t be there. Nobody put it there maliciously, it just happened, early on, before anyone had opinions about namespace hygiene,...",
@@ -1057,24 +1092,6 @@
     "releaseVersion": "v1.13.0-beta1"
   },
   {
-    "id": "hashicorp-ad9c5ca92bb3",
-    "title": "Stream HCP Vault Dedicated audit logs to Microsoft Sentinel",
-    "summary": "HCP Vault Dedicated has no native Microsoft Sentinel connector. Deploy a Terraform-managed pipeline that streams audit logs into Azure Log Analytics and Microsoft Sentinel.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/hcp-vault-dedicated-audit-logs-microsoft-sentinel",
-    "publishedDate": "2026-08-27T16:00:00.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "low",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "grafana-8d913edf3827",
     "title": "How to measure and improve instrumentation quality for better full-stack observability",
     "summary": "Modern engineering teams instrument everything, with metrics, logs, traces, and profiles flowing from hundreds of services at once. But full-stack observability isn’t really about collecting more telemetry; it's about having a single, unified picture of how your services connect to every layer beneath them, including their dependencies, the pods and nodes they run on, and the logs, traces, and profiles that explain their behavior. But there's often a quiet problem hiding underneath all that data",
@@ -1349,24 +1366,6 @@
     "releaseRelated": true,
     "releaseProject": "vector",
     "releaseVersion": "v0.58.0"
-  },
-  {
-    "id": "hashicorp-deeceeb9aefb",
-    "title": "Streamline identity lifecycle management on HCP with SCIM provisioning",
-    "summary": "New HCP SCIM provisioning automates user and group lifecycle management from your identity provider to reduce admin overhead and improve secure, consistent access.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/streamline-identity-lifecycle-management-on-hcp-with-scim-provisioning",
-    "publishedDate": "2026-08-26T15:00:00.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "low",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "robusta-3b45b7424a2a",
