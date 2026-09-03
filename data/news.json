@@ -1,5 +1,23 @@
 [
   {
+    "id": "kubernetes-d1c3bfab278d",
+    "title": "Kubernetes v1.37: Scale Workloads to Zero with HorizontalPodAutoscaler",
+    "summary": "Kubernetes v1.37 includes API support for horizontal autoscaling of workloads down to zero replicas. This feature is now Beta and enabled by default. A HorizontalPodAutoscaler (HPA) that uses a suitable object metric or external metric can now scale a workload to zero replicas, then bring it back when the metric changes. Before v1.37, you needed an add-on or external component, or you had to enable the Alpha feature gate, to scale from zero. It is now part of core Kubernetes. Scaling to zero rem",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/09/02/kubernetes-v1-37-hpa-scale-to-zero-beta/",
+    "publishedDate": "2026-09-02T18:30:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes",
+    "releaseVersion": "v1.37"
+  },
+  {
     "id": "vector-b0c4b2befbda",
     "title": "vdev-v0.3.17",
     "summary": "chore(dev): streamline development checks (#26282) Co-authored-by: Thomas <thomas.schneider@datadoghq.com>",
@@ -6137,24 +6155,6 @@
       "observability"
     ],
     "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "hashicorp-ea34db5e870a",
-    "title": "Terraform introduces workspaces and Stacks restore, and more",
-    "summary": "HCP Terraform and Terraform Enterprise boost resiliency, governance, and scalability, helping platform teams manage infrastructure and deliver faster at scale.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/terraform-introduces-workspaces-and-stacks-restore-and-more",
-    "publishedDate": "2026-07-23T17:00:00.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "low",
     "architectureShift": false,
     "releaseRelated": false
   },

@@ -1,5 +1,13 @@
 [
   {
+    "project": "kubernetes",
+    "version": "v1.37",
+    "publishedDate": "2026-09-02T18:30:00.000Z",
+    "url": "https://kubernetes.io/blog/2026/09/02/kubernetes-v1-37-hpa-scale-to-zero-beta/",
+    "sourceId": "kubernetes",
+    "title": "Kubernetes v1.37: Scale Workloads to Zero with HorizontalPodAutoscaler"
+  },
+  {
     "project": "pulumi",
     "version": "v3.261.0",
     "publishedDate": "2026-09-02T16:55:30.000Z",
@@ -38,14 +46,6 @@
     "url": "https://github.com/backstage/backstage/releases/tag/v1.55.0-next.1",
     "sourceId": "backstage",
     "title": "v1.55.0-next.1"
-  },
-  {
-    "project": "kubernetes",
-    "version": "v1.37",
-    "publishedDate": "2026-09-01T18:30:00.000Z",
-    "url": "https://kubernetes.io/blog/2026/09/01/kubernetes-v1-37-etcd-range-stream/",
-    "sourceId": "kubernetes",
-    "title": "Kubernetes v1.37: etcd RangeStream Cuts Memory Use on Large List Reads"
   },
   {
     "project": "k8sgpt",
