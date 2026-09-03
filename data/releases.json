@@ -1,19 +1,19 @@
 [
   {
+    "project": "pulumi",
+    "version": "v3.261.0",
+    "publishedDate": "2026-09-03T06:26:07.000Z",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.261.0",
+    "sourceId": "pulumi",
+    "title": "pkg/v3.261.0: Changelog and go.mod updates for v3.261.0 (#24548)"
+  },
+  {
     "project": "kubernetes",
     "version": "v1.37",
     "publishedDate": "2026-09-02T18:30:00.000Z",
     "url": "https://kubernetes.io/blog/2026/09/02/kubernetes-v1-37-hpa-scale-to-zero-beta/",
     "sourceId": "kubernetes",
     "title": "Kubernetes v1.37: Scale Workloads to Zero with HorizontalPodAutoscaler"
-  },
-  {
-    "project": "pulumi",
-    "version": "v3.261.0",
-    "publishedDate": "2026-09-02T16:55:30.000Z",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.261.0",
-    "sourceId": "pulumi",
-    "title": "v3.261.0"
   },
   {
     "project": "terraform",

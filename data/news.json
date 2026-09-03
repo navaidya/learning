@@ -1,5 +1,42 @@
 [
   {
+    "id": "cncf-f7348c3c330e",
+    "title": "Migrating a critical Kubernetes deployment from the default namespace without any downtime",
+    "summary": "Somewhere in your cluster there’s probably a deployment sitting in the default namespace that everyone knows shouldn’t be there. Nobody put it there maliciously, it just happened, early on, before anyone had opinions about namespace hygiene,...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/09/03/migrating-a-critical-kubernetes-deployment-from-the-default-namespace-without-any-downtime/",
+    "publishedDate": "2026-09-03T11:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "pulumi-7bdb82de5fdb",
+    "title": "pkg/v3.261.0: Changelog and go.mod updates for v3.261.0 (#24548)",
+    "summary": "Co-authored-by: github-actions github-actions@github.com",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.261.0",
+    "publishedDate": "2026-09-03T06:26:07.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.261.0"
+  },
+  {
     "id": "kubernetes-d1c3bfab278d",
     "title": "Kubernetes v1.37: Scale Workloads to Zero with HorizontalPodAutoscaler",
     "summary": "Kubernetes v1.37 includes API support for horizontal autoscaling of workloads down to zero replicas. This feature is now Beta and enabled by default. A HorizontalPodAutoscaler (HPA) that uses a suitable object metric or external metric can now scale a workload to zero replicas, then bring it back when the metric changes. Before v1.37, you needed an add-on or external component, or you had to enable the Alpha feature gate, to scale from zero. It is now part of core Kubernetes. Scaling to zero rem",
@@ -4361,24 +4398,6 @@
     "releaseRelated": false
   },
   {
-    "id": "hashicorp-19789a5fa6ca",
-    "title": "HCP Terraform is the control plane for AI-driven infrastructure",
-    "summary": "AI agents author and run Terraform on their own. HCP Terraform makes autonomy accountable: provenance, policy, identity, isolation, and audit.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/hcp-terraform-is-the-control-plane-for-ai-driven-infrastructure",
-    "publishedDate": "2026-08-05T16:00:00.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "low",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "oci-oke-8ab3a71f6b3a",
     "title": "v8.26.0",
     "summary": "8.26.0 (August 5, 2026) Added context propagation for management resources in database_management service context propagation for resources in database_management - part 3 context support into database_management resources - part 1 Support for ACD Backup info and Cloning Phase 2 (Timestamp, CPU parameter, subsetting) | ADB-D & ADB-CC Support for Automatic failover with FSFO Support for OpenSearch cluster network security groups Upgrading packages to fix vulnerabilities Bug Fix resolve no-op patc",
@@ -6121,24 +6140,6 @@
     "releaseRelated": true,
     "releaseProject": "etcd",
     "releaseVersion": "v3.5.33"
-  },
-  {
-    "id": "hashicorp-c6a6a6e8ad70",
-    "title": "Terraform Stacks, explained",
-    "summary": "Terraform Stacks simplify provisioning and managing resources at scale, reducing the time and overhead of managing infrastructure.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/terraform-stacks-explained",
-    "publishedDate": "2026-07-23T19:00:00.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "low",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "opentelemetry-309155cf7d38",
