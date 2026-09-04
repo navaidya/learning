@@ -1,5 +1,13 @@
 [
   {
+    "project": "containerd",
+    "version": "1.7.35",
+    "publishedDate": "2026-09-04T21:17:15.000Z",
+    "url": "https://github.com/containerd/containerd/releases/tag/v1.7.35",
+    "sourceId": "containerd",
+    "title": "containerd 1.7.35"
+  },
+  {
     "project": "gateway-api",
     "version": "v1.6.2",
     "publishedDate": "2026-09-03T18:49:15.000Z",
@@ -94,14 +102,6 @@
     "url": "https://istio.io/latest/news/releases/1.31.x/announcing-1.31/change-notes/",
     "sourceId": "istio",
     "title": "Istio 1.31.0 Change Notes"
-  },
-  {
-    "project": "containerd",
-    "version": "1.12.0-rc.0",
-    "publishedDate": "2026-08-28T17:59:38.000Z",
-    "url": "https://github.com/containerd/containerd/releases/tag/api%2Fv1.12.0-rc.0",
-    "sourceId": "containerd",
-    "title": "containerd API 1.12.0-rc.0"
   },
   {
     "project": "loki",

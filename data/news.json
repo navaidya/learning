@@ -1,5 +1,86 @@
 [
   {
+    "id": "containerd-ed8202b16bdc",
+    "title": "containerd 1.7.35",
+    "summary": "Welcome to the v1.7.35 release of containerd! The thirty-fifth patch release for containerd 1.7 contains various fixes and updates including security patches. Security Updates containerd CVE-2026-53495 GHSA-rp3h-jf77-q9p4 Highlights Image Distribution Apply hardening to strip sensitive authentication headers when fetching descriptor URLs (#14046) Runtime Enable log scrubbing by default on Windows (#13889) Please try out the release binaries and report any issues at https://github.com/containerd/",
+    "source": "containerd",
+    "sourceId": "containerd",
+    "url": "https://github.com/containerd/containerd/releases/tag/v1.7.35",
+    "publishedDate": "2026-09-04T21:17:15.000Z",
+    "domain": "containers",
+    "topics": [
+      "containers",
+      "containerd",
+      "runtime"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "containerd",
+    "releaseVersion": "1.7.35"
+  },
+  {
+    "id": "containerd-446074bc98cf",
+    "title": "containerd 2.0.12",
+    "summary": "Welcome to the v2.0.12 release of containerd! The twelfth patch release for containerd 2.0 contains various fixes and updates including security patches. Security Updates containerd CVE-2026-53495 GHSA-rp3h-jf77-q9p4 Highlights Image Distribution Apply hardening to strip sensitive authentication headers when fetching descriptor URLs (#14045) Surface OCI error bodies in registry 403 responses by falling back to GET requests (#13749) Runtime Set SystemTemp environment variable on Windows so temp d",
+    "source": "containerd",
+    "sourceId": "containerd",
+    "url": "https://github.com/containerd/containerd/releases/tag/v2.0.12",
+    "publishedDate": "2026-09-04T20:49:56.000Z",
+    "domain": "containers",
+    "topics": [
+      "containers",
+      "containerd",
+      "runtime"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "containerd",
+    "releaseVersion": "2.0.12"
+  },
+  {
+    "id": "containerd-5a7685ead5f4",
+    "title": "containerd 2.3.5",
+    "summary": "Welcome to the v2.3.5 release of containerd! The fifth patch release for containerd 2.3 contains various fixes and updates including security patches. Security Updates containerd CVE-2026-53495 GHSA-rp3h-jf77-q9p4 Highlights Image Distribution Apply hardening to strip sensitive authentication headers when fetching descriptor URLs (#14030) Runtime Avoid hangs and data races when streaming container standard I/O in CRI (#14094) Fix missing error messages in OpenTelemetry trace attributes (#14049) ",
+    "source": "containerd",
+    "sourceId": "containerd",
+    "url": "https://github.com/containerd/containerd/releases/tag/v2.3.5",
+    "publishedDate": "2026-09-04T20:49:28.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "containerd",
+      "containers",
+      "runtime"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "containerd",
+    "releaseVersion": "2.3.5"
+  },
+  {
+    "id": "containerd-0a6384e4c10e",
+    "title": "containerd 2.2.8",
+    "summary": "Welcome to the v2.2.8 release of containerd! The eighth patch release for containerd 2.2 contains various fixes and updates including security patches. Security Updates containerd CVE-2026-53495 GHSA-rp3h-jf77-q9p4 Highlights Image Distribution Apply hardening to strip sensitive authentication headers when fetching descriptor URLs (#14044) Runtime Set SystemTemp environment variable on Windows so temp directory overrides work for SYSTEM services (#14102) Fix user and group lookup failures in con",
+    "source": "containerd",
+    "sourceId": "containerd",
+    "url": "https://github.com/containerd/containerd/releases/tag/v2.2.8",
+    "publishedDate": "2026-09-04T20:49:23.000Z",
+    "domain": "containers",
+    "topics": [
+      "containers",
+      "containerd",
+      "runtime"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "containerd",
+    "releaseVersion": "2.2.8"
+  },
+  {
     "id": "cncf-8a3a27f5235d",
     "title": "CPU + GPU: Why AI platform engineering is a heterogeneous infrastructure problem",
     "summary": "AI infrastructure conversations often start with GPUs. Accelerators provide much of the compute behind model training and inference, so the focus is understandable. But a production AI workload rarely starts and ends on a GPU. Data...",
@@ -9641,85 +9722,5 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "openai-6600f3e4b964",
-    "title": "OpenAI to acquire Ona",
-    "summary": "OpenAI plans to acquire Ona to expand Codex with secure, persistent cloud environments, enabling long-running AI agents across enterprise workflows.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/openai-to-acquire-ona",
-    "publishedDate": "2026-06-11T00:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "ai-agent",
-      "openai",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "gateway-api-ac33a5fc1d6b",
-    "title": "conformance/v1.6.0-rc.1: release v1.6.0-rc.1 (#4957)",
-    "summary": "release v1.6.0-rc0 Update vap version. Update vap version in experimental too. Updated vap logic to ignore prereleases like rc and corrected unit test case. Update version to rc.1 Update protoc-gen-go version in grpcecho.pb.go Update rc version in tests too. update version in vap. Add backends into changelog. formatting.",
-    "source": "Gateway API",
-    "sourceId": "gateway-api",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/conformance%2Fv1.6.0-rc.1",
-    "publishedDate": "2026-06-10T21:54:50.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "gateway-api",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "gateway-api",
-    "releaseVersion": "v1.6.0-rc.1"
-  },
-  {
-    "id": "oci-oke-2b01ab5c2095",
-    "title": "v8.18.0",
-    "summary": "8.18.0 (June 10, 2026) Added Support for IdentityPropagationTrust JWT/RPST and X509/UPST Terraform attributes Support for Delegate Access Control for Exadata Database Service on Exascale Infrastructure Support for Oracle assisted Patching on ExaDB-XS Support for Public connectivity for Kafka clusters Support for exporting LOGAN Log Groups and Ingest Time Rules Support for IPv6 Single Stack Support for P0 Customers Support for Improve visibility of mapping between GMC and GMF Support for Self-Hos",
-    "source": "OCI / OKE",
-    "sourceId": "oci-oke",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v8.18.0",
-    "publishedDate": "2026-06-10T08:37:55.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "oci",
-      "oke",
-      "oracle"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "oci-oke",
-    "releaseVersion": "v8.18.0"
-  },
-  {
-    "id": "tempo-57ec3fe06025",
-    "title": "v3.0.2",
-    "summary": "🔒 Security 🔒 deps: Build Tempo with Go 1.26.3, which includes upstream security and bug fixes. (#7423) (@ie-pham)",
-    "source": "Grafana Tempo",
-    "sourceId": "tempo",
-    "url": "https://github.com/grafana/tempo/releases/tag/v3.0.2",
-    "publishedDate": "2026-06-09T16:30:31.000Z",
-    "domain": "tracing",
-    "topics": [
-      "tempo",
-      "tracing",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "tempo",
-    "releaseVersion": "v3.0.2"
   }
 ]
