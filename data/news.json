@@ -81,6 +81,24 @@
     "releaseVersion": "2.2.8"
   },
   {
+    "id": "kubernetes-1560f468b87f",
+    "title": "Kubernetes v1.37: KubeletInUserNamespace (aka Rootless mode) Graduates to Beta",
+    "summary": "Kubernetes v1.37 promotes the KubeletInUserNamespace feature gate to beta. With this feature enabled, all of the node components (kubelet, CRI and OCI runtimes, CNI plugins, and kube-proxy) can run as a non-root user on the host, using a Linux user namespace. This technique is also known as rootless mode. The work started as an experiment in 2018, and was merged into Kubernetes v1.22 (2021) as an alpha feature (Kubernetes Enhancement Proposal KEP-2033). This feature should not be confused with u",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/09/04/kubernetes-v1-37-rootless-beta/",
+    "publishedDate": "2026-09-04T18:30:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes",
+    "releaseVersion": "v1.37"
+  },
+  {
     "id": "cncf-8a3a27f5235d",
     "title": "CPU + GPU: Why AI platform engineering is a heterogeneous infrastructure problem",
     "summary": "AI infrastructure conversations often start with GPUs. Accelerators provide much of the compute behind model training and inference, so the focus is understandable. But a production AI workload rarely starts and ends on a GPU. Data...",
@@ -9704,23 +9722,5 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes-releases",
     "releaseVersion": "v1.35.6"
-  },
-  {
-    "id": "openai-e17db83823d2",
-    "title": "New OpenAI Academy courses for the next era of work",
-    "summary": "OpenAI introduces three Academy courses that help people build practical AI skills, create repeatable workflows, and apply agents in everyday work.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/academy-courses-applying-ai-at-work",
-    "publishedDate": "2026-06-12T10:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   }
 ]

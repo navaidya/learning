@@ -8,20 +8,20 @@
     "title": "containerd 1.7.35"
   },
   {
+    "project": "kubernetes",
+    "version": "v1.37",
+    "publishedDate": "2026-09-04T18:30:00.000Z",
+    "url": "https://kubernetes.io/blog/2026/09/04/kubernetes-v1-37-rootless-beta/",
+    "sourceId": "kubernetes",
+    "title": "Kubernetes v1.37: KubeletInUserNamespace (aka Rootless mode) Graduates to Beta"
+  },
+  {
     "project": "gateway-api",
     "version": "v1.6.2",
     "publishedDate": "2026-09-03T18:49:15.000Z",
     "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.2",
     "sourceId": "gateway-api",
     "title": "v1.6.2"
-  },
-  {
-    "project": "kubernetes",
-    "version": "v1.37",
-    "publishedDate": "2026-09-03T18:30:00.000Z",
-    "url": "https://kubernetes.io/blog/2026/09/03/kubernetes-v1-37-dra-updates/",
-    "sourceId": "kubernetes",
-    "title": "Kubernetes v1.37: DRA Updates"
   },
   {
     "project": "pulumi",
