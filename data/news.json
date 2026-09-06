@@ -20,6 +20,24 @@
     "releaseVersion": "0.41.0-alpha"
   },
   {
+    "id": "openai-19672c4832d4",
+    "title": "Research acceleration: The view inside OpenAI",
+    "summary": "Inside OpenAI, coding agents are reshaping AI research. Explore early data on agent usage, experiment velocity, task complexity, and research acceleration.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+    "publishedDate": "2026-09-06T08:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "containerd-ed8202b16bdc",
     "title": "containerd 1.7.35",
     "summary": "Welcome to the v1.7.35 release of containerd! The thirty-fifth patch release for containerd 1.7 contains various fixes and updates including security patches. Security Updates containerd CVE-2026-53495 GHSA-rp3h-jf77-q9p4 Highlights Image Distribution Apply hardening to strip sensitive authentication headers when fetching descriptor URLs (#14046) Runtime Enable log scrubbing by default on Windows (#13889) Please try out the release binaries and report any issues at https://github.com/containerd/",
@@ -9664,26 +9682,6 @@
     "releaseRelated": true,
     "releaseProject": "opentofu",
     "releaseVersion": "v1.12.2"
-  },
-  {
-    "id": "helm-4e31227dcc9c",
-    "title": "Helm v4.2.1",
-    "summary": "Helm v4.2.1 is a patch release. Users are encouraged to upgrade for the best experience. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/packages Notable Changes Fixed data race detected by -race flag when concurrent goroutines (upgrade + rollback, install ",
-    "source": "Helm",
-    "sourceId": "helm",
-    "url": "https://github.com/helm/helm/releases/tag/v4.2.1",
-    "publishedDate": "2026-06-12T15:06:26.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "helm",
-      "packaging"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "helm",
-    "releaseVersion": "v4.2.1"
   },
   {
     "id": "kubernetes-releases-cf407b9d610a",
