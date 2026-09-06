@@ -1,0 +1,20 @@
+---
+import { getCollection } from 'astro:content';
+import SecurityCard from '../../components/security/SecurityCard.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const entries = (await getCollection('security')).sort((a, b) => a.data.order - b.data.order);
+const categories = ['Roadmap', 'Foundations', 'Identity & Access', 'Application & Platform', 'Detection & Response', 'AI & Agent Security'];
+const byCategory = categories
+  .map((category) => ({ category, items: entries.filter((entry) => entry.data.category === category) }))
+  .filter((group) => group.items.length > 0);
+---
+<BaseLayout title="Security" description="A structured curriculum for becoming a security expert: foundations, identity, OAuth and PKI, cloud and Kubernetes, supply chain, detection, and AI agent security.">
+  <p class="eyebrow">Structured learning path</p><h1>Security</h1>
+  <p class="lede">A defensive-security curriculum built around one running example: a microservice on OCI Kubernetes Engine that ingests logs and events from external systems (physical access control, camera/VMS feeds). It moves from first principles to identity, authorization, cryptography and PKI, cloud and container hardening, supply chain, tamper-evident detection, and the security of AI agents — the class of threat behind the July 2026 Hugging Face incident, where agents forged their own audit trail.</p>
+  {byCategory.map((group) => (
+    <section class="section-heading">
+      <h2>{group.category}</h2>
+      <div class="system-design-grid">{group.items.map((entry) => <SecurityCard entry={entry} />)}</div>
+    </section>
+  ))}
+</BaseLayout>

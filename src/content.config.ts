@@ -46,4 +46,15 @@ export const collections = {
     status: codingInterviewStatus,
     tags: z.array(z.string()).default([]),
   }))),
+  security: defineCollection(content('./content/security', z.object({
+    title: z.string(),
+    summary: z.string(),
+    order: z.number().int().min(0),
+    category: z.enum(['Roadmap', 'Foundations', 'Identity & Access', 'Application & Platform', 'Detection & Response', 'AI & Agent Security']),
+    difficulty: z.enum(['foundational', 'intermediate', 'advanced']),
+    readingMinutes: z.number().int().min(5).max(90),
+    threatsCovered: z.array(z.string()).default([]),
+    practices: z.array(z.string()).default([]),
+    tags: z.array(z.string()).default([]),
+  }))),
 };

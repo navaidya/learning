@@ -1,0 +1,21 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import { withBase } from '../lib/url';
+const { title, summary, category, difficulty, readingMinutes, threatsCovered = [], practices = [] } = Astro.props;
+---
+<BaseLayout title={`${title} | Security`} description={summary}>
+  <div class="book-layout system-design-layout">
+    <aside class="book-sidebar"><a href={withBase('/security')}><strong>← Security curriculum</strong></a><nav aria-label="Security modules"><slot name="sidebar" /></nav></aside>
+    <article class="book-article system-design-article">
+      <p class="eyebrow">{category}</p><h1>{title}</h1><p class="lede">{summary}</p>
+      <dl class="interview-summary">
+        <div><dt>Level</dt><dd>{difficulty}</dd></div>
+        <div><dt>Reading time</dt><dd>{readingMinutes} minutes</dd></div>
+        {threatsCovered.length > 0 && <div><dt>Threats covered</dt><dd>{threatsCovered.join(' · ')}</dd></div>}
+        {practices.length > 0 && <div><dt>Key controls</dt><dd>{practices.join(' · ')}</dd></div>}
+      </dl>
+      <aside class="originality-note"><strong>Learning note:</strong> These modules teach defensive security for the systems this OS tracks. Examples are illustrative — always validate against current vendor documentation and your own threat model before relying on them in production.</aside>
+      <slot /><nav class="case-pagination" aria-label="Adjacent modules"><slot name="pagination" /></nav>
+    </article>
+  </div>
+</BaseLayout>

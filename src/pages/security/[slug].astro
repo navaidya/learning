@@ -1,0 +1,15 @@
+---
+import { getCollection, render } from 'astro:content';
+import SecurityLayout from '../../layouts/SecurityLayout.astro';
+import { withBase } from '../../lib/url';
+export async function getStaticPaths() { const entries = (await getCollection('security')).sort((a, b) => a.data.order - b.data.order); return entries.map((entry, index) => ({ params: { slug: entry.id }, props: { entry, entries, index } })); }
+const { entry, entries, index } = Astro.props;
+const { Content } = await render(entry);
+const previous = entries[index - 1]; const next = entries[index + 1];
+---
+<SecurityLayout {...entry.data}>
+  {entries.map((item) => <a slot="sidebar" class:list={{ active: item.id === entry.id }} aria-current={item.id === entry.id ? 'page' : undefined} href={withBase(`/security/${item.id}`)}>{item.data.title}</a>)}
+  <Content />
+  {previous && <a slot="pagination" href={withBase(`/security/${previous.id}`)}>← {previous.data.title}</a>}
+  {next && <a slot="pagination" href={withBase(`/security/${next.id}`)}>{next.data.title} →</a>}
+</SecurityLayout>

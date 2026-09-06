@@ -1,0 +1,13 @@
+---
+import { withBase } from '../../lib/url';
+const { entry } = Astro.props;
+---
+<a class="system-design-card" href={withBase(`/security/${entry.id}`)}>
+  <div class="system-design-card__topline"><span class="badge">{entry.data.category}</span><span>{entry.data.readingMinutes} min · {entry.data.difficulty}</span></div>
+  <h2>{entry.data.title}</h2><p>{entry.data.summary}</p>
+  <dl>
+    {entry.data.threatsCovered.length > 0 && <div><dt>Defends against</dt><dd>{entry.data.threatsCovered.join(' · ')}</dd></div>}
+    {entry.data.practices.length > 0 && <div><dt>Key controls</dt><dd>{entry.data.practices.join(' · ')}</dd></div>}
+  </dl>
+  <span class="system-design-card__cta">Open module →</span>
+</a>
