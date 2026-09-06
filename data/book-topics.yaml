@@ -20,6 +20,9 @@ topics:
   - slug: senior-engineering-interviews
     title: Senior Engineering Interviews
     description: Technical and behavioral interview preparation.
+  - slug: machine-learning
+    title: Machine Learning
+    description: The Hugging Face ecosystem and applying ML skills to platform and infrastructure work.
 startHere:
   - 03-kubernetes-architecture
   - 10-opentelemetry-overview
