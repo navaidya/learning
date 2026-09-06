@@ -1,5 +1,13 @@
 [
   {
+    "project": "holmesgpt",
+    "version": "0.41.0-alpha",
+    "publishedDate": "2026-09-06T08:53:05.000Z",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.41.0-alpha",
+    "sourceId": "holmesgpt",
+    "title": "0.41.0-alpha"
+  },
+  {
     "project": "containerd",
     "version": "1.7.35",
     "publishedDate": "2026-09-04T21:17:15.000Z",
@@ -150,14 +158,6 @@
     "url": "https://github.com/robusta-dev/robusta/releases/tag/0.48.0",
     "sourceId": "robusta",
     "title": "0.48.0"
-  },
-  {
-    "project": "holmesgpt",
-    "version": "0.40.0",
-    "publishedDate": "2026-08-26T07:30:35.000Z",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.40.0",
-    "sourceId": "holmesgpt",
-    "title": "0.40.0"
   },
   {
     "project": "openai",

@@ -1,5 +1,25 @@
 [
   {
+    "id": "holmesgpt-c46f13b9572f",
+    "title": "0.41.0-alpha",
+    "summary": "What's Changed ROB-1161 Fetch the Supabase api key from relay with caching and local fallback by @Avi-Robusta in #2420 Patch all High CVEs (and Mediums >60 days) in the holmes image by @moshemorad in #2432 ROB-1258 Live-refresh git-synced skills via first-class skill_repos by @naomi-robusta in #2434 ROB-889 Refresh the realtime JWT before it expires by @Avi-Robusta in #2383 Full Changelog: 0.40.0...0.41.0-alpha",
+    "source": "HolmesGPT (Robusta)",
+    "sourceId": "holmesgpt",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.41.0-alpha",
+    "publishedDate": "2026-09-06T08:53:05.000Z",
+    "domain": "aiops",
+    "topics": [
+      "holmesgpt",
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "holmesgpt",
+    "releaseVersion": "0.41.0-alpha"
+  },
+  {
     "id": "containerd-ed8202b16bdc",
     "title": "containerd 1.7.35",
     "summary": "Welcome to the v1.7.35 release of containerd! The thirty-fifth patch release for containerd 1.7 contains various fixes and updates including security patches. Security Updates containerd CVE-2026-53495 GHSA-rp3h-jf77-q9p4 Highlights Image Distribution Apply hardening to strip sensitive authentication headers when fetching descriptor URLs (#14046) Runtime Enable log scrubbing by default on Windows (#13889) Please try out the release binaries and report any issues at https://github.com/containerd/",
@@ -9664,26 +9684,6 @@
     "releaseRelated": true,
     "releaseProject": "helm",
     "releaseVersion": "v4.2.1"
-  },
-  {
-    "id": "helm-3039ae2798e6",
-    "title": "Helm v3.21.1",
-    "summary": "Helm v3.21.1 is a patch release. Users are encouraged to upgrade for the best experience. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/packages Notable Changes Fixed nil pointer panic that could happen with helm template in ClientOnly flows. Now correctl",
-    "source": "Helm",
-    "sourceId": "helm",
-    "url": "https://github.com/helm/helm/releases/tag/v3.21.1",
-    "publishedDate": "2026-06-12T14:51:31.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "helm",
-      "packaging"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "helm",
-    "releaseVersion": "v3.21.1"
   },
   {
     "id": "kubernetes-releases-cf407b9d610a",
