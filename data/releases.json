@@ -1,11 +1,19 @@
 [
   {
+    "project": "cilium",
+    "version": "v1.21.0-pre.1",
+    "publishedDate": "2026-09-07T16:18:20.000Z",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.21.0-pre.1",
+    "sourceId": "cilium",
+    "title": "v1.21.0-pre.1"
+  },
+  {
     "project": "prometheus",
-    "version": "v0.313.3",
-    "publishedDate": "2026-09-07T10:57:05.000Z",
-    "url": "https://github.com/prometheus/prometheus/releases/tag/v0.313.3",
+    "version": "3.13.3",
+    "publishedDate": "2026-09-07T14:18:03.000Z",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.13.3",
     "sourceId": "prometheus",
-    "title": "v0.313.3"
+    "title": "3.13.3 / 2026-09-07"
   },
   {
     "project": "holmesgpt",
@@ -206,14 +214,6 @@
     "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.0",
     "sourceId": "kyverno",
     "title": "v1.19.0"
-  },
-  {
-    "project": "cilium",
-    "version": "1.20.1",
-    "publishedDate": "2026-08-18T10:36:16.000Z",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.20.1",
-    "sourceId": "cilium",
-    "title": "1.20.1"
   },
   {
     "project": "tempo",

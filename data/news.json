@@ -1,5 +1,65 @@
 [
   {
+    "id": "cilium-bde9651005ea",
+    "title": "v1.21.0-pre.1",
+    "summary": "Release v1.21.0-pre.1",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.21.0-pre.1",
+    "publishedDate": "2026-09-07T16:18:20.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "v1.21.0-pre.1"
+  },
+  {
+    "id": "cilium-185a603ed9c6",
+    "title": "1.21.0-pre.1",
+    "summary": "Release v1.21.0-pre.1",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/1.21.0-pre.1",
+    "publishedDate": "2026-09-07T16:18:18.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.21.0-pre.1"
+  },
+  {
+    "id": "prometheus-e559b04f597d",
+    "title": "3.13.3 / 2026-09-07",
+    "summary": "[SECURITY] Bump github.com/klauspost/compress to v1.18.7 (GO-2026-5841) and golang.org/x/crypto to v0.55.0 (GO-2026-6303). [BUGFIX] Docker SD: Fix panic in Docker Swarm service discovery when a service runs as a plugin or network-attachment. #19102 [BUGFIX] PromQL: Fix case-insensitive regex label matchers silently dropping matching values. #19167 [BUGFIX] Scrape: Fix scrape manager spinning at 100% CPU on shutdown. #19149 [BUGFIX] Alerting: Fix 100% CPU usage on shutdown that could delay gracef",
+    "source": "Prometheus",
+    "sourceId": "prometheus",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.13.3",
+    "publishedDate": "2026-09-07T14:18:03.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "promql",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "prometheus",
+    "releaseVersion": "3.13.3"
+  },
+  {
     "id": "cncf-f1cc43a4f16c",
     "title": "Handling vulnerability reports: Recipe card",
     "summary": "Recipe Handling Vulnerability Reports Target audience (the chef) This recipe is aimed at small and medium non-security focused projects. Maintainers of a high-risk security sensitive project, you probably need a more sophisticated approach (check out https://alpha-omega.dev/) Scope...",
@@ -35,26 +95,6 @@
     "releaseRelated": true,
     "releaseProject": "prometheus",
     "releaseVersion": "v0.313.3"
-  },
-  {
-    "id": "prometheus-e559b04f597d",
-    "title": "v3.13.3",
-    "summary": "v3.13.3",
-    "source": "Prometheus",
-    "sourceId": "prometheus",
-    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.13.3",
-    "publishedDate": "2026-09-07T10:56:25.000Z",
-    "domain": "prometheus",
-    "topics": [
-      "prometheus",
-      "promql",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "prometheus",
-    "releaseVersion": "v3.13.3"
   },
   {
     "id": "opentelemetry-6c9203505e82",
@@ -9641,42 +9681,6 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "kubernetes"
-  },
-  {
-    "id": "openai-888bd1de6f40",
-    "title": "Introducing the OpenAI Partner Network",
-    "summary": "OpenAI launches the Partner Network, investing $150M to help global partners accelerate enterprise AI adoption, deployment, and transformation.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/introducing-openai-partner-network",
-    "publishedDate": "2026-06-14T17:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "opentelemetry-4ea25facd9db",
-    "title": "OTel-Arrow Phase 2: From Efficient Transport to Efficient Telemetry Pipelines",
-    "summary": "Phase 1 of OTel-Arrow established OTAP, the OpenTelemetry Arrow Protocol, as an efficient transport protocol for OpenTelemetry. Apache Arrow is a language-independent, columnar in-memory format designed to move and process structured data efficiently across systems. We demonstrated that telemetry could be transported with significantly lower network overhead while preserving compatibility with the OpenTelemetry data model. Phase 2 asked a different question: what happens if Arrow is used not onl",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/otel-arrow-phase-2/",
-    "publishedDate": "2026-06-13T00:47:46.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "kubernetes-releases-cf407b9d610a",
