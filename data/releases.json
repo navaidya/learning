@@ -1,5 +1,13 @@
 [
   {
+    "project": "prometheus",
+    "version": "v0.313.3",
+    "publishedDate": "2026-09-07T10:57:05.000Z",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v0.313.3",
+    "sourceId": "prometheus",
+    "title": "v0.313.3"
+  },
+  {
     "project": "holmesgpt",
     "version": "0.41.0-alpha",
     "publishedDate": "2026-09-06T08:53:05.000Z",
@@ -206,14 +214,6 @@
     "url": "https://github.com/cilium/cilium/releases/tag/v1.20.1",
     "sourceId": "cilium",
     "title": "1.20.1"
-  },
-  {
-    "project": "prometheus",
-    "version": "3.14.0",
-    "publishedDate": "2026-08-18T08:49:40.000Z",
-    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.14.0",
-    "sourceId": "prometheus",
-    "title": "3.14.0 / 2026-08-17"
   },
   {
     "project": "tempo",

@@ -1,5 +1,80 @@
 [
   {
+    "id": "cncf-f1cc43a4f16c",
+    "title": "Handling vulnerability reports: Recipe card",
+    "summary": "Recipe Handling Vulnerability Reports Target audience (the chef) This recipe is aimed at small and medium non-security focused projects. Maintainers of a high-risk security sensitive project, you probably need a more sophisticated approach (check out https://alpha-omega.dev/) Scope...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/09/07/handling-vulnerability-reports-recipe-card/",
+    "publishedDate": "2026-09-07T11:30:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "prometheus-a893069162a1",
+    "title": "v0.313.3",
+    "summary": "v0.313.3",
+    "source": "Prometheus",
+    "sourceId": "prometheus",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v0.313.3",
+    "publishedDate": "2026-09-07T10:57:05.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "promql",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "prometheus",
+    "releaseVersion": "v0.313.3"
+  },
+  {
+    "id": "prometheus-e559b04f597d",
+    "title": "v3.13.3",
+    "summary": "v3.13.3",
+    "source": "Prometheus",
+    "sourceId": "prometheus",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.13.3",
+    "publishedDate": "2026-09-07T10:56:25.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "promql",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "prometheus",
+    "releaseVersion": "v3.13.3"
+  },
+  {
+    "id": "opentelemetry-6c9203505e82",
+    "title": "Inside the LLM Call: GenAI Observability with OpenTelemetry",
+    "summary": "Your AI agent just took 45 seconds to answer a simple question. Was it the model? A slow tool call? A retry loop? Every time an application calls an LLM, a chain of model calls, tool invocations, and token exchanges happens behind the scenes — and without observability, you are guessing. The OpenTelemetry Semantic Conventions for Generative AI give you that visibility. They standardize how GenAI operations are recorded — the model being called, input and output token counts, and when opted in, t",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/genai-observability/",
+    "publishedDate": "2026-09-07T06:21:15.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "holmesgpt-c46f13b9572f",
     "title": "0.41.0-alpha",
     "summary": "What's Changed ROB-1161 Fetch the Supabase api key from relay with caching and local fallback by @Avi-Robusta in #2420 Patch all High CVEs (and Mediums >60 days) in the holmes image by @moshemorad in #2432 ROB-1258 Live-refresh git-synced skills via first-class skill_repos by @naomi-robusta in #2434 ROB-889 Refresh the realtime JWT before it expires by @Avi-Robusta in #2383 Full Changelog: 0.40.0...0.41.0-alpha",
@@ -9602,86 +9677,6 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "tempo-255aea6b5302",
-    "title": "v2.10.7",
-    "summary": "🧰 Bug fixes 🧰 tempo: Fix incorrect version reported by --version, the build-info metric, and /api/status/buildinfo. The build version is now read from the new top-level VERSION file instead of the most recently created git tag, which could belong to a different release. (#7469) (@zhxiaogg) 🔧 Changes 🔧 tempo: Stop publishing 32-bit ARM binary archives. Release artifacts continue to include amd64 and arm64 binaries. (#7106) (@javiermolinar)",
-    "source": "Grafana Tempo",
-    "sourceId": "tempo",
-    "url": "https://github.com/grafana/tempo/releases/tag/v2.10.7",
-    "publishedDate": "2026-06-12T16:28:23.000Z",
-    "domain": "tracing",
-    "topics": [
-      "tempo",
-      "tracing",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "tempo",
-    "releaseVersion": "v2.10.7"
-  },
-  {
-    "id": "gateway-api-1aa04c288cb2",
-    "title": "v1.6.0-rc.1",
-    "summary": "Major Changes Since v1.5.1 GEP & API Graduation UDPRoute & TCPRoute Graduation: UDPRoute has graduated to GA. We recommend using the \"v1\" API version with this API now. The \"v1alpha2\" version of this API is deprecated and will be removed in the future. (#4923, @zac-nixon) TCPRoute has graduated to GA. We recommend using the \"v1\" API version with this API now. The \"v1alpha2\" version of this API is deprecated and will be removed in the future. (#4920, @zac-nixon) GEP Status Updates: Add GEP for th",
-    "source": "Gateway API",
-    "sourceId": "gateway-api",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.0-rc.1",
-    "publishedDate": "2026-06-12T16:28:01.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "gateway-api",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "gateway-api",
-    "releaseVersion": "v1.6.0-rc.1"
-  },
-  {
-    "id": "opentofu-4b2e7433f156",
-    "title": "v1.11.9",
-    "summary": "1.11.9 SECURITY ADVISORIES: Previous releases in the v1.11 series could be affected by several vulnerabilities: ssh usage through OpenTofu generate hangs or panics. Previously, a revoked 'SignatureKey' belonging to a CA was not correctly checked for revocation. Now, both the 'key' and 'key.SignatureKey' are checked for @Revoked. This is fixed now by (#4145) If for state encryption, OpenBao key provider is used with wrapping algorithms, it could generate panics or hangs on compromised systems whe",
-    "source": "OpenTofu",
-    "sourceId": "opentofu",
-    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.11.9",
-    "publishedDate": "2026-06-12T16:11:30.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "opentofu",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentofu",
-    "releaseVersion": "v1.11.9"
-  },
-  {
-    "id": "opentofu-c9bfd15b5ba1",
-    "title": "v1.12.2",
-    "summary": "1.12.2 SECURITY ADVISORIES: Previous releases in the v1.12 series could be affected by several vulnerabilities: If for state encryption, OpenBao key provider is used with wrapping algorithms, it could generate panics or hangs on compromised systems where the JWE is specifically crafted. This is fixed now by (#4177) Previous releases in the v1.12 series could be affected by several vulnerabilities: When using SSH connections through OpenTofu, the errors that were returned from attempting a connec",
-    "source": "OpenTofu",
-    "sourceId": "opentofu",
-    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.2",
-    "publishedDate": "2026-06-12T15:26:49.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "opentofu",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentofu",
-    "releaseVersion": "v1.12.2"
   },
   {
     "id": "kubernetes-releases-cf407b9d610a",
