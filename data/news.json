@@ -1,5 +1,75 @@
 [
   {
+    "id": "cncf-19b2443eed41",
+    "title": "Cloud Native Computing Foundation Announces Karmada Graduation",
+    "summary": "Multi-cluster, multi-cloud Kubernetes orchestration project reaches production maturity as global enterprises scale AI training and inference across hybrid infrastructure Key Highlights SHANGHAI, China – KubeCon + CloudNativeCon + OpenInfra Summit + PyTorch Conference China 2026 –...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/announcements/2026/09/07/cloud-native-computing-foundation-announces-karmada-graduation/",
+    "publishedDate": "2026-09-08T02:06:17.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-eea09873e228",
+    "title": "CNCF Welcomes New Silver Members as Enterprises Scale AI From Training to Inference",
+    "summary": "New members including SoftBank Corp. and Crusoe join the cloud native community to help build cost-efficient, sovereign infrastructure SHANGHAI, China – KubeCon + CloudNativeCon + OpenInfra Summit + PyTorch Conference China 2026 – September 8, 2026...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/announcements/2026/09/07/cncf-welcomes-new-silver-members-as-enterprises-scale-ai-from-training-to-inference/",
+    "publishedDate": "2026-09-08T01:58:47.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-0152a6f6df37",
+    "title": "China Merchants Bank Wins CNCF End User Case Study Contest for Unifying AI Training and Inference on Kubernetes",
+    "summary": "New cloud native platform lifted average accelerator compute utilization from 35% to more than 60% and cut inference cost per 1 million tokens by more than 60% Key Highlights SHANGHAI, China – KubeCon + CloudNativeCon +...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/announcements/2026/09/07/china-merchants-bank-wins-cncf-end-user-case-study-contest-for-unifying-ai-training-and-inference-on-kubernetes/",
+    "publishedDate": "2026-09-08T01:54:31.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-4ad5d484c08e",
+    "title": "CNCF and SlashData Report Highlights China’s Cloud Native Momentum as AI Moves to Inference",
+    "summary": "New research finds China’s IIoT developers (48%) outpace the global average (42%) in cloud native adoption as AI infrastructure matures Key Highlights: SHANGHAI – KubeCon + CloudNativeCon + OpenInfra Summit + PyTorch Conference China —Sept. 8,...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/announcements/2026/09/07/cncf-and-slashdata-report-highlights-chinas-cloud-native-momentum-as-ai-moves-to-inference/",
+    "publishedDate": "2026-09-08T01:50:55.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "cilium-bde9651005ea",
     "title": "v1.21.0-pre.1",
     "summary": "Release v1.21.0-pre.1",
@@ -9585,85 +9655,6 @@
     "releaseRelated": true,
     "releaseProject": "backstage",
     "releaseVersion": "v1.52.0"
-  },
-  {
-    "id": "oci-oke-f06c86f4bd5d",
-    "title": "v8.19.0",
-    "summary": "8.19.0 (June 16, 2026) Added Support for Support for Kerberos Auth for Postgresql Support for Cross Region Replication with Hot Standby Support for Start/Stop db system Support for PSQL Performance Insights. Support for Multi-Link Organization Management Platform Support for APM - APM data to Log Analytics Services Support for OKE: OKE Node Pool Support for Compute Clusters and HostGroup support for OCI opensearch coordinator node Support for Oracle Cloud Migrations ZPR Support Support for APM -",
-    "source": "OCI / OKE",
-    "sourceId": "oci-oke",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v8.19.0",
-    "publishedDate": "2026-06-16T23:21:47.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "oci",
-      "oke",
-      "oracle"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "oci-oke",
-    "releaseVersion": "v8.19.0"
-  },
-  {
-    "id": "argo-b6438c314c21",
-    "title": "v3.5.0-rc1",
-    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.0-rc1/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.0-rc1/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for contai",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.0-rc1",
-    "publishedDate": "2026-06-16T13:05:48.000Z",
-    "domain": "gitops",
-    "topics": [
-      "gitops",
-      "argo-cd",
-      "argo",
-      "argocd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "v3.5.0-rc1"
-  },
-  {
-    "id": "openai-b387731f4f83",
-    "title": "Predicting model behavior before release by simulating deployment",
-    "summary": "OpenAI introduces Deployment Simulation, a method to predict AI model behavior before deployment using real conversation data to improve safety and evaluation accuracy.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/deployment-simulation",
-    "publishedDate": "2026-06-16T00:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "openai"
-  },
-  {
-    "id": "robusta-7f737f50e50f",
-    "title": "0.42.0",
-    "summary": "What's Changed ROB-310 Upgrade Holmes GPT dependency to version 0.33.0 by @naomi-robusta in #2101 Full Changelog: 0.41.0...0.42.0",
-    "source": "Robusta",
-    "sourceId": "robusta",
-    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.42.0",
-    "publishedDate": "2026-06-15T18:57:42.000Z",
-    "domain": "aiops",
-    "topics": [
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "robusta",
-    "releaseVersion": "0.42.0"
   },
   {
     "id": "kubernetes-c0ff8866ebff",
