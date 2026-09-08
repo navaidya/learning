@@ -1,5 +1,21 @@
 [
   {
+    "project": "robusta",
+    "version": "0.49.0",
+    "publishedDate": "2026-09-08T12:59:31.000Z",
+    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.49.0",
+    "sourceId": "robusta",
+    "title": "0.49.0"
+  },
+  {
+    "project": "holmesgpt",
+    "version": "0.41.0",
+    "publishedDate": "2026-09-08T12:17:06.000Z",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.41.0",
+    "sourceId": "holmesgpt",
+    "title": "0.41.0"
+  },
+  {
     "project": "cilium",
     "version": "v1.21.0-pre.1",
     "publishedDate": "2026-09-07T16:18:20.000Z",
@@ -14,14 +30,6 @@
     "url": "https://github.com/prometheus/prometheus/releases/tag/v3.13.3",
     "sourceId": "prometheus",
     "title": "3.13.3 / 2026-09-07"
-  },
-  {
-    "project": "holmesgpt",
-    "version": "0.41.0-alpha",
-    "publishedDate": "2026-09-06T08:53:05.000Z",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.41.0-alpha",
-    "sourceId": "holmesgpt",
-    "title": "0.41.0-alpha"
   },
   {
     "project": "containerd",
@@ -166,14 +174,6 @@
     "url": "https://github.com/vectordotdev/vector/releases/tag/v0.58.0",
     "sourceId": "vector",
     "title": "v0.58.0"
-  },
-  {
-    "project": "robusta",
-    "version": "0.48.0",
-    "publishedDate": "2026-08-26T14:00:00.000Z",
-    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.48.0",
-    "sourceId": "robusta",
-    "title": "0.48.0"
   },
   {
     "project": "openai",

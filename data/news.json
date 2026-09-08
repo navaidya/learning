@@ -1,5 +1,45 @@
 [
   {
+    "id": "robusta-4781b16712c3",
+    "title": "0.49.0",
+    "summary": "What's Changed Claude runner workflow trigger docs by @arikalon1 in #2161 Add optional label-based rate limiting to trigger_workflow action by @arikalon1 in #2164 Add conversation_link pass-through field to Holmes chat params by @ezra-robusta in #2163 ROB-887 Cache node IP lookups for prometheus alerts by @Avi-Robusta in #2154 ROB-1161 Support Supabase publishable keys and fetch the api key from relay by @Avi-Robusta in #2162 ROB-1256 Backport perl/glibc/git CVE fixes from Debian forky by @RoiGl",
+    "source": "Robusta",
+    "sourceId": "robusta",
+    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.49.0",
+    "publishedDate": "2026-09-08T12:59:31.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "robusta",
+    "releaseVersion": "0.49.0"
+  },
+  {
+    "id": "holmesgpt-1f963f304639",
+    "title": "0.41.0",
+    "summary": "What's Changed ROB-1161 Fetch the Supabase api key from relay with caching and local fallback by @Avi-Robusta in #2420 Patch all High CVEs (and Mediums >60 days) in the holmes image by @moshemorad in #2432 ROB-1258 Live-refresh git-synced skills via first-class skill_repos by @naomi-robusta in #2434 ROB-889 Refresh the realtime JWT before it expires by @Avi-Robusta in #2383 Full Changelog: 0.40.0...0.41.0",
+    "source": "HolmesGPT (Robusta)",
+    "sourceId": "holmesgpt",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.41.0",
+    "publishedDate": "2026-09-08T12:17:06.000Z",
+    "domain": "aiops",
+    "topics": [
+      "holmesgpt",
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "holmesgpt",
+    "releaseVersion": "0.41.0"
+  },
+  {
     "id": "cncf-4d0015b64e55",
     "title": "Kubernetes access via an identity provider: Public client, not confidential",
     "summary": "Access control belongs on the same day-zero checklist as networking and storage. On most on-prem clusters, it never makes the list. The Identity Gap Managed cloud Kubernetes ships IAM or SSO integration out of the box....",
@@ -9609,47 +9649,6 @@
     "releaseRelated": true,
     "releaseProject": "argo",
     "releaseVersion": "v3.4.4"
-  },
-  {
-    "id": "argo-81380105e4e9",
-    "title": "v3.3.12",
-    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.3.12/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.3.12/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container im",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.12",
-    "publishedDate": "2026-06-18T09:39:43.000Z",
-    "domain": "gitops",
-    "topics": [
-      "gitops",
-      "argo-cd",
-      "argo",
-      "argocd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "v3.3.12"
-  },
-  {
-    "id": "helm-198892a095e4",
-    "title": "Helm v4.2.2",
-    "summary": "Helm v4.2.2 is a patch release. Users are encouraged to upgrade for the best experience. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/packages Notable Changes Revert: Fixed a race condition in WaitForDelete where the status observer canceled the watch to",
-    "source": "Helm",
-    "sourceId": "helm",
-    "url": "https://github.com/helm/helm/releases/tag/v4.2.2",
-    "publishedDate": "2026-06-17T20:50:16.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "helm",
-      "packaging"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "helm",
-    "releaseVersion": "v4.2.2"
   },
   {
     "id": "kubernetes-c0ff8866ebff",
