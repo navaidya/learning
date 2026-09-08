@@ -1,5 +1,41 @@
 [
   {
+    "id": "cncf-4d0015b64e55",
+    "title": "Kubernetes access via an identity provider: Public client, not confidential",
+    "summary": "Access control belongs on the same day-zero checklist as networking and storage. On most on-prem clusters, it never makes the list. The Identity Gap Managed cloud Kubernetes ships IAM or SSO integration out of the box....",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/09/08/kubernetes-access-via-an-identity-provider-public-client-not-confidential/",
+    "publishedDate": "2026-09-08T11:30:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-ea9cbf4aefa4",
+    "title": "Distributed tracing for CI pipelines without touching a single workflow file",
+    "summary": "You’ve probably felt this one: GitHub Actions usage creeps up across your org, and your actual visibility into it doesn’t keep pace. Which workflows are slow? Which are flaky? How long are jobs sitting queued for...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/09/08/distributed-tracing-for-ci-pipelines-without-touching-a-single-workflow-file/",
+    "publishedDate": "2026-09-08T11:00:00.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "cncf-19b2443eed41",
     "title": "Cloud Native Computing Foundation Announces Karmada Graduation",
     "summary": "Multi-cluster, multi-cloud Kubernetes orchestration project reaches production maturity as global enterprises scale AI training and inference across hybrid infrastructure Key Highlights SHANGHAI, China – KubeCon + CloudNativeCon + OpenInfra Summit + PyTorch Conference China 2026 –...",
@@ -9614,47 +9650,6 @@
     "releaseRelated": true,
     "releaseProject": "helm",
     "releaseVersion": "v4.2.2"
-  },
-  {
-    "id": "vector-a53a29dcf1ca",
-    "title": "vdev-v0.3.4",
-    "summary": "vdev v0.3.4: deprecation tooling (#25638) and release-flow fixes (#25…",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.4",
-    "publishedDate": "2026-06-17T18:58:15.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector",
-    "releaseVersion": "v0.3.4"
-  },
-  {
-    "id": "backstage-332c54447f8f",
-    "title": "v1.52.0",
-    "summary": "These are the release notes for the v1.52.0 release of Backstage. A huge thanks to the whole team of maintainers and contributors as well as the amazing Backstage Community for the hard work in getting this release developed and done. Highlights BREAKING: Default discovery API changed to FrontendHostDiscovery The default discovery API implementation in @backstage/plugin-app has been changed to FrontendHostDiscovery, which supports the discovery.endpoints configuration for per-plugin endpoint ove",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.52.0",
-    "publishedDate": "2026-06-17T08:31:35.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "platform-engineering",
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.52.0"
   },
   {
     "id": "kubernetes-c0ff8866ebff",
