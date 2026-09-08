@@ -1,0 +1,93 @@
+- id: langgraph
+  name: LangGraph
+  category: aiops
+  websiteUrl: https://github.com/langchain-ai/langgraph
+  feedUrl: https://github.com/langchain-ai/langgraph/releases.atom
+  priority: 1
+  enabled: true
+  tags: ["agent-development","release","agentic-operations"]
+
+- id: pydantic-ai
+  name: Pydantic AI
+  category: aiops
+  websiteUrl: https://github.com/pydantic/pydantic-ai
+  feedUrl: https://github.com/pydantic/pydantic-ai/releases.atom
+  priority: 1
+  enabled: true
+  tags: ["agent-development","release","agentic-operations"]
+
+- id: langfuse
+  name: Langfuse
+  category: observability
+  websiteUrl: https://github.com/langfuse/langfuse
+  feedUrl: https://github.com/langfuse/langfuse/releases.atom
+  priority: 1
+  enabled: true
+  tags: ["agent-observability","release","opentelemetry"]
+
+- id: phoenix
+  name: Arize Phoenix
+  category: observability
+  websiteUrl: https://github.com/Arize-ai/phoenix
+  feedUrl: https://github.com/Arize-ai/phoenix/releases.atom
+  priority: 1
+  enabled: true
+  tags: ["agent-observability","release","opentelemetry"]
+
+- id: falco
+  name: Falco
+  category: infrastructure
+  websiteUrl: https://github.com/falcosecurity/falco
+  feedUrl: https://github.com/falcosecurity/falco/releases.atom
+  priority: 1
+  enabled: true
+  tags: ["infrastructure-security","release","infrastructure"]
+
+- id: owasp-genai
+  name: OWASP GenAI Security
+  category: aiops
+  websiteUrl: https://genai.owasp.org/
+  feedUrl: https://genai.owasp.org/feed/
+  priority: 1
+  enabled: true
+  tags: ["agent-security","news","agentic-operations"]
+
+- id: nvidia-security
+  name: NVIDIA Technical Blog
+  category: infrastructure
+  websiteUrl: https://developer.nvidia.com/blog/
+  feedUrl: https://developer.nvidia.com/blog/feed/
+  priority: 1
+  enabled: true
+  tags: ["infrastructure-security","news","infrastructure"]
+  filterKeywords: ["confidential","attestation","security","zero trust","isolation"]
+
+- id: practical-ai
+  name: Practical AI
+  category: aiops
+  websiteUrl: https://practicalai.show/
+  feedUrl: https://feeds.transistor.fm/practical-ai-machine-learning-data-science-llm
+  priority: 1
+  enabled: true
+  tags: ["podcast","agent-development","agentic-operations"]
+  filterKeywords: ["agent","evaluation","observability","security","inference","production","architecture"]
+
+- id: cncf-video
+  name: CNCF YouTube
+  category: infrastructure
+  websiteUrl: https://www.youtube.com/@cncf
+  feedUrl: https://www.youtube.com/feeds/videos.xml?channel_id=UCvqbFHwN-nwalWPjPUKpvTA
+  priority: 1
+  enabled: true
+  tags: ["video","infrastructure"]
+  filterKeywords: ["agent","genai","generative ai","llm","security","observability","gpu"]
+
+- id: otel-ai
+  name: OpenTelemetry
+  category: observability
+  websiteUrl: https://opentelemetry.io/
+  feedUrl: https://opentelemetry.io/blog/index.xml
+  priority: 1
+  enabled: true
+  tags: ["agent-observability","news","opentelemetry"]
+  filterKeywords: ["agent","genai","generative ai","llm","semantic conventions"]

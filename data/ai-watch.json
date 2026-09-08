@@ -1,0 +1,1189 @@
+[
+  {
+    "id": "phoenix-d7a81af11b1d",
+    "title": "@arizeai/phoenix-mcp@4.3.8",
+    "summary": "Patch Changes Updated dependencies [bf047af] @arizeai/phoenix-client@7.9.0",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-mcp%404.3.8",
+    "publishedDate": "2026-09-08T17:51:43.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "4.3.8"
+  },
+  {
+    "id": "phoenix-a350dc14a161",
+    "title": "@arizeai/phoenix-cli@1.18.0",
+    "summary": "Minor Changes bf047af: Add Meta (Muse Spark models) as a built-in OpenAI-compatible model provider (META). Patch Changes Updated dependencies [bf047af] @arizeai/phoenix-client@7.9.0",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-cli%401.18.0",
+    "publishedDate": "2026-09-08T17:51:40.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "1.18.0"
+  },
+  {
+    "id": "phoenix-dd81d3e48952",
+    "title": "@arizeai/phoenix-client@7.9.0",
+    "summary": "Minor Changes bf047af: Add Meta (Muse Spark models) as a built-in OpenAI-compatible model provider (META).",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-client%407.9.0",
+    "publishedDate": "2026-09-08T17:51:37.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "7.9.0"
+  },
+  {
+    "id": "langfuse-32ebc97b46f4",
+    "title": "v4.32.0",
+    "summary": "What's Changed Features feat(preview): alert when a labeled preview is not serving by @LysanderKie in #17136 feat(worker): emit export data-freshness lag distribution by @niklassemmler in #17177 Fixes / Improvements fix(datasets): read v4 dataset metrics when preview is enabled by @wochinge in #17171 Chores chore(deps): bump undici to 7.29.1 by @github-actions[bot] in #17159 chore(agents): mark Cursor PRs with the cursor label by @nkabardin in #17164 chore(ci): don't run again on no changes by @",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.32.0",
+    "publishedDate": "2026-09-08T12:53:51.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.32.0"
+  },
+  {
+    "id": "langfuse-146786bc7013",
+    "title": "v4.31.0",
+    "summary": "What's Changed Features feat(analytics): instrument the rebuilt experiments UI by @nkabardin in #16919 feat(traces): show cost source in breakdown tooltip by @hassiebp in #17051 feat(api)!: remove unstable evaluation endpoints by @wochinge in #17056 feat(evals): backfill saved evaluators by @wochinge in #17071 feat(shared): tag ClickHouse query outcome metric by table and label events routes by @niklassemmler in #17073 feat(in-app-agent): improve tool payload and evaluator code rendering by @Lys",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.31.0",
+    "publishedDate": "2026-09-08T11:36:56.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.31.0"
+  },
+  {
+    "id": "pydantic-ai-49710368f5d7",
+    "title": "v2.41.0 (2026-09-07)",
+    "summary": "What's Changed 🚀 Features Deprecate fallback_model in favor of fallback_subagent_model on ImageGeneration and XSearch by @dsfaccini in #8077 Add openai-codex provider for ChatGPT/Codex subscription authentication by @mpfaffenberger in #7769 Add a direct image generation API with ImageGenerator by @EgonFerri in #5357 🐛 Bug Fixes Report Anthropic native web searches in RequestUsage.details and price them in cost by @adtyavrdhn in #8169 Wrap botocore transport errors in ModelAPIError in BedrockCo",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.41.0",
+    "publishedDate": "2026-09-08T04:15:21.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.41.0"
+  },
+  {
+    "id": "otel-ai-6c9203505e82",
+    "title": "Inside the LLM Call: GenAI Observability with OpenTelemetry",
+    "summary": "Your AI agent just took 45 seconds to answer a simple question. Was it the model? A slow tool call? A retry loop? Every time an application calls an LLM, a chain of model calls, tool invocations, and token exchanges happens behind the scenes — and without observability, you are guessing. The OpenTelemetry Semantic Conventions for Generative AI give you that visibility. They standardize how GenAI operations are recorded — the model being called, input and output token counts, and when opted in, t",
+    "source": "OpenTelemetry",
+    "sourceId": "otel-ai",
+    "url": "https://opentelemetry.io/blog/2026/genai-observability/",
+    "publishedDate": "2026-09-07T06:21:15.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "news"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "pydantic-ai-8bcd7f7d593c",
+    "title": "v2.40.0 (2026-09-04)",
+    "summary": "What's Changed 🚀 Features Add pydantic_ai.prices.update_in_background() by @adtyavrdhn in #4841 Handle barge-in in the session: handle_barge_in=True, interrupt(played_bytes=...), and played_audio_bytes by @DouweM in #7870 Add provider_factory to infer_realtime_model by @DouweM in #8106 Add @agent.on_event for registering event listeners on an Agent by @DouweM in #8101 Add respond= to RealtimeSession.send() and document that a text turn solicits a reply by @DouweM in #8110 Add RealtimeSession.en",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.40.0",
+    "publishedDate": "2026-09-05T00:09:37.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.40.0"
+  },
+  {
+    "id": "phoenix-3523fbf2b8e0",
+    "title": "arize-phoenix: v20.8.0",
+    "summary": "20.8.0 (2026-09-04) Features add MiniMax provider integration (#14310) (7e01ce7) server: add error-status and latency filters to trace list endpoint (#14037) (aea59d7) Bug Fixes deps: update arize-phoenix-client to 3.4.0 (02b1e51) Documentation Add Phoenix release notes — 2026-09-02 (#15841) (1bfd8e8)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.8.0",
+    "publishedDate": "2026-09-04T18:32:44.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v20.8.0"
+  },
+  {
+    "id": "langfuse-c604b02b8d7f",
+    "title": "v4.30.0",
+    "summary": "What's Changed Features feat(experiments): rebuild the results grid around the score columns by @nkabardin in #16917 feat(experiments): a worse-than-comparison filter and a score-by-run matrix by @nkabardin in #16918 Fixes / Improvements fix(web): Truncate SelectInput text by @bezbac in #17077 Chores chore(deps): bump uuid to 14.0.2 by @nimarb in #17086 docs(api): advertise self-hosted API reference by @wochinge in #17084 docs(agents): rank by the handbook, and stop inventing staleness by @nkaba",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.30.0",
+    "publishedDate": "2026-09-04T16:02:41.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.30.0"
+  },
+  {
+    "id": "langfuse-b2bd7b568780",
+    "title": "v4.29.0",
+    "summary": "What's Changed Features feat(auth): gate public-API project routes through the policy seam in all migration modes by @marksalpeter in #16661 feat(experiments): replace the chart grid with one compact metric strip by @nkabardin in #16914 feat(experiments): drop the empty Analytics tab, merge the table settings, explain an empty window by @nkabardin in #16915 feat(experiments): make the comparison selectable, grouped and pre-picked by @nkabardin in #16916 feat(evals): track filter analytics by @wo",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.29.0",
+    "publishedDate": "2026-09-04T14:59:04.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.29.0"
+  },
+  {
+    "id": "pydantic-ai-a1b9cd3dba1d",
+    "title": "v2.39.0 (2026-09-03)",
+    "summary": "What's Changed 🚀 Features Add OpenAI gpt-6-astra model support by @dsfaccini in #8055 🐛 Bug Fixes Fix the context_subtree() exporter cache and its span-processor leaks by @dsfaccini in #7667 Restore the Instrumentation spec option include_model_request_parameters and sharpen the undeclared-attribute merge error by @DouweM in #8046 Detect Azure content-filter errors for AzureProvider and for AsyncAzureOpenAI clients on OpenAIProvider by @quinnarnold in #7922 Emit speech finalized by a tool call",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.39.0",
+    "publishedDate": "2026-09-04T04:18:52.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.39.0"
+  },
+  {
+    "id": "phoenix-695005611d90",
+    "title": "arize-phoenix-client: v3.4.0",
+    "summary": "3.4.0 (2026-09-03) ⚠ BREAKING CHANGES server: GET /v1/model_providers no longer returns custom providers or a next_cursor, and built-in entries expose provider rather than kind + provider_key. Custom providers move to GET /v1/custom_model_providers. The endpoint is unreleased, so no published client is affected. Features agents: PXI tool to file GitHub issues with a user-supplied token (#15780) (e3b3dd5) app: add Z.ai as a built-in GLM model provider (#15857) (58b7017) client: add prompt deletio",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-client-v3.4.0",
+    "publishedDate": "2026-09-04T02:39:59.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v3.4.0"
+  },
+  {
+    "id": "phoenix-20cebb0a27ca",
+    "title": "arize-phoenix: v20.7.0",
+    "summary": "20.7.0 (2026-09-03) Features server: move the MCP server to FastMCP 4 and the stateless protocol (#15903) (f11c885) Bug Fixes agents: record the tool name on pxi llm tool schemas (#15693) (3f01ebb) mcp/sql: make AnalyticsSqlError a real exception (#15906) (59c7934) model-pricing: sync minimax pricing from LiteLLM (#15901) (e346f8a), closes #15592 Performance Improvements traces: correlate and scope filtered trace query lowering (#15788) (3b73314) Documentation skills: record the unit-test startu",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.7.0",
+    "publishedDate": "2026-09-03T20:59:35.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v20.7.0"
+  },
+  {
+    "id": "langfuse-373583d7248f",
+    "title": "v4.28.1",
+    "summary": "What's Changed chore(pricing): flag shut-down Gemini 3 Pro/3.1 Flash-Lite previews, refresh audit snapshot by @langfuse-bot in #17004 chore(deps): bump qs to 6.16.0 by @github-actions[bot] in #16988 chore(deps): bump @humanfs/node to 0.16.8 by @github-actions[bot] in #16989 fix(ci): auto run ci on GHA security PRs by @nimarb in #17008 chore(ci): bump corepack to 0.36.0 by @nimarb in #17005 refactor(web): give notifications a feature front door by @nkabardin in #16795 feat(web): expand timeline r",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.28.1",
+    "publishedDate": "2026-09-03T17:54:52.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.28.1"
+  },
+  {
+    "id": "langfuse-65ff686ed251",
+    "title": "v4.28.0",
+    "summary": "Features feat(evals): track judge prompt metadata by @wochinge in #16880 feat(shared): count ClickHouse query outcomes for read SLIs by @Steffen911 in #16777 feat(experiments): add the search bar to the experiments table by @nkabardin in #16756 feat(worker): add Langfuse agent/tools template dashboard by @nmtrang29 in #16597 feat(experiments): filter datasets by name instead of id by @nkabardin in #16762 feat(experiments): unify experiment score filters across levels by @nkabardin in #16764 feat",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.28.0",
+    "publishedDate": "2026-09-03T09:59:37.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.28.0"
+  },
+  {
+    "id": "practical-ai-acad55804706",
+    "title": "Less about Models; More about Architecture",
+    "summary": "As AI moves from experimentation to enterprise deployment, are organizations thinking too much about models and not enough about architecture? In this episode, Daniel and Chris talk with Chetan Gupta, Chief AI Officer at Rackspace, about the evolution from industrial AI and physical AI to today’s enterprise AI landscape. Discover how organizations can navigate the complex AI landscape responsibly and effectively as they think about AI architecture, model deployment, AI governance, and AI soverei",
+    "source": "Practical AI",
+    "sourceId": "practical-ai",
+    "url": "https://share.transistor.fm/s/ec79b4ac",
+    "publishedDate": "2026-09-03T09:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "podcast",
+      "agent-development",
+      "agentic-operations"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "pydantic-ai-ddc7abac3cc7",
+    "title": "v2.38.0 (2026-09-03)",
+    "summary": "What's Changed ⚠️ Compatibility Notes Give one-off capabilities a default id and a combine rule for repeats by @dsfaccini in #7248 🚀 Features Add context_window to ModelProfile and context_window_used to RunContext by @adtyavrdhn in #4611 Add profile flag to reject streams without finish_reason by @jonashaag in #7096 Add gemini-3.8-flash model by @dsfaccini in #8021 Let application code and capabilities emit typed CustomEvents and CapabilityEvents into the run event stream and subscribe with @o",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.38.0",
+    "publishedDate": "2026-09-03T07:48:28.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.38.0"
+  },
+  {
+    "id": "phoenix-cb633c88562d",
+    "title": "@arizeai/phoenix-mcp@4.3.7",
+    "summary": "Patch Changes Updated dependencies [58b7017] @arizeai/phoenix-client@7.8.0",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-mcp%404.3.7",
+    "publishedDate": "2026-09-03T05:50:28.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "4.3.7"
+  },
+  {
+    "id": "phoenix-b58e2e3bd30a",
+    "title": "@arizeai/phoenix-cli@1.17.0",
+    "summary": "Minor Changes 58b7017: Add Z.ai (GLM models) as a built-in OpenAI-compatible model provider (ZAI). Patch Changes Updated dependencies [58b7017] @arizeai/phoenix-client@7.8.0",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-cli%401.17.0",
+    "publishedDate": "2026-09-03T05:50:25.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "1.17.0"
+  },
+  {
+    "id": "phoenix-fb340c15852d",
+    "title": "@arizeai/phoenix-client@7.8.0",
+    "summary": "Minor Changes 58b7017: Add Z.ai (GLM models) as a built-in OpenAI-compatible model provider (ZAI).",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-client%407.8.0",
+    "publishedDate": "2026-09-03T05:50:22.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "7.8.0"
+  },
+  {
+    "id": "phoenix-24e63e7ac547",
+    "title": "arize-phoenix: v20.6.0",
+    "summary": "20.6.0 (2026-09-03) Features app: add Z.ai as a built-in GLM model provider (#15857) (58b7017) js: reorganize assistant settings page into topical tabs (#15801) (c41b8b8) playground: add support for Gemini 3.8 Flash (#15885) (20c8be3) server: add DELETE /projects/{project_identifier}/traces (#15409) (bf659ca) Bug Fixes cost: update built-in model token prices (#15839) (466863d) experiments: count dispatched work items as in-flight (#15832) (0d1d92e) server: replace deprecated json_encoders with ",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.6.0",
+    "publishedDate": "2026-09-03T05:50:07.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v20.6.0"
+  },
+  {
+    "id": "langfuse-8a323940d60c",
+    "title": "v3.225.7",
+    "summary": "What's Changed fix: prevent OTel prototype-chain clobbering on v3 by @sumerman in #16636 fix(blobstorage): suppress sub-second remainder chunk to prevent silent key collision (v3 backport of #16592) by @Steffen911 in #16678 security(api-keys): gate organization API key creation on the admin-api entitlement (v3 backport of #16596) by @Steffen911 in #16679 security(auth)!: reduce default JWT session max age to 14 days (v3 backport of #16593) by @Steffen911 in #16677 ci(preview): share one GitHub e",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v3.225.7",
+    "publishedDate": "2026-09-02T13:13:27.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v3.225.7"
+  },
+  {
+    "id": "owasp-genai-67456931ac02",
+    "title": "OWASP GenAI Security Project Unveils 2026 Top 10 for LLM Applications, New Agent Control Standard and Sponsors as Community Tops 30,000 Members",
+    "summary": "OWASP GenAI Security Project Releases 2026 Top 10 for LLM Applications, Debuts Agent Control Standard and New Resources for Securing Generative and Agentic AI F5, WitnessAI, Evoke Security and Mondoo Inc. join as new sponsors as community expands AI security solutions guidance and surpasses 30,000 members WILMINGTON, Del. — Sept. 2, 2026 — The OWASP […] The post OWASP GenAI Security Project Unveils 2026 Top 10 for LLM Applications, New Agent Control Standard and Sponsors as Community Tops 30,000",
+    "source": "OWASP GenAI Security",
+    "sourceId": "owasp-genai",
+    "url": "https://genai.owasp.org/2026/09/01/owasp-genai-security-project-unveils-2026-top-10-for-llm-applications-new-agent-control-standard-and-sponsors-as-community-tops-30000-members/",
+    "publishedDate": "2026-09-02T04:59:10.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-security",
+      "news",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "owasp-genai"
+  },
+  {
+    "id": "nvidia-security-d090814422bb",
+    "title": "Building an Adaptive Agentic Cybersecurity System with NVIDIA Nemotron",
+    "summary": "AI is changing the pace of cybersecurity. Agentic systems can coordinate work and pursue complex objectives over long horizons. Security teams are beginning to...",
+    "source": "NVIDIA Technical Blog",
+    "sourceId": "nvidia-security",
+    "url": "https://developer.nvidia.com/blog/building-an-adaptive-agentic-cybersecurity-system-with-nvidia-nemotron/",
+    "publishedDate": "2026-09-01T17:00:04.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "infrastructure-security",
+      "news",
+      "infrastructure"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-fb29279d1321",
+    "title": "Observing AI Agents with OpenTelemetry",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/shorts/4xqZNRAHl8I",
+    "publishedDate": "2026-09-01T15:13:52.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "langfuse-9d930b2f9078",
+    "title": "v4.27.0",
+    "summary": "What's Changed Features feat(noramlized-io): hook up parser trace io behind feature flag by @marliessophie in #16775 feat(api): add self-hosted API specification renderer by @wochinge in #16845 feat(trace-table): add cached input tokens and cost by @nimarb in #16767 feat(mcp): add evaluator testing tool by @wochinge in #16870 feat(evals): support multimodal inputs by @wochinge in #16675 feat(in-app-agent): prompt cache breakpoints for Claude behind an OpenAI Responses gateway by @DavidTraina in ",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.27.0",
+    "publishedDate": "2026-09-01T10:55:03.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.27.0"
+  },
+  {
+    "id": "pydantic-ai-6e849c9ee8e3",
+    "title": "v2.37.0 (2026-08-31)",
+    "summary": "What's Changed 🚀 Features Add glm-5.3-flash and rework the Z.AI test suite onto cassettes by @dsfaccini in #7887 🐛 Bug Fixes fix: preserve all conditions in pruned span queries by @mikemikimike in #7499 Accept and map Z.AI's non-standard finish_reason values by @zhj12395 in #7685 Emit an AG-UI TEXT_MESSAGE_START for the assistant message that owns a response's tool calls by @dsfaccini in #7699 Route Vertex-vs-Gemini API branches in GoogleModel by client transport instead of provider name by @t",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.37.0",
+    "publishedDate": "2026-09-01T01:48:28.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.37.0"
+  },
+  {
+    "id": "langfuse-596a4974f33b",
+    "title": "v4.26.0",
+    "summary": "What's Changed Features feat: add API spec previews for pull requests by @wochinge in #16833 feat(traces): link evaluator execution traces by @wochinge in #16839 Fixes fix(evals): avoid reasoning collisions in structured output by @wochinge in #16843 fix(in-app-agent): keep the redirect tool schema within OpenAI's accepted nesting by @DavidTraina in #16809 fix(in-app-agent): keep OpenAI Responses calls stateless by @DavidTraina in #16810 fix(otel): parse prompt version attributes as integers by ",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.26.0",
+    "publishedDate": "2026-08-31T17:53:01.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.26.0"
+  },
+  {
+    "id": "langfuse-ac6b517c8538",
+    "title": "v4.25.0",
+    "summary": "What's Changed Features feat(io-normalization): define normalized I/O contract and projections by @marliessophie in #16216 feat(csv): enhance CSV parsing with error handling for large and malformed files in preview mode by @marliessophie in #16476 feat(query-ast): clean Kysely base for the ClickHouse query AST by @niklassemmler in #16687 feat(sessions): persist header detail visibility by @nimarb in #16779 feat(web): reframe migration headline around the compatibility deadline by @maxdeichmann i",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.25.0",
+    "publishedDate": "2026-08-31T10:42:43.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.25.0"
+  },
+  {
+    "id": "pydantic-ai-30252aeb76a7",
+    "title": "v2.36.0 (2026-08-28)",
+    "summary": "What's Changed ⚠️ Compatibility Notes Add --mcp-config support and tool-call streaming to clai by @Kludex in #1374 🚀 Features Add @durable_operation for capabilities and a public backend API for third-party durable execution engines by @DouweM in #6696 Give instruction parts a stable InstructionPart.id by @DouweM in #6887 Accept async iterables in RealtimeSession.send_audio() and move the voice example to listentome by @DouweM in #7860 Require an explicit operation name on @durable_operation by",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.36.0",
+    "publishedDate": "2026-08-29T01:25:08.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-development",
+      "release"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.36.0"
+  },
+  {
+    "id": "practical-ai-4e68028f529d",
+    "title": "Building the Foundation for the Agentic AI Era",
+    "summary": "How do we build an AI ecosystem where agents, tools, and systems can work together at scale? Angie Jones, VP of the Agentic AI Foundation, joins Chris to discuss the open standards and projects shaping the agentic future, including MCP, A2A, Goose, etc. They also explore what it takes to drive AI adoption across an entire organization, the importance of neutral standards, global perspectives on agentic AI, and how humans can find the right balance between what they delegate to AI and what they d",
+    "source": "Practical AI",
+    "sourceId": "practical-ai",
+    "url": "https://share.transistor.fm/s/123da941",
+    "publishedDate": "2026-08-28T09:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "podcast",
+      "agent-development"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": false
+  },
+  {
+    "id": "pydantic-ai-c55ebb237b56",
+    "title": "v2.35.3 (2026-08-27)",
+    "summary": "What's Changed 🐛 Bug Fixes Route Heroku GLM models through zai_model_profile by @LHMQ878 in #6837 Scope safe_download cookies to original hostnames by @Diwak4r in #7077 Fix DeferredToolRequests.remaining resolving cross-category result IDs by @pydanty in #7626 Identify rejected runtime toolsets in durable execution errors by @pydanty in #6784 Un-cap the dbos extra; add opentelemetry-instrumentation-logging as a test dependency instead by @dsfaccini in #7820 Full Changelog: v2.35.1...v2.35.3",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.35.3",
+    "publishedDate": "2026-08-28T00:39:29.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.35.3"
+  },
+  {
+    "id": "langgraph-403b1e42ae23",
+    "title": "langgraph-sdk==0.4.4",
+    "summary": "Changes since sdk==0.4.3 release(sdk-py): 0.4.4 (#8738) Merge commit from fork feat: route LangSmith traces from thread streams (#8723)",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.4",
+    "publishedDate": "2026-08-27T21:25:36.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "0.4.4"
+  },
+  {
+    "id": "pydantic-ai-ad18bbee5d23",
+    "title": "v2.35.1 (2026-08-26)",
+    "summary": "What's Changed 🐛 Bug Fixes Carry Bedrock guardrail trace in ModelResponse.provider_details by @pydanty in #7562 Honor provider_factory when cancelling Temporal responses by @DouweM in #7000 Cap dbos below 2.31.0 to avoid a missing opentelemetry-instrumentation-logging import by @dsfaccini in #7804 Full Changelog: v2.35.0...v2.35.1",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.35.1",
+    "publishedDate": "2026-08-27T04:13:40.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.35.1"
+  },
+  {
+    "id": "pydantic-ai-597530d45df0",
+    "title": "v2.35.0 (2026-08-25)",
+    "summary": "What's Changed ⚠️ Compatibility Notes Deprecate RunContext.capability_loaded and available_capability_ids in favor of capability_active and active_capability_ids by @DouweM in #7454 Make inclusive integer maximum reachable in TestModel by @pydanty in #7697 🚀 Features Reduce the default Temporal metric export frequency by @dmontagu in #7768 🐛 Bug Fixes Preserve explicit empty Tool description instead of falling back to the function docstring by @mpfaffenberger in #7759 Full Changelog: v2.34.0..",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.35.0",
+    "publishedDate": "2026-08-26T03:10:03.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.35.0"
+  },
+  {
+    "id": "pydantic-ai-6fe776eb68e9",
+    "title": "v2.34.0 (2026-08-24)",
+    "summary": "What's Changed 🚀 Features Add a LangChain migration skill by @adtyavrdhn in #7679 Add GLM-5.3 support to ZaiModel by @aisk in #7600 🐛 Bug Fixes Fix TestModel generation for equal inclusive bounds by @pydanty in #7642 Render enum $refs as Literal in FunctionSignature by @pydanty in #7579 Fix TestModel generation of falsy JSON Schema const values by @pydanty in #7630 Fix stale UIEventStream part state on cancellation by @adtyavrdhn in #7675 Only strip logit_bias from Cerebras model settings by @",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.34.0",
+    "publishedDate": "2026-08-26T03:10:03.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.34.0"
+  },
+  {
+    "id": "nvidia-security-e44419166d2d",
+    "title": "Where Security Fits in an AI Agent Stack",
+    "summary": "As AI agents become more capable and operate over longer horizons, building security and trust into the applications they power becomes increasingly important....",
+    "source": "NVIDIA Technical Blog",
+    "sourceId": "nvidia-security",
+    "url": "https://developer.nvidia.com/blog/where-security-fits-in-an-ai-agent-stack/",
+    "publishedDate": "2026-08-21T13:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "infrastructure-security",
+      "news",
+      "infrastructure"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "langgraph-82ae6b0c4baa",
+    "title": "langgraph-sdk==0.4.3",
+    "summary": "Changes since sdk==0.4.2 release(sdk-py): 0.4.3 (#8657) feat(sdk-py): add decrypt replacement result (#8598) release(langgraph): 1.2.11 (#8595) chore(deps): bump the minor-and-patch group across 1 directory with 5 updates (#8532) release(checkpoint): 4.2.0 (#8563) chore: enforce PLC0415 in tests for the remaining packages (#8547) release(langgraph): 1.2.10 (#8462) chore(deps): bump websockets from 15.0.1 to 16.0 in /libs/sdk-py in the major group (#8253) fix(sdk-py): support clearing cron end_ti",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.3",
+    "publishedDate": "2026-08-19T18:05:32.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "0.4.3"
+  },
+  {
+    "id": "langgraph-5d2557109467",
+    "title": "langgraph==1.2.11",
+    "summary": "Changes since 1.2.10 release(langgraph): 1.2.11 (#8595) feat(langgraph): expose trace_policy on add_node (#8523) chore(deps): bump the minor-and-patch group across 1 directory with 7 updates (#8533) chore(deps): bump the minor-and-patch group across 1 directory with 5 updates (#8532) release(checkpoint-postgres): 3.1.2 (#8565) release(checkpoint): 4.2.0 (#8563) fix(checkpoint): collect writes at plain-value seed in delta channel history (#8526) chore: enforce PLC0415 in tests for the remaining p",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.11",
+    "publishedDate": "2026-08-11T14:00:50.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "1.2.11"
+  },
+  {
+    "id": "langgraph-1a48cc42b5e5",
+    "title": "langgraph-checkpoint-postgres==3.1.2",
+    "summary": "Changes since checkpointpostgres==3.1.1 release(checkpoint-postgres): 3.1.2 (#8565) release(checkpoint): 4.2.0 (#8563) test(checkpoint-postgres,checkpoint-sqlite): run the conformance suite (#8537) fix(checkpoint-postgres): find plain-value seeds when walking delta history (#8535) chore: enable RUF100 and clear unused noqa directives (#8546) chore(checkpoint-postgres,checkpoint-sqlite): enable PLC0415 lint rule (#8540) chore(deps): bump the minor-and-patch group in /libs/checkpoint-postgres with",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointpostgres%3D%3D3.1.2",
+    "publishedDate": "2026-08-07T20:40:16.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "3.1.2"
+  },
+  {
+    "id": "langgraph-75f03a2ec54e",
+    "title": "langgraph-checkpoint==4.2.0",
+    "summary": "Changes since checkpoint==4.1.1 release(checkpoint): 4.2.0 (#8563) fix(checkpoint): collect writes at plain-value seed in delta channel history (#8526) chore: enforce PLC0415 in tests for the remaining packages (#8547) chore: enable RUF100 and clear unused noqa directives (#8546) chore(deps): bump the minor-and-patch group in /libs/checkpoint with 4 updates (#8490) feat(checkpoint,checkpoint-postgres): add opt-in omit_expired to skip expired rows on read (#8354) chore(deps): bump the minor-and-p",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpoint%3D%3D4.2.0",
+    "publishedDate": "2026-08-07T20:05:22.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "4.2.0"
+  },
+  {
+    "id": "practical-ai-760a4e366ee7",
+    "title": "Models, Harnesses, and Multi-Agent Systems",
+    "summary": "AI has moved far beyond chatbots, but what exactly are AI models, agents, agent harnesses, and multi-agent systems, and why do they matter?In this episode, Daniel and Chris break down the terminology behind today's AI landscape, explain the differences between AI features and autonomous agents, and explore why organizations are shifting toward fleets of AI agents powered by multiple models. They also discuss open vs. closed models, enterprise AI architectures, vendor lock-in, and practical ways ",
+    "source": "Practical AI",
+    "sourceId": "practical-ai",
+    "url": "https://share.transistor.fm/s/063cfaad",
+    "publishedDate": "2026-08-06T09:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "podcast",
+      "agent-development"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "nvidia-security-dacccd7c52d6",
+    "title": "How to Run Isolated Tenant Kubernetes Clusters on Shared GPU Infrastructure",
+    "summary": "Running a dedicated Kubernetes cluster per team often results in more isolation than an organization requires. While one cluster can be successfully shared...",
+    "source": "NVIDIA Technical Blog",
+    "sourceId": "nvidia-security",
+    "url": "https://developer.nvidia.com/blog/how-to-run-isolated-tenant-kubernetes-clusters-on-shared-gpu-infrastructure/",
+    "publishedDate": "2026-08-03T16:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "infrastructure-security",
+      "news",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "langgraph-cf18a4efcea3",
+    "title": "langgraph-checkpoint-sqlite==3.1.1",
+    "summary": "Changes since checkpointsqlite==3.1.0 release(checkpoint-sqlite): 3.1.1 (#8481) fix(checkpoint-postgres,checkpoint-sqlite): scope namespace matching to segment boundaries (#8478) chore(deps): bump the minor-and-patch group in /libs/checkpoint-sqlite with 4 updates (#8249) chore(deps): bump langsmith from 0.8.0 to 0.8.18 in /libs/checkpoint-sqlite (#8177) docs: standardize package README.md structure (#8064) chore: migrate Python type checking to ty (#8002) chore(deps): bump the minor-and-patch g",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointsqlite%3D%3D3.1.1",
+    "publishedDate": "2026-07-30T19:19:47.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "3.1.1"
+  },
+  {
+    "id": "langgraph-0a64acddc46b",
+    "title": "langgraph-checkpoint-postgres==3.1.1",
+    "summary": "Changes since checkpointpostgres==3.1.0 release(checkpoint-postgres): 3.1.1 (#8480) fix(checkpoint-postgres,checkpoint-sqlite): scope namespace matching to segment boundaries (#8478) feat(checkpoint,checkpoint-postgres): add opt-in omit_expired to skip expired rows on read (#8354) chore(deps): bump the minor-and-patch group in /libs/checkpoint-postgres with 5 updates (#8250) chore(deps): bump langsmith from 0.8.0 to 0.8.18 in /libs/checkpoint-postgres (#8171) docs: standardize package README.md ",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointpostgres%3D%3D3.1.1",
+    "publishedDate": "2026-07-30T19:16:01.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "3.1.1"
+  },
+  {
+    "id": "practical-ai-851ae208d484",
+    "title": "Reconstructing how OpenAI agents attacked Hugging Face",
+    "summary": "What happens when AI agents driven by a top frontier model escape their secure sandbox? Join Daniel and Chris as they unpack the AI wonk's equivalent of a murder mystery! OpenAI agents went rogue and successfully attacked Hugging Face private infrastructure. Our Dynamic Duo uncover how OpenAI's agents exploited vulnerabilities, moved through networks, and launched a large-scale autonomous attack. They explore what this reveals about agentic AI, cybersecurity, sandboxing, and why organizations ne",
+    "source": "Practical AI",
+    "sourceId": "practical-ai",
+    "url": "https://share.transistor.fm/s/9d74230b",
+    "publishedDate": "2026-07-30T09:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "podcast",
+      "agent-development"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "langgraph-a03a1172d748",
+    "title": "langgraph==1.2.10",
+    "summary": "Changes since 1.2.9 release(langgraph): 1.2.10 (#8462) chore(deps): bump jupyterlab from 4.5.9 to 4.5.10 in /libs/langgraph (#8440) chore(deps): bump setuptools from 80.9.0 to 83.0.0 in /libs/langgraph (#8435) feat(langgraph): type v3 stream_events return and native projections (#8389) revert(langgraph): delete TracePolicy (#8403) feat(langgraph): drop tags from TracePolicy (#8402) feat(langgraph): expose trace_policy on add_node (#8362) chore(deps): bump mistune from 3.2.1 to 3.3.0 in /libs/lan",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.10",
+    "publishedDate": "2026-07-28T18:34:14.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "1.2.10"
+  },
+  {
+    "id": "otel-ai-8c3dc634aeca",
+    "title": "One-command OpenTelemetry setup on Linux hosts",
+    "summary": "OpenTelemetry as system dependency Setting up OpenTelemetry for your applications and systems depends on where those apps and systems run. Some are very automated, especially Kubernetes, thanks to the OpenTelemetry Operator, or AWS Lambda, with the OpenTelemetry Lambda layers. But the countless Java, .NET, Node.js, and Python apps running directly on Linux hosts have had no such automation. Instrumenting those has meant downloading agents by hand and wiring up environment variables yourself. At ",
+    "source": "OpenTelemetry",
+    "sourceId": "otel-ai",
+    "url": "https://opentelemetry.io/blog/2026/packaging-first-repo/",
+    "publishedDate": "2026-07-23T16:51:56.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "news"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "practical-ai-89410cf49273",
+    "title": "Surviving the New Economics of a Post-Agentic World",
+    "summary": "The agentic transformation isn’t coming. It has already begun.Companies are deploying thousands — and sometimes tens of thousands — of AI agents. Enterprise software giants are watching their old economic moats erode. Capital is moving, productivity is being redefined, and human labor is being repriced in real time.In this Fully Connected episode, Daniel and Chris explore the new economics of a post-agentic world: the global order that emerges after agents have been woven into every conceivable ",
+    "source": "Practical AI",
+    "sourceId": "practical-ai",
+    "url": "https://share.transistor.fm/s/8a2e4fc0",
+    "publishedDate": "2026-07-23T09:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "podcast",
+      "agent-development"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "otel-ai-4b059ab7e696",
+    "title": "Announcing v1 of OpenTelemetry Go Compile-Time Instrumentation",
+    "summary": "If you write Java, Python, Node.js, or .NET, you have been able to add OpenTelemetry to an application without editing its code for years: attach an agent at startup and telemetry starts flowing. Go has been the exception. A Go program compiles to a single static binary with no runtime to hook into at startup, so Go developers have had to instrument by hand or reach for an out-of-process eBPF agent.",
+    "source": "OpenTelemetry",
+    "sourceId": "otel-ai",
+    "url": "https://opentelemetry.io/blog/2026/go-compile-time-instrumentation-v1/",
+    "publishedDate": "2026-07-23T06:20:13.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "news"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "practical-ai-53041813e353",
+    "title": "The Future of AI Infrastructure with CoreWeave",
+    "summary": "As AI applications become more complex, the infrastructure powering them needs to evolve. Corey Sanders, SVP of Product at CoreWeave, joins Chris to discuss why AI requires a fundamentally different approach than traditional cloud computing. They explore AI-native infrastructure, training and inference workloads, the rise of agentic development, optimizing GPU performance, AI research workflows, and why the future of software will be built around AI-first experiences rather than websites and app",
+    "source": "Practical AI",
+    "sourceId": "practical-ai",
+    "url": "https://share.transistor.fm/s/01c30767",
+    "publishedDate": "2026-07-17T09:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "podcast",
+      "agent-development",
+      "agentic-operations"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "otel-ai-ae30a5b864f5",
+    "title": "The Voyage of a Small Environment Variable",
+    "summary": "The OpenTelemetry Spring Boot starter gained declarative-configuration support starting in version 2.26.0 — the same YAML schema the Java agent introduced in late 2025, now embedded inside application.yaml. This post traces what one env var, OTEL_SERVICE_NAME=petclinic, does in that new world, and where the seams are. In a hurry? Jump straight to the Spring Boot starter declarative-config docs, paste your application.properties into the interactive converter, or pick your SDK setup in the Ecosys",
+    "source": "OpenTelemetry",
+    "sourceId": "otel-ai",
+    "url": "https://opentelemetry.io/blog/2026/spring-boot-declarative-config/",
+    "publishedDate": "2026-07-14T07:47:36.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "news"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "otel-ai",
+    "releaseVersion": "2.26.0"
+  },
+  {
+    "id": "langgraph-9fdd1fbc7519",
+    "title": "langgraph-cli==0.4.31",
+    "summary": "Changes since cli==0.4.30 chore(cli): allow langgraph-api versions up to 1.0.0 (#8319) chore(deps): bump the minor-and-patch group in /libs/cli with 5 updates (#8251) chore(deps): bump the minor-and-patch group in /libs/cli/js-examples with 6 updates (#8246) chore(deps): bump the minor-and-patch group in /libs/cli/js-monorepo-example with 7 updates (#8245) chore(deps): bump starlette from 1.0.1 to 1.3.1 in /libs/cli (#8105) chore(deps): bump langsmith from 0.8.0 to 0.8.18 in /libs/cli (#8172) fe",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.31",
+    "publishedDate": "2026-07-10T22:58:04.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "0.4.31"
+  },
+  {
+    "id": "langgraph-acf648e9e64a",
+    "title": "langgraph==1.2.9",
+    "summary": "Changes since 1.2.8 release(langgraph): 1.2.9 (#8316) fix: updateState metadata/counters for delta channel (#8315)",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.9",
+    "publishedDate": "2026-07-10T01:30:24.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "1.2.9"
+  },
+  {
+    "id": "practical-ai-77116e3fafd5",
+    "title": "Building Durable AI Agents",
+    "summary": "What does it take to move AI agents from demos to reliable production systems? In this episode, Hamza Tahir explores how MLOps principles are shaping the future of generative AI, covering workflows, agent harnesses, fleets, and the infrastructure needed to build durable, scalable systems. The conversation dives into open source tools, production challenges, and how ZenML's new project, Kitaru, helps developers build resilient, replayable, and observable agent systems.Featuring:Hamza Tahir – Link",
+    "source": "Practical AI",
+    "sourceId": "practical-ai",
+    "url": "https://share.transistor.fm/s/facb92e2",
+    "publishedDate": "2026-07-09T09:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "podcast",
+      "agent-development"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "nvidia-security-b838efdd3ce1",
+    "title": "Hardware-Rooted AI Security That Won’t Slow You Down",
+    "summary": "AI has transformed how organizations operate, driving unprecedented levels of productivity and innovation. However, AI adoption can be impeded by concerns...",
+    "source": "NVIDIA Technical Blog",
+    "sourceId": "nvidia-security",
+    "url": "https://developer.nvidia.com/blog/hardware-rooted-ai-security-that-wont-slow-you-down/",
+    "publishedDate": "2026-07-02T21:25:42.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "infrastructure-security",
+      "news",
+      "infrastructure"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "practical-ai-f2b0da2f8f79",
+    "title": "AIUC-1: Building trust in AI agents",
+    "summary": "How do we build trust in AI agents before the AI hailstorm arrives? Emil Lassen from the Artificial Intelligence Underwriting Company (AIUC) joins the show to discuss how the enterprise flywheel of standards, certification, audit, and insurance is being applied to AI agents. They explore the AIUC-1 framework, the challenges of securing agentic AI systems, and why red teaming (based on standards) may be key to accelerating enterprise AI adoption.Featuring:Emil Lassen – LinkedIn Daniel Whitenack –",
+    "source": "Practical AI",
+    "sourceId": "practical-ai",
+    "url": "https://share.transistor.fm/s/e039d1ca",
+    "publishedDate": "2026-06-25T09:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "podcast",
+      "agent-development"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "falco-565e82aa3e07",
+    "title": "0.44.1",
+    "summary": "Packages Download rpm-x86_64 deb-x86_64 tgz-x86_64 tgz-static-x86_64 rpm-aarch64 deb-aarch64 tgz-aarch64 Images docker pull docker.io/falcosecurity/falco:0.44.1 docker pull public.ecr.aws/falcosecurity/falco:0.44.1 docker pull docker.io/falcosecurity/falco-driver-loader:0.44.1 docker pull docker.io/falcosecurity/falco-driver-loader:0.44.1-buster docker pull docker.io/falcosecurity/falco:0.44.1-debian v0.44.1 Released on 2026-06-11 Major Changes feat(userspace/falco): add support for disabling BP",
+    "source": "Falco",
+    "sourceId": "falco",
+    "url": "https://github.com/falcosecurity/falco/releases/tag/0.44.1",
+    "publishedDate": "2026-06-11T10:03:09.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "infrastructure-security",
+      "release",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "falco",
+    "releaseVersion": "0.44.1"
+  },
+  {
+    "id": "practical-ai-839ce1d6ff9f",
+    "title": "Zero Trust for AI Agents",
+    "summary": "As AI agents become more capable and autonomous, they also introduce new security challenges. In this 'Fully Connected' episode, Dan and Chris unpack Anthropic’s Zero Trust for AI Agents security framework and what it means for organizations deploying agentic systems. They examine the key security risks facing agentic systems and discuss how organizations can apply Zero Trust principles to deploy AI agents safely. Along the way, they break down practical security controls and discuss how traditi",
+    "source": "Practical AI",
+    "sourceId": "practical-ai",
+    "url": "https://share.transistor.fm/s/5c1a087d",
+    "publishedDate": "2026-06-11T09:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "podcast",
+      "agent-development"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  }
+]

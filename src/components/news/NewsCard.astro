@@ -1,5 +1,5 @@
 ---
-import { domains } from '../../lib/content';
+import { getBookIndexModel } from '../../lib/content';
 import type { NewsItem } from '../../lib/news/types';
 import { isNew, relativeTimeLabel } from '../../lib/news/recency';
 import { withBase } from '../../lib/url';
@@ -8,7 +8,7 @@ const { item, asOf } = Astro.props as { item: NewsItem; asOf: Date };
 const publishedLabel = new Date(item.publishedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
 const relativeLabel = relativeTimeLabel(item.publishedDate, asOf);
 const fresh = isNew(item.publishedDate, asOf);
-const relatedDomain = domains.find((domain) => domain.slug === item.domain);
+const relatedDomain = (await getBookIndexModel()).hubs.find((domain) => domain.slug === item.domain);
 ---
 
 <article class="panel news-card">
@@ -36,6 +36,6 @@ const relatedDomain = domains.find((domain) => domain.slug === item.domain);
   )}
   <div class="split news-card-footer">
     <a class="external-link" href={item.url} target="_blank" rel="noopener noreferrer">Read source <span class="visually-hidden">(opens {item.source}, external)</span></a>
-    {relatedDomain && <a href={withBase(`/skills/${relatedDomain.slug}`)}>Related learning: {relatedDomain.name}</a>}
+    {relatedDomain && <a href={withBase(`/book/topics/${relatedDomain.slug}`)}>Related notes: {relatedDomain.title}</a>}
   </div>
 </article>

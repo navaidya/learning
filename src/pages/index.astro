@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import BookNoteCard from '../components/book/BookNoteCard.astro';
 import TopicHubCard from '../components/book/TopicHubCard.astro';
 import { getKnowledgeDashboardModel } from '../lib/content';
+import { withBase } from '../lib/url';
 
 const model = await getKnowledgeDashboardModel();
 ---
@@ -10,6 +11,7 @@ const model = await getKnowledgeDashboardModel();
   <p class="eyebrow">Personal knowledge book</p>
   <h1>Knowledge Book</h1>
   <p class="lede">A quick, durable map of notes on infrastructure engineering, operations, and AIOps.</p>
+  <p class="panel"><strong>Keep current with AI Watch.</strong> Agent development, security, observability, podcasts and YouTube talks—with refreshes scheduled four times daily. <a href={withBase('/ai-watch')}>Open your briefing →</a></p>
 
   <section class="section-heading" aria-labelledby="start-here-title">
     <h2 id="start-here-title">Start Here</h2>

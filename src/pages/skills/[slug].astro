@@ -1,80 +1,15 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import ProgressBar from '../../components/common/ProgressBar.astro';
 import ResourceList from '../../components/skills/ResourceList.astro';
-import { domains, getDomainModel } from '../../lib/content';
+import { domains } from '../../lib/domains';
 import { getDomainResources } from '../../lib/resources';
-import { getDomainRadarItems } from '../../lib/news/radar';
 import { withBase } from '../../lib/url';
-
-export function getStaticPaths() { return domains.map((domain) => ({ params: { slug: domain.slug } })); }
-
-const slug = Astro.params.slug!;
-const model = await getDomainModel(slug);
-if (!model) return Astro.redirect('/skills');
-
-const curated = getDomainResources(slug);
-const radarItems = getDomainRadarItems(slug);
+export function getStaticPaths() { return domains.map(domain => ({ params: { slug: domain.slug }, props: { domain } })); }
+const { domain } = Astro.props;
+const curated = getDomainResources(domain.slug);
 ---
-
-<BaseLayout title={`${model.name} · Skill Map`}>
-  <a href={withBase('/skills')}>← Skill Map</a>
-  <h1>{model.name}</h1>
-  {curated && <p class="lede">{curated.summary}</p>}
-
-  <div class="panel"><ProgressBar value={model.progress} label="Domain progress" /></div>
-
-  {curated && curated.latest.length > 0 && (
-    <section class="panel section-heading latest-panel">
-      <h2>Where this stands now</h2>
-      <ul class="list">
-        {curated.latest.map((point) => <li>{point}</li>)}
-      </ul>
-    </section>
-  )}
-
-  <h2 class="section-heading">Your topics</h2>
-  {model.topics.length ? (
-    <div class="grid">
-      {model.topics.map((item) => (
-        <div class="panel split">
-          <div><h3>{item.topic.title}</h3><small>{item.debt?.reasons[0] ?? 'On track'}</small></div>
-          <strong>{item.progress.score}%</strong>
-        </div>
-      ))}
-    </div>
-  ) : (
-    <div class="panel">No topics tracked here yet. Add a Markdown page under <code>content/book/</code> with <code>domain: {slug}</code> to start tracking progress.</div>
-  )}
-
-  {model.recommendations.length > 0 && (
-    <>
-      <h2 class="section-heading">Recommended next</h2>
-      <ol class="list">
-        {model.recommendations.map((item) => <li><strong>{item.topic.title}</strong><span>{item.reason}</span></li>)}
-      </ol>
-    </>
-  )}
-
-  {curated && curated.resources.length > 0 && (
-    <>
-      <h2 class="section-heading">Learning resources</h2>
-      <ResourceList resources={curated.resources} />
-    </>
-  )}
-
-  {radarItems.length > 0 && (
-    <>
-      <h2 class="section-heading">Recent developments</h2>
-      <ul class="list">
-        {radarItems.map((item) => (
-          <li>
-            <a href={item.url} target="_blank" rel="noopener noreferrer">{item.title} <span class="visually-hidden">(opens {item.source}, external)</span></a>
-            <small>{item.source} · {new Date(item.publishedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</small>
-          </li>
-        ))}
-      </ul>
-      <a href={withBase('/news')}>View the full Engineering Radar →</a>
-    </>
-  )}
+<BaseLayout title={`${domain.name} resources`}>
+  <a href={withBase('/ai-watch')}>← AI Watch</a>
+  <h1>{domain.name} resources</h1>
+  {curated && <><p class="lede">{curated.summary}</p><ResourceList resources={curated.resources} /></>}
 </BaseLayout>

@@ -1,0 +1,9 @@
+.watch-tracks { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.25rem; margin-top: 2rem; }
+.watch-tracks > section { min-width: 0; scroll-margin-top: 1rem; }
+.watch-list { list-style: none; padding: 1rem; }
+.watch-list li { margin: 0; padding: .85rem 0; border-bottom: 1px solid var(--line); overflow-wrap: anywhere; }
+.watch-list li:last-child { border-bottom: 0; }
+.watch-list small { display: block; color: var(--muted); margin-top: .3rem; }
+.watch-exercise { border-left: 3px solid var(--accent); padding-left: .8rem; }
+.watch-tracks h2 { margin-top: 0; }
+@media(max-width:760px) { .watch-tracks { grid-template-columns: 1fr; } }

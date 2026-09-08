@@ -12,10 +12,12 @@ describe('Knowledge Book pages', () => {
   it('renders a knowledge-first dashboard and a Kubernetes topic hub', async () => {
     await execFileAsync('npm', ['run', 'build'], { cwd: repoRoot });
 
-    const [dashboard, bookIndex, kubernetesHub] = await Promise.all([
+    const [dashboard, bookIndex, kubernetesHub, aiWatch, retiredSkills] = await Promise.all([
       output('index.html'),
       output('book/index.html'),
       output('book/topics/kubernetes/index.html'),
+      output('ai-watch/index.html'),
+      output('skills/index.html'),
     ]);
 
     expect(dashboard).toContain('Start Here');
@@ -25,5 +27,14 @@ describe('Knowledge Book pages', () => {
     expect(bookIndex).toContain('All notes');
     expect(kubernetesHub).toContain('Kubernetes Architecture');
     expect(kubernetesHub).toContain('AI-assisted Kubernetes Troubleshooting');
+    expect(dashboard).toContain('AI Watch');
+    expect(dashboard).not.toContain('Skill Map');
+    expect(aiWatch).toContain('Source health');
+    expect(aiWatch).toContain('latest podcasts');
+    expect(aiWatch).toContain('latest YouTube talks');
+    expect(aiWatch).toContain('27-agent-engineering-field-guide');
+    expect(aiWatch).not.toContain('Skill Map');
+    expect(retiredSkills).toContain('http-equiv="refresh"');
+    expect(retiredSkills).toContain('ai-watch');
   }, 30_000);
 });

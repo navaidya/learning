@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
-import { XMLParser } from 'fast-xml-parser';
+import { XMLParser, XMLValidator } from 'fast-xml-parser';
 import { classifyNews } from '../../src/lib/news/classifier.ts';
 import { matchesSourceFilter, normalizeFeedItem } from '../../src/lib/news/feeds.ts';
 import { scoreImportance } from '../../src/lib/news/importance.ts';
@@ -72,7 +72,7 @@ export function parseFeedXml(xmlText) {
     return /** @type {any[]} */ (toArray(doc.feed.entry)).map((entry) => ({
       title: textOf(entry.title),
       url: atomLinkHref(entry),
-      publishedDate: textOf(entry.updated) ?? textOf(entry.published),
+      publishedDate: textOf(entry.published) ?? textOf(entry.updated),
       summary: textOf(entry.summary) ?? textOf(entry.content),
     }));
   }
@@ -116,6 +116,11 @@ async function fetchSourceItems(source, fetchImpl, signal) {
   const response = await fetchImpl(/** @type {string} */ (source.feedUrl), { signal });
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const text = await response.text();
+  if (XMLValidator.validate(text) !== true) throw new Error('Response is not valid XML');
+  const document = xmlParser.parse(text);
+  if (document?.rss?.channel === undefined && document?.feed === undefined) {
+    throw new Error('Response is not an RSS or Atom feed');
+  }
 
   /** @type {NewsItem[]} */
   const items = [];

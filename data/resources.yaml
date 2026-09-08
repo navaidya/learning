@@ -560,3 +560,51 @@ agentic-operations:
       url: https://www.cncf.io/blog/
       type: newsletter
       description: Where cloud-native projects publish their agentic and AI-adjacent work — a Radar source in this repo.
+
+ai-watch:
+  summary: Official project references and publisher-owned media for production AI engineering.
+  resources:
+    - title: Practical AI podcast
+      url: https://practicalai.show/
+      type: podcast
+      description: Practitioner conversations; turn one relevant episode into a reproducible experiment.
+    - title: CNCF YouTube
+      url: https://www.youtube.com/@cncf
+      type: video
+      description: Maintainer talks on cloud-native AI, security and observability; matching uploads are collected automatically.
+    - title: OWASP Agentic Security Initiative
+      url: https://genai.owasp.org/initiatives/agentic-security-initiative/
+      type: docs
+      description: Threat models and mitigations for autonomous agents, tools, identities and supply chains.
+    - title: OpenTelemetry GenAI semantic conventions
+      url: https://opentelemetry.io/docs/specs/semconv/gen-ai/
+      type: docs
+      description: Instrument model and agent operations; check stability of each convention before relying on its schema.
+    - title: MCP security best practices
+      url: https://modelcontextprotocol.io/specification/latest/basic/security_best_practices
+      type: docs
+      description: Authorization and trust boundaries for tool connections.
+    - title: LangGraph
+      url: https://github.com/langchain-ai/langgraph
+      type: tool
+      description: Explore durable execution and explicit agent state transitions.
+    - title: Pydantic AI
+      url: https://github.com/pydantic/pydantic-ai
+      type: tool
+      description: Explore typed inputs, structured outputs and tool contracts.
+    - title: Langfuse
+      url: https://github.com/langfuse/langfuse
+      type: tool
+      description: Explore task traces, evaluations and cost monitoring.
+    - title: Arize Phoenix
+      url: https://github.com/Arize-ai/phoenix
+      type: tool
+      description: Explore tracing and evaluation for model and retrieval workflows.
+    - title: NVIDIA Technical Blog
+      url: https://developer.nvidia.com/blog/
+      type: newsletter
+      description: Follow confidential computing, GPU attestation and secure AI infrastructure.
+    - title: Falco
+      url: https://github.com/falcosecurity/falco
+      type: tool
+      description: Explore workload runtime detection alongside application-level agent traces.

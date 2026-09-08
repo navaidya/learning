@@ -49,9 +49,9 @@ Use the supported statuses `not_started`, `learning`, `practicing`, `review`, an
 
 Labs belong in `content/labs/` and should include objective, setup, task, commands, expected observation, investigation, solution, and lessons learned. Projects belong in `content/projects/` with objective, architecture, milestones, outcomes, progress, and open tasks.
 
-## Skill map pages
+## Curated resource pages
 
-Each domain in the skill map has a page at `/skills/<slug>` combining your tracked progress with curated learning resources from `data/resources.yaml`:
+The Skill Map has been retired: `/skills` redirects to `/ai-watch`. Existing `/skills/<slug>` bookmarks retain curated resources, without progress tracking. Resources come from `data/resources.yaml`:
 
 ```yaml
 kubernetes:
@@ -65,7 +65,21 @@ kubernetes:
       description: One line on why this resource is worth your time.
 ```
 
-Resources are grouped by `type` on the page. Prefer primary sources — a project's own docs, its maintainers' talks, community-run podcasts and newsletters — over vendor marketing pages, and **verify a URL resolves before adding it**. `npm test` enforces that every skill-map domain has a summary and at least three resources, that all URLs are https, and that no URL is duplicated within a domain.
+Resources are grouped by `type` on the page. Prefer primary sources — a project's own docs, its maintainers' talks, community-run podcasts and newsletters — over vendor marketing pages, and **verify a URL resolves before adding it**. `npm test` enforces that every resource domain has a summary and at least three resources, that all URLs are https, and that no URL is duplicated within a domain.
+
+## AI Watch
+
+`/ai-watch` follows agent development, agent security, agent observability, and AI infrastructure security. It combines focused news/release links, publisher-owned podcast and YouTube feeds, a permanent resource library, and practical exercises. The dashboard links to it and the agent engineering field guide appears in Start Here.
+
+- Feed configuration: `data/ai-watch-sources.yaml`; topic definitions and exercises: `data/ai-watch-tracks.json`.
+- Curated library: the `ai-watch` entry in `data/resources.yaml`.
+- Manual refresh: `node --experimental-strip-types scripts/news/collect-ai-watch.mjs`.
+- Snapshot: `data/ai-watch.json` and `data/ai-watch-meta.json`, separate from the broad Radar to avoid crowding out focused sources.
+- The existing refresh workflow collects both snapshots at 01:17, 07:17, 13:17 and 19:17 UTC and dispatches Pages deployment. Changes must be published to the default branch and Actions enabled for this schedule to take effect. GitHub may delay scheduled jobs or disable inactive repository schedules.
+- Sections show the newest matching items from the past 30 days, up to six per section and two per publisher. The shared collector retains up to 500 items for 90 days. Topic and keyword filters are deterministic, not an AI recommendation or completeness guarantee.
+- Last-attempt time, source failures and original publication dates are separate. A failed source does not erase its prior content; a valid empty feed is a successful check. Static freshness labels reflect build time; the displayed timestamp remains the reference if deployment stops.
+
+The learning review is in `docs/2026-09-08-ai-learning-review.md`. Keep evidence of experiments in Markdown: what changed, what you reproduced, results, and adopt/experiment/defer decisions. No LLM, backend, subscription, or new dependency is needed.
 
 Internal links must be built with `withBase()` from `src/lib/url.ts`. GitHub Pages serves the site from `/<repo>`, so a bare `/skills/kubernetes` resolves to the domain root and 404s.
 

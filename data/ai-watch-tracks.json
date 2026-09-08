@@ -1,0 +1,64 @@
+[
+  {
+    "id": "agent-development",
+    "title": "Build reliable agents",
+    "description": "Tool contracts, durable execution, retrieval, memory, evaluation, MCP and interoperability.",
+    "keywords": [
+      "agent",
+      "mcp",
+      "tool calling",
+      "evaluation",
+      "langgraph",
+      "pydantic"
+    ],
+    "learn": "/book/27-agent-engineering-field-guide",
+    "exercise": "Build one incident-triage agent with two read-only tools. Replay 20 saved incidents; measure task success and recovery from tool timeouts."
+  },
+  {
+    "id": "agent-security",
+    "title": "Secure agent actions",
+    "description": "Identity, delegation, prompt injection, tool policy, sandboxing and independent audit trails.",
+    "keywords": [
+      "prompt injection",
+      "agent security",
+      "mcp security",
+      "owasp",
+      "sandbox",
+      "authorization"
+    ],
+    "learn": "/security/13-ai-agent-security",
+    "exercise": "Add hostile tool output and a malicious retrieved document to the same test set. Verify that policy rejects unauthorized actions outside the model."
+  },
+  {
+    "id": "agent-observability",
+    "title": "Observe and evaluate agents",
+    "description": "Connect a user task to model calls, tool calls, outcomes, cost and policy decisions.",
+    "keywords": [
+      "observability",
+      "opentelemetry",
+      "tracing",
+      "evaluation",
+      "langfuse",
+      "phoenix",
+      "telemetry"
+    ],
+    "learn": "/book/27-agent-engineering-field-guide",
+    "exercise": "Trace one task across all tool calls. Add outcome checks, latency and cost budgets, and an alert for repeated failing tool calls."
+  },
+  {
+    "id": "infrastructure-security",
+    "title": "Secure AI infrastructure",
+    "description": "Workload identity, GPU isolation, supply chain, network policy, attestation and data-center management planes.",
+    "keywords": [
+      "security",
+      "confidential",
+      "attestation",
+      "gpu",
+      "isolation",
+      "zero trust",
+      "falco"
+    ],
+    "learn": "/security/09-container-and-kubernetes-security",
+    "exercise": "Threat-model the path from user request to GPU, storage and BMC. Test a denied egress request and document who can access each management plane."
+  }
+]

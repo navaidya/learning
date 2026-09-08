@@ -1,0 +1,75 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ResourceList from '../../components/skills/ResourceList.astro';
+import { parse } from 'yaml';
+import sourcesRaw from '../../../data/ai-watch-sources.yaml?raw';
+import itemsRaw from '../../../data/ai-watch.json';
+import metaRaw from '../../../data/ai-watch-meta.json';
+import tracks from '../../../data/ai-watch-tracks.json';
+import { parseNewsSources, parseNewsItems, parseRadarCollectionMetaSafe } from '../../lib/news/validate';
+import { selectWatchItems, watchSourceStatus } from '../../lib/news/aiWatch';
+import { getDomainResources } from '../../lib/resources';
+import { withBase } from '../../lib/url';
+import '../../styles/ai-watch.css';
+const sources = parseNewsSources(parse(sourcesRaw));
+const items = parseNewsItems(itemsRaw);
+const meta = parseRadarCollectionMetaSafe(metaRaw);
+const asOf = new Date();
+const resources = getDomainResources('ai-watch');
+const sections = tracks.map(track => ({ ...track, items: selectWatchItems(items, sources, track, undefined, asOf) }));
+const media = [{ id: 'podcast', title: 'Listen · latest podcasts' }, { id: 'video', title: 'Watch · latest YouTube talks' }]
+  .map(format => ({ ...format, items: selectWatchItems(items, sources, undefined, format.id, asOf) }));
+---
+<BaseLayout title="AI Watch · Agents, security and observability" description="A focused reading, listening and building practice for production AI engineering.">
+  <p class="eyebrow">Your engineering briefing</p>
+  <h1>AI Watch</h1>
+  <p class="lede">Follow the changes that matter. Build one thing from what you learn.</p>
+  <div class="panel">
+    <strong>Scheduled refresh · four times a day</strong>
+    <p>Last attempt: {meta ? <time datetime={meta.collectedAt}>{new Date(meta.collectedAt).toUTCString()}</time> : 'Not run yet'}.
+    {meta && ` ${meta.sourceIds.length} feeds checked; ${meta.failedSourceIds.length} failed.`}</p>
+    <p>Scheduled runs can be delayed. “Feed checked” means the source responded, not that it published something new. Status reflects this site's build time; check the timestamp above. Lists show the last 30 days, with at most two items per source.</p>
+  </div>
+  <nav class="category-filters" aria-label="AI Watch sections">
+    {tracks.map(track => <a href={`#${track.id}`}>{track.title}</a>)}
+    <a href="#podcast">Podcasts</a><a href="#video">YouTube</a><a href="#sources">Sources</a>
+  </nav>
+  <section class="panel section-heading">
+    <h2>Turn updates into evidence</h2>
+    <p><strong>Daily · 15 minutes:</strong> select one update; record what changed, its maturity, and whether it affects your work.</p>
+    <p><strong>Weekly · 2 hours:</strong> reproduce one behavior in a small lab. Save the trace, failing test, fix and result.</p>
+    <p><strong>Monthly:</strong> rerun the same evaluation set after a model, SDK or tool upgrade. Keep a decision note: adopt, experiment, or defer.</p>
+    <a href={withBase('/book/27-agent-engineering-field-guide')}>Open the agent engineering field guide →</a>
+  </section>
+  <div class="watch-tracks">
+    {sections.map(section => <section id={section.id} class="panel">
+      <h2>{section.title}</h2><p>{section.description}</p>
+      <p class="watch-exercise"><strong>Build next:</strong> {section.exercise}</p>
+      <a href={withBase(section.learn)}>Your related notes →</a>
+      <h3>Recent developments</h3>
+      {section.items.length ? <ul class="watch-list">{section.items.map(item => <li>
+        <a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a>
+        <small>{item.source} · <time datetime={item.publishedDate}>{item.publishedDate.slice(0, 10)}</time></small>
+      </li>)}</ul> : <p>No matching updates in the last 30 days. See sources below.</p>}
+    </section>)}
+  </div>
+  {media.map(section => <section id={section.id} class="section-heading">
+    <h2>{section.title}</h2>
+    {section.items.length ? <ul class="watch-list panel">{section.items.map(item => <li>
+      <a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a>
+      <small>{item.source} · <time datetime={item.publishedDate}>{item.publishedDate.slice(0, 10)}</time></small>
+    </li>)}</ul> : <p>No matching recent episodes or talks collected. Browse the official channels in the library below.</p>}
+  </section>)}
+  <section class="section-heading"><h2>Reading, listening and video library</h2>
+    {resources && <ResourceList resources={resources.resources} />}
+  </section>
+  <section id="sources" class="section-heading">
+    <h2>Source health</h2>
+    <p>Release notes report changes, not recommendations. Check compatibility and reproduce claims before upgrading.</p>
+    <ul class="watch-list panel">{sources.map(source => <li>
+      <a href={source.websiteUrl} target="_blank" rel="noopener noreferrer">{source.name}</a>
+      <small>{watchSourceStatus(source.id, meta, asOf)} · <a href={source.feedUrl}>RSS / Atom</a></small>
+    </li>)}</ul>
+    <p><a href={withBase('/news')}>Browse the broader Engineering Radar →</a></p>
+  </section>
+</BaseLayout>

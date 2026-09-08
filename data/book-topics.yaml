@@ -7,6 +7,16 @@ topics:
     title: AIOps
     description: Evidence-led automation and AI-assisted operations.
     featured: 2
+  - slug: agentic-operations
+    title: Agent Engineering
+    description: Reliable execution, tool contracts, evaluation, and production agent operation.
+    featured: 4
+  - slug: agent-security
+    title: Agent Security
+    description: Untrusted inputs, scoped permissions, independent enforcement, and adversarial tests.
+  - slug: infrastructure-security
+    title: AI Infrastructure Security
+    description: Workload identity, isolation, GPU tenancy, and data-center trust boundaries.
   - slug: opentelemetry
     title: Telemetry
     description: OpenTelemetry concepts and collector pipelines.
@@ -24,6 +34,7 @@ topics:
     title: Machine Learning
     description: The Hugging Face ecosystem and applying ML skills to platform and infrastructure work.
 startHere:
+  - 27-agent-engineering-field-guide
   - 03-kubernetes-architecture
   - 10-opentelemetry-overview
   - 15-aiops-overview

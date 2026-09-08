@@ -18,6 +18,8 @@
 
 ## Application design
 
+- Keep the portal knowledge-first: no Skill Map or self-reported progress dashboard. AI Watch is the discovery entry point for agent engineering, agent security, observability, and AI infrastructure security. Retain existing notes and resource bookmarks.
+
 - Keep business rules in focused deterministic TypeScript modules under `src/lib/`. UI components consume calculated view models; they must not recalculate progress, learning debt, recommendations, or activity.
 - Prefer pure functions. Missing learning metrics must normalize available weights rather than be treated as zero.
 - Supported statuses are exactly: `not_started`, `learning`, `practicing`, `review`, and `mastered`.
@@ -39,4 +41,3 @@
 - Before declaring work complete, run `npm test` and `npm run build`; do not suppress TypeScript errors or add `any` merely to make a build pass.
 - Keep commits small and single-purpose. Preserve established structure and patterns unless a change is justified.
 - Treat interactive quizzes, search, spaced repetition, and general AI features as out of scope unless explicitly requested.
-
