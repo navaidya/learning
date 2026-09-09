@@ -1,11 +1,11 @@
 [
   {
     "project": "terraform",
-    "version": "v1.16.2",
-    "publishedDate": "2026-09-09T13:22:31.000Z",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.2",
+    "version": "v1.17.0-beta1",
+    "publishedDate": "2026-09-09T17:13:24.000Z",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-beta1",
     "sourceId": "terraform",
-    "title": "v1.16.2"
+    "title": "v1.17.0-beta1"
   },
   {
     "project": "cilium",

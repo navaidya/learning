@@ -1,5 +1,41 @@
 [
   {
+    "id": "terraform-9e6f9c1b37a1",
+    "title": "v1.17.0-beta1",
+    "summary": "1.17.0-beta1 (September 09, 2026) NEW FEATURES: Terraform now supports variables and locals in provider requirements (#39153) A new -minimal-refresh planning option has been added, which will only refresh resources that have proposed changes. (#35290) policy: Terraform Policy is now generally available. The -policies flag for plan, apply, and init no longer requires the -allow-experimental-features flag. See https://developer.hashicorp.com/terraform/policy for more information. (#38970) ENHANCEM",
+    "source": "Terraform",
+    "sourceId": "terraform",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-beta1",
+    "publishedDate": "2026-09-09T17:13:24.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "terraform",
+    "releaseVersion": "v1.17.0-beta1"
+  },
+  {
+    "id": "grafana-deec40cf4041",
+    "title": "How to monitor Cypress tests with Grafana Cloud",
+    "summary": "If your Cypress suite has tests that fail more often or run slower, you know it can be hard to figure out the pattern from a single job. It could be one spec that slowed down, or a single test that fails, or maybe the entire suite is trending slower. The root cause could be a bug in the app, or a flaky test, or something else. Your terminal output and CI log will tell you what happened on a single run, but that doesn't help you spot any larger trends—especially since you lose that data as soon a",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/how-to-monitor-cypress-tests-with-grafana-cloud/",
+    "publishedDate": "2026-09-09T13:35:09.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "terraform-8ef9e15ab07d",
     "title": "v1.16.2",
     "summary": "1.16.2 (September 9, 2026) BUG FIXES: Fix panic in module installation when encoutering invalid module calls (#39129)",
@@ -9545,46 +9581,6 @@
     "releaseRelated": true,
     "releaseProject": "prometheus",
     "releaseVersion": "3.13.0-rc.1"
-  },
-  {
-    "id": "crossplane-8fc45d9f0d5a",
-    "title": "v2.1.7",
-    "summary": "v2.1.7 is a patch release scoped to fixing issues reported by users of Crossplane v2.1 and fixing security related issues in Crossplane's dependencies. What's Changed chore(deps): update module github.com/quic-go/quic-go to v0.59.1 [security] (release-2.1) by @crossplane-renovate[bot] in #7460 chore(deps): update module golang.org/x/net to v0.55.0 [security] (release-2.1) by @crossplane-renovate[bot] in #7437 [release-2.1] bump Go to 1.25.11 [security] by @phisco in #7528 Update crossplane-runti",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.1.7",
-    "publishedDate": "2026-06-22T16:40:45.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v2.1.7"
-  },
-  {
-    "id": "crossplane-1ebe63418b24",
-    "title": "v1.20.10",
-    "summary": "v1.20.10 is a patch release scoped to fixing issues reported by users of Crossplane v1.20 and fixing security related issues in Crossplane's dependencies. What's Changed [release-1.20] bump Go to 1.25.11 [security] by @phisco in #7527 chore(deps): update module go.mongodb.org/mongo-driver to v1.17.7 [security] (release-1.20) by @crossplane-renovate[bot] in #7534 Update crossplane-runtime to v1.20.10 by @lsviben in #7538 chore(deps): update curlimages/curl docker tag to v8.20.0 (release-1.20) by ",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v1.20.10",
-    "publishedDate": "2026-06-22T16:39:22.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v1.20.10"
   },
   {
     "id": "prometheus-e480d1858117",
