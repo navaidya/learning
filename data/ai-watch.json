@@ -1,5 +1,46 @@
 [
   {
+    "id": "pydantic-ai-a1613b1e84f4",
+    "title": "v2.42.0 (2026-09-08)",
+    "summary": "What's Changed ⚠️ Compatibility Notes Reject invalid DeferredToolResults.approvals values by @adtyavrdhn in #8081 🚀 Features Add a GitHubCopilotProvider for GitHub Copilot's OpenAI-compatible API by @dsfaccini in #8059 🐛 Bug Fixes Honor anthropic_disallows_sampling_settings in BedrockConverseModel by @rscholz98 in #7961 Resolve non-object $ref definitions inline in code-mode function signatures by @pydanty in #8056 Validate ToolReturnContent without a Python call per JSON node by @dsfaccini in",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.42.0",
+    "publishedDate": "2026-09-09T03:33:32.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.42.0"
+  },
+  {
+    "id": "phoenix-42ce4631ca73",
+    "title": "arize-phoenix-client: v3.5.0",
+    "summary": "3.5.0 (2026-09-08) Features add MiniMax provider integration (#14310) (7e01ce7) client: add ATIF tracing to Harbor plugin (#15715) (30dccec) client: add error and latency filters to get_traces in python and typescript clients (c839254) Bug Fixes annotations: validate all configured ID columns, not just the first (#15877) (7654185) ci: format client docs and skip fork PR comments (10915f5) Documentation phoenix-client: create_dataset docstring documented dataset_name, param is name (#15950) (3970",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-client-v3.5.0",
+    "publishedDate": "2026-09-08T22:22:38.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v3.5.0"
+  },
+  {
     "id": "phoenix-88aa30e69194",
     "title": "arize-phoenix: v20.9.0",
     "summary": "20.9.0 (2026-09-08) Features client: add ATIF tracing to Harbor plugin (#15715) (30dccec) Bug Fixes agents: stop retrying GitHub calls after an authorization failure (#15917) (18fdcd2) cost: update built-in model token prices (#15971) (83855f7) server: remove PEP 765 return in finally from playground_users.get_user (#15964) (9c531a5) traces: count only leaf LLM spans in project token totals (#15913) (38db726) Documentation add Phoenix and AX selector (#15988) (c1288c9) add Simplified Chinese tra",

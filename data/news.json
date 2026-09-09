@@ -1,5 +1,63 @@
 [
   {
+    "id": "kyverno-84913252623e",
+    "title": "v1.19.1-rc.1",
+    "summary": "v1.19.1-rc.1",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.1-rc.1",
+    "publishedDate": "2026-09-09T05:49:09.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno",
+    "releaseVersion": "v1.19.1-rc.1"
+  },
+  {
+    "id": "backstage-0bcd9819b6a0",
+    "title": "v1.55.0-next.2",
+    "summary": "See docs/releases/v1.55.0-next.2-changelog.md for more information.",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.55.0-next.2",
+    "publishedDate": "2026-09-08T22:51:08.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.55.0-next.2"
+  },
+  {
+    "id": "kubernetes-20f9c0303b71",
+    "title": "Kubernetes v1.37: Advancing Workload-Aware Scheduling",
+    "summary": "AI/ML and complex batch workloads continue to push the boundaries of Kubernetes scheduling. Following the foundational workload-centric enhancements introduced in previous releases, Kubernetes v1.37 delivers the next major milestone in the Workload-Aware Scheduling (WAS) journey. In this release, the core Workload and PodGroup APIs—enabling gang scheduling—along with Workload-Aware Preemption (WAP) and shared DRA ResourceClaims for PodGroups, all graduate to Beta, solidifying their role in the K",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/09/08/kubernetes-v1-37-advancing-workload-aware-scheduling/",
+    "publishedDate": "2026-09-08T18:30:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes",
+    "releaseVersion": "v1.37"
+  },
+  {
     "id": "robusta-4781b16712c3",
     "title": "0.49.0",
     "summary": "What's Changed Claude runner workflow trigger docs by @arikalon1 in #2161 Add optional label-based rate limiting to trigger_workflow action by @arikalon1 in #2164 Add conversation_link pass-through field to Holmes chat params by @ezra-robusta in #2163 ROB-887 Cache node IP lookups for prometheus alerts by @Avi-Robusta in #2154 ROB-1161 Support Supabase publishable keys and fetch the api key from relay by @Avi-Robusta in #2162 ROB-1256 Backport perl/glibc/git CVE fixes from Debian forky by @RoiGl",
@@ -9588,64 +9646,6 @@
     "releaseRelated": true,
     "releaseProject": "containerd",
     "releaseVersion": "2.3.2"
-  },
-  {
-    "id": "containerd-3b6933bd41d4",
-    "title": "containerd 2.2.5",
-    "summary": "Welcome to the v2.2.5 release of containerd! The fifth patch release for containerd 2.2 contains various fixes and updates including security patches. Security Updates containerd CVE-2026-50195 CVE-2026-53488 CVE-2026-53492 CVE-2026-53489 CVE-2026-47262 Please try out the release binaries and report any issues at https://github.com/containerd/containerd/issues. Contributors Samuel Karp Chris Henzie Akihiro Suda Derek McGowan Maksym Pavlenko Akhil Mohan Ben Cressey Brian Goff Davanum Srinivas Seb",
-    "source": "containerd",
-    "sourceId": "containerd",
-    "url": "https://github.com/containerd/containerd/releases/tag/v2.2.5",
-    "publishedDate": "2026-06-18T23:11:36.000Z",
-    "domain": "containers",
-    "topics": [
-      "containers",
-      "containerd",
-      "runtime"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "containerd",
-    "releaseVersion": "2.2.5"
-  },
-  {
-    "id": "opentofu-89d45fc6fb8a",
-    "title": "v1.12.3",
-    "summary": "BUG FIXES: Properly handle TF_ENCRYPTION with only blank spaces. (#4265) The value resulted from the lifecycle.enabled evaluation now has its deprecation marks processed correctly (#4162) Update documentation to clarify the usage restriction of ephemeral values in lifecycle.enabled. (#4220) tofu console -lock=false now works as intended. (#4291) SECURITY ADVISORIES: Previous releases in the v1.12 series could read an arbitrary file during certain git operations via a maliciously crafted URL (#42",
-    "source": "OpenTofu",
-    "sourceId": "opentofu",
-    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.3",
-    "publishedDate": "2026-06-18T15:21:19.000Z",
-    "domain": "terraform",
-    "topics": [
-      "opentofu",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentofu",
-    "releaseVersion": "v1.12.3"
-  },
-  {
-    "id": "opentofu-dc8a0b749fd6",
-    "title": "v1.11.10",
-    "summary": "BUG FIXES: Update documentation to clarify the usage restriction of ephemeral values in lifecycle.enabled. (#4220) SECURITY ADVISORIES: Previous releases in the v1.11 series could read an arbitrary file during certain git operations via a maliciously crafted URL (#4292). Advisory: GHSA-q7j3-v8qv-22vq Full Changelog: v1.11.9...v1.11.10",
-    "source": "OpenTofu",
-    "sourceId": "opentofu",
-    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.11.10",
-    "publishedDate": "2026-06-18T15:21:03.000Z",
-    "domain": "terraform",
-    "topics": [
-      "opentofu",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentofu",
-    "releaseVersion": "v1.11.10"
   },
   {
     "id": "kubernetes-c0ff8866ebff",
