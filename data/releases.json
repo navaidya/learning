@@ -1,11 +1,27 @@
 [
   {
+    "project": "cilium",
+    "version": "1.21.0-pre.2",
+    "publishedDate": "2026-09-09T11:50:23.000Z",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.21.0-pre.2",
+    "sourceId": "cilium",
+    "title": "1.21.0-pre.2"
+  },
+  {
     "project": "kyverno",
     "version": "v1.19.1-rc.1",
-    "publishedDate": "2026-09-09T05:49:09.000Z",
+    "publishedDate": "2026-09-09T06:52:42.000Z",
     "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.1-rc.1",
     "sourceId": "kyverno",
     "title": "v1.19.1-rc.1"
+  },
+  {
+    "project": "istio",
+    "version": "1.29",
+    "publishedDate": "2026-09-09T00:00:00.000Z",
+    "url": "https://istio.io/latest/news/support/announcing-1.29-eol/",
+    "sourceId": "istio",
+    "title": "Support for Istio 1.29 ends on the 12th of October, 2026"
   },
   {
     "project": "backstage",
@@ -38,14 +54,6 @@
     "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.41.0",
     "sourceId": "holmesgpt",
     "title": "0.41.0"
-  },
-  {
-    "project": "cilium",
-    "version": "v1.21.0-pre.1",
-    "publishedDate": "2026-09-07T16:18:20.000Z",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.21.0-pre.1",
-    "sourceId": "cilium",
-    "title": "v1.21.0-pre.1"
   },
   {
     "project": "prometheus",
@@ -134,14 +142,6 @@
     "url": "https://opentelemetry.io/blog/2026/go-logs-api-sdk-rc/",
     "sourceId": "opentelemetry",
     "title": "OpenTelemetry Go Logs API and SDK reach release candidate status"
-  },
-  {
-    "project": "istio",
-    "version": "1.31.0",
-    "publishedDate": "2026-08-31T00:00:00.000Z",
-    "url": "https://istio.io/latest/news/releases/1.31.x/announcing-1.31/change-notes/",
-    "sourceId": "istio",
-    "title": "Istio 1.31.0 Change Notes"
   },
   {
     "project": "loki",

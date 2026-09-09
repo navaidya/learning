@@ -1,5 +1,25 @@
 [
   {
+    "id": "falco-66daddf15abc",
+    "title": "0.45.0-rc1",
+    "summary": "update(userspace/engine): bump engine version to 0.65.0 Bumping libs to `0.26.0-rc1` moves the driver `SCHEMA_VERSION` from `4.5.1` to `4.5.2`, which changes the engine checksum. The engine version must be bumped accordingly. Signed-off-by: Leonardo Grasso <me@leonardograsso.com>",
+    "source": "Falco",
+    "sourceId": "falco",
+    "url": "https://github.com/falcosecurity/falco/releases/tag/0.45.0-rc1",
+    "publishedDate": "2026-09-09T09:42:42.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "infrastructure-security",
+      "release",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "falco",
+    "releaseVersion": "0.45.0-rc1"
+  },
+  {
     "id": "pydantic-ai-a1613b1e84f4",
     "title": "v2.42.0 (2026-09-08)",
     "summary": "What's Changed ⚠️ Compatibility Notes Reject invalid DeferredToolResults.approvals values by @adtyavrdhn in #8081 🚀 Features Add a GitHubCopilotProvider for GitHub Copilot's OpenAI-compatible API by @dsfaccini in #8059 🐛 Bug Fixes Honor anthropic_disallows_sampling_settings in BedrockConverseModel by @rscholz98 in #7961 Resolve non-object $ref definitions inline in code-mode function signatures by @pydanty in #8056 Validate ToolReturnContent without a Python call per JSON node by @dsfaccini in",
@@ -1260,45 +1280,6 @@
     "sourceId": "practical-ai",
     "url": "https://share.transistor.fm/s/e039d1ca",
     "publishedDate": "2026-06-25T09:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "ai-agent",
-      "podcast",
-      "agent-development"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "falco-565e82aa3e07",
-    "title": "0.44.1",
-    "summary": "Packages Download rpm-x86_64 deb-x86_64 tgz-x86_64 tgz-static-x86_64 rpm-aarch64 deb-aarch64 tgz-aarch64 Images docker pull docker.io/falcosecurity/falco:0.44.1 docker pull public.ecr.aws/falcosecurity/falco:0.44.1 docker pull docker.io/falcosecurity/falco-driver-loader:0.44.1 docker pull docker.io/falcosecurity/falco-driver-loader:0.44.1-buster docker pull docker.io/falcosecurity/falco:0.44.1-debian v0.44.1 Released on 2026-06-11 Major Changes feat(userspace/falco): add support for disabling BP",
-    "source": "Falco",
-    "sourceId": "falco",
-    "url": "https://github.com/falcosecurity/falco/releases/tag/0.44.1",
-    "publishedDate": "2026-06-11T10:03:09.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "infrastructure-security",
-      "release",
-      "infrastructure"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "falco",
-    "releaseVersion": "0.44.1"
-  },
-  {
-    "id": "practical-ai-839ce1d6ff9f",
-    "title": "Zero Trust for AI Agents",
-    "summary": "As AI agents become more capable and autonomous, they also introduce new security challenges. In this 'Fully Connected' episode, Dan and Chris unpack Anthropic’s Zero Trust for AI Agents security framework and what it means for organizations deploying agentic systems. They examine the key security risks facing agentic systems and discuss how organizations can apply Zero Trust principles to deploy AI agents safely. Along the way, they break down practical security controls and discuss how traditi",
-    "source": "Practical AI",
-    "sourceId": "practical-ai",
-    "url": "https://share.transistor.fm/s/5c1a087d",
-    "publishedDate": "2026-06-11T09:00:00.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agentic-operations",

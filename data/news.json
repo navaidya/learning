@@ -1,12 +1,88 @@
 [
   {
+    "id": "cilium-910d05dfd62f",
+    "title": "1.21.0-pre.2",
+    "summary": "Summary of Changes ⚠️ Due to a release issue, the v1.21.0-pre.1 has not been completed, instead we are publishing v1.21.0-pre.2. This changelog contains the changes from v1.21.0-pre.0 to v1.21.0-pre.2 Major Changes: Add support for Gateway API session persistence (#48029, @thorn3r) Allow use of AWS managed prefix lists in Cilium policies. (#45806, @bodgit) Enable BPF masquerading by default (#47631, @pchaigno) network driver: add sriov device manager (#47387, @bersoare) Minor Changes: Add cilium",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.21.0-pre.2",
+    "publishedDate": "2026-09-09T11:50:23.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "ebpf-cilium",
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.21.0-pre.2"
+  },
+  {
+    "id": "cncf-dbbc2a8533ef",
+    "title": "Whose GPUs are these, anyway? Secure, self-service metrics for multi-tenant Kubernetes",
+    "summary": "The question that stopped the meeting It was a routine cost review. The slide showed the month’s GPU spend, the biggest line on the whole infrastructure bill, and someone asked a five-word question: “Are we using...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/09/09/whose-gpus-are-these-anyway-secure-self-service-metrics-for-multi-tenant-kubernetes/",
+    "publishedDate": "2026-09-09T11:27:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cilium-2e6bc5e1f1ec",
+    "title": "1.21.0-pre.2",
+    "summary": "Release v1.21.0-pre.2",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/1.21.0-pre.2",
+    "publishedDate": "2026-09-09T10:48:25.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.21.0-pre.2"
+  },
+  {
+    "id": "cncf-a74039093e10",
+    "title": "How cloud native goes AI native",
+    "summary": "“A sales guy writing code” used to be the lead-up to a joke. But now no one’s laughing. Designers used to sit meekly waiting for the high priests of code to make their designs real. Now...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/09/09/how-cloud-native-goes-ai-native/",
+    "publishedDate": "2026-09-09T08:13:23.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "kyverno-84913252623e",
     "title": "v1.19.1-rc.1",
-    "summary": "v1.19.1-rc.1",
+    "summary": "No content.",
     "source": "Kyverno",
     "sourceId": "kyverno",
     "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.1-rc.1",
-    "publishedDate": "2026-09-09T05:49:09.000Z",
+    "publishedDate": "2026-09-09T06:52:42.000Z",
     "domain": "kubernetes",
     "topics": [
       "kyverno",
@@ -18,6 +94,27 @@
     "releaseRelated": true,
     "releaseProject": "kyverno",
     "releaseVersion": "v1.19.1-rc.1"
+  },
+  {
+    "id": "istio-b1cb741c9cd5",
+    "title": "Support for Istio 1.29 ends on the 12th of October, 2026",
+    "summary": "According to Istio&rsquo;s support policy, minor releases like 1.29 are supported until six weeks after the N+2 minor release (1.31 in this case). Istio 1.31 was released on the 31st of August, 2026, and support for 1.29 will end on the 12th of October, 2026. At that point we will stop back-porting fixes for security issues and critical bugs to 1.29, so we encourage you to upgrade to the latest version of Istio (1.31). If you don&rsquo;t do this you may put yourself in the position of having to ",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/news/support/announcing-1.29-eol/",
+    "publishedDate": "2026-09-09T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "istio",
+    "releaseVersion": "1.29"
   },
   {
     "id": "backstage-0bcd9819b6a0",
@@ -9511,26 +9608,6 @@
     "releaseVersion": "v2.3.3"
   },
   {
-    "id": "helm-53a213ac790c",
-    "title": "Helm v3.21.2",
-    "summary": "Helm v3.21.2 is a patch release to correct bump the Kubernetes client libraries (client-go, etc) to match the expected Kubernetes v1.36 release. Users are encouraged to upgrade for the best experience. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/package",
-    "source": "Helm",
-    "sourceId": "helm",
-    "url": "https://github.com/helm/helm/releases/tag/v3.21.2",
-    "publishedDate": "2026-06-20T17:19:31.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "helm",
-      "packaging"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "helm",
-    "releaseVersion": "v3.21.2"
-  },
-  {
     "id": "istio-684f7c3ecc42",
     "title": "Hardening Kubernetes Security with Istio Ambient Mode on Flat Networks",
     "summary": "If you&rsquo;ve moved a workload off AWS and onto on-prem infrastructure, you&rsquo;ve likely run into this: the network isolation you got for free on the cloud does not exist on bare metal. On AWS, Security Groups and VPC boundaries enforce service boundaries quietly in the background. Most teams never have to think about it. On-prem, the network is flat by default. Your payment service, your internal admin panel, your logging agent, and your customer-facing API all sit in the same cluster with",
@@ -9566,86 +9643,6 @@
     "importance": "critical",
     "architectureShift": true,
     "releaseRelated": false
-  },
-  {
-    "id": "k8sgpt-69e671dde7c3",
-    "title": "v0.4.34",
-    "summary": "0.4.34 (2026-06-18) Features add Anthropic API support (#1652) (1c4e77a) Bug Fixes allow Azure OpenAI API version override (#1650) (1b7d1f0) deps: update k8s.io/utils digest to a95e086 (#1656) (8da4716) deps: update module github.com/aws/aws-sdk-go-v2/service/bedrockruntime to v1.50.4 [security] (#1633) (a81295f) deps: update module github.com/kedacore/keda/v2 to v2.17.3 [security] (#1612) (5a24c5c) deps: update module github.com/olekukonko/tablewriter to v1 (#1502) (5483339) Other deps: pin dep",
-    "source": "K8sGPT",
-    "sourceId": "k8sgpt",
-    "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.34",
-    "publishedDate": "2026-06-19T13:30:57.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "k8sgpt",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "k8sgpt",
-    "releaseVersion": "v0.4.34"
-  },
-  {
-    "id": "containerd-e11cd811b03a",
-    "title": "containerd 2.1.9",
-    "summary": "Welcome to the v2.1.9 release of containerd! The ninth patch release for containerd 2.1 contains various fixes and updates including security patches. Security Updates containerd CVE-2026-50195 CVE-2026-53488 CVE-2026-53492 CVE-2026-53489 CVE-2026-47262 Please try out the release binaries and report any issues at https://github.com/containerd/containerd/issues. Contributors Chris Henzie Samuel Karp Akihiro Suda Wei Fu Akhil Mohan Ben Cressey Brian Goff Davanum Srinivas Derek McGowan Jared Ledvin",
-    "source": "containerd",
-    "sourceId": "containerd",
-    "url": "https://github.com/containerd/containerd/releases/tag/v2.1.9",
-    "publishedDate": "2026-06-18T23:20:07.000Z",
-    "domain": "containers",
-    "topics": [
-      "containers",
-      "containerd",
-      "runtime"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "containerd",
-    "releaseVersion": "2.1.9"
-  },
-  {
-    "id": "containerd-887cf0a88e0c",
-    "title": "containerd 2.0.10",
-    "summary": "Welcome to the v2.0.10 release of containerd! The tenth patch release for containerd 2.0 includes various bug fixes and updates including security patches. Security Updates containerd CVE-2026-53488 CVE-2026-47262 Please try out the release binaries and report any issues at https://github.com/containerd/containerd/issues. Contributors Samuel Karp Chris Henzie Akhil Mohan Akihiro Suda Ben Cressey Davanum Srinivas Paweł Gronowski Sebastiaan van Stijn Changes 17 commits Prepare release notes for v2",
-    "source": "containerd",
-    "sourceId": "containerd",
-    "url": "https://github.com/containerd/containerd/releases/tag/v2.0.10",
-    "publishedDate": "2026-06-18T23:17:54.000Z",
-    "domain": "containers",
-    "topics": [
-      "containers",
-      "containerd",
-      "runtime"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "containerd",
-    "releaseVersion": "2.0.10"
-  },
-  {
-    "id": "containerd-25787c4f6cd7",
-    "title": "containerd 2.3.2",
-    "summary": "Welcome to the v2.3.2 release of containerd! The second patch release for containerd 2.3 contains various fixes and updates including security patches. Security Updates containerd CVE-2026-50195 CVE-2026-53488 CVE-2026-53492 CVE-2026-53489 CVE-2026-47262 Highlights Fix a data race when reading shim logs on Windows (#13522) Image Distribution Allow the last host to retry on transient network errors (#13591) Runtime Fix container startup failures caused by concurrent task RPC timeouts during slow ",
-    "source": "containerd",
-    "sourceId": "containerd",
-    "url": "https://github.com/containerd/containerd/releases/tag/v2.3.2",
-    "publishedDate": "2026-06-18T23:16:02.000Z",
-    "domain": "containers",
-    "topics": [
-      "containers",
-      "containerd",
-      "runtime"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "containerd",
-    "releaseVersion": "2.3.2"
   },
   {
     "id": "kubernetes-c0ff8866ebff",
