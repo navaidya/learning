@@ -1,5 +1,24 @@
 [
   {
+    "id": "terraform-8ef9e15ab07d",
+    "title": "v1.16.2",
+    "summary": "1.16.2 (September 9, 2026) BUG FIXES: Fix panic in module installation when encoutering invalid module calls (#39129)",
+    "source": "Terraform",
+    "sourceId": "terraform",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.2",
+    "publishedDate": "2026-09-09T13:22:31.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "terraform",
+    "releaseVersion": "v1.16.2"
+  },
+  {
     "id": "cilium-910d05dfd62f",
     "title": "1.21.0-pre.2",
     "summary": "Summary of Changes ⚠️ Due to a release issue, the v1.21.0-pre.1 has not been completed, instead we are publishing v1.21.0-pre.2. This changelog contains the changes from v1.21.0-pre.0 to v1.21.0-pre.2 Major Changes: Add support for Gateway API session persistence (#48029, @thorn3r) Allow use of AWS managed prefix lists in Cilium policies. (#45806, @bodgit) Enable BPF masquerading by default (#47631, @pchaigno) network driver: add sriov device manager (#47387, @bersoare) Minor Changes: Add cilium",
@@ -9586,26 +9605,6 @@
     "releaseRelated": true,
     "releaseProject": "prometheus",
     "releaseVersion": "v0.313.0-rc.1"
-  },
-  {
-    "id": "crossplane-8c9e257db28c",
-    "title": "apis/v2.3.3",
-    "summary": "Release v2.3.3",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.3.3",
-    "publishedDate": "2026-06-22T13:40:07.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v2.3.3"
   },
   {
     "id": "istio-684f7c3ecc42",

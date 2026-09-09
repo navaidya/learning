@@ -1,5 +1,25 @@
 [
   {
+    "id": "langfuse-03d1613d7626",
+    "title": "v4.33.0",
+    "summary": "What's Changed Features feat(public-api): optional startTime on GET /observations/{id} by @niklassemmler in #17193 feat(filters): surface has:/-has: while typing a nullable field name by @nkabardin in #16725 feat(web): add source promt name to playground window content by @tobi12345 in #17248 Fixes / Improvements fix(clickhouse): classify memory limit variants as ClickHouseResourceError by @niklassemmler in #17194 fix(blob-export): start full-history exports at the real data minimum by @niklasse",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.33.0",
+    "publishedDate": "2026-09-09T16:04:02.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.33.0"
+  },
+  {
     "id": "falco-66daddf15abc",
     "title": "0.45.0-rc1",
     "summary": "update(userspace/engine): bump engine version to 0.65.0 Bumping libs to `0.26.0-rc1` moves the driver `SCHEMA_VERSION` from `4.5.1` to `4.5.2`, which changes the engine checksum. The engine version must be bumped accordingly. Signed-off-by: Leonardo Grasso <me@leonardograsso.com>",

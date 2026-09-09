@@ -1,5 +1,13 @@
 [
   {
+    "project": "terraform",
+    "version": "v1.16.2",
+    "publishedDate": "2026-09-09T13:22:31.000Z",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.2",
+    "sourceId": "terraform",
+    "title": "v1.16.2"
+  },
+  {
     "project": "cilium",
     "version": "1.21.0-pre.2",
     "publishedDate": "2026-09-09T11:50:23.000Z",
@@ -86,14 +94,6 @@
     "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.261.0",
     "sourceId": "pulumi",
     "title": "pkg/v3.261.0: Changelog and go.mod updates for v3.261.0 (#24548)"
-  },
-  {
-    "project": "terraform",
-    "version": "v1.16.1",
-    "publishedDate": "2026-09-02T14:49:32.000Z",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.1",
-    "sourceId": "terraform",
-    "title": "v1.16.1"
   },
   {
     "project": "opentelemetry-collector",
