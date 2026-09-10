@@ -1,5 +1,137 @@
 [
   {
+    "id": "cncf-video-75295f3a12aa",
+    "title": "Agentic RAG on Kubeflow - Rohit Kumar, Oracle & Santhosh T, Zenoti",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=K0vhPML48to",
+    "publishedDate": "2026-09-10T20:37:34.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-1bc72651bbe2",
+    "title": "Stop AI Agents from Guessing SQL with Semantic Operator on Kubernetes - Manabu McCloskey, AWS",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=Ld-BQRKzP3k",
+    "publishedDate": "2026-09-10T20:37:34.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-d59f8c27e92a",
+    "title": "Closing the Observability Gap: Building a Kubeflow Plugin for Headlamp - Alok Dangre, NIT Rourkela",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=S4CtPyzxmvU",
+    "publishedDate": "2026-09-10T20:37:34.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "phoenix-e1a83b291b49",
+    "title": "arize-phoenix-evals: v3.7.0",
+    "summary": "3.7.0 (2026-09-10) Features evals: completeness evaluator (#15767) (63805d0) evals: deprecate document relevance evaluators (#15991) (d67ea3f)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-evals-v3.7.0",
+    "publishedDate": "2026-09-10T17:26:41.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v3.7.0"
+  },
+  {
+    "id": "phoenix-68d7be3cb2e7",
+    "title": "@arizeai/phoenix-mcp@4.3.10",
+    "summary": "Patch Changes Updated dependencies [2b73847] @arizeai/phoenix-client@7.11.0",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-mcp%404.3.10",
+    "publishedDate": "2026-09-10T17:17:25.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "4.3.10"
+  },
+  {
+    "id": "phoenix-960be4e1914d",
+    "title": "@arizeai/phoenix-cli@1.18.2",
+    "summary": "Patch Changes Updated dependencies [2b73847] @arizeai/phoenix-client@7.11.0",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-cli%401.18.2",
+    "publishedDate": "2026-09-10T17:17:22.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "1.18.2"
+  },
+  {
+    "id": "phoenix-e49d0f9b31cf",
+    "title": "@arizeai/phoenix-client@7.11.0",
+    "summary": "Minor Changes 2b73847: Accept metadata in promptVersion() so prompt versions can carry arbitrary JSON metadata.",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-client%407.11.0",
+    "publishedDate": "2026-09-10T17:17:19.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "7.11.0"
+  },
+  {
     "id": "cncf-video-e4e951af804f",
     "title": "GPU-Centric Infrastructure for AI Workloads | KubeCon Japan 2026",
     "source": "CNCF YouTube",

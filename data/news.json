@@ -1,5 +1,24 @@
 [
   {
+    "id": "vector-765a97fd97a9",
+    "title": "vdev-v0.3.19",
+    "summary": "No content.",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.19",
+    "publishedDate": "2026-09-10T21:06:02.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
     "id": "oci-oke-26bb4b392861",
     "title": "v9.1.0",
     "summary": "9.1.0 (September 9, 2026) Added Support for Configurable fault domain Redis CRR secondary and standalone conversion support with tests and documentation Bug Fix Fix ResolverEndpoint security attributes state handling ignore empty string for maximum_surge and maximum_unavailable",
@@ -18,6 +37,23 @@
     "releaseRelated": true,
     "releaseProject": "oci-oke",
     "releaseVersion": "v9.1.0"
+  },
+  {
+    "id": "grafana-7e4ed3474c78",
+    "title": "Custom labels in Grafana Cloud Synthetic Monitoring: New updates for consistency and ease-of-use",
+    "summary": "Labels are a powerful way to organize telemetry and define policies across Grafana Cloud, helping to streamline alerting, attribution, access control, and more. But traditionally, custom labels in Synthetic Monitoring have worked a little differently: they only lived on a single sm_check_info metric, and Grafana Cloud prefixed each one with label_. To make custom labels in Synthetic Monitoring work consistently with the rest of Grafana Cloud—without extra joins, naming conventions, or workaround",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/synthetic-monitoring-labels-update/",
+    "publishedDate": "2026-09-10T16:11:53.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "openai-4d4e7920d8a7",
@@ -209,6 +245,42 @@
     "releaseRelated": true,
     "releaseProject": "helm",
     "releaseVersion": "v4.3.0"
+  },
+  {
+    "id": "openai-4e410dad70fb",
+    "title": "Build more natural voice experiences with GPT‑Live‑1 in the API",
+    "summary": "GPT‑Live‑1 brings natural, full-duplex voice conversations to the API, with stronger instruction following, custom voices, and telephony support.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+    "publishedDate": "2026-09-10T00:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "openai-2b26a8066576",
+    "title": "Introducing the Agents API",
+    "summary": "Build and launch cloud agents with the Agents API, a managed service powered by the Codex harness for orchestration, long-running sessions, and tool use.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/introducing-the-agents-api",
+    "publishedDate": "2026-09-10T00:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "kubernetes-06f4b9d8c79c",
@@ -9458,64 +9530,6 @@
     "releaseRelated": false
   },
   {
-    "id": "kubernetes-a135271c86b6",
-    "title": "See your serverless: introducing the Headlamp plugin for Knative",
-    "summary": "Headlamp is an open-source, extensible Kubernetes SIG UI project designed to let you explore, manage, and debug cluster resources. Knative brings serverless workloads to Kubernetes, handling traffic routing, autoscaling, and revision management so teams can deploy and iterate without fighting infrastructure. But operating Knative workloads day-to-day can be difficult, there's still a lot of jumping between the kn CLI, kubectl, and the Kubernetes UI to get a full picture of what's running. We bui",
-    "source": "Kubernetes",
-    "sourceId": "kubernetes",
-    "url": "https://kubernetes.io/blog/2026/06/25/headlamp-knative-plugin/",
-    "publishedDate": "2026-06-25T18:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "hashicorp-5998b7f1a1a6",
-    "title": "Boundary 1.0 releases RDP session recording and improved management",
-    "summary": "Boundary 1.0 releases with support for RDP session recording and a preview ahead towards securing AI agent access in a brave new agentic world.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/boundary-1-releases-with-rdp-session-recording-and-improved-management",
-    "publishedDate": "2026-06-25T07:09:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "ai-agent",
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "hashicorp",
-    "releaseVersion": "1.0"
-  },
-  {
-    "id": "gateway-api-762ccbbf9dc7",
-    "title": "v1.6.0-rc.2",
-    "summary": "Major Changes Since v1.6.0-rc.1 Bug or Regression ⚠️ Breaking Change: TLS must now be configured for listeners using the HTTPS protocol. (#4985, @snorwin) Test & Conformance The GRPCRouteWeight conformance test now sends its distribution-sampling requests through the injectable Options.GRPCClient instead of a hardcoded DefaultClient, allowing implementations that supply a custom gRPC client to run it. (#5004, @lexfrei) The HTTPRouteRequestPercentageMirror conformance test now derives its accepta",
-    "source": "Gateway API",
-    "sourceId": "gateway-api",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.0-rc.2",
-    "publishedDate": "2026-06-25T04:51:48.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "gateway-api",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "gateway-api",
-    "releaseVersion": "v1.6.0-rc.2"
-  },
-  {
     "id": "kubernetes-releases-c46ce11c2019",
     "title": "v1.37.0-alpha.2",
     "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
@@ -9533,25 +9547,6 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes-releases",
     "releaseVersion": "v1.37.0-alpha.2"
-  },
-  {
-    "id": "openai-2b6976f96bb5",
-    "title": "How agents are transforming work",
-    "summary": "A new OpenAI research paper shows how AI agents are transforming work, enabling longer, more complex tasks and expanding productivity across roles.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/how-agents-are-transforming-work",
-    "publishedDate": "2026-06-25T02:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "ai-agent",
-      "openai",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "istio-7351f2860115",
