@@ -1,8 +1,16 @@
 [
   {
+    "project": "pulumi",
+    "version": "v3.262.0",
+    "publishedDate": "2026-09-10T11:37:48.000Z",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.262.0",
+    "sourceId": "pulumi",
+    "title": "v3.262.0"
+  },
+  {
     "project": "kyverno",
     "version": "v1.19.1",
-    "publishedDate": "2026-09-10T05:28:11.000Z",
+    "publishedDate": "2026-09-10T07:22:34.000Z",
     "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.1",
     "sourceId": "kyverno",
     "title": "v1.19.1"
@@ -94,14 +102,6 @@
     "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.2",
     "sourceId": "gateway-api",
     "title": "v1.6.2"
-  },
-  {
-    "project": "pulumi",
-    "version": "v3.261.0",
-    "publishedDate": "2026-09-03T06:26:07.000Z",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.261.0",
-    "sourceId": "pulumi",
-    "title": "pkg/v3.261.0: Changelog and go.mod updates for v3.261.0 (#24548)"
   },
   {
     "project": "opentelemetry-collector",

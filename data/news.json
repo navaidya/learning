@@ -1,12 +1,106 @@
 [
   {
+    "id": "pulumi-5364b560f4e5",
+    "title": "v3.262.0",
+    "summary": "3.262.0 (2026-09-10) Features [engine] Support importing a pulumi:index:Stash resource. The stash adopts the given id and holds a null value, and the program's configured input then applies as an update #24544 Bug Fixes [auto/go] Match wrapped errors in the Automation API error predicates, and unwrap the underlying cause #24197 [cli/deployment] Stop pulumi deployment settings edit clearing settings it was not asked to change, let --branch and --commit replace one another rather than be combined,",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.262.0",
+    "publishedDate": "2026-09-10T11:37:48.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.262.0"
+  },
+  {
+    "id": "cncf-cb7194d443ef",
+    "title": "Kubernetes disaster recovery: Guidance from three reproducible failure scenarios",
+    "summary": "Scope This document describes three failure scenarios that separate having backups from being able to recover, and the guidance that follows from each. Every scenario is reproducible on a laptop from the lab repository above, and...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/09/10/kubernetes-disaster-recovery-guidance-from-three-reproducible-failure-scenarios/",
+    "publishedDate": "2026-09-10T11:37:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "pulumi-2ca0bb3ea8f3",
+    "title": "sdk/v3.262.0: Update CheckRequest/Response to use property.Map (#24619)",
+    "summary": "Took the chance to rename some of the fields here as well, given the TODO. - // TODO Change to (State, Input) - Olds, News resource.PropertyMap - // OldOutputs is the previously persisted outputs of the resource, if any. - OldOutputs resource.PropertyMap + // NewInputs are the new inputs for the resource from the program. + NewInputs property.Map + // OldInputs are the previously persisted inputs of the resource, if any. + OldInputs property.Map + // OldOutputs are the previously persisted outpu",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.262.0",
+    "publishedDate": "2026-09-10T09:29:13.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.262.0"
+  },
+  {
+    "id": "kyverno-8c710d687790",
+    "title": "kyverno-policies-chart-3.9.1",
+    "summary": "kyverno-policies-chart-3.9.1",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-policies-chart-3.9.1",
+    "publishedDate": "2026-09-10T07:23:01.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno"
+  },
+  {
+    "id": "kyverno-4dd064779ff7",
+    "title": "kyverno-chart-3.9.1",
+    "summary": "kyverno-chart-3.9.1",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-chart-3.9.1",
+    "publishedDate": "2026-09-10T07:23:01.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno"
+  },
+  {
     "id": "kyverno-baccad3abf05",
     "title": "v1.19.1",
-    "summary": "v1.19.1",
+    "summary": "What's Changed fix: bump Go 1.26.6 and x/net to resolve CVE-2026-39821 by @Manoj-Kumar-Selvaraj in #17230 fix: update Go to address CVE-2026-56853 by @Sashang-debug in #17232 Fix missing autogen webhook expansion for NamespacedValidatingPolicy (Cherry-pick #17262) by @kyverno-pr-updater[bot] in #17273 fix: apply HTTP blocklist to apiCall.service executor (cherry-pick #17234) by @realshuting in #17298 fix: harden apiCall.service egress proxy path and cover CABundle branch (Cherry-pick #17299) by ",
     "source": "Kyverno",
     "sourceId": "kyverno",
     "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.1",
-    "publishedDate": "2026-09-10T05:28:11.000Z",
+    "publishedDate": "2026-09-10T07:22:34.000Z",
     "domain": "kubernetes",
     "topics": [
       "kyverno",
@@ -9458,24 +9552,6 @@
     "releaseVersion": "v8.20.0"
   },
   {
-    "id": "opentelemetry-d6b63128280c",
-    "title": "Don't Wrap OpenTelemetry — You're Probably Hurting More Than Helping",
-    "summary": "There&rsquo;s a pattern I&rsquo;ve seen across many teams adopting OpenTelemetry, and it&rsquo;s well-intentioned every single time. An engineer wants to make things easier for the team. They build a thin abstraction over the OTel API — an IMetric interface, a TelemetryHelper class, a MetricsWrapper module — and ship it as the team&rsquo;s standard. &ldquo;Just use this,&rdquo; they say. &ldquo;It&rsquo;s simpler.&rdquo; The intention is genuine. The outcome is usually not good.",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/dont-wrap-opentelemetry/",
-    "publishedDate": "2026-06-24T08:42:08.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "istio-7351f2860115",
     "title": "ISTIO-SECURITY-2026-005",
     "summary": "Disclosure Details CVE(s) CVE-2026-47692 CVE-2026-47207 CVE-2026-47205 CVE-2026-47220 CVE-2026-47221 CVE-2026-48044 CVE-2026-48090 CVE-2026-47778 CVE-2026-47204 CVE-2026-48497 CVE-2026-48706 CVE-2026-48743 CVE-2026-47775 CVE-2026-48042 CVSS Impact Score 7.5 CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:L/A:N Affected Releases 1.30.1 to 1.30.2 1.29.4 to 1.29.5 1.28.8 to 1.28.9 CVE Envoy CVEs GHSA-p7c7-7c47-pwch: (CVSS score 7.5): Fixed a denial-of-service vulnerability in the HTTP/3 stack via QPACK bloc",
@@ -9517,48 +9593,6 @@
     "releaseRelated": true,
     "releaseProject": "istio",
     "releaseVersion": "1.30.2"
-  },
-  {
-    "id": "istio-97340305fed2",
-    "title": "Announcing Istio 1.29.5",
-    "summary": "This release contains bug fixes to improve robustness. This release note describes what’s different between Istio 1.29.4 and 1.29.5. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Changes Fixed a brief traffic outage when changing the istio.io/rev label on a Kubernetes Gateway (or ListenerSet). The previously-owning control plane ",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/releases/1.29.x/announcing-1.29.5/",
-    "publishedDate": "2026-06-24T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "1.29.5"
-  },
-  {
-    "id": "istio-dbbfc2d80cda",
-    "title": "Announcing Istio 1.28.9",
-    "summary": "This release contains bug fixes to improve robustness. This release note describes what’s different between Istio 1.28.8 and 1.28.9. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Security update For more information, see ISTIO-SECURITY-2026-005. Envoy CVEs GHSA-p7c7-7c47-pwch: (CVSS score 7.5): Fixed a denial-of-service vulnerabi",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/releases/1.28.x/announcing-1.28.9/",
-    "publishedDate": "2026-06-24T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "1.28.9"
   },
   {
     "id": "prometheus-3a9929e72e02",
@@ -9653,43 +9687,5 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "kubernetes"
-  },
-  {
-    "id": "kubernetes-releases-cf407b9d610a",
-    "title": "v1.36.2",
-    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
-    "source": "Kubernetes Releases",
-    "sourceId": "kubernetes-releases",
-    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.36.2",
-    "publishedDate": "2026-06-12T11:34:56.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "release"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kubernetes-releases",
-    "releaseVersion": "v1.36.2"
-  },
-  {
-    "id": "kubernetes-releases-33a17fea2c29",
-    "title": "v1.35.6",
-    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
-    "source": "Kubernetes Releases",
-    "sourceId": "kubernetes-releases",
-    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.35.6",
-    "publishedDate": "2026-06-12T11:32:40.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "release"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kubernetes-releases",
-    "releaseVersion": "v1.35.6"
   }
 ]
