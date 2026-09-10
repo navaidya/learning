@@ -1,5 +1,25 @@
 [
   {
+    "id": "phoenix-efafcc788043",
+    "title": "@arizeai/phoenix-evals@2.5.0",
+    "summary": "Minor Changes 63805d0: Add createCompletenessEvaluator to judge whether every active user request in a conversation was actually completed. Patch Changes d67ea3f: Deprecate createDocumentRelevanceEvaluator in favor of createRetrievalRelevanceEvaluator. Rename documentText to context and the unrelated label to irrelevant. The deprecated factory and its types will be removed in the next major release.",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-evals%402.5.0",
+    "publishedDate": "2026-09-09T23:38:35.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "2.5.0"
+  },
+  {
     "id": "langfuse-03d1613d7626",
     "title": "v4.33.0",
     "summary": "What's Changed Features feat(public-api): optional startTime on GET /observations/{id} by @niklassemmler in #17193 feat(filters): surface has:/-has: while typing a nullable field name by @nkabardin in #16725 feat(web): add source promt name to playground window content by @tobi12345 in #17248 Fixes / Improvements fix(clickhouse): classify memory limit variants as ClickHouseResourceError by @niklassemmler in #17194 fix(blob-export): start full-history exports at the real data minimum by @niklasse",

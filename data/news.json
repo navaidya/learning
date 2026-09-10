@@ -1,5 +1,83 @@
 [
   {
+    "id": "kyverno-baccad3abf05",
+    "title": "v1.19.1",
+    "summary": "v1.19.1",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.1",
+    "publishedDate": "2026-09-10T05:28:11.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno",
+    "releaseVersion": "v1.19.1"
+  },
+  {
+    "id": "helm-ba2184aeb481",
+    "title": "Helm v3.22.0",
+    "summary": "Helm v3.22.0 is a feature release. Users are encouraged to upgrade for the best experience. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/packages Notable Changes primarily dependency updates and k8s-io group to 0.37.0 Installation and Upgrading Download ",
+    "source": "Helm",
+    "sourceId": "helm",
+    "url": "https://github.com/helm/helm/releases/tag/v3.22.0",
+    "publishedDate": "2026-09-10T00:12:40.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "helm",
+      "packaging"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "helm",
+    "releaseVersion": "v3.22.0"
+  },
+  {
+    "id": "helm-88aab34271b1",
+    "title": "Helm v4.3.0",
+    "summary": "Helm v4.3.0 is a feature release. Users are encouraged to upgrade for the best experience. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/packages Notable Changes feat: Add duration functions by @aeroyorch in #31695 feat(engine): add debug logging when loo",
+    "source": "Helm",
+    "sourceId": "helm",
+    "url": "https://github.com/helm/helm/releases/tag/v4.3.0",
+    "publishedDate": "2026-09-10T00:12:24.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "helm",
+      "packaging"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "helm",
+    "releaseVersion": "v4.3.0"
+  },
+  {
+    "id": "kubernetes-06f4b9d8c79c",
+    "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
+    "summary": "Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kubernetes-owned way to say that a Node is draining, undergoing maintenance, or undergoing Graceful Node Shutdown. Kubernetes v1.37 introduces five well-known Node conditions that provide that description: DrainInProgress Drained MaintenancePlanned MaintenanceInProgress GracefulNodeShutd",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/09/09/kubernetes-v1-37-node-lifecycle-conditions/",
+    "publishedDate": "2026-09-09T18:30:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes",
+    "releaseVersion": "v1.37"
+  },
+  {
     "id": "terraform-9e6f9c1b37a1",
     "title": "v1.17.0-beta1",
     "summary": "1.17.0-beta1 (September 09, 2026) NEW FEATURES: Terraform now supports variables and locals in provider requirements (#39153) A new -minimal-refresh planning option has been added, which will only refresh resources that have proposed changes. (#35290) policy: Terraform Policy is now generally available. The -policies flag for plan, apply, and init no longer requires the -allow-experimental-features flag. See https://developer.hashicorp.com/terraform/policy for more information. (#38970) ENHANCEM",
@@ -9481,86 +9559,6 @@
     "releaseRelated": true,
     "releaseProject": "istio",
     "releaseVersion": "1.28.9"
-  },
-  {
-    "id": "backstage-1abe732e4527",
-    "title": "v1.53.0-next.0",
-    "summary": "See docs/releases/v1.53.0-next.0-changelog.md for more information.",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.53.0-next.0",
-    "publishedDate": "2026-06-23T19:45:08.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.53.0-next.0"
-  },
-  {
-    "id": "opentofu-a55dcd90cb44",
-    "title": "v1.11.11",
-    "summary": "BUG FIXES: Fixes an incomplete OTEL dependencies upgrade from the previous patch release. (#4303) Full Changelog: v1.11.10...v1.11.11",
-    "source": "OpenTofu",
-    "sourceId": "opentofu",
-    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.11.11",
-    "publishedDate": "2026-06-23T13:24:06.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "opentofu",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentofu",
-    "releaseVersion": "v1.11.11"
-  },
-  {
-    "id": "crossplane-2b9fa812f83d",
-    "title": "v2.3.3",
-    "summary": "v2.3.3 is a patch release scoped to fixing issues reported by users of Crossplane v2.3 and fixing security related issues in Crossplane's dependencies. 🎉 Highlights Fixed package signature verification TOCTOU (GHSA-mf7q-r4rv-jv94): A time-of-check-to-time-of-use flaw could let a malicious OCI registry pass signature verification with a signed image and then serve unsigned content for installation. For v2.3 this fix ships via the crossplane-runtime v2.3.3 bump in #7541, since the affected code m",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.3.3",
-    "publishedDate": "2026-06-22T17:32:52.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v2.3.3"
-  },
-  {
-    "id": "crossplane-04c745c23d11",
-    "title": "v2.2.3",
-    "summary": "v2.2.3 is a patch release scoped to fixing issues reported by users of Crossplane v2.2 and fixing security related issues in Crossplane and its dependencies. 🎉 Highlights Fixed package signature verification TOCTOU (GHSA-wfqx-gjrf-g28r): A time-of-check-to-time-of-use flaw would let a malicious OCI registry serve a correctly signed image for verification and then an unsigned image for installation, because Crossplane resolved tag references separately for each step. Crossplane now resolves a ta",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.2.3",
-    "publishedDate": "2026-06-22T17:16:52.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v2.2.3"
   },
   {
     "id": "prometheus-3a9929e72e02",

@@ -1,5 +1,29 @@
 [
   {
+    "project": "kyverno",
+    "version": "v1.19.1",
+    "publishedDate": "2026-09-10T05:28:11.000Z",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.1",
+    "sourceId": "kyverno",
+    "title": "v1.19.1"
+  },
+  {
+    "project": "helm",
+    "version": "v3.22.0",
+    "publishedDate": "2026-09-10T00:12:40.000Z",
+    "url": "https://github.com/helm/helm/releases/tag/v3.22.0",
+    "sourceId": "helm",
+    "title": "Helm v3.22.0"
+  },
+  {
+    "project": "kubernetes",
+    "version": "v1.37",
+    "publishedDate": "2026-09-09T18:30:00.000Z",
+    "url": "https://kubernetes.io/blog/2026/09/09/kubernetes-v1-37-node-lifecycle-conditions/",
+    "sourceId": "kubernetes",
+    "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions"
+  },
+  {
     "project": "terraform",
     "version": "v1.17.0-beta1",
     "publishedDate": "2026-09-09T17:13:24.000Z",
@@ -16,14 +40,6 @@
     "title": "1.21.0-pre.2"
   },
   {
-    "project": "kyverno",
-    "version": "v1.19.1-rc.1",
-    "publishedDate": "2026-09-09T06:52:42.000Z",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.1-rc.1",
-    "sourceId": "kyverno",
-    "title": "v1.19.1-rc.1"
-  },
-  {
     "project": "istio",
     "version": "1.29",
     "publishedDate": "2026-09-09T00:00:00.000Z",
@@ -38,14 +54,6 @@
     "url": "https://github.com/backstage/backstage/releases/tag/v1.55.0-next.2",
     "sourceId": "backstage",
     "title": "v1.55.0-next.2"
-  },
-  {
-    "project": "kubernetes",
-    "version": "v1.37",
-    "publishedDate": "2026-09-08T18:30:00.000Z",
-    "url": "https://kubernetes.io/blog/2026/09/08/kubernetes-v1-37-advancing-workload-aware-scheduling/",
-    "sourceId": "kubernetes",
-    "title": "Kubernetes v1.37: Advancing Workload-Aware Scheduling"
   },
   {
     "project": "robusta",
@@ -118,14 +126,6 @@
     "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.38",
     "sourceId": "k8sgpt",
     "title": "v0.4.38"
-  },
-  {
-    "project": "helm",
-    "version": "v3.22.0-rc.1",
-    "publishedDate": "2026-08-31T22:56:05.000Z",
-    "url": "https://github.com/helm/helm/releases/tag/v3.22.0-rc.1",
-    "sourceId": "helm",
-    "title": "Helm v3.22.0-rc.1"
   },
   {
     "project": "flux",
