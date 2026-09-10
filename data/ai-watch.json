@@ -1,5 +1,21 @@
 [
   {
+    "id": "cncf-video-e4e951af804f",
+    "title": "GPU-Centric Infrastructure for AI Workloads | KubeCon Japan 2026",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/shorts/vjj-5oXwTbU",
+    "publishedDate": "2026-09-10T15:50:45.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "practical-ai-e2a6a9a9d5b2",
     "title": "Computer-Use Agents and the Future of the Agentic Internet",
     "summary": "Longtime followers of Practical AI know that multi-repeat guest and friend Demetrios Brinkmann combines brilliant insight and playful banter into one fun-filled show, and this conversion with Chris was no different. They had a blast!As AI agents become more capable of using computers, interacting with software, and taking action on behalf of users, what does that mean for the way we work and interact with the internet? Chris and Demetrios explore computer-use agents, MCP, agent harnesses, agent-",

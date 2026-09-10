@@ -1,5 +1,62 @@
 [
   {
+    "id": "oci-oke-26bb4b392861",
+    "title": "v9.1.0",
+    "summary": "9.1.0 (September 9, 2026) Added Support for Configurable fault domain Redis CRR secondary and standalone conversion support with tests and documentation Bug Fix Fix ResolverEndpoint security attributes state handling ignore empty string for maximum_surge and maximum_unavailable",
+    "source": "OCI / OKE",
+    "sourceId": "oci-oke",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.1.0",
+    "publishedDate": "2026-09-10T16:32:50.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "oci",
+      "oke",
+      "oracle"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "oci-oke",
+    "releaseVersion": "v9.1.0"
+  },
+  {
+    "id": "openai-4d4e7920d8a7",
+    "title": "Now everyone can put data to work",
+    "summary": "Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/put-data-to-work",
+    "publishedDate": "2026-09-10T15:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "pulumi-a85b5129aecd",
+    "title": "pkg/v3.262.0: Changelog and go.mod updates for v3.262.0 (#24624)",
+    "summary": "Co-authored-by: github-actions github-actions@github.com",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.262.0",
+    "publishedDate": "2026-09-10T12:16:24.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.262.0"
+  },
+  {
     "id": "pulumi-5364b560f4e5",
     "title": "v3.262.0",
     "summary": "3.262.0 (2026-09-10) Features [engine] Support importing a pulumi:index:Stash resource. The stash adopts the given id and holds a null value, and the program's configured input then applies as an update #24544 Bug Fixes [auto/go] Match wrapped errors in the Automation API error predicates, and unwrap the underlying cause #24197 [cli/deployment] Stop pulumi deployment settings edit clearing settings it was not asked to change, let --branch and --commit replace one another rather than be combined,",
@@ -9495,61 +9552,6 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "kubernetes-ac05699a13fe",
-    "title": "Spotlight on WG Device Management",
-    "summary": "The rising popularity of AI, Edge, and Telecommunications workloads on Kubernetes has led to new requirements for hardware management. We now need hardware specification beyond CPU time and memory allocations. This includes allocating GPUs, TPUs, network interfaces, and other hardware, sometimes after pod start and occasionally through time-sharing. Efficiently managing this specialized hardware is the mission of the Device Management Working Group. Their cornerstone project, Dynamic Resource Al",
-    "source": "Kubernetes",
-    "sourceId": "kubernetes",
-    "url": "https://kubernetes.io/blog/2026/06/24/wg-device-management-spotlight-2026/",
-    "publishedDate": "2026-06-24T18:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "terraform-df320918c6e5",
-    "title": "v1.16.0-alpha20260624",
-    "summary": "1.16.0-alpha20260624 (June 24, 2026) NEW FEATURES: Store PlannedPrivate data for providers (#37986) New store block in terraform_data that can handle ephemeral and sensitive values (#38298) Providers can now use nested blocks as computed values (#38305) import: add support for import blocks inside modules (#38352) We now produce builds for Linux s390x (zLinux) (#38384) workspace: The workspace list command can now produce machine-readable output when supplied with the -json flag (#38397) Resourc",
-    "source": "Terraform",
-    "sourceId": "terraform",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260624",
-    "publishedDate": "2026-06-24T14:07:22.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "terraform",
-    "releaseVersion": "v1.16.0-alpha20260624"
-  },
-  {
-    "id": "oci-oke-02e002bef669",
-    "title": "v8.20.0",
-    "summary": "8.20.0 (June 24, 2026) Added Support for API Gateway - Static Redirect URL in Authentication policy plugin Support for Ability to push OCI Log Analytics Log Group details for an OPA instance attached to the OIC Integration instance security attributes for resolverEndpoints Support for ADBS: Ability to query and find ADBS instances Bug Fix Docs for Object Storage Private Endpoint support fixed body parameter interface for functions and adbd resources",
-    "source": "OCI / OKE",
-    "sourceId": "oci-oke",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v8.20.0",
-    "publishedDate": "2026-06-24T09:06:51.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "oci",
-      "oke",
-      "oracle"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "oci-oke",
-    "releaseVersion": "v8.20.0"
   },
   {
     "id": "istio-7351f2860115",

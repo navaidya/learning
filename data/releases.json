@@ -1,11 +1,19 @@
 [
   {
+    "project": "oci-oke",
+    "version": "v9.1.0",
+    "publishedDate": "2026-09-10T16:32:50.000Z",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.1.0",
+    "sourceId": "oci-oke",
+    "title": "v9.1.0"
+  },
+  {
     "project": "pulumi",
     "version": "v3.262.0",
-    "publishedDate": "2026-09-10T11:37:48.000Z",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.262.0",
+    "publishedDate": "2026-09-10T12:16:24.000Z",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.262.0",
     "sourceId": "pulumi",
-    "title": "v3.262.0"
+    "title": "pkg/v3.262.0: Changelog and go.mod updates for v3.262.0 (#24624)"
   },
   {
     "project": "kyverno",
@@ -110,14 +118,6 @@
     "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.160.0",
     "sourceId": "opentelemetry-collector",
     "title": "v1.66.0/v0.160.0"
-  },
-  {
-    "project": "oci-oke",
-    "version": "v9.0.0",
-    "publishedDate": "2026-09-02T08:54:23.000Z",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.0.0",
-    "sourceId": "oci-oke",
-    "title": "v9.0.0"
   },
   {
     "project": "k8sgpt",
