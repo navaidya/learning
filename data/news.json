@@ -1,5 +1,82 @@
 [
   {
+    "id": "backstage-0ea3350529d2",
+    "title": "v1.49.7",
+    "summary": "This patch release improves OAuth profile normalization when processing email verification information.",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.49.7",
+    "publishedDate": "2026-09-11T11:55:25.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.49.7"
+  },
+  {
+    "id": "opentelemetry-56832c497b28",
+    "title": "Help us stabilize environment variable context propagation",
+    "summary": "A trace does not always cross a network boundary. A workflow runner starts a shell, the shell launches a build tool, and the build tool starts test processes. Batch and data-processing systems create similar chains of child processes. Without a shared way to pass trace information across these boundaries, spans from each process can end up in separate traces. If context propagation is new to you, it is the mechanism that carries information from one service or process to the next. For tracing, t",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/environment-variable-context-propagation/",
+    "publishedDate": "2026-09-11T11:01:22.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-cb2a80d50b55",
+    "title": "Building a reliable cloud native foundation for distributed AI training",
+    "summary": "AI workloads are changing what platform teams need from infrastructure. Provisioning GPUs and standing up a cluster no longer makes a platform “AI-ready.” Once training spans more than one node, the bottlenecks show up in places...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/09/11/building-a-reliable-cloud-native-foundation-for-distributed-ai-training/",
+    "publishedDate": "2026-09-11T11:00:00.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "backstage-b9a6349504e1",
+    "title": "v1.54.7",
+    "summary": "This patch release improves OAuth profile normalization when processing email verification information.",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.7",
+    "publishedDate": "2026-09-11T10:50:32.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.54.7"
+  },
+  {
     "id": "vector-765a97fd97a9",
     "title": "vdev-v0.3.19",
     "summary": "No content.",
@@ -9454,81 +9531,6 @@
     ],
     "importance": "medium",
     "architectureShift": true,
-    "releaseRelated": false
-  },
-  {
-    "id": "backstage-2bba37e32855",
-    "title": "v1.52.1",
-    "summary": "This patch release fixes the following issues: Internal refactor of the specialized app sign-in runtime to initialize it once instead of reassigning it. Fix scheduler tasks stuck with NULL next_run_start_at when switching from manual trigger to cadence Fix broken configuration schema in @backstage/plugin-kubernetes-react.",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.52.1",
-    "publishedDate": "2026-06-26T15:03:55.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "platform-engineering",
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.52.1"
-  },
-  {
-    "id": "terraform-30162d1e586d",
-    "title": "v1.16.0-alpha20260626",
-    "summary": "1.16.0-alpha20260626 (June 26, 2026) NEW FEATURES: Store PlannedPrivate data for providers (#37986) New store block in terraform_data that can handle ephemeral and sensitive values (#38298) Providers can now use nested blocks as computed values (#38305) import: add support for import blocks inside modules (#38352) We now produce builds for Linux s390x (zLinux) (#38384) workspace: The workspace list command can now produce machine-readable output when supplied with the -json flag (#38397) Resourc",
-    "source": "Terraform",
-    "sourceId": "terraform",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260626",
-    "publishedDate": "2026-06-26T09:03:31.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "terraform",
-    "releaseVersion": "v1.16.0-alpha20260626"
-  },
-  {
-    "id": "kubernetes-d1d40c7f7a99",
-    "title": "Introducing the Cluster API plugin for Headlamp",
-    "summary": "Headlamp is an open-source, extensible Kubernetes SIG UI project designed to let you explore, manage, and debug cluster resources directly from a browser. Cluster API (CAPI) is a Kubernetes sub-project that brings declarative, Kubernetes-style APIs to cluster lifecycle management. It lets platform teams provision, upgrade, and manage the lifecycle of Kubernetes clusters using standard Kubernetes objects stored and reconciled in a management cluster. Managing Cluster API resources has historicall",
-    "source": "Kubernetes",
-    "sourceId": "kubernetes",
-    "url": "https://kubernetes.io/blog/2026/06/25/headlamp-cluster-api-plugin/",
-    "publishedDate": "2026-06-25T22:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "hashicorp-f5b19b1b4c2a",
-    "title": "Deploy Boundary on Kubernetes with official Helm charts",
-    "summary": "HashiCorp Boundary now offers official Helm charts for deploying controllers and workers on Kubernetes. Learn which chart fits your deployment model and how to get started.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/deploy-boundary-on-kubernetes-with-official-helm-charts",
-    "publishedDate": "2026-06-25T22:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
     "releaseRelated": false
   },
   {

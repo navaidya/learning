@@ -1,5 +1,45 @@
 [
   {
+    "id": "falco-99ca35fad25b",
+    "title": "0.45.0-rc2",
+    "summary": "chore(cmake): bump libs to `0.26.0-rc2` Pin `FALCOSECURITY_LIBS_VERSION` to the `0.26.0-rc2` tag, cut from the libs `release/0.26.x` branch. `DRIVER_VERSION` stays at `11.0.0-rc1+driver` (no driver changes since `0.26.0-rc1`). Signed-off-by: Leonardo Grasso <me@leonardograsso.com>",
+    "source": "Falco",
+    "sourceId": "falco",
+    "url": "https://github.com/falcosecurity/falco/releases/tag/0.45.0-rc2",
+    "publishedDate": "2026-09-11T08:19:21.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "infrastructure-security",
+      "release",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "falco",
+    "releaseVersion": "0.45.0-rc2"
+  },
+  {
+    "id": "langfuse-f2d08ba32bfa",
+    "title": "v4.34.0",
+    "summary": "What's Changed Features feat(api): say legacy endpoints delay data by about 10 minutes by @maxdeichmann in #17260 feat(api): attach _deprecation to successful legacy ingestion writes by @maxdeichmann in #17261 feat(sessions): Redesigned timeline by @bezbac in #17016 feat(auth): add user-triggered session revocation by @marksalpeter in #17255 feat(ai-gateway): bootstrap Rust service and development workflow by @hassiebp in #17188 feat(gateway): add organization control plane by @wochinge in #1708",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.34.0",
+    "publishedDate": "2026-09-11T08:17:01.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.34.0"
+  },
+  {
     "id": "cncf-video-75295f3a12aa",
     "title": "Agentic RAG on Kubeflow - Rohit Kumar, Oracle & Santhosh T, Zenoti",
     "source": "CNCF YouTube",
