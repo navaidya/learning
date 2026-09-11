@@ -77,6 +77,24 @@
     "releaseVersion": "v1.54.7"
   },
   {
+    "id": "openai-c7d3c8aeae42",
+    "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+    "summary": "Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
+    "publishedDate": "2026-09-11T10:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "vector-765a97fd97a9",
     "title": "vdev-v0.3.19",
     "summary": "No content.",
@@ -9513,24 +9531,6 @@
     ],
     "importance": "medium",
     "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "hashicorp-116b77b2d03d",
-    "title": "Terraform MCP server: Four real-world AI infrastructure patterns",
-    "summary": "Discover how Terraform MCP Server helps AI agents make better infrastructure decisions using trusted organizational context and guardrails.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/terraform-mcp-server-four-real-world-ai-infrastructure-patterns",
-    "publishedDate": "2026-06-26T16:00:00.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": true,
     "releaseRelated": false
   },
   {

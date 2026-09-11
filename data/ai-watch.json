@@ -1,5 +1,45 @@
 [
   {
+    "id": "phoenix-e13d671b8cc9",
+    "title": "arize-phoenix-evals: v3.8.0",
+    "summary": "3.8.0 (2026-09-11) Features evals: add retrieval relevance evaluator (#14766) (7efa7b2) evals: add session-level pii_detection evaluator (#15096) (0e3b2c2) evals: completeness evaluator (#15767) (63805d0) evals: deprecate document relevance evaluators (#15991) (d67ea3f) Bug Fixes evals: use non-blocking sleep in async rate limiter (#15404) (2ecfd47) upgrade to anthropic SDK v1 (#15588) (b28cf94)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-evals-v3.8.0",
+    "publishedDate": "2026-09-11T16:37:25.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v3.8.0"
+  },
+  {
+    "id": "langfuse-98084498a67d",
+    "title": "v4.35.0",
+    "summary": "What's Changed Features feat(filters): unify sidebar search and saved views by @nkabardin in #17316 feat(experiments): name the expected variables when a dataset does not match by @nkabardin in #17275 feat(experiments): colour-code the compared runs, align a score cell's icons, and lighten the dark-mode red by @nkabardin in #17277 feat(evals): polish evaluator controls and version history by @wochinge in #17315 feat(session): Timeline UI improvements by @bezbac in #17313 feat(sessions): Add obse",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.35.0",
+    "publishedDate": "2026-09-11T12:39:21.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.35.0"
+  },
+  {
     "id": "falco-99ca35fad25b",
     "title": "0.45.0-rc2",
     "summary": "chore(cmake): bump libs to `0.26.0-rc2` Pin `FALCOSECURITY_LIBS_VERSION` to the `0.26.0-rc2` tag, cut from the libs `release/0.26.x` branch. `DRIVER_VERSION` stays at `11.0.0-rc1+driver` (no driver changes since `0.26.0-rc1`). Signed-off-by: Leonardo Grasso <me@leonardograsso.com>",
