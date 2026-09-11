@@ -1,5 +1,27 @@
 [
   {
+    "id": "phoenix-a917af954263",
+    "title": "arize-phoenix: v20.10.0",
+    "summary": "20.10.0 (2026-09-11) Features add Claude Code plugin and marketplace (ff2abd8) add installable Phoenix Codex plugin (bdb3178) dsl: span-level cost filtering (#15172) (9cad275) evals: completeness evaluator (#15767) (63805d0) filters: support filtering annotations by identifier (#15817) (6e4c368) mcp: add a Cursor plugin for the remote MCP server and public skills (570d280) mcp: include the Phoenix docs MCP in the Cursor plugin (75fd29c) prompts: expose version metadata in GraphQL (#15979) (4595e",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.10.0",
+    "publishedDate": "2026-09-11T18:07:58.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v20.10.0"
+  },
+  {
     "id": "phoenix-e13d671b8cc9",
     "title": "arize-phoenix-evals: v3.8.0",
     "summary": "3.8.0 (2026-09-11) Features evals: add retrieval relevance evaluator (#14766) (7efa7b2) evals: add session-level pii_detection evaluator (#15096) (0e3b2c2) evals: completeness evaluator (#15767) (63805d0) evals: deprecate document relevance evaluators (#15991) (d67ea3f) Bug Fixes evals: use non-blocking sleep in async rate limiter (#15404) (2ecfd47) upgrade to anthropic SDK v1 (#15588) (b28cf94)",
