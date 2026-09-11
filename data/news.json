@@ -19,6 +19,24 @@
     "releaseProject": "vector"
   },
   {
+    "id": "kubernetes-e2763381898a",
+    "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)",
+    "summary": "In Kubernetes, resource allocation has historically been a static decision made during a Pod's initial scheduling and placement. With the graduation of the core in-Place Pod resize feature to General Availability in v1.35, application developers and cluster operators gained the powerful ability to dynamically adjust CPU and memory allocations of running containers without incurring disruptive restarts or application downtime. However, in-place resizing introduced a unique resource scheduling gap",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/09/10/kubernetes-v1-37-scheduler-preemption-for-in-place-pod-resize-alpha/",
+    "publishedDate": "2026-09-10T18:30:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes",
+    "releaseVersion": "v1.37"
+  },
+  {
     "id": "oci-oke-26bb4b392861",
     "title": "v9.1.0",
     "summary": "9.1.0 (September 9, 2026) Added Support for Configurable fault domain Redis CRR secondary and standalone conversion support with tests and documentation Bug Fix Fix ResolverEndpoint security attributes state handling ignore empty string for maximum_surge and maximum_unavailable",
@@ -9508,22 +9526,6 @@
       "terraform",
       "vault",
       "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "kubernetes-ee676b54de8e",
-    "title": "Inspect Volcano workloads faster with Headlamp",
-    "summary": "Volcano is a cloud native batch scheduler for Kubernetes, built for high-performance computing, AI/ML, and other batch workloads. Headlamp is an extensible Kubernetes web UI. With its plugin system, Headlamp can surface APIs and workflows beyond the built-in Kubernetes resources. The Volcano plugin brings core Volcano resources into Headlamp so you can inspect workload state, queue behavior, and gang scheduling details in one place. Kubernetes was originally designed around long-running services",
-    "source": "Kubernetes",
-    "sourceId": "kubernetes",
-    "url": "https://kubernetes.io/blog/2026/06/25/visual-context-volcano-headlamp-plugin/",
-    "publishedDate": "2026-06-25T20:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes"
     ],
     "importance": "medium",
     "architectureShift": false,
