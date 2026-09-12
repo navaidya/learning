@@ -1,5 +1,24 @@
 [
   {
+    "id": "kubernetes-b23e96a33235",
+    "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
+    "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 under KEP-5808) bring high-resolution, low-cardinality observability to Kubernetes metrics. By adopting Prometheus Native Histograms, Kubernetes components now expose latency and duration metrics with far greater accuracy while significantly reducing telemetry storage and scraping ov",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/",
+    "publishedDate": "2026-09-11T18:30:00.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "kubernetes"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes",
+    "releaseVersion": "v1.37"
+  },
+  {
     "id": "backstage-0ea3350529d2",
     "title": "v1.49.7",
     "summary": "This patch release improves OAuth profile normalization when processing email verification information.",
@@ -9516,22 +9535,6 @@
     "releaseRelated": true,
     "releaseProject": "robusta",
     "releaseVersion": "0.43.0-alpha"
-  },
-  {
-    "id": "kubernetes-99dd9b0bb40a",
-    "title": "Open source maintainership in the age of AI",
-    "summary": "AI has really changed the game around software development. More people are leveraging AI than ever to contribute patches to projects they use. To me, this is a good thing as more folks will contribute patches rather than fork or not fix them. The main problem is that AI has made generating code fast but there has been very little improvement in maintaining code bases. In this post, we will highlight the ways the Kubernetes community is adapting to the world of AI assisted coding. The first step",
-    "source": "Kubernetes",
-    "sourceId": "kubernetes",
-    "url": "https://kubernetes.io/blog/2026/06/26/open-source-maintainership-in-the-age-of-ai/",
-    "publishedDate": "2026-06-26T18:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "kubernetes-releases-c46ce11c2019",

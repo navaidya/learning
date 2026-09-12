@@ -1,5 +1,68 @@
 [
   {
+    "id": "phoenix-ae3bad79cd84",
+    "title": "arize-phoenix: v20.11.0",
+    "summary": "20.11.0 (2026-09-12) Features annotations: add GraphQL mutations for span, trace, and session notes (#16053) (e374a4d) mcp: serve the shared skills root on the /mcp mount (#15726) (dd2e22d) skills: add phoenix-error-analysis skill (#15727) (df349f2) Bug Fixes mcp: carry lifespan state into in-process tool dispatch (#16109) (a516ac3) Documentation restructure the Claude Code plugin docs as its own section (400d187)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.11.0",
+    "publishedDate": "2026-09-12T04:26:27.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v20.11.0"
+  },
+  {
+    "id": "phoenix-91c7cdff1f8d",
+    "title": "arize-phoenix-sqlean: v0.1.2",
+    "summary": "0.1.2 (2026-09-12) Bug Fixes phoenix-sqlean: fix memory-safety and correctness bugs in the C driver (#14546) (6f2d5e9)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-sqlean-v0.1.2",
+    "publishedDate": "2026-09-12T03:54:59.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v0.1.2"
+  },
+  {
+    "id": "pydantic-ai-11a1a84e460f",
+    "title": "v2.43.0 (2026-09-11)",
+    "summary": "What's Changed 🚀 Features Add a first-run banner describing the run, and open clai sessions with it by @DouweM in #7447 🐛 Bug Fixes Preserve text part boundaries after tool calls in OpenAIChatModel by @KaranJayakumar in #8235 fix(temporal): key tool opt-out checks on operation kind, not an MCP import by @adtyavrdhn in #8257 New Contributors @KaranJayakumar made their first contribution in #8235 Full Changelog: v2.42.0...v2.43.0",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.43.0",
+    "publishedDate": "2026-09-12T00:54:42.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-development",
+      "release"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.43.0"
+  },
+  {
     "id": "phoenix-a917af954263",
     "title": "arize-phoenix: v20.10.0",
     "summary": "20.10.0 (2026-09-11) Features add Claude Code plugin and marketplace (ff2abd8) add installable Phoenix Codex plugin (bdb3178) dsl: span-level cost filtering (#15172) (9cad275) evals: completeness evaluator (#15767) (63805d0) filters: support filtering annotations by identifier (#15817) (6e4c368) mcp: add a Cursor plugin for the remote MCP server and public skills (570d280) mcp: include the Phoenix docs MCP in the Cursor plugin (75fd29c) prompts: expose version metadata in GraphQL (#15979) (4595e",

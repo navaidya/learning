@@ -1,19 +1,19 @@
 [
   {
+    "project": "kubernetes",
+    "version": "v1.37",
+    "publishedDate": "2026-09-11T18:30:00.000Z",
+    "url": "https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/",
+    "sourceId": "kubernetes",
+    "title": "Kubernetes v1.37: Native Histograms Graduates to Beta"
+  },
+  {
     "project": "backstage",
     "version": "v1.49.7",
     "publishedDate": "2026-09-11T11:55:25.000Z",
     "url": "https://github.com/backstage/backstage/releases/tag/v1.49.7",
     "sourceId": "backstage",
     "title": "v1.49.7"
-  },
-  {
-    "project": "kubernetes",
-    "version": "v1.37",
-    "publishedDate": "2026-09-10T18:30:00.000Z",
-    "url": "https://kubernetes.io/blog/2026/09/10/kubernetes-v1-37-scheduler-preemption-for-in-place-pod-resize-alpha/",
-    "sourceId": "kubernetes",
-    "title": "Kubernetes v1.37: Scheduler Preemption for In-Place Pod Resize (Alpha)"
   },
   {
     "project": "oci-oke",
