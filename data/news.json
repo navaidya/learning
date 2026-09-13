@@ -9537,6 +9537,22 @@
     "releaseVersion": "0.43.0-alpha"
   },
   {
+    "id": "kubernetes-99dd9b0bb40a",
+    "title": "Open source maintainership in the age of AI",
+    "summary": "AI has really changed the game around software development. More people are leveraging AI than ever to contribute patches to projects they use. To me, this is a good thing as more folks will contribute patches rather than fork or not fix them. The main problem is that AI has made generating code fast but there has been very little improvement in maintaining code bases. In this post, we will highlight the ways the Kubernetes community is adapting to the world of AI assisted coding. The first step",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/06/26/open-source-maintainership-in-the-age-of-ai/",
+    "publishedDate": "2026-06-26T18:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "kubernetes-releases-c46ce11c2019",
     "title": "v1.37.0-alpha.2",
     "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
@@ -9674,22 +9690,5 @@
     "importance": "critical",
     "architectureShift": true,
     "releaseRelated": false
-  },
-  {
-    "id": "kubernetes-c0ff8866ebff",
-    "title": "Spotlight on SIG Storage",
-    "summary": "In our ongoing SIG Spotlight series, we shine a light on the groups that keep the Kubernetes project moving forward. This time, we catch up with SIG Storage, the group responsible for persistent data, volume management, and the interfaces that connect Kubernetes workloads to the storage systems beneath them. We spoke with Xing Yang, Co-Chair of SIG Storage and Software Engineer at VMware by Broadcom, about the SIG's history, the features shipping in recent Kubernetes releases, and where storage ",
-    "source": "Kubernetes",
-    "sourceId": "kubernetes",
-    "url": "https://kubernetes.io/blog/2026/06/15/sig-storage-spotlight-2026/",
-    "publishedDate": "2026-06-15T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kubernetes"
   }
 ]
