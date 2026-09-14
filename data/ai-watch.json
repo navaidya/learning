@@ -1,5 +1,63 @@
 [
   {
+    "id": "phoenix-46fa827ac426",
+    "title": "arize-phoenix: v20.12.0",
+    "summary": "20.12.0 (2026-09-14) Features api: expose trace and session filter expressions (#16077) (d613de7) server: add GET /datasets/{dataset_identifier}/splits (e60697f), closes #12090 Bug Fixes cost: update built-in model token prices (25b95d7) server: address review findings for GET /datasets/{dataset_identifier}/splits (655802b) server: scope listed dataset splits by example membership only (eafa87c)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.12.0",
+    "publishedDate": "2026-09-14T20:34:55.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v20.12.0"
+  },
+  {
+    "id": "otel-ai-6c9203505e82",
+    "title": "Inside the LLM Call: GenAI Observability with OpenTelemetry",
+    "summary": "Your AI agent just took 45 seconds to answer a simple question. Was it the model? A slow tool call? A retry loop? Every time an application calls an LLM, a chain of model calls, tool invocations, and token exchanges happens behind the scenes — and without observability, you are guessing. The OpenTelemetry Semantic Conventions for Generative AI give you that visibility. They standardize how GenAI operations are recorded — the model being called, input and output token counts, and when opted in, t",
+    "source": "OpenTelemetry",
+    "sourceId": "otel-ai",
+    "url": "https://opentelemetry.io/blog/2026/genai-observability/",
+    "publishedDate": "2026-09-14T16:56:42.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "news"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "langfuse-4616844844b0",
+    "title": "v4.36.0",
+    "summary": "What's Changed Features feat(ai-gateway): relay authenticated OpenAI Responses requests by @hassiebp in #17352 feat(filters): replace search scope dropdowns with inline suggestions by @nkabardin in #17350 feat(table): use one column popover across all tables by @nkabardin in #17368 feat(traces): add waterfall to breakdown tooltips by @hassiebp in #17407 feat(web): Allow users to toggle session timeline by @bezbac in #17424 feat(worker): make event propagation block sizes configurable by @maxdeic",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.36.0",
+    "publishedDate": "2026-09-14T15:13:22.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.36.0"
+  },
+  {
     "id": "phoenix-ae3bad79cd84",
     "title": "arize-phoenix: v20.11.0",
     "summary": "20.11.0 (2026-09-12) Features annotations: add GraphQL mutations for span, trace, and session notes (#16053) (e374a4d) mcp: serve the shared skills root on the /mcp mount (#15726) (dd2e22d) skills: add phoenix-error-analysis skill (#15727) (df349f2) Bug Fixes mcp: carry lifespan state into in-process tool dispatch (#16109) (a516ac3) Documentation restructure the Claude Code plugin docs as its own section (400d187)",
@@ -637,24 +695,6 @@
     "releaseRelated": true,
     "releaseProject": "pydantic-ai",
     "releaseVersion": "v2.41.0"
-  },
-  {
-    "id": "otel-ai-6c9203505e82",
-    "title": "Inside the LLM Call: GenAI Observability with OpenTelemetry",
-    "summary": "Your AI agent just took 45 seconds to answer a simple question. Was it the model? A slow tool call? A retry loop? Every time an application calls an LLM, a chain of model calls, tool invocations, and token exchanges happens behind the scenes — and without observability, you are guessing. The OpenTelemetry Semantic Conventions for Generative AI give you that visibility. They standardize how GenAI operations are recorded — the model being called, input and output token counts, and when opted in, t",
-    "source": "OpenTelemetry",
-    "sourceId": "otel-ai",
-    "url": "https://opentelemetry.io/blog/2026/genai-observability/",
-    "publishedDate": "2026-09-07T06:21:15.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "agent-observability",
-      "news"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "pydantic-ai-8bcd7f7d593c",

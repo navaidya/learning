@@ -1,8 +1,32 @@
 [
   {
+    "project": "opentelemetry-collector",
+    "version": "v0.161.0",
+    "publishedDate": "2026-09-14T21:27:02.000Z",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/service%2Ftelemetry%2Ftelemetrytest%2Fv0.161.0",
+    "sourceId": "opentelemetry-collector",
+    "title": "service/telemetry/telemetrytest/v0.161.0"
+  },
+  {
+    "project": "prometheus",
+    "version": "3.15.0-rc.0",
+    "publishedDate": "2026-09-14T19:17:49.000Z",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.15.0-rc.0",
+    "sourceId": "prometheus",
+    "title": "3.15.0-rc.0 / 2026-09-09"
+  },
+  {
+    "project": "kubernetes",
+    "version": "v1.37",
+    "publishedDate": "2026-09-14T18:30:00.000Z",
+    "url": "https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/",
+    "sourceId": "kubernetes",
+    "title": "Kubernetes v1.37: Memory QoS Graduates to Beta"
+  },
+  {
     "project": "k8sgpt",
     "version": "v0.4.39",
-    "publishedDate": "2026-09-14T13:57:22.000Z",
+    "publishedDate": "2026-09-14T14:25:02.000Z",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.39",
     "sourceId": "k8sgpt",
     "title": "v0.4.39"
@@ -22,14 +46,6 @@
     "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.3",
     "sourceId": "argo",
     "title": "v3.5.3"
-  },
-  {
-    "project": "kubernetes",
-    "version": "v1.37",
-    "publishedDate": "2026-09-11T18:30:00.000Z",
-    "url": "https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/",
-    "sourceId": "kubernetes",
-    "title": "Kubernetes v1.37: Native Histograms Graduates to Beta"
   },
   {
     "project": "backstage",
@@ -112,14 +128,6 @@
     "title": "0.41.0"
   },
   {
-    "project": "prometheus",
-    "version": "3.13.3",
-    "publishedDate": "2026-09-07T14:18:03.000Z",
-    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.13.3",
-    "sourceId": "prometheus",
-    "title": "3.13.3 / 2026-09-07"
-  },
-  {
     "project": "containerd",
     "version": "1.7.35",
     "publishedDate": "2026-09-04T21:17:15.000Z",
@@ -134,14 +142,6 @@
     "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.2",
     "sourceId": "gateway-api",
     "title": "v1.6.2"
-  },
-  {
-    "project": "opentelemetry-collector",
-    "version": "v1.66.0",
-    "publishedDate": "2026-09-02T14:38:58.000Z",
-    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.160.0",
-    "sourceId": "opentelemetry-collector",
-    "title": "v1.66.0/v0.160.0"
   },
   {
     "project": "flux",

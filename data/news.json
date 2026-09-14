@@ -1,12 +1,333 @@
 [
   {
+    "id": "opentelemetry-collector-7a34112d805e",
+    "title": "service/telemetry/telemetrytest/v0.161.0",
+    "summary": "Module set beta, Version v0.161.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/service%2Ftelemetry%2Ftelemetrytest%2Fv0.161.0",
+    "publishedDate": "2026-09-14T21:27:02.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.161.0"
+  },
+  {
+    "id": "opentelemetry-collector-3fffac4eaafc",
+    "title": "service/v0.161.0",
+    "summary": "Module set beta, Version v0.161.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/service%2Fv0.161.0",
+    "publishedDate": "2026-09-14T21:27:01.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.161.0"
+  },
+  {
+    "id": "opentelemetry-collector-ea57844c2462",
+    "title": "service/hostcapabilities/v0.161.0",
+    "summary": "Module set beta, Version v0.161.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/service%2Fhostcapabilities%2Fv0.161.0",
+    "publishedDate": "2026-09-14T21:27:01.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.161.0"
+  },
+  {
+    "id": "opentelemetry-collector-dd9e2fedbb24",
+    "title": "scraper/xscraper/v0.161.0",
+    "summary": "Module set beta, Version v0.161.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fxscraper%2Fv0.161.0",
+    "publishedDate": "2026-09-14T21:27:01.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.161.0"
+  },
+  {
+    "id": "opentelemetry-collector-815d299ea377",
+    "title": "scraper/scrapertest/v0.161.0",
+    "summary": "Module set beta, Version v0.161.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fscrapertest%2Fv0.161.0",
+    "publishedDate": "2026-09-14T21:27:01.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.161.0"
+  },
+  {
+    "id": "opentelemetry-collector-d1a736861435",
+    "title": "scraper/scraperhelper/xscraperhelper/v0.161.0",
+    "summary": "Module set beta, Version v0.161.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fscraperhelper%2Fxscraperhelper%2Fv0.161.0",
+    "publishedDate": "2026-09-14T21:27:01.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.161.0"
+  },
+  {
+    "id": "opentelemetry-collector-5e9edb25427f",
+    "title": "scraper/scraperhelper/v0.161.0",
+    "summary": "Module set beta, Version v0.161.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fscraperhelper%2Fv0.161.0",
+    "publishedDate": "2026-09-14T21:27:01.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.161.0"
+  },
+  {
+    "id": "opentelemetry-collector-4c5da2169918",
+    "title": "scraper/v0.161.0",
+    "summary": "Module set beta, Version v0.161.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fv0.161.0",
+    "publishedDate": "2026-09-14T21:27:00.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.161.0"
+  },
+  {
+    "id": "opentelemetry-collector-f0dbfc98ad62",
+    "title": "receiver/xreceiver/v0.161.0",
+    "summary": "Module set beta, Version v0.161.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/receiver%2Fxreceiver%2Fv0.161.0",
+    "publishedDate": "2026-09-14T21:27:00.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.161.0"
+  },
+  {
+    "id": "opentelemetry-collector-211ca593d3a1",
+    "title": "v0.161.0",
+    "summary": "Module set beta, Version v0.161.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.161.0",
+    "publishedDate": "2026-09-14T21:26:50.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.161.0"
+  },
+  {
+    "id": "prometheus-0ad0c326dcc7",
+    "title": "3.15.0-rc.0 / 2026-09-09",
+    "summary": "[CHANGE] PromQL: A range query whose end was not aligned to step caused subqueries inside it to evaluate past the parent's last actual step, inflating peakSamples in the query stats and against the query.max-samples limit, and wasting storage I/O reading samples that were never used in the result. Add tests to prevent regression of the fix made in #18081. #18598 [CHANGE] PromQL: Do not register a start timestamp reset if the start timestamp hasn't changed between subsequent samples. #19454 [CHAN",
+    "source": "Prometheus",
+    "sourceId": "prometheus",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.15.0-rc.0",
+    "publishedDate": "2026-09-14T19:17:49.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "promql",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "prometheus",
+    "releaseVersion": "3.15.0-rc.0"
+  },
+  {
+    "id": "prometheus-1b8628004d54",
+    "title": "v0.315.0-rc.0",
+    "summary": "v0.315.0-rc.0",
+    "source": "Prometheus",
+    "sourceId": "prometheus",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v0.315.0-rc.0",
+    "publishedDate": "2026-09-14T18:41:42.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "promql",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "prometheus",
+    "releaseVersion": "v0.315.0-rc.0"
+  },
+  {
+    "id": "kubernetes-4b75b9864fa0",
+    "title": "Kubernetes v1.37: Memory QoS Graduates to Beta",
+    "summary": "Memory QoS has graduated to Beta in Kubernetes v1.37 and is now enabled by default. On Linux nodes running cgroup v2, the feature uses the memory controller to give the kernel better guidance on how to treat container memory. It was first introduced as Alpha in v1.22, and expanded in v1.36 with tiered memory reservation. This post covers what changed in v1.37, what the Beta promotion means for cluster operators, and how to configure the feature. What changed in v1.37Memory QoS is Beta and enable",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/",
+    "publishedDate": "2026-09-14T18:30:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes",
+    "releaseVersion": "v1.37"
+  },
+  {
+    "id": "kubernetes-081539c8be00",
+    "title": "Kubernetes Changed Block Tracking API - Beta Differences",
+    "summary": "Changed Block Tracking (CBT) support for CSI drivers shipped as Alpha in September 2025. With the March 2026 v1.0.0 release of the external-snapshot-metadata project, the feature moved to Beta. If you aren't yet familiar with changed block tracking for storage in Kubernetes, the Alpha announcement covers the motivation, the three primary components (the CSI SnapshotMetadata gRPC service, the SnapshotMetadataService CRD, and the external-snapshot-metadata sidecar), and a walkthrough of how to use",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/09/14/csi-changed-block-tracking-beta/",
+    "publishedDate": "2026-09-14T18:30:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes",
+    "releaseVersion": "v1.0.0"
+  },
+  {
+    "id": "grafana-585608a8bdff",
+    "title": "Digital Experience Monitoring with Grafana Cloud: Session Replay, synthetic checks, and faster investigations",
+    "summary": "When something breaks in production, the questions that matter most are also the toughest to answer from metrics alone: who was affected, what did they actually see, and is this worth waking someone up for? Answering those questions requires a fuller picture of the issue and its impact on your users. That’s where Digital Experience Monitoring (DEM) in Grafana Cloud comes in. By combining Frontend Observability and Synthetic Monitoring, DEM connects real user experiences with proactive testing, h",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/digital-experience-monitoring-with-grafana-cloud-session-replay-synthetic-checks-and-faster-investigations/",
+    "publishedDate": "2026-09-14T18:02:58.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "opentelemetry-6c9203505e82",
+    "title": "Inside the LLM Call: GenAI Observability with OpenTelemetry",
+    "summary": "Your AI agent just took 45 seconds to answer a simple question. Was it the model? A slow tool call? A retry loop? Every time an application calls an LLM, a chain of model calls, tool invocations, and token exchanges happens behind the scenes — and without observability, you are guessing. The OpenTelemetry Semantic Conventions for Generative AI give you that visibility. They standardize how GenAI operations are recorded — the model being called, input and output token counts, and when opted in, t",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/genai-observability/",
+    "publishedDate": "2026-09-14T16:56:42.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "k8sgpt-25f98b32b4d6",
     "title": "v0.4.39",
     "summary": "0.4.39 (2026-09-14) Features add --resource flag to analyze a single resource (#1761) (6863057) add ValidatingAdmissionPolicy analyzer (#1765) (c520d4a) Bug Fixes anonymise resource names in event-derived failures (#1778) (1813838) deps: update module google.golang.org/grpc to v1.83.1 [security] (#1772) (e69dbc7) deps: update module google.golang.org/grpc to v1.83.2 [security] (#1780) (9c515b0) do not also report an unsupported scaleTargetRef as missing (#1729) (48737a8) filter service events by",
     "source": "K8sGPT",
     "sourceId": "k8sgpt",
     "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.39",
-    "publishedDate": "2026-09-14T13:57:22.000Z",
+    "publishedDate": "2026-09-14T14:25:02.000Z",
     "domain": "aiops",
     "topics": [
       "k8sgpt",
@@ -1004,24 +1325,6 @@
     "releaseRelated": true,
     "releaseProject": "prometheus",
     "releaseVersion": "v0.313.3"
-  },
-  {
-    "id": "opentelemetry-6c9203505e82",
-    "title": "Inside the LLM Call: GenAI Observability with OpenTelemetry",
-    "summary": "Your AI agent just took 45 seconds to answer a simple question. Was it the model? A slow tool call? A retry loop? Every time an application calls an LLM, a chain of model calls, tool invocations, and token exchanges happens behind the scenes — and without observability, you are guessing. The OpenTelemetry Semantic Conventions for Generative AI give you that visibility. They standardize how GenAI operations are recorded — the model being called, input and output token counts, and when opted in, t",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/genai-observability/",
-    "publishedDate": "2026-09-07T06:21:15.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "holmesgpt-c46f13b9572f",
@@ -9224,163 +9527,6 @@
     "releaseVersion": "v3.7.0"
   },
   {
-    "id": "oci-oke-6ac3af8bc986",
-    "title": "v8.22.0",
-    "summary": "8.22.0 (July 8, 2026) Added Support generic WorkloadIdentityFederation authentication for non-OKE kubernetes Bug Fix Fix IPv6 semantic diff suppression for core VNIC pair details oci_psa_private_service_access resource discovery Improve events rule condition and action schema",
-    "source": "OCI / OKE",
-    "sourceId": "oci-oke",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v8.22.0",
-    "publishedDate": "2026-07-08T11:31:46.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "oci",
-      "oke",
-      "oracle"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "oci-oke",
-    "releaseVersion": "v8.22.0"
-  },
-  {
-    "id": "terraform-ee0fcbbd470c",
-    "title": "v1.16.0-alpha20260708",
-    "summary": "1.16.0-alpha20260708 (July 08, 2026) NEW FEATURES: Store PlannedPrivate data for providers (#37986) New store block in terraform_data that can handle ephemeral and sensitive values (#38298) Providers can now use nested blocks as computed values (#38305) import: add support for import blocks inside modules (#38352) We now produce builds for Linux s390x (zLinux) (#38384) workspace: The workspace list command can now produce machine-readable output when supplied with the -json flag (#38397) Resourc",
-    "source": "Terraform",
-    "sourceId": "terraform",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260708",
-    "publishedDate": "2026-07-08T09:19:38.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "terraform",
-    "releaseVersion": "v1.16.0-alpha20260708"
-  },
-  {
-    "id": "backstage-5696fb7d4dcf",
-    "title": "v1.53.0-next.2",
-    "summary": "See docs/releases/v1.53.0-next.2-changelog.md for more information.",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.53.0-next.2",
-    "publishedDate": "2026-07-07T16:57:43.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.53.0-next.2"
-  },
-  {
-    "id": "flux-26a200746e9b",
-    "title": "v2.9.1",
-    "summary": "Highlights Flux v2.9.1 is a patch release. The main fix, applied across all controllers, disables Flux variable substitution on the Flux CRDs by annotating them with kustomize.toolkit.fluxcd.io/substitute: disabled, so that Kustomizations with post-build substitution enabled no longer corrupt the CRD schemas when they contain ${...} sequences. Users are encouraged to upgrade for the best experience. ℹ️ Please follow the Upgrade Procedure for Flux v2.7+ for a smooth upgrade from Flux v2.6 to the ",
-    "source": "Flux",
-    "sourceId": "flux",
-    "url": "https://github.com/fluxcd/flux2/releases/tag/v2.9.1",
-    "publishedDate": "2026-07-07T13:55:51.000Z",
-    "domain": "gitops",
-    "topics": [
-      "flux",
-      "gitops",
-      "cd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "flux",
-    "releaseVersion": "v2.9.1"
-  },
-  {
-    "id": "terraform-eb79dc3ed5cc",
-    "title": "v1.16.0-alpha20260706",
-    "summary": "1.16.0-alpha20260706 (July 06, 2026) NEW FEATURES: Store PlannedPrivate data for providers (#37986) New store block in terraform_data that can handle ephemeral and sensitive values (#38298) Providers can now use nested blocks as computed values (#38305) import: add support for import blocks inside modules (#38352) We now produce builds for Linux s390x (zLinux) (#38384) workspace: The workspace list command can now produce machine-readable output when supplied with the -json flag (#38397) Resourc",
-    "source": "Terraform",
-    "sourceId": "terraform",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260706",
-    "publishedDate": "2026-07-06T14:49:07.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "terraform",
-    "releaseVersion": "v1.16.0-alpha20260706"
-  },
-  {
-    "id": "robusta-5e463f9f03be",
-    "title": "0.44.0",
-    "summary": "What's Changed ROB-463 Document optional cluster parameter in Send Events API by @naomi-robusta in #2108 Add read-only service account and namespace-scoped RBAC guides by @Avi-Robusta in #2110 Full Changelog: 0.43.0...0.44.0",
-    "source": "Robusta",
-    "sourceId": "robusta",
-    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.44.0",
-    "publishedDate": "2026-07-06T11:22:18.000Z",
-    "domain": "aiops",
-    "topics": [
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "robusta",
-    "releaseVersion": "0.44.0"
-  },
-  {
-    "id": "oci-oke-1afd6dd06896",
-    "title": "v8.21.0",
-    "summary": "8.21.0 (June 30, 2026) Added Support for Generative AI project resource and memory config updates Support for CCP Windows Alloy BYOL project Support for Sending a tags-only update can still send compute-node scale intent. Support initial jitter for Data Science schedules Support for Point in Time Recovery (PITR) for PSQL. Support for Object Storage Bucket Encryption Keys (UI & API) Support for SKE: Virtual Node Pool Cycling Bug Fix Reconcile replica KMS key state for block volume replicas Fix Un",
-    "source": "OCI / OKE",
-    "sourceId": "oci-oke",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v8.21.0",
-    "publishedDate": "2026-07-02T00:25:24.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "oci",
-      "oke",
-      "oracle"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "oci-oke",
-    "releaseVersion": "v8.21.0"
-  },
-  {
-    "id": "terraform-f11d4538154e",
-    "title": "v1.16.0-alpha20260701",
-    "summary": "1.16.0-alpha20260701 (July 01, 2026) NEW FEATURES: Store PlannedPrivate data for providers (#37986) New store block in terraform_data that can handle ephemeral and sensitive values (#38298) Providers can now use nested blocks as computed values (#38305) import: add support for import blocks inside modules (#38352) We now produce builds for Linux s390x (zLinux) (#38384) workspace: The workspace list command can now produce machine-readable output when supplied with the -json flag (#38397) Resourc",
-    "source": "Terraform",
-    "sourceId": "terraform",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260701",
-    "publishedDate": "2026-07-01T19:49:44.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "terraform",
-    "releaseVersion": "v1.16.0-alpha20260701"
-  },
-  {
     "id": "prometheus-abe1499e4d83",
     "title": "v0.313.0",
     "summary": "v0.313.0",
@@ -9419,146 +9565,6 @@
     "releaseRelated": true,
     "releaseProject": "prometheus",
     "releaseVersion": "3.13.0"
-  },
-  {
-    "id": "k8sgpt-67d72da2ce30",
-    "title": "v0.4.35",
-    "summary": "0.4.35 (2026-07-01) Bug Fixes detect SchedulingGated pods (#1474) (#1673) (afdcc55) guard against empty conditions in Gateway/GatewayClass analyzers (#1670) (716c48a) guard against nil TargetRef in Service not-ready endpoints (#1672) (315d28d) Other deps: update docker/build-push-action action to v7 (#1660) (500d314) deps: update docker/build-push-action digest to 10e90e3 (#1654) (96523ee) deps: update docker/metadata-action action to v6 (#1663) (43227ac) deps: update docker/setup-qemu-action di",
-    "source": "K8sGPT",
-    "sourceId": "k8sgpt",
-    "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.35",
-    "publishedDate": "2026-07-01T10:12:16.000Z",
-    "domain": "aiops",
-    "topics": [
-      "k8sgpt",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "k8sgpt",
-    "releaseVersion": "v0.4.35"
-  },
-  {
-    "id": "argo-6c76368c31ab",
-    "title": "v3.5.0-rc2",
-    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.0-rc2/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.0-rc2/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for contai",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.0-rc2",
-    "publishedDate": "2026-07-01T03:40:19.000Z",
-    "domain": "gitops",
-    "topics": [
-      "gitops",
-      "argo-cd",
-      "argo",
-      "argocd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "v3.5.0-rc2"
-  },
-  {
-    "id": "istio-8588711e8ba1",
-    "title": "Support for Istio 1.28 has ended",
-    "summary": "As previously announced, support for Istio 1.28 has now officially ended. At this point we will no longer back-port fixes for security issues and critical bugs to 1.28. We highly recommend that you upgrade to the latest version of Istio (1.30.3) if you haven&rsquo;t already.",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/support/announcing-1.28-eol-final/",
-    "publishedDate": "2026-07-01T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "1.28"
-  },
-  {
-    "id": "istio-3de45d753690",
-    "title": "Announcing Istio 1.28.10",
-    "summary": "This release contains bug fixes to improve robustness. This release note describes what’s different between Istio 1.28.9 and 1.28.10. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Changes Fixed a memory leak in the krt controller framework where changing the key used in a Fetch filter (for example, relabeling a pod to point to a ",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/releases/1.28.x/announcing-1.28.10/",
-    "publishedDate": "2026-07-01T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "1.28.10"
-  },
-  {
-    "id": "backstage-41abd5785866",
-    "title": "v1.53.0-next.1",
-    "summary": "See docs/releases/v1.53.0-next.1-changelog.md for more information.",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.53.0-next.1",
-    "publishedDate": "2026-06-30T17:37:51.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.53.0-next.1"
-  },
-  {
-    "id": "flux-b1a2de9b0888",
-    "title": "v2.9.0",
-    "summary": "Highlights Flux v2.9.0 is a feature release. Users are encouraged to upgrade for the best experience. For a compressive overview of new features and API changes included in this release, please refer to the Announcing Flux 2.9 GA blog post. Overview of the new features: Flux CLI Plugin System with the Mirror and Schema plugins (flux plugin) Server-Side Apply field ignore rules for fine-grained drift control (Kustomization) SOPS decryption with the Age post-quantum cipher (Kustomization) Kubernet",
-    "source": "Flux",
-    "sourceId": "flux",
-    "url": "https://github.com/fluxcd/flux2/releases/tag/v2.9.0",
-    "publishedDate": "2026-06-30T15:50:45.000Z",
-    "domain": "gitops",
-    "topics": [
-      "flux",
-      "gitops",
-      "cd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "flux",
-    "releaseVersion": "v2.9.0"
-  },
-  {
-    "id": "openai-4c4d91d3ce63",
-    "title": "Core dump epidemiology: fixing an 18-year-old bug",
-    "summary": "OpenAI engineers used large-scale core dump analysis to debug rare infrastructure crashes, uncovering both a hardware fault and a long-standing software bug.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
-    "publishedDate": "2026-06-30T00:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "kubernetes-releases-c46ce11c2019",
