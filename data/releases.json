@@ -1,11 +1,27 @@
 [
   {
+    "project": "k8sgpt",
+    "version": "v0.4.39",
+    "publishedDate": "2026-09-14T13:57:22.000Z",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.39",
+    "sourceId": "k8sgpt",
+    "title": "v0.4.39"
+  },
+  {
+    "project": "cncf",
+    "version": "1.20",
+    "publishedDate": "2026-09-14T10:45:49.000Z",
+    "url": "https://www.cncf.io/blog/2026/09/14/cilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more/",
+    "sourceId": "cncf",
+    "title": "Cilium 1.20: Gateway API ExternalAuth, TCPRoute/UDPRoute, ENI IPAM for IPv6, and more"
+  },
+  {
     "project": "argo",
-    "version": "v3.4.9",
-    "publishedDate": "2026-09-14T05:48:38.000Z",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.4.9",
+    "version": "v3.5.3",
+    "publishedDate": "2026-09-14T08:03:40.000Z",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.3",
     "sourceId": "argo",
-    "title": "v3.4.9: Bump version to 3.4.9 on release-3.4 branch (#29706)"
+    "title": "v3.5.3"
   },
   {
     "project": "kubernetes",
@@ -128,14 +144,6 @@
     "title": "v1.66.0/v0.160.0"
   },
   {
-    "project": "k8sgpt",
-    "version": "v0.4.38",
-    "publishedDate": "2026-09-01T11:23:24.000Z",
-    "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.38",
-    "sourceId": "k8sgpt",
-    "title": "v0.4.38"
-  },
-  {
     "project": "flux",
     "version": "v2.9.5",
     "publishedDate": "2026-08-31T17:07:22.000Z",
@@ -230,14 +238,6 @@
     "url": "https://www.hashicorp.com/blog/packer-v1160-brings-verifiable-provenance-to-machine-images",
     "sourceId": "hashicorp",
     "title": "Packer v1.16.0 brings verifiable provenance to machine images"
-  },
-  {
-    "project": "cncf",
-    "version": "1.121.0",
-    "publishedDate": "2026-08-05T11:00:00.000Z",
-    "url": "https://www.cncf.io/blog/2026/08/05/opencost-1-121-0-first-of-a-kind-kubernetes-inference-cost-tracking/",
-    "sourceId": "cncf",
-    "title": "OpenCost 1.121.0: First-of-a-kind Kubernetes inference cost tracking"
   },
   {
     "project": "etcd",
