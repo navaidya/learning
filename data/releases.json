@@ -1,5 +1,13 @@
 [
   {
+    "project": "argo",
+    "version": "v3.4.9",
+    "publishedDate": "2026-09-14T05:48:38.000Z",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.4.9",
+    "sourceId": "argo",
+    "title": "v3.4.9: Bump version to 3.4.9 on release-3.4 branch (#29706)"
+  },
+  {
     "project": "kubernetes",
     "version": "v1.37",
     "publishedDate": "2026-09-11T18:30:00.000Z",
@@ -158,14 +166,6 @@
     "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1",
     "sourceId": "opentofu",
     "title": "v1.13.0-beta1"
-  },
-  {
-    "project": "argo",
-    "version": "v3.4.8",
-    "publishedDate": "2026-08-27T10:00:19.000Z",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.4.8",
-    "sourceId": "argo",
-    "title": "v3.4.8"
   },
   {
     "project": "kubernetes-releases",
