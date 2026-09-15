@@ -1,12 +1,72 @@
 [
   {
-    "id": "crossplane-c74d906a8e96",
-    "title": "apis/v2.3.6",
-    "summary": "Release v2.3.6",
+    "id": "cilium-26f9309d075e",
+    "title": "v1.18.14",
+    "summary": "Release v1.18.14",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.18.14",
+    "publishedDate": "2026-09-15T17:22:01.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "v1.18.14"
+  },
+  {
+    "id": "cilium-a3b72ca1041c",
+    "title": "1.18.14",
+    "summary": "Release v1.18.14",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/1.18.14",
+    "publishedDate": "2026-09-15T17:21:52.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.18.14"
+  },
+  {
+    "id": "crossplane-a04efac48598",
+    "title": "v2.4.1",
+    "summary": "v2.4.1 is a patch release scoped to fixing issues reported by users of Crossplane v2.4 and fixing security related issues in Crossplane and its dependencies. 🎉 Highlights Package revisions now take control of established objects from the revision they replace: An outgoing package revision could fail to relinquish control of the package's CRDs, leaving the incoming revision permanently unhealthy with cannot establish control of object. The provider's pod would never be created, so that provider ",
     "source": "Crossplane",
     "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.3.6",
-    "publishedDate": "2026-09-15T10:06:17.000Z",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.1",
+    "publishedDate": "2026-09-15T17:16:10.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.4.1"
+  },
+  {
+    "id": "crossplane-4a41a871b2a4",
+    "title": "v2.3.6",
+    "summary": "v2.3.6 is a patch release scoped to fixing issues reported by users of Crossplane v2.3 and fixing security related issues in Crossplane and its dependencies. 🎉 Highlights Package revisions now take control of established objects from the revision they replace: An outgoing package revision could fail to relinquish control of the package's CRDs, leaving the incoming revision permanently unhealthy with cannot establish control of object. The provider's pod would never be created, so that provider ",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.3.6",
+    "publishedDate": "2026-09-15T17:16:09.000Z",
     "domain": "platform-engineering",
     "topics": [
       "crossplane",
@@ -20,13 +80,33 @@
     "releaseVersion": "v2.3.6"
   },
   {
+    "id": "crossplane-2e4a27108fc8",
+    "title": "v2.2.6",
+    "summary": "v2.2.6 is a patch release scoped to fixing issues reported by users of Crossplane v2.2 and fixing security related issues in Crossplane and its dependencies. 🎉 Highlights Package revisions now take control of established objects from the revision they replace: An outgoing package revision could fail to relinquish control of the package's CRDs, leaving the incoming revision permanently unhealthy with cannot establish control of object. The provider's pod would never be created, so that provider ",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.2.6",
+    "publishedDate": "2026-09-15T17:16:07.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.2.6"
+  },
+  {
     "id": "crossplane-4249843a9b7b",
     "title": "v1.20.13",
-    "summary": "Release v1.20.13",
+    "summary": "v1.20.13 is a patch release scoped to fixing security related issues in Crossplane's dependencies. 🎉 Highlights Dependency security updates: Bumps the Go toolchain to 1.26.7 (#7816) and google.golang.org/grpc to v1.83.2 (#7823), plus a combined set of vulnerable dependency updates (#7797), to pick up upstream CVE fixes — including the gRPC advisory GHSA-2v4p-qf9q-27wj. What's Changed [Backport release-1.20] Bump go to 1.26 by @lsviben in #7816 fix(deps): update vulnerable dependencies [security",
     "source": "Crossplane",
     "sourceId": "crossplane",
     "url": "https://github.com/crossplane/crossplane/releases/tag/v1.20.13",
-    "publishedDate": "2026-09-15T10:06:16.000Z",
+    "publishedDate": "2026-09-15T17:16:06.000Z",
     "domain": "platform-engineering",
     "topics": [
       "crossplane",
@@ -40,13 +120,112 @@
     "releaseVersion": "v1.20.13"
   },
   {
-    "id": "crossplane-4a41a871b2a4",
-    "title": "v2.3.6",
+    "id": "backstage-6bc7b08e6ee8",
+    "title": "v1.54.8",
+    "summary": "This patch release improves validation of Sentry API settings and handling of TechDocs MkDocs plugin configuration.",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.8",
+    "publishedDate": "2026-09-15T16:26:14.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.54.8"
+  },
+  {
+    "id": "cncf-18f9c42c111d",
+    "title": "What I learned organizing KCD Lima 2026",
+    "summary": "On July 18, 2026, we held the third edition of Kubernetes Community Days Lima at UTEC in Barranco. By now, we have already sent the Transparency Report to the CNCF, thanked our sponsors, and processed the...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/09/15/what-i-learned-organizing-kcd-lima-2026/",
+    "publishedDate": "2026-09-15T16:24:05.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "backstage-98aaae91dc6f",
+    "title": "v1.50.6",
+    "summary": "This patch release improves how TechDocs handles MkDocs plugin configuration.",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.50.6",
+    "publishedDate": "2026-09-15T16:06:49.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.50.6"
+  },
+  {
+    "id": "backstage-ee56ce233a53",
+    "title": "v1.55.0",
+    "summary": "These are the release notes for the v1.55.0 release of Backstage. A huge thanks to the whole team of maintainers and contributors as well as the amazing Backstage Community for the hard work in getting this release developed and done. Highlights BREAKING: Removed deprecated catalog APIs and configuration This release removes several deprecated features from @backstage/plugin-catalog-backend. The catalog.enableRelationsCompatibility config option and its associated compatibility layer have been r",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.55.0",
+    "publishedDate": "2026-09-15T15:16:08.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "platform-engineering",
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.55.0"
+  },
+  {
+    "id": "containerd-ff076079e9c3",
+    "title": "containerd 2.4.0-rc.0",
+    "summary": "Welcome to the v2.4.0-rc.0 release of containerd! This is a pre-release of containerd containerd 2.4 is a regular (non-LTS) release with a shorter support window, intended for users who want to adopt new features sooner. As the release following the 2.3 LTS, it is the point in the release cycle where previously deprecated features may be removed, so this release may include breaking changes; check the notes below and clear any deprecation warnings from your current version before upgrading. User",
+    "source": "containerd",
+    "sourceId": "containerd",
+    "url": "https://github.com/containerd/containerd/releases/tag/v2.4.0-rc.0",
+    "publishedDate": "2026-09-15T14:27:43.000Z",
+    "domain": "containers",
+    "topics": [
+      "containers",
+      "containerd",
+      "runtime"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "containerd",
+    "releaseVersion": "2.4.0-rc.0"
+  },
+  {
+    "id": "crossplane-c74d906a8e96",
+    "title": "apis/v2.3.6",
     "summary": "Release v2.3.6",
     "source": "Crossplane",
     "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.3.6",
-    "publishedDate": "2026-09-15T10:06:15.000Z",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.3.6",
+    "publishedDate": "2026-09-15T10:06:17.000Z",
     "domain": "platform-engineering",
     "topics": [
       "crossplane",
@@ -78,46 +257,6 @@
     "releaseRelated": true,
     "releaseProject": "crossplane",
     "releaseVersion": "v2.4.1"
-  },
-  {
-    "id": "crossplane-a04efac48598",
-    "title": "v2.4.1",
-    "summary": "Release v2.4.1",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.1",
-    "publishedDate": "2026-09-15T10:06:06.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v2.4.1"
-  },
-  {
-    "id": "crossplane-2e4a27108fc8",
-    "title": "v2.2.6",
-    "summary": "Release v2.2.6",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.2.6",
-    "publishedDate": "2026-09-15T10:06:06.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v2.2.6"
   },
   {
     "id": "containerd-781497ac61c8",
@@ -1694,6 +1833,25 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes",
     "releaseVersion": "v1.37"
+  },
+  {
+    "id": "hashicorp-599966057ce0",
+    "title": "Introducing HCP Terraform Metrics: operational visibility at scale",
+    "summary": "Gain deeper visibility into your HCP Terraform-managed estate by pulling metrics from a single Prometheus endpoint into your data visualization tools.",
+    "source": "HashiCorp",
+    "sourceId": "hashicorp",
+    "url": "https://www.hashicorp.com/blog/introducing-hcp-terraform-metrics-operational-visibility-at-scale",
+    "publishedDate": "2026-09-03T18:00:00.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "terraform",
+      "vault",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "hashicorp-b7a665faeb00",
@@ -9294,85 +9452,6 @@
     "releaseVersion": "v3.21.3"
   },
   {
-    "id": "helm-3cc830a29385",
-    "title": "Helm v4.2.3",
-    "summary": "Helm v4.2.3 is a patch release. Users are encouraged to upgrade for the best experience. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/packages Installation and Upgrading Download Helm v4.2.3. The common platform binaries are here: MacOS amd64 (checksum /",
-    "source": "Helm",
-    "sourceId": "helm",
-    "url": "https://github.com/helm/helm/releases/tag/v4.2.3",
-    "publishedDate": "2026-07-09T20:56:43.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "helm",
-      "packaging"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "helm",
-    "releaseVersion": "v4.2.3"
-  },
-  {
-    "id": "argo-e57ad6f32a92",
-    "title": "v3.4.5",
-    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.4.5/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.4.5/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container imag",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.4.5",
-    "publishedDate": "2026-07-09T17:05:56.000Z",
-    "domain": "gitops",
-    "topics": [
-      "gitops",
-      "argo-cd",
-      "argo",
-      "argocd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "v3.4.5"
-  },
-  {
-    "id": "kyverno-04c58e055bc7",
-    "title": "v1.18.2-rc.1",
-    "summary": "No content.",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.18.2-rc.1",
-    "publishedDate": "2026-07-09T14:31:17.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno",
-    "releaseVersion": "v1.18.2-rc.1"
-  },
-  {
-    "id": "openai-5941cef110c0",
-    "title": "ChatGPT is now a partner for your most ambitious work",
-    "summary": "ChatGPT Work is an agent that can take action across your apps and files, stay with a project for hours if needed, and turn a goal into finished work.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work",
-    "publishedDate": "2026-07-09T10:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "prometheus-0d55e8efb72e",
     "title": "3.5.5 / 2026-07-09",
     "summary": "This release is built with Go 1.25.12 and fixes a security issue in a UI dependency. [SECURITY] UI: Bump sanitize-html to v2.17.5 to fix CVE-2026-53606. #19060",
@@ -9430,86 +9509,6 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes-releases",
     "releaseVersion": "v1.37.0-alpha.3"
-  },
-  {
-    "id": "karpenter-bc4c566c5fb4",
-    "title": "v1.10.1",
-    "summary": "Bug Fixes termination: prevent negative pod grace period when Node Repair … (#3051) #3051 (Sarthak Umarani)",
-    "source": "Karpenter",
-    "sourceId": "karpenter",
-    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.10.1",
-    "publishedDate": "2026-07-08T17:47:07.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "karpenter",
-      "kubernetes",
-      "autoscaling"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "karpenter",
-    "releaseVersion": "v1.10.1"
-  },
-  {
-    "id": "karpenter-a29c79beac4d",
-    "title": "v1.11.2",
-    "summary": "Bug Fixes termination: prevent negative pod grace period when Node Repair … (#3050) #3050 (Sarthak Umarani)",
-    "source": "Karpenter",
-    "sourceId": "karpenter",
-    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.11.2",
-    "publishedDate": "2026-07-08T17:46:57.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "karpenter",
-      "kubernetes",
-      "autoscaling"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "karpenter",
-    "releaseVersion": "v1.11.2"
-  },
-  {
-    "id": "karpenter-f75c61706dc3",
-    "title": "v1.9.1",
-    "summary": "Bug Fixes termination: prevent negative pod grace period when Node Repair … (#3052) #3052 (Sarthak Umarani)",
-    "source": "Karpenter",
-    "sourceId": "karpenter",
-    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.9.1",
-    "publishedDate": "2026-07-08T17:46:57.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "karpenter",
-      "kubernetes",
-      "autoscaling"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "karpenter",
-    "releaseVersion": "v1.9.1"
-  },
-  {
-    "id": "karpenter-e3284e836972",
-    "title": "v1.6.4",
-    "summary": "Bug Fixes termination: prevent negative pod grace period when Node Repair … (#3056) #3056 (Sarthak Umarani)",
-    "source": "Karpenter",
-    "sourceId": "karpenter",
-    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.6.4",
-    "publishedDate": "2026-07-08T17:46:56.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "karpenter",
-      "kubernetes",
-      "autoscaling"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "karpenter",
-    "releaseVersion": "v1.6.4"
   },
   {
     "id": "kubernetes-4d784cb50ba4",

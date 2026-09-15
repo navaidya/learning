@@ -1,19 +1,35 @@
 [
   {
+    "project": "cilium",
+    "version": "v1.18.14",
+    "publishedDate": "2026-09-15T17:22:01.000Z",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.18.14",
+    "sourceId": "cilium",
+    "title": "v1.18.14"
+  },
+  {
     "project": "crossplane",
-    "version": "v2.3.6",
-    "publishedDate": "2026-09-15T10:06:17.000Z",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.3.6",
+    "version": "v2.4.1",
+    "publishedDate": "2026-09-15T17:16:10.000Z",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.1",
     "sourceId": "crossplane",
-    "title": "apis/v2.3.6"
+    "title": "v2.4.1"
+  },
+  {
+    "project": "backstage",
+    "version": "v1.54.8",
+    "publishedDate": "2026-09-15T16:26:14.000Z",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.8",
+    "sourceId": "backstage",
+    "title": "v1.54.8"
   },
   {
     "project": "containerd",
-    "version": "1.12.0-rc.1",
-    "publishedDate": "2026-09-15T04:48:49.000Z",
-    "url": "https://github.com/containerd/containerd/releases/tag/api%2Fv1.12.0-rc.1",
+    "version": "2.4.0-rc.0",
+    "publishedDate": "2026-09-15T14:27:43.000Z",
+    "url": "https://github.com/containerd/containerd/releases/tag/v2.4.0-rc.0",
     "sourceId": "containerd",
-    "title": "containerd API 1.12.0-rc.1"
+    "title": "containerd 2.4.0-rc.0"
   },
   {
     "project": "opentelemetry-collector",
@@ -64,14 +80,6 @@
     "title": "v3.5.3"
   },
   {
-    "project": "backstage",
-    "version": "v1.49.7",
-    "publishedDate": "2026-09-11T11:55:25.000Z",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.49.7",
-    "sourceId": "backstage",
-    "title": "v1.49.7"
-  },
-  {
     "project": "oci-oke",
     "version": "v9.1.0",
     "publishedDate": "2026-09-10T16:32:50.000Z",
@@ -110,14 +118,6 @@
     "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-beta1",
     "sourceId": "terraform",
     "title": "v1.17.0-beta1"
-  },
-  {
-    "project": "cilium",
-    "version": "1.21.0-pre.2",
-    "publishedDate": "2026-09-09T11:50:23.000Z",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.21.0-pre.2",
-    "sourceId": "cilium",
-    "title": "1.21.0-pre.2"
   },
   {
     "project": "istio",
