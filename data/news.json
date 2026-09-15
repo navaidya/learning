@@ -1,5 +1,125 @@
 [
   {
+    "id": "crossplane-c74d906a8e96",
+    "title": "apis/v2.3.6",
+    "summary": "Release v2.3.6",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.3.6",
+    "publishedDate": "2026-09-15T10:06:17.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.3.6"
+  },
+  {
+    "id": "crossplane-4249843a9b7b",
+    "title": "v1.20.13",
+    "summary": "Release v1.20.13",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v1.20.13",
+    "publishedDate": "2026-09-15T10:06:16.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v1.20.13"
+  },
+  {
+    "id": "crossplane-4a41a871b2a4",
+    "title": "v2.3.6",
+    "summary": "Release v2.3.6",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.3.6",
+    "publishedDate": "2026-09-15T10:06:15.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.3.6"
+  },
+  {
+    "id": "crossplane-b0955bb6ddc4",
+    "title": "apis/v2.4.1",
+    "summary": "Release v2.4.1",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.4.1",
+    "publishedDate": "2026-09-15T10:06:07.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.4.1"
+  },
+  {
+    "id": "crossplane-a04efac48598",
+    "title": "v2.4.1",
+    "summary": "Release v2.4.1",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.1",
+    "publishedDate": "2026-09-15T10:06:06.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.4.1"
+  },
+  {
+    "id": "crossplane-2e4a27108fc8",
+    "title": "v2.2.6",
+    "summary": "Release v2.2.6",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.2.6",
+    "publishedDate": "2026-09-15T10:06:06.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.2.6"
+  },
+  {
     "id": "containerd-781497ac61c8",
     "title": "containerd API 1.12.0-rc.1",
     "summary": "Welcome to the api/v1.12.0-rc.1 release of containerd! This is a pre-release of containerd The 13th release for the containerd 1.x API aligns with the containerd 2.4 release. Highlights Image Storage Include media type in content create events (#13833) Runtime Add UpdateSandbox RPC to propagate sandbox controller updates to the shim (#14105) Allow specifying parent checkpoint directory when checkpointing with runc (#13699) Deprecations Deprecate containerd.io/runtime-allow-mounts shim annotation",
@@ -9390,125 +9510,6 @@
     "releaseRelated": true,
     "releaseProject": "karpenter",
     "releaseVersion": "v1.6.4"
-  },
-  {
-    "id": "karpenter-a5a1acae839f",
-    "title": "v1.8.3",
-    "summary": "Bug Fixes termination: prevent negative pod grace period when Node Repair … (#3054) #3054 (Sarthak Umarani)",
-    "source": "Karpenter",
-    "sourceId": "karpenter",
-    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.8.3",
-    "publishedDate": "2026-07-08T17:46:54.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "karpenter",
-      "kubernetes",
-      "autoscaling"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "karpenter",
-    "releaseVersion": "v1.8.3"
-  },
-  {
-    "id": "karpenter-6e4d86c6719c",
-    "title": "v1.7.2",
-    "summary": "Bug Fixes termination: prevent negative pod grace period when Node Repair … (#3055) #3055 (Sarthak Umarani)",
-    "source": "Karpenter",
-    "sourceId": "karpenter",
-    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.7.2",
-    "publishedDate": "2026-07-08T17:46:54.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "karpenter",
-      "kubernetes",
-      "autoscaling"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "karpenter",
-    "releaseVersion": "v1.7.2"
-  },
-  {
-    "id": "karpenter-11c43018e4e5",
-    "title": "v1.5.5",
-    "summary": "Bug Fixes termination: prevent negative pod grace period when Node Repair … (#3057) #3057 (Sarthak Umarani)",
-    "source": "Karpenter",
-    "sourceId": "karpenter",
-    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.5.5",
-    "publishedDate": "2026-07-08T17:46:53.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "karpenter",
-      "kubernetes",
-      "autoscaling"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "karpenter",
-    "releaseVersion": "v1.5.5"
-  },
-  {
-    "id": "karpenter-0dc1ad66d477",
-    "title": "v1.4.2",
-    "summary": "Bug Fixes termination: prevent negative pod grace period when Node Repair … (#3058) #3058 (Sarthak Umarani)",
-    "source": "Karpenter",
-    "sourceId": "karpenter",
-    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.4.2",
-    "publishedDate": "2026-07-08T17:46:53.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "karpenter",
-      "kubernetes",
-      "autoscaling"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "karpenter",
-    "releaseVersion": "v1.4.2"
-  },
-  {
-    "id": "karpenter-bcf3744e520f",
-    "title": "v1.3.5",
-    "summary": "Bug Fixes termination: prevent negative pod grace period when Node Repair … (#3059) #3059 (Sarthak Umarani)",
-    "source": "Karpenter",
-    "sourceId": "karpenter",
-    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.3.5",
-    "publishedDate": "2026-07-08T17:46:49.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "karpenter",
-      "kubernetes",
-      "autoscaling"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "karpenter",
-    "releaseVersion": "v1.3.5"
-  },
-  {
-    "id": "terraform-f326e598c856",
-    "title": "v1.15.8",
-    "summary": "1.15.8 (July 8, 2026) BUG FIXES: Fix terraform init error when installing providers sourced from a service-discovery alias advertised by the configured backend (such as localterraform.com) NOTES: command/init: Provider installation was changed to enable future enhancements in the area. This effectively reverses the log message changes from v1.15. initializing_provider_plugin_message is being re-introduced to replace the short-lived two message types initializing_provider_plugin_from_config_messa",
-    "source": "Terraform",
-    "sourceId": "terraform",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.15.8",
-    "publishedDate": "2026-07-08T17:45:09.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "terraform",
-    "releaseVersion": "v1.15.8"
   },
   {
     "id": "kubernetes-4d784cb50ba4",

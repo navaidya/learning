@@ -1,5 +1,45 @@
 [
   {
+    "id": "langfuse-67e82966e6dc",
+    "title": "v4.36.1",
+    "summary": "What's Changed Fixes / Improvements fix(users): stop the column order and visibility keys colliding by @nkabardin in #17445 Chores chore(ai-gateway): Cache rust builds by @bezbac in #17440 chore: fix test: measure deleted-mask cleanup by physical rows, not patch parts by @sumerman in #17444 perf(filter-options): accelerate metadata equality with a text-index prefilter by @niklassemmler in #17353 refactor(web): Add design system DropdownMenu component by @bezbac in #17443 chore(deps): bump nodema",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.36.1",
+    "publishedDate": "2026-09-15T09:00:35.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.36.1"
+  },
+  {
+    "id": "falco-44677a7272ab",
+    "title": "0.45.0-rc3",
+    "summary": "update(build): bump falcoctl to 0.14.2 Bump the falcoctl binary bundled in the packages and the falcoctl image used by the chart to 0.14.2, which preserves DKMS installations when installing cached kernel modules. Signed-off-by: Leonardo Grasso <me@leonardograsso.com>",
+    "source": "Falco",
+    "sourceId": "falco",
+    "url": "https://github.com/falcosecurity/falco/releases/tag/0.45.0-rc3",
+    "publishedDate": "2026-09-15T08:36:35.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "infrastructure-security",
+      "release",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "falco",
+    "releaseVersion": "0.45.0-rc3"
+  },
+  {
     "id": "phoenix-46fa827ac426",
     "title": "arize-phoenix: v20.12.0",
     "summary": "20.12.0 (2026-09-14) Features api: expose trace and session filter expressions (#16077) (d613de7) server: add GET /datasets/{dataset_identifier}/splits (e60697f), closes #12090 Bug Fixes cost: update built-in model token prices (25b95d7) server: address review findings for GET /datasets/{dataset_identifier}/splits (655802b) server: scope listed dataset splits by example membership only (eafa87c)",
