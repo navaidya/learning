@@ -1,5 +1,85 @@
 [
   {
+    "id": "cilium-94e7a93450a0",
+    "title": "v1.19.8",
+    "summary": "Release v1.19.8",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.19.8",
+    "publishedDate": "2026-09-15T21:56:11.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "v1.19.8"
+  },
+  {
+    "id": "cilium-77fbbe878d21",
+    "title": "1.19.8",
+    "summary": "Release v1.19.8",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/1.19.8",
+    "publishedDate": "2026-09-15T21:56:09.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.19.8"
+  },
+  {
+    "id": "cilium-cb9ee79b9b3e",
+    "title": "v1.20.2",
+    "summary": "Release v1.20.2",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.20.2",
+    "publishedDate": "2026-09-15T19:57:42.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "v1.20.2"
+  },
+  {
+    "id": "cilium-447614095266",
+    "title": "1.20.2",
+    "summary": "Release v1.20.2",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/1.20.2",
+    "publishedDate": "2026-09-15T19:57:37.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.20.2"
+  },
+  {
     "id": "cilium-26f9309d075e",
     "title": "v1.18.14",
     "summary": "Release v1.18.14",
@@ -9370,86 +9450,6 @@
     "releaseRelated": true,
     "releaseProject": "containerd",
     "releaseVersion": "2.3.3"
-  },
-  {
-    "id": "containerd-6abb63e890c6",
-    "title": "containerd 2.2.6",
-    "summary": "Welcome to the v2.2.6 release of containerd! The sixth patch release for containerd 2.2 contains various fixes and updates. Highlights Container Runtime Interface (CRI) Fix nil pointer dereference in NRI GetIPs during pod sandbox teardown or container exit (#13696) Reject CreateContainer calls when the target sandbox is not running (#13669) Ensure sandbox shutdown on RunPodSandbox hook failures to avoid mount leaks (#13644) Image Distribution Limit fallback to /blobs endpoint during ref resoluti",
-    "source": "containerd",
-    "sourceId": "containerd",
-    "url": "https://github.com/containerd/containerd/releases/tag/v2.2.6",
-    "publishedDate": "2026-07-09T23:57:52.000Z",
-    "domain": "containers",
-    "topics": [
-      "containers",
-      "containerd",
-      "runtime"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "containerd",
-    "releaseVersion": "2.2.6"
-  },
-  {
-    "id": "containerd-3a9a4d0d2165",
-    "title": "containerd 2.0.11",
-    "summary": "Welcome to the v2.0.11 release of containerd! The eleventh patch release for containerd 2.0 contains various fixes and updates. Highlights Image Distribution Limit fallback to /blobs endpoint during ref resolution to prevent content store pollution (#13622) Please try out the release binaries and report any issues at https://github.com/containerd/containerd/issues. Contributors Samuel Karp Chris Henzie Joseph Zhang Phil Estes Changes 4 commits Prepare release notes for v2.0.11 (#13752) 24a2ac9db",
-    "source": "containerd",
-    "sourceId": "containerd",
-    "url": "https://github.com/containerd/containerd/releases/tag/v2.0.11",
-    "publishedDate": "2026-07-09T23:49:43.000Z",
-    "domain": "containers",
-    "topics": [
-      "containers",
-      "containerd",
-      "runtime"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "containerd",
-    "releaseVersion": "2.0.11"
-  },
-  {
-    "id": "containerd-4f984296b2a7",
-    "title": "containerd 1.7.34",
-    "summary": "Welcome to the v1.7.34 release of containerd! The thirty-fourth patch release for containerd 1.7 contains various fixes and updates. Highlights Container Runtime Interface (CRI) Fix lost container exit events when events arrive before container info is cached (#11634) Please try out the release binaries and report any issues at https://github.com/containerd/containerd/issues. Contributors Chris Henzie Samuel Karp Akihiro Suda Maksym Pavlenko Phil Estes Sopho Merkviladze ningmingxiao Changes 5 co",
-    "source": "containerd",
-    "sourceId": "containerd",
-    "url": "https://github.com/containerd/containerd/releases/tag/v1.7.34",
-    "publishedDate": "2026-07-09T23:41:36.000Z",
-    "domain": "containers",
-    "topics": [
-      "containers",
-      "containerd",
-      "runtime"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "containerd",
-    "releaseVersion": "1.7.34"
-  },
-  {
-    "id": "helm-eefa4445906b",
-    "title": "Helm v3.21.3",
-    "summary": "Helm v3.21.3 is a patch release. Users are encouraged to upgrade for the best experience. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/packages Installation and Upgrading Download Helm v3.21.3. The common platform binaries are here: MacOS amd64 (checksum",
-    "source": "Helm",
-    "sourceId": "helm",
-    "url": "https://github.com/helm/helm/releases/tag/v3.21.3",
-    "publishedDate": "2026-07-09T21:20:27.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "helm",
-      "packaging"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "helm",
-    "releaseVersion": "v3.21.3"
   },
   {
     "id": "prometheus-0d55e8efb72e",

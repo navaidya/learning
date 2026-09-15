@@ -1,11 +1,11 @@
 [
   {
     "project": "cilium",
-    "version": "v1.18.14",
-    "publishedDate": "2026-09-15T17:22:01.000Z",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.18.14",
+    "version": "v1.19.8",
+    "publishedDate": "2026-09-15T21:56:11.000Z",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.19.8",
     "sourceId": "cilium",
-    "title": "v1.18.14"
+    "title": "v1.19.8"
   },
   {
     "project": "crossplane",
