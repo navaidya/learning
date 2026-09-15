@@ -1,5 +1,46 @@
 [
   {
+    "id": "containerd-781497ac61c8",
+    "title": "containerd API 1.12.0-rc.1",
+    "summary": "Welcome to the api/v1.12.0-rc.1 release of containerd! This is a pre-release of containerd The 13th release for the containerd 1.x API aligns with the containerd 2.4 release. Highlights Image Storage Include media type in content create events (#13833) Runtime Add UpdateSandbox RPC to propagate sandbox controller updates to the shim (#14105) Allow specifying parent checkpoint directory when checkpointing with runc (#13699) Deprecations Deprecate containerd.io/runtime-allow-mounts shim annotation",
+    "source": "containerd",
+    "sourceId": "containerd",
+    "url": "https://github.com/containerd/containerd/releases/tag/api%2Fv1.12.0-rc.1",
+    "publishedDate": "2026-09-15T04:48:49.000Z",
+    "domain": "containers",
+    "topics": [
+      "containers",
+      "containerd",
+      "runtime"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "containerd",
+    "releaseVersion": "1.12.0-rc.1"
+  },
+  {
+    "id": "opentelemetry-collector-211ca593d3a1",
+    "title": "v1.67.0/v0.161.0",
+    "summary": "Images and binaries here: https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/ End User Changelog 🛑 Breaking changes 🛑 pkg/pprofile: Remove deprecated AggregationTemporality, Duration, SetDuration (#15855) pkg/scraperhelper/controller: Remove deprecated AddScraper func (#15934) pkg/service: Remove deprecated ZapOptions (#15935) pkg/xconfmap: Remove deprecated WithForceUnmarshaler func (#15932) 💡 Enhancements 💡 pkg/pdata: avoid allocations in WriteInt64 and WriteUi",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.161.0",
+    "publishedDate": "2026-09-14T22:49:14.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v1.67.0"
+  },
+  {
     "id": "opentelemetry-collector-7a34112d805e",
     "title": "service/telemetry/telemetrytest/v0.161.0",
     "summary": "Module set beta, Version v0.161.0",
@@ -175,27 +216,6 @@
     "sourceId": "opentelemetry-collector",
     "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/receiver%2Fxreceiver%2Fv0.161.0",
     "publishedDate": "2026-09-14T21:27:00.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "collector",
-      "otel",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentelemetry-collector",
-    "releaseVersion": "v0.161.0"
-  },
-  {
-    "id": "opentelemetry-collector-211ca593d3a1",
-    "title": "v0.161.0",
-    "summary": "Module set beta, Version v0.161.0",
-    "source": "OpenTelemetry Collector",
-    "sourceId": "opentelemetry-collector",
-    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.161.0",
-    "publishedDate": "2026-09-14T21:26:50.000Z",
     "domain": "opentelemetry",
     "topics": [
       "opentelemetry",
@@ -9489,24 +9509,6 @@
     "releaseRelated": true,
     "releaseProject": "terraform",
     "releaseVersion": "v1.15.8"
-  },
-  {
-    "id": "openai-eaad4cbcfa7f",
-    "title": "Separating signal from noise in coding evaluations",
-    "summary": "A new analysis from OpenAI reveals issues in SWE-Bench Pro, a popular coding benchmark, raising concerns about reliability and accuracy in evaluating AI models.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations",
-    "publishedDate": "2026-07-08T13:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "kubernetes-4d784cb50ba4",
