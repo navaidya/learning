@@ -1,5 +1,66 @@
 [
   {
+    "id": "containerd-e525061d9efa",
+    "title": "containerd 2.4.0",
+    "summary": "Welcome to the v2.4.0 release of containerd! containerd 2.4 is a regular (non-LTS) release with a shorter support window, intended for users who want to adopt new features sooner. As the release following the 2.3 LTS, it is the point in the release cycle where previously deprecated features may be removed, so this release may include breaking changes; check the notes below and clear any deprecation warnings from your current version before upgrading. Users prioritizing stability and a longer sup",
+    "source": "containerd",
+    "sourceId": "containerd",
+    "url": "https://github.com/containerd/containerd/releases/tag/v2.4.0",
+    "publishedDate": "2026-09-16T20:08:21.000Z",
+    "domain": "containers",
+    "topics": [
+      "containers",
+      "containerd",
+      "runtime"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "containerd",
+    "releaseVersion": "2.4.0"
+  },
+  {
+    "id": "robusta-a77c863e199e",
+    "title": "0.50.0-alpha",
+    "summary": "No content.",
+    "source": "Robusta",
+    "sourceId": "robusta",
+    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.50.0-alpha",
+    "publishedDate": "2026-09-16T19:53:04.000Z",
+    "domain": "aiops",
+    "topics": [
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "robusta",
+    "releaseVersion": "0.50.0-alpha"
+  },
+  {
+    "id": "holmesgpt-016b8318257c",
+    "title": "0.42.0",
+    "summary": "What's Changed Add conversation_link chat field rendered into the system prompt by @ezra-robusta in #2422 Surface MCP structuredContent and drop null optional params by @claude[bot] in #2459 Add configurable request timeout for New Relic toolset by @arikalon1 in #2457 Anonymize project slug in MCP toolset test fixture by @claude[bot] in #2463 Add GPU node diagnostics support to kubernetes-remediation MCP by @arikalon1 in #2462 Add namespaceScopedRBAC helm value for namespace-scoped Holmes instal",
+    "source": "HolmesGPT (Robusta)",
+    "sourceId": "holmesgpt",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.42.0",
+    "publishedDate": "2026-09-16T19:31:54.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "holmesgpt",
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "holmesgpt",
+    "releaseVersion": "0.42.0"
+  },
+  {
     "id": "holmesgpt-78b99f0501dc",
     "title": "0.42.0-alpha",
     "summary": "ROB-973: harden kubernetes-remediation file-read policy defaults in t… …he Helm chart (#2479) Chart side of [ROB-973](https://linear.app/robusta/issue/ROB-973/holmes-mcp-integrations-codex-h01-auto-approved-container-file-reads) / [ROB-1103](https://linear.app/robusta/issue/ROB-1103). Server side: robusta-dev/holmes-mcp-integrations PR \"ROB-973: harden read_file_from_container path policy\" (image `1.4.0`). ## What was wrong `mcpAddons.kubernetesRemediation.config.fileReadAllowedPaths` defaulted ",
@@ -9305,43 +9366,6 @@
     "releaseVersion": "v1.53.0"
   },
   {
-    "id": "pulumi-bb147e8d89c5",
-    "title": "v3.253.0",
-    "summary": "3.253.0 (2026-07-14) Features [auto/go] Support --import-pending-creates for refresh command in Go Automation API for preview refresh and refresh operations #23833 Bug Fixes [sdk] Precompose filenames to NFC on macOS when matching ignore patterns during archive creation, mirroring git's core.precomposeunicode so composed patterns match decomposed filenames #23566 [cli] Respect the -v log level again so that without -v only warnings and errors are written to stderr #23910 [codegen] Correctly gene",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.253.0",
-    "publishedDate": "2026-07-14T11:30:57.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.253.0"
-  },
-  {
-    "id": "openai-92ab1f77dd8c",
-    "title": "How to manage AI investments in the agentic era",
-    "summary": "Learn how enterprises can manage AI investments in the agentic era by measuring useful work per dollar, improving efficiency, and scaling high-value workflows.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/managing-ai-investments-in-agentic-era",
-    "publishedDate": "2026-07-14T10:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "opentelemetry-ae30a5b864f5",
     "title": "The Voyage of a Small Environment Variable",
     "summary": "The OpenTelemetry Spring Boot starter gained declarative-configuration support starting in version 2.26.0 — the same YAML schema the Java agent introduced in late 2025, now embedded inside application.yaml. This post traces what one env var, OTEL_SERVICE_NAME=petclinic, does in that new world, and where the seams are. In a hurry? Jump straight to the Spring Boot starter declarative-config docs, paste your application.properties into the interactive converter, or pick your SDK setup in the Ecosys",
@@ -9360,22 +9384,6 @@
     "releaseRelated": true,
     "releaseProject": "opentelemetry",
     "releaseVersion": "2.26.0"
-  },
-  {
-    "id": "kubernetes-5c9674c56222",
-    "title": "Operating AI/ML Workloads on Kubernetes: A Headlamp Plugin for Kubeflow",
-    "summary": "Kubernetes has quietly become the default platform for AI and machine learning. Whether you run notebook servers for data scientists, schedule distributed training jobs, tune hyperparameters, or orchestrate multi-step ML pipelines, those workloads increasingly land on a Kubernetes cluster. Kubeflow is one of the most popular ways to assemble that stack, and it does so the Kubernetes-native way: every capability is exposed as a Custom Resource Definition (CRD). That design is a gift to cluster op",
-    "source": "Kubernetes",
-    "sourceId": "kubernetes",
-    "url": "https://kubernetes.io/blog/2026/07/13/introducing-headlamp-plugin-for-kubeflow/",
-    "publishedDate": "2026-07-13T20:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "holmesgpt-f4a8a91f494f",

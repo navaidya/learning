@@ -1,11 +1,27 @@
 [
   {
+    "project": "containerd",
+    "version": "2.4.0",
+    "publishedDate": "2026-09-16T20:08:21.000Z",
+    "url": "https://github.com/containerd/containerd/releases/tag/v2.4.0",
+    "sourceId": "containerd",
+    "title": "containerd 2.4.0"
+  },
+  {
+    "project": "robusta",
+    "version": "0.50.0-alpha",
+    "publishedDate": "2026-09-16T19:53:04.000Z",
+    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.50.0-alpha",
+    "sourceId": "robusta",
+    "title": "0.50.0-alpha"
+  },
+  {
     "project": "holmesgpt",
-    "version": "0.42.0-alpha",
-    "publishedDate": "2026-09-16T16:57:37.000Z",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.42.0-alpha",
+    "version": "0.42.0",
+    "publishedDate": "2026-09-16T19:31:54.000Z",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.42.0",
     "sourceId": "holmesgpt",
-    "title": "0.42.0-alpha"
+    "title": "0.42.0"
   },
   {
     "project": "opentelemetry-collector",
@@ -14,14 +30,6 @@
     "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.161.0",
     "sourceId": "opentelemetry-collector",
     "title": "v1.67.0/v0.161.0"
-  },
-  {
-    "project": "containerd",
-    "version": "1.12.0",
-    "publishedDate": "2026-09-16T16:26:55.000Z",
-    "url": "https://github.com/containerd/containerd/releases/tag/api%2Fv1.12.0",
-    "sourceId": "containerd",
-    "title": "containerd API 1.12.0"
   },
   {
     "project": "argo",
@@ -142,14 +150,6 @@
     "url": "https://github.com/helm/helm/releases/tag/v3.22.0",
     "sourceId": "helm",
     "title": "Helm v3.22.0"
-  },
-  {
-    "project": "robusta",
-    "version": "0.49.0",
-    "publishedDate": "2026-09-08T12:59:31.000Z",
-    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.49.0",
-    "sourceId": "robusta",
-    "title": "0.49.0"
   },
   {
     "project": "gateway-api",
