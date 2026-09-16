@@ -1,11 +1,35 @@
 [
   {
+    "project": "opentelemetry",
+    "version": "v1.0.0",
+    "publishedDate": "2026-09-16T04:59:27.000Z",
+    "url": "https://opentelemetry.io/blog/2026/k8s-attributes-processor-v1/",
+    "sourceId": "opentelemetry",
+    "title": "Kubernetes attributes processor reaches v1.0.0 milestone"
+  },
+  {
     "project": "cilium",
-    "version": "v1.19.8",
-    "publishedDate": "2026-09-15T21:56:11.000Z",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.19.8",
+    "version": "1.20.2",
+    "publishedDate": "2026-09-16T01:53:22.000Z",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.20.2",
     "sourceId": "cilium",
-    "title": "v1.19.8"
+    "title": "1.20.2"
+  },
+  {
+    "project": "argo",
+    "version": "v3.6.0-rc1",
+    "publishedDate": "2026-09-16T00:08:12.000Z",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.0-rc1",
+    "sourceId": "argo",
+    "title": "v3.6.0-rc1"
+  },
+  {
+    "project": "kubernetes",
+    "version": "v1.37",
+    "publishedDate": "2026-09-15T18:30:00.000Z",
+    "url": "https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/",
+    "sourceId": "kubernetes",
+    "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta"
   },
   {
     "project": "crossplane",
@@ -48,14 +72,6 @@
     "title": "3.15.0-rc.0 / 2026-09-09"
   },
   {
-    "project": "kubernetes",
-    "version": "v1.37",
-    "publishedDate": "2026-09-14T18:30:00.000Z",
-    "url": "https://kubernetes.io/blog/2026/09/14/kubernetes-v1-37-memory-qos-graduates-to-beta/",
-    "sourceId": "kubernetes",
-    "title": "Kubernetes v1.37: Memory QoS Graduates to Beta"
-  },
-  {
     "project": "k8sgpt",
     "version": "v0.4.39",
     "publishedDate": "2026-09-14T14:25:02.000Z",
@@ -70,14 +86,6 @@
     "url": "https://www.cncf.io/blog/2026/09/14/cilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more/",
     "sourceId": "cncf",
     "title": "Cilium 1.20: Gateway API ExternalAuth, TCPRoute/UDPRoute, ENI IPAM for IPv6, and more"
-  },
-  {
-    "project": "argo",
-    "version": "v3.5.3",
-    "publishedDate": "2026-09-14T08:03:40.000Z",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.3",
-    "sourceId": "argo",
-    "title": "v3.5.3"
   },
   {
     "project": "oci-oke",
@@ -158,14 +166,6 @@
     "url": "https://github.com/fluxcd/flux2/releases/tag/v2.9.5",
     "sourceId": "flux",
     "title": "v2.9.5"
-  },
-  {
-    "project": "opentelemetry",
-    "version": "v1.47.0-rc.1",
-    "publishedDate": "2026-08-31T15:40:58.000Z",
-    "url": "https://opentelemetry.io/blog/2026/go-logs-api-sdk-rc/",
-    "sourceId": "opentelemetry",
-    "title": "OpenTelemetry Go Logs API and SDK reach release candidate status"
   },
   {
     "project": "loki",

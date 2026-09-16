@@ -1,12 +1,33 @@
 [
   {
-    "id": "cilium-94e7a93450a0",
-    "title": "v1.19.8",
-    "summary": "Release v1.19.8",
+    "id": "opentelemetry-7b7c72fb5cd9",
+    "title": "Kubernetes attributes processor reaches v1.0.0 milestone",
+    "summary": "The Kubernetes attributes processor, which enriches your telemetry with Kubernetes metadata, has officially moved to v1.0.0! You can try it out on your custom distro, and it is also available as part of the latest opentelemetry-collector-contrib and opentelemetry-collector-k8s distro releases. Being v1.0.0 means the component is now verified to fulfill the &lsquo;stable&rsquo; stability criteria including requirements around testing, benchmarking, documentation and telemetry stability. It also e",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/k8s-attributes-processor-v1/",
+    "publishedDate": "2026-09-16T04:59:27.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry",
+    "releaseVersion": "v1.0.0"
+  },
+  {
+    "id": "cilium-cb9ee79b9b3e",
+    "title": "1.20.2",
+    "summary": "Summary of Changes Minor Changes: gateway-api: node label selector for when hostNetwork is enabled (Backport PR #48636, Upstream PR #47463, @xtineskim) Bugfixes: aws/ipam: Fixed a bug where the operator in ENI IPAM mode would try to release prefix IPs as individual IPs even when they were in use. (Backport PR #48418, Upstream PR #48125, @41ks) aws/ipam: Fixed a bug where the operator would fail to allocate new IPs to nodes with prefix delegation enabled on subnets that ran out of prefixes. (Back",
     "source": "Cilium",
     "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.19.8",
-    "publishedDate": "2026-09-15T21:56:11.000Z",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.20.2",
+    "publishedDate": "2026-09-16T01:53:22.000Z",
     "domain": "ebpf-cilium",
     "topics": [
       "cilium",
@@ -17,7 +38,90 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "cilium",
-    "releaseVersion": "v1.19.8"
+    "releaseVersion": "1.20.2"
+  },
+  {
+    "id": "cilium-94e7a93450a0",
+    "title": "1.19.8",
+    "summary": "Summary of Changes Bugfixes: aws/ipam: Fixed a bug where the operator would fail to allocate new IPs to nodes with prefix delegation enabled on subnets that ran out of prefixes. (Backport PR #48604, Upstream PR #48193, @41ks) bpf: Fix agent crash when dumping map events (Backport PR #48379, Upstream PR #48273, @joestringer) bpf: hostfw: tolerate unknown CT protocols and rely on policies (Backport PR #47620, Upstream PR #47343, @smagnani96) datapath/linux/config: fix IPV4_DIRECT_ROUTING selection",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.19.8",
+    "publishedDate": "2026-09-16T01:53:16.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.19.8"
+  },
+  {
+    "id": "cilium-26f9309d075e",
+    "title": "1.18.14",
+    "summary": "Summary of Changes Bugfixes: aws/ipam: Fixed a bug where the operator would fail to allocate new IPs to nodes with prefix delegation enabled on subnets that ran out of prefixes. (Backport PR #48607, Upstream PR #48193, @41ks) bpf: Fix agent crash when dumping map events (Backport PR #48380, Upstream PR #48273, @joestringer) datapath/linux/config: fix IPV4_DIRECT_ROUTING selection on lo device (Backport PR #48554, Upstream PR #46861, @fdomain) Fix Hubble Relay remains running during termination (",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.18.14",
+    "publishedDate": "2026-09-16T01:53:07.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "ebpf-cilium",
+      "hubble",
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.18.14"
+  },
+  {
+    "id": "argo-797e2cca8e00",
+    "title": "v3.6.0-rc1",
+    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.6.0-rc1/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.6.0-rc1/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for contai",
+    "source": "Argo",
+    "sourceId": "argo",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.0-rc1",
+    "publishedDate": "2026-09-16T00:08:12.000Z",
+    "domain": "gitops",
+    "topics": [
+      "gitops",
+      "argo-cd",
+      "argo",
+      "argocd"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "argo",
+    "releaseVersion": "v3.6.0-rc1"
+  },
+  {
+    "id": "argo-04315e6a173e",
+    "title": "gitops-engine/v3.6.0-rc1: chore: bump version to 3.6.0-rc1 on release-3.6 branch (#29730)",
+    "summary": "Signed-off-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com> Co-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>",
+    "source": "Argo",
+    "sourceId": "argo",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/gitops-engine%2Fv3.6.0-rc1",
+    "publishedDate": "2026-09-15T23:18:18.000Z",
+    "domain": "gitops",
+    "topics": [
+      "gitops",
+      "argo",
+      "argocd"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "argo",
+    "releaseVersion": "v3.6.0-rc1"
   },
   {
     "id": "cilium-77fbbe878d21",
@@ -40,26 +144,6 @@
     "releaseVersion": "1.19.8"
   },
   {
-    "id": "cilium-cb9ee79b9b3e",
-    "title": "v1.20.2",
-    "summary": "Release v1.20.2",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.20.2",
-    "publishedDate": "2026-09-15T19:57:42.000Z",
-    "domain": "ebpf-cilium",
-    "topics": [
-      "cilium",
-      "ebpf",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "v1.20.2"
-  },
-  {
     "id": "cilium-447614095266",
     "title": "1.20.2",
     "summary": "Release v1.20.2",
@@ -80,24 +164,22 @@
     "releaseVersion": "1.20.2"
   },
   {
-    "id": "cilium-26f9309d075e",
-    "title": "v1.18.14",
-    "summary": "Release v1.18.14",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.18.14",
-    "publishedDate": "2026-09-15T17:22:01.000Z",
-    "domain": "ebpf-cilium",
+    "id": "kubernetes-993e015ba316",
+    "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
+    "summary": "With the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36, this enhancement builds on Pod-Level Resources by equipping Kubelet's Topology Manager, CPU Manager, and Memory Manager to use Pod-level resource declarations (.spec.resources) directly when making hardware placement decisions. Bringing pod-level resources to node managersBefore this feature, obtaining exclusiv",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/",
+    "publishedDate": "2026-09-15T18:30:00.000Z",
+    "domain": "kubernetes",
     "topics": [
-      "cilium",
-      "ebpf",
-      "networking"
+      "kubernetes"
     ],
-    "importance": "medium",
-    "architectureShift": false,
+    "importance": "critical",
+    "architectureShift": true,
     "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "v1.18.14"
+    "releaseProject": "kubernetes",
+    "releaseVersion": "v1.37"
   },
   {
     "id": "cilium-a3b72ca1041c",
@@ -9372,84 +9454,6 @@
     "releaseRelated": true,
     "releaseProject": "prometheus",
     "releaseVersion": "3.13.1"
-  },
-  {
-    "id": "kyverno-f3bd9418b952",
-    "title": "v1.18.2",
-    "summary": "What's Changed fix: restart dynamic watchers in background reporting on 410 (Cherry-pick #16028) by @kyverno-bot in #16030 fix: do not abort required validation on non-matching images (Cherry-pick #16208) by @kyverno-bot in #16218 fix(cli): allow multiple CRDs in to be in the --crd-path file (Cherry-pick #16161) by @kyverno-bot in #16215 fix(gpol,mpol): enforce namespace boundary in generator.apply() (backport GHSA-79gf-7frw-68m9 to release-1.18) by @realshuting in #16238 feat(pss-helm): add ima",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.18.2",
-    "publishedDate": "2026-07-10T02:47:45.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno",
-    "releaseVersion": "v1.18.2"
-  },
-  {
-    "id": "kyverno-439e592622c6",
-    "title": "kyverno-chart-3.8.2",
-    "summary": "kyverno-chart-3.8.2",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-chart-3.8.2",
-    "publishedDate": "2026-07-10T01:37:12.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno"
-  },
-  {
-    "id": "kyverno-e3348b5bc388",
-    "title": "kyverno-policies-chart-3.8.2",
-    "summary": "kyverno-policies-chart-3.8.2",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-policies-chart-3.8.2",
-    "publishedDate": "2026-07-10T01:37:04.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno"
-  },
-  {
-    "id": "containerd-9bc0c8cd257a",
-    "title": "containerd 2.3.3",
-    "summary": "Welcome to the v2.3.3 release of containerd! The third patch release for containerd 2.3 contains various fixes and updates. Highlights Set SystemTemp environment variable on Windows so temp directory overrides work for SYSTEM services (#13694) Container Runtime Interface (CRI) Fix nil pointer dereference in NRI GetIPs during pod sandbox teardown or container exit (#13697) Reject CreateContainer calls when the target sandbox is not running (#13668) Ensure sandbox shutdown on RunPodSandbox hook fa",
-    "source": "containerd",
-    "sourceId": "containerd",
-    "url": "https://github.com/containerd/containerd/releases/tag/v2.3.3",
-    "publishedDate": "2026-07-10T00:04:40.000Z",
-    "domain": "containers",
-    "topics": [
-      "containers",
-      "containerd",
-      "runtime"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "containerd",
-    "releaseVersion": "2.3.3"
   },
   {
     "id": "prometheus-0d55e8efb72e",
