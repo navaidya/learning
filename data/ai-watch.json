@@ -1,5 +1,63 @@
 [
   {
+    "id": "langfuse-2e31352efcd7",
+    "title": "v3.225.8",
+    "summary": "What's Changed security: Resolve redirect paths with the URL constructor (v3 backport of #16928) by @Steffen911 in #17526 fix(ingestion): merge same-timestamp events in arrival order (v3 backport of #16925) by @Steffen911 in #17527 fix(shared): propagate GCS source-stream errors through pipeline() (v3 backport of #16995) by @Steffen911 in #17529 Full Changelog: v3.225.7...v3.225.8",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v3.225.8",
+    "publishedDate": "2026-09-16T11:26:54.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v3.225.8"
+  },
+  {
+    "id": "cncf-video-81688d8bcdb9",
+    "title": "Automated agent and bot traffic has officially surpassed human web traffic for the first time.",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/shorts/1AnXS5qUYDM",
+    "publishedDate": "2026-09-16T09:45:29.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "langfuse-ad6cd1bf12b3",
+    "title": "v4.37.0",
+    "summary": "What's Changed Features feat(ai-gateway): capture Responses facts in debug logs by @hassiebp in #17442 feat(mcp): Add batchUpsertDatasetItems tool by @bezbac in #17463 feat(worker): add Rust native addon scaffold (@langfuse/native) by @sumerman in #17062 feat(query-ast): declare per-table dedup without events LIMIT BY by @niklassemmler in #16981 feat(ai-gateway): upload finalized generations to Langfuse by @hassiebp in #17470 feat(query-ast): bind values with the compared column's ClickHouse typ",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.37.0",
+    "publishedDate": "2026-09-16T09:06:14.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.37.0"
+  },
+  {
     "id": "langfuse-67e82966e6dc",
     "title": "v4.36.1",
     "summary": "What's Changed Fixes / Improvements fix(users): stop the column order and visibility keys colliding by @nkabardin in #17445 Chores chore(ai-gateway): Cache rust builds by @bezbac in #17440 chore: fix test: measure deleted-mask cleanup by physical rows, not patch parts by @sumerman in #17444 perf(filter-options): accelerate metadata equality with a text-index prefilter by @niklassemmler in #17353 refactor(web): Add design system DropdownMenu component by @bezbac in #17443 chore(deps): bump nodema",

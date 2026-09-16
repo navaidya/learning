@@ -1,5 +1,62 @@
 [
   {
+    "id": "cncf-be720e47bdfd",
+    "title": "Running OpenBao on Kubernetes with a CloudNativePG PostgreSQL backend",
+    "summary": "Managing infrastructure secrets on Kubernetes needs a backend that is self-healing and free of vendor lock-in, and that is exactly what OpenBao (the Linux Foundation’s open-source fork of HashiCorp Vault) and CloudNativePG give you: an entirely...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/09/16/running-openbao-on-kubernetes-with-a-cloudnativepg-postgresql-backend/",
+    "publishedDate": "2026-09-16T11:30:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "pulumi-d5b749198345",
+    "title": "v3.263.0",
+    "summary": "3.263.0 (2026-09-15) Bug Fixes [cli/deployment] Stop pulumi deployment settings edit overwriting the source of stacks that use a provider other than GitHub, take --path-filter once per filter rather than splitting it on commas, and report an unconfigured stack from get instead of failing #24526 [engine] Fix remote component provider state migrations being skipped when the caller also supplies migrations #24620 [engine] Forward caller error hooks to remote component providers #24622 [cli/do] Erro",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.263.0",
+    "publishedDate": "2026-09-16T11:16:53.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.263.0"
+  },
+  {
+    "id": "oci-oke-a3ae99a8d7a3",
+    "title": "v9.2.0",
+    "summary": "9.2.0 (September 16, 2026) Added Support OCVP VMware binary action data sources Support for BYOK - Bring Your Own Keys for PSQL.",
+    "source": "OCI / OKE",
+    "sourceId": "oci-oke",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.2.0",
+    "publishedDate": "2026-09-16T10:56:39.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "oci",
+      "oke",
+      "oracle"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "oci-oke",
+    "releaseVersion": "v9.2.0"
+  },
+  {
     "id": "opentelemetry-7b7c72fb5cd9",
     "title": "Kubernetes attributes processor reaches v1.0.0 milestone",
     "summary": "The Kubernetes attributes processor, which enriches your telemetry with Kubernetes metadata, has officially moved to v1.0.0! You can try it out on your custom distro, and it is also available as part of the latest opentelemetry-collector-contrib and opentelemetry-collector-k8s distro releases. Being v1.0.0 means the component is now verified to fulfill the &lsquo;stable&rsquo; stability criteria including requirements around testing, benchmarking, documentation and telemetry stability. It also e",
@@ -122,6 +179,25 @@
     "releaseRelated": true,
     "releaseProject": "argo",
     "releaseVersion": "v3.6.0-rc1"
+  },
+  {
+    "id": "pulumi-3aad4d3ea614",
+    "title": "sdk/v3.263.0: Update dependency pulumi/pulumi-yaml to v1.38.6 (#24675)",
+    "summary": "This PR contains the following updates: Package Update Change pulumi/pulumi-yaml patch v1.38.5 → v1.38.6 WarningSome dependencies could not be looked up. Check the Dependency Dashboard for more information. Release Notes pulumi/pulumi-yaml (pulumi/pulumi-yaml) v1.38.6 Compare Source Dependencies [runtime] Update golang.org/x/crypto to v0.56.0 [runtime] Update github.com/pulumi/pulumi/pkg/v3 to v3.262.0 Configuration 📅 Schedule: (UTC) Branch creation At any time (no schedule defined) Automerge M",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.263.0",
+    "publishedDate": "2026-09-15T22:26:04.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.263.0"
   },
   {
     "id": "cilium-77fbbe878d21",
@@ -9337,83 +9413,6 @@
     "releaseRelated": true,
     "releaseProject": "holmesgpt",
     "releaseVersion": "0.36.0-alpha3"
-  },
-  {
-    "id": "opentelemetry-44d357232451",
-    "title": "Call for Contributors: OpenTelemetry for Dart and Flutter",
-    "summary": "Why OpenTelemetry for Dart and Flutter? Dart is a full-stack language and the language of Flutter, one of the most popular frameworks for building cross-platform applications. Data shows over 20% of current app store submissions are Flutter apps. Dart is null safe and type safe, compiles to fast binaries, and is increasingly used for backend services as well. Yet Dart remains the last top-15 programming language without an officially maintained OpenTelemetry SDK. Earlier community implementation",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/dart-flutter-opentelemetry/",
-    "publishedDate": "2026-07-13T08:20:00.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "karpenter-2abcdcd89af1",
-    "title": "v1.14.0",
-    "summary": "Features dra allocator implementation (#3082) #3082 (Jason Deal) add zone label to node/nodeclaim lifecycle metrics (#3096) #3096 (Derek Frank) Support CapacityBuffer API (#3028) #3028 (Sumukha Radhakrishna) consolidateAfter now applies to destination nodes during consolidation (#3006) #3006 (Derek Frank) dra consumable capacity + partitionable devices support (#3110) #3110 (Ryan Mistretta) add offering overrides and multi-allocatable scheduling support (#3109) #3109 (Jigisha Patil) dra allocato",
-    "source": "Karpenter",
-    "sourceId": "karpenter",
-    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.14.0",
-    "publishedDate": "2026-07-11T00:17:58.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "karpenter",
-      "kubernetes",
-      "autoscaling"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "karpenter",
-    "releaseVersion": "v1.14.0"
-  },
-  {
-    "id": "k8sgpt-6893197736bb",
-    "title": "v0.4.36",
-    "summary": "0.4.36 (2026-07-10) Bug Fixes correct Vertex AI legacy model ids by removing stray asterisk (#1684) (60a9794), closes #1516 deps: update k8s.io/utils digest to be93311 (#1674) (de01885) deps: update module golang.org/x/net to v0.55.0 [security] (#1678) (2e57a6f) guard interplex cache Store and Load against nil grpc conn (#1682) (238a97a) send temperature or top_p exclusively for Anthropic models (#1675) (2cda9d8) Other deps: update docker/login-action action to v4 (#1662) (60268ca) deps: update ",
-    "source": "K8sGPT",
-    "sourceId": "k8sgpt",
-    "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.36",
-    "publishedDate": "2026-07-10T14:00:05.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "k8sgpt",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "k8sgpt",
-    "releaseVersion": "v0.4.36"
-  },
-  {
-    "id": "hashicorp-19526a924400",
-    "title": "Announcing the public beta of Vault Kubernetes key management",
-    "summary": "Announcing the public beta of Vault Kubernetes key management, enabling Kubernetes to use Vault Enterprise as a KMS provider for etcd encryption.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/announcing-the-public-beta-of-vault-kubernetes-key-management",
-    "publishedDate": "2026-07-10T14:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "prometheus-06ea4003c0f9",

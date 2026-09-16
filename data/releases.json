@@ -1,5 +1,21 @@
 [
   {
+    "project": "pulumi",
+    "version": "v3.263.0",
+    "publishedDate": "2026-09-16T11:16:53.000Z",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.263.0",
+    "sourceId": "pulumi",
+    "title": "v3.263.0"
+  },
+  {
+    "project": "oci-oke",
+    "version": "v9.2.0",
+    "publishedDate": "2026-09-16T10:56:39.000Z",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.2.0",
+    "sourceId": "oci-oke",
+    "title": "v9.2.0"
+  },
+  {
     "project": "opentelemetry",
     "version": "v1.0.0",
     "publishedDate": "2026-09-16T04:59:27.000Z",
@@ -86,22 +102,6 @@
     "url": "https://www.cncf.io/blog/2026/09/14/cilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more/",
     "sourceId": "cncf",
     "title": "Cilium 1.20: Gateway API ExternalAuth, TCPRoute/UDPRoute, ENI IPAM for IPv6, and more"
-  },
-  {
-    "project": "oci-oke",
-    "version": "v9.1.0",
-    "publishedDate": "2026-09-10T16:32:50.000Z",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.1.0",
-    "sourceId": "oci-oke",
-    "title": "v9.1.0"
-  },
-  {
-    "project": "pulumi",
-    "version": "v3.262.0",
-    "publishedDate": "2026-09-10T12:16:24.000Z",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.262.0",
-    "sourceId": "pulumi",
-    "title": "pkg/v3.262.0: Changelog and go.mod updates for v3.262.0 (#24624)"
   },
   {
     "project": "kyverno",
