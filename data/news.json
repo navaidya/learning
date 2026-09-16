@@ -1,5 +1,145 @@
 [
   {
+    "id": "holmesgpt-78b99f0501dc",
+    "title": "0.42.0-alpha",
+    "summary": "ROB-973: harden kubernetes-remediation file-read policy defaults in t… …he Helm chart (#2479) Chart side of [ROB-973](https://linear.app/robusta/issue/ROB-973/holmes-mcp-integrations-codex-h01-auto-approved-container-file-reads) / [ROB-1103](https://linear.app/robusta/issue/ROB-1103). Server side: robusta-dev/holmes-mcp-integrations PR \"ROB-973: harden read_file_from_container path policy\" (image `1.4.0`). ## What was wrong `mcpAddons.kubernetesRemediation.config.fileReadAllowedPaths` defaulted ",
+    "source": "HolmesGPT (Robusta)",
+    "sourceId": "holmesgpt",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.42.0-alpha",
+    "publishedDate": "2026-09-16T16:57:37.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "holmesgpt",
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "holmesgpt",
+    "releaseVersion": "0.42.0-alpha"
+  },
+  {
+    "id": "opentelemetry-collector-211ca593d3a1",
+    "title": "v1.67.0/v0.161.0",
+    "summary": "Images and binaries here: https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.161.0 End User Changelog 🛑 Breaking changes 🛑 pkg/pprofile: Remove deprecated AggregationTemporality, Duration, SetDuration (#15855) pkg/scraperhelper/controller: Remove deprecated AddScraper func (#15934) pkg/service: Remove deprecated ZapOptions (#15935) pkg/xconfmap: Remove deprecated WithForceUnmarshaler func (#15932) 💡 Enhancements 💡 pkg/pdata: avoid allocations in WriteInt64 and",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.161.0",
+    "publishedDate": "2026-09-16T16:39:10.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v1.67.0"
+  },
+  {
+    "id": "containerd-5bba6ec30d4d",
+    "title": "containerd API 1.12.0",
+    "summary": "Welcome to the api/v1.12.0 release of containerd! The 13th release for the containerd 1.x API aligns with the containerd 2.4 release. Highlights Image Storage Include media type in content create events (#13833) Runtime Add UpdateSandbox RPC to propagate sandbox controller updates to the shim (#14105) Allow specifying parent checkpoint directory when checkpointing with runc (#13699) Deprecations Deprecate containerd.io/runtime-allow-mounts shim annotation in favor of MountCapabilities bootstrap ",
+    "source": "containerd",
+    "sourceId": "containerd",
+    "url": "https://github.com/containerd/containerd/releases/tag/api%2Fv1.12.0",
+    "publishedDate": "2026-09-16T16:26:55.000Z",
+    "domain": "containers",
+    "topics": [
+      "containers",
+      "containerd",
+      "runtime"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "containerd",
+    "releaseVersion": "1.12.0"
+  },
+  {
+    "id": "argo-797e2cca8e00",
+    "title": "v3.6.0-rc1",
+    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.6.0-rc1/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.6.0-rc1/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for contai",
+    "source": "Argo",
+    "sourceId": "argo",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.0-rc1",
+    "publishedDate": "2026-09-16T16:11:35.000Z",
+    "domain": "gitops",
+    "topics": [
+      "gitops",
+      "argo-cd",
+      "argo",
+      "argocd"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "argo",
+    "releaseVersion": "v3.6.0-rc1"
+  },
+  {
+    "id": "terraform-9ff53c3d650f",
+    "title": "v1.16.3",
+    "summary": "1.16.3 (September 16, 2026) BUG FIXES: Fix handling of destroy=false around create_before_destroy instances (#39169) Fix function result comparison when there are multiple marks (#39170) Filter logic for marks could cause values with multiple marks to erroneously fail validations (#39171) Fix issue with import provider resolution (#39185)",
+    "source": "Terraform",
+    "sourceId": "terraform",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.3",
+    "publishedDate": "2026-09-16T14:33:39.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "terraform",
+    "releaseVersion": "v1.16.3"
+  },
+  {
+    "id": "openai-52752974efc0",
+    "title": "Reimagining advertising with AI",
+    "summary": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/reimagining-advertising-with-ai",
+    "publishedDate": "2026-09-16T13:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "pulumi-b911c06867f7",
+    "title": "pkg/v3.263.0: Changelog and go.mod updates for v3.263.0 (#24679)",
+    "summary": "Co-authored-by: github-actions github-actions@github.com",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.263.0",
+    "publishedDate": "2026-09-16T12:01:10.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.263.0"
+  },
+  {
     "id": "cncf-be720e47bdfd",
     "title": "Running OpenBao on Kubernetes with a CloudNativePG PostgreSQL backend",
     "summary": "Managing infrastructure secrets on Kubernetes needs a backend that is self-healing and free of vendor lock-in, and that is exactly what OpenBao (the Linux Foundation’s open-source fork of HashiCorp Vault) and CloudNativePG give you: an entirely...",
@@ -140,25 +280,25 @@
     "releaseVersion": "1.18.14"
   },
   {
-    "id": "argo-797e2cca8e00",
-    "title": "v3.6.0-rc1",
-    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.6.0-rc1/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.6.0-rc1/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for contai",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.0-rc1",
-    "publishedDate": "2026-09-16T00:08:12.000Z",
-    "domain": "gitops",
+    "id": "istio-f63c96f1f45a",
+    "title": "Retirement of Kubernetes integration jobs for unsupported Kubernetes versions",
+    "summary": "The Istio Test and Release Working Group is retiring CI integration tests for older Kubernetes versions from the master branch, affecting Istio versions 1.32 and newer. What&rsquo;s changing Previously, Istio would have a supported range of Kubernetes versions that were typically N-3 or N-4 of the latest Kubernetes version, but would continue testing older Kubernetes versions. Currently, this means we are testing Kubernetes 1.23 through 1.36. With test-infra PR 6048, we are removing the tested o",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/blog/2026/retirement-of-k8s-integration-jobs/",
+    "publishedDate": "2026-09-16T00:00:00.000Z",
+    "domain": "kubernetes",
     "topics": [
-      "gitops",
-      "argo-cd",
-      "argo",
-      "argocd"
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
     ],
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "v3.6.0-rc1"
+    "releaseProject": "istio",
+    "releaseVersion": "1.32"
   },
   {
     "id": "argo-04315e6a173e",
@@ -515,27 +655,6 @@
     "releaseRelated": true,
     "releaseProject": "containerd",
     "releaseVersion": "1.12.0-rc.1"
-  },
-  {
-    "id": "opentelemetry-collector-211ca593d3a1",
-    "title": "v1.67.0/v0.161.0",
-    "summary": "Images and binaries here: https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/ End User Changelog 🛑 Breaking changes 🛑 pkg/pprofile: Remove deprecated AggregationTemporality, Duration, SetDuration (#15855) pkg/scraperhelper/controller: Remove deprecated AddScraper func (#15934) pkg/service: Remove deprecated ZapOptions (#15935) pkg/xconfmap: Remove deprecated WithForceUnmarshaler func (#15932) 💡 Enhancements 💡 pkg/pdata: avoid allocations in WriteInt64 and WriteUi",
-    "source": "OpenTelemetry Collector",
-    "sourceId": "opentelemetry-collector",
-    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.161.0",
-    "publishedDate": "2026-09-14T22:49:14.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "collector",
-      "otel",
-      "observability"
-    ],
-    "importance": "critical",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "opentelemetry-collector",
-    "releaseVersion": "v1.67.0"
   },
   {
     "id": "opentelemetry-collector-7a34112d805e",
@@ -9257,118 +9376,6 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "kubernetes-4df1441b65e7",
-    "title": "Kubernetes Dashboard to Headlamp: A Step-by-Step Guide",
-    "summary": "1. Before you start: know what is changingKubernetes Dashboard and Headlamp both show what is running in a cluster, but they work differently. When Headlamp runs on the desktop, it uses your existing kubeconfig to connect to one or more clusters and can be extended with plugins. When Headlamp runs inside a cluster, it uses a Kubernetes ServiceAccount to access the API and follow RBAC rules. Kubernetes Dashboard, in contrast, only runs in-cluster and always relies on service account tokens. Under",
-    "source": "Kubernetes",
-    "sourceId": "kubernetes",
-    "url": "https://kubernetes.io/blog/2026/07/13/kubernetes-dashboard-to-headlamp/",
-    "publishedDate": "2026-07-13T18:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "opentofu-cc4d4fec1e7f",
-    "title": "v1.12.4",
-    "summary": "BUG FIXES: tofu plan -out no longer fails when the plan includes a resource with lifecycle { destroy = false } that needs replacement, which previously errored with invalid change action ForgetThenCreate. (#4324) Moved block now correctly compares provider source addresses. (#4280)[https://github.com//pull/4280] Correct Source Provider Address now passed into Provider MoveResource requests. (#4355)[https://github.com//pull/4355] Full Changelog: v1.12.3...v1.12.4",
-    "source": "OpenTofu",
-    "sourceId": "opentofu",
-    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.4",
-    "publishedDate": "2026-07-13T16:07:42.000Z",
-    "domain": "terraform",
-    "topics": [
-      "opentofu",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentofu",
-    "releaseVersion": "v1.12.4"
-  },
-  {
-    "id": "opentofu-2096f4d86457",
-    "title": "v1.11.12",
-    "summary": "BUG FIXES: Moved block now correctly compares provider source addresses. (#4280)[https://github.com//pull/4280] Correct Source Provider Address now passed into Provider MoveResource requests. (#4355)[https://github.com//pull/4355] Full Changelog: v1.11.11...v1.11.12",
-    "source": "OpenTofu",
-    "sourceId": "opentofu",
-    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.11.12",
-    "publishedDate": "2026-07-13T16:07:11.000Z",
-    "domain": "terraform",
-    "topics": [
-      "opentofu",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentofu",
-    "releaseVersion": "v1.11.12"
-  },
-  {
-    "id": "flux-171f8c023d84",
-    "title": "v2.9.2",
-    "summary": "Highlights Flux v2.9.2 is a patch release. The main fix addresses a regression introduced in v2.9.1 where a Kustomization with openapi.path pointing to a URL failed to reconcile with failed to read OpenAPI schema. This release also corrects several CRD field descriptions that contained inaccurate or leaked content. Users are encouraged to upgrade for the best experience. ℹ️ Please follow the Upgrade Procedure for Flux v2.7+ for a smooth upgrade from Flux v2.6 to the latest version. Fixes: Fix a ",
-    "source": "Flux",
-    "sourceId": "flux",
-    "url": "https://github.com/fluxcd/flux2/releases/tag/v2.9.2",
-    "publishedDate": "2026-07-13T13:36:07.000Z",
-    "domain": "gitops",
-    "topics": [
-      "flux",
-      "gitops",
-      "cd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "flux",
-    "releaseVersion": "v2.9.2"
-  },
-  {
-    "id": "robusta-493d8c0acddc",
-    "title": "0.45.0",
-    "summary": "What's Changed ROB-523 docs: namespace-scoped RBAC guide (restore + how-it-works) by @Avi-Robusta in #2114 ROB-566 Upgrade pytest to ^9.0.3 to fix CVE-2025-71176 by @moshemorad in #2115 [ROB-572] bump holmes by @Avi-Robusta in #2119 Full Changelog: 0.44.0...0.45.0",
-    "source": "Robusta",
-    "sourceId": "robusta",
-    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.45.0",
-    "publishedDate": "2026-07-13T11:39:51.000Z",
-    "domain": "aiops",
-    "topics": [
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "robusta",
-    "releaseVersion": "0.45.0"
-  },
-  {
-    "id": "robusta-4ff2643d5930",
-    "title": "0.45.0-alpha",
-    "summary": "What's Changed ROB-523 docs: namespace-scoped RBAC guide (restore + how-it-works) by @Avi-Robusta in #2114 ROB-566 Upgrade pytest to ^9.0.3 to fix CVE-2025-71176 by @moshemorad in #2115 Full Changelog: 0.44.0...0.45.0-alpha",
-    "source": "Robusta",
-    "sourceId": "robusta",
-    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.45.0-alpha",
-    "publishedDate": "2026-07-13T09:54:25.000Z",
-    "domain": "aiops",
-    "topics": [
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "robusta",
-    "releaseVersion": "0.45.0-alpha"
   },
   {
     "id": "holmesgpt-f4a8a91f494f",
