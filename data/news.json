@@ -1,5 +1,24 @@
 [
   {
+    "id": "robusta-91135b6e19dd",
+    "title": "0.50.0",
+    "summary": "What's Changed ROB-1370 Fix docs build: use pydantic.v1.fields in autorobusta by @Avi-Robusta in #2171 Namespace scope runner permissions by @arikalon1 in #2173 Full Changelog: 0.49.0...0.50.0",
+    "source": "Robusta",
+    "sourceId": "robusta",
+    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.50.0",
+    "publishedDate": "2026-09-16T22:35:29.000Z",
+    "domain": "aiops",
+    "topics": [
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "robusta",
+    "releaseVersion": "0.50.0"
+  },
+  {
     "id": "containerd-e525061d9efa",
     "title": "containerd 2.4.0",
     "summary": "Welcome to the v2.4.0 release of containerd! containerd 2.4 is a regular (non-LTS) release with a shorter support window, intended for users who want to adopt new features sooner. As the release following the 2.3 LTS, it is the point in the release cycle where previously deprecated features may be removed, so this release may include breaking changes; check the notes below and clear any deprecation warnings from your current version before upgrading. Users prioritizing stability and a longer sup",
@@ -59,6 +78,24 @@
     "releaseRelated": true,
     "releaseProject": "holmesgpt",
     "releaseVersion": "0.42.0"
+  },
+  {
+    "id": "kubernetes-6cde82bb2202",
+    "title": "Kubernetes v1.37: Hardening Container Storage with Bind Mount Options and EmptyDir Permissions",
+    "summary": "Kubernetes v1.37 brings important storage security features: emptyDir permission modes and bind mount options. They help application programmers and security professionals implement rigorous security policies, for example, prohibiting deletion of files across containers or execution of arbitrary binaries from writable volumes, directly in Kubernetes without any complicated circumvention. Linux storage and permission fundamentalsBefore diving into the new Kubernetes features, let us briefly revie",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/",
+    "publishedDate": "2026-09-16T18:30:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes",
+    "releaseVersion": "v1.37"
   },
   {
     "id": "holmesgpt-78b99f0501dc",
@@ -9306,43 +9343,6 @@
     "releaseRelated": true,
     "releaseProject": "oci-oke",
     "releaseVersion": "v8.23.0"
-  },
-  {
-    "id": "vector-3330e1827688",
-    "title": "v0.57.0",
-    "summary": "The COSE team is excited to announce version 0.57.0! 🚀 This is a security focused release which involves breaking changes, however we made sure to provide ways for users to restore previous behavior. View release notes",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/v0.57.0",
-    "publishedDate": "2026-07-14T22:36:49.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector",
-    "releaseVersion": "v0.57.0"
-  },
-  {
-    "id": "kubernetes-0b1a7c5de1ef",
-    "title": "Building a Custom Metrics Exporter for Kubernetes",
-    "summary": "Kubernetes ships with built-in awareness of CPU and memory, but most real-world scaling decisions depend on signals that live entirely outside that narrow window: how many messages are waiting in a queue, how long the last batch job took, how many active WebSocket connections a pod is holding. When the built-in metrics are not enough, a metrics exporter bridges that gap. This post walks through writing one from scratch, packaging it as a container, and wiring it into a cluster so that Prometheus",
-    "source": "Kubernetes",
-    "sourceId": "kubernetes",
-    "url": "https://kubernetes.io/blog/2026/07/14/custom-metrics-exporter-kubernetes/",
-    "publishedDate": "2026-07-14T18:00:00.000Z",
-    "domain": "prometheus",
-    "topics": [
-      "prometheus",
-      "kubernetes"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "backstage-20c874a5e46d",

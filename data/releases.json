@@ -1,5 +1,13 @@
 [
   {
+    "project": "robusta",
+    "version": "0.50.0",
+    "publishedDate": "2026-09-16T22:35:29.000Z",
+    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.50.0",
+    "sourceId": "robusta",
+    "title": "0.50.0"
+  },
+  {
     "project": "containerd",
     "version": "2.4.0",
     "publishedDate": "2026-09-16T20:08:21.000Z",
@@ -8,20 +16,20 @@
     "title": "containerd 2.4.0"
   },
   {
-    "project": "robusta",
-    "version": "0.50.0-alpha",
-    "publishedDate": "2026-09-16T19:53:04.000Z",
-    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.50.0-alpha",
-    "sourceId": "robusta",
-    "title": "0.50.0-alpha"
-  },
-  {
     "project": "holmesgpt",
     "version": "0.42.0",
     "publishedDate": "2026-09-16T19:31:54.000Z",
     "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.42.0",
     "sourceId": "holmesgpt",
     "title": "0.42.0"
+  },
+  {
+    "project": "kubernetes",
+    "version": "v1.37",
+    "publishedDate": "2026-09-16T18:30:00.000Z",
+    "url": "https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/",
+    "sourceId": "kubernetes",
+    "title": "Kubernetes v1.37: Hardening Container Storage with Bind Mount Options and EmptyDir Permissions"
   },
   {
     "project": "opentelemetry-collector",
@@ -86,14 +94,6 @@
     "url": "https://istio.io/latest/blog/2026/retirement-of-k8s-integration-jobs/",
     "sourceId": "istio",
     "title": "Retirement of Kubernetes integration jobs for unsupported Kubernetes versions"
-  },
-  {
-    "project": "kubernetes",
-    "version": "v1.37",
-    "publishedDate": "2026-09-15T18:30:00.000Z",
-    "url": "https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/",
-    "sourceId": "kubernetes",
-    "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta"
   },
   {
     "project": "crossplane",
