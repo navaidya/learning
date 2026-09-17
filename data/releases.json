@@ -1,5 +1,13 @@
 [
   {
+    "project": "loki",
+    "version": "v3.6.17",
+    "publishedDate": "2026-09-17T11:41:38.000Z",
+    "url": "https://github.com/grafana/loki/releases/tag/v3.6.17",
+    "sourceId": "loki",
+    "title": "v3.6.17"
+  },
+  {
     "project": "robusta",
     "version": "0.50.0",
     "publishedDate": "2026-09-16T22:35:29.000Z",
@@ -166,14 +174,6 @@
     "url": "https://github.com/fluxcd/flux2/releases/tag/v2.9.5",
     "sourceId": "flux",
     "title": "v2.9.5"
-  },
-  {
-    "project": "loki",
-    "version": "v3.6.16",
-    "publishedDate": "2026-08-27T21:54:42.000Z",
-    "url": "https://github.com/grafana/loki/releases/tag/v3.6.16",
-    "sourceId": "loki",
-    "title": "v3.6.16"
   },
   {
     "project": "opentofu",

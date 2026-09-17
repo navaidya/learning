@@ -1,5 +1,43 @@
 [
   {
+    "id": "loki-43e3fe0d6662",
+    "title": "v3.6.17",
+    "summary": "3.6.17 (2026-09-09) Bug Fixes security/HIGH/pkg/push: Update module google.golang.org/grpc to v1.83.1 [SECURITY] (release-3.6.x) (#24330) (d8d78f6) security/HIGH/pkg/push: Update module google.golang.org/grpc to v1.83.2 [SECURITY] (release-3.6.x) (#24444) (6d21d6b) security/HIGH/: Update module google.golang.org/grpc to v1.83.1 [SECURITY] (release-3.6.x) (#24329) (ed9df58) security/HIGH/: Update module google.golang.org/grpc to v1.83.2 [SECURITY] (release-3.6.x) (#24430) (ee0ef56) security/MEDIU",
+    "source": "Grafana Loki",
+    "sourceId": "loki",
+    "url": "https://github.com/grafana/loki/releases/tag/v3.6.17",
+    "publishedDate": "2026-09-17T11:41:38.000Z",
+    "domain": "logging",
+    "topics": [
+      "loki",
+      "logging",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "loki",
+    "releaseVersion": "v3.6.17"
+  },
+  {
+    "id": "cncf-4eeef7f5a309",
+    "title": "OpenTelemetry everywhere: Migrating a metrics platform at scale",
+    "summary": "Why we did this at all For most of the last decade our metrics pipeline ran on gostatsd, the open-source StatsD implementation we maintain. It primarily did two jobs: as sidecar on every host and the...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/09/17/opentelemetry-everywhere-migrating-a-metrics-platform-at-scale/",
+    "publishedDate": "2026-09-17T11:00:00.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "robusta-91135b6e19dd",
     "title": "0.50.0",
     "summary": "What's Changed ROB-1370 Fix docs build: use pydantic.v1.fields in autorobusta by @Avi-Robusta in #2171 Namespace scope runner permissions by @arikalon1 in #2173 Full Changelog: 0.49.0...0.50.0",
@@ -9302,47 +9340,6 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "loki"
-  },
-  {
-    "id": "terraform-700027b6b574",
-    "title": "v1.16.0-alpha20260715",
-    "summary": "1.16.0-alpha20260715 (July 15, 2026) NEW FEATURES: Store PlannedPrivate data for providers (#37986) New store block in terraform_data that can handle ephemeral and sensitive values (#38298) Providers can now use nested blocks as computed values (#38305) import: add support for import blocks inside modules (#38352) We now produce builds for Linux s390x (zLinux) (#38384) workspace: The workspace list command can now produce machine-readable output when supplied with the -json flag (#38397) Resourc",
-    "source": "Terraform",
-    "sourceId": "terraform",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260715",
-    "publishedDate": "2026-07-15T12:44:36.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "terraform",
-    "releaseVersion": "v1.16.0-alpha20260715"
-  },
-  {
-    "id": "oci-oke-6069843facd5",
-    "title": "v8.23.0",
-    "summary": "8.23.0 (July 14, 2026) Added FSS persistent volumes for Container Instances Support for ZPR Security Attribute Onboarding for ODA Private endpoint Support for datacc service Support for Adding AI Agents features support in AIDP Support for GPU Memory Cluster Support In Instance Pool Support for OSMH: Endpoint Update for IPv6 GA placement_constraint_details (optional parameter) to oci_core_compute_cluster resource Support for Data Safe auditing usability enhancements support for Default DRG RT Ma",
-    "source": "OCI / OKE",
-    "sourceId": "oci-oke",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v8.23.0",
-    "publishedDate": "2026-07-15T03:41:54.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "ai-agent",
-      "oci",
-      "oke",
-      "oracle"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "oci-oke",
-    "releaseVersion": "v8.23.0"
   },
   {
     "id": "backstage-20c874a5e46d",
