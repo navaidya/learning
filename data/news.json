@@ -1,5 +1,106 @@
 [
   {
+    "id": "tempo-2edd95a2e2ba",
+    "title": "v3.1.0-rc.1",
+    "summary": "Grafana Tempo 3.1 adds query-based trace redaction, TraceQL metrics arithmetic and sampling-aware extrapolation, Kafka connectivity improvements, and experimental tools for comparing and pruning traces. It also makes vParquet5 the default format for newly written blocks. This is a release candidate for testing, not the final Tempo 3.1 release. Highlights Redaction by query: Submit redaction jobs using a TraceQL selector instead of enumerating trace IDs, with optional time windows and redaction r",
+    "source": "Grafana Tempo",
+    "sourceId": "tempo",
+    "url": "https://github.com/grafana/tempo/releases/tag/v3.1.0-rc.1",
+    "publishedDate": "2026-09-17T17:37:20.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "tempo",
+      "tracing",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "tempo",
+    "releaseVersion": "v3.1.0-rc.1"
+  },
+  {
+    "id": "hashicorp-9cf80580a863",
+    "title": "HCP Vagrant deprecation: important dates and migration guidance",
+    "summary": "HCP Vagrant will be deprecated in 2026. Users should begin planning migrations as box creation, support, and operations are phased out.",
+    "source": "HashiCorp",
+    "sourceId": "hashicorp",
+    "url": "https://www.hashicorp.com/blog/hcp-vagrant-deprecation-important-dates-and-migration-guidance",
+    "publishedDate": "2026-09-17T16:00:00.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "vault",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "loki-efd17f6a537d",
+    "title": "v3.7.8",
+    "summary": "3.7.8 (2026-09-17) Bug Fixes security/HIGH/pkg/push: Update module google.golang.org/grpc to v1.83.2 [SECURITY] (release-3.7.x) (#24433) (4d5dc2b) security/HIGH/: Update module google.golang.org/grpc to v1.83.1 [SECURITY] (release-3.7.x) (#24328) (0a01797) security/HIGH/: Update module google.golang.org/grpc to v1.83.2 [SECURITY] (release-3.7.x) (#24429) (14b5da8) security/MEDIUM/: Update module github.com/containerd/containerd/v2 to v2.2.8 [SECURITY] (release-3.7.x) (#24460) (3e917f2) security/",
+    "source": "Grafana Loki",
+    "sourceId": "loki",
+    "url": "https://github.com/grafana/loki/releases/tag/v3.7.8",
+    "publishedDate": "2026-09-17T15:51:10.000Z",
+    "domain": "containers",
+    "topics": [
+      "containers",
+      "containerd",
+      "loki",
+      "logging",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "loki",
+    "releaseVersion": "v3.7.8"
+  },
+  {
+    "id": "tempo-bc170da59a5d",
+    "title": "v3.1.0-rc.0",
+    "summary": "v3.1.0-rc.0",
+    "source": "Grafana Tempo",
+    "sourceId": "tempo",
+    "url": "https://github.com/grafana/tempo/releases/tag/v3.1.0-rc.0",
+    "publishedDate": "2026-09-17T15:27:27.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tempo",
+      "tracing",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "tempo",
+    "releaseVersion": "v3.1.0-rc.0"
+  },
+  {
+    "id": "opentofu-0b1714f0beaa",
+    "title": "v1.13.0-rc1",
+    "summary": "The v1.13.x release series is supported until August 1 2027. 1.13.0 (Unreleased) UPGRADE NOTES: The \"winrm\" connection type for provisioners is no longer supported. (#4012) This connection type was deprecated in OpenTofu v1.12, and now removed in v1.13. Some of the upstream libraries OpenTofu was using to implement these features are no longer maintained, so it's not viable for us to offer this anymore. Modern Windows versions now support OpenSSH, and so we suggest that anyone currently relying ",
+    "source": "OpenTofu",
+    "sourceId": "opentofu",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-rc1",
+    "publishedDate": "2026-09-17T15:24:48.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "opentofu",
+      "iac"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "opentofu",
+    "releaseVersion": "v1.13.0-rc1"
+  },
+  {
     "id": "loki-43e3fe0d6662",
     "title": "v3.6.17",
     "summary": "3.6.17 (2026-09-09) Bug Fixes security/HIGH/pkg/push: Update module google.golang.org/grpc to v1.83.1 [SECURITY] (release-3.6.x) (#24330) (d8d78f6) security/HIGH/pkg/push: Update module google.golang.org/grpc to v1.83.2 [SECURITY] (release-3.6.x) (#24444) (6d21d6b) security/HIGH/: Update module google.golang.org/grpc to v1.83.1 [SECURITY] (release-3.6.x) (#24329) (ed9df58) security/HIGH/: Update module google.golang.org/grpc to v1.83.2 [SECURITY] (release-3.6.x) (#24430) (ee0ef56) security/MEDIU",
@@ -9225,86 +9326,6 @@
     "releaseVersion": "v1.6.1"
   },
   {
-    "id": "gateway-api-246b561edffb",
-    "title": "v1.6.0",
-    "summary": "v1.6.0 Changes Since v1.5.1 GEP & API Graduation UDPRoute & TCPRoute Graduation: UDPRoute has graduated to GA. We recommend using the \"v1\" API version with this API now. The \"v1alpha2\" version of this API is deprecated and will be removed in the future. (#4923, @zac-nixon) TCPRoute has graduated to GA. We recommend using the \"v1\" API version with this API now. The \"v1alpha2\" version of this API is deprecated and will be removed in the future. (#4920, @zac-nixon) GEP Status Updates: Add GEP for t",
-    "source": "Gateway API",
-    "sourceId": "gateway-api",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.0",
-    "publishedDate": "2026-07-16T13:31:12.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "gateway-api",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "gateway-api",
-    "releaseVersion": "v1.6.0"
-  },
-  {
-    "id": "openai-6f16a999c8dd",
-    "title": "How Cars24 scales conversations and builds faster with OpenAI",
-    "summary": "Cars24 uses OpenAI-powered voice and chat agents to handle 1M+ monthly conversation minutes, recover 12% of lost leads, and bring agentic workflows to teams across the company.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/cars24",
-    "publishedDate": "2026-07-16T00:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "istio-39a4f436e8c0",
-    "title": "Announcing Istio 1.30.3",
-    "summary": "This release contains bug fixes to improve robustness. This release note describes what’s different between Istio 1.30.2 and 1.30.3. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Changes Added support for a custom taint name for the pilot node untaint controller via the PILOT_NODE_UNTAINT_CONTROLLERS_TAINT_NAME environment variab",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/releases/1.30.x/announcing-1.30.3/",
-    "publishedDate": "2026-07-16T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "1.30.3"
-  },
-  {
-    "id": "istio-32596b17c85e",
-    "title": "Announcing Istio 1.29.6",
-    "summary": "This release contains bug fixes to improve robustness. This release note describes what’s different between Istio 1.29.5 and 1.29.6. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Changes Fixed an issue where EXIT_ON_ZERO_ACTIVE_CONNECTIONS never fired on ambient ingress gateways and waypoints because pilot-agent&rsquo;s drain loo",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/releases/1.29.x/announcing-1.29.6/",
-    "publishedDate": "2026-07-16T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "1.29.6"
-  },
-  {
     "id": "opentelemetry-64bb208d16a5",
     "title": "OpenTelemetry Has Graduated… Now what?",
     "summary": "In case you missed it: OpenTelemetry (OTel) has officially achieved CNCF graduated status! It now stands proudly alongside amazing open source projects such as Kubernetes and Prometheus, to name just a few. It’s been a long journey, and we’re very excited… But, now what? To understand where we’re going, it’s important to understand where we came from. History In the not-so-distant past, telemetry signals were not standardized. This meant telemetry formats differed from tool to tool, with each te",
@@ -9321,25 +9342,6 @@
     "importance": "high",
     "architectureShift": true,
     "releaseRelated": false
-  },
-  {
-    "id": "loki-b836bc698809",
-    "title": "helm-loki-7.1.0",
-    "summary": "ci: Bump helm-release to a commit that uses output.token (#23286)",
-    "source": "Grafana Loki",
-    "sourceId": "loki",
-    "url": "https://github.com/grafana/loki/releases/tag/helm-loki-7.1.0",
-    "publishedDate": "2026-07-15T15:33:20.000Z",
-    "domain": "logging",
-    "topics": [
-      "loki",
-      "logging",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "loki"
   },
   {
     "id": "backstage-20c874a5e46d",

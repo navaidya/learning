@@ -1,5 +1,26 @@
 [
   {
+    "id": "langfuse-823ffcd238b2",
+    "title": "v4.38.0",
+    "summary": "What's Changed Features feat(api)!: reject legacy reads for new organizations by @maxdeichmann in #17487 feat(ci): deploy AI Gateway automatically to staging by @hassiebp in #17532 feat(api): attribute legacy GET rejections to clients by @maxdeichmann in #17539 feat(web): persistent trace summary strip with tags by @nmtrang29 in #17536 feat(filters): metadata key presence operators; coerce legacy empty-substring filters by @niklassemmler in #17357 feat(ai-gateway): isolate caller tracing context",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.38.0",
+    "publishedDate": "2026-09-17T15:26:11.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.38.0"
+  },
+  {
     "id": "pydantic-ai-a759081e1fe3",
     "title": "v2.44.0 (2026-09-16)",
     "summary": "🛡️ Security This release fixes four security issues, all of them reached through web_fetch_tool or OpenTelemetry instrumentation. See each advisory for full details and affected versions. GHSA-vmxc-h2x2-jmf3 (moderate): the cloud-metadata and private-IP blocklists could be bypassed with an IPv6 zone identifier on a URL opted into local network access, via FileUrl(force_download='allow-local') or web_fetch_tool(allow_local_urls=True). Both are off by default. Reported by @euriconicacio. (#8401) ",

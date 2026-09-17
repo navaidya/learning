@@ -1,11 +1,27 @@
 [
   {
+    "project": "tempo",
+    "version": "v3.1.0-rc.1",
+    "publishedDate": "2026-09-17T17:37:20.000Z",
+    "url": "https://github.com/grafana/tempo/releases/tag/v3.1.0-rc.1",
+    "sourceId": "tempo",
+    "title": "v3.1.0-rc.1"
+  },
+  {
     "project": "loki",
-    "version": "v3.6.17",
-    "publishedDate": "2026-09-17T11:41:38.000Z",
-    "url": "https://github.com/grafana/loki/releases/tag/v3.6.17",
+    "version": "v3.7.8",
+    "publishedDate": "2026-09-17T15:51:10.000Z",
+    "url": "https://github.com/grafana/loki/releases/tag/v3.7.8",
     "sourceId": "loki",
-    "title": "v3.6.17"
+    "title": "v3.7.8"
+  },
+  {
+    "project": "opentofu",
+    "version": "v1.13.0-rc1",
+    "publishedDate": "2026-09-17T15:24:48.000Z",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-rc1",
+    "sourceId": "opentofu",
+    "title": "v1.13.0-rc1"
   },
   {
     "project": "robusta",
@@ -176,14 +192,6 @@
     "title": "v2.9.5"
   },
   {
-    "project": "opentofu",
-    "version": "v1.13.0-beta1",
-    "publishedDate": "2026-08-27T18:01:40.000Z",
-    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1",
-    "sourceId": "opentofu",
-    "title": "v1.13.0-beta1"
-  },
-  {
     "project": "kubernetes-releases",
     "version": "v1.37.0",
     "publishedDate": "2026-08-26T16:29:12.000Z",
@@ -222,14 +230,6 @@
     "url": "https://grafana.com/blog/grafana-13-2-release-all-the-latest-features/",
     "sourceId": "grafana",
     "title": "Grafana 13.2 release: easier ways to query and explore your data"
-  },
-  {
-    "project": "tempo",
-    "version": "v3.0.3",
-    "publishedDate": "2026-08-13T20:37:13.000Z",
-    "url": "https://github.com/grafana/tempo/releases/tag/v3.0.3",
-    "sourceId": "tempo",
-    "title": "v3.0.3"
   },
   {
     "project": "hashicorp",
