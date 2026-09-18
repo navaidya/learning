@@ -1,5 +1,48 @@
 [
   {
+    "id": "pydantic-ai-045d0b9488c8",
+    "title": "v2.45.0 (2026-09-17)",
+    "summary": "What's Changed 🚀 Features Add TypeSafeModel for TypeSafe's Jev by @adtyavrdhn in #8450 🐛 Bug Fixes Pass xhigh effort through on Bedrock when the model profile supports it by @willfrey in #8392 Allow gpt-5.6-sol, gpt-5.6-luna, and gpt-5.6-terra on Bedrock Converse by @pydanty in #7825 Resolve a DynamicToolset once per durable run instead of inside every durable unit by @DouweM in #8455 Hold one MCP server session per durable run instead of one per durable unit by @DouweM in #8463 Preserve tool ",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.45.0",
+    "publishedDate": "2026-09-18T04:31:12.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-development",
+      "release"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.45.0"
+  },
+  {
+    "id": "phoenix-c8ff5931708c",
+    "title": "arize-phoenix: v20.14.0",
+    "summary": "20.14.0 (2026-09-18) Features evals: Harbor benchmark for Phoenix MCP and CLI tools (#16192) (7f7d382) Bug Fixes cost: update built-in model token prices (#16199) (f4c3bae) pxi: link references from their owning skill (#16142) (4de212c) Documentation server: align create_graphql_router's docstring with its signature (#16269) (81c8e25) Miscellaneous Chores release arize-phoenix 20.14.0 (#16258) (829f116) release arize-phoenix-client 3.6.0 and repair the manifest (#16255) (a6834ea)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.14.0",
+    "publishedDate": "2026-09-18T02:52:36.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v20.14.0"
+  },
+  {
     "id": "langfuse-823ffcd238b2",
     "title": "v4.38.0",
     "summary": "What's Changed Features feat(api)!: reject legacy reads for new organizations by @maxdeichmann in #17487 feat(ci): deploy AI Gateway automatically to staging by @hassiebp in #17532 feat(api): attribute legacy GET rejections to clients by @maxdeichmann in #17539 feat(web): persistent trace summary strip with tags by @nmtrang29 in #17536 feat(filters): metadata key presence operators; coerce legacy empty-substring filters by @niklassemmler in #17357 feat(ai-gateway): isolate caller tracing context",

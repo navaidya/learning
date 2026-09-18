@@ -9326,6 +9326,44 @@
     "releaseVersion": "v1.6.1"
   },
   {
+    "id": "gateway-api-246b561edffb",
+    "title": "v1.6.0",
+    "summary": "v1.6.0 Changes Since v1.5.1 GEP & API Graduation UDPRoute & TCPRoute Graduation: UDPRoute has graduated to GA. We recommend using the \"v1\" API version with this API now. The \"v1alpha2\" version of this API is deprecated and will be removed in the future. (#4923, @zac-nixon) TCPRoute has graduated to GA. We recommend using the \"v1\" API version with this API now. The \"v1alpha2\" version of this API is deprecated and will be removed in the future. (#4920, @zac-nixon) GEP Status Updates: Add GEP for t",
+    "source": "Gateway API",
+    "sourceId": "gateway-api",
+    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.0",
+    "publishedDate": "2026-07-16T13:31:12.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "gateway-api",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "gateway-api",
+    "releaseVersion": "v1.6.0"
+  },
+  {
+    "id": "openai-6f16a999c8dd",
+    "title": "How Cars24 scales conversations and builds faster with OpenAI",
+    "summary": "Cars24 uses OpenAI-powered voice and chat agents to handle 1M+ monthly conversation minutes, recover 12% of lost leads, and bring agentic workflows to teams across the company.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/cars24",
+    "publishedDate": "2026-07-16T00:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "opentelemetry-64bb208d16a5",
     "title": "OpenTelemetry Has Graduated… Now what?",
     "summary": "In case you missed it: OpenTelemetry (OTel) has officially achieved CNCF graduated status! It now stands proudly alongside amazing open source projects such as Kubernetes and Prometheus, to name just a few. It’s been a long journey, and we’re very excited… But, now what? To understand where we’re going, it’s important to understand where we came from. History In the not-so-distant past, telemetry signals were not standardized. This meant telemetry formats differed from tool to tool, with each te",
@@ -9686,42 +9724,5 @@
     "releaseRelated": true,
     "releaseProject": "prometheus",
     "releaseVersion": "v0.313.0-rc.1"
-  },
-  {
-    "id": "istio-684f7c3ecc42",
-    "title": "Hardening Kubernetes Security with Istio Ambient Mode on Flat Networks",
-    "summary": "If you&rsquo;ve moved a workload off AWS and onto on-prem infrastructure, you&rsquo;ve likely run into this: the network isolation you got for free on the cloud does not exist on bare metal. On AWS, Security Groups and VPC boundaries enforce service boundaries quietly in the background. Most teams never have to think about it. On-prem, the network is flat by default. Your payment service, your internal admin panel, your logging agent, and your customer-facing API all sit in the same cluster with",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/blog/2026/istio-network-security-flat-networks-ambient-mode/",
-    "publishedDate": "2026-06-20T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "opentelemetry-b3f6726cebd9",
-    "title": "Deprecating OpenCensus compatibility requirements",
-    "summary": "On June 12, 2026, the OpenTelemetry Specification project merged PR #5138, deprecating OpenCensus compatibility requirements in the specification. This change updates the specification to match where the ecosystem already is: OpenCensus has been archived since July 31, 2023, and the OpenTelemetry shims for OpenCensus have provided a stable migration bridge for more than three years. This is a deprecation of specification requirements, not an immediate removal of compatibility material and not a ",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/deprecating-opencensus-compatibility/",
-    "publishedDate": "2026-06-19T22:53:47.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
-    ],
-    "importance": "critical",
-    "architectureShift": true,
-    "releaseRelated": false
   }
 ]
