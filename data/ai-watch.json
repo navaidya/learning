@@ -1,5 +1,25 @@
 [
   {
+    "id": "falco-ddd6dae29ff6",
+    "title": "0.45.0-rc4",
+    "summary": "feat(falco): expose reload status and Unix socket control Add process identity, reload generations, and readiness observation through GET /reload for Falco Operator integration. Publish readiness after all enabled sources start and distinguish rejected validation from application. Add an opt-in Linux Unix socket listener. POST /reload queues a request and returns 202 with a generation baseline; clients poll GET /reload for the outcome. Keep POST exclusive to the Unix socket and document TCP obse",
+    "source": "Falco",
+    "sourceId": "falco",
+    "url": "https://github.com/falcosecurity/falco/releases/tag/0.45.0-rc4",
+    "publishedDate": "2026-09-18T10:09:46.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "infrastructure-security",
+      "release",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "falco",
+    "releaseVersion": "0.45.0-rc4"
+  },
+  {
     "id": "pydantic-ai-045d0b9488c8",
     "title": "v2.45.0 (2026-09-17)",
     "summary": "What's Changed 🚀 Features Add TypeSafeModel for TypeSafe's Jev by @adtyavrdhn in #8450 🐛 Bug Fixes Pass xhigh effort through on Bedrock when the model profile supports it by @willfrey in #8392 Allow gpt-5.6-sol, gpt-5.6-luna, and gpt-5.6-terra on Bedrock Converse by @pydanty in #7825 Resolve a DynamicToolset once per durable run instead of inside every durable unit by @DouweM in #8455 Hold one MCP server session per durable run instead of one per durable unit by @DouweM in #8463 Preserve tool ",

@@ -1,5 +1,24 @@
 [
   {
+    "id": "opentelemetry-e7cdb0ee5b0e",
+    "title": "Dual-exporting .NET metrics with OTLP and Prometheus",
+    "summary": "Many applications export their metrics directly to Prometheus. If you&rsquo;re unfamiliar with Prometheus, in a nutshell it&rsquo;s a time-series database for storing metrics, like counters and histograms. Applications that store their metrics in Prometheus typically use a popular Prometheus client as part of the integration. Now that OpenTelemetry is a graduated CNCF project, many companies are now increasingly looking to move to OpenTelemetry to add more signals beyond metrics to their observa",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/dual-dotnet-metrics-export-with-otlp-and-prometheus/",
+    "publishedDate": "2026-09-18T12:07:36.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otlp",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": false
+  },
+  {
     "id": "tempo-2edd95a2e2ba",
     "title": "v3.1.0-rc.1",
     "summary": "Grafana Tempo 3.1 adds query-based trace redaction, TraceQL metrics arithmetic and sampling-aware extrapolation, Kafka connectivity improvements, and experimental tools for comparing and pruning traces. It also makes vParquet5 the default format for newly written blocks. This is a release candidate for testing, not the final Tempo 3.1 release. Highlights Redaction by query: Submit redaction jobs using a TraceQL selector instead of enumerating trace IDs, with optional time windows and redaction r",
@@ -9344,24 +9363,6 @@
     "releaseRelated": true,
     "releaseProject": "gateway-api",
     "releaseVersion": "v1.6.0"
-  },
-  {
-    "id": "openai-6f16a999c8dd",
-    "title": "How Cars24 scales conversations and builds faster with OpenAI",
-    "summary": "Cars24 uses OpenAI-powered voice and chat agents to handle 1M+ monthly conversation minutes, recover 12% of lost leads, and bring agentic workflows to teams across the company.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/cars24",
-    "publishedDate": "2026-07-16T00:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "opentelemetry-64bb208d16a5",
