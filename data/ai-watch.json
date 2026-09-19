@@ -1,5 +1,25 @@
 [
   {
+    "id": "pydantic-ai-639cc3401d74",
+    "title": "v2.46.0 (2026-09-18)",
+    "summary": "What's Changed 🚀 Features Let TypeSafeModel fill a tool's arguments when Jev can express them by @DouweM in #8501 Add RealtimeSession.wait_for_playback() and let the docs examples finish the reply before closing by @DouweM in #8141 Add supports_text_output to ModelProfile, and run LLMJudge and GEval on a model without it by @DouweM in #8480 Add typesafe_boolean_threshold for what a yes/no has to be before it is True by @DouweM in #8505 Let TypeSafeModel fill a union of output types by choosing ",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.46.0",
+    "publishedDate": "2026-09-19T03:51:40.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.46.0"
+  },
+  {
     "id": "falco-ddd6dae29ff6",
     "title": "0.45.0-rc4",
     "summary": "feat(falco): expose reload status and Unix socket control Add process identity, reload generations, and readiness observation through GET /reload for Falco Operator integration. Publish readiness after all enabled sources start and distinguish rejected validation from application. Add an opt-in Linux Unix socket listener. POST /reload queues a request and returns 202 with a generation baseline; clients poll GET /reload for the outcome. Keep POST exclusive to the Unix socket and document TCP obse",

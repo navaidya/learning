@@ -396,6 +396,24 @@
     "releaseVersion": "v3.263.0"
   },
   {
+    "id": "openai-973a91148c50",
+    "title": "Hex turns complex analysis into visual reports with GPT‑6 Astra",
+    "summary": "GPT-6 Astra helps Hex’s data agents turn answers into interactive visualizations that employees are proud to share.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/hex-gpt-6-astra",
+    "publishedDate": "2026-09-16T12:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "cncf-be720e47bdfd",
     "title": "Running OpenBao on Kubernetes with a CloudNativePG PostgreSQL backend",
     "summary": "Managing infrastructure secrets on Kubernetes needs a backend that is self-healing and free of vendor lock-in, and that is exactly what OpenBao (the Linux Foundation’s open-source fork of HashiCorp Vault) and CloudNativePG give you: an entirely...",
@@ -1332,6 +1350,23 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes",
     "releaseVersion": "v1.37"
+  },
+  {
+    "id": "cncf-0c250d6c4e83",
+    "title": "KubeCon + CloudNativeCon North America 2026: Your Week in Salt Lake City",
+    "summary": "This November, the cloud native community is heading to Salt Lake City. From November 9–12, 2026, KubeCon + CloudNativeCon North America will bring together adopters and technologists from across open source and cloud native communities for...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/09/11/kubecon-cloudnativecon-north-america-2026-your-week-in-salt-lake-city/",
+    "publishedDate": "2026-09-11T12:29:33.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "backstage-0ea3350529d2",
@@ -9323,46 +9358,6 @@
     "releaseRelated": true,
     "releaseProject": "cilium",
     "releaseVersion": "1.17.18"
-  },
-  {
-    "id": "gateway-api-66edcd15b9f9",
-    "title": "conformance/v1.6.1",
-    "summary": "update vap (#5073)",
-    "source": "Gateway API",
-    "sourceId": "gateway-api",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/conformance%2Fv1.6.1",
-    "publishedDate": "2026-07-16T14:37:26.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "gateway-api",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "gateway-api",
-    "releaseVersion": "v1.6.1"
-  },
-  {
-    "id": "gateway-api-246b561edffb",
-    "title": "v1.6.0",
-    "summary": "v1.6.0 Changes Since v1.5.1 GEP & API Graduation UDPRoute & TCPRoute Graduation: UDPRoute has graduated to GA. We recommend using the \"v1\" API version with this API now. The \"v1alpha2\" version of this API is deprecated and will be removed in the future. (#4923, @zac-nixon) TCPRoute has graduated to GA. We recommend using the \"v1\" API version with this API now. The \"v1alpha2\" version of this API is deprecated and will be removed in the future. (#4920, @zac-nixon) GEP Status Updates: Add GEP for t",
-    "source": "Gateway API",
-    "sourceId": "gateway-api",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.0",
-    "publishedDate": "2026-07-16T13:31:12.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "gateway-api",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "gateway-api",
-    "releaseVersion": "v1.6.0"
   },
   {
     "id": "opentelemetry-64bb208d16a5",
