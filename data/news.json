@@ -9360,6 +9360,46 @@
     "releaseVersion": "1.17.18"
   },
   {
+    "id": "gateway-api-66edcd15b9f9",
+    "title": "conformance/v1.6.1",
+    "summary": "update vap (#5073)",
+    "source": "Gateway API",
+    "sourceId": "gateway-api",
+    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/conformance%2Fv1.6.1",
+    "publishedDate": "2026-07-16T14:37:26.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "gateway-api",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "gateway-api",
+    "releaseVersion": "v1.6.1"
+  },
+  {
+    "id": "gateway-api-246b561edffb",
+    "title": "v1.6.0",
+    "summary": "v1.6.0 Changes Since v1.5.1 GEP & API Graduation UDPRoute & TCPRoute Graduation: UDPRoute has graduated to GA. We recommend using the \"v1\" API version with this API now. The \"v1alpha2\" version of this API is deprecated and will be removed in the future. (#4923, @zac-nixon) TCPRoute has graduated to GA. We recommend using the \"v1\" API version with this API now. The \"v1alpha2\" version of this API is deprecated and will be removed in the future. (#4920, @zac-nixon) GEP Status Updates: Add GEP for t",
+    "source": "Gateway API",
+    "sourceId": "gateway-api",
+    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.0",
+    "publishedDate": "2026-07-16T13:31:12.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "gateway-api",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "gateway-api",
+    "releaseVersion": "v1.6.0"
+  },
+  {
     "id": "opentelemetry-64bb208d16a5",
     "title": "OpenTelemetry Has Graduated… Now what?",
     "summary": "In case you missed it: OpenTelemetry (OTel) has officially achieved CNCF graduated status! It now stands proudly alongside amazing open source projects such as Kubernetes and Prometheus, to name just a few. It’s been a long journey, and we’re very excited… But, now what? To understand where we’re going, it’s important to understand where we came from. History In the not-so-distant past, telemetry signals were not standardized. This meant telemetry formats differed from tool to tool, with each te",
@@ -9680,45 +9720,5 @@
     "releaseRelated": true,
     "releaseProject": "istio",
     "releaseVersion": "1.30.2"
-  },
-  {
-    "id": "prometheus-3a9929e72e02",
-    "title": "3.13.0-rc.1 / 2026-06-22",
-    "summary": "Release notes of the 3.13-rc.1 release: The 3.13.0-rc.0 release was only partially successful due to the migration from NPM to PNPM and subsequent CI issues, so most of the changes in this release candidate are CI/build-related. The only user-facing change is: [CHANGE] UI: Third-party npm dependency licenses are now embedded in the Prometheus binary and served at /assets/third-party-licenses.txt, replacing the npm_licenses.tar.bz2 archive previously shipped in release tarballs and container imag",
-    "source": "Prometheus",
-    "sourceId": "prometheus",
-    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.13.0-rc.1",
-    "publishedDate": "2026-06-22T16:45:27.000Z",
-    "domain": "prometheus",
-    "topics": [
-      "prometheus",
-      "promql",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "prometheus",
-    "releaseVersion": "3.13.0-rc.1"
-  },
-  {
-    "id": "prometheus-e480d1858117",
-    "title": "v0.313.0-rc.1",
-    "summary": "v0.313.0-rc.1",
-    "source": "Prometheus",
-    "sourceId": "prometheus",
-    "url": "https://github.com/prometheus/prometheus/releases/tag/v0.313.0-rc.1",
-    "publishedDate": "2026-06-22T16:23:41.000Z",
-    "domain": "prometheus",
-    "topics": [
-      "prometheus",
-      "promql",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "prometheus",
-    "releaseVersion": "v0.313.0-rc.1"
   }
 ]
