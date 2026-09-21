@@ -1,5 +1,21 @@
 [
   {
+    "project": "kubernetes",
+    "version": "v1.37",
+    "publishedDate": "2026-09-21T18:30:00.000Z",
+    "url": "https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/",
+    "sourceId": "kubernetes",
+    "title": "Kubernetes v1.37: Tracking When a PersistentVolumeClaim Was Last Used (Beta)"
+  },
+  {
+    "project": "backstage",
+    "version": "v1.55.1",
+    "publishedDate": "2026-09-21T15:13:10.000Z",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.55.1",
+    "sourceId": "backstage",
+    "title": "v1.55.1"
+  },
+  {
     "project": "istio",
     "version": "1.31.1",
     "publishedDate": "2026-09-21T00:00:00.000Z",
@@ -54,14 +70,6 @@
     "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.42.0",
     "sourceId": "holmesgpt",
     "title": "0.42.0"
-  },
-  {
-    "project": "kubernetes",
-    "version": "v1.37",
-    "publishedDate": "2026-09-16T18:30:00.000Z",
-    "url": "https://kubernetes.io/blog/2026/09/16/kubernetes-v1-37-hardening-container-storage/",
-    "sourceId": "kubernetes",
-    "title": "Kubernetes v1.37: Hardening Container Storage with Bind Mount Options and EmptyDir Permissions"
   },
   {
     "project": "opentelemetry-collector",
@@ -126,14 +134,6 @@
     "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.1",
     "sourceId": "crossplane",
     "title": "v2.4.1"
-  },
-  {
-    "project": "backstage",
-    "version": "v1.54.8",
-    "publishedDate": "2026-09-15T16:26:14.000Z",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.8",
-    "sourceId": "backstage",
-    "title": "v1.54.8"
   },
   {
     "project": "prometheus",

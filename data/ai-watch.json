@@ -1,5 +1,168 @@
 [
   {
+    "id": "phoenix-78e40a7c67db",
+    "title": "arize-phoenix-evals: v3.9.0",
+    "summary": "3.9.0 (2026-09-21) Features evals: add retrieval relevance evaluator (#14766) (7efa7b2) evals: add session-level pii_detection evaluator (#15096) (0e3b2c2) evals: completeness evaluator (#15767) (63805d0) evals: deprecate document relevance evaluators (#15991) (d67ea3f) Bug Fixes evals: accept role aliases in PromptTemplate message lists (#16002) (767847c) evals: use non-blocking sleep in async rate limiter (#15404) (2ecfd47) evals: validate initial request rate (#16227) (b8e5cf8) upgrade to ant",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-evals-v3.9.0",
+    "publishedDate": "2026-09-21T20:47:00.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v3.9.0"
+  },
+  {
+    "id": "phoenix-17c25dfe0df8",
+    "title": "@arizeai/phoenix-mcp@4.3.11",
+    "summary": "Patch Changes Updated dependencies [dab09f1] @arizeai/phoenix-client@7.12.0",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-mcp%404.3.11",
+    "publishedDate": "2026-09-21T20:44:15.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "4.3.11"
+  },
+  {
+    "id": "phoenix-4e22aebac26e",
+    "title": "@arizeai/phoenix-cli@1.18.3",
+    "summary": "Patch Changes Updated dependencies [dab09f1] @arizeai/phoenix-client@7.12.0",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-cli%401.18.3",
+    "publishedDate": "2026-09-21T20:44:12.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "1.18.3"
+  },
+  {
+    "id": "phoenix-665a9be9b4f0",
+    "title": "@arizeai/phoenix-client@7.12.0",
+    "summary": "Minor Changes dab09f1: Add filter expressions to getTraces and listSessions (requires Phoenix server >= 20.12.0). Deprecate the individual trace error and latency parameters while retaining their behavior and support for server >= 20.8.0.",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-client%407.12.0",
+    "publishedDate": "2026-09-21T20:44:09.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "7.12.0"
+  },
+  {
+    "id": "langfuse-d51b8f6835f7",
+    "title": "v4.41.0",
+    "summary": "What's Changed Features feat: encode v4 native blocks and event bytes in Rust by @sumerman in #17563 feat(automations): filter prompt events by tags by @tobi12345 in #17727 Fixes refactor(normalized-io): enhance additional input handling by @marliessophie in #17718 fix(alerts): link score alerts to filtered scores by @nkabardin in #17715 fix(dashboards): Avoid nested scrollbars for scores widget by @bezbac in #17713 fix(web): group trace graph steps without recursive stack overflow by @cursor[bo",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.41.0",
+    "publishedDate": "2026-09-21T17:53:40.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.41.0"
+  },
+  {
+    "id": "langgraph-1cf89e0c602e",
+    "title": "langgraph==1.2.12",
+    "summary": "Changes since 1.2.11 release(langgraph): 1.2.12 (#8987) chore(deps): bump soupsieve from 2.8.4 to 2.9 in /libs/langgraph (#8958) feat(langgraph): add response_schema to interrupt() (#8886) fix(langgraph): type undeclared v3 stream projections (#8596) chore(langgraph): bump mistune to 3.3.4 (#8804) chore(deps): bump the minor-and-patch group across 1 directory with 7 updates (#8779) chore(deps): bump the minor-and-patch group across 1 directory with 4 updates (#8782) chore(deps): bump tornado fro",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.12",
+    "publishedDate": "2026-09-21T14:43:40.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "1.2.12"
+  },
+  {
+    "id": "langgraph-c2f52e069b2e",
+    "title": "langgraph-sdk==0.4.5",
+    "summary": "Changes since sdk==0.4.4 release(sdk-py): 0.4.5 (#8988) release(langgraph): 1.2.12 (#8987) chore(deps): bump anyio from 4.14.2 to 4.15.1 in /libs/sdk-py (#8997) chore(deps): bump anyio from 4.13.0 to 4.14.2 in /libs/cli (#8998) chore(deps): bump anyio from 4.12.1 to 4.14.2 in /libs/sdk-py (#8994) feat(langgraph): add response_schema to interrupt() (#8886) chore(deps): bump the minor-and-patch group across 1 directory with 7 updates (#8779) chore(deps): bump websockets from 16.0 to 16.1.1 in /lib",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.5",
+    "publishedDate": "2026-09-21T14:43:09.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "0.4.5"
+  },
+  {
+    "id": "langfuse-6a49bc67f1f9",
+    "title": "v4.40.0",
+    "summary": "What's Changed Features feat(trace-batching): link transcript spans to source traces by @LysanderKie in #17725 Fixes fix(auth): evict the API key cache after deleting the row by @Steffen911 in #17651 Choes refactor(web): thin remaining fat pages into feature Page components by @nkabardin in #17716 docs: remove duplicated 'override' in table columns README by @yetuge in #17681 chore(agents): use AGENTS.md directly for folder instructions by @nkabardin in #17719 refactor(web): thin leftover fat pa",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.40.0",
+    "publishedDate": "2026-09-21T14:32:24.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.40.0"
+  },
+  {
     "id": "falco-30c7a949fdf7",
     "title": "0.45.0",
     "summary": "Packages Download rpm-x86_64 deb-x86_64 tgz-x86_64 tgz-static-x86_64 rpm-aarch64 deb-aarch64 tgz-aarch64 Images docker pull docker.io/falcosecurity/falco:0.45.0 docker pull public.ecr.aws/falcosecurity/falco:0.45.0 docker pull docker.io/falcosecurity/falco-driver-loader:0.45.0 docker pull docker.io/falcosecurity/falco-driver-loader:0.45.0-buster docker pull docker.io/falcosecurity/falco:0.45.0-debian v0.45.0 Released on 2026-09-21 Breaking Changes ⚠️ feat(userspace)!: evaluate rule conditions on",

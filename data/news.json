@@ -1,5 +1,98 @@
 [
   {
+    "id": "vector-88b0f04015a6",
+    "title": "vdev-v0.3.20",
+    "summary": "No content.",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.20",
+    "publishedDate": "2026-09-21T21:10:30.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
+    "id": "kubernetes-a668dc129d9d",
+    "title": "Kubernetes v1.37: Tracking When a PersistentVolumeClaim Was Last Used (Beta)",
+    "summary": "Kubernetes v1.37 promotes the PersistentVolumeClaimUnusedSinceTime feature gate to Beta (enabled by default). With this feature, the PersistentVolumeClaim (PVC) protection controller adds an Unused condition to each PVC, telling you whether any running pod currently references it — no custom tooling or cross-referencing required. For the API definition of PVC conditions, see the PersistentVolumeClaim API reference. Read on to learn how the Unused condition works and how to use it. Why track PVC ",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/",
+    "publishedDate": "2026-09-21T18:30:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes",
+    "releaseVersion": "v1.37"
+  },
+  {
+    "id": "opentelemetry-b3cce3e068df",
+    "title": "Announcing the 2026 OpenTelemetry Governance Committee Election",
+    "summary": "The OpenTelemetry project is excited to announce the 2026 OpenTelemetry Governance Committee (GC) election. Nominations are due by 16 October 2026 23:59 AoE. The list of eligible candidates will be shared on 19 October 2026. Voting will take place between 26 October 2026 12:00 UTC and 28 October 2026 end of day AoE (29 October 2026 11:59 UTC), and the final election results will be announced 30 October 2026. Vote! If you are a member of standing in the OpenTelemetry community, we invite you to p",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/gc-elections/",
+    "publishedDate": "2026-09-21T17:09:33.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "backstage-b5f79c748c21",
+    "title": "v1.55.1",
+    "summary": "This patch release fixes the following issues: Fix the Yarn patch verifier failing to load unless consumers separately install the Yarn CLI package. (#35749) Fix TechDocs addons not rendering on the new frontend system. (#35770)",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.55.1",
+    "publishedDate": "2026-09-21T15:13:10.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.55.1"
+  },
+  {
+    "id": "openai-530db518a73a",
+    "title": "Expanding OpenAI Academy with new learning paths",
+    "summary": "Explore new OpenAI Academy learning paths for employees, developers, leaders, educators, and students to build and demonstrate practical AI skills.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
+    "publishedDate": "2026-09-21T07:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "openai-d1749ba76a98",
     "title": "How V7 gives AI agents institutional memory",
     "summary": "Using GPT-5.6, V7 turns scattered company files into context agents can use to complete complex, source-linked work.",
@@ -39,6 +132,48 @@
     "releaseRelated": true,
     "releaseProject": "istio",
     "releaseVersion": "1.31.1"
+  },
+  {
+    "id": "istio-0d3c2b9623d5",
+    "title": "Announcing Istio 1.30.5",
+    "summary": "This release contains bug fixes to improve robustness. This release note describes what&rsquo;s different between Istio 1.30.4 and 1.30.5. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Changes Fixed an issue in ambient mode where the CNI node agent&rsquo;s auto-detected iptables backend (legacy vs nft) could flip between agent re",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/news/releases/1.30.x/announcing-1.30.5/",
+    "publishedDate": "2026-09-21T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "istio",
+    "releaseVersion": "1.30.5"
+  },
+  {
+    "id": "istio-2a8906c34461",
+    "title": "Announcing Istio 1.29.8",
+    "summary": "This release contains bug fixes to improve robustness. This release note describes what&rsquo;s different between Istio 1.29.7 and 1.29.8. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Changes Fixed an issue in ambient mode where the CNI node agent&rsquo;s auto-detected iptables backend (legacy vs nft) could flip between agent re",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/news/releases/1.29.x/announcing-1.29.8/",
+    "publishedDate": "2026-09-21T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "istio",
+    "releaseVersion": "1.29.8"
   },
   {
     "id": "opentelemetry-e7cdb0ee5b0e",
@@ -9261,144 +9396,6 @@
     "importance": "critical",
     "architectureShift": true,
     "releaseRelated": false
-  },
-  {
-    "id": "vector-ed778679c097",
-    "title": "vdev-v0.3.8",
-    "summary": "vdev-v0.3.8",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.8",
-    "publishedDate": "2026-07-20T14:01:57.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector"
-  },
-  {
-    "id": "openai-d4ff9ec891b7",
-    "title": "Safety and alignment in an era of long-horizon models",
-    "summary": "OpenAI shares lessons from deploying long-running AI models, highlighting new safety risks, observed failures, and improved safeguards through iterative deployment.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/safety-alignment-long-horizon-models",
-    "publishedDate": "2026-07-20T10:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "cilium-045fe8681c62",
-    "title": "1.19.6",
-    "summary": "Summary of Changes Minor Changes: datapath/l2responder: use l3 sockets for solicited node multicast signaling (Backport PR #46845, Upstream PR #46332, @bersoare) gateway-api: add support for configuring Gateway access logs through the new spec.telemetry.accessLogs field in CiliumGatewayClassConfig. (Backport PR #46933, Upstream PR #46403, @arybolovlev) Bugfixes: [v1.19] Fix policy service label selector handling (#46946, @fristonio) bpf: fix ipv6 neighbor solicitation handling in host firewall (",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.19.6",
-    "publishedDate": "2026-07-16T22:52:21.000Z",
-    "domain": "ebpf-cilium",
-    "topics": [
-      "ebpf-cilium",
-      "cilium",
-      "ebpf",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "1.19.6"
-  },
-  {
-    "id": "gateway-api-02f434f02c2f",
-    "title": "v1.6.1",
-    "summary": "v1.6.1 Major Changes Since v1.6.0 Test & Conformance Change the port used in TCPRouteMultipleRoutesAttachment. (#5053, @davidjumani) Respect CleanupTestResources for BackendTLSPolicy, TCPRouteMultipleRoutesAttachment and UDPRouteMultipleRoutesAttachment(#5065, @snorwin) Fix SetupTimeoutConfig() not respecting defaults for ListenerSetMustHaveCondition, ListenerSetListenersMustHaveConditions, and RequiredConsecutiveSuccesses. (#5066, @immanuwell) Honour tcpRouteMustHaveCondition and udpRouteMustHa",
-    "source": "Gateway API",
-    "sourceId": "gateway-api",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.1",
-    "publishedDate": "2026-07-16T16:30:35.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "gateway-api",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "gateway-api",
-    "releaseVersion": "v1.6.1"
-  },
-  {
-    "id": "cilium-89d3c7fc5963",
-    "title": "1.19.6",
-    "summary": "Release v1.19.6",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/1.19.6",
-    "publishedDate": "2026-07-16T15:19:42.000Z",
-    "domain": "ebpf-cilium",
-    "topics": [
-      "cilium",
-      "ebpf",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "1.19.6"
-  },
-  {
-    "id": "cilium-e494205c65b2",
-    "title": "1.18.12",
-    "summary": "Release v1.18.12",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/1.18.12",
-    "publishedDate": "2026-07-16T15:18:41.000Z",
-    "domain": "ebpf-cilium",
-    "topics": [
-      "cilium",
-      "ebpf",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "1.18.12"
-  },
-  {
-    "id": "cilium-943ac39c9a1a",
-    "title": "1.17.18",
-    "summary": "Release v1.17.18",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/1.17.18",
-    "publishedDate": "2026-07-16T15:17:52.000Z",
-    "domain": "ebpf-cilium",
-    "topics": [
-      "cilium",
-      "ebpf",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "1.17.18"
   },
   {
     "id": "opentelemetry-64bb208d16a5",
