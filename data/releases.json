@@ -1,5 +1,13 @@
 [
   {
+    "project": "istio",
+    "version": "1.31.1",
+    "publishedDate": "2026-09-21T00:00:00.000Z",
+    "url": "https://istio.io/latest/news/releases/1.31.x/announcing-1.31.1/",
+    "sourceId": "istio",
+    "title": "Announcing Istio 1.31.1"
+  },
+  {
     "project": "tempo",
     "version": "v3.1.0-rc.1",
     "publishedDate": "2026-09-17T17:37:20.000Z",
@@ -110,14 +118,6 @@
     "url": "https://github.com/cilium/cilium/releases/tag/v1.20.2",
     "sourceId": "cilium",
     "title": "1.20.2"
-  },
-  {
-    "project": "istio",
-    "version": "1.32",
-    "publishedDate": "2026-09-16T00:00:00.000Z",
-    "url": "https://istio.io/latest/blog/2026/retirement-of-k8s-integration-jobs/",
-    "sourceId": "istio",
-    "title": "Retirement of Kubernetes integration jobs for unsupported Kubernetes versions"
   },
   {
     "project": "crossplane",

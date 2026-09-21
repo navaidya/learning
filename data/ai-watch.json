@@ -1,5 +1,45 @@
 [
   {
+    "id": "falco-30c7a949fdf7",
+    "title": "0.45.0",
+    "summary": "Packages Download rpm-x86_64 deb-x86_64 tgz-x86_64 tgz-static-x86_64 rpm-aarch64 deb-aarch64 tgz-aarch64 Images docker pull docker.io/falcosecurity/falco:0.45.0 docker pull public.ecr.aws/falcosecurity/falco:0.45.0 docker pull docker.io/falcosecurity/falco-driver-loader:0.45.0 docker pull docker.io/falcosecurity/falco-driver-loader:0.45.0-buster docker pull docker.io/falcosecurity/falco:0.45.0-debian v0.45.0 Released on 2026-09-21 Breaking Changes ⚠️ feat(userspace)!: evaluate rule conditions on",
+    "source": "Falco",
+    "sourceId": "falco",
+    "url": "https://github.com/falcosecurity/falco/releases/tag/0.45.0",
+    "publishedDate": "2026-09-21T13:10:41.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "infrastructure-security",
+      "release",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "falco",
+    "releaseVersion": "0.45.0"
+  },
+  {
+    "id": "langfuse-dc2f0ff9926b",
+    "title": "v4.39.0",
+    "summary": "What's Changed Features feat(web): publish event-loop delay for autoscaling by @sumerman in #17632 feat(automations): filter prompt events by label by @tobi12345 in #17612 feat(ai-gateway): add phase spans so request traces have no gaps by @hassiebp in #17640 feat(ai-gateway): record Codex client metadata as agent metadata by @hassiebp in #17641 feat(auth): authorize every ingestion event through the policy core by @marksalpeter in #16715 feat(otel): simulate worker admission in shadow mode by @",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.39.0",
+    "publishedDate": "2026-09-21T11:21:23.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.39.0"
+  },
+  {
     "id": "pydantic-ai-639cc3401d74",
     "title": "v2.46.0 (2026-09-18)",
     "summary": "What's Changed 🚀 Features Let TypeSafeModel fill a tool's arguments when Jev can express them by @DouweM in #8501 Add RealtimeSession.wait_for_playback() and let the docs examples finish the reply before closing by @DouweM in #8141 Add supports_text_output to ModelProfile, and run LLMJudge and GEval on a model without it by @DouweM in #8480 Add typesafe_boolean_threshold for what a yes/no has to be before it is True by @DouweM in #8505 Let TypeSafeModel fill a union of output types by choosing ",

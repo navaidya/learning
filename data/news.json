@@ -1,5 +1,46 @@
 [
   {
+    "id": "openai-d1749ba76a98",
+    "title": "How V7 gives AI agents institutional memory",
+    "summary": "Using GPT-5.6, V7 turns scattered company files into context agents can use to complete complex, source-linked work.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/v7",
+    "publishedDate": "2026-09-21T00:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "openai",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "openai"
+  },
+  {
+    "id": "istio-07af3a6ea2d3",
+    "title": "Announcing Istio 1.31.1",
+    "summary": "This release contains bug fixes to improve robustness. This release note describes what&rsquo;s different between Istio 1.31.0 and 1.31.1. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Security Update Istio CVEs GHSA-qm8v-g4f9-qhjx (CVSS score 6.8, Moderate): BackendTLSPolicy fails open to plaintext on sidecar proxies when its CA",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/news/releases/1.31.x/announcing-1.31.1/",
+    "publishedDate": "2026-09-21T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "istio",
+    "releaseVersion": "1.31.1"
+  },
+  {
     "id": "opentelemetry-e7cdb0ee5b0e",
     "title": "Dual-exporting .NET metrics with OTLP and Prometheus",
     "summary": "Many applications export their metrics directly to Prometheus. If you&rsquo;re unfamiliar with Prometheus, in a nutshell it&rsquo;s a time-series database for storing metrics, like counters and histograms. Applications that store their metrics in Prometheus typically use a popular Prometheus client as part of the integration. Now that OpenTelemetry is a graduated CNCF project, many companies are now increasingly looking to move to OpenTelemetry to add more signals beyond metrics to their observa",
@@ -9358,46 +9399,6 @@
     "releaseRelated": true,
     "releaseProject": "cilium",
     "releaseVersion": "1.17.18"
-  },
-  {
-    "id": "gateway-api-66edcd15b9f9",
-    "title": "conformance/v1.6.1",
-    "summary": "update vap (#5073)",
-    "source": "Gateway API",
-    "sourceId": "gateway-api",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/conformance%2Fv1.6.1",
-    "publishedDate": "2026-07-16T14:37:26.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "gateway-api",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "gateway-api",
-    "releaseVersion": "v1.6.1"
-  },
-  {
-    "id": "gateway-api-246b561edffb",
-    "title": "v1.6.0",
-    "summary": "v1.6.0 Changes Since v1.5.1 GEP & API Graduation UDPRoute & TCPRoute Graduation: UDPRoute has graduated to GA. We recommend using the \"v1\" API version with this API now. The \"v1alpha2\" version of this API is deprecated and will be removed in the future. (#4923, @zac-nixon) TCPRoute has graduated to GA. We recommend using the \"v1\" API version with this API now. The \"v1alpha2\" version of this API is deprecated and will be removed in the future. (#4920, @zac-nixon) GEP Status Updates: Add GEP for t",
-    "source": "Gateway API",
-    "sourceId": "gateway-api",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.0",
-    "publishedDate": "2026-07-16T13:31:12.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "gateway-api",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "gateway-api",
-    "releaseVersion": "v1.6.0"
   },
   {
     "id": "opentelemetry-64bb208d16a5",
