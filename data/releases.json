@@ -1,5 +1,21 @@
 [
   {
+    "project": "etcd",
+    "version": "v3.7.2",
+    "publishedDate": "2026-09-22T21:22:39.000Z",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/v3.7.2",
+    "sourceId": "etcd",
+    "title": "v3.7.2"
+  },
+  {
+    "project": "crossplane",
+    "version": "v2.4.2",
+    "publishedDate": "2026-09-22T19:11:31.000Z",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.2",
+    "sourceId": "crossplane",
+    "title": "v2.4.2"
+  },
+  {
     "project": "backstage",
     "version": "v1.56.0-next.0",
     "publishedDate": "2026-09-22T17:09:55.000Z",
@@ -136,14 +152,6 @@
     "title": "1.20.2"
   },
   {
-    "project": "crossplane",
-    "version": "v2.4.1",
-    "publishedDate": "2026-09-15T17:16:10.000Z",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.1",
-    "sourceId": "crossplane",
-    "title": "v2.4.1"
-  },
-  {
     "project": "k8sgpt",
     "version": "v0.4.39",
     "publishedDate": "2026-09-14T14:25:02.000Z",
@@ -174,6 +182,14 @@
     "url": "https://github.com/helm/helm/releases/tag/v3.22.0",
     "sourceId": "helm",
     "title": "Helm v3.22.0"
+  },
+  {
+    "project": "hashicorp",
+    "version": "8.0",
+    "publishedDate": "2026-09-07T04:00:00.000Z",
+    "url": "https://www.hashicorp.com/blog/terraform-provider-for-google-cloud-80-now-generally-available",
+    "sourceId": "hashicorp",
+    "title": "Terraform provider for Google Cloud 8.0 now generally available"
   },
   {
     "project": "gateway-api",
@@ -230,21 +246,5 @@
     "url": "https://grafana.com/blog/grafana-13-2-release-all-the-latest-features/",
     "sourceId": "grafana",
     "title": "Grafana 13.2 release: easier ways to query and explore your data"
-  },
-  {
-    "project": "hashicorp",
-    "version": "v1.16.0",
-    "publishedDate": "2026-08-13T16:00:00.000Z",
-    "url": "https://www.hashicorp.com/blog/packer-v1160-brings-verifiable-provenance-to-machine-images",
-    "sourceId": "hashicorp",
-    "title": "Packer v1.16.0 brings verifiable provenance to machine images"
-  },
-  {
-    "project": "etcd",
-    "version": "v3.7.1",
-    "publishedDate": "2026-07-23T19:37:53.000Z",
-    "url": "https://github.com/etcd-io/etcd/releases/tag/v3.7.1",
-    "sourceId": "etcd",
-    "title": "v3.7.1"
   }
 ]

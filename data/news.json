@@ -1,5 +1,245 @@
 [
   {
+    "id": "etcd-5a3d7eb2e5a3",
+    "title": "v3.7.2",
+    "summary": "Please check out CHANGELOG for a full list of changes. And make sure to read upgrade guide before upgrading etcd (there may be breaking changes). For installation guides, please check out play.etcd.io and operating etcd. Latest support status for common architectures and operating systems can be found at supported platforms. Linux ETCD_VER=v3.7.2 # choose either URL GOOGLE_URL=https://storage.googleapis.com/etcd GITHUB_URL=https://github.com/etcd-io/etcd/releases/download DOWNLOAD_URL=${GOOGLE_U",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/v3.7.2",
+    "publishedDate": "2026-09-22T21:22:39.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.7.2"
+  },
+  {
+    "id": "etcd-b6c72451a98d",
+    "title": "tests/v3.7.2",
+    "summary": "v3.7.2",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/tests%2Fv3.7.2",
+    "publishedDate": "2026-09-22T21:09:21.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.7.2"
+  },
+  {
+    "id": "etcd-31d24d5898f7",
+    "title": "server/v3.7.2",
+    "summary": "v3.7.2",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/server%2Fv3.7.2",
+    "publishedDate": "2026-09-22T21:09:14.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.7.2"
+  },
+  {
+    "id": "etcd-aab202293be5",
+    "title": "v3.6.15",
+    "summary": "Please check out CHANGELOG for a full list of changes. And make sure to read upgrade guide before upgrading etcd (there may be breaking changes). For installation guides, please check out play.etcd.io and operating etcd. Latest support status for common architectures and operating systems can be found at supported platforms. Linux ETCD_VER=v3.6.15 # choose either URL GOOGLE_URL=https://storage.googleapis.com/etcd GITHUB_URL=https://github.com/etcd-io/etcd/releases/download DOWNLOAD_URL=${GOOGLE_",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/v3.6.15",
+    "publishedDate": "2026-09-22T21:06:14.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.6.15"
+  },
+  {
+    "id": "etcd-30ed253b9dd4",
+    "title": "tests/v3.6.15",
+    "summary": "v3.6.15",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/tests%2Fv3.6.15",
+    "publishedDate": "2026-09-22T20:54:06.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.6.15"
+  },
+  {
+    "id": "etcd-7405d61a8dec",
+    "title": "server/v3.6.15",
+    "summary": "v3.6.15",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/server%2Fv3.6.15",
+    "publishedDate": "2026-09-22T20:53:59.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.6.15"
+  },
+  {
+    "id": "etcd-d1a3a1653469",
+    "title": "v3.5.34",
+    "summary": "Please check out CHANGELOG for a full list of changes. And make sure to read upgrade guide before upgrading etcd (there may be breaking changes). For installation guides, please check out play.etcd.io and operating etcd. Latest support status for common architectures and operating systems can be found at supported platforms. Linux ETCD_VER=v3.5.34 # choose either URL GOOGLE_URL=https://storage.googleapis.com/etcd GITHUB_URL=https://github.com/etcd-io/etcd/releases/download DOWNLOAD_URL=${GOOGLE_",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/v3.5.34",
+    "publishedDate": "2026-09-22T20:50:57.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.5.34"
+  },
+  {
+    "id": "etcd-a5504ad42922",
+    "title": "tests/v3.5.34",
+    "summary": "v3.5.34",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/tests%2Fv3.5.34",
+    "publishedDate": "2026-09-22T20:41:09.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.5.34"
+  },
+  {
+    "id": "etcd-f7bde7290c17",
+    "title": "server/v3.5.34",
+    "summary": "v3.5.34",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/server%2Fv3.5.34",
+    "publishedDate": "2026-09-22T20:41:02.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.5.34"
+  },
+  {
+    "id": "etcd-6e10505c5664",
+    "title": "raft/v3.5.34",
+    "summary": "v3.5.34",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/raft%2Fv3.5.34",
+    "publishedDate": "2026-09-22T20:40:54.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.5.34"
+  },
+  {
+    "id": "crossplane-d69774ae0a8d",
+    "title": "v2.4.2",
+    "summary": "v2.4.2 is a patch release scoped to fixing issues reported by users of Crossplane v2.4 and fixing security related issues in Crossplane and its dependencies. 🎉 Highlights Fixed a bug where ownership of ServiceAccounts was not correctly transferred to newly active package revisions (#7838). Fixed in #7839 and backported in #7852. What's Changed [Backport release-2.4] fix: demote old revision controller ownerReference for SA by @github-actions[bot] in #7852 chore(deps): update module go.opentelem",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.2",
+    "publishedDate": "2026-09-22T19:11:31.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.4.2"
+  },
+  {
+    "id": "crossplane-3dc72cda31f6",
+    "title": "apis/v2.4.2",
+    "summary": "Release v2.4.2",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.4.2",
+    "publishedDate": "2026-09-22T18:41:37.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.4.2"
+  },
+  {
     "id": "backstage-3c1ab051259a",
     "title": "v1.56.0-next.0",
     "summary": "See docs/releases/v1.56.0-next.0-changelog.md for more information.",
@@ -2561,6 +2801,26 @@
     "releaseRelated": true,
     "releaseProject": "prometheus",
     "releaseVersion": "v0.313.3"
+  },
+  {
+    "id": "hashicorp-eb596cec824e",
+    "title": "Terraform provider for Google Cloud 8.0 now generally available",
+    "summary": "The Terraform provider for Google Cloud 8.0 builds on expanded infrastructure discovery workflows, modernizes provider defaults, removes support for retired Google Cloud services, and improves consistency between Terraform configurations and Google Cloud APIs.",
+    "source": "HashiCorp",
+    "sourceId": "hashicorp",
+    "url": "https://www.hashicorp.com/blog/terraform-provider-for-google-cloud-80-now-generally-available",
+    "publishedDate": "2026-09-07T04:00:00.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "vault",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "hashicorp",
+    "releaseVersion": "8.0"
   },
   {
     "id": "holmesgpt-c46f13b9572f",
@@ -9050,103 +9310,6 @@
     "releaseVersion": "v2.2.4"
   },
   {
-    "id": "crossplane-81378f272f47",
-    "title": "v2.1.8",
-    "summary": "v2.1.8 is a patch release scoped to fixing issues reported by users of Crossplane v2.1 and fixing security related issues in Crossplane's dependencies. 🎉 Highlights Fixed repeated owner updates for composed Usages (#7622, originally #7591): The Usage controller only checked the first ownerReference when deciding whether the spec.by resource already owned the Usage. A Usage created by a Composition already has the composite as its first owner, so spec.by ended up as a later owner and the control",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.1.8",
-    "publishedDate": "2026-07-23T14:11:58.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v2.1.8"
-  },
-  {
-    "id": "crossplane-f9c7aa0442bf",
-    "title": "v1.20.11",
-    "summary": "v1.20.11 is a patch release scoped to fixing issues reported by users of Crossplane v1.20 and fixing security related issues in Crossplane's dependencies. 🎉 Highlights Fixed repeated owner updates for composed Usages (#7623, originally #7591): The Usage controller only checked the first ownerReference when deciding whether the spec.by resource already owned the Usage. A Usage created by a Composition already has the composite as its first owner, so spec.by ended up as a later owner and the cont",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v1.20.11",
-    "publishedDate": "2026-07-23T14:11:46.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v1.20.11"
-  },
-  {
-    "id": "crossplane-2d6b3ecd1e6b",
-    "title": "apis/v2.3.4",
-    "summary": "Release v2.3.4",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.3.4",
-    "publishedDate": "2026-07-23T12:53:20.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v2.3.4"
-  },
-  {
-    "id": "pulumi-956423e9c4ce",
-    "title": "sdk/v3.254.0: Fix `test_fast` in sdk/go when a `go.work` file is active (#24031)",
-    "summary": "Workspace mode selects newer transitive versions of lukechampine/frand and github.com/spf13/cast than those selected by sdk/go.mod. This exposed test assumptions about the exact RNG output and dependency specific error wording that do not affect the behavior being tested. CI did not previously expose these failures because its checkout does not contain any go.work file.",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.254.0",
-    "publishedDate": "2026-07-23T12:26:54.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.254.0"
-  },
-  {
-    "id": "opentelemetry-4b059ab7e696",
-    "title": "Announcing v1 of OpenTelemetry Go Compile-Time Instrumentation",
-    "summary": "If you write Java, Python, Node.js, or .NET, you have been able to add OpenTelemetry to an application without editing its code for years: attach an agent at startup and telemetry starts flowing. Go has been the exception. A Go program compiles to a single static binary with no runtime to hook into at startup, so Go developers have had to instrument by hand or reach for an out-of-process eBPF agent.",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/go-compile-time-instrumentation-v1/",
-    "publishedDate": "2026-07-23T06:20:13.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "kubernetes-releases-baa6bf322d04",
     "title": "v1.36.3",
     "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
@@ -9166,26 +9329,6 @@
     "releaseVersion": "v1.36.3"
   },
   {
-    "id": "istio-eeff9bda0950",
-    "title": "An Update on Our Container Registry Migration",
-    "summary": "In a previous blog post, we announced that Istio will retire the gcr.io/istio-release container registry in late 2026 and switch to registry.istio.io/release as the new home for Istio images. The original design was that registry.istio.io/release would be a Cloudflare worker that proxied requests to any OCI-compliant registry, allowing us to switch registries without any interruption to Istio users. Currently, we proxy to gcr.io/istio-release. As mentioned before, we are retiring gcr.io/istio-re",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/blog/2026/retirement-of-gcr.io-follow-up/",
-    "publishedDate": "2026-07-23T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio"
-  },
-  {
     "id": "kubernetes-releases-69591e1c3c99",
     "title": "v1.35.7",
     "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
@@ -9203,23 +9346,6 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes-releases",
     "releaseVersion": "v1.35.7"
-  },
-  {
-    "id": "grafana-a44faa4f0be4",
-    "title": "Cost attribution in Grafana Cloud: Manage spend across observability and testing workflows",
-    "summary": "Knowing what you're spending on observability is useful. Knowing which team, service, or project is driving that spend is what actually lets you act on that information. Cost attribution is a core part of how Grafana Cloud approaches cost management and optimization. It gives your organization a clear, structured way to allocate observability spend across teams, projects, and services, turning a single consolidated bill into a meaningful breakdown that builds accountability and supports internal",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/cost-attribution-in-grafana-cloud-manage-spend-across-observability-and-testing-workflows/",
-    "publishedDate": "2026-07-22T22:27:07.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "kubernetes-releases-8e0c95e6719a",
@@ -9262,83 +9388,6 @@
     "releaseVersion": "v0.157.0"
   },
   {
-    "id": "oci-oke-7d3170904f3f",
-    "title": "v8.24.0",
-    "summary": "8.24.0 (July 22, 2026) Added Support for multiple semantic models in OAC PaaS instances Support for Multiple Fastconnect Enhancements Support for File Storage Service Compartment level quotas Support Generative AI hosted application and deployment resources Bug Fix Clarify container repositories data source attributes Fix Data Safe target database credential-only updates Fix migration asset docs example go vet fix for Logf call",
-    "source": "OCI / OKE",
-    "sourceId": "oci-oke",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v8.24.0",
-    "publishedDate": "2026-07-22T17:47:52.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "oci",
-      "oke",
-      "oracle"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "oci-oke",
-    "releaseVersion": "v8.24.0"
-  },
-  {
-    "id": "openai-bd6ce42035f5",
-    "title": "Building AI infrastructure with the Effingham County community",
-    "summary": "OpenAI announces Project Camellia in Effingham County, Georgia, with commitments to responsible energy, community investment, jobs, and access to Codex.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
-    "publishedDate": "2026-07-22T13:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "openai-c54f46e53d48",
-    "title": "Introducing OpenAI Presence",
-    "summary": "Introducing OpenAI Presence, a proven enterprise AI agent platform that helps organizations deploy trusted voice and chat agents for customer and internal workflows.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/introducing-openai-presence",
-    "publishedDate": "2026-07-22T05:30:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "ai-agent",
-      "openai",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "backstage-f9920067dd3d",
-    "title": "v1.54.0-next.0",
-    "summary": "See docs/releases/v1.54.0-next.0-changelog.md for more information.",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.0-next.0",
-    "publishedDate": "2026-07-21T23:35:18.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.54.0-next.0"
-  },
-  {
     "id": "cilium-75024107db06",
     "title": "1.20.0-rc.1",
     "summary": "Summary of Changes Major Changes: Cilium's Beta Mutual Auth support is now deprecated and will be removed in a future version. (Backport PR #47374, Upstream PR #47162, @youngnick) clustermesh: promote Multi-Cluster Services API (MCS-API) to a stable support level and improve its documentation (Backport PR #47374, Upstream PR #46953, @MrFreezeex) Minor Changes: envoy: reject CECs with duplicate filter chains (Backport PR #47374, Upstream PR #46848, @asauber) Gateway API: Add HTTP Server header tr",
@@ -9358,46 +9407,6 @@
     "releaseRelated": true,
     "releaseProject": "cilium",
     "releaseVersion": "1.20.0-rc.1"
-  },
-  {
-    "id": "cilium-5a43b57fccc7",
-    "title": "1.20.0-rc.1",
-    "summary": "Release v1.20.0-rc.1",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/1.20.0-rc.1",
-    "publishedDate": "2026-07-21T22:58:03.000Z",
-    "domain": "ebpf-cilium",
-    "topics": [
-      "cilium",
-      "ebpf",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "1.20.0-rc.1"
-  },
-  {
-    "id": "hashicorp-27ef9f119c64",
-    "title": "Autonomous infrastructure: Managing complexity in agentic workflows",
-    "summary": "AI agents are changing infrastructure operations. Learn the seven layers required to scale autonomy with confidence, control, and visibility.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/autonomous-infrastructure-managing-complexity-in-agentic-workflows",
-    "publishedDate": "2026-07-21T16:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "ai-agent",
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "kubernetes-releases-147867b4405f",
