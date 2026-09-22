@@ -9398,6 +9398,44 @@
     "releaseRelated": false
   },
   {
+    "id": "openai-d4ff9ec891b7",
+    "title": "Safety and alignment in an era of long-horizon models",
+    "summary": "OpenAI shares lessons from deploying long-running AI models, highlighting new safety risks, observed failures, and improved safeguards through iterative deployment.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/safety-alignment-long-horizon-models",
+    "publishedDate": "2026-07-20T10:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "gateway-api-02f434f02c2f",
+    "title": "v1.6.1",
+    "summary": "v1.6.1 Major Changes Since v1.6.0 Test & Conformance Change the port used in TCPRouteMultipleRoutesAttachment. (#5053, @davidjumani) Respect CleanupTestResources for BackendTLSPolicy, TCPRouteMultipleRoutesAttachment and UDPRouteMultipleRoutesAttachment(#5065, @snorwin) Fix SetupTimeoutConfig() not respecting defaults for ListenerSetMustHaveCondition, ListenerSetListenersMustHaveConditions, and RequiredConsecutiveSuccesses. (#5066, @immanuwell) Honour tcpRouteMustHaveCondition and udpRouteMustHa",
+    "source": "Gateway API",
+    "sourceId": "gateway-api",
+    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.1",
+    "publishedDate": "2026-07-16T16:30:35.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "gateway-api",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "gateway-api",
+    "releaseVersion": "v1.6.1"
+  },
+  {
     "id": "opentelemetry-64bb208d16a5",
     "title": "OpenTelemetry Has Graduated… Now what?",
     "summary": "In case you missed it: OpenTelemetry (OTel) has officially achieved CNCF graduated status! It now stands proudly alongside amazing open source projects such as Kubernetes and Prometheus, to name just a few. It’s been a long journey, and we’re very excited… But, now what? To understand where we’re going, it’s important to understand where we came from. History In the not-so-distant past, telemetry signals were not standardized. This meant telemetry formats differed from tool to tool, with each te",
@@ -9675,48 +9713,5 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes-releases",
     "releaseVersion": "v1.37.0-alpha.2"
-  },
-  {
-    "id": "istio-7351f2860115",
-    "title": "ISTIO-SECURITY-2026-005",
-    "summary": "Disclosure Details CVE(s) CVE-2026-47692 CVE-2026-47207 CVE-2026-47205 CVE-2026-47220 CVE-2026-47221 CVE-2026-48044 CVE-2026-48090 CVE-2026-47778 CVE-2026-47204 CVE-2026-48497 CVE-2026-48706 CVE-2026-48743 CVE-2026-47775 CVE-2026-48042 CVSS Impact Score 7.5 CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:L/A:N Affected Releases 1.30.1 to 1.30.2 1.29.4 to 1.29.5 1.28.8 to 1.28.9 CVE Envoy CVEs GHSA-p7c7-7c47-pwch: (CVSS score 7.5): Fixed a denial-of-service vulnerability in the HTTP/3 stack via QPACK bloc",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/security/istio-security-2026-005/",
-    "publishedDate": "2026-06-24T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "7.5"
-  },
-  {
-    "id": "istio-1fb9fded1837",
-    "title": "Announcing Istio 1.30.2",
-    "summary": "This release contains bug fixes to improve robustness. This release note describes what’s different between Istio 1.30.1 and 1.30.2. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Changes Improved logging when a Gateway API CRD installed in the cluster is below the minimum version required by this Istio version. The message is now",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/releases/1.30.x/announcing-1.30.2/",
-    "publishedDate": "2026-06-24T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "gateway-api",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "high",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "1.30.2"
   }
 ]

@@ -1,5 +1,129 @@
 [
   {
+    "id": "phoenix-dcafdca02e40",
+    "title": "@arizeai/phoenix-mcp@4.3.12",
+    "summary": "Patch Changes Updated dependencies [c282563] @arizeai/phoenix-client@7.13.0",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-mcp%404.3.12",
+    "publishedDate": "2026-09-22T05:36:29.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "4.3.12"
+  },
+  {
+    "id": "phoenix-50952a67911a",
+    "title": "@arizeai/phoenix-cli@1.18.4",
+    "summary": "Patch Changes Updated dependencies [c282563] @arizeai/phoenix-client@7.13.0",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-cli%401.18.4",
+    "publishedDate": "2026-09-22T05:36:26.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "1.18.4"
+  },
+  {
+    "id": "phoenix-a21b323a2322",
+    "title": "@arizeai/phoenix-evals@2.6.0",
+    "summary": "Minor Changes b7b7dfb: Classification evaluators now accept AI SDK evaluation models such as TypeSafe's Jev. When an evaluation model is passed as model, the classification is routed through experimental_evaluate as a single choice question instead of generateObject. Results carry a label and score but no explanation, since evaluation models do not generate text.",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-evals%402.6.0",
+    "publishedDate": "2026-09-22T05:36:23.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "2.6.0"
+  },
+  {
+    "id": "phoenix-8f9d8a2d092a",
+    "title": "@arizeai/phoenix-client@7.13.0",
+    "summary": "Minor Changes c282563: Add an upsertOrDeleteSecrets helper to the new secrets subpath. It atomically creates, updates, or deletes ordered key/value-or-null batches through PUT /v1/secrets, returns only the affected key names, and keeps submitted values out of helper output and error messages.",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-client%407.13.0",
+    "publishedDate": "2026-09-22T05:36:20.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "7.13.0"
+  },
+  {
+    "id": "pydantic-ai-cee206c680ef",
+    "title": "v2.47.0 (2026-09-21)",
+    "summary": "What's Changed ⚠️ Compatibility Notes Name a None output route None rather than NoneType by @DouweM in #8590 Raise when UserPromptPart.content is not a str or a sequence, instead of silently sending a dict's keys by @DouweM in #8595 🚀 Features Ask three more field types TypeSafeModel can already answer by @DouweM in #8544 🐛 Bug Fixes Refuse a tuple output field and a self-contained model instead of crashing by @DouweM in #8537 Refuse a rubric with more levels than Jev scores against by @DouweM",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.47.0",
+    "publishedDate": "2026-09-22T03:59:32.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.47.0"
+  },
+  {
+    "id": "phoenix-102b31a058c8",
+    "title": "arize-phoenix: v20.15.0",
+    "summary": "20.15.0 (2026-09-21) Features agents: mount configured skills in MCP and PXI (#16178) (0809595) agents: search the GraphQL schema from phoenix-gql (#15923) (2f58f8d) Bug Fixes cost: update built-in model token prices (#16262) (d5535d4) db: preserve SQLite autoincrement counters across migrations (#16313) (d3d7ce0) Documentation Add Phoenix release notes — 2026-09-16 (#16241) (c9a6367) add redirects for broken Phoenix backlinks, collapse a chain (#16360) (a42a842) add TypeSafe AI integration page",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.15.0",
+    "publishedDate": "2026-09-21T23:06:30.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v20.15.0"
+  },
+  {
     "id": "phoenix-78e40a7c67db",
     "title": "arize-phoenix-evals: v3.9.0",
     "summary": "3.9.0 (2026-09-21) Features evals: add retrieval relevance evaluator (#14766) (7efa7b2) evals: add session-level pii_detection evaluator (#15096) (0e3b2c2) evals: completeness evaluator (#15767) (63805d0) evals: deprecate document relevance evaluators (#15991) (d67ea3f) Bug Fixes evals: accept role aliases in PromptTemplate message lists (#16002) (767847c) evals: use non-blocking sleep in async rate limiter (#15404) (2ecfd47) evals: validate initial request rate (#16227) (b8e5cf8) upgrade to ant",
