@@ -1,5 +1,21 @@
 [
   {
+    "project": "backstage",
+    "version": "v1.56.0-next.0",
+    "publishedDate": "2026-09-22T17:09:55.000Z",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.56.0-next.0",
+    "sourceId": "backstage",
+    "title": "v1.56.0-next.0"
+  },
+  {
+    "project": "opentelemetry",
+    "version": "3.1",
+    "publishedDate": "2026-09-22T15:06:22.000Z",
+    "url": "https://opentelemetry.io/blog/2026/otel-prometheus-interoperability/",
+    "sourceId": "opentelemetry",
+    "title": "Prometheus and OpenTelemetry interoperability in 2026: Survey results"
+  },
+  {
     "project": "prometheus",
     "version": "3.15.0-rc.1",
     "publishedDate": "2026-09-22T10:07:36.000Z",
@@ -14,14 +30,6 @@
     "url": "https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/",
     "sourceId": "kubernetes",
     "title": "Kubernetes v1.37: Tracking When a PersistentVolumeClaim Was Last Used (Beta)"
-  },
-  {
-    "project": "backstage",
-    "version": "v1.55.1",
-    "publishedDate": "2026-09-21T15:13:10.000Z",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.55.1",
-    "sourceId": "backstage",
-    "title": "v1.55.1"
   },
   {
     "project": "istio",
@@ -118,14 +126,6 @@
     "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.2.0",
     "sourceId": "oci-oke",
     "title": "v9.2.0"
-  },
-  {
-    "project": "opentelemetry",
-    "version": "v1.0.0",
-    "publishedDate": "2026-09-16T04:59:27.000Z",
-    "url": "https://opentelemetry.io/blog/2026/k8s-attributes-processor-v1/",
-    "sourceId": "opentelemetry",
-    "title": "Kubernetes attributes processor reaches v1.0.0 milestone"
   },
   {
     "project": "cilium",

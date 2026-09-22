@@ -1,5 +1,102 @@
 [
   {
+    "id": "nvidia-security-5a508d73208a",
+    "title": "Enabling Private High-Performance Production AI Inference with NVIDIA Confidential Computing",
+    "summary": "As large language model (LLM) inference increasingly processes sensitive information and proprietary model context across personal, enterprise, and regulated...",
+    "source": "NVIDIA Technical Blog",
+    "sourceId": "nvidia-security",
+    "url": "https://developer.nvidia.com/blog/enabling-private-high-performance-production-ai-inference-with-nvidia-confidential-computing/",
+    "publishedDate": "2026-09-22T17:27:41.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "infrastructure-security",
+      "news",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "phoenix-eb80ce1c4de6",
+    "title": "@arizeai/phoenix-mcp@4.3.13",
+    "summary": "Patch Changes Updated dependencies [aab229f] @arizeai/phoenix-client@7.14.0",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-mcp%404.3.13",
+    "publishedDate": "2026-09-22T14:25:11.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "4.3.13"
+  },
+  {
+    "id": "phoenix-a7e5161a186b",
+    "title": "@arizeai/phoenix-cli@1.18.5",
+    "summary": "Patch Changes Updated dependencies [aab229f] @arizeai/phoenix-client@7.14.0",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-cli%401.18.5",
+    "publishedDate": "2026-09-22T14:25:08.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "1.18.5"
+  },
+  {
+    "id": "phoenix-c24fce4f9972",
+    "title": "@arizeai/phoenix-client@7.14.0",
+    "summary": "Minor Changes aab229f: Add createDatasetSplit, updateDatasetSplit, and deleteDatasetSplit helpers to the datasets subpath. The helpers select datasets by name or GlobalID, create splits on existing datasets, partially update split fields, add or remove example memberships idempotently, and delete splits without deleting their examples. They require Phoenix server 19.20.0 or newer. Also export the generated DatasetSplit response type and a DatasetIdentifier selector type from the datasets subpath",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-client%407.14.0",
+    "publishedDate": "2026-09-22T14:25:05.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "7.14.0"
+  },
+  {
+    "id": "cncf-video-20ecea11d511",
+    "title": "Confidential GPUs on Kubernetes: From Silicon to Service | CNCF",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/shorts/VuMlfQqFb28",
+    "publishedDate": "2026-09-22T12:50:34.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "langfuse-aeadc6f871c5",
     "title": "v3.225.9",
     "summary": "What's Changed fix(auth): evict the API key cache after deleting the row (v3 backport of #17651) by @Steffen911 in #17767 Full Changelog: v3.225.8...v3.225.9",

@@ -1,5 +1,81 @@
 [
   {
+    "id": "backstage-3c1ab051259a",
+    "title": "v1.56.0-next.0",
+    "summary": "See docs/releases/v1.56.0-next.0-changelog.md for more information.",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.56.0-next.0",
+    "publishedDate": "2026-09-22T17:09:55.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.56.0-next.0"
+  },
+  {
+    "id": "vector-bb3930985fb5",
+    "title": "vdev-v0.3.21",
+    "summary": "No content.",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.21",
+    "publishedDate": "2026-09-22T16:39:41.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
+    "id": "opentelemetry-2bd575b6bf87",
+    "title": "Prometheus and OpenTelemetry interoperability in 2026: Survey results",
+    "summary": "We ran a survey asking users of OpenTelemetry and Prometheus how they collect, process, and store metrics. The goal was to understand, with real usage data rather than assumptions, how far the ecosystem has moved and whether the interoperability still causes friction. Key takeaways Interoperability has measurably improved since our 2024 survey: the average ease-of-use rating rose from 3.1 to 3.6, the equivalent of one in two respondents rating a whole category higher, and the share of respondent",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/otel-prometheus-interoperability/",
+    "publishedDate": "2026-09-22T15:06:22.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry",
+    "releaseVersion": "3.1"
+  },
+  {
+    "id": "cncf-6a4c11d02dc4",
+    "title": "From attendee badge to speaker badge: My first KubeCon at KubeCon + CloudNativeCon India 2026",
+    "summary": "There is something surreal about your first KubeCon being one where you walk onto the stage as a speaker. Most people ease into this community by attending a few conferences, lurking in hallway tracks, and working...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/09/22/from-attendee-badge-to-speaker-badge-my-first-kubecon-at-kubecon-cloudnativecon-india-2026/",
+    "publishedDate": "2026-09-22T13:34:05.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "prometheus-6d74b19c9129",
     "title": "3.15.0-rc.1 / 2026-09-21",
     "summary": "[BUGFIX] TSDB: Avoid WAL corruption after a failed WAL write in Agent mode. #19700",
@@ -9324,64 +9400,6 @@
     "releaseRelated": false
   },
   {
-    "id": "opentofu-4fd8222bd6ba",
-    "title": "v1.12.5",
-    "summary": "SECURITY ADVISORIES: Previous releases in the v1.12 series could be affected by several vulnerabilities: The Encrypted Client Hello implementation (which is used by OpenTofu through the go stdlib) would leak the pre-shared key identities during the handshake, allowing a passive network observer who can collect handshakes to de-anonymize the hostname of the server, even when ECH was being used. This is fixed now by (#4363) BUG FIXES: Fixed bug where implicit moves and provider address changes wou",
-    "source": "OpenTofu",
-    "sourceId": "opentofu",
-    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.5",
-    "publishedDate": "2026-07-21T11:39:19.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "opentofu",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentofu",
-    "releaseVersion": "v1.12.5"
-  },
-  {
-    "id": "opentofu-62fbde955b95",
-    "title": "v1.11.13",
-    "summary": "SECURITY ADVISORIES: Previous releases in the v1.11 series could be affected by several vulnerabilities: The Encrypted Client Hello implementation (which is used by OpenTofu through the go stdlib) would leak the pre-shared key identities during the handshake, allowing a passive network observer who can collect handshakes to de-anonymize the hostname of the server, even when ECH was being used. This is fixed now by (#4363) BUG FIXES: Fixed bug where implicit moves and provider address changes wou",
-    "source": "OpenTofu",
-    "sourceId": "opentofu",
-    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.11.13",
-    "publishedDate": "2026-07-21T11:39:02.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "opentofu",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentofu",
-    "releaseVersion": "v1.11.13"
-  },
-  {
-    "id": "hashicorp-79ba2d17442a",
-    "title": "AI speeds software development. Is your secret security keeping up?",
-    "summary": "As AI accelerates software development, secret sprawl is becoming one of the fastest growing sources of security, compliance, and operational risk.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/ai-speeds-software-development-is-your-secret-security-keeping-up",
-    "publishedDate": "2026-07-21T07:09:00.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "kubernetes-releases-147867b4405f",
     "title": "v1.37.0-beta.0",
     "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
@@ -9399,23 +9417,6 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes-releases",
     "releaseVersion": "v1.37.0-beta.0"
-  },
-  {
-    "id": "grafana-33a71c0efbcc",
-    "title": "Beyond performance monitoring: Understand the user experience with Grafana Cloud Frontend Observability",
-    "summary": "You've optimized your Largest Contentful Paint. Your Time to First Byte is under 200ms. Your Lighthouse scores are green. And yet, your checkout conversion rate is quietly dropping. A segment of users in Southeast Asia is churning. Your support team is fielding tickets about a form that \"just doesn't work\" and you have no idea which one.Traditional frontend performance monitoring tells you whether your application is fast. It doesn't tell you whether people are actually succeeding when using it.",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/beyond-performance-monitoring-understand-the-user-experience-with-grafana-cloud-frontend-observability/",
-    "publishedDate": "2026-07-20T23:00:44.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "opentelemetry-9d6cf2bf7067",
