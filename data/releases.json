@@ -1,5 +1,13 @@
 [
   {
+    "project": "prometheus",
+    "version": "3.15.0-rc.1",
+    "publishedDate": "2026-09-22T10:07:36.000Z",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.15.0-rc.1",
+    "sourceId": "prometheus",
+    "title": "3.15.0-rc.1 / 2026-09-21"
+  },
+  {
     "project": "kubernetes",
     "version": "v1.37",
     "publishedDate": "2026-09-21T18:30:00.000Z",
@@ -134,14 +142,6 @@
     "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.1",
     "sourceId": "crossplane",
     "title": "v2.4.1"
-  },
-  {
-    "project": "prometheus",
-    "version": "3.15.0-rc.0",
-    "publishedDate": "2026-09-14T19:17:49.000Z",
-    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.15.0-rc.0",
-    "sourceId": "prometheus",
-    "title": "3.15.0-rc.0 / 2026-09-09"
   },
   {
     "project": "k8sgpt",

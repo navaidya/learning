@@ -1,5 +1,45 @@
 [
   {
+    "id": "prometheus-6d74b19c9129",
+    "title": "3.15.0-rc.1 / 2026-09-21",
+    "summary": "[BUGFIX] TSDB: Avoid WAL corruption after a failed WAL write in Agent mode. #19700",
+    "source": "Prometheus",
+    "sourceId": "prometheus",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.15.0-rc.1",
+    "publishedDate": "2026-09-22T10:07:36.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "promql",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "prometheus",
+    "releaseVersion": "3.15.0-rc.1"
+  },
+  {
+    "id": "prometheus-459ec0263dcc",
+    "title": "v0.315.0-rc.1",
+    "summary": "v0.315.0-rc.1",
+    "source": "Prometheus",
+    "sourceId": "prometheus",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v0.315.0-rc.1",
+    "publishedDate": "2026-09-22T09:14:48.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "promql",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "prometheus",
+    "releaseVersion": "v0.315.0-rc.1"
+  },
+  {
     "id": "vector-88b0f04015a6",
     "title": "vdev-v0.3.20",
     "summary": "No content.",
@@ -17,6 +57,23 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "vector"
+  },
+  {
+    "id": "grafana-bd823b392af0",
+    "title": "Grafana Alerting: Scale alert routing without scaling complexity using multiple notification policies",
+    "summary": "Alert routing often starts simple. A team creates a few contact points, adds some label matchers, and builds a notification policy tree that sends each alert to the right destination.But alerting configurations rarely stay simple.As an organization grows, its notification policy tree must accommodate more teams, services, and routing requirements. Changes for one team still require editing a global configuration, making ownership less clear and independent provisioning harder. Over time, even sm",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/grafana-alerting-scale-alert-routing-without-scaling-complexity-using-multiple-notification-policies/",
+    "publishedDate": "2026-09-21T18:45:23.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "kubernetes-a668dc129d9d",
@@ -9361,25 +9418,6 @@
     "releaseRelated": false
   },
   {
-    "id": "vector-1adf396c90ee",
-    "title": "vdev-v0.3.9",
-    "summary": "feat(vdev): automate release upgrade guide from breaking fragments (#…",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.9",
-    "publishedDate": "2026-07-20T17:47:12.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector"
-  },
-  {
     "id": "opentelemetry-9d6cf2bf7067",
     "title": "CocoaPods Deprecation Notice for OpenTelemetry Swift",
     "summary": "As it was announced via CocoaPods Support Plan and via CocoaPods Spec Repository, CocoaPods is transitioning their project to maintenance mode, and cocoapods trunk is going to be read-only in a few months. The OpenTelemetry Swift maintainers are planning to deprecate CocoaPods support for all the pods published under opentelemetry-swift and opentelemetry-swift-core. Swift Package Manager (SPM) is now the recommended and preferred installation method for all new integrations. We encourage existin",
@@ -9396,44 +9434,6 @@
     "importance": "critical",
     "architectureShift": true,
     "releaseRelated": false
-  },
-  {
-    "id": "openai-d4ff9ec891b7",
-    "title": "Safety and alignment in an era of long-horizon models",
-    "summary": "OpenAI shares lessons from deploying long-running AI models, highlighting new safety risks, observed failures, and improved safeguards through iterative deployment.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/safety-alignment-long-horizon-models",
-    "publishedDate": "2026-07-20T10:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "gateway-api-02f434f02c2f",
-    "title": "v1.6.1",
-    "summary": "v1.6.1 Major Changes Since v1.6.0 Test & Conformance Change the port used in TCPRouteMultipleRoutesAttachment. (#5053, @davidjumani) Respect CleanupTestResources for BackendTLSPolicy, TCPRouteMultipleRoutesAttachment and UDPRouteMultipleRoutesAttachment(#5065, @snorwin) Fix SetupTimeoutConfig() not respecting defaults for ListenerSetMustHaveCondition, ListenerSetListenersMustHaveConditions, and RequiredConsecutiveSuccesses. (#5066, @immanuwell) Honour tcpRouteMustHaveCondition and udpRouteMustHa",
-    "source": "Gateway API",
-    "sourceId": "gateway-api",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.1",
-    "publishedDate": "2026-07-16T16:30:35.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "gateway-api",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "gateway-api",
-    "releaseVersion": "v1.6.1"
   },
   {
     "id": "opentelemetry-64bb208d16a5",
