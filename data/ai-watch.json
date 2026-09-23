@@ -1,5 +1,44 @@
 [
   {
+    "id": "nvidia-security-6b35eb7287f3",
+    "title": "Manage Kubernetes Node Fleets with NodeWright",
+    "summary": "Kubernetes manages what runs on your nodes. Managing the nodes themselves is the challenge: kernel settings, system packages, storage layouts, security agents,...",
+    "source": "NVIDIA Technical Blog",
+    "sourceId": "nvidia-security",
+    "url": "https://developer.nvidia.com/blog/manage-kubernetes-node-fleets-with-nodewright/",
+    "publishedDate": "2026-09-23T18:25:49.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "infrastructure-security",
+      "news",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "langgraph-d9bffe65cf63",
+    "title": "langgraph-cli==0.4.32",
+    "summary": "Changes since cli==0.4.31 feat(cli): place self-hosted deployments on a listener (#9056) feat(cli): clarify agent flags and support env defaults (#9063) feat(cli): Update langgraph deploy command to use agent_id and environment args (#9055) feat(cli): add --image-uri flag for self-hosted deployments (#8482) fix(cli): remediate AnyIO vulnerabilities in example lockfiles (#9022) chore(deps): bump anyio from 4.13.0 to 4.14.2 in /libs/cli (#8998) chore(deps): fix vulnerable dev dependencies (#8449) ",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.32",
+    "publishedDate": "2026-09-23T18:02:46.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "0.4.32"
+  },
+  {
     "id": "phoenix-31428de769aa",
     "title": "arize-phoenix: v20.16.0",
     "summary": "20.16.0 (2026-09-23) Features add gpt-6-sol, gpt-6-luna, and claude-opus-5-5 to the cost tables and the playground (#16391) (59d09f4) js: add dataset split write helpers (#15740) (aab229f) js: add secrets management helper (#15747) (c282563) spans: sort the span list endpoint by start_time (#16380) (03f62e1) Bug Fixes agents: close out the PXI turn trace when a server tool raises (#16338) (3a3d57b) cost: update built-in model token prices (7f857b4) deps: update arize-phoenix-evals to 3.9.0 (#163",

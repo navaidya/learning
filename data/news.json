@@ -1,5 +1,81 @@
 [
   {
+    "id": "kubernetes-releases-1bc3a2b4b103",
+    "title": "v1.34.12",
+    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
+    "source": "Kubernetes Releases",
+    "sourceId": "kubernetes-releases",
+    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.34.12",
+    "publishedDate": "2026-09-23T19:58:45.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes-releases",
+    "releaseVersion": "v1.34.12"
+  },
+  {
+    "id": "kubernetes-releases-52e11e25dd55",
+    "title": "v1.35.9",
+    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
+    "source": "Kubernetes Releases",
+    "sourceId": "kubernetes-releases",
+    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.35.9",
+    "publishedDate": "2026-09-23T19:35:01.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes-releases",
+    "releaseVersion": "v1.35.9"
+  },
+  {
+    "id": "kubernetes-releases-2538abbbb79a",
+    "title": "v1.37.1",
+    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
+    "source": "Kubernetes Releases",
+    "sourceId": "kubernetes-releases",
+    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.1",
+    "publishedDate": "2026-09-23T19:13:17.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes-releases",
+    "releaseVersion": "v1.37.1"
+  },
+  {
+    "id": "kubernetes-releases-a63693ac9271",
+    "title": "v1.36.5",
+    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
+    "source": "Kubernetes Releases",
+    "sourceId": "kubernetes-releases",
+    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.36.5",
+    "publishedDate": "2026-09-23T18:58:18.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes-releases",
+    "releaseVersion": "v1.36.5"
+  },
+  {
     "id": "terraform-c79ceb465e4a",
     "title": "v1.17.0-beta2",
     "summary": "1.17.0-beta2 (September 23, 2026) NEW FEATURES: Terraform now supports variables and locals in provider requirements (#39153) A new -minimal-refresh planning option has been added, which will only refresh resources that have proposed changes. (#35290) policy: Terraform Policy is now generally available. The -policies flag for plan, apply, and query no longer requires an experimental build or the -allow-experimental-features flag. Query policies evaluate resources discovered by list blocks and re",
@@ -90,6 +166,26 @@
     "releaseRelated": true,
     "releaseProject": "terraform",
     "releaseVersion": "v1.16.4"
+  },
+  {
+    "id": "openai-7cff1964bf19",
+    "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+    "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/ringg",
+    "publishedDate": "2026-09-23T12:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "openai",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "openai"
   },
   {
     "id": "pulumi-759f2577d4f3",
@@ -9218,106 +9314,6 @@
     "releaseRelated": true,
     "releaseProject": "etcd",
     "releaseVersion": "v3.7.1"
-  },
-  {
-    "id": "etcd-cbfefb761847",
-    "title": "tests/v3.6.14",
-    "summary": "v3.6.14",
-    "source": "etcd",
-    "sourceId": "etcd",
-    "url": "https://github.com/etcd-io/etcd/releases/tag/tests%2Fv3.6.14",
-    "publishedDate": "2026-07-23T19:20:49.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "etcd",
-      "kubernetes",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "etcd",
-    "releaseVersion": "v3.6.14"
-  },
-  {
-    "id": "etcd-4a8d5b3f9bb5",
-    "title": "server/v3.6.14",
-    "summary": "v3.6.14",
-    "source": "etcd",
-    "sourceId": "etcd",
-    "url": "https://github.com/etcd-io/etcd/releases/tag/server%2Fv3.6.14",
-    "publishedDate": "2026-07-23T19:20:43.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "etcd",
-      "kubernetes",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "etcd",
-    "releaseVersion": "v3.6.14"
-  },
-  {
-    "id": "etcd-cef57f946acc",
-    "title": "v3.5.33",
-    "summary": "Please check out CHANGELOG for a full list of changes. And make sure to read upgrade guide before upgrading etcd (there may be breaking changes). For installation guides, please check out operating etcd. Latest support status for common architectures and operating systems can be found at supported platforms. Linux ETCD_VER=v3.5.33 # choose either URL GOOGLE_URL=https://storage.googleapis.com/etcd GITHUB_URL=https://github.com/etcd-io/etcd/releases/download DOWNLOAD_URL=${GOOGLE_URL} rm -f /tmp/e",
-    "source": "etcd",
-    "sourceId": "etcd",
-    "url": "https://github.com/etcd-io/etcd/releases/tag/v3.5.33",
-    "publishedDate": "2026-07-23T19:12:21.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "etcd",
-      "kubernetes",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "etcd",
-    "releaseVersion": "v3.5.33"
-  },
-  {
-    "id": "etcd-b52fab18d7c4",
-    "title": "tests/v3.5.33",
-    "summary": "v3.5.33",
-    "source": "etcd",
-    "sourceId": "etcd",
-    "url": "https://github.com/etcd-io/etcd/releases/tag/tests%2Fv3.5.33",
-    "publishedDate": "2026-07-23T19:06:24.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "etcd",
-      "kubernetes",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "etcd",
-    "releaseVersion": "v3.5.33"
-  },
-  {
-    "id": "etcd-18e16992569a",
-    "title": "server/v3.5.33",
-    "summary": "v3.5.33",
-    "source": "etcd",
-    "sourceId": "etcd",
-    "url": "https://github.com/etcd-io/etcd/releases/tag/server%2Fv3.5.33",
-    "publishedDate": "2026-07-23T19:06:18.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "etcd",
-      "kubernetes",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "etcd",
-    "releaseVersion": "v3.5.33"
   },
   {
     "id": "kubernetes-releases-baa6bf322d04",

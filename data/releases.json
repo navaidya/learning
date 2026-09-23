@@ -1,5 +1,13 @@
 [
   {
+    "project": "kubernetes-releases",
+    "version": "v1.34.12",
+    "publishedDate": "2026-09-23T19:58:45.000Z",
+    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.34.12",
+    "sourceId": "kubernetes-releases",
+    "title": "v1.34.12"
+  },
+  {
     "project": "terraform",
     "version": "v1.17.0-beta2",
     "publishedDate": "2026-09-23T15:48:24.000Z",
@@ -206,14 +214,6 @@
     "url": "https://github.com/fluxcd/flux2/releases/tag/v2.9.5",
     "sourceId": "flux",
     "title": "v2.9.5"
-  },
-  {
-    "project": "kubernetes-releases",
-    "version": "v1.37.0",
-    "publishedDate": "2026-08-26T16:29:12.000Z",
-    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.0",
-    "sourceId": "kubernetes-releases",
-    "title": "v1.37.0"
   },
   {
     "project": "vector",
