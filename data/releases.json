@@ -1,5 +1,21 @@
 [
   {
+    "project": "terraform",
+    "version": "v1.16.4",
+    "publishedDate": "2026-09-23T12:44:16.000Z",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.4",
+    "sourceId": "terraform",
+    "title": "v1.16.4"
+  },
+  {
+    "project": "pulumi",
+    "version": "v3.264.0",
+    "publishedDate": "2026-09-23T09:54:16.000Z",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.264.0",
+    "sourceId": "pulumi",
+    "title": "v3.264.0"
+  },
+  {
     "project": "hashicorp",
     "version": "8.0",
     "publishedDate": "2026-09-23T04:00:00.000Z",
@@ -126,22 +142,6 @@
     "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.0-rc1",
     "sourceId": "argo",
     "title": "v3.6.0-rc1"
-  },
-  {
-    "project": "terraform",
-    "version": "v1.16.3",
-    "publishedDate": "2026-09-16T14:33:39.000Z",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.3",
-    "sourceId": "terraform",
-    "title": "v1.16.3"
-  },
-  {
-    "project": "pulumi",
-    "version": "v3.263.0",
-    "publishedDate": "2026-09-16T12:01:10.000Z",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.263.0",
-    "sourceId": "pulumi",
-    "title": "pkg/v3.263.0: Changelog and go.mod updates for v3.263.0 (#24679)"
   },
   {
     "project": "oci-oke",

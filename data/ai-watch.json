@@ -1,5 +1,25 @@
 [
   {
+    "id": "langfuse-9d7f81262dd6",
+    "title": "v4.42.0",
+    "summary": "What's Changed refactor(web): reroute leftover feature deep imports through index.ts by @nkabardin in #17749 fix(web): trace page panels fill the window width by @nmtrang29 in #17714 refactor(web): reroute remaining feature deep imports through index.ts by @nkabardin in #17753 feat: trace messages internal preview by @marliessophie in #17648 fix(web): antialiased body text by @nmtrang29 in #17756 refactor(web): reroute leftover feature deep imports through index.ts by @nkabardin in #17760 fix(we",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.42.0",
+    "publishedDate": "2026-09-23T07:19:33.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.42.0"
+  },
+  {
     "id": "pydantic-ai-cf4c5aa1889f",
     "title": "v2.48.0 (2026-09-22)",
     "summary": "What's Changed 🚀 Features Support genai-prices 0.1.7 and new OpenAI audio models by @adtyavrdhn in #8617 Add OpenAI gpt-6-sol and gpt-6-luna model support by @DouweM in #8635 Add Claude Opus 5.5 (claude-opus-5-5) support by @DouweM in #8637 🐛 Bug Fixes Preserve UIMessage.id across Vercel AI load_messages and dump_messages by @adtyavrdhn in #8623 Preserve AG-UI Message.id across AGUIAdapter.load_messages and dump_messages by @adtyavrdhn in #8632 📦 Dependencies Bump genai-prices to 0.1.8 by @Do",
@@ -2411,25 +2431,6 @@
       "infrastructure"
     ],
     "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "practical-ai-f2b0da2f8f79",
-    "title": "AIUC-1: Building trust in AI agents",
-    "summary": "How do we build trust in AI agents before the AI hailstorm arrives? Emil Lassen from the Artificial Intelligence Underwriting Company (AIUC) joins the show to discuss how the enterprise flywheel of standards, certification, audit, and insurance is being applied to AI agents. They explore the AIUC-1 framework, the challenges of securing agentic AI systems, and why red teaming (based on standards) may be key to accelerating enterprise AI adoption.Featuring:Emil Lassen – LinkedIn Daniel Whitenack –",
-    "source": "Practical AI",
-    "sourceId": "practical-ai",
-    "url": "https://share.transistor.fm/s/e039d1ca",
-    "publishedDate": "2026-06-25T09:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "ai-agent",
-      "podcast",
-      "agent-development"
-    ],
-    "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
   }
