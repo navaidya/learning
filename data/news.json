@@ -1,5 +1,78 @@
 [
   {
+    "id": "terraform-c79ceb465e4a",
+    "title": "v1.17.0-beta2",
+    "summary": "1.17.0-beta2 (September 23, 2026) NEW FEATURES: Terraform now supports variables and locals in provider requirements (#39153) A new -minimal-refresh planning option has been added, which will only refresh resources that have proposed changes. (#35290) policy: Terraform Policy is now generally available. The -policies flag for plan, apply, and query no longer requires an experimental build or the -allow-experimental-features flag. Query policies evaluate resources discovered by list blocks and re",
+    "source": "Terraform",
+    "sourceId": "terraform",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-beta2",
+    "publishedDate": "2026-09-23T15:48:24.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "terraform",
+    "releaseVersion": "v1.17.0-beta2"
+  },
+  {
+    "id": "cncf-bf5d8ede87ac",
+    "title": "Which hat am I wearing right now?",
+    "summary": "Neutrality is quietly the hardest part of open source. It gets tricky the moment someone pays your salary — and staying honest about it takes more effort than anyone admits. Here’s something we don’t say out...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/09/23/which-hat-am-i-wearing-right-now/",
+    "publishedDate": "2026-09-23T14:47:15.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "pulumi-13a5909af9d2",
+    "title": "pkg/v3.264.0: Changelog and go.mod updates for v3.264.0 (#24753)",
+    "summary": "Co-authored-by: github-actions github-actions@github.com",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.264.0",
+    "publishedDate": "2026-09-23T13:30:27.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.264.0"
+  },
+  {
+    "id": "openai-1d77064cbebb",
+    "title": "OpenAI extends cyber access to Ukraine for civilian defense",
+    "summary": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+    "publishedDate": "2026-09-23T13:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "terraform-73d05ec3e0cd",
     "title": "v1.16.4",
     "summary": "1.16.4 (September 23, 2026) BUG FIXES: Fixed an issue where Terraform fails when rendering policy evaluation outcomes for older versions of Terraform Enterprise (#39095) stacks: Fix invalid deferred error triggered by provider returning a deferral when a resource also has an unknown count/for_each. (#39237)",
@@ -9245,81 +9318,6 @@
     "releaseRelated": true,
     "releaseProject": "etcd",
     "releaseVersion": "v3.5.33"
-  },
-  {
-    "id": "etcd-37c1d0fb2c87",
-    "title": "raft/v3.5.33",
-    "summary": "v3.5.33",
-    "source": "etcd",
-    "sourceId": "etcd",
-    "url": "https://github.com/etcd-io/etcd/releases/tag/raft%2Fv3.5.33",
-    "publishedDate": "2026-07-23T19:06:10.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "etcd",
-      "kubernetes",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "etcd",
-    "releaseVersion": "v3.5.33"
-  },
-  {
-    "id": "opentelemetry-309155cf7d38",
-    "title": "OpenTelemetry @ KubeCon + CloudNativeCon Japan 2026",
-    "summary": "KubeCon + CloudNativeCon Japan takes place July 28-30, 2026, in Yokohama, Japan. Register today to join us! Here are all the OpenTelemetry-related sessions, up to date at the time of writing. Session details can change, so confirm dates and times in the official schedule. Community Day Japan Community Day is on Tuesday, July 28, ahead of the main conference. It’s a great way to engage with fellow attendees and with members of local meetup communities, special interest groups, and subgroups withi",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/kubecon-japan/",
-    "publishedDate": "2026-07-23T17:40:46.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "opentelemetry-8c3dc634aeca",
-    "title": "One-command OpenTelemetry setup on Linux hosts",
-    "summary": "OpenTelemetry as system dependency Setting up OpenTelemetry for your applications and systems depends on where those apps and systems run. Some are very automated, especially Kubernetes, thanks to the OpenTelemetry Operator, or AWS Lambda, with the OpenTelemetry Lambda layers. But the countless Java, .NET, Node.js, and Python apps running directly on Linux hosts have had no such automation. Instrumenting those has meant downloading agents by hand and wiring up environment variables yourself. At ",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/packaging-first-repo/",
-    "publishedDate": "2026-07-23T16:51:56.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "terraform-680ec7a32a5c",
-    "title": "v1.16.0-beta1",
-    "summary": "1.16.0-beta1 (July 23, 2026) NEW FEATURES: Terraform now stores planned private data for providers, allowing provider-specific state to be preserved across plan and apply. (#37986) terraform_data: The new store block can hold ephemeral and sensitive values across plan and apply. (#38298) Providers can now use nested blocks as computed values (#38305) import: import blocks inside modules are now supported. (#38352) Terraform is now available as a pre-built binary for Linux s390x (zLinux). (#38384",
-    "source": "Terraform",
-    "sourceId": "terraform",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-beta1",
-    "publishedDate": "2026-07-23T16:51:01.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "terraform",
-    "releaseVersion": "v1.16.0-beta1"
   },
   {
     "id": "kubernetes-releases-baa6bf322d04",

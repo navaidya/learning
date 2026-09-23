@@ -1,5 +1,66 @@
 [
   {
+    "id": "phoenix-31428de769aa",
+    "title": "arize-phoenix: v20.16.0",
+    "summary": "20.16.0 (2026-09-23) Features add gpt-6-sol, gpt-6-luna, and claude-opus-5-5 to the cost tables and the playground (#16391) (59d09f4) js: add dataset split write helpers (#15740) (aab229f) js: add secrets management helper (#15747) (c282563) spans: sort the span list endpoint by start_time (#16380) (03f62e1) Bug Fixes agents: close out the PXI turn trace when a server tool raises (#16338) (3a3d57b) cost: update built-in model token prices (7f857b4) deps: update arize-phoenix-evals to 3.9.0 (#163",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.16.0",
+    "publishedDate": "2026-09-23T15:41:54.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v20.16.0"
+  },
+  {
+    "id": "langfuse-aaa058d83ec5",
+    "title": "v3.225.10",
+    "summary": "What's Changed fix(scim): scope Users/{id} reads and mutations to the caller's org (v3 backport of #17828) by @Steffen911 in #17830 Full Changelog: v3.225.9...v3.225.10",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v3.225.10",
+    "publishedDate": "2026-09-23T13:15:08.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v3.225.10"
+  },
+  {
+    "id": "langfuse-22a8473d66a0",
+    "title": "v4.43.0",
+    "summary": "What's Changed Features feat(members): filter project and organization members by role by @hassiebp in #17810 feat(scores): Allow creating scores from annotation sidebar by @bezbac in #17815 feat(feature-flags): introduce internal view mode and related components by @marliessophie in #17816 feat(evals): route TypeSafe decision-model connections through OpenRouter or Vercel AI Gateway by @hassiebp in #17798 Fixes fix(scim): scope Users/{id} reads and mutations to the caller's org by @Steffen911 i",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.43.0",
+    "publishedDate": "2026-09-23T13:06:20.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.43.0"
+  },
+  {
     "id": "langfuse-9d7f81262dd6",
     "title": "v4.42.0",
     "summary": "What's Changed refactor(web): reroute leftover feature deep imports through index.ts by @nkabardin in #17749 fix(web): trace page panels fill the window width by @nmtrang29 in #17714 refactor(web): reroute remaining feature deep imports through index.ts by @nkabardin in #17753 feat: trace messages internal preview by @marliessophie in #17648 fix(web): antialiased body text by @nmtrang29 in #17756 refactor(web): reroute leftover feature deep imports through index.ts by @nkabardin in #17760 fix(we",
