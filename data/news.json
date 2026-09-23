@@ -1,5 +1,25 @@
 [
   {
+    "id": "hashicorp-eb596cec824e",
+    "title": "Terraform provider for Google Cloud 8.0 now generally available",
+    "summary": "The Terraform provider for Google Cloud 8.0 builds on expanded infrastructure discovery workflows, modernizes provider defaults, removes support for retired Google Cloud services, and improves consistency between Terraform configurations and Google Cloud APIs.",
+    "source": "HashiCorp",
+    "sourceId": "hashicorp",
+    "url": "https://www.hashicorp.com/blog/terraform-provider-for-google-cloud-80-now-generally-available",
+    "publishedDate": "2026-09-23T04:00:00.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "vault",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "hashicorp",
+    "releaseVersion": "8.0"
+  },
+  {
     "id": "etcd-5a3d7eb2e5a3",
     "title": "v3.7.2",
     "summary": "Please check out CHANGELOG for a full list of changes. And make sure to read upgrade guide before upgrading etcd (there may be breaking changes). For installation guides, please check out play.etcd.io and operating etcd. Latest support status for common architectures and operating systems can be found at supported platforms. Linux ETCD_VER=v3.7.2 # choose either URL GOOGLE_URL=https://storage.googleapis.com/etcd GITHUB_URL=https://github.com/etcd-io/etcd/releases/download DOWNLOAD_URL=${GOOGLE_U",
@@ -240,6 +260,22 @@
     "releaseVersion": "v2.4.2"
   },
   {
+    "id": "kubernetes-bdc88dc4e212",
+    "title": "Spotlight on SIG Apps",
+    "summary": "As Kubernetes adoption has grown, the conversation has shifted beyond running containers to managing increasingly complex application lifecycles. Modern platforms support stateless web services, stateful databases, batch processing, AI workloads, and platform services. At the same time, they must remain reliable during upgrades, scaling events, and infrastructure failures. Every Kubernetes user relies on SIG Apps, whether they realize it or not. Deployments, StatefulSets, DaemonSets, Jobs, and C",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/09/22/sig-apps-spotlight/",
+    "publishedDate": "2026-09-22T18:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "backstage-3c1ab051259a",
     "title": "v1.56.0-next.0",
     "summary": "See docs/releases/v1.56.0-next.0-changelog.md for more information.",
@@ -310,6 +346,24 @@
     "topics": [
       "cncf",
       "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "openai-ce45d8dc0f6c",
+    "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
+    "summary": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
+    "publishedDate": "2026-09-22T12:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
     ],
     "importance": "medium",
     "architectureShift": false,
@@ -2801,26 +2855,6 @@
     "releaseRelated": true,
     "releaseProject": "prometheus",
     "releaseVersion": "v0.313.3"
-  },
-  {
-    "id": "hashicorp-eb596cec824e",
-    "title": "Terraform provider for Google Cloud 8.0 now generally available",
-    "summary": "The Terraform provider for Google Cloud 8.0 builds on expanded infrastructure discovery workflows, modernizes provider defaults, removes support for retired Google Cloud services, and improves consistency between Terraform configurations and Google Cloud APIs.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/terraform-provider-for-google-cloud-80-now-generally-available",
-    "publishedDate": "2026-09-07T04:00:00.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "hashicorp",
-    "releaseVersion": "8.0"
   },
   {
     "id": "holmesgpt-c46f13b9572f",
@@ -9290,26 +9324,6 @@
     "releaseVersion": "v2.3.4"
   },
   {
-    "id": "crossplane-73a7fc1f1f56",
-    "title": "v2.2.4",
-    "summary": "v2.2.4 is a patch release scoped to fixing issues reported by users of Crossplane v2.2 and fixing security related issues in Crossplane and its dependencies. 🎉 Highlights Fixed repeated owner updates for composed Usages (#7596, originally #7591): The Usage controller only checked the first ownerReference when deciding whether the spec.by resource already owned the Usage. A Usage created by a Composition already has the composite as its first owner, so spec.by ended up as a later owner and the c",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.2.4",
-    "publishedDate": "2026-07-23T14:12:13.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v2.2.4"
-  },
-  {
     "id": "kubernetes-releases-baa6bf322d04",
     "title": "v1.36.3",
     "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
@@ -9704,24 +9718,5 @@
     "releaseRelated": true,
     "releaseProject": "prometheus",
     "releaseVersion": "3.13.0"
-  },
-  {
-    "id": "kubernetes-releases-c46ce11c2019",
-    "title": "v1.37.0-alpha.2",
-    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
-    "source": "Kubernetes Releases",
-    "sourceId": "kubernetes-releases",
-    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.0-alpha.2",
-    "publishedDate": "2026-06-25T02:40:51.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "release"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kubernetes-releases",
-    "releaseVersion": "v1.37.0-alpha.2"
   }
 ]

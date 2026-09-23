@@ -1,5 +1,13 @@
 [
   {
+    "project": "hashicorp",
+    "version": "8.0",
+    "publishedDate": "2026-09-23T04:00:00.000Z",
+    "url": "https://www.hashicorp.com/blog/terraform-provider-for-google-cloud-80-now-generally-available",
+    "sourceId": "hashicorp",
+    "title": "Terraform provider for Google Cloud 8.0 now generally available"
+  },
+  {
     "project": "etcd",
     "version": "v3.7.2",
     "publishedDate": "2026-09-22T21:22:39.000Z",
@@ -182,14 +190,6 @@
     "url": "https://github.com/helm/helm/releases/tag/v3.22.0",
     "sourceId": "helm",
     "title": "Helm v3.22.0"
-  },
-  {
-    "project": "hashicorp",
-    "version": "8.0",
-    "publishedDate": "2026-09-07T04:00:00.000Z",
-    "url": "https://www.hashicorp.com/blog/terraform-provider-for-google-cloud-80-now-generally-available",
-    "sourceId": "hashicorp",
-    "title": "Terraform provider for Google Cloud 8.0 now generally available"
   },
   {
     "project": "gateway-api",

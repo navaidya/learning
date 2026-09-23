@@ -1,5 +1,25 @@
 [
   {
+    "id": "pydantic-ai-cf4c5aa1889f",
+    "title": "v2.48.0 (2026-09-22)",
+    "summary": "What's Changed 🚀 Features Support genai-prices 0.1.7 and new OpenAI audio models by @adtyavrdhn in #8617 Add OpenAI gpt-6-sol and gpt-6-luna model support by @DouweM in #8635 Add Claude Opus 5.5 (claude-opus-5-5) support by @DouweM in #8637 🐛 Bug Fixes Preserve UIMessage.id across Vercel AI load_messages and dump_messages by @adtyavrdhn in #8623 Preserve AG-UI Message.id across AGUIAdapter.load_messages and dump_messages by @adtyavrdhn in #8632 📦 Dependencies Bump genai-prices to 0.1.8 by @Do",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.48.0",
+    "publishedDate": "2026-09-23T02:41:40.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.48.0"
+  },
+  {
     "id": "nvidia-security-5a508d73208a",
     "title": "Enabling Private High-Performance Production AI Inference with NVIDIA Confidential Computing",
     "summary": "As large language model (LLM) inference increasingly processes sensitive information and proprietary model context across personal, enterprise, and regulated...",
