@@ -1,5 +1,25 @@
 [
   {
+    "id": "vector-5345d4e464be",
+    "title": "vdev-v0.3.22",
+    "summary": "feat(releasing): automate release freeze and refresh Kubernetes manif… …ests (#26463)",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.22",
+    "publishedDate": "2026-09-23T23:29:43.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
     "id": "kubernetes-releases-1bc3a2b4b103",
     "title": "v1.34.12",
     "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
@@ -9283,26 +9303,6 @@
     "sourceId": "etcd",
     "url": "https://github.com/etcd-io/etcd/releases/tag/tests%2Fv3.7.1",
     "publishedDate": "2026-07-23T19:31:58.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "etcd",
-      "kubernetes",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "etcd",
-    "releaseVersion": "v3.7.1"
-  },
-  {
-    "id": "etcd-f54f9b0dfe59",
-    "title": "server/v3.7.1",
-    "summary": "v3.7.1",
-    "source": "etcd",
-    "sourceId": "etcd",
-    "url": "https://github.com/etcd-io/etcd/releases/tag/server%2Fv3.7.1",
-    "publishedDate": "2026-07-23T19:31:52.000Z",
     "domain": "kubernetes",
     "topics": [
       "etcd",

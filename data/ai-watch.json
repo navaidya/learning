@@ -1,5 +1,45 @@
 [
   {
+    "id": "pydantic-ai-cd8f2ac901fe",
+    "title": "v2.49.0 (2026-09-23)",
+    "summary": "What's Changed 🚀 Features Add GitHubCopilotOAuthFlow for device authorization by @Kludex in #8618 Add BoolCriteria to say what a bool field's yes and no mean, and let a True/False Enum do the same by @DouweM in #8586 Use what the user wrote about None as the \"none of these\" option in TypeSafeModel by @DouweM in #8684 Offer whole numbers that are not a rubric as a Choice in TypeSafeModel by @DouweM in #8686 Add RealtimeSession.wait_for_reply() by @DouweM in #8514 🐛 Bug Fixes Keep all streamed O",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.49.0",
+    "publishedDate": "2026-09-24T03:09:53.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.49.0"
+  },
+  {
+    "id": "langgraph-519e803b3228",
+    "title": "langgraph-cli==0.4.32.dev0",
+    "summary": "Changes since cli==0.4.32",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.32.dev0",
+    "publishedDate": "2026-09-23T23:26:51.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "0.4.32"
+  },
+  {
     "id": "nvidia-security-6b35eb7287f3",
     "title": "Manage Kubernetes Node Fleets with NodeWright",
     "summary": "Kubernetes manages what runs on your nodes. Managing the nodes themselves is the challenge: kernel settings, system packages, storage layouts, security agents,...",
