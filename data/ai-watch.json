@@ -1,5 +1,43 @@
 [
   {
+    "id": "cncf-video-246d390c06c5",
+    "title": "Agent Harnesses, MCP and the Next Frontier for OSPOs - Ana Jiménez Santamaría, Linux Foundation",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=CTzGpFEWSo0",
+    "publishedDate": "2026-09-24T15:50:54.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "video",
+      "infrastructure"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": false
+  },
+  {
+    "id": "langfuse-b2b702337816",
+    "title": "v4.45.1",
+    "summary": "What's Changed fix(charts): Make PieChart colors match other charts by @bezbac in #17875 test(scores): give the updated score a strictly later event_ts by @Steffen911 in #17879 feat(llm-connections): default and custom models for TypeSafe connections by @hassiebp in #17881 Full Changelog: v4.45.0...v4.45.1",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.45.1",
+    "publishedDate": "2026-09-24T12:53:12.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.45.1"
+  },
+  {
     "id": "langfuse-2000b6bbe88f",
     "title": "v4.45.0",
     "summary": "What's Changed fix(web): use tuple key for confusion matrix lookup to avoid delimiter collisions by @marliessophie in #17196 refactor(web): Migrate exports settings table to design system by @bezbac in #17864 feat(billing): send the organization name on ClickHouse Billing checkout by @Steffen911 in #17867 refactor(web): Create design-system StackedBarChart by @bezbac in #17865 refactor(web): Create design-system AreaChart by @bezbac in #17870 docs(self-hosting): document Docker log retention by ",

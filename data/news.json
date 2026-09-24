@@ -1,5 +1,24 @@
 [
   {
+    "id": "vector-99cc11bfff83",
+    "title": "vdev-v0.3.23",
+    "summary": "No content.",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.23",
+    "publishedDate": "2026-09-24T16:14:14.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
     "id": "cncf-4a197736897f",
     "title": "Observability Day: Where the community comes together at KubeCon + CloudNativeCon North America 2026",
     "summary": "Observability Day returns to KubeCon + CloudNativeCon North America on November 9, 2026, in Salt Lake City, Utah, bringing together maintainers, operators, and end users from across the CNCF observability community. Observability has reached an important...",
@@ -9291,26 +9310,6 @@
     "releaseRelated": true,
     "releaseProject": "pulumi",
     "releaseVersion": "v3.254.0"
-  },
-  {
-    "id": "etcd-c98c686d8204",
-    "title": "v3.7.1",
-    "summary": "Please check out CHANGELOG for a full list of changes. And make sure to read upgrade guide before upgrading etcd (there may be breaking changes). For installation guides, please check out operating etcd. Latest support status for common architectures and operating systems can be found at supported platforms. Linux ETCD_VER=v3.7.1 # choose either URL GOOGLE_URL=https://storage.googleapis.com/etcd GITHUB_URL=https://github.com/etcd-io/etcd/releases/download DOWNLOAD_URL=${GOOGLE_URL} rm -f /tmp/et",
-    "source": "etcd",
-    "sourceId": "etcd",
-    "url": "https://github.com/etcd-io/etcd/releases/tag/v3.7.1",
-    "publishedDate": "2026-07-23T19:37:53.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "etcd",
-      "kubernetes",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "etcd",
-    "releaseVersion": "v3.7.1"
   },
   {
     "id": "kubernetes-releases-baa6bf322d04",
