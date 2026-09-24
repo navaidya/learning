@@ -1,5 +1,13 @@
 [
   {
+    "project": "oci-oke",
+    "version": "v9.3.0",
+    "publishedDate": "2026-09-24T08:20:38.000Z",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.3.0",
+    "sourceId": "oci-oke",
+    "title": "v9.3.0"
+  },
+  {
     "project": "kubernetes-releases",
     "version": "v1.34.12",
     "publishedDate": "2026-09-23T19:58:45.000Z",
@@ -150,14 +158,6 @@
     "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.0-rc1",
     "sourceId": "argo",
     "title": "v3.6.0-rc1"
-  },
-  {
-    "project": "oci-oke",
-    "version": "v9.2.0",
-    "publishedDate": "2026-09-16T10:56:39.000Z",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.2.0",
-    "sourceId": "oci-oke",
-    "title": "v9.2.0"
   },
   {
     "project": "cilium",

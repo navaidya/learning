@@ -1,5 +1,85 @@
 [
   {
+    "id": "langfuse-2000b6bbe88f",
+    "title": "v4.45.0",
+    "summary": "What's Changed fix(web): use tuple key for confusion matrix lookup to avoid delimiter collisions by @marliessophie in #17196 refactor(web): Migrate exports settings table to design system by @bezbac in #17864 feat(billing): send the organization name on ClickHouse Billing checkout by @Steffen911 in #17867 refactor(web): Create design-system StackedBarChart by @bezbac in #17865 refactor(web): Create design-system AreaChart by @bezbac in #17870 docs(self-hosting): document Docker log retention by ",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.45.0",
+    "publishedDate": "2026-09-24T12:15:42.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.45.0"
+  },
+  {
+    "id": "langfuse-c247f82e64c7",
+    "title": "v3.225.11",
+    "summary": "What's Changed fix(worker): await in-flight ClickHouse writes during shutdown (v3 backport of #17836) by @Steffen911 in #17869 Full Changelog: v3.225.10...v3.225.11",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v3.225.11",
+    "publishedDate": "2026-09-24T09:59:21.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v3.225.11"
+  },
+  {
+    "id": "langfuse-bab298fead82",
+    "title": "v4.44.0",
+    "summary": "What's Changed Features feat(llm-connections): send extra headers on Vertex AI Gemini requests by @hassiebp in #17831 feat(worker): add isolated OTEL replay integration harness by @sumerman in #17741 feat(evals): add conversation-signals decision-model gallery template by @annabellscha in #17845 feat(trace-batching): enhance transcript assembly with timing metrics and token estimates by @marliessophie in #17839 feat(ai-gateway): relay Anthropic Messages with usage telemetry by @hassiebp in #1778",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.44.0",
+    "publishedDate": "2026-09-24T09:07:02.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.44.0"
+  },
+  {
+    "id": "practical-ai-408aa7a0ccc6",
+    "title": "From AGENTS.md to Enterprise Deployment",
+    "summary": "AI agents are moving beyond laptops and prototypes and into enterprise environments where security, compliance, scalability, and reliability matter. Nick Kuhn from VMware Tanzu Platform joins Daniel and Chris to discuss what changes (and what doesn’t) when deploying agents alongside traditional applications. They explore agent build packs, MCP gateways, shared memory, identity, sandboxing, and what enterprises can learn from years of platform engineering. Nick also shares practical advice for or",
+    "source": "Practical AI",
+    "sourceId": "practical-ai",
+    "url": "https://share.transistor.fm/s/74934e48",
+    "publishedDate": "2026-09-24T09:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "ai-agent",
+      "podcast",
+      "agent-development"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": false
+  },
+  {
     "id": "pydantic-ai-cd8f2ac901fe",
     "title": "v2.49.0 (2026-09-23)",
     "summary": "What's Changed 🚀 Features Add GitHubCopilotOAuthFlow for device authorization by @Kludex in #8618 Add BoolCriteria to say what a bool field's yes and no mean, and let a True/False Enum do the same by @DouweM in #8586 Use what the user wrote about None as the \"none of these\" option in TypeSafeModel by @DouweM in #8684 Offer whole numbers that are not a rubric as a Choice in TypeSafeModel by @DouweM in #8686 Add RealtimeSession.wait_for_reply() by @DouweM in #8514 🐛 Bug Fixes Keep all streamed O",

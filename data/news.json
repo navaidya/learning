@@ -1,5 +1,42 @@
 [
   {
+    "id": "cncf-4a197736897f",
+    "title": "Observability Day: Where the community comes together at KubeCon + CloudNativeCon North America 2026",
+    "summary": "Observability Day returns to KubeCon + CloudNativeCon North America on November 9, 2026, in Salt Lake City, Utah, bringing together maintainers, operators, and end users from across the CNCF observability community. Observability has reached an important...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/09/24/observability-day-where-the-community-comes-together-at-kubecon-cloudnativecon-north-america-2026/",
+    "publishedDate": "2026-09-24T12:22:50.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "oci-oke-d296a2ff51d8",
+    "title": "v9.3.0",
+    "summary": "9.3.0 (September 22, 2026) Added DEXREQ-8552: fix generated Assessment conflicts Support for Generative AI model discovery and routing profiles support for Data Safe Crypto Posture Assessment Support for Usage Based SaaS listings on Marketplace [SELF v2] OCI Functions source_details support for container images, archives, pre-built sources, runtime configuration, runtime data sources, validation, work-request waits, tests, examples, deprecation message and documentations Support for Recurring Ma",
+    "source": "OCI / OKE",
+    "sourceId": "oci-oke",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.3.0",
+    "publishedDate": "2026-09-24T08:20:38.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "oci",
+      "oke",
+      "oracle"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "oci-oke",
+    "releaseVersion": "v9.3.0"
+  },
+  {
     "id": "vector-5345d4e464be",
     "title": "vdev-v0.3.22",
     "summary": "feat(releasing): automate release freeze and refresh Kubernetes manif… …ests (#26463)",
@@ -9263,46 +9300,6 @@
     "sourceId": "etcd",
     "url": "https://github.com/etcd-io/etcd/releases/tag/v3.7.1",
     "publishedDate": "2026-07-23T19:37:53.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "etcd",
-      "kubernetes",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "etcd",
-    "releaseVersion": "v3.7.1"
-  },
-  {
-    "id": "etcd-9288b6a26df8",
-    "title": "v3.6.14",
-    "summary": "Please check out CHANGELOG for a full list of changes. And make sure to read upgrade guide before upgrading etcd (there may be breaking changes). For installation guides, please check out operating etcd. Latest support status for common architectures and operating systems can be found at supported platforms. Linux ETCD_VER=v3.6.14 # choose either URL GOOGLE_URL=https://storage.googleapis.com/etcd GITHUB_URL=https://github.com/etcd-io/etcd/releases/download DOWNLOAD_URL=${GOOGLE_URL} rm -f /tmp/e",
-    "source": "etcd",
-    "sourceId": "etcd",
-    "url": "https://github.com/etcd-io/etcd/releases/tag/v3.6.14",
-    "publishedDate": "2026-07-23T19:37:38.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "etcd",
-      "kubernetes",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "etcd",
-    "releaseVersion": "v3.6.14"
-  },
-  {
-    "id": "etcd-018a48d30c88",
-    "title": "tests/v3.7.1",
-    "summary": "v3.7.1",
-    "source": "etcd",
-    "sourceId": "etcd",
-    "url": "https://github.com/etcd-io/etcd/releases/tag/tests%2Fv3.7.1",
-    "publishedDate": "2026-07-23T19:31:58.000Z",
     "domain": "kubernetes",
     "topics": [
       "etcd",
