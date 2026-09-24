@@ -1,5 +1,43 @@
 [
   {
+    "id": "vector-4a525bca85a7",
+    "title": "vdev-v0.3.24",
+    "summary": "feat(releasing): push post-release housekeeping directly to master (#… …26471)",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.24",
+    "publishedDate": "2026-09-24T21:17:23.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
+    "id": "grafana-872090f6788c",
+    "title": "What if your agent's hallucinations had a budget? How to start using SLOs for agent behavior",
+    "summary": "At Grafana Labs, observability is what we do. So as we started building AI agents, we naturally reached for the same instincts we bring to every system: measure it, set targets, and make reliability something you can reason about instead of hope for.That instinct led us somewhere unexpectedly useful. It turns out one of the oldest ideas in reliability engineering, the error budget, maps beautifully onto one of the newest problems in software: how do you know if an AI agent is actually any good?T",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/what-if-your-agent-s-hallucinations-had-a-budget-how-to-start-using-slos-for-agent-behavior/",
+    "publishedDate": "2026-09-24T17:14:13.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "vector-99cc11bfff83",
     "title": "vdev-v0.3.23",
     "summary": "No content.",
@@ -9272,44 +9310,6 @@
     "importance": "high",
     "architectureShift": true,
     "releaseRelated": false
-  },
-  {
-    "id": "grafana-95046db8a7e6",
-    "title": "How to monitor your Supabase projects: connect Grafana Cloud in one click",
-    "summary": "As AI agents accelerate software development and spin up applications at scale, visibility into what's happening behind the scenes, including query performance and database health, has never been more important. Gaining that level of insight requires observability that can keep pace. Supabase and Grafana Labs have partnered to launch a new integration available directly in Supabase, bringing production-grade observability to Supabase projects with a single click. Supabase users can now activate ",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/grafana-cloud-supabase-one-click-integration/",
-    "publishedDate": "2026-07-23T21:10:08.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "ai-agent",
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "pulumi-addf8fcba4cd",
-    "title": "pkg/v3.254.0: Changelog and go.mod updates for v3.254.0 (#24047)",
-    "summary": "Co-authored-by: github-actions github-actions@github.com",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.254.0",
-    "publishedDate": "2026-07-23T20:39:53.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.254.0"
   },
   {
     "id": "kubernetes-releases-baa6bf322d04",

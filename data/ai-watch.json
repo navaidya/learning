@@ -1,5 +1,123 @@
 [
   {
+    "id": "cncf-video-93537f6f8deb",
+    "title": "What AI Agents Need From Open Infrastructure - Yaya Xia, Ant Group",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=ruayWfZvcxw",
+    "publishedDate": "2026-09-24T20:17:31.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-ac216961af2d",
+    "title": "KernelAgent: Hardware-Guided GPU Kernel Optimization via... Kaiming Cheng, Jack Khuu & Laura Wang",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=vacxLz4jVMQ",
+    "publishedDate": "2026-09-24T20:17:31.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-11584c905201",
+    "title": "PD Disaggregation VLLM Deployment on Alternative AI Accelerators Using Llm-d - 纪飞 王 & Mengxuan Li",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=R5oTsEuat8U",
+    "publishedDate": "2026-09-24T20:17:27.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-0b4eadb07df4",
+    "title": "Beyond Model Sharding: Atomic Scheduling and Disaggregated LLM Serving... Kay Yan & Chen Zicong",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=RmqLX0-tf8M",
+    "publishedDate": "2026-09-24T20:17:27.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-edff64b1b845",
+    "title": "Building an Agent Runtime With Open Infrastructure - Yaya Xia & Xu Wang, Ant Group",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=_OqDVRdhOdE",
+    "publishedDate": "2026-09-24T20:17:27.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-57ff06398e8e",
+    "title": "From Containers To Agents: The Next Cloud Native - Di Xu, Xiaohongshu",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=c9tZ_z2II1E",
+    "publishedDate": "2026-09-24T20:17:27.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "langfuse-6da2c331cfcc",
+    "title": "v4.45.2",
+    "summary": "What's Changed Features feat(ai-gateway): batch inference telemetry per project and retry transient failures by @hassiebp in #17855 Fixes fix(shared): keep metadata keys that collide with Object.prototype by @rmnvg in #17686 fix(batch-export): surface the real read failure, not a generic S3 error by @niklassemmler in #17891 fix(api): type OtelSpan scalars and dataset JSON-schema fields in OpenAPI by @niklassemmler in #17892 fix(web): keep the session metrics bar above both sidebars by @nkabardin",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.45.2",
+    "publishedDate": "2026-09-24T19:16:32.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.45.2"
+  },
+  {
     "id": "cncf-video-246d390c06c5",
     "title": "Agent Harnesses, MCP and the Next Frontier for OSPOs - Ana Jiménez Santamaría, Linux Foundation",
     "source": "CNCF YouTube",
