@@ -1,5 +1,105 @@
 [
   {
+    "id": "containerd-4c0d7bf422d9",
+    "title": "containerd 1.7.36",
+    "summary": "Welcome to the v1.7.36 release of containerd! The thirty-sixth patch release for containerd 1.7 contains various fixes and updates including a security patch. Security Updates containerd CVE-2026-53493 Highlights Image Storage Ensure all layers are fetched when multiple manifests in an index share a config descriptor (#14142) Runtime Mask /proc/interrupts and CPU thermal throttle sysfs paths in Linux containers by default (#14184) Please try out the release binaries and report any issues at http",
+    "source": "containerd",
+    "sourceId": "containerd",
+    "url": "https://github.com/containerd/containerd/releases/tag/v1.7.36",
+    "publishedDate": "2026-09-24T23:44:00.000Z",
+    "domain": "containers",
+    "topics": [
+      "containers",
+      "containerd",
+      "runtime"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "containerd",
+    "releaseVersion": "1.7.36"
+  },
+  {
+    "id": "containerd-255443ec756a",
+    "title": "containerd 2.4.1",
+    "summary": "Welcome to the v2.4.1 release of containerd! The first patch release for containerd 2.4 contains various fixes and updates including a security patch. Security Updates containerd CVE-2026-53493 Highlights Container Runtime Interface (CRI) Fix bug where failed container start cleanup leaked tasks and prevented container removal (#14223) Fix bug where container creation failed when SELinux relabeling was unsupported by the filesystem (#14212) Image Distribution Fix content upload failures when ret",
+    "source": "containerd",
+    "sourceId": "containerd",
+    "url": "https://github.com/containerd/containerd/releases/tag/v2.4.1",
+    "publishedDate": "2026-09-24T23:40:25.000Z",
+    "domain": "containers",
+    "topics": [
+      "containers",
+      "containerd",
+      "runtime"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "containerd",
+    "releaseVersion": "2.4.1"
+  },
+  {
+    "id": "containerd-136163670aca",
+    "title": "containerd 2.2.9",
+    "summary": "Welcome to the v2.2.9 release of containerd! The ninth patch release for containerd 2.2 contains various fixes and updates including a security patch. Security Updates containerd CVE-2026-53493 Highlights Container Runtime Interface (CRI) Fix bug where container creation failed when SELinux relabeling was unsupported by the filesystem (#14210) Enable mount manager for image mounts in CRI (#14148) Image Storage Ensure all layers are fetched when multiple manifests in an index share a config descr",
+    "source": "containerd",
+    "sourceId": "containerd",
+    "url": "https://github.com/containerd/containerd/releases/tag/v2.2.9",
+    "publishedDate": "2026-09-24T23:16:37.000Z",
+    "domain": "containers",
+    "topics": [
+      "containers",
+      "containerd",
+      "runtime"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "containerd",
+    "releaseVersion": "2.2.9"
+  },
+  {
+    "id": "containerd-2afe8c37689c",
+    "title": "containerd 2.3.6",
+    "summary": "Welcome to the v2.3.6 release of containerd! The sixth patch release for containerd 2.3 contains various fixes and updates including a security patch. Security Updates containerd CVE-2026-53493 Highlights Container Runtime Interface (CRI) Fix bug where container creation failed when SELinux relabeling was unsupported by the filesystem (#14211) Enable mount manager for image mounts in CRI (#14147) Image Storage Ensure all layers are fetched when multiple manifests in an index share a config descr",
+    "source": "containerd",
+    "sourceId": "containerd",
+    "url": "https://github.com/containerd/containerd/releases/tag/v2.3.6",
+    "publishedDate": "2026-09-24T23:13:08.000Z",
+    "domain": "containers",
+    "topics": [
+      "containers",
+      "containerd",
+      "runtime"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "containerd",
+    "releaseVersion": "2.3.6"
+  },
+  {
+    "id": "containerd-438e1e1bafed",
+    "title": "containerd 2.0.13",
+    "summary": "Welcome to the v2.0.13 release of containerd! The thirteenth patch release for containerd 2.0 contains various fixes and updates including a security patch. Security Updates containerd CVE-2026-53493 Highlights Image Storage Ensure all layers are fetched when multiple manifests in an index share a config descriptor (#14141) Runtime Mask /proc/interrupts and CPU thermal throttle sysfs paths in Linux containers by default (#14183) Please try out the release binaries and report any issues at https:",
+    "source": "containerd",
+    "sourceId": "containerd",
+    "url": "https://github.com/containerd/containerd/releases/tag/v2.0.13",
+    "publishedDate": "2026-09-24T23:04:59.000Z",
+    "domain": "containers",
+    "topics": [
+      "containers",
+      "containerd",
+      "runtime"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "containerd",
+    "releaseVersion": "2.0.13"
+  },
+  {
     "id": "vector-4a525bca85a7",
     "title": "vdev-v0.3.24",
     "summary": "feat(releasing): push post-release housekeeping directly to master (#… …26471)",
@@ -9197,102 +9297,6 @@
     "releaseRelated": true,
     "releaseProject": "argo",
     "releaseVersion": "v3.5.0-rc3"
-  },
-  {
-    "id": "grafana-f07787695d86",
-    "title": "Smarter onboarding and planning with Grafana Assistant: How to ensure observability is baked in from the start",
-    "summary": "It's Monday afternoon and that feature you've been working on is mostly done. There's just one item still sitting untouched at the bottom of the ticket: \"Add monitoring.\"You know you should. You also know the sprint ends tomorrow, nobody on the team is an observability expert, and figuring out what to measure—let alone how to write the PromQL for it—feels like a project all on its own. So it gets the same treatment it always does: \"We'll add it when it breaks.\"The trouble is, that break has a na",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/smarter-onboarding-and-planning-with-grafana-assistant-how-to-ensure-observability-is-baked-in-from-the-start/",
-    "publishedDate": "2026-07-27T22:47:34.000Z",
-    "domain": "prometheus",
-    "topics": [
-      "prometheus",
-      "promql",
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "grafana-3dd1a91cbc23",
-    "title": "Explore what's next in agentic operations: Introducing AI Week",
-    "summary": "For a full rundown of all the new features we announced (including a few not listed here), check out my AI Week recap blog post.Observability has traditionally been tacked on after your code hits production, but with agentic operations on the rise, that's no longer sustainable.Agents have dramatically increased the rate of change as they write more code, ship more changes, and operate more systems—all at a speed that compounds scale and complexity. As a result, observability needs to be factored",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/explore-what-s-next-in-agentic-operations-introducing-ai-week/",
-    "publishedDate": "2026-07-27T19:16:22.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "holmesgpt-864a65a5b7aa",
-    "title": "0.37.0",
-    "summary": "What's Changed Add JSON logging format support for log scrapers by @moshemorad in #2287 ROB-602 Langfuse support in OpenTelemetry tracing by @Avi-Robusta in #2290 fix holmes operator health checks when using vertex_ai/gemini by @butangero in #2288 FRO-190 Fix wrong icon for SQL Server and other DB subtypes by @alonelish in #2294 Fix log filter leaks in parallel test execution by @moshemorad in #2296 feat: support pre-acquired AZURE_AD_TOKEN for Entra ID auth by @wanghaoran1988 in #2293 ROB-651 U",
-    "source": "HolmesGPT (Robusta)",
-    "sourceId": "holmesgpt",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.37.0",
-    "publishedDate": "2026-07-27T06:45:59.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "holmesgpt",
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "holmesgpt",
-    "releaseVersion": "0.37.0"
-  },
-  {
-    "id": "openai-f143efbfe201",
-    "title": "How AI is expanding what people do at work",
-    "summary": "New OpenAI research shows how AI is expanding what workers do, with ChatGPT users taking on tasks across roles and reshaping job boundaries.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work",
-    "publishedDate": "2026-07-27T03:30:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "tempo-ecd6f4ddd85a",
-    "title": "v2.9.4",
-    "summary": "🔒 Security 🔒 operations: Update Go to 1.26.5 and bump vendored golang.org/x/net and golang.org/x/text to fix CVE-2026-39822, CVE-2026-42504, CVE-2026-27145, CVE-2026-42505, CVE-2026-42507, CVE-2026-46600, and CVE-2026-56852 (#7641) (@mattdurham) deps: Update github.com/apache/thrift to v0.23.0 to pick up upstream security fixes. (#7119) (@renovate) deps: Update golang.org/x/crypto to v0.52.0 to pick up upstream security fixes. (#7258, #7343) (@renovate) deps: Update golang.org/x/net to v0.55.0",
-    "source": "Grafana Tempo",
-    "sourceId": "tempo",
-    "url": "https://github.com/grafana/tempo/releases/tag/v2.9.4",
-    "publishedDate": "2026-07-24T12:29:33.000Z",
-    "domain": "tracing",
-    "topics": [
-      "tempo",
-      "tracing",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "tempo",
-    "releaseVersion": "v2.9.4"
   },
   {
     "id": "grafana-a6f6f9b62e3b",

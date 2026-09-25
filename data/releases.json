@@ -1,5 +1,13 @@
 [
   {
+    "project": "containerd",
+    "version": "1.7.36",
+    "publishedDate": "2026-09-24T23:44:00.000Z",
+    "url": "https://github.com/containerd/containerd/releases/tag/v1.7.36",
+    "sourceId": "containerd",
+    "title": "containerd 1.7.36"
+  },
+  {
     "project": "oci-oke",
     "version": "v9.3.0",
     "publishedDate": "2026-09-24T08:20:38.000Z",
@@ -126,14 +134,6 @@
     "url": "https://github.com/robusta-dev/robusta/releases/tag/0.50.0",
     "sourceId": "robusta",
     "title": "0.50.0"
-  },
-  {
-    "project": "containerd",
-    "version": "2.4.0",
-    "publishedDate": "2026-09-16T20:08:21.000Z",
-    "url": "https://github.com/containerd/containerd/releases/tag/v2.4.0",
-    "sourceId": "containerd",
-    "title": "containerd 2.4.0"
   },
   {
     "project": "holmesgpt",

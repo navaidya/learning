@@ -1,5 +1,25 @@
 [
   {
+    "id": "pydantic-ai-1ba07ada2520",
+    "title": "v2.50.0 (2026-09-24)",
+    "summary": "What's Changed ⚠️ Compatibility Notes Ask a DecisionModel which route to take by name, with one label per route by @DouweM in #8733 Make ModelSelectionContext.messages end with the request being routed, and add ModelSelectionContext.prompt by @DouweM in #8737 Replace the decision model's tool-call lean with an opt-in decision_route_threshold by @DouweM in #8739 🚀 Features Expose OpenAI service_tier in provider details by @pydanty in #7945 Add DecisionModel, a base for Decisions-protocol models,",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.50.0",
+    "publishedDate": "2026-09-25T04:47:15.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.50.0"
+  },
+  {
     "id": "cncf-video-93537f6f8deb",
     "title": "What AI Agents Need From Open Infrastructure - Yaya Xia, Ant Group",
     "source": "CNCF YouTube",
