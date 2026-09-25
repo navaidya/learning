@@ -1,5 +1,26 @@
 [
   {
+    "id": "langfuse-d2e8454639f9",
+    "title": "v4.46.0",
+    "summary": "What's Changed Features feat(experiments): streamline side-by-side comparison by @marliessophie in #17929 feat(web): Add formatted json to the dataset item by @nmtrang29 in #17932 feat(skills): basic skill management by @tobi12345 in #17803 feat(web): add 100-row page size option to tracing tables by @nkabardin in #17919 #17926 Fixes fix(web): header metrics as plain text on trace, observation and session headers by @nmtrang29 in #17757 fix(billing): accept string event-bus timestamps on the CHB",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.46.0",
+    "publishedDate": "2026-09-25T14:20:07.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.46.0"
+  },
+  {
     "id": "otel-ai-65be769cd7f4",
     "title": "Exploring the OpenTelemetry Instrumentation Ecosystem",
     "summary": "OpenTelemetry has a lot of pieces: APIs, SDKs, a protocol, semantic conventions, instrumentation, and tools like the Collector. The APIs and protocol define how telemetry is created and exchanged, while instrumentation is what actually observes what happens inside an application and turns it into telemetry. Semantic conventions give the people writing that instrumentation a shared way to describe what they&rsquo;re observing. The beauty of this approach is that completely separate authors can in",
