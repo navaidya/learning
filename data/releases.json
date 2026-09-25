@@ -1,5 +1,21 @@
 [
   {
+    "project": "backstage",
+    "version": "v1.55.2",
+    "publishedDate": "2026-09-25T10:58:52.000Z",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.55.2",
+    "sourceId": "backstage",
+    "title": "v1.55.2"
+  },
+  {
+    "project": "prometheus",
+    "version": "3.15.0",
+    "publishedDate": "2026-09-25T08:56:22.000Z",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.15.0",
+    "sourceId": "prometheus",
+    "title": "3.15.0 / 2026-09-24"
+  },
+  {
     "project": "containerd",
     "version": "1.7.36",
     "publishedDate": "2026-09-24T23:44:00.000Z",
@@ -64,28 +80,12 @@
     "title": "v2.4.2"
   },
   {
-    "project": "backstage",
-    "version": "v1.56.0-next.0",
-    "publishedDate": "2026-09-22T17:09:55.000Z",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.56.0-next.0",
-    "sourceId": "backstage",
-    "title": "v1.56.0-next.0"
-  },
-  {
     "project": "opentelemetry",
     "version": "3.1",
     "publishedDate": "2026-09-22T15:06:22.000Z",
     "url": "https://opentelemetry.io/blog/2026/otel-prometheus-interoperability/",
     "sourceId": "opentelemetry",
     "title": "Prometheus and OpenTelemetry interoperability in 2026: Survey results"
-  },
-  {
-    "project": "prometheus",
-    "version": "3.15.0-rc.1",
-    "publishedDate": "2026-09-22T10:07:36.000Z",
-    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.15.0-rc.1",
-    "sourceId": "prometheus",
-    "title": "3.15.0-rc.1 / 2026-09-21"
   },
   {
     "project": "kubernetes",

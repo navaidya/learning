@@ -1,5 +1,64 @@
 [
   {
+    "id": "otel-ai-65be769cd7f4",
+    "title": "Exploring the OpenTelemetry Instrumentation Ecosystem",
+    "summary": "OpenTelemetry has a lot of pieces: APIs, SDKs, a protocol, semantic conventions, instrumentation, and tools like the Collector. The APIs and protocol define how telemetry is created and exchanged, while instrumentation is what actually observes what happens inside an application and turns it into telemetry. Semantic conventions give the people writing that instrumentation a shared way to describe what they&rsquo;re observing. The beauty of this approach is that completely separate authors can in",
+    "source": "OpenTelemetry",
+    "sourceId": "otel-ai",
+    "url": "https://opentelemetry.io/blog/2026/exploring-instrumentation-ecosystem/",
+    "publishedDate": "2026-09-25T11:24:23.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "agent-observability",
+      "news"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "langfuse-ccdcc081c23a",
+    "title": "v4.45.4",
+    "summary": "What's Changed chore(assistant): refresh embedded Langfuse skills by @langfuse-bot in #17916 test(worker): skip Azure LLM connection tests until CI key is replaced by @hassiebp in #17924 Full Changelog: v4.45.3...v4.45.4",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.45.4",
+    "publishedDate": "2026-09-25T09:41:43.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.45.4"
+  },
+  {
+    "id": "langfuse-4f7b8a038f2c",
+    "title": "v4.45.3",
+    "summary": "What's Changed chore(deps): bump image-size to 2.0.4 by @github-actions[bot] in #17917 fix(web): log the public key when an API key lookup fails by @benlangfeld in #16375 fix(llm-connections): reject TypeSafe base URLs that end in /systemone or have a query string by @DavidTraina in #17901 fix(llm-connections): keep the custom TypeSafe base URL when switching upstreams by @DavidTraina in #17904 fix(evals): keep the current decision model selectable by @DavidTraina in #17905 fix(evals): list each",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.45.3",
+    "publishedDate": "2026-09-25T09:19:59.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.45.3"
+  },
+  {
     "id": "pydantic-ai-1ba07ada2520",
     "title": "v2.50.0 (2026-09-24)",
     "summary": "What's Changed ⚠️ Compatibility Notes Ask a DecisionModel which route to take by name, with one label per route by @DouweM in #8733 Make ModelSelectionContext.messages end with the request being routed, and add ModelSelectionContext.prompt by @DouweM in #8737 Replace the decision model's tool-call lean with an opt-in decision_route_threshold by @DouweM in #8739 🚀 Features Expose OpenAI service_tier in provider details by @pydanty in #7945 Add DecisionModel, a base for Decisions-protocol models,",
