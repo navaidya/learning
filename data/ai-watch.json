@@ -1,5 +1,25 @@
 [
   {
+    "id": "pydantic-ai-569c6b7b660e",
+    "title": "v2.51.0 (2026-09-25)",
+    "summary": "What's Changed ⚠️ Compatibility Notes Match dated gemini-3.8-live ids, reject google_affective_dialog on Gemini 3.1 Flash Live and 3.8 Live at connect, and raise RealtimeError for Gemini Live close codes by @DouweM in #8761 Raise a UserError for a realtime tool_choice that forces a tool call on OpenAI, Azure OpenAI, and xAI by @DouweM in #8755 🚀 Features Add OpenAI GPT-Live support with OpenAILiveModel by @DouweM in #8390 Expose context_window_used on realtime sessions, from GPT-Live's reported",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.51.0",
+    "publishedDate": "2026-09-25T23:19:04.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.51.0"
+  },
+  {
     "id": "langfuse-d2e8454639f9",
     "title": "v4.46.0",
     "summary": "What's Changed Features feat(experiments): streamline side-by-side comparison by @marliessophie in #17929 feat(web): Add formatted json to the dataset item by @nmtrang29 in #17932 feat(skills): basic skill management by @tobi12345 in #17803 feat(web): add 100-row page size option to tracing tables by @nkabardin in #17919 #17926 Fixes fix(web): header metrics as plain text on trace, observation and session headers by @nmtrang29 in #17757 fix(billing): accept string event-bus timestamps on the CHB",

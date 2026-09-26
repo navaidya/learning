@@ -1,5 +1,62 @@
 [
   {
+    "id": "pulumi-d83faa9da9ce",
+    "title": "pkg/v3.265.0: Changelog and go.mod updates for v3.265.0 (#24914)",
+    "summary": "Co-authored-by: github-actions github-actions@github.com",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.265.0",
+    "publishedDate": "2026-09-25T23:29:45.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.265.0"
+  },
+  {
+    "id": "pulumi-f9ac3b367213",
+    "title": "v3.265.0",
+    "summary": "3.265.0 (2026-09-25) Features [cli/auth] Add pulumi logout --all --delete-credentials-key to delete the key that encrypts stored credentials from the OS credential store #24764 Bug Fixes [programgen/python] Generate valid Python for output-dependent resource ranges #24474 [cli/policy] Recover from partial installs & wait for parallel installs #24705 [cli/install] Cancel cross-process waits with Ctrl-C #24711 [engine] Report Unknown=true on the ReadResourceResponse when a Read is skipped because ",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.265.0",
+    "publishedDate": "2026-09-25T22:34:03.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.265.0"
+  },
+  {
+    "id": "pulumi-52f7faf507f1",
+    "title": "sdk/v3.265.0: Authenticode-sign Windows binaries in release builds (#24785)",
+    "summary": "Part of IAC-4046 None of the .exe files we ship for Windows have ever been Authenticode-signed. Only the winget MSI container is, and it wraps the same unsigned zip. Defender is now quarantining pulumi-language-bun.exe as a trojan for customers. It's a false positive (the binary reproduces byte-for-byte from source), but it will keep happening to small unsigned launchers until we sign them. The analysis is on the Linear issue. goreleaser signs each Windows .exe it builds with jsign and Azure Tru",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.265.0",
+    "publishedDate": "2026-09-25T16:17:57.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.265.0"
+  },
+  {
     "id": "opentelemetry-65be769cd7f4",
     "title": "Exploring the OpenTelemetry Instrumentation Ecosystem",
     "summary": "OpenTelemetry has a lot of pieces: APIs, SDKs, a protocol, semantic conventions, instrumentation, and tools like the Collector. The APIs and protocol define how telemetry is created and exchanged, while instrumentation is what actually observes what happens inside an application and turns it into telemetry. Semantic conventions give the people writing that instrumentation a shared way to describe what they&rsquo;re observing. The beauty of this approach is that completely separate authors can in",
@@ -6281,6 +6338,24 @@
     "releaseProject": "kyverno"
   },
   {
+    "id": "openai-7d7eacff40aa",
+    "title": "Asana completed a years-long code migration in 2 weeks with Codex",
+    "summary": "Asana used OpenAI Codex to replace an outdated testing system in two weeks, with about $12K in model and infrastructure costs.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/asana",
+    "publishedDate": "2026-08-18T07:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "pulumi-3f11a735762f",
     "title": "pkg/v3.258.0: Changelog and go.mod updates for v3.258.0 (#24355)",
     "summary": "Co-authored-by: github-actions github-actions@github.com",
@@ -9143,46 +9218,6 @@
     "releaseVersion": "1.20.0"
   },
   {
-    "id": "loki-664a81ce45c5",
-    "title": "v3.7.4",
-    "summary": "3.7.4 (2026-07-22) Bug Fixes ci: Fix zizmor findings for operator-images in Loki 3.7 (#22820) (abc1186) ci: Helm CI warning fix (#22605) (7389428) ci: Re-enable docker plugin publishing (#22818) (28f44a8) compactor: Fix delete request when using Thanos objstore client with filesystem backend [release-3.7.x] (#22811) (dd6fdb5) deps: Update module charm.land/bubbletea/v2 to v2.0.7 (release-3.7.x) (#22768) (e11f935) deps: Update module charm.land/lipgloss/v2 to v2.0.4 (release-3.7.x) (#22769) (1021",
-    "source": "Grafana Loki",
-    "sourceId": "loki",
-    "url": "https://github.com/grafana/loki/releases/tag/v3.7.4",
-    "publishedDate": "2026-07-29T05:30:52.000Z",
-    "domain": "logging",
-    "topics": [
-      "loki",
-      "logging",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "loki",
-    "releaseVersion": "v3.7.4"
-  },
-  {
-    "id": "loki-2aa2be65a4ef",
-    "title": "v3.7.3",
-    "summary": "3.7.3 (2026-06-24) ⚠ BREAKING CHANGES operator: switch default for OpenShift stream labels (#21001) Features add bloom filter to cache known streams for ExceedsLimits requests (#20823) (f5440a3) add builder pool to logsobj package (#21134) (8a68101) add case-insensitive regex optimization (#20578) (f6a6a4f) Add config to delegate stream limits check to limits-service only (#21007) (ba119f6) add flush manager to control data object flush lifecycle (#20680) (c169ce3) add GroupConsumer to kafkav2 p",
-    "source": "Grafana Loki",
-    "sourceId": "loki",
-    "url": "https://github.com/grafana/loki/releases/tag/v3.7.3",
-    "publishedDate": "2026-07-29T05:23:36.000Z",
-    "domain": "logging",
-    "topics": [
-      "loki",
-      "logging",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "loki",
-    "releaseVersion": "v3.7.3"
-  },
-  {
     "id": "oci-oke-374b276d2d86",
     "title": "v8.25.0",
     "summary": "8.25.0 (July 28, 2026) Added Support for Azure & GCP KMS Integration for ExaDB-XS context propagation for subset of resources in database service. Support for OCI-AWS interconnect virtual circuit fields Support for OCI GoldenGate Release 11 connections Support for Tasks for ORM : Tracking Ticket API Access Control for ADB-D and ADB-C@C Support Retention Lock for Block Backups Bug Fix Database Tools - MCP Server, DB API Gateway Config, IAM Auth (Data Plane)",
@@ -9205,25 +9240,6 @@
     "releaseVersion": "v8.25.0"
   },
   {
-    "id": "openai-6d964f10c333",
-    "title": "How GPT-5.6 fuses frontier intelligence with frontier efficiency",
-    "summary": "GPT-5.6 improves AI efficiency across models, inference, and agentic workflows, helping deliver more useful intelligence per dollar.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
-    "publishedDate": "2026-07-29T00:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "openai"
-  },
-  {
     "id": "grafana-5f50876cba1c",
     "title": "Telemetry-driven development: How to gain confidence in your coding agents' behavior with gcx and Grafana MCP",
     "summary": "You’re about to click \"Merge\" on a PR, but you feel more anxious about it than you used to. Why? You did everything properly, by today’s standards: You used Claude to create a plan, giving it context from a GitHub issue and some Slack threads. You iterated on it a few times; Claude says it has the full picture. It feels ready, so you get Claude Code to implement the plan. You run a review agent against the diff and get some of those comments addressed. You start reading the diff, but it's long. ",
@@ -9241,26 +9257,6 @@
     "importance": "high",
     "architectureShift": true,
     "releaseRelated": false
-  },
-  {
-    "id": "backstage-ee708fd89e9e",
-    "title": "v1.54.0-next.1",
-    "summary": "See docs/releases/v1.54.0-next.1-changelog.md for more information.",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.0-next.1",
-    "publishedDate": "2026-07-28T20:44:23.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.54.0-next.1"
   },
   {
     "id": "mcp-spec-211ea91d4c6c",

@@ -1,5 +1,13 @@
 [
   {
+    "project": "pulumi",
+    "version": "v3.265.0",
+    "publishedDate": "2026-09-25T23:29:45.000Z",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.265.0",
+    "sourceId": "pulumi",
+    "title": "pkg/v3.265.0: Changelog and go.mod updates for v3.265.0 (#24914)"
+  },
+  {
     "project": "backstage",
     "version": "v1.55.2",
     "publishedDate": "2026-09-25T10:58:52.000Z",
@@ -46,14 +54,6 @@
     "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-beta2",
     "sourceId": "terraform",
     "title": "v1.17.0-beta2"
-  },
-  {
-    "project": "pulumi",
-    "version": "v3.264.0",
-    "publishedDate": "2026-09-23T13:30:27.000Z",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.264.0",
-    "sourceId": "pulumi",
-    "title": "pkg/v3.264.0: Changelog and go.mod updates for v3.264.0 (#24753)"
   },
   {
     "project": "hashicorp",
