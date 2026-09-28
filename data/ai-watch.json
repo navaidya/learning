@@ -1,5 +1,44 @@
 [
   {
+    "id": "otel-ai-4b059ab7e696",
+    "title": "Announcing v1 of OpenTelemetry Go Compile-Time Instrumentation",
+    "summary": "If you write Java, Python, Node.js, or .NET, you have been able to add OpenTelemetry to an application without editing its code for years: attach an agent at startup and telemetry starts flowing. Go has been the exception. A Go program compiles to a single static binary with no runtime to hook into at startup, so Go developers have had to instrument by hand or reach for an out-of-process eBPF agent.",
+    "source": "OpenTelemetry",
+    "sourceId": "otel-ai",
+    "url": "https://opentelemetry.io/blog/2026/go-compile-time-instrumentation-v1/",
+    "publishedDate": "2026-09-28T23:08:39.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "news"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "phoenix-27d8790cfd4a",
+    "title": "arize-phoenix-otel: v0.17.2",
+    "summary": "0.17.2 (2026-09-28) Bug Fixes otel: fix register() crash with opentelemetry-exporter-otlp-proto-http 1.45 (#16549) (70c5051)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-otel-v0.17.2",
+    "publishedDate": "2026-09-28T20:58:45.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otlp",
+      "agent-observability",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v0.17.2"
+  },
+  {
     "id": "pydantic-ai-569c6b7b660e",
     "title": "v2.51.0 (2026-09-25)",
     "summary": "What's Changed ⚠️ Compatibility Notes Match dated gemini-3.8-live ids, reject google_affective_dialog on Gemini 3.1 Flash Live and 3.8 Live at connect, and raise RealtimeError for Gemini Live close codes by @DouweM in #8761 Raise a UserError for a realtime tool_choice that forces a tool call on OpenAI, Azure OpenAI, and xAI by @DouweM in #8755 🚀 Features Add OpenAI GPT-Live support with OpenAILiveModel by @DouweM in #8390 Expose context_window_used on realtime sessions, from GPT-Live's reported",
@@ -2792,24 +2831,6 @@
       "ai-agent",
       "podcast",
       "agent-development"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "otel-ai-4b059ab7e696",
-    "title": "Announcing v1 of OpenTelemetry Go Compile-Time Instrumentation",
-    "summary": "If you write Java, Python, Node.js, or .NET, you have been able to add OpenTelemetry to an application without editing its code for years: attach an agent at startup and telemetry starts flowing. Go has been the exception. A Go program compiles to a single static binary with no runtime to hook into at startup, so Go developers have had to instrument by hand or reach for an out-of-process eBPF agent.",
-    "source": "OpenTelemetry",
-    "sourceId": "otel-ai",
-    "url": "https://opentelemetry.io/blog/2026/go-compile-time-instrumentation-v1/",
-    "publishedDate": "2026-07-23T06:20:13.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "agent-observability",
-      "news"
     ],
     "importance": "medium",
     "architectureShift": false,

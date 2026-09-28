@@ -1,5 +1,61 @@
 [
   {
+    "id": "opentelemetry-4b059ab7e696",
+    "title": "Announcing v1 of OpenTelemetry Go Compile-Time Instrumentation",
+    "summary": "If you write Java, Python, Node.js, or .NET, you have been able to add OpenTelemetry to an application without editing its code for years: attach an agent at startup and telemetry starts flowing. Go has been the exception. A Go program compiles to a single static binary with no runtime to hook into at startup, so Go developers have had to instrument by hand or reach for an out-of-process eBPF agent.",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/go-compile-time-instrumentation-v1/",
+    "publishedDate": "2026-09-28T23:08:39.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "oci-oke-9ec39d28d755",
+    "title": "v9.7.1",
+    "summary": "9.3.0 (September 22, 2026) Added DEXREQ-8552: fix generated Assessment conflicts Support for Generative AI model discovery and routing profiles support for Data Safe Crypto Posture Assessment Support for Usage Based SaaS listings on Marketplace [SELF v2] OCI Functions source_details support for container images, archives, pre-built sources, runtime configuration, runtime data sources, validation, work-request waits, tests, examples, deprecation message and documentations Support for Recurring Ma",
+    "source": "OCI / OKE",
+    "sourceId": "oci-oke",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.7.1",
+    "publishedDate": "2026-09-28T18:57:44.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "oci",
+      "oke",
+      "oracle"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "oci-oke",
+    "releaseVersion": "v9.7.1"
+  },
+  {
+    "id": "opentelemetry-b3f6726cebd9",
+    "title": "Deprecating OpenCensus compatibility requirements",
+    "summary": "On June 12, 2026, the OpenTelemetry Specification project merged PR #5138, deprecating OpenCensus compatibility requirements in the specification. This change updates the specification to match where the ecosystem already is: OpenCensus has been archived since July 31, 2023, and the OpenTelemetry shims for OpenCensus have provided a stable migration bridge for more than three years. This is a deprecation of specification requirements, not an immediate removal of compatibility material and not a ",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/deprecating-opencensus-compatibility/",
+    "publishedDate": "2026-09-28T18:23:24.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": false
+  },
+  {
     "id": "opentelemetry-collector-0641b162e206",
     "title": "v1.68.0/v0.162.0",
     "summary": "End-user changelog 🛑 Breaking changes 🛑 cmd/mdatagen: Generated processor lifecycle tests now assert that the processor propagates the incoming context unchanged to the next consumer by default. (#15994) Disable with skip_context_propagation: true processor/queue_batch: Rename queuebatch processor to queue_batch processor. (#14396) 💡 Enhancements 💡 extension/memory_limiter: Add otelcol_memorylimiter_refused_requests metric to record network request refusals in extension mode. (#15561) pkg/co",
@@ -9137,26 +9193,6 @@
     "releaseProject": "grafana"
   },
   {
-    "id": "robusta-fd34dcda2691",
-    "title": "0.46.0",
-    "summary": "What's Changed Add JSON logging format support with environment variable control by @moshemorad in #2120 ROB-584 Add Jira Service Management (JSM) alert ingestion docs by @ezra-robusta in #2117 Bump KRR image to v1.29.0 (JSON log format support) by @moshemorad in #2126 docs: document JSON log format toggle by @moshemorad in #2127 Security: Bump dependencies and remove gnupg2 from runtime by @moshemorad in #2130 docs: fix Firewall / DNS Allowlist page by @arikalon1 in #2131 ROB-794: Bump Holmes f",
-    "source": "Robusta",
-    "sourceId": "robusta",
-    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.46.0",
-    "publishedDate": "2026-07-30T14:11:02.000Z",
-    "domain": "logging",
-    "topics": [
-      "logging",
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "robusta",
-    "releaseVersion": "0.46.0"
-  },
-  {
     "id": "prometheus-e2e256c2454a",
     "title": "v0.313.2",
     "summary": "v0.313.2",
@@ -9195,44 +9231,6 @@
     "releaseRelated": true,
     "releaseProject": "prometheus",
     "releaseVersion": "3.13.2"
-  },
-  {
-    "id": "prometheus-v3-13-2",
-    "title": "Prometheus v3.13.2",
-    "summary": "Security patches for dependencies and a bugfix for PromQL's active query tracker.",
-    "source": "Prometheus",
-    "sourceId": "prometheus",
-    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.13.2",
-    "publishedDate": "2026-07-30T13:25:26Z",
-    "domain": "prometheus",
-    "topics": [
-      "promql"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "prometheus",
-    "releaseVersion": "v3.13.2"
-  },
-  {
-    "id": "robusta-3ce30c926aa7",
-    "title": "0.46.0-alpha",
-    "summary": "What's Changed Add JSON logging format support with environment variable control by @moshemorad in #2120 ROB-584 Add Jira Service Management (JSM) alert ingestion docs by @ezra-robusta in #2117 Bump KRR image to v1.29.0 (JSON log format support) by @moshemorad in #2126 docs: document JSON log format toggle by @moshemorad in #2127 Security: Bump dependencies and remove gnupg2 from runtime by @moshemorad in #2130 docs: fix Firewall / DNS Allowlist page by @arikalon1 in #2131 New Contributors @ezra",
-    "source": "Robusta",
-    "sourceId": "robusta",
-    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.46.0-alpha",
-    "publishedDate": "2026-07-30T11:36:45.000Z",
-    "domain": "logging",
-    "topics": [
-      "logging",
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "robusta",
-    "releaseVersion": "0.46.0-alpha"
   },
   {
     "id": "oci-oke-374b276d2d86",

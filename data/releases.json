@@ -1,19 +1,19 @@
 [
   {
+    "project": "oci-oke",
+    "version": "v9.7.1",
+    "publishedDate": "2026-09-28T18:57:44.000Z",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.7.1",
+    "sourceId": "oci-oke",
+    "title": "v9.7.1"
+  },
+  {
     "project": "opentelemetry-collector",
     "version": "v1.68.0",
     "publishedDate": "2026-09-28T14:09:31.000Z",
     "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.162.0",
     "sourceId": "opentelemetry-collector",
     "title": "v1.68.0/v0.162.0"
-  },
-  {
-    "project": "oci-oke",
-    "version": "v9.7.0",
-    "publishedDate": "2026-09-28T11:35:45.000Z",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.7.0",
-    "sourceId": "oci-oke",
-    "title": "v9.7.0"
   },
   {
     "project": "pulumi",
