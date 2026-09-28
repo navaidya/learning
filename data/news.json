@@ -1,5 +1,252 @@
 [
   {
+    "id": "opentelemetry-collector-0641b162e206",
+    "title": "v1.68.0/v0.162.0",
+    "summary": "End-user changelog 🛑 Breaking changes 🛑 cmd/mdatagen: Generated processor lifecycle tests now assert that the processor propagates the incoming context unchanged to the next consumer by default. (#15994) Disable with skip_context_propagation: true processor/queue_batch: Rename queuebatch processor to queue_batch processor. (#14396) 💡 Enhancements 💡 extension/memory_limiter: Add otelcol_memorylimiter_refused_requests metric to record network request refusals in extension mode. (#15561) pkg/co",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.162.0",
+    "publishedDate": "2026-09-28T14:09:31.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v1.68.0"
+  },
+  {
+    "id": "opentelemetry-collector-e2f8dd9e3839",
+    "title": "service/v0.162.0",
+    "summary": "Module set beta, Version v0.162.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/service%2Fv0.162.0",
+    "publishedDate": "2026-09-28T14:03:13.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.162.0"
+  },
+  {
+    "id": "opentelemetry-collector-45b47baf81c5",
+    "title": "service/telemetry/telemetrytest/v0.162.0",
+    "summary": "Module set beta, Version v0.162.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/service%2Ftelemetry%2Ftelemetrytest%2Fv0.162.0",
+    "publishedDate": "2026-09-28T14:03:13.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.162.0"
+  },
+  {
+    "id": "opentelemetry-collector-020fbee35a2d",
+    "title": "service/hostcapabilities/v0.162.0",
+    "summary": "Module set beta, Version v0.162.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/service%2Fhostcapabilities%2Fv0.162.0",
+    "publishedDate": "2026-09-28T14:03:13.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.162.0"
+  },
+  {
+    "id": "opentelemetry-collector-497122e42ada",
+    "title": "scraper/xscraper/v0.162.0",
+    "summary": "Module set beta, Version v0.162.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fxscraper%2Fv0.162.0",
+    "publishedDate": "2026-09-28T14:03:13.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.162.0"
+  },
+  {
+    "id": "opentelemetry-collector-d32737456b2f",
+    "title": "scraper/v0.162.0",
+    "summary": "Module set beta, Version v0.162.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fv0.162.0",
+    "publishedDate": "2026-09-28T14:03:13.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.162.0"
+  },
+  {
+    "id": "opentelemetry-collector-5d2e3ae52036",
+    "title": "scraper/scrapertest/v0.162.0",
+    "summary": "Module set beta, Version v0.162.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fscrapertest%2Fv0.162.0",
+    "publishedDate": "2026-09-28T14:03:13.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.162.0"
+  },
+  {
+    "id": "opentelemetry-collector-192b0e7d71d0",
+    "title": "scraper/scraperhelper/xscraperhelper/v0.162.0",
+    "summary": "Module set beta, Version v0.162.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fscraperhelper%2Fxscraperhelper%2Fv0.162.0",
+    "publishedDate": "2026-09-28T14:03:13.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.162.0"
+  },
+  {
+    "id": "opentelemetry-collector-c24c81c3c4b9",
+    "title": "scraper/scraperhelper/v0.162.0",
+    "summary": "Module set beta, Version v0.162.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fscraperhelper%2Fv0.162.0",
+    "publishedDate": "2026-09-28T14:03:13.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.162.0"
+  },
+  {
+    "id": "opentelemetry-collector-b41723d477d1",
+    "title": "receiver/xreceiver/v0.162.0",
+    "summary": "Module set beta, Version v0.162.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/receiver%2Fxreceiver%2Fv0.162.0",
+    "publishedDate": "2026-09-28T14:03:13.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.162.0"
+  },
+  {
+    "id": "oci-oke-67a694d0df7c",
+    "title": "v9.7.0",
+    "summary": "9.3.0 (September 22, 2026) Added DEXREQ-8552: fix generated Assessment conflicts Support for Generative AI model discovery and routing profiles support for Data Safe Crypto Posture Assessment Support for Usage Based SaaS listings on Marketplace [SELF v2] OCI Functions source_details support for container images, archives, pre-built sources, runtime configuration, runtime data sources, validation, work-request waits, tests, examples, deprecation message and documentations Support for Recurring Ma",
+    "source": "OCI / OKE",
+    "sourceId": "oci-oke",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.7.0",
+    "publishedDate": "2026-09-28T11:35:45.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "oci",
+      "oke",
+      "oracle"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "oci-oke",
+    "releaseVersion": "v9.7.0"
+  },
+  {
+    "id": "cncf-77fbf2251e22",
+    "title": "The case for a cloud native agent harness",
+    "summary": "Coding agents became useful when they stopped being a chat box. Four things changed the shape of the problem: capable tools, a shared repository and filesystem, subagents, and skills that capture what the system learned from...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/09/28/the-case-for-a-cloud-native-agent-harness/",
+    "publishedDate": "2026-09-28T11:00:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "pulumi-d83faa9da9ce",
     "title": "pkg/v3.265.0: Changelog and go.mod updates for v3.265.0 (#24914)",
     "summary": "Co-authored-by: github-actions github-actions@github.com",
@@ -8986,236 +9233,6 @@
     "releaseRelated": true,
     "releaseProject": "robusta",
     "releaseVersion": "0.46.0-alpha"
-  },
-  {
-    "id": "holmesgpt-6c6164c2e594",
-    "title": "0.38.0",
-    "summary": "What's Changed Rebuild Go binaries with Go 1.26.5 and add kubectl build by @moshemorad in #2324 ROB-678: evals for Slack channel-history context recovery by @Avi-Robusta in #2323 ROB-635 ROB-674 Reduce system prompt and tool description sizes (~50-60% fewer prompt tokens) by @naomi-robusta in #2301 ROB-677 Implement remote tool call approval workflows by @Avi-Robusta in #2311 ROB-759 Make conversation-worker slot exhaustion visible; bound reconnect sign-in by @Sheeproid in #2327 Full Changelog: ",
-    "source": "HolmesGPT (Robusta)",
-    "sourceId": "holmesgpt",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.38.0",
-    "publishedDate": "2026-07-30T11:15:57.000Z",
-    "domain": "aiops",
-    "topics": [
-      "holmesgpt",
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "holmesgpt",
-    "releaseVersion": "0.38.0"
-  },
-  {
-    "id": "openai-9146ff1756af",
-    "title": "How avatarin built a 24/7 retail agent with GPT-Realtime",
-    "summary": "avatarin uses OpenAI’s GPT-Realtime to give Yamada Denki shoppers 24/7 multilingual support. In two weeks, 30,000 people used the agent and 92% of survey responses were positive.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/avatarin",
-    "publishedDate": "2026-07-30T00:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "grafana-5226480f305f",
-    "title": "Automate all the things: How to use Grafana Cloud's AI to relieve the operational burden",
-    "summary": "Continuous integration and continuous delivery (CI/CD) have dramatically changed how we ship software. But once code reaches production, the operational work is still surprisingly manual. Engineers continually monitor systems, investigate unexpected behavior, and decide which issues require action. And that is where the next opportunity for AI-driven automation lies.For example, in today's CI/CD workflows, someone refreshes the pipeline page to see whether the queue has moved. Someone else rerun",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/automate-all-the-things-how-to-use-grafana-cloud-s-ai-to-relieve-the-operational-burden/",
-    "publishedDate": "2026-07-29T21:47:56.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "loki-70e031c03318",
-    "title": "helm-loki-7.2.0",
-    "summary": "chore: Update Helm chart for GEL 3.6.11 (#23648)",
-    "source": "Grafana Loki",
-    "sourceId": "loki",
-    "url": "https://github.com/grafana/loki/releases/tag/helm-loki-7.2.0",
-    "publishedDate": "2026-07-29T20:33:33.000Z",
-    "domain": "logging",
-    "topics": [
-      "loki",
-      "logging",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "loki",
-    "releaseVersion": "3.6.11"
-  },
-  {
-    "id": "backstage-56e786ce4c75",
-    "title": "v1.53.1",
-    "summary": "This patch release fixes the following issues: Errors in TypeScript configuration schema definitions no longer prevent apps from building or starting and are logged as warnings instead",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.53.1",
-    "publishedDate": "2026-07-29T20:13:55.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.53.1"
-  },
-  {
-    "id": "terraform-e59e71930fa0",
-    "title": "v1.17.0-alpha20260729",
-    "summary": "1.17.0-alpha20260729 (July 29, 2026) ENHANCEMENTS: command/init: Enrich log messages with provider versions (#38918) BUG FIXES: funcs: pow and log no longer panic when result is not a number (#38912) EXPERIMENTS: Experiments are only enabled in alpha releases of Terraform CLI. The following features are not yet available in stable releases. The experimental \"deferred actions\" feature, enabled by passing the -allow-deferral option to terraform plan, permits count and for_each arguments in module,",
-    "source": "Terraform",
-    "sourceId": "terraform",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-alpha20260729",
-    "publishedDate": "2026-07-29T19:38:27.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "terraform",
-    "releaseVersion": "v1.17.0-alpha20260729"
-  },
-  {
-    "id": "kubernetes-7fd67a805a07",
-    "title": "How the controller-runtime Cache Actually Works, and Why Your Controller Does Not Crash the API Server",
-    "summary": "This article has been revised since it was first published, to correct several significant technical inaccuracies in the original text. Kubernetes has long been the default platform for distributed workloads, and writing your own controller for it is now a matter of a few hours. The common path — Golang, using kubebuilder on top of controller-runtime — gives you a project scaffold, types, and a reconciler. For typical scenarios that is more than enough. But as soon as load grows or the controlle",
-    "source": "Kubernetes",
-    "sourceId": "kubernetes",
-    "url": "https://kubernetes.io/blog/2026/07/29/controller-runtime-cache-explained/",
-    "publishedDate": "2026-07-29T18:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "cilium-c8f2d8f27a95",
-    "title": "1.20.0",
-    "summary": "🎉 Release Announcement 🎉: We are excited to announce the Cilium 1.20.0 release! More than 2,660 new commits have landed in this release, supported by a community of over 1,100 contributors and more than 24,800 GitHub stars! 🤩 ⚠️ You may need to take action during the upgrade if you use legacy Mutual Authentication, Envoy Go extensions or Kafka-aware policies, the cilium.io/v2alpha1 CiliumNodeConfig API, the libnetwork integration, or a custom CNI configuration. See the Upgrade Guide for detai",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.20.0",
-    "publishedDate": "2026-07-29T15:21:07.000Z",
-    "domain": "ebpf-cilium",
-    "topics": [
-      "ebpf-cilium",
-      "cilium",
-      "ebpf",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "1.20.0"
-  },
-  {
-    "id": "openai-cc8e132c6199",
-    "title": "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark",
-    "summary": "How two API settings improved GPT-5.6 performance on ARC-AGI-3, boosting scores and efficiency by retaining reasoning and enabling compaction.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
-    "publishedDate": "2026-07-29T15:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "openai"
-  },
-  {
-    "id": "holmesgpt-dcdb2aba8ff9",
-    "title": "0.38.1-alpha",
-    "summary": "What's Changed Rebuild Go binaries with Go 1.26.5 and add kubectl build by @moshemorad in #2324 ROB-678: evals for Slack channel-history context recovery by @Avi-Robusta in #2323 ROB-635 ROB-674 Reduce system prompt and tool description sizes (~50-60% fewer prompt tokens) by @naomi-robusta in #2301 ROB-677 Implement remote tool call approval workflows by @Avi-Robusta in #2311 ROB-759 Make conversation-worker slot exhaustion visible; bound reconnect sign-in by @Sheeproid in #2327 Full Changelog: ",
-    "source": "HolmesGPT (Robusta)",
-    "sourceId": "holmesgpt",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.38.1-alpha",
-    "publishedDate": "2026-07-29T13:48:21.000Z",
-    "domain": "aiops",
-    "topics": [
-      "holmesgpt",
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "holmesgpt",
-    "releaseVersion": "0.38.1-alpha"
-  },
-  {
-    "id": "holmesgpt-231fd4e6ddbf",
-    "title": "0.38.0-alpha",
-    "summary": "What's Changed Rebuild Go binaries with Go 1.26.5 and add kubectl build by @moshemorad in #2324 ROB-678: evals for Slack channel-history context recovery by @Avi-Robusta in #2323 ROB-635 ROB-674 Reduce system prompt and tool description sizes (~50-60% fewer prompt tokens) by @naomi-robusta in #2301 ROB-677 Implement remote tool call approval workflows by @Avi-Robusta in #2311 ROB-759 Make conversation-worker slot exhaustion visible; bound reconnect sign-in by @Sheeproid in #2327 Full Changelog: ",
-    "source": "HolmesGPT (Robusta)",
-    "sourceId": "holmesgpt",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.38.0-alpha",
-    "publishedDate": "2026-07-29T13:19:07.000Z",
-    "domain": "aiops",
-    "topics": [
-      "holmesgpt",
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "holmesgpt",
-    "releaseVersion": "0.38.0-alpha"
-  },
-  {
-    "id": "cilium-41de4d9a4be0",
-    "title": "1.20.0",
-    "summary": "Release v1.20.0",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/1.20.0",
-    "publishedDate": "2026-07-29T13:10:59.000Z",
-    "domain": "ebpf-cilium",
-    "topics": [
-      "cilium",
-      "ebpf",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "1.20.0"
   },
   {
     "id": "oci-oke-374b276d2d86",
