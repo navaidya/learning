@@ -1,5 +1,65 @@
 [
   {
+    "id": "vector-f3156e01e7be",
+    "title": "vdev-v0.3.25",
+    "summary": "No content.",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.25",
+    "publishedDate": "2026-09-29T18:30:07.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
+    "id": "tempo-e946803f4ad2",
+    "title": "v3.1.0",
+    "summary": "Grafana Tempo 3.1.0 adds query-based trace redaction, TraceQL metrics arithmetic and sampling-aware extrapolation, Kafka connectivity improvements, and experimental tools for comparing and pruning traces. It also makes vParquet5 the default format for newly written blocks. Highlights Redaction by query: Submit redaction jobs using a TraceQL selector instead of enumerating trace IDs, with optional time windows and redaction reliability improvements. TraceQL metrics: Combine aggregations with arit",
+    "source": "Grafana Tempo",
+    "sourceId": "tempo",
+    "url": "https://github.com/grafana/tempo/releases/tag/v3.1.0",
+    "publishedDate": "2026-09-29T17:07:23.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "tempo",
+      "tracing",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "tempo",
+    "releaseVersion": "v3.1.0"
+  },
+  {
+    "id": "backstage-3a2358982ae0",
+    "title": "v1.55.3",
+    "summary": "This patch release fixes the following issues: Fixed TechDocs generation for documented MkDocs Markdown extension configurations.",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.55.3",
+    "publishedDate": "2026-09-29T14:48:15.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.55.3"
+  },
+  {
     "id": "prometheus-756bf516f9eb",
     "title": "v0.313.4",
     "summary": "v0.313.4",
@@ -58,6 +118,43 @@
     "releaseRelated": true,
     "releaseProject": "backstage",
     "releaseVersion": "v1.56.0-next.1"
+  },
+  {
+    "id": "openai-dd66acaed2a0",
+    "title": "Introducing GPT-6.1 Sol",
+    "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+    "publishedDate": "2026-09-29T10:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "openai"
+  },
+  {
+    "id": "openai-19db7cc5ca5c",
+    "title": "DevDay 2026 Recap",
+    "summary": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/devday-2026-recap",
+    "publishedDate": "2026-09-29T10:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "kubernetes-releases-45bcd6cf8c3c",
@@ -9078,25 +9175,6 @@
     "releaseProject": "kyverno"
   },
   {
-    "id": "kyverno-cf2493ab45f3",
-    "title": "kyverno-chart-3.9.0-rc.1",
-    "summary": "kyverno-chart-3.9.0-rc.1",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-chart-3.9.0-rc.1",
-    "publishedDate": "2026-08-03T12:55:50.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno"
-  },
-  {
     "id": "cncf-073607dbf550",
     "title": "Cortex completes OSTIF security audit",
     "summary": "The Open Source Technology Improvement Fund is proud to share the results of our security audit of Cortex. Cortex functions as a long-term, multi-tenant scalable open source storage for Prometheus and OpenTelemetry. Thanks to Quarkslab and...",
@@ -9113,44 +9191,6 @@
     "importance": "high",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "openai-54e616a32e5e",
-    "title": "Circles powers telco personalization with OpenAI technology",
-    "summary": "Circles uses the OpenAI API and Codex to power AI-native telco experiences, increasing ARPU by 22%, reducing churn by 9%, and improving development efficiency.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/circles",
-    "publishedDate": "2026-08-03T00:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "holmesgpt-a446caa17eb2",
-    "title": "0.38.1",
-    "summary": "What's Changed Behavior-guard tests: log-fetch transparency eval, fix permissions eval setup by @naomi-robusta in #2328 Fix operator image startup by removing holmes package dependency by @moshemorad in #2339 ROB-679 Log the TOOL_MEMORY_LIMIT_MB remedy when a tool is OOM killed by @Avi-Robusta in #2331 Full Changelog: 0.38.0...0.38.1",
-    "source": "HolmesGPT (Robusta)",
-    "sourceId": "holmesgpt",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.38.1",
-    "publishedDate": "2026-08-02T13:04:46.000Z",
-    "domain": "aiops",
-    "topics": [
-      "holmesgpt",
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "holmesgpt",
-    "releaseVersion": "0.38.1"
   },
   {
     "id": "grafana-4d6892211749",
@@ -9680,45 +9720,5 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes",
     "releaseVersion": "v3.7.0"
-  },
-  {
-    "id": "prometheus-abe1499e4d83",
-    "title": "v0.313.0",
-    "summary": "v0.313.0",
-    "source": "Prometheus",
-    "sourceId": "prometheus",
-    "url": "https://github.com/prometheus/prometheus/releases/tag/v0.313.0",
-    "publishedDate": "2026-07-01T14:10:00.000Z",
-    "domain": "prometheus",
-    "topics": [
-      "prometheus",
-      "promql",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "prometheus",
-    "releaseVersion": "v0.313.0"
-  },
-  {
-    "id": "prometheus-fbcc76e17146",
-    "title": "3.13.0 / 2026-07-01",
-    "summary": "This is a Long Term Support LTS release. [SECURITY] UI: Bump sanitize-html to fix a cross-site scripting vulnerability (CVE-2026-44990). #18697 [CHANGE] UI: Third-party npm dependency licenses are now embedded in the Prometheus binary and served at /assets/third-party-licenses.txt, replacing the npm_licenses.tar.bz2 archive previously shipped in release tarballs and container images. #18997 [CHANGE] API: Use SHA-256 instead of SHA-1 to generate rule group pagination tokens. #18927 [CHANGE] HTTP ",
-    "source": "Prometheus",
-    "sourceId": "prometheus",
-    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.13.0",
-    "publishedDate": "2026-07-01T14:09:29.000Z",
-    "domain": "prometheus",
-    "topics": [
-      "prometheus",
-      "promql",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "prometheus",
-    "releaseVersion": "3.13.0"
   }
 ]

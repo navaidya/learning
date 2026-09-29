@@ -1,19 +1,27 @@
 [
   {
+    "project": "tempo",
+    "version": "v3.1.0",
+    "publishedDate": "2026-09-29T17:07:23.000Z",
+    "url": "https://github.com/grafana/tempo/releases/tag/v3.1.0",
+    "sourceId": "tempo",
+    "title": "v3.1.0"
+  },
+  {
+    "project": "backstage",
+    "version": "v1.55.3",
+    "publishedDate": "2026-09-29T14:48:15.000Z",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.55.3",
+    "sourceId": "backstage",
+    "title": "v1.55.3"
+  },
+  {
     "project": "prometheus",
     "version": "v0.313.4",
     "publishedDate": "2026-09-29T13:20:50.000Z",
     "url": "https://github.com/prometheus/prometheus/releases/tag/v0.313.4",
     "sourceId": "prometheus",
     "title": "v0.313.4"
-  },
-  {
-    "project": "backstage",
-    "version": "v1.56.0-next.1",
-    "publishedDate": "2026-09-29T12:39:50.000Z",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.56.0-next.1",
-    "sourceId": "backstage",
-    "title": "v1.56.0-next.1"
   },
   {
     "project": "kubernetes-releases",
@@ -110,14 +118,6 @@
     "url": "https://istio.io/latest/news/releases/1.31.x/announcing-1.31.1/",
     "sourceId": "istio",
     "title": "Announcing Istio 1.31.1"
-  },
-  {
-    "project": "tempo",
-    "version": "v3.1.0-rc.1",
-    "publishedDate": "2026-09-17T17:37:20.000Z",
-    "url": "https://github.com/grafana/tempo/releases/tag/v3.1.0-rc.1",
-    "sourceId": "tempo",
-    "title": "v3.1.0-rc.1"
   },
   {
     "project": "loki",
