@@ -1,5 +1,104 @@
 [
   {
+    "id": "prometheus-756bf516f9eb",
+    "title": "v0.313.4",
+    "summary": "v0.313.4",
+    "source": "Prometheus",
+    "sourceId": "prometheus",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v0.313.4",
+    "publishedDate": "2026-09-29T13:20:50.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "promql",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "prometheus",
+    "releaseVersion": "v0.313.4"
+  },
+  {
+    "id": "prometheus-43c41ecf951c",
+    "title": "v3.13.4",
+    "summary": "v3.13.4",
+    "source": "Prometheus",
+    "sourceId": "prometheus",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.13.4",
+    "publishedDate": "2026-09-29T13:20:28.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "promql",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "prometheus",
+    "releaseVersion": "v3.13.4"
+  },
+  {
+    "id": "backstage-5477547b5a0f",
+    "title": "v1.56.0-next.1",
+    "summary": "See docs/releases/v1.56.0-next.1-changelog.md for more information.",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.56.0-next.1",
+    "publishedDate": "2026-09-29T12:39:50.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.56.0-next.1"
+  },
+  {
+    "id": "kubernetes-releases-45bcd6cf8c3c",
+    "title": "v1.38.0-alpha.1",
+    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
+    "source": "Kubernetes Releases",
+    "sourceId": "kubernetes-releases",
+    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.38.0-alpha.1",
+    "publishedDate": "2026-09-29T08:46:22.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes-releases",
+    "releaseVersion": "v1.38.0-alpha.1"
+  },
+  {
+    "id": "hashicorp-30d6b7668c5a",
+    "title": "Secure AI agents with HashiCorp Boundary",
+    "summary": "Enable AI agents to securely access your resources while operating within enterprise identity, access, and audit controls.",
+    "source": "HashiCorp",
+    "sourceId": "hashicorp",
+    "url": "https://www.hashicorp.com/blog/secure-ai-agents-with-hashicorp-boundary",
+    "publishedDate": "2026-09-29T07:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "terraform",
+      "vault",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "opentelemetry-4b059ab7e696",
     "title": "Announcing v1 of OpenTelemetry Go Compile-Time Instrumentation",
     "summary": "If you write Java, Python, Node.js, or .NET, you have been able to add OpenTelemetry to an application without editing its code for years: attach an agent at startup and telemetry starts flowing. Go has been the exception. A Go program compiles to a single static binary with no runtime to hook into at startup, so Go developers have had to instrument by hand or reach for an out-of-process eBPF agent.",
@@ -9089,108 +9188,6 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes",
     "releaseVersion": "v1.37"
-  },
-  {
-    "id": "argo-2de1237249ed",
-    "title": "v3.3.13",
-    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.3.13/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.3.13/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container im",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.13",
-    "publishedDate": "2026-07-31T12:20:50.000Z",
-    "domain": "gitops",
-    "topics": [
-      "gitops",
-      "argo-cd",
-      "argo",
-      "argocd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "v3.3.13"
-  },
-  {
-    "id": "argo-93807822092e",
-    "title": "v3.4.6",
-    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.4.6/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.4.6/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container imag",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.4.6",
-    "publishedDate": "2026-07-31T12:17:38.000Z",
-    "domain": "gitops",
-    "topics": [
-      "gitops",
-      "argo-cd",
-      "argo",
-      "argocd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "v3.4.6"
-  },
-  {
-    "id": "hashicorp-086b760dd59e",
-    "title": "Consul + CyberArk WIM: External CA for the service mesh",
-    "summary": "Consul Enterprise 2.0 lets you use CyberArk Workload Identity Manager as an external CA for the mesh, anchoring trust in PKI your security team already governs.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/consul-cyberark-wim-external-ca-for-the-service-mesh",
-    "publishedDate": "2026-07-31T07:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "hashicorp",
-    "releaseVersion": "2.0"
-  },
-  {
-    "id": "loki-28be328ac358",
-    "title": "v3.6.13",
-    "summary": "3.6.13 (2026-07-23) Bug Fixes ci: Fix zizmor findings for operator-images in Loki 3.6 (#22821) (050f742) ci: Helm CI warning fix (#22606) (4bc2586) security/CRITICAL/clients/cmd/fluentd/docker: Update dependency fluentd to v1.19.3 [SECURITY] (release-3.6.x) (#22694) (692f2b1) security/HIGH/: Bump Go to 1.26.5 to address CVE-2026-39822 and CVE-2026-42505 [SECURITY] (#23398) (fc478e1) security/HIGH/pkg/push: Update module google.golang.org/grpc to v1.82.1 [SECURITY] (70f75b7) security/HIGH/: Updat",
-    "source": "Grafana Loki",
-    "sourceId": "loki",
-    "url": "https://github.com/grafana/loki/releases/tag/v3.6.13",
-    "publishedDate": "2026-07-31T05:29:13.000Z",
-    "domain": "logging",
-    "topics": [
-      "loki",
-      "logging",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "loki",
-    "releaseVersion": "v3.6.13"
-  },
-  {
-    "id": "grafana-14b74615d9a4",
-    "title": "How to build a trust platform for your agent with Grafana Agent Observability",
-    "summary": "Observing fast-growing agentic workloads is no small feat, especially if you try to build your own monitoring stack or rely solely on tools built for a time before LLMs.At Grafana Labs, we know this all too well. Grafana Assistant went from an internal hackathon project to generally available in a little over six months. And while it was great to see how eager our users were to adopt it, that interest came with plenty of growing pains as we managed scaling and complexity behind the scenes. Revie",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/how-to-build-a-trust-platform-for-your-agent-with-grafana-agent-observability/",
-    "publishedDate": "2026-07-30T22:06:46.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "grafana"
   },
   {
     "id": "prometheus-e2e256c2454a",

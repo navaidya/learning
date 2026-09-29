@@ -1,5 +1,29 @@
 [
   {
+    "project": "prometheus",
+    "version": "v0.313.4",
+    "publishedDate": "2026-09-29T13:20:50.000Z",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v0.313.4",
+    "sourceId": "prometheus",
+    "title": "v0.313.4"
+  },
+  {
+    "project": "backstage",
+    "version": "v1.56.0-next.1",
+    "publishedDate": "2026-09-29T12:39:50.000Z",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.56.0-next.1",
+    "sourceId": "backstage",
+    "title": "v1.56.0-next.1"
+  },
+  {
+    "project": "kubernetes-releases",
+    "version": "v1.38.0-alpha.1",
+    "publishedDate": "2026-09-29T08:46:22.000Z",
+    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.38.0-alpha.1",
+    "sourceId": "kubernetes-releases",
+    "title": "v1.38.0-alpha.1"
+  },
+  {
     "project": "oci-oke",
     "version": "v9.7.1",
     "publishedDate": "2026-09-28T18:57:44.000Z",
@@ -24,36 +48,12 @@
     "title": "pkg/v3.265.0: Changelog and go.mod updates for v3.265.0 (#24914)"
   },
   {
-    "project": "backstage",
-    "version": "v1.55.2",
-    "publishedDate": "2026-09-25T10:58:52.000Z",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.55.2",
-    "sourceId": "backstage",
-    "title": "v1.55.2"
-  },
-  {
-    "project": "prometheus",
-    "version": "3.15.0",
-    "publishedDate": "2026-09-25T08:56:22.000Z",
-    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.15.0",
-    "sourceId": "prometheus",
-    "title": "3.15.0 / 2026-09-24"
-  },
-  {
     "project": "containerd",
     "version": "1.7.36",
     "publishedDate": "2026-09-24T23:44:00.000Z",
     "url": "https://github.com/containerd/containerd/releases/tag/v1.7.36",
     "sourceId": "containerd",
     "title": "containerd 1.7.36"
-  },
-  {
-    "project": "kubernetes-releases",
-    "version": "v1.34.12",
-    "publishedDate": "2026-09-23T19:58:45.000Z",
-    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.34.12",
-    "sourceId": "kubernetes-releases",
-    "title": "v1.34.12"
   },
   {
     "project": "terraform",
