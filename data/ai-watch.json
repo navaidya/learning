@@ -1,5 +1,26 @@
 [
   {
+    "id": "phoenix-3baeab40d8d1",
+    "title": "arize-phoenix: v20.17.0",
+    "summary": "20.17.0 (2026-09-30) Features agents: mark bash tool spans as errors on non-zero exit codes (#16597) (cd0512e) graphql: add sort and sequenceNumbers to Dataset.experiments (#16563) (9c14c5a) rest: add sequence_number, sort_dir, and sequence_numbers to list_experiments (#16574) (305e1a9) Bug Fixes agents: leave the user out of the internal GraphQL scope when no one is logged in (#16457) (839485e) cap graphql-core below 3.3 (#16641) (097750c) cost: score patterns that open with a group or end in a",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.17.0",
+    "publishedDate": "2026-09-30T22:10:01.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v20.17.0"
+  },
+  {
     "id": "langfuse-68957eb7f239",
     "title": "v4.48.0",
     "summary": "What's Changed Features feat(seeder): add incident-session scenario for the session timeline by @nkabardin in #18061 feat(skills): track draft changes and fetch file contents by hash by @tobi12345 in #18062 Fixes / Improvements fix(web): reword AI features data notice to \"used to train models\" by @nimarb in #18031 fix(web): prevent metadata badge descenders from clipping by @wochinge in #18033 fix(web): collapsed sidebar rows hide their label fully by @nmtrang29 in #18035 fix(web): unify chevron",
@@ -3106,24 +3127,6 @@
       "agent-development"
     ],
     "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "nvidia-security-b838efdd3ce1",
-    "title": "Hardware-Rooted AI Security That Won’t Slow You Down",
-    "summary": "AI has transformed how organizations operate, driving unprecedented levels of productivity and innovation. However, AI adoption can be impeded by concerns...",
-    "source": "NVIDIA Technical Blog",
-    "sourceId": "nvidia-security",
-    "url": "https://developer.nvidia.com/blog/hardware-rooted-ai-security-that-wont-slow-you-down/",
-    "publishedDate": "2026-07-02T21:25:42.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "infrastructure-security",
-      "news",
-      "infrastructure"
-    ],
-    "importance": "high",
     "architectureShift": false,
     "releaseRelated": false
   }

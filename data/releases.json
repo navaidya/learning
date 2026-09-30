@@ -1,8 +1,24 @@
 [
   {
+    "project": "oci-oke",
+    "version": "v9.8.0",
+    "publishedDate": "2026-09-30T17:09:15.000Z",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.8.0",
+    "sourceId": "oci-oke",
+    "title": "v9.8.0"
+  },
+  {
+    "project": "cncf",
+    "version": "4.0",
+    "publishedDate": "2026-09-30T15:24:47.000Z",
+    "url": "https://www.cncf.io/blog/2026/09/30/argocon-north-america-2026-what-to-expect-as-the-argo-community-looks-toward-cd-4-0/",
+    "sourceId": "cncf",
+    "title": "ArgoCon North America 2026: What to expect as the Argo community looks toward CD 4.0"
+  },
+  {
     "project": "opentofu",
     "version": "v1.13.0",
-    "publishedDate": "2026-09-30T12:59:34.000Z",
+    "publishedDate": "2026-09-30T13:57:49.000Z",
     "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0",
     "sourceId": "opentofu",
     "title": "v1.13.0"
@@ -46,14 +62,6 @@
     "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.38.0-alpha.1",
     "sourceId": "kubernetes-releases",
     "title": "v1.38.0-alpha.1"
-  },
-  {
-    "project": "oci-oke",
-    "version": "v9.7.1",
-    "publishedDate": "2026-09-28T18:57:44.000Z",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.7.1",
-    "sourceId": "oci-oke",
-    "title": "v9.7.1"
   },
   {
     "project": "opentelemetry-collector",
@@ -174,14 +182,6 @@
     "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.39",
     "sourceId": "k8sgpt",
     "title": "v0.4.39"
-  },
-  {
-    "project": "cncf",
-    "version": "1.20",
-    "publishedDate": "2026-09-14T10:45:49.000Z",
-    "url": "https://www.cncf.io/blog/2026/09/14/cilium-1-20-gateway-api-externalauth-tcproute-udproute-eni-ipam-for-ipv6-and-more/",
-    "sourceId": "cncf",
-    "title": "Cilium 1.20: Gateway API ExternalAuth, TCPRoute/UDPRoute, ENI IPAM for IPv6, and more"
   },
   {
     "project": "kyverno",

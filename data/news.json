@@ -1,14 +1,56 @@
 [
   {
+    "id": "oci-oke-92bcc9c12db3",
+    "title": "v9.8.0",
+    "summary": "9.8.0 (September 30, 2026) Added Fixed root compartment export name resolution Fixed documentation categorization and explicitly mention unavailable resources Support for Data Safe - ExaDB-C@C and ExaDB-D integration for target registration at scale Support for NatOnDrg Support for VM Cluster horizontal scaling | ADB-D & ADB-C@C - Phase 2 Support for Data Safe - Data Subsetting support Deprecation Add kms_key_id deprecation notice for Fusion Environment Bug Fix Fixed indentation in of markdown f",
+    "source": "OCI / OKE",
+    "sourceId": "oci-oke",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.8.0",
+    "publishedDate": "2026-09-30T17:09:15.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "oci",
+      "oke",
+      "oracle"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "oci-oke",
+    "releaseVersion": "v9.8.0"
+  },
+  {
+    "id": "cncf-50a6af1abf1a",
+    "title": "ArgoCon North America 2026: What to expect as the Argo community looks toward CD 4.0",
+    "summary": "Work across the Argo Project is accelerating, with growing adoption, new use cases, and more maintainers contributing across the community. The community is also beginning the visioning process for Argo CD 4.0, making ArgoCon an opportunity...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/09/30/argocon-north-america-2026-what-to-expect-as-the-argo-community-looks-toward-cd-4-0/",
+    "publishedDate": "2026-09-30T15:24:47.000Z",
+    "domain": "gitops",
+    "topics": [
+      "gitops",
+      "argo-cd",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cncf",
+    "releaseVersion": "4.0"
+  },
+  {
     "id": "opentofu-656fa0497be5",
     "title": "v1.13.0",
-    "summary": "1.13.0",
+    "summary": "OpenTofu 1.13.0 We're proud to announce that OpenTofu 1.13.0 is now officially available! 🎉 Highlights Windows on ARM64 is now a supported platform Starting with OpenTofu v1.13.0 we are now offering official packages targeting Windows on the ARM64 (also known as \"aarch64\") CPU architecture. Reducing unknowns during planning OpenTofu v1.13 introduces a number of new functions that are all intended to allow module authors to give OpenTofu additional hints about what they know to be true even thou",
     "source": "OpenTofu",
     "sourceId": "opentofu",
     "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0",
-    "publishedDate": "2026-09-30T12:59:34.000Z",
+    "publishedDate": "2026-09-30T13:57:49.000Z",
     "domain": "terraform",
     "topics": [
+      "terraform",
       "opentofu",
       "iac"
     ],
@@ -8887,26 +8929,6 @@
     "releaseVersion": "v3.256.0"
   },
   {
-    "id": "backstage-0c1691404ae3",
-    "title": "v1.54.0-next.2",
-    "summary": "See docs/releases/v1.54.0-next.2-changelog.md for more information.",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.0-next.2",
-    "publishedDate": "2026-08-04T15:54:54.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.54.0-next.2"
-  },
-  {
     "id": "opentelemetry-collector-6dff13a5090a",
     "title": "v1.64.0/v0.158.0",
     "summary": "Images and binaries here: https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.158.0 End User Changelog 🚀 New components 🚀 processor/queuebatch: New queuebatchprocessor to replace the legacy batchprocessor. (#15047, #13582, #12022, #11308, #8272, #6046) New implementation is based exporterhelper, uses same configuration as sending_queue. 💡 Enhancements 💡 cmd/mdatagen: Add first-class extended type aliases (int64, duration, opaque_string, id, opaque_map, etc.) to",
@@ -9115,25 +9137,6 @@
     "releaseRelated": true,
     "releaseProject": "opentelemetry-collector",
     "releaseVersion": "v0.158.0"
-  },
-  {
-    "id": "cncf-7df16ed7a06c",
-    "title": "You can’t debug what you can’t see — Observability for AI Agents",
-    "summary": "This article reflects practical experience building and operating production AI agent systems. Traditional APM can’t tell you why your agent spent far more than usual asking the same question three times. We’ve been running AI agents...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/08/04/you-cant-debug-what-you-cant-see-observability-for-ai-agents/",
-    "publishedDate": "2026-08-04T11:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "ai-agent",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "kubernetes-8df0ba7203be",
