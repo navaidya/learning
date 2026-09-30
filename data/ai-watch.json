@@ -1,5 +1,25 @@
 [
   {
+    "id": "langfuse-68957eb7f239",
+    "title": "v4.48.0",
+    "summary": "What's Changed Features feat(seeder): add incident-session scenario for the session timeline by @nkabardin in #18061 feat(skills): track draft changes and fetch file contents by hash by @tobi12345 in #18062 Fixes / Improvements fix(web): reword AI features data notice to \"used to train models\" by @nimarb in #18031 fix(web): prevent metadata badge descenders from clipping by @wochinge in #18033 fix(web): collapsed sidebar rows hide their label fully by @nmtrang29 in #18035 fix(web): unify chevron",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.48.0",
+    "publishedDate": "2026-09-30T10:12:22.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.48.0"
+  },
+  {
     "id": "pydantic-ai-a43dad9be38b",
     "title": "v1.107.7 (2026-09-29)",
     "summary": "🛡️ Security A maintenance release for the v1 line, carrying the v1 backport of the security fix released in 2.52.0. See the advisory for full details and affected versions. GHSA-v36g-jcw9-x7cw (moderate): converting attacker-controlled HTML with deeply nested elements in the local web_fetch tool could consume excessive CPU and memory. Provider-native web fetching is not affected. Reported by @SounLabs. (#8985) Patched in 1.107.7; also patched on the v2 line in 2.52.0. What's Changed 🐛 Bug Fixe",

@@ -1,5 +1,21 @@
 [
   {
+    "project": "opentofu",
+    "version": "v1.13.0",
+    "publishedDate": "2026-09-30T12:59:34.000Z",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0",
+    "sourceId": "opentofu",
+    "title": "v1.13.0"
+  },
+  {
+    "project": "pulumi",
+    "version": "v3.266.0",
+    "publishedDate": "2026-09-30T12:35:19.000Z",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.266.0",
+    "sourceId": "pulumi",
+    "title": "pkg/v3.266.0: Changelog and go.mod updates for v3.266.0 (#24946)"
+  },
+  {
     "project": "tempo",
     "version": "v3.1.0",
     "publishedDate": "2026-09-29T17:07:23.000Z",
@@ -48,12 +64,12 @@
     "title": "v1.68.0/v0.162.0"
   },
   {
-    "project": "pulumi",
-    "version": "v3.265.0",
-    "publishedDate": "2026-09-25T23:29:45.000Z",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.265.0",
-    "sourceId": "pulumi",
-    "title": "pkg/v3.265.0: Changelog and go.mod updates for v3.265.0 (#24914)"
+    "project": "hashicorp",
+    "version": "1.16",
+    "publishedDate": "2026-09-28T07:00:00.000Z",
+    "url": "https://www.hashicorp.com/blog/terraform-116-completes-actions-lifecycles-and-brings-imports-into-child-modules",
+    "sourceId": "hashicorp",
+    "title": "Terraform 1.16 completes Actions lifecycles and brings imports into child modules"
   },
   {
     "project": "containerd",
@@ -70,14 +86,6 @@
     "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-beta2",
     "sourceId": "terraform",
     "title": "v1.17.0-beta2"
-  },
-  {
-    "project": "hashicorp",
-    "version": "8.0",
-    "publishedDate": "2026-09-23T04:00:00.000Z",
-    "url": "https://www.hashicorp.com/blog/terraform-provider-for-google-cloud-80-now-generally-available",
-    "sourceId": "hashicorp",
-    "title": "Terraform provider for Google Cloud 8.0 now generally available"
   },
   {
     "project": "etcd",
@@ -126,14 +134,6 @@
     "url": "https://github.com/grafana/loki/releases/tag/v3.7.8",
     "sourceId": "loki",
     "title": "v3.7.8"
-  },
-  {
-    "project": "opentofu",
-    "version": "v1.13.0-rc1",
-    "publishedDate": "2026-09-17T15:24:48.000Z",
-    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-rc1",
-    "sourceId": "opentofu",
-    "title": "v1.13.0-rc1"
   },
   {
     "project": "robusta",

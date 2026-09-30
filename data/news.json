@@ -1,5 +1,99 @@
 [
   {
+    "id": "opentofu-656fa0497be5",
+    "title": "v1.13.0",
+    "summary": "1.13.0",
+    "source": "OpenTofu",
+    "sourceId": "opentofu",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0",
+    "publishedDate": "2026-09-30T12:59:34.000Z",
+    "domain": "terraform",
+    "topics": [
+      "opentofu",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentofu",
+    "releaseVersion": "v1.13.0"
+  },
+  {
+    "id": "pulumi-4566ee19e466",
+    "title": "pkg/v3.266.0: Changelog and go.mod updates for v3.266.0 (#24946)",
+    "summary": "Co-authored-by: github-actions github-actions@github.com",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.266.0",
+    "publishedDate": "2026-09-30T12:35:19.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.266.0"
+  },
+  {
+    "id": "pulumi-c7390311c4c7",
+    "title": "v3.266.0",
+    "summary": "3.266.0 (2026-09-30) Bug Fixes [sdk/go] Use an explicit provider for resources from an extension package, instead of falling back to a default provider #24702 [sdk/python] Use an explicit provider for resources from an extension package, instead of falling back to a default provider #24702 [pcl] Order the members of a union type by a fixed structural order rather than by their printed form, so that a recursive object type prints all of its properties and diagnostics list union members consistent",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.266.0",
+    "publishedDate": "2026-09-30T11:33:14.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.266.0"
+  },
+  {
+    "id": "cncf-a1091457395c",
+    "title": "From 40 seconds to under 10: rebuilding incident detection on OpenTelemetry, Apache Kafka, and Apache Flink on Kubernetes",
+    "summary": "Every SaaS company has the same uncomfortable question after a major incident: who noticed first, the monitoring or the customers? For a long time our honest answer was “it depends”. This post describes how a small...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/09/30/from-40-seconds-to-under-10-rebuilding-incident-detection-on-opentelemetry-apache-kafka-and-apache-flink-on-kubernetes/",
+    "publishedDate": "2026-09-30T11:00:00.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "pulumi-922ff7e20759",
+    "title": "sdk/v3.266.0: Update CreateRequest/Response to use `property.Map` (#24930)",
+    "summary": "Continuing the property.Map migration.",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.266.0",
+    "publishedDate": "2026-09-30T08:58:03.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.266.0"
+  },
+  {
     "id": "vector-f3156e01e7be",
     "title": "vdev-v0.3.25",
     "summary": "No content.",
@@ -497,6 +591,26 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
+  },
+  {
+    "id": "hashicorp-c04a29bf8fcc",
+    "title": "Terraform 1.16 completes Actions lifecycles and brings imports into child modules",
+    "summary": "Terraform 1.16 adds destroy-time Actions and reusable imports in child modules, keeping more infrastructure lifecycle operations in Terraform.",
+    "source": "HashiCorp",
+    "sourceId": "hashicorp",
+    "url": "https://www.hashicorp.com/blog/terraform-116-completes-actions-lifecycles-and-brings-imports-into-child-modules",
+    "publishedDate": "2026-09-28T07:00:00.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "vault",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "hashicorp",
+    "releaseVersion": "1.16"
   },
   {
     "id": "pulumi-d83faa9da9ce",
@@ -9022,63 +9136,6 @@
     "releaseRelated": false
   },
   {
-    "id": "cncf-a0fa728ee908",
-    "title": "Kubeflow SDK evolution- One million downloads and counting",
-    "summary": "The unified kubeflow-sdk has officially crossed 1 million downloads on PyPI! This milestone reflects the rapid adoption of this streamlined interface. In this post, we celebrate this community milestone and highlight the core concepts driving the...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/08/03/kubeflow-sdk-evolution-one-million-downloads-and-counting/",
-    "publishedDate": "2026-08-03T20:25:24.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "cilium-7acfb8de42fe",
-    "title": "1.21.0-pre.0",
-    "summary": "Summary of Changes Major Changes: Envoy resources (e.g., Listeners, Network Policies, etc.) can now be synchronized with Envoy incrementally, reducing CPU load and policy update latency. This is enabled by the new agent option value --envoy-xds-mode=delta-split. Corresponding Helm value is envoy.xdsMode=delta-split. (#45288, @jrajahalme) network driver: add agent side baseline driver and dummy device manager (#47254, @bersoare) Minor Changes: build: Update iptables from 1.8.8 to 1.8.11 (#47623, ",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.21.0-pre.0",
-    "publishedDate": "2026-08-03T20:16:05.000Z",
-    "domain": "ebpf-cilium",
-    "topics": [
-      "cilium",
-      "ebpf",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "1.21.0-pre.0"
-  },
-  {
-    "id": "cilium-00b6adaf6e21",
-    "title": "1.21.0-pre.0",
-    "summary": "Release v1.21.0-pre.0",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/1.21.0-pre.0",
-    "publishedDate": "2026-08-03T19:04:17.000Z",
-    "domain": "ebpf-cilium",
-    "topics": [
-      "cilium",
-      "ebpf",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "1.21.0-pre.0"
-  },
-  {
     "id": "kubernetes-8df0ba7203be",
     "title": "Gateway API v1.6: TCPRoute and UDPRoute Graduate to Standard",
     "summary": "The Kubernetes SIG Network community is thrilled to share the release of Gateway API v1.6.0, which was released on June 30th of this year! Gateway API has become the standard for modern, role-oriented, and expressive service networking in Kubernetes. In previous releases, Gateway API established a production-grade foundation for HTTP and TLS layer 7 traffic. With version 1.6.0, Gateway API takes a major step forward by expanding standard layer 4 protocol routing and introducing cleaner API bound",
@@ -9114,65 +9171,6 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes",
     "releaseVersion": "v1.6"
-  },
-  {
-    "id": "kyverno-2b4f65da6eec",
-    "title": "v1.19.0-rc.1",
-    "summary": "No content.",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.0-rc.1",
-    "publishedDate": "2026-08-03T13:49:39.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno",
-    "releaseVersion": "v1.19.0-rc.1"
-  },
-  {
-    "id": "vector-ecc9266b67bc",
-    "title": "vdev-v0.3.11: chore(ci): bump actions/labeler from 6.1.0 to 7.0.0 (#25998)",
-    "summary": "Signed-off-by: dependabot[bot] support@github.com Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.11",
-    "publishedDate": "2026-08-03T13:29:37.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector",
-    "releaseVersion": "6.1.0"
-  },
-  {
-    "id": "kyverno-80795e080938",
-    "title": "kyverno-policies-chart-3.9.0-rc.1",
-    "summary": "kyverno-policies-chart-3.9.0-rc.1",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-policies-chart-3.9.0-rc.1",
-    "publishedDate": "2026-08-03T12:56:06.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno"
   },
   {
     "id": "cncf-073607dbf550",
