@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-09-29T22:59:21.592Z",
+  "collectedAt": "2026-09-30T06:46:27.121Z",
   "sourceIds": [
     "langgraph",
     "pydantic-ai",
@@ -9,9 +9,10 @@
     "owasp-genai",
     "nvidia-security",
     "practical-ai",
-    "cncf-video",
     "otel-ai"
   ],
-  "failedSourceIds": [],
-  "itemCount": 155
+  "failedSourceIds": [
+    "cncf-video"
+  ],
+  "itemCount": 157
 }

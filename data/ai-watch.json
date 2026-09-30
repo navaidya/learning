@@ -1,5 +1,45 @@
 [
   {
+    "id": "pydantic-ai-a43dad9be38b",
+    "title": "v1.107.7 (2026-09-29)",
+    "summary": "🛡️ Security A maintenance release for the v1 line, carrying the v1 backport of the security fix released in 2.52.0. See the advisory for full details and affected versions. GHSA-v36g-jcw9-x7cw (moderate): converting attacker-controlled HTML with deeply nested elements in the local web_fetch tool could consume excessive CPU and memory. Provider-native web fetching is not affected. Reported by @SounLabs. (#8985) Patched in 1.107.7; also patched on the v2 line in 2.52.0. What's Changed 🐛 Bug Fixe",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v1.107.7",
+    "publishedDate": "2026-09-30T00:54:21.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v1.107.7"
+  },
+  {
+    "id": "pydantic-ai-fe732d49af59",
+    "title": "v2.52.0 (2026-09-29)",
+    "summary": "🛡️ Security This release fixes one security issue in web_fetch. See the advisory for full details and affected versions. GHSA-v36g-jcw9-x7cw (moderate): converting attacker-controlled HTML with deeply nested elements in the local web_fetch tool could consume excessive CPU and memory. Provider-native web fetching is not affected. Reported by @SounLabs. (#8984) Patched in 2.52.0 (v2) and 1.107.7 (v1). 📦 Harness and CLAI 2 pydantic-ai-harness now lives in this repository and ships with every Pyda",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.52.0",
+    "publishedDate": "2026-09-30T00:54:20.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.52.0"
+  },
+  {
     "id": "phoenix-ee1b30549640",
     "title": "@arizeai/phoenix-mcp@4.3.14",
     "summary": "Patch Changes Updated dependencies [5b37f12] @arizeai/phoenix-client@7.15.0",
