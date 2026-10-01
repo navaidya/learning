@@ -1,5 +1,119 @@
 [
   {
+    "id": "pulumi-7a9ea837ead8",
+    "title": "pkg/v3.267.0: Changelog and go.mod updates for v3.267.0 (#24971)",
+    "summary": "Co-authored-by: github-actions github-actions@github.com",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.267.0",
+    "publishedDate": "2026-10-01T12:34:24.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.267.0"
+  },
+  {
+    "id": "pulumi-9944149ee95c",
+    "title": "v3.267.0",
+    "summary": "3.267.0 (2026-10-01) Bug Fixes [cli/new] Fix concurrent pulumi new runs failing to clone the templates repository #24939 [sdk/python] Fix pulumi install for Python plugins and policy packs that use the uv toolchain and a [build-system] table #24951",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.267.0",
+    "publishedDate": "2026-10-01T11:49:20.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.267.0"
+  },
+  {
+    "id": "cncf-ef5f3a93c458",
+    "title": "Guardrails, not gates: rethinking policy in platform teams",
+    "summary": "The most popular OPA-based policy tool for Kubernetes is literally called Gatekeeper. Admission controllers block. Policies deny. Kyverno’s enforcement setting is validationFailureAction: Enforce, which at least sounds neutral, but the failure mode it describes is still...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/01/guardrails-not-gates-rethinking-policy-in-platform-teams/",
+    "publishedDate": "2026-10-01T11:30:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "flux-69b1d0b73220",
+    "title": "v2.9.6",
+    "summary": "Highlights Flux v2.9.6 is a patch release that stops helm-controller from reapplying chart CRDs on every upgrade when server-side apply is enabled, and recovers HelmReleases left with a drifted Ready=Unknown condition after a failed status patch. source-controller normalizes Azure Blob listing ETags so unchanged containers are no longer re-downloaded on every reconcile, and evicts stale Helm repository index entries from the cache so repositories with frequently changing indexes no longer fail w",
+    "source": "Flux",
+    "sourceId": "flux",
+    "url": "https://github.com/fluxcd/flux2/releases/tag/v2.9.6",
+    "publishedDate": "2026-10-01T09:58:50.000Z",
+    "domain": "gitops",
+    "topics": [
+      "flux",
+      "gitops",
+      "cd"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "flux",
+    "releaseVersion": "v2.9.6"
+  },
+  {
+    "id": "pulumi-bc1c0d57eb2b",
+    "title": "sdk/v3.267.0: Re-organize login and backend URL tests (#24960)",
+    "summary": "There are no actual changes to the actual tests Move TestGetCurrentCloudURL… tests move from pkg/cmd/pulumi/backend/backend_test.go to pkg/workspace/creds_test.go, since they test GetCurrentCloudURLWithAgentFallback from pkg/workspace/creds.go Split login tests out of pkg/backend/httpstate/backend_test.go into login_{,refresh,agent,oidcs}_test.go",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.267.0",
+    "publishedDate": "2026-10-01T09:47:15.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.267.0"
+  },
+  {
+    "id": "grafana-72791ddd890a",
+    "title": "Tempo 3.1 release: new features for Kafka, TraceQL metrics updates, trace redaction, and more",
+    "summary": "Building on the major release of Tempo 3.0, Tempo 3.1 is here, delivering community-contributed Kafka client improvements, query-based trace redaction, sampling-aware TraceQL metrics, and more. Together, the updates in 3.1 make it easier to operate Tempo, get accurate insights from your trace data, and investigate issues more efficiently. You can continue reading and check out the video below to learn more about the latest features. The Tempo 3.1 release notes and changelog provide more in-depth",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/tempo-3-1-release-all-the-latest-features/",
+    "publishedDate": "2026-09-30T19:03:30.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "grafana",
+    "releaseVersion": "3.1"
+  },
+  {
     "id": "oci-oke-92bcc9c12db3",
     "title": "v9.8.0",
     "summary": "9.8.0 (September 30, 2026) Added Fixed root compartment export name resolution Fixed documentation categorization and explicitly mention unavailable resources Support for Data Safe - ExaDB-C@C and ExaDB-D integration for target registration at scale Support for NatOnDrg Support for VM Cluster horizontal scaling | ADB-D & ADB-C@C - Phase 2 Support for Data Safe - Data Subsetting support Deprecation Add kms_key_id deprecation notice for Fusion Environment Bug Fix Fixed indentation in of markdown f",
@@ -8772,26 +8886,6 @@
     "releaseRelated": false
   },
   {
-    "id": "oci-oke-8ab3a71f6b3a",
-    "title": "v8.26.0",
-    "summary": "8.26.0 (August 5, 2026) Added context propagation for management resources in database_management service context propagation for resources in database_management - part 3 context support into database_management resources - part 1 Support for ACD Backup info and Cloning Phase 2 (Timestamp, CPU parameter, subsetting) | ADB-D & ADB-CC Support for Automatic failover with FSFO Support for OpenSearch cluster network security groups Upgrading packages to fix vulnerabilities Bug Fix resolve no-op patc",
-    "source": "OCI / OKE",
-    "sourceId": "oci-oke",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v8.26.0",
-    "publishedDate": "2026-08-05T13:23:38.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "oci",
-      "oke",
-      "oracle"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "oci-oke",
-    "releaseVersion": "v8.26.0"
-  },
-  {
     "id": "cncf-38c9f07af113",
     "title": "OpenCost 1.121.0: First-of-a-kind Kubernetes inference cost tracking",
     "summary": "Your GPU bill is rising. Your models are serving billions of tokens. Yet one question remains unanswered: what does each token actually cost? This is not a hypothetical problem. Platform teams today operate in a fog...",
@@ -8812,26 +8906,6 @@
     "releaseVersion": "1.121.0"
   },
   {
-    "id": "loki-408455adfa5d",
-    "title": "v3.7.5",
-    "summary": "3.7.5 (2026-08-05) Bug Fixes Build deb/rpm packages again in the release workflow (#23598) (6f49272) ci: Disable docker plugin publishing on release-3.7.x (#23440) (6095f71) ingester: Fix flush race in ingester [release-3.7.x] (#23682) (ff152dc) security/UNKNOWN/cmd/chunks-inspect: Update module github.com/klauspost/compress to v1.18.7 [SECURITY] (release-3.7.x) (#23611) (11c4b29) security/UNKNOWN/cmd/dataobj-inspect: Update module github.com/klauspost/compress to v1.18.7 [SECURITY] (release-3.7",
-    "source": "Grafana Loki",
-    "sourceId": "loki",
-    "url": "https://github.com/grafana/loki/releases/tag/v3.7.5",
-    "publishedDate": "2026-08-05T03:41:08.000Z",
-    "domain": "logging",
-    "topics": [
-      "loki",
-      "logging",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "loki",
-    "releaseVersion": "v3.7.5"
-  },
-  {
     "id": "containerd-fa5e763994a2",
     "title": "containerd API 1.12.0-beta.0",
     "summary": "Welcome to the api/v1.12.0-beta.0 release of containerd! This is a pre-release of containerd The 13th release for the containerd 1.x API aligns with the containerd 2.4 release. Highlights Include media type in content create event (#13833) Add parent path to runc checkpoint options (#13699) Deprecations Fix sandbox task API endpoints for non-runc runtimes (#13360) Please try out the release binaries and report any issues at https://github.com/containerd/containerd/issues. Contributors Maksym Pav",
@@ -8850,83 +8924,6 @@
     "releaseRelated": true,
     "releaseProject": "containerd",
     "releaseVersion": "1.12.0-beta.0"
-  },
-  {
-    "id": "loki-ebd76a20988a",
-    "title": "v3.6.14",
-    "summary": "3.6.14 (2026-08-04) Bug Fixes Backport WAL replay hang fix to release-3.6.x (#21176) (#23630) (355e2f3) ci: Backport deb/rpm packaging fix to release-3.6.x (#23680) (#23722) (d7ee4de) security/UNKNOWN/cmd/chunks-inspect: Update module github.com/klauspost/compress to v1.18.7 [SECURITY] (release-3.6.x) (#23615) (a6cc2e5) security/UNKNOWN/cmd/dataobj-inspect: Update module github.com/klauspost/compress to v1.18.7 [SECURITY] (release-3.6.x) (#23616) (a71c910) security/UNKNOWN/operator: Update modul",
-    "source": "Grafana Loki",
-    "sourceId": "loki",
-    "url": "https://github.com/grafana/loki/releases/tag/v3.6.14",
-    "publishedDate": "2026-08-05T00:25:17.000Z",
-    "domain": "logging",
-    "topics": [
-      "loki",
-      "logging",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "loki",
-    "releaseVersion": "v3.6.14"
-  },
-  {
-    "id": "pulumi-61f835cadc92",
-    "title": "pkg/v3.256.0: Changelog and go.mod updates for v3.256.0 (#24195)",
-    "summary": "Co-authored-by: github-actions github-actions@github.com",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.256.0",
-    "publishedDate": "2026-08-04T20:17:53.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.256.0"
-  },
-  {
-    "id": "pulumi-f45bd5463bf0",
-    "title": "v3.256.0",
-    "summary": "3.256.0 (2026-08-04) Features [cli] Add --ignore-protect flag to pulumi up, pulumi preview and pulumi destroy to allow deleting protected resources without unprotecting them in the state first #24053 [cli/env] Add an optional --export-env-vars flag to the env provider {aws,azure,gcp}-login commands to also set the standard SDK environment variables referencing the login outputs #24055 [cli] Add a --server flag to pulumi package add, publish, get-schema, get-mapping, gen-sdk, info and pulumi sche",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.256.0",
-    "publishedDate": "2026-08-04T19:34:54.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.256.0"
-  },
-  {
-    "id": "pulumi-0ff871cb1935",
-    "title": "sdk/v3.256.0: Depend on pulumi/pulumi-hcl v0.13.0 (#24170)",
-    "summary": "This needs to be a manual version bump since this is the first version hosted in the pulumi org. Future version bumps should be handled by renovate.",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.256.0",
-    "publishedDate": "2026-08-04T17:56:55.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.256.0"
   },
   {
     "id": "opentelemetry-collector-6dff13a5090a",

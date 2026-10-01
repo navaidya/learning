@@ -1,5 +1,43 @@
 [
   {
+    "id": "langfuse-53cc79c9fb2f",
+    "title": "v4.49.0",
+    "summary": "What's Changed Features feat(web): add org-level ingestion overview tRPC route by @hassiebp in #18069 feat(evals): track the evaluator onboarding funnel in PostHog by @Steffen911 in #18075 feat(web): Org-level analytics view by @bezbac in #18082 feat(web): add feature activation counts to org ingestion overview by @hassiebp in #18084 feat(web): Improve org-level analytics view by @bezbac in #18090 feat(sessions): Add tool filters to session table by @bezbac in #17884 Fixes / Improvements fix(org",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.49.0",
+    "publishedDate": "2026-10-01T09:58:56.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.49.0"
+  },
+  {
+    "id": "practical-ai-9f5705c70fed",
+    "title": "Open models and the future of Physical AI with NVIDIA",
+    "summary": "As AI moves beyond the cloud and into robots, vehicles, and other physical systems, new approaches to models, simulation, and inference are emerging. Daniel and Chris are joined by Ming-Yu Liu, Vice President of Cosmos Lab at NVIDIA, who shares his perspective on open models, world models, and the future of physical AI. They explore why open models matter for innovation, how world models can help AI understand and simulate the physical world, and what it could take to build increasingly capable ",
+    "source": "Practical AI",
+    "sourceId": "practical-ai",
+    "url": "https://share.transistor.fm/s/217445d3",
+    "publishedDate": "2026-10-01T09:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "podcast",
+      "agent-development",
+      "agentic-operations"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "phoenix-b3abefcad414",
     "title": "@arizeai/phoenix-mcp@4.3.15",
     "summary": "Patch Changes Updated dependencies [f8ae2fc] @arizeai/phoenix-client@7.16.0",
