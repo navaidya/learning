@@ -1,5 +1,88 @@
 [
   {
+    "id": "phoenix-b3abefcad414",
+    "title": "@arizeai/phoenix-mcp@4.3.15",
+    "summary": "Patch Changes Updated dependencies [f8ae2fc] @arizeai/phoenix-client@7.16.0",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-mcp%404.3.15",
+    "publishedDate": "2026-09-30T23:35:39.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "4.3.15"
+  },
+  {
+    "id": "phoenix-424df350dee6",
+    "title": "@arizeai/phoenix-cli@1.18.7",
+    "summary": "Patch Changes Updated dependencies [f8ae2fc] @arizeai/phoenix-client@7.16.0",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-cli%401.18.7",
+    "publishedDate": "2026-09-30T23:35:36.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "1.18.7"
+  },
+  {
+    "id": "phoenix-16fa067d3e67",
+    "title": "@arizeai/phoenix-client@7.16.0",
+    "summary": "Minor Changes f8ae2fc: Add listProjectAnnotationConfigs, assignProjectAnnotationConfig, unassignProjectAnnotationConfig, and setProjectAnnotationConfigs helpers to the projects subpath for managing which annotation configs a project uses.",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-client%407.16.0",
+    "publishedDate": "2026-09-30T23:35:33.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "7.16.0"
+  },
+  {
+    "id": "phoenix-d1bc69a021eb",
+    "title": "arize-phoenix: v20.18.0",
+    "summary": "20.18.0 (2026-09-30) Features tracing: show eval results in the trace tree (#16619) (2516fdb)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.18.0",
+    "publishedDate": "2026-09-30T23:04:10.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v20.18.0"
+  },
+  {
     "id": "phoenix-3baeab40d8d1",
     "title": "arize-phoenix: v20.17.0",
     "summary": "20.17.0 (2026-09-30) Features agents: mark bash tool spans as errors on non-zero exit codes (#16597) (cd0512e) graphql: add sort and sequenceNumbers to Dataset.experiments (#16563) (9c14c5a) rest: add sequence_number, sort_dir, and sequence_numbers to list_experiments (#16574) (305e1a9) Bug Fixes agents: leave the user out of the internal GraphQL scope when no one is logged in (#16457) (839485e) cap graphql-core below 3.3 (#16641) (097750c) cost: score patterns that open with a group or end in a",
