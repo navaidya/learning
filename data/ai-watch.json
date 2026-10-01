@@ -1,5 +1,74 @@
 [
   {
+    "id": "phoenix-252ef2b55127",
+    "title": "arize-phoenix: v20.19.0",
+    "summary": "20.19.0 (2026-10-01) Features datagen: send each recorded application to its own project (#16682) (d99a4db) tracing: add the DECISION span kind across the platform (#16657) (43d1a54) Bug Fixes honor external resources flag for WASM and UI (#16639) (7a71a21) Documentation remove legacy evaluation cookbooks (#16651) (4506880)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.19.0",
+    "publishedDate": "2026-10-01T22:59:10.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v20.19.0"
+  },
+  {
+    "id": "cncf-video-310a6ef280b5",
+    "title": "What's new in gRPC Observability - Eric Anderson & Madhav Bissa, Google",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=wCWmpQoa6qo",
+    "publishedDate": "2026-10-01T21:46:42.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-4ff2f492fa6c",
+    "title": "Open Source Projects and AI Security - Eric Anderson & Nick Galloway, Google",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=ene0RUe3i6U",
+    "publishedDate": "2026-10-01T21:46:39.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-db20d597967c",
+    "title": "A Lightweight gRPC-Compatible Implementation for Sidecars - Tim Burks, Agent IO",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=OAe8pB6VVBE",
+    "publishedDate": "2026-10-01T21:46:39.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "langfuse-53cc79c9fb2f",
     "title": "v4.49.0",
     "summary": "What's Changed Features feat(web): add org-level ingestion overview tRPC route by @hassiebp in #18069 feat(evals): track the evaluator onboarding funnel in PostHog by @Steffen911 in #18075 feat(web): Org-level analytics view by @bezbac in #18082 feat(web): add feature activation counts to org ingestion overview by @hassiebp in #18084 feat(web): Improve org-level analytics view by @bezbac in #18090 feat(sessions): Add tool filters to session table by @bezbac in #17884 Fixes / Improvements fix(org",

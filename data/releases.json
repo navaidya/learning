@@ -1,5 +1,13 @@
 [
   {
+    "project": "opentofu",
+    "version": "v1.12.7",
+    "publishedDate": "2026-10-01T18:40:21.000Z",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.7",
+    "sourceId": "opentofu",
+    "title": "v1.12.7"
+  },
+  {
     "project": "pulumi",
     "version": "v3.267.0",
     "publishedDate": "2026-10-01T12:34:24.000Z",
@@ -38,14 +46,6 @@
     "url": "https://www.cncf.io/blog/2026/09/30/argocon-north-america-2026-what-to-expect-as-the-argo-community-looks-toward-cd-4-0/",
     "sourceId": "cncf",
     "title": "ArgoCon North America 2026: What to expect as the Argo community looks toward CD 4.0"
-  },
-  {
-    "project": "opentofu",
-    "version": "v1.13.0",
-    "publishedDate": "2026-09-30T13:57:49.000Z",
-    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0",
-    "sourceId": "opentofu",
-    "title": "v1.13.0"
   },
   {
     "project": "tempo",

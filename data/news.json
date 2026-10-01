@@ -1,5 +1,78 @@
 [
   {
+    "id": "cncf-c6d87a2698f7",
+    "title": "KubeCon + CloudNativeCon North America 2026: Build your SRE journey",
+    "summary": "If your day starts with questions about reliability, performance, observability, incidents, scaling, or what is going to break next, there is no shortage of places to spend your time at KubeCon + CloudNativeCon North America 2026....",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/01/kubecon-cloudnativecon-north-america-2026-build-your-sre-journey/",
+    "publishedDate": "2026-10-01T19:34:20.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "opentofu-4146d7c5be1b",
+    "title": "v1.12.7",
+    "summary": "SECURITY ADVISORIES: When using either a remote-exec or file provisioner to connect to an attacker-controlled SSH server, the server could previously deadlock the connection by sending certain unexpected packet types. (#4551) This addresses the upstream Go security advisories CVE-2026-78662 and CVE-2026-56855.",
+    "source": "OpenTofu",
+    "sourceId": "opentofu",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.7",
+    "publishedDate": "2026-10-01T18:40:21.000Z",
+    "domain": "terraform",
+    "topics": [
+      "opentofu",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentofu",
+    "releaseVersion": "v1.12.7"
+  },
+  {
+    "id": "opentofu-240da70e8bd5",
+    "title": "v1.13.1",
+    "summary": "BUG FIXES: tofu show -json <planfile> now works again when ephemeral resources are present in the configuration. (4623). Ephemeral output values are now always re-evaluated during the apply phase, instead of sometimes using stale values from the planning phase. (#4582)",
+    "source": "OpenTofu",
+    "sourceId": "opentofu",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.1",
+    "publishedDate": "2026-10-01T17:15:15.000Z",
+    "domain": "terraform",
+    "topics": [
+      "opentofu",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentofu",
+    "releaseVersion": "v1.13.1"
+  },
+  {
+    "id": "openai-a80484c2d584",
+    "title": "How Albertsons Companies is reimagining retail from the inside out",
+    "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/albertsons-reimagining-retail",
+    "publishedDate": "2026-10-01T16:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "pulumi-7a9ea837ead8",
     "title": "pkg/v3.267.0: Changelog and go.mod updates for v3.267.0 (#24971)",
     "summary": "Co-authored-by: github-actions github-actions@github.com",
@@ -8810,80 +8883,6 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes-releases",
     "releaseVersion": "v1.38.0-alpha.0"
-  },
-  {
-    "id": "vector-e121d691c0b3",
-    "title": "vdev-v0.3.12",
-    "summary": "feat(sinks): validate sink structure before build (#25959)",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.12",
-    "publishedDate": "2026-08-05T20:39:50.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector"
-  },
-  {
-    "id": "terraform-b0a6b52c470e",
-    "title": "v1.16.0-beta2",
-    "summary": "1.16.0-beta2 (August 05, 2026) NEW FEATURES: Terraform now stores planned private data for providers, allowing provider-specific state to be preserved across plan and apply. (#37986) terraform_data: The new store block can hold ephemeral and sensitive values across plan and apply. (#38298) Providers can now use nested blocks as computed values (#38305) import: import blocks inside modules are now supported. (#38352) Terraform is now available as a pre-built binary for Linux s390x (zLinux). (#383",
-    "source": "Terraform",
-    "sourceId": "terraform",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-beta2",
-    "publishedDate": "2026-08-05T18:07:50.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "terraform",
-    "releaseVersion": "v1.16.0-beta2"
-  },
-  {
-    "id": "grafana-d19626ed74c6",
-    "title": "How to monitor HCP Terraform and Terraform Enterprise with Grafana Cloud",
-    "summary": "When a Terraform run feels slow, most teams are flying blind. The run log in HCP Terraform tells you what happened, but not what took so long—and it certainly doesn't roll up across hundreds of runs so you can spot a trend.The good news: when you run your plans and apply on HCP Terraform or Terraform Enterprise self-hosted Terraform agents, each agent already emits OpenTelemetry data—distributed traces for every run phase and granular runtime metrics—and it writes structured logs to stdout. You ",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/how-to-monitor-hcp-terraform-and-terraform-enterprise-with-grafana-cloud/",
-    "publishedDate": "2026-08-05T17:01:04.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "cncf-fc4f7ceae03f",
-    "title": "K8gb becomes a CNCF incubating project",
-    "summary": "The CNCF Technical Oversight Committee (TOC) has voted to accept Kubernetes Global Balancer (K8gb) as a CNCF incubating project. About K8gb K8gb is an open source, cloud native Global Server Load Balancing (GSLB) solution designed specifically...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/announcements/2026/08/05/k8gb-becomes-a-cncf-incubating-project/",
-    "publishedDate": "2026-08-05T16:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "cncf-38c9f07af113",
