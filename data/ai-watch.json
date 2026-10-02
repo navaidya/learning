@@ -1,5 +1,25 @@
 [
   {
+    "id": "langfuse-70a78645531a",
+    "title": "v4.50.0",
+    "summary": "What's Changed Features feat(web): show error id in tRPC error toast and include it in issue reports by @niklassemmler in #17427 feat(evals): add facet type, built-in protection, and rule idle time by @LysanderKie in #18144 Fixes / Improvements feat(evals): show seven-day execution health in evaluator status by @wochinge in #18113 feat(web): show view owner name or email on avatar hover by @nimarb in #18032 fix(web): show full metadata JSONPath values in the modern session header by @nimarb in #",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.50.0",
+    "publishedDate": "2026-10-02T10:13:55.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.50.0"
+  },
+  {
     "id": "pydantic-ai-da30c170e6a3",
     "title": "v2.53.0 (2026-10-01)",
     "summary": "🛡️ Security This release fixes one security issue in ConcurrencyLimitedModel. See the advisory for full details and affected versions. GHSA-6fqq-452j-qhrp (high): a streamed request through ConcurrencyLimitedModel or limit_model_concurrency could keep its concurrency slot when the slot was released on a different task than the one that acquired it: after an early exit (the consumer stopped iterating, raised, or was cancelled), and also after fully consuming stream_text() with its default deboun",
