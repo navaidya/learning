@@ -1,5 +1,104 @@
 [
   {
+    "id": "vector-2ee15c98da76",
+    "title": "vdev-v0.3.26",
+    "summary": "No content.",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.26",
+    "publishedDate": "2026-10-02T20:31:16.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
+    "id": "cilium-ba44ca6546f9",
+    "title": "1.21.0-pre.3",
+    "summary": "Summary of Changes Major Changes: LB IPAM: introduce the lbipam.cilium.io/sharing-permit-different-pods annotation to allow sharing an IP between services with externalTrafficPolicy=Local that select different pods. The annotation must be set to \"true\" on all services in the sharing group and is intended for deployments that steer traffic outside Cilium's built-in announcers. (#45819, @lexfrei) Minor Changes: Add Helm values to configure Prometheus metrics container port names for the agent, ope",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.21.0-pre.3",
+    "publishedDate": "2026-10-02T19:04:57.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.21.0-pre.3"
+  },
+  {
+    "id": "cilium-2d9d46b5ab89",
+    "title": "1.21.0-pre.3",
+    "summary": "Release v1.21.0-pre.3",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/1.21.0-pre.3",
+    "publishedDate": "2026-10-02T18:34:41.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.21.0-pre.3"
+  },
+  {
+    "id": "cncf-5b30e5605f19",
+    "title": "KubeCon + CloudNativeCon North America 2026: Join the cloud native community at OpenTofu Day",
+    "summary": "Most of KubeCon + CloudNativeCon assumes the cluster already exists. OpenTofu Day covers everything that has to be provisioned before and around it: cloud accounts, networking, managed services, and the clusters themselves. On November 9, OpenTofu...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/02/kubecon-cloudnativecon-north-america-2026-join-the-cloud-native-community-at-opentofu-day/",
+    "publishedDate": "2026-10-02T15:22:44.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "opentofu",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "prometheus-43c41ecf951c",
+    "title": "3.13.4 / 2026-09-29",
+    "summary": "[SECURITY] Bump google.golang.org/grpc to v1.83.1 to fix HTTP/2 DATA frame fragmentation memory exhaustion (GO-2026-6348). #19834 [SECURITY] UI: Update vulnerable npm dependencies. #19834 [BUGFIX] Agent: Ignore unknown WAL record types to allow rolling back from newer versions. #19814 [BUGFIX] Federation: Fix corruption of float native histograms. #19679 [BUGFIX] Scrape: Fix failing scrapes of protobuf float histograms with zero sample, zero and bucket counts, such as the result of recording rat",
+    "source": "Prometheus",
+    "sourceId": "prometheus",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.13.4",
+    "publishedDate": "2026-10-02T14:46:21.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "promql",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "prometheus",
+    "releaseVersion": "3.13.4"
+  },
+  {
     "id": "terraform-54e4881a0620",
     "title": "v1.16.5",
     "summary": "1.16.5 (September 30, 2026) BUG FIXES: Fixed a crash that happens when a tainted instance state is seen without a valid status (#39287) resource-identity: fixed an issue where resource identity could be nil during delete (#39285)",
@@ -52,6 +151,25 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
+  },
+  {
+    "id": "openai-a97398f76ee5",
+    "title": "Chatham scales its capital markets expertise with OpenAI",
+    "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/chatham-financial",
+    "publishedDate": "2026-10-02T00:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "openai"
   },
   {
     "id": "cncf-c5535e7610c1",
@@ -472,26 +590,6 @@
     "releaseRelated": true,
     "releaseProject": "prometheus",
     "releaseVersion": "v0.313.4"
-  },
-  {
-    "id": "prometheus-43c41ecf951c",
-    "title": "v3.13.4",
-    "summary": "v3.13.4",
-    "source": "Prometheus",
-    "sourceId": "prometheus",
-    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.13.4",
-    "publishedDate": "2026-09-29T13:20:28.000Z",
-    "domain": "prometheus",
-    "topics": [
-      "prometheus",
-      "promql",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "prometheus",
-    "releaseVersion": "v3.13.4"
   },
   {
     "id": "backstage-5477547b5a0f",
@@ -8685,43 +8783,6 @@
     "releaseRelated": false
   },
   {
-    "id": "openai-1ea3eea3d9a5",
-    "title": "How Zapier transformed core marketing processes with ChatGPT Work",
-    "summary": "The enterprise marketing team at Zapier uses ChatGPT Work to reduce the number of drop-offs in its lead funnel, build campaign assets, and automate reporting.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/zapier",
-    "publishedDate": "2026-08-10T00:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "robusta-65dd25a9ebdc",
-    "title": "0.47.0-alpha",
-    "summary": "What's Changed FRO-211 / ROB-3946 Fix corrupted Alerts Summary table when the digest is too long by @alonelish in #2123 ROB-834 Add F5 Distributed Cloud page to Send Events API docs by @arikalon1 in #2134 ROB-834 Add workflow trigger action to fire Robusta platform workflows by @arikalon1 in #2133 Full Changelog: 0.46.0...0.47.0-alpha",
-    "source": "Robusta",
-    "sourceId": "robusta",
-    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.47.0-alpha",
-    "publishedDate": "2026-08-09T18:28:18.000Z",
-    "domain": "aiops",
-    "topics": [
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "robusta",
-    "releaseVersion": "0.47.0-alpha"
-  },
-  {
     "id": "holmesgpt-c9f21e1a8a34",
     "title": "0.39.0-alpha",
     "summary": "What's Changed ROB-856 Add Atlassian Rovo MCP integration documentation by @Avi-Robusta in #2373 ROB-855 pulling skills with github app credentials by @Avi-Robusta in #2371 Full Changelog: 0.38.2...0.39.0-alpha",
@@ -8744,47 +8805,6 @@
     "releaseVersion": "0.39.0-alpha"
   },
   {
-    "id": "argo-78a96c3910fa",
-    "title": "v3.5.0",
-    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.0/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.0/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container imag",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.0",
-    "publishedDate": "2026-08-07T15:56:38.000Z",
-    "domain": "gitops",
-    "topics": [
-      "gitops",
-      "argo-cd",
-      "argo",
-      "argocd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "v3.5.0"
-  },
-  {
-    "id": "flux-e0dfb15ad298",
-    "title": "v2.9.4",
-    "summary": "Highlights Flux v2.9.4 is a patch release that ships various fixes to the Flux controllers, covering source-watcher tarball extraction and glob expansion limits, the refspecs accepted by ImageUpdateAutomation, the HTTP request limits of the notification-controller servers, and Helm repository index loading, OCI chart digest pinning, Bucket error handling and GCS static authentication in source-controller. On the CLI side, flux migrate -f now supports migrating repositories to Flux 2.9. Users are",
-    "source": "Flux",
-    "sourceId": "flux",
-    "url": "https://github.com/fluxcd/flux2/releases/tag/v2.9.4",
-    "publishedDate": "2026-08-07T14:32:26.000Z",
-    "domain": "gitops",
-    "topics": [
-      "flux",
-      "gitops",
-      "cd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "flux",
-    "releaseVersion": "v2.9.4"
-  },
-  {
     "id": "cncf-13ca7e2d627a",
     "title": "Does Kubernetes DRA Replace HAMi?",
     "summary": "Projects that want to share a GPU on Kubernetes have to work around an API instead of with it. The device plugin interface could count devices, and that was the whole vocabulary: nvidia.com/gpu: 1. It meant one...",
@@ -8800,24 +8820,6 @@
     ],
     "importance": "high",
     "architectureShift": true,
-    "releaseRelated": false
-  },
-  {
-    "id": "cncf-05d083a904de",
-    "title": "Shadow AI in CI/CD: Threat-modeling the path from developer laptop to Kubernetes",
-    "summary": "Artificial intelligence is becoming part of daily software delivery, often before it becomes part of the security architecture. That gap has a name: Shadow AI. It is any AI tool, model, agent, extension, or integration used...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/08/07/shadow-ai-in-ci-cd-threat-modeling-the-path-from-developer-laptop-to-kubernetes/",
-    "publishedDate": "2026-08-07T11:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
     "releaseRelated": false
   },
   {
