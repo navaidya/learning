@@ -1,5 +1,25 @@
 [
   {
+    "id": "pydantic-ai-da30c170e6a3",
+    "title": "v2.53.0 (2026-10-01)",
+    "summary": "🛡️ Security This release fixes one security issue in ConcurrencyLimitedModel. See the advisory for full details and affected versions. GHSA-6fqq-452j-qhrp (high): a streamed request through ConcurrencyLimitedModel or limit_model_concurrency could keep its concurrency slot when the slot was released on a different task than the one that acquired it: after an early exit (the consumer stopped iterating, raised, or was cancelled), and also after fully consuming stream_text() with its default deboun",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.53.0",
+    "publishedDate": "2026-10-02T02:53:08.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.53.0"
+  },
+  {
     "id": "phoenix-252ef2b55127",
     "title": "arize-phoenix: v20.19.0",
     "summary": "20.19.0 (2026-10-01) Features datagen: send each recorded application to its own project (#16682) (d99a4db) tracing: add the DECISION span kind across the platform (#16657) (43d1a54) Bug Fixes honor external resources flag for WASM and UI (#16639) (7a71a21) Documentation remove legacy evaluation cookbooks (#16651) (4506880)",

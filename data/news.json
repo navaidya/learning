@@ -1,5 +1,57 @@
 [
   {
+    "id": "cncf-c8f853775383",
+    "title": "KubeCon + CloudNativeCon North America 2026: From user to contributor to maintainer",
+    "summary": "You do not need “maintainer” in your job title to start following the maintainer journey at KubeCon + CloudNativeCon North America 2026. You might be an SRE who has spent years operating a CNCF project in...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/01/kubecon-cloudnativecon-north-america-2026-from-user-to-contributor-to-maintainer/",
+    "publishedDate": "2026-10-02T00:13:19.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-63665b1bdcb3",
+    "title": "KubeCon + CloudNativeCon North America 2026: Build your infrastructure engineer journey",
+    "summary": "Infrastructure engineers sit at one of the busiest intersections in cloud native. Kubernetes clusters need to scale. Networks need to connect them. Storage needs to follow workloads. Platforms need to make infrastructure usable. Security needs to...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/01/kubecon-cloudnativecon-north-america-2026-build-your-infrastructure-engineer-journey/",
+    "publishedDate": "2026-10-02T00:06:46.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-c5535e7610c1",
+    "title": "KubeCon + CloudNativeCon North America 2026: Build your application developer journey",
+    "summary": "Cloud native development increasingly means thinking beyond the application itself. How will it be built? How will it be deployed? How much infrastructure should developers need to understand? Where should platforms remove complexity? And what changes...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/01/kubecon-cloudnativecon-north-america-2026-build-your-application-developer-journey/",
+    "publishedDate": "2026-10-01T23:52:52.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "cncf-c6d87a2698f7",
     "title": "KubeCon + CloudNativeCon North America 2026: Build your SRE journey",
     "summary": "If your day starts with questions about reliability, performance, observability, incidents, scaling, or what is going to break next, there is no shortage of places to spend your time at KubeCon + CloudNativeCon North America 2026....",
@@ -8780,64 +8832,6 @@
     "topics": [
       "cncf",
       "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "loki-2b0909293874",
-    "title": "v3.6.15",
-    "summary": "3.6.15 (2026-08-05) Bug Fixes queryrange: Preserve sketch in MergeLabels [release-3.6.x] (#23771) (20087cd)",
-    "source": "Grafana Loki",
-    "sourceId": "loki",
-    "url": "https://github.com/grafana/loki/releases/tag/v3.6.15",
-    "publishedDate": "2026-08-06T09:59:23.000Z",
-    "domain": "logging",
-    "topics": [
-      "loki",
-      "logging",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "loki",
-    "releaseVersion": "v3.6.15"
-  },
-  {
-    "id": "loki-94318d7b99b1",
-    "title": "v3.7.6",
-    "summary": "3.7.6 (2026-08-05) Bug Fixes queryrange: Preserve sketch in MergeLabels [release-3.7.x] (#23770) (d48329d)",
-    "source": "Grafana Loki",
-    "sourceId": "loki",
-    "url": "https://github.com/grafana/loki/releases/tag/v3.7.6",
-    "publishedDate": "2026-08-06T09:42:29.000Z",
-    "domain": "logging",
-    "topics": [
-      "loki",
-      "logging",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "loki",
-    "releaseVersion": "v3.7.6"
-  },
-  {
-    "id": "opentelemetry-8dbafaa6fcb5",
-    "title": "Metric cardinality limits in OpenTelemetry: a practical guide",
-    "summary": "OpenTelemetry metrics are designed to be safe to use in production. One part of that safety is the cardinality limit in the metrics SDK. The limit protects your process from unbounded memory growth when a metric receives too many unique attribute combinations. That protection is useful, but it has a consequence many users do not expect: when a metric stream overflows, the total value remains correct, while queries that filter or group by attributes can undercount. This can affect dashboards, ser",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/cardinality-limits-in-opentelemetry/",
-    "publishedDate": "2026-08-06T07:43:47.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
     ],
     "importance": "medium",
     "architectureShift": false,
