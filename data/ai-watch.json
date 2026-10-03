@@ -1,5 +1,25 @@
 [
   {
+    "id": "pydantic-ai-2727a5f26502",
+    "title": "v2.54.0 (2026-10-02)",
+    "summary": "What's Changed ⚠️ Compatibility Notes Handle draft-7 list-form items in JsonSchemaTransformer, TestModel and Mistral streamed output, and make TestModel accept boolean subschemas and cap prefixItems at maxItems by @dsfaccini in #9560 Fix ImageGeneration under FallbackModel and dataclasses.replace, and compare Embedder by identity by @dsfaccini in #9477 Refuse a second durable execution engine on an agent before either binds by @DouweM in #9391 Make wrap_* hooks enclose complete stage lifecycles ",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.54.0",
+    "publishedDate": "2026-10-03T03:21:28.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.54.0"
+  },
+  {
     "id": "pydantic-ai-da30c170e6a3",
     "title": "v2.53.0 (2026-10-01)",
     "summary": "🛡️ Security This release fixes one security issue in ConcurrencyLimitedModel. See the advisory for full details and affected versions. GHSA-6fqq-452j-qhrp (high): a streamed request through ConcurrencyLimitedModel or limit_model_concurrency could keep its concurrency slot when the slot was released on a different task than the one that acquired it: after an early exit (the consumer stopped iterating, raised, or was cancelled), and also after fully consuming stream_text() with its default deboun",
