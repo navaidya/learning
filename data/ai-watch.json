@@ -1,5 +1,47 @@
 [
   {
+    "id": "langfuse-cc6c3fed7b47",
+    "title": "v4.51.0",
+    "summary": "What's Changed Features feat(mcp): support decision-model evaluators by @wochinge in #18166 feat(experiments): annotate directly from comparison grid by @marliessophie in #17990 feat(audit-logs): log actor info for audited actions and deletions by @pratimapatel2008 in #18107 feat(web): pin evaluator actions during table scrolling by @wochinge in #18163 feat(ai-gateway): correlate requests with a gateway request ID by @hassiebp in #18052 feat(skills): unify file and folder uploads by @tobi12345 i",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.51.0",
+    "publishedDate": "2026-10-05T15:47:49.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.51.0"
+  },
+  {
+    "id": "falco-babb841f6471",
+    "title": "0.45.1-rc1",
+    "summary": "fix(chart): update container plugin to 0.7.5 Signed-off-by: Leonardo Grasso <me@leonardograsso.com>",
+    "source": "Falco",
+    "sourceId": "falco",
+    "url": "https://github.com/falcosecurity/falco/releases/tag/0.45.1-rc1",
+    "publishedDate": "2026-10-05T07:54:26.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "infrastructure-security",
+      "release",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "falco",
+    "releaseVersion": "0.45.1-rc1"
+  },
+  {
     "id": "pydantic-ai-2727a5f26502",
     "title": "v2.54.0 (2026-10-02)",
     "summary": "What's Changed ⚠️ Compatibility Notes Handle draft-7 list-form items in JsonSchemaTransformer, TestModel and Mistral streamed output, and make TestModel accept boolean subschemas and cap prefixItems at maxItems by @dsfaccini in #9560 Fix ImageGeneration under FallbackModel and dataclasses.replace, and compare Embedder by identity by @dsfaccini in #9477 Refuse a second durable execution engine on an agent before either binds by @DouweM in #9391 Make wrap_* hooks enclose complete stage lifecycles ",
