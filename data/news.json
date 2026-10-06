@@ -1,5 +1,38 @@
 [
   {
+    "id": "cncf-14b483a6b87c",
+    "title": "Kubelet watches inodes. Just not until it’s an emergency.",
+    "summary": "A worker node pages with NodeFilesystemFilesFillingUp. It’s on course to run out of inodes. You check the disk first, because that’s what everyone checks first, and it reads 83% used: 103G used, 22G available. Then you...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/05/kubelet-watches-inodes-just-not-until-its-an-emergency/",
+    "publishedDate": "2026-10-05T21:27:03.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "kubernetes-5af07d1ea056",
+    "title": "Scaling Kubernetes Workloads with Node Swap",
+    "summary": "Memory is often the first hard limit a Kubernetes cluster hits. Nodes run out of RAM long before they run out of CPU, and the new wave of agentic AI workloads makes this worse. These workloads demand large memory footprints to start up and run untrusted code, then sit idle waiting for the next prompt. That idle but resident memory is expensive, and it caps how many pods a node can hold. This is where swap helps. Kubernetes support for running nodes with swap enabled reached General Availability ",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/10/05/scaling-kubernetes-workloads-with-node-swap/",
+    "publishedDate": "2026-10-05T18:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "vector-2ee15c98da76",
     "title": "vdev-v0.3.26",
     "summary": "No content.",
@@ -8726,23 +8759,6 @@
     "releaseProject": "loki"
   },
   {
-    "id": "cncf-b47694aa9c13",
-    "title": "CNCF Reveals KubeCon + CloudNativeCon North America 2026 Schedule, Adds New AI Inference + Agentic Track",
-    "summary": "Flagship event returns November 9–12 with sessions on production AI, platform engineering and cloud native security Key Highlights SAN FRANCISCO, Aug. 7, 2026 – The Cloud Native Computing Foundation® (CNCF®), which builds sustainable ecosystems for cloud...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/announcements/2026/08/10/cncf-reveals-kubecon-cloudnativecon-north-america-2026-schedule-adds-new-ai-inference-agentic-track/",
-    "publishedDate": "2026-08-10T16:00:00.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "holmesgpt-9557df72eecf",
     "title": "0.39.0",
     "summary": "What's Changed ROB-856 Add Atlassian Rovo MCP integration documentation by @Avi-Robusta in #2373 ROB-855 pulling skills with github app credentials by @Avi-Robusta in #2371 Weekly Benchmark Results 2026-08-05_12-14 by @github-actions[bot] in #2357 ROB-853: support GitHub App installed on multiple orgs in github MCP addon by @Avi-Robusta in #2374 Full Changelog: 0.38.2...0.39.0",
@@ -8763,24 +8779,6 @@
     "releaseRelated": true,
     "releaseProject": "holmesgpt",
     "releaseVersion": "0.39.0"
-  },
-  {
-    "id": "openai-61282b7420ed",
-    "title": "OpenAI’s letter to Governor Abbott on responsible AI infrastructure in Texas",
-    "summary": "OpenAI sent Governor Greg Abbott a letter outlining its commitment to responsible AI infrastructure in Texas. The letter supports reliable, transparent growth that benefits Texans.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/responsible-ai-infrastructure-texas",
-    "publishedDate": "2026-08-10T14:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "holmesgpt-c9f21e1a8a34",

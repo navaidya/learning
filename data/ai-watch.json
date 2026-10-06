@@ -1,5 +1,25 @@
 [
   {
+    "id": "langgraph-0c828bcfd342",
+    "title": "langgraph==1.2.13",
+    "summary": "Changes since 1.2.12 fix(langgraph): fork before replaying an update checkpoint the thread moved past (#9170) fix(langgraph): keep an update_state on an older checkpoint out of its other branches (#9165) fix(langgraph): keep DeltaChannel counters on every update_state path (#9142) release(langgraph): 1.2.13 (#9205) fix(langgraph): don't walk history for a DeltaChannel that was never written (#9141) fix(langgraph): don't replay an abandoned branch into a DeltaChannel fork (#8548) chore(deps): bum",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.13",
+    "publishedDate": "2026-10-05T17:51:32.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "1.2.13"
+  },
+  {
     "id": "langfuse-cc6c3fed7b47",
     "title": "v4.51.0",
     "summary": "What's Changed Features feat(mcp): support decision-model evaluators by @wochinge in #18166 feat(experiments): annotate directly from comparison grid by @marliessophie in #17990 feat(audit-logs): log actor info for audited actions and deletions by @pratimapatel2008 in #18107 feat(web): pin evaluator actions during table scrolling by @wochinge in #18163 feat(ai-gateway): correlate requests with a gateway request ID by @hassiebp in #18052 feat(skills): unify file and folder uploads by @tobi12345 i",
