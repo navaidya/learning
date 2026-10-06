@@ -1,19 +1,43 @@
 [
   {
+    "project": "argo",
+    "version": "v3.3.15",
+    "publishedDate": "2026-10-06T21:39:55.000Z",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.15",
+    "sourceId": "argo",
+    "title": "v3.3.15"
+  },
+  {
+    "project": "gateway-api",
+    "version": "v1.6.3",
+    "publishedDate": "2026-10-06T20:35:29.000Z",
+    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.3",
+    "sourceId": "gateway-api",
+    "title": "v1.6.3"
+  },
+  {
+    "project": "backstage",
+    "version": "v1.56.0-next.2",
+    "publishedDate": "2026-10-06T19:39:05.000Z",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.56.0-next.2",
+    "sourceId": "backstage",
+    "title": "v1.56.0-next.2"
+  },
+  {
+    "project": "kubernetes",
+    "version": "v1.31",
+    "publishedDate": "2026-10-06T18:00:00.000Z",
+    "url": "https://kubernetes.io/blog/2026/10/06/kubernetes-cgroups-v2-shift/",
+    "sourceId": "kubernetes",
+    "title": "The Shift to cgroup v2 in Kubernetes: What You Need to Know"
+  },
+  {
     "project": "opentelemetry",
     "version": "3.0",
     "publishedDate": "2026-10-06T16:43:08.000Z",
     "url": "https://opentelemetry.io/blog/2026/java-agent-3.0-preview/",
     "sourceId": "opentelemetry",
     "title": "The OpenTelemetry Java agent 3.0 is almost here — preview it today"
-  },
-  {
-    "project": "gateway-api",
-    "version": "v1.6.3",
-    "publishedDate": "2026-10-06T15:00:41.000Z",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.3",
-    "sourceId": "gateway-api",
-    "title": "v1.6.3: chore: Release 1.6.3 (#5335)"
   },
   {
     "project": "vector",
@@ -104,14 +128,6 @@
     "title": "v3.1.0"
   },
   {
-    "project": "backstage",
-    "version": "v1.55.3",
-    "publishedDate": "2026-09-29T14:48:15.000Z",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.55.3",
-    "sourceId": "backstage",
-    "title": "v1.55.3"
-  },
-  {
     "project": "kubernetes-releases",
     "version": "v1.38.0-alpha.1",
     "publishedDate": "2026-09-29T08:46:22.000Z",
@@ -160,14 +176,6 @@
     "title": "v2.4.2"
   },
   {
-    "project": "kubernetes",
-    "version": "v1.37",
-    "publishedDate": "2026-09-21T18:30:00.000Z",
-    "url": "https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/",
-    "sourceId": "kubernetes",
-    "title": "Kubernetes v1.37: Tracking When a PersistentVolumeClaim Was Last Used (Beta)"
-  },
-  {
     "project": "istio",
     "version": "1.31.1",
     "publishedDate": "2026-09-21T00:00:00.000Z",
@@ -198,14 +206,6 @@
     "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.42.0",
     "sourceId": "holmesgpt",
     "title": "0.42.0"
-  },
-  {
-    "project": "argo",
-    "version": "v3.6.0-rc1",
-    "publishedDate": "2026-09-16T16:11:35.000Z",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.0-rc1",
-    "sourceId": "argo",
-    "title": "v3.6.0-rc1"
   },
   {
     "project": "k8sgpt",
