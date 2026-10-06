@@ -1,5 +1,24 @@
 [
   {
+    "id": "pydantic-ai-ec5fb94d76bf",
+    "title": "CLAI2 bleeding",
+    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
+    "publishedDate": "2026-10-06T03:01:36.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai"
+  },
+  {
     "id": "langgraph-0c828bcfd342",
     "title": "langgraph==1.2.13",
     "summary": "Changes since 1.2.12 fix(langgraph): fork before replaying an update checkpoint the thread moved past (#9170) fix(langgraph): keep an update_state on an older checkpoint out of its other branches (#9165) fix(langgraph): keep DeltaChannel counters on every update_state path (#9142) release(langgraph): 1.2.13 (#9205) fix(langgraph): don't walk history for a DeltaChannel that was never written (#9141) fix(langgraph): don't replay an abandoned branch into a DeltaChannel fork (#8548) chore(deps): bum",
