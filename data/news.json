@@ -1,5 +1,158 @@
 [
   {
+    "id": "opentelemetry-ea7a7aa26971",
+    "title": "The OpenTelemetry Java agent 3.0 is almost here — preview it today",
+    "summary": "The 2.32.0 release of the OpenTelemetry Java agent is now out and serves as the release candidate for 3.0, which is targeted for October 2026. Some behavior may still change before 3.0, but you can preview the new behavior now, before it becomes the default. 3.0 changes telemetry, configuration, and instrumentation defaults. Database and code conventions become stable defaults, messaging adopts newer conventions that are still experimental, and some capture settings and instrumentation defaults ",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/java-agent-3.0-preview/",
+    "publishedDate": "2026-10-06T16:43:08.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry",
+    "releaseVersion": "3.0"
+  },
+  {
+    "id": "vector-651d625403fb",
+    "title": "vdev-v0.3.27",
+    "summary": "No content.",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.27",
+    "publishedDate": "2026-10-06T16:19:03.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
+    "id": "gateway-api-dff06d8a8b51",
+    "title": "v1.6.3: chore: Release 1.6.3 (#5335)",
+    "summary": "chore: Release 1.6.3 Signed-off-by: Flynn emissary@flynn.kodachi.com chore: Update the VAP bundle-version annotations, too Signed-off-by: Flynn emissary@flynn.kodachi.com chore: Clean up some trailing whitespace Signed-off-by: Flynn emissary@flynn.kodachi.com Signed-off-by: Flynn emissary@flynn.kodachi.com",
+    "source": "Gateway API",
+    "sourceId": "gateway-api",
+    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.3",
+    "publishedDate": "2026-10-06T15:00:41.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "gateway-api",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "gateway-api",
+    "releaseVersion": "v1.6.3"
+  },
+  {
+    "id": "gateway-api-49e59b3b6654",
+    "title": "conformance/v1.6.3: chore: Release 1.6.3 (#5335)",
+    "summary": "chore: Release 1.6.3 Signed-off-by: Flynn emissary@flynn.kodachi.com chore: Update the VAP bundle-version annotations, too Signed-off-by: Flynn emissary@flynn.kodachi.com chore: Clean up some trailing whitespace Signed-off-by: Flynn emissary@flynn.kodachi.com Signed-off-by: Flynn emissary@flynn.kodachi.com",
+    "source": "Gateway API",
+    "sourceId": "gateway-api",
+    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/conformance%2Fv1.6.3",
+    "publishedDate": "2026-10-06T15:00:41.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "gateway-api",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "gateway-api",
+    "releaseVersion": "v1.6.3"
+  },
+  {
+    "id": "vector-68905cd7b8d7",
+    "title": "v0.59.0",
+    "summary": "The COSE team is excited to announce version 0.59.0! 🚀 View release notes",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/v0.59.0",
+    "publishedDate": "2026-10-06T14:39:26.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector",
+    "releaseVersion": "v0.59.0"
+  },
+  {
+    "id": "cncf-fd461ae07814",
+    "title": "The 2026-2028 CNCF ambassador cohort",
+    "summary": "This year we accepted 58 new ambassadors and said goodbye to 48. All ambassadors have given their spare time to the ecosystem in one way or another, whether they are contributing to a CNCF project, preparing...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/06/2026-2028-cncf-ambassador-cohort/",
+    "publishedDate": "2026-10-06T11:33:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "opentelemetry-7b7ac304eddf",
+    "title": "Zero-code trace-log correlation with OBI",
+    "summary": "You get paged. A trace shows a request failing in one of your services, and you know the answer is in the logs — but which log lines belong to that request? If the service never adopted structured logging with trace context, the honest answer is: you grep by timestamp and hope. OpenTelemetry eBPF Instrumentation (OBI) can now add that missing trace context to the logs your services already write. Your applications don&rsquo;t change: no SDK, no logging-library configuration, no application rebui",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/obi-trace-log-correlation/",
+    "publishedDate": "2026-10-06T10:19:48.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "openai-9964af802e9c",
+    "title": "Advancing computer use with Ironclad",
+    "summary": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
+    "publishedDate": "2026-10-06T10:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "openai",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "cncf-14b483a6b87c",
     "title": "Kubelet watches inodes. Just not until it’s an emergency.",
     "summary": "A worker node pages with NodeFilesystemFilesFillingUp. It’s on course to run out of inodes. You check the disk first, because that’s what everyone checks first, and it reads 83% used: 103G used, 22G available. Then you...",
@@ -8605,44 +8758,6 @@
     "releaseVersion": "v1.19.0-rc.2"
   },
   {
-    "id": "kyverno-6c6263d33efa",
-    "title": "kyverno-chart-3.9.0-rc.2",
-    "summary": "kyverno-chart-3.9.0-rc.2",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-chart-3.9.0-rc.2",
-    "publishedDate": "2026-08-11T09:16:40.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno"
-  },
-  {
-    "id": "kyverno-7b1a2a7193d4",
-    "title": "kyverno-policies-chart-3.9.0-rc.2",
-    "summary": "kyverno-policies-chart-3.9.0-rc.2",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-policies-chart-3.9.0-rc.2",
-    "publishedDate": "2026-08-11T09:16:32.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno"
-  },
-  {
     "id": "prometheus-4f53ed2e1bbf",
     "title": "v0.314.0-rc.0",
     "summary": "v0.314.0-rc.0",
@@ -8663,63 +8778,6 @@
     "releaseVersion": "v0.314.0-rc.0"
   },
   {
-    "id": "robusta-2a883aefa74f",
-    "title": "0.47.0",
-    "summary": "What's Changed FRO-211 / ROB-3946 Fix corrupted Alerts Summary table when the digest is too long by @alonelish in #2123 ROB-834 Add F5 Distributed Cloud page to Send Events API docs by @arikalon1 in #2134 ROB-834 Add workflow trigger action to fire Robusta platform workflows by @arikalon1 in #2133 ROB-000 Bump Holmes chart from 0.38.0 to 0.39.0 by @Avi-Robusta in #2135 Full Changelog: 0.46.0...0.47.0",
-    "source": "Robusta",
-    "sourceId": "robusta",
-    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.47.0",
-    "publishedDate": "2026-08-11T05:38:41.000Z",
-    "domain": "aiops",
-    "topics": [
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "robusta",
-    "releaseVersion": "0.47.0"
-  },
-  {
-    "id": "cncf-aa89a3720737",
-    "title": "Learning Cloud-Native Engineering Beyond Tutorials Through LFX",
-    "summary": "I joined the LFX mentorship expecting to spend three months writing documentation. A few weeks later, I was deploying OpenTelemetry Collectors across AWS EC2 instances, debugging networking problems between machines, and trying to understand why a...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/08/10/learning-cloud-native-engineering-beyond-tutorials-through-lfx/",
-    "publishedDate": "2026-08-10T23:43:00.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "collector",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "vector-74a0c68ff6b8",
-    "title": "vdev-v0.3.13",
-    "summary": "No content.",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.13",
-    "publishedDate": "2026-08-10T19:46:27.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector"
-  },
-  {
     "id": "containerd-b0cfe50b0a7f",
     "title": "containerd 2.4.0-beta.0",
     "summary": "Welcome to the v2.4.0-beta.0 release of containerd! This is a pre-release of containerd containerd 2.4 is a regular (non-LTS) release with a shorter support window, intended for users who want to adopt new features sooner. As the release following the 2.3 LTS, it is the point in the release cycle where previously deprecated features may be removed, so this release may include breaking changes; check the notes below and clear any deprecation warnings from your current version before upgrading. Us",
@@ -8738,25 +8796,6 @@
     "releaseRelated": true,
     "releaseProject": "containerd",
     "releaseVersion": "2.4.0-beta.0"
-  },
-  {
-    "id": "loki-0051a4e3de50",
-    "title": "helm-loki-7.3.0",
-    "summary": "chore: Remove dead code RequestParserWrapper from distributors (#23867)",
-    "source": "Grafana Loki",
-    "sourceId": "loki",
-    "url": "https://github.com/grafana/loki/releases/tag/helm-loki-7.3.0",
-    "publishedDate": "2026-08-10T16:21:29.000Z",
-    "domain": "logging",
-    "topics": [
-      "loki",
-      "logging",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "loki"
   },
   {
     "id": "holmesgpt-9557df72eecf",
@@ -9676,42 +9715,5 @@
     "releaseRelated": true,
     "releaseProject": "prometheus",
     "releaseVersion": "v0.305.5"
-  },
-  {
-    "id": "kubernetes-releases-b2f2804c8663",
-    "title": "v1.37.0-alpha.3",
-    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
-    "source": "Kubernetes Releases",
-    "sourceId": "kubernetes-releases",
-    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.0-alpha.3",
-    "publishedDate": "2026-07-08T18:11:06.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "release"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kubernetes-releases",
-    "releaseVersion": "v1.37.0-alpha.3"
-  },
-  {
-    "id": "kubernetes-4d784cb50ba4",
-    "title": "Announcing etcd v3.7.0",
-    "summary": "This article is a mirror of the original announcement Today, SIG etcd is releasing etcd v3.7.0, the latest minor release of the popular distributed key-value store and core Kubernetes component. v3.7 ships the long-requested RangeStream feature, delivers several other performance improvements, removes the last remnants of the legacy v2store, and completes a major protobuf overhaul. You can download etcd v3.7.0 here: Source code Binaries Official container images This release also includes new ve",
-    "source": "Kubernetes",
-    "sourceId": "kubernetes",
-    "url": "https://kubernetes.io/blog/2026/07/08/announcing-etcd-3.7/",
-    "publishedDate": "2026-07-08T12:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kubernetes",
-    "releaseVersion": "v3.7.0"
   }
 ]

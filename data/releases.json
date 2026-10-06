@@ -1,5 +1,29 @@
 [
   {
+    "project": "opentelemetry",
+    "version": "3.0",
+    "publishedDate": "2026-10-06T16:43:08.000Z",
+    "url": "https://opentelemetry.io/blog/2026/java-agent-3.0-preview/",
+    "sourceId": "opentelemetry",
+    "title": "The OpenTelemetry Java agent 3.0 is almost here — preview it today"
+  },
+  {
+    "project": "gateway-api",
+    "version": "v1.6.3",
+    "publishedDate": "2026-10-06T15:00:41.000Z",
+    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.3",
+    "sourceId": "gateway-api",
+    "title": "v1.6.3: chore: Release 1.6.3 (#5335)"
+  },
+  {
+    "project": "vector",
+    "version": "v0.59.0",
+    "publishedDate": "2026-10-06T14:39:26.000Z",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/v0.59.0",
+    "sourceId": "vector",
+    "title": "v0.59.0"
+  },
+  {
     "project": "cilium",
     "version": "1.21.0-pre.3",
     "publishedDate": "2026-10-02T19:04:57.000Z",
@@ -136,14 +160,6 @@
     "title": "v2.4.2"
   },
   {
-    "project": "opentelemetry",
-    "version": "3.1",
-    "publishedDate": "2026-09-22T15:06:22.000Z",
-    "url": "https://opentelemetry.io/blog/2026/otel-prometheus-interoperability/",
-    "sourceId": "opentelemetry",
-    "title": "Prometheus and OpenTelemetry interoperability in 2026: Survey results"
-  },
-  {
     "project": "kubernetes",
     "version": "v1.37",
     "publishedDate": "2026-09-21T18:30:00.000Z",
@@ -214,22 +230,6 @@
     "url": "https://github.com/helm/helm/releases/tag/v3.22.0",
     "sourceId": "helm",
     "title": "Helm v3.22.0"
-  },
-  {
-    "project": "gateway-api",
-    "version": "v1.6.2",
-    "publishedDate": "2026-09-03T18:49:15.000Z",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.2",
-    "sourceId": "gateway-api",
-    "title": "v1.6.2"
-  },
-  {
-    "project": "vector",
-    "version": "v0.58.0",
-    "publishedDate": "2026-08-26T15:12:38.000Z",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/v0.58.0",
-    "sourceId": "vector",
-    "title": "v0.58.0"
   },
   {
     "project": "openai",
