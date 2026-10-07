@@ -1,5 +1,22 @@
 [
   {
+    "id": "cncf-37c84aae624d",
+    "title": "CNCF Welcomes OVHcloud, One of Europe’s Largest Independent Cloud Providers, as a Platinum Member",
+    "summary": "Upgrade builds on OVHcloud’s decade-plus commitment to open infrastructure, interoperability and cloud portability Key Highlights PRAGUE – Open Source Summit Europe – October 7, 2026 – The Cloud Native Computing Foundation® (CNCF®), which builds sustainable ecosystems...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/announcements/2026/10/07/cncf-welcomes-ovhcloud-a-leading-european-cloud-provider-and-global-cloud-and-ai-player-as-a-platinum-member/",
+    "publishedDate": "2026-10-07T07:00:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "argo-48a004e4a8ec",
     "title": "v3.3.15",
     "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.3.15/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.3.15/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container im",
@@ -8731,24 +8748,6 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "kyverno"
-  },
-  {
-    "id": "openai-fb21820d806b",
-    "title": "From assistance to execution: How enterprises put AI to work",
-    "summary": "OpenAI research reveals how enterprises are adopting agentic AI, using ChatGPT and Codex, and how frontier firms are pulling ahead in AI adoption.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/how-enterprises-put-ai-to-work",
-    "publishedDate": "2026-08-12T06:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "prometheus-6b8802bb1a76",
