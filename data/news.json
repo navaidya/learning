@@ -1,5 +1,138 @@
 [
   {
+    "id": "opentelemetry-6bf6e9425450",
+    "title": "OpenTelemetry Community Awards 2026",
+    "summary": "We are delighted to announce the 3rd annual OpenTelemetry Community Awards this year! This project and its newly minted status as a graduated CNCF project would not be possible without many, many awesome humans who contribute their time, knowledge, and skills to further develop and improve the field of observability. Whether it&rsquo;s through code, documentation, project management, outreach, content creation, adoption, or simply helping others answer technical questions on our CNCF Slack, we w",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/community-awards/",
+    "publishedDate": "2026-10-07T14:01:16.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": false
+  },
+  {
+    "id": "pulumi-613fe29721a3",
+    "title": "pkg/v3.268.0: Changelog and go.mod updates for v3.268.0 (#25095)",
+    "summary": "Co-authored-by: github-actions github-actions@github.com Co-authored-by: Thomas Gummerer t.gummerer@gmail.com Co-authored-by: Claude Opus 5.5 (1M context) noreply@anthropic.com",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.268.0",
+    "publishedDate": "2026-10-07T13:09:03.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.268.0"
+  },
+  {
+    "id": "cncf-5a0b753c14a2",
+    "title": "Meshery becomes a CNCF Incubating project",
+    "summary": "The CNCF Technical Oversight Committee (TOC) voted to accept Meshery as a CNCF incubating project. Meshery is used by organizations spanning aerospace, telecommunications, networking, and enterprise software as a single cloud native management plane that gives...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/07/meshery-becomes-a-cncf-incubating-project/",
+    "publishedDate": "2026-10-07T12:05:16.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "pulumi-884aa918515c",
+    "title": "v3.268.0",
+    "summary": "3.268.0 (2026-10-07) Features [engine] Negotiate OutputValues on Invoke so SDKs can pass dependency-carrying values in args and receive them in the response, and providers can process them, gated by a new accepts_outputs_in_invoke handshake capability #24953 [auto] Add version to the generated automation APIs for NodeJS, Python and Go #24990 [auto] Add whoami to the generated automation APIs for NodeJS, Python and Go #25024 [auto] Add install to the generated automation APIs for NodeJS, Python a",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.268.0",
+    "publishedDate": "2026-10-07T10:24:48.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.268.0"
+  },
+  {
+    "id": "holmesgpt-8787cd8e2e30",
+    "title": "0.43.0",
+    "summary": "What's Changed ROB-357 Remove kube-lineage from Holmes by @RoiGlinik in #2464 ROB-1233 Constrain impact claims in the narrative to observed evidence by @naomi-robusta in #2449 ROB-1107 Bind conversation worker identity to the Conversations row owner by @naomi-robusta in #2480 ROB-1402 Document Baseten Model APIs as a provider by @ezra-robusta in #2483 ROB-1402 Drop the Baseten rate-limits section by @ezra-robusta in #2489 ROB-1104 Reject shell metacharacters in propagated HTTP headers by @RoiGli",
+    "source": "HolmesGPT (Robusta)",
+    "sourceId": "holmesgpt",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.43.0",
+    "publishedDate": "2026-10-07T09:13:36.000Z",
+    "domain": "aiops",
+    "topics": [
+      "holmesgpt",
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "holmesgpt",
+    "releaseVersion": "0.43.0"
+  },
+  {
+    "id": "robusta-5a2419fcde6c",
+    "title": "0.51.0",
+    "summary": "What's Changed docs: point account_id lookups at Settings → General instead of generated_values.yaml by @claude[bot] in #2177 ROB-1429 Bump tornado to 6.5.10 to fix CVE-2026-82397 by @Avi-Robusta in #2181 Replace pygal with native SVG chart renderer by @arikalon1 in #2178 Fix poetry.lock / pre-commit poetry-lock hook version mismatch by @naomi-robusta in #2184 ROB-1472 Ship Holmes chart 0.42.0 and check Helm dependencies in CI by @ezra-robusta in #2186 Add Platform MCP API and LLM Models API doc",
+    "source": "Robusta",
+    "sourceId": "robusta",
+    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.51.0",
+    "publishedDate": "2026-10-07T09:10:02.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "robusta",
+    "releaseVersion": "0.51.0"
+  },
+  {
+    "id": "pulumi-fed96bb2d9d9",
+    "title": "sdk/v3.268.0: pin maven to latest 3.9.* version (#25082)",
+    "summary": "Maven 3.10 has a bug, where it ignores -Dorg.slf4j.simpleLogger.logFile=System.err, and thus writes everything to stdout. This breaks pulumi-java plugin downloads, as the JSON is now mixed with the regular output and we can't parse it properly. I've reported the bug upstream in apache/maven#13380. If we can't get it fixed upstream, we can patch pulumi-java to just not show any output, but I think the right fix would be upstream, so let's pin this temporarily and see if we can get it resolved. Fi",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.268.0",
+    "publishedDate": "2026-10-07T08:59:55.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.268.0"
+  },
+  {
     "id": "cncf-37c84aae624d",
     "title": "CNCF Welcomes OVHcloud, One of Europe’s Largest Independent Cloud Providers, as a Platinum Member",
     "summary": "Upgrade builds on OVHcloud’s decade-plus commitment to open infrastructure, interoperability and cloud portability Key Highlights PRAGUE – Open Source Summit Europe – October 7, 2026 – The Cloud Native Computing Foundation® (CNCF®), which builds sustainable ecosystems...",
@@ -8654,102 +8787,6 @@
     "releaseRelated": false
   },
   {
-    "id": "cncf-402843ced4f0",
-    "title": "Advancing AI model interoperability with Docker and ModelPack",
-    "summary": "The rise in the number of tools available for creating and running AI content has lowered the barrier of entry and offered the flexibility of choice when choosing the appropriate solution for a given use case....",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/08/12/advancing-ai-model-interoperability-with-docker-and-modelpack/",
-    "publishedDate": "2026-08-12T11:00:00.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "argo-42e28f4cf452",
-    "title": "v3.3.14",
-    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.3.14/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.3.14/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container im",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.14",
-    "publishedDate": "2026-08-12T10:54:46.000Z",
-    "domain": "gitops",
-    "topics": [
-      "gitops",
-      "argo-cd",
-      "argo",
-      "argocd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "v3.3.14"
-  },
-  {
-    "id": "kyverno-f7d1bee6f036",
-    "title": "v1.19.0-rc.3",
-    "summary": "No content.",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.0-rc.3",
-    "publishedDate": "2026-08-12T08:22:59.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno",
-    "releaseVersion": "v1.19.0-rc.3"
-  },
-  {
-    "id": "kyverno-91ec84b68e4b",
-    "title": "kyverno-policies-chart-3.9.0-rc.3",
-    "summary": "kyverno-policies-chart-3.9.0-rc.3",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-policies-chart-3.9.0-rc.3",
-    "publishedDate": "2026-08-12T07:09:29.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno"
-  },
-  {
-    "id": "kyverno-0704fea0f000",
-    "title": "kyverno-chart-3.9.0-rc.3",
-    "summary": "kyverno-chart-3.9.0-rc.3",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-chart-3.9.0-rc.3",
-    "publishedDate": "2026-08-12T07:09:29.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno"
-  },
-  {
     "id": "prometheus-6b8802bb1a76",
     "title": "3.14.0-rc.0 / 2026-08-06",
     "summary": "[CHANGE] API: Deprecate the stats query parameter of /api/v1/query and /api/v1/query_range for values other than true and all. Other values still enable basic statistics but now return a deprecation warning; they will be rejected in the next major release. #19124 [CHANGE] API: /api/v1/status/config now correctly shows separator: \"\" and replacement: \"\" in relabel configs when explicitly set to empty, instead of omitting them. #18653 [CHANGE] Discovery/Hetzner: Drop the __meta_hetzner_datacenter l",
@@ -9687,45 +9724,5 @@
     "releaseRelated": true,
     "releaseProject": "prometheus",
     "releaseVersion": "3.13.1"
-  },
-  {
-    "id": "prometheus-0d55e8efb72e",
-    "title": "3.5.5 / 2026-07-09",
-    "summary": "This release is built with Go 1.25.12 and fixes a security issue in a UI dependency. [SECURITY] UI: Bump sanitize-html to v2.17.5 to fix CVE-2026-53606. #19060",
-    "source": "Prometheus",
-    "sourceId": "prometheus",
-    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.5.5",
-    "publishedDate": "2026-07-09T08:41:56.000Z",
-    "domain": "prometheus",
-    "topics": [
-      "prometheus",
-      "promql",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "prometheus",
-    "releaseVersion": "3.5.5"
-  },
-  {
-    "id": "prometheus-209d4d247d2b",
-    "title": "v0.305.5",
-    "summary": "v0.305.5",
-    "source": "Prometheus",
-    "sourceId": "prometheus",
-    "url": "https://github.com/prometheus/prometheus/releases/tag/v0.305.5",
-    "publishedDate": "2026-07-09T07:51:14.000Z",
-    "domain": "prometheus",
-    "topics": [
-      "prometheus",
-      "promql",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "prometheus",
-    "releaseVersion": "v0.305.5"
   }
 ]

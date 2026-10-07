@@ -1,12 +1,32 @@
 [
   {
+    "id": "langgraph-f48e076bc487",
+    "title": "langgraph-cli==0.4.33",
+    "summary": "Changes since cli==0.4.32 release(cli): 0.4.33 (#9227) feat(cli): add --image-uri to deploy an already-pushed image (#9222) feat(cli): add 'langgraph deploy listeners list' (#9221) chore(deps): bump virtualenv from 21.7.12 to 21.7.13 in /libs/cli (#9167) chore(deps): bump virtualenv from 21.2.4 to 21.7.12 in /libs/cli (#9159) chore(deps): bump the minor-and-patch group in /libs/cli/js-monorepo-example with 8 updates (#9151) chore(deps): bump the minor-and-patch group in /libs/cli with 5 updates ",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.33",
+    "publishedDate": "2026-10-07T13:38:46.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "0.4.33"
+  },
+  {
     "id": "pydantic-ai-ec5fb94d76bf",
     "title": "CLAI2 bleeding",
     "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-07T01:23:06.000Z",
+    "publishedDate": "2026-10-07T13:06:34.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +37,26 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "langfuse-b1081d394bee",
+    "title": "v4.54.0",
+    "summary": "What's Changed Features feat(topics): classify traces into buckets by @nimarb in #17664 feat: add external media storage integration by @wochinge in #18320 feat(scores): compile experiment-item and prompt-event reads through the query AST by @niklassemmler in #17553 feat(openai): add structured review output and enhance customer response fixtures by @marliessophie in #18342 feat(analytics): track user-visible error toasts by @nkabardin in #18324 feat(sessions): Make session view use trace transc",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.54.0",
+    "publishedDate": "2026-10-07T08:55:56.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.54.0"
   },
   {
     "id": "otel-ai-ea7a7aa26971",
@@ -3542,24 +3582,5 @@
     "releaseRelated": true,
     "releaseProject": "langgraph",
     "releaseVersion": "1.2.9"
-  },
-  {
-    "id": "practical-ai-77116e3fafd5",
-    "title": "Building Durable AI Agents",
-    "summary": "What does it take to move AI agents from demos to reliable production systems? In this episode, Hamza Tahir explores how MLOps principles are shaping the future of generative AI, covering workflows, agent harnesses, fleets, and the infrastructure needed to build durable, scalable systems. The conversation dives into open source tools, production challenges, and how ZenML's new project, Kitaru, helps developers build resilient, replayable, and observable agent systems.Featuring:Hamza Tahir – Link",
-    "source": "Practical AI",
-    "sourceId": "practical-ai",
-    "url": "https://share.transistor.fm/s/facb92e2",
-    "publishedDate": "2026-07-09T09:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "ai-agent",
-      "podcast",
-      "agent-development"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   }
 ]
