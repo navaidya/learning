@@ -1,5 +1,37 @@
 [
   {
+    "project": "terraform",
+    "version": "v1.17.0-rc1",
+    "publishedDate": "2026-10-07T19:46:06.000Z",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-rc1",
+    "sourceId": "terraform",
+    "title": "v1.17.0-rc1"
+  },
+  {
+    "project": "kubernetes-releases",
+    "version": "v1.38.0-alpha.2",
+    "publishedDate": "2026-10-07T17:54:03.000Z",
+    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.38.0-alpha.2",
+    "sourceId": "kubernetes-releases",
+    "title": "v1.38.0-alpha.2"
+  },
+  {
+    "project": "loki",
+    "version": "v0.12.0",
+    "publishedDate": "2026-10-07T17:51:23.000Z",
+    "url": "https://github.com/grafana/loki/releases/tag/operator%2Fv0.12.0",
+    "sourceId": "loki",
+    "title": "operator: v0.12.0"
+  },
+  {
+    "project": "argo",
+    "version": "v3.5.4",
+    "publishedDate": "2026-10-07T16:03:15.000Z",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.4",
+    "sourceId": "argo",
+    "title": "v3.5.4"
+  },
+  {
     "project": "pulumi",
     "version": "v3.268.0",
     "publishedDate": "2026-10-07T13:09:03.000Z",
@@ -22,14 +54,6 @@
     "url": "https://github.com/robusta-dev/robusta/releases/tag/0.51.0",
     "sourceId": "robusta",
     "title": "0.51.0"
-  },
-  {
-    "project": "argo",
-    "version": "v3.3.15",
-    "publishedDate": "2026-10-06T21:39:55.000Z",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.15",
-    "sourceId": "argo",
-    "title": "v3.3.15"
   },
   {
     "project": "gateway-api",
@@ -88,14 +112,6 @@
     "title": "3.13.4 / 2026-09-29"
   },
   {
-    "project": "terraform",
-    "version": "v1.16.5",
-    "publishedDate": "2026-10-02T13:04:00.000Z",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.5",
-    "sourceId": "terraform",
-    "title": "v1.16.5"
-  },
-  {
     "project": "opentofu",
     "version": "v1.12.7",
     "publishedDate": "2026-10-01T18:40:21.000Z",
@@ -144,14 +160,6 @@
     "title": "v3.1.0"
   },
   {
-    "project": "kubernetes-releases",
-    "version": "v1.38.0-alpha.1",
-    "publishedDate": "2026-09-29T08:46:22.000Z",
-    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.38.0-alpha.1",
-    "sourceId": "kubernetes-releases",
-    "title": "v1.38.0-alpha.1"
-  },
-  {
     "project": "opentelemetry-collector",
     "version": "v1.68.0",
     "publishedDate": "2026-09-28T14:09:31.000Z",
@@ -198,14 +206,6 @@
     "url": "https://istio.io/latest/news/releases/1.31.x/announcing-1.31.1/",
     "sourceId": "istio",
     "title": "Announcing Istio 1.31.1"
-  },
-  {
-    "project": "loki",
-    "version": "v3.7.8",
-    "publishedDate": "2026-09-17T15:51:10.000Z",
-    "url": "https://github.com/grafana/loki/releases/tag/v3.7.8",
-    "sourceId": "loki",
-    "title": "v3.7.8"
   },
   {
     "project": "k8sgpt",

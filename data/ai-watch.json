@@ -1,5 +1,24 @@
 [
   {
+    "id": "pydantic-ai-ec5fb94d76bf",
+    "title": "CLAI2 bleeding",
+    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
+    "publishedDate": "2026-10-07T20:15:45.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai"
+  },
+  {
     "id": "langgraph-f48e076bc487",
     "title": "langgraph-cli==0.4.33",
     "summary": "Changes since cli==0.4.32 release(cli): 0.4.33 (#9227) feat(cli): add --image-uri to deploy an already-pushed image (#9222) feat(cli): add 'langgraph deploy listeners list' (#9221) chore(deps): bump virtualenv from 21.7.12 to 21.7.13 in /libs/cli (#9167) chore(deps): bump virtualenv from 21.2.4 to 21.7.12 in /libs/cli (#9159) chore(deps): bump the minor-and-patch group in /libs/cli/js-monorepo-example with 8 updates (#9151) chore(deps): bump the minor-and-patch group in /libs/cli with 5 updates ",
@@ -18,25 +37,6 @@
     "releaseRelated": true,
     "releaseProject": "langgraph",
     "releaseVersion": "0.4.33"
-  },
-  {
-    "id": "pydantic-ai-ec5fb94d76bf",
-    "title": "CLAI2 bleeding",
-    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-07T13:06:34.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai"
   },
   {
     "id": "langfuse-b1081d394bee",
