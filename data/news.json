@@ -1182,6 +1182,25 @@
     "releaseVersion": "v3.1.0"
   },
   {
+    "id": "openai-dd66acaed2a0",
+    "title": "Introducing GPT-6.1 Sol",
+    "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+    "publishedDate": "2026-09-29T17:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "openai"
+  },
+  {
     "id": "backstage-3a2358982ae0",
     "title": "v1.55.3",
     "summary": "This patch release fixes the following issues: Fixed TechDocs generation for documented MkDocs Markdown extension configurations.",
@@ -1240,25 +1259,6 @@
     "releaseRelated": true,
     "releaseProject": "backstage",
     "releaseVersion": "v1.56.0-next.1"
-  },
-  {
-    "id": "openai-dd66acaed2a0",
-    "title": "Introducing GPT-6.1 Sol",
-    "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token prices.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/introducing-gpt-6-1-sol",
-    "publishedDate": "2026-09-29T10:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "openai"
   },
   {
     "id": "openai-19db7cc5ca5c",

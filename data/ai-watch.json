@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-07T20:15:45.000Z",
+    "publishedDate": "2026-10-08T04:00:39.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,26 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "phoenix-82ef7d0a5338",
+    "title": "arize-phoenix-evals: v3.9.1",
+    "summary": "3.9.1 (2026-10-08) Bug Fixes evals: retry RateLimitError in SyncExecutor instead of failing the whole run (#16376) (56e9a89)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-evals-v3.9.1",
+    "publishedDate": "2026-10-08T03:15:45.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v3.9.1"
   },
   {
     "id": "langgraph-f48e076bc487",
@@ -3562,25 +3582,5 @@
     "releaseRelated": true,
     "releaseProject": "langgraph",
     "releaseVersion": "0.4.31"
-  },
-  {
-    "id": "langgraph-acf648e9e64a",
-    "title": "langgraph==1.2.9",
-    "summary": "Changes since 1.2.8 release(langgraph): 1.2.9 (#8316) fix: updateState metadata/counters for delta channel (#8315)",
-    "source": "LangGraph",
-    "sourceId": "langgraph",
-    "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.9",
-    "publishedDate": "2026-07-10T01:30:24.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "langgraph",
-    "releaseVersion": "1.2.9"
   }
 ]
