@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-08T04:00:39.000Z",
+    "publishedDate": "2026-10-08T17:33:43.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,44 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "langfuse-2bdaf161d47a",
+    "title": "v4.55.0",
+    "summary": "What's Changed Features feat(docker): create zero vuln base images and add fips mode by @Steffen911 in #18009 feat(topics): rework the summary system prompt and default facets by @LysanderKie in #17935 feat(web): show ClickHouse organization id in org debug information by @Steffen911 in #18390 feat(topics): summarize all facets of a trace in one call by @LysanderKie in #18013 feat(skills): import skills from local files and ZIPs by @tobi12345 in #18378 feat(skills): add rendered file previews wi",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.55.0",
+    "publishedDate": "2026-10-08T13:36:14.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.55.0"
+  },
+  {
+    "id": "owasp-genai-4cb92eaa2b55",
+    "title": "GenAI and Agentic AI Exploit Roundup Q3 2026",
+    "summary": "Coverage period: July 1, 2026 through September 30, 2026 Overview This roundup consolidates selected major AI-related security incidents and exploit disclosures reported during the coverage period. It aligns each entry to the OWASP Top 10 for LLM Applications 2026 and the OWASP Top 10 for Agentic Applications 2026, with published CVE references where available. It […] The post GenAI and Agentic AI Exploit Roundup Q3 2026 appeared first on OWASP Gen AI Security Project.",
+    "source": "OWASP GenAI Security",
+    "sourceId": "owasp-genai",
+    "url": "https://genai.owasp.org/2026/10/08/genai-and-agentic-ai-exploit-roundup-q3-2026/",
+    "publishedDate": "2026-10-08T12:07:03.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-security",
+      "news",
+      "agentic-operations"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "phoenix-82ef7d0a5338",

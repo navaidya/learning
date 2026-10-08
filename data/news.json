@@ -1,5 +1,99 @@
 [
   {
+    "id": "vector-bd1b77150b28",
+    "title": "vdev-v0.3.28",
+    "summary": "No content.",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.28",
+    "publishedDate": "2026-10-08T18:56:38.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
+    "id": "grafana-0c082a25d2f2",
+    "title": "Take Grafana Labs' 5th annual Observability Survey",
+    "summary": "Over the past year, \"agentic\" has gone from an emerging buzzword to an integral part of worklife for many engineers—and that's just scratching the surface on all that's changed. With so much upheaval, there's never been a better time to capture the pulse of the industry, which is why we want you to take Grafana Labs' fifth annual Observability Survey.We're asking the questions you're probably already arguing about in Slack: Do you trust an agent to ship without review? Are your dashboards still ",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/take-grafana-labs-5th-annual-observability-survey/",
+    "publishedDate": "2026-10-08T17:00:28.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "dashboards",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "opentelemetry-3f93c5a252d8",
+    "title": "OTel-Native by Design - Building Products That Export to Any Observability Stack",
+    "summary": "With contributions from Dan Gomez Blanco (New Relic). If you&rsquo;re building self-hosted software or a SaaS product, your users will eventually ask to send logs, traces, and metrics to their own observability stack, whether to satisfy compliance, manage costs, or centralize all their observability data in one place. Locking them into your built-in dashboards or limiting exports to certain vendors creates unnecessary friction. Instead, supporting export to any OpenTelemetry (OTel)-compatible ba",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/otel-native-by-design/",
+    "publishedDate": "2026-10-08T16:01:11.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "vector-68905cd7b8d7",
+    "title": "v0.59.0",
+    "summary": "The COSE team is happy to announce Vector 0.59.0! 🚀 Vector is a lightweight, ultra-fast tool for building observability pipelines that puts you in control of your data. Thanks to the 21 contributors who made the 41 changes in this release! 6 breaking changes 2 security changes 3 new features 10 enhancements 20 bug fixes Upgrading to 0.59? Read the upgrade guide. View the full release notes · See upcoming releases on the release calendar.",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/v0.59.0",
+    "publishedDate": "2026-10-08T15:35:29.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector",
+    "releaseVersion": "v0.59.0"
+  },
+  {
+    "id": "grafana-982e2f4ebe65",
+    "title": "Manage your OpenTelemetry Collectors with Fleet Management in Grafana Cloud",
+    "summary": "If you’ve built your telemetry pipelines around OpenTelemetry Collectors, you’ve already invested in a collector distribution, YAML configuration, and a deployment model that fits your infrastructure. As that deployment grows, managing it means keeping shared configuration consistent, accommodating different workloads, and understanding whether your collectors are healthy.Fleet Management in Grafana Cloud brings those tasks together in one place. With support for the Open Agent Management Protoc",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/manage-your-opentelemetry-collectors-with-fleet-management-in-grafana-cloud/",
+    "publishedDate": "2026-10-08T14:04:56.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "cncf-80c34aa99bfc",
     "title": "CiliumCon is back at KubeCon + CloudNativeCon North America 2026",
     "summary": "Mark your calendars. On Monday, November 9, CilliumCon kicks off at KubeCon + CloudNativeCon North America in Salt Lake City. It’s the eighth time the event has run, and this year’s agenda goes straight at the...",
@@ -521,26 +615,6 @@
     "releaseRelated": true,
     "releaseProject": "gateway-api",
     "releaseVersion": "v1.6.3"
-  },
-  {
-    "id": "vector-68905cd7b8d7",
-    "title": "v0.59.0",
-    "summary": "The COSE team is excited to announce version 0.59.0! 🚀 View release notes",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/v0.59.0",
-    "publishedDate": "2026-10-06T14:39:26.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector",
-    "releaseVersion": "v0.59.0"
   },
   {
     "id": "cncf-fd461ae07814",
@@ -8708,40 +8782,6 @@
     "releaseVersion": "v3.257.0"
   },
   {
-    "id": "cncf-5f75f92b386e",
-    "title": "Lightweight Dragonfly Deployment: P2P Distribution Without the Database Stack",
-    "summary": "Dragonfly speeds up file and container image distribution using peer-to-peer (P2P) technology, but a standard installation deploys several components and dependencies. Beyond the Scheduler, Seed Client, and Client that move data, a traditional setup requires a...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/08/13/lightweight-dragonfly-deployment-p2p-distribution-without-the-database-stack/",
-    "publishedDate": "2026-08-13T11:30:00.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "cncf-40b75ac77627",
-    "title": "LLMOps and platform engineering: Who should own the AI pipeline?",
-    "summary": "A few years ago, getting a model into production meant a data scientist, a DevOps engineer, and a narrow set of tools: train it, test it, ship it, watch the dashboards. Large language models broke that...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/08/13/llmops-and-platform-engineering-who-should-own-the-ai-pipeline/",
-    "publishedDate": "2026-08-13T11:00:00.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "containerd-4faa18896850",
     "title": "containerd 2.2.7",
     "summary": "Welcome to the v2.2.7 release of containerd! The seventh patch release for containerd 2.2 contains various fixes and updates. Highlights Container Runtime Interface (CRI) Disable checkpoint restore in CreateContainer by default, requiring the enable_experimental_restore_via_create configuration option to enable (#13937) Deprecate checkpoint restore in CreateContainer (#13872) Support non-UTF-8 binary environment variable values in CRI (#13455) Disable checkpoint restore codepaths when CRIU is no",
@@ -9679,45 +9719,5 @@
     "releaseRelated": true,
     "releaseProject": "holmesgpt",
     "releaseVersion": "0.36.0-alpha3"
-  },
-  {
-    "id": "prometheus-06ea4003c0f9",
-    "title": "v0.313.1",
-    "summary": "v0.313.1",
-    "source": "Prometheus",
-    "sourceId": "prometheus",
-    "url": "https://github.com/prometheus/prometheus/releases/tag/v0.313.1",
-    "publishedDate": "2026-07-10T10:35:34.000Z",
-    "domain": "prometheus",
-    "topics": [
-      "prometheus",
-      "promql",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "prometheus",
-    "releaseVersion": "v0.313.1"
-  },
-  {
-    "id": "prometheus-04db74ebf187",
-    "title": "3.13.1 / 2026-07-10",
-    "summary": "This is a bugfix release for 3.13 LTS. [BUGFIX] TSDB: Fix the head-chunk cache returning samples from the wrong chunk, or spurious not-found errors, to range queries after head-chunk truncation. #19134",
-    "source": "Prometheus",
-    "sourceId": "prometheus",
-    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.13.1",
-    "publishedDate": "2026-07-10T10:34:15.000Z",
-    "domain": "prometheus",
-    "topics": [
-      "prometheus",
-      "promql",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "prometheus",
-    "releaseVersion": "3.13.1"
   }
 ]

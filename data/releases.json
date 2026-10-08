@@ -1,5 +1,13 @@
 [
   {
+    "project": "vector",
+    "version": "v0.59.0",
+    "publishedDate": "2026-10-08T15:35:29.000Z",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/v0.59.0",
+    "sourceId": "vector",
+    "title": "v0.59.0"
+  },
+  {
     "project": "terraform",
     "version": "v1.17.0-rc1",
     "publishedDate": "2026-10-07T19:46:06.000Z",
@@ -86,14 +94,6 @@
     "url": "https://opentelemetry.io/blog/2026/java-agent-3.0-preview/",
     "sourceId": "opentelemetry",
     "title": "The OpenTelemetry Java agent 3.0 is almost here — preview it today"
-  },
-  {
-    "project": "vector",
-    "version": "v0.59.0",
-    "publishedDate": "2026-10-06T14:39:26.000Z",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/v0.59.0",
-    "sourceId": "vector",
-    "title": "v0.59.0"
   },
   {
     "project": "cilium",
