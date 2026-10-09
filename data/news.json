@@ -1,5 +1,44 @@
 [
   {
+    "id": "vector-026ca175636f",
+    "title": "vdev-v0.3.30",
+    "summary": "No content.",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.30",
+    "publishedDate": "2026-10-09T22:30:38.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
+    "id": "k8sgpt-0ed1acb16a11",
+    "title": "v0.4.40",
+    "summary": "0.4.40 (2026-10-09) Features add ResourceClaim analyzer for missing DeviceClasses (#1768) (f2dd92e) Bug Fixes close the custom analyzer gRPC connection after each analysis (#1800) (d6d75f7) correct API doc lookups for the webhook analyzers (#1802) (ce78560) handle empty AI responses and respect configured language (#1756) (9456068) honor StatefulSet start ordinals (#1759) (dd16466) honour K8SGPT_BACKEND on every serve start (#1749) (6959a93) ignore in-progress Deployment replica mismatches (#174",
+    "source": "K8sGPT",
+    "sourceId": "k8sgpt",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.40",
+    "publishedDate": "2026-10-09T20:24:09.000Z",
+    "domain": "aiops",
+    "topics": [
+      "aiops",
+      "k8sgpt",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "k8sgpt",
+    "releaseVersion": "v0.4.40"
+  },
+  {
     "id": "vector-65d629765d89",
     "title": "vdev-v0.3.29",
     "summary": "No content.",
@@ -8712,46 +8751,6 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "crossplane-d7389d9963e2",
-    "title": "apis/v2.4.0-rc.1",
-    "summary": "Release candidate v2.4.0-rc.1",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.4.0-rc.1",
-    "publishedDate": "2026-08-14T00:18:19.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v2.4.0-rc.1"
-  },
-  {
-    "id": "crossplane-c05a27fa3cd1",
-    "title": "apis/v2.5.0-rc.0",
-    "summary": "Release candidate v2.5.0-rc.0",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.5.0-rc.0",
-    "publishedDate": "2026-08-14T00:18:15.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v2.5.0-rc.0"
   },
   {
     "id": "tempo-1f1ad87d236d",

@@ -1,18 +1,17 @@
 {
-  "collectedAt": "2026-10-09T18:50:34.351Z",
+  "collectedAt": "2026-10-09T23:17:52.347Z",
   "sourceIds": [
     "langgraph",
     "pydantic-ai",
     "langfuse",
     "phoenix",
     "falco",
+    "owasp-genai",
     "nvidia-security",
     "practical-ai",
     "cncf-video",
     "otel-ai"
   ],
-  "failedSourceIds": [
-    "owasp-genai"
-  ],
-  "itemCount": 185
+  "failedSourceIds": [],
+  "itemCount": 189
 }

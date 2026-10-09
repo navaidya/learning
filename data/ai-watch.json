@@ -1,12 +1,74 @@
 [
   {
+    "id": "phoenix-720abc1ed78b",
+    "title": "@arizeai/phoenix-mcp@4.3.16",
+    "summary": "Patch Changes Updated dependencies [7b9f900] @arizeai/phoenix-client@7.16.1",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-mcp%404.3.16",
+    "publishedDate": "2026-10-09T22:00:58.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "4.3.16"
+  },
+  {
+    "id": "phoenix-d1f68212dc57",
+    "title": "@arizeai/phoenix-cli@1.18.8",
+    "summary": "Patch Changes Updated dependencies [7b9f900] @arizeai/phoenix-client@7.16.1",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-cli%401.18.8",
+    "publishedDate": "2026-10-09T22:00:55.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "1.18.8"
+  },
+  {
+    "id": "phoenix-da8cc65e5676",
+    "title": "@arizeai/phoenix-client@7.16.1",
+    "summary": "Patch Changes 7b9f900: Move evaluator metadata to top level of experiment evaluation request body",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-client%407.16.1",
+    "publishedDate": "2026-10-09T22:00:52.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "7.16.1"
+  },
+  {
     "id": "pydantic-ai-ec5fb94d76bf",
     "title": "CLAI2 bleeding",
     "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-09T18:14:07.000Z",
+    "publishedDate": "2026-10-09T20:30:22.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +79,86 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "pydantic-ai-da30c170e6a3",
+    "title": "v2.53.0 (2026-10-01)",
+    "summary": "🛡️ Security This release fixes one security issue in ConcurrencyLimitedModel. See the advisory for full details and affected versions. GHSA-6fqq-452j-qhrp (high): a streamed request through ConcurrencyLimitedModel or limit_model_concurrency could keep its concurrency slot when the slot was released on a different task than the one that acquired it: after an early exit (the consumer stopped iterating, raised, or was cancelled), and also after fully consuming stream_text() with its default deboun",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.53.0",
+    "publishedDate": "2026-10-09T20:13:41.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.53.0"
+  },
+  {
+    "id": "pydantic-ai-fe732d49af59",
+    "title": "v2.52.0 (2026-09-29)",
+    "summary": "🛡️ Security This release fixes one security issue in web_fetch. See the advisory for full details and affected versions. GHSA-v36g-jcw9-x7cw (moderate): converting attacker-controlled HTML with deeply nested elements in the local web_fetch tool could consume excessive CPU and memory. Provider-native web fetching is not affected. Reported by @SounLabs. (#8984) Patched in 2.52.0 (v2) and 1.107.7 (v1). 📦 Harness pydantic-ai-harness now lives in this repository and ships with every Pydantic AI rel",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.52.0",
+    "publishedDate": "2026-10-09T20:13:41.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.52.0"
+  },
+  {
+    "id": "pydantic-ai-2727a5f26502",
+    "title": "v2.54.0 (2026-10-02)",
+    "summary": "What's Changed ⚠️ Compatibility Notes Handle draft-7 list-form items in JsonSchemaTransformer, TestModel and Mistral streamed output, and make TestModel accept boolean subschemas and cap prefixItems at maxItems by @dsfaccini in #9560 Fix ImageGeneration under FallbackModel and dataclasses.replace, and compare Embedder by identity by @dsfaccini in #9477 Refuse a second durable execution engine on an agent before either binds by @DouweM in #9391 Make wrap_* hooks enclose complete stage lifecycles ",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.54.0",
+    "publishedDate": "2026-10-09T20:12:18.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.54.0"
+  },
+  {
+    "id": "pydantic-ai-ab1785186166",
+    "title": "v2.55.0 (2026-10-09)",
+    "summary": "What's Changed ⚠️ Compatibility Notes Require Python 3.11 or newer in every package; Python 3.10 installs resolve to 2.54.0 and earlier by @Kludex in #9526 Record the tool requests of ExaSearch, YouSearch, LocalStack and other harness capabilities under durable execution by @DouweM in #9705 Bound retained realtime audio like retained images with retain_audio_max_seconds by @DouweM in #9702 Prefix LogfireMCP tool names with logfire_ by @mpfaffenberger in #9868 Serialize FileUrl.media_type as null",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.55.0",
+    "publishedDate": "2026-10-09T20:06:09.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.55.0"
   },
   {
     "id": "phoenix-3f5186249218",
@@ -342,46 +484,6 @@
     "releaseVersion": "0.45.1-rc1"
   },
   {
-    "id": "pydantic-ai-2727a5f26502",
-    "title": "v2.54.0 (2026-10-02)",
-    "summary": "What's Changed ⚠️ Compatibility Notes Handle draft-7 list-form items in JsonSchemaTransformer, TestModel and Mistral streamed output, and make TestModel accept boolean subschemas and cap prefixItems at maxItems by @dsfaccini in #9560 Fix ImageGeneration under FallbackModel and dataclasses.replace, and compare Embedder by identity by @dsfaccini in #9477 Refuse a second durable execution engine on an agent before either binds by @DouweM in #9391 Make wrap_* hooks enclose complete stage lifecycles ",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.54.0",
-    "publishedDate": "2026-10-03T03:21:28.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai",
-    "releaseVersion": "v2.54.0"
-  },
-  {
-    "id": "pydantic-ai-da30c170e6a3",
-    "title": "v2.53.0 (2026-10-01)",
-    "summary": "🛡️ Security This release fixes one security issue in ConcurrencyLimitedModel. See the advisory for full details and affected versions. GHSA-6fqq-452j-qhrp (high): a streamed request through ConcurrencyLimitedModel or limit_model_concurrency could keep its concurrency slot when the slot was released on a different task than the one that acquired it: after an early exit (the consumer stopped iterating, raised, or was cancelled), and also after fully consuming stream_text() with its default deboun",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.53.0",
-    "publishedDate": "2026-10-02T14:50:42.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai",
-    "releaseVersion": "v2.53.0"
-  },
-  {
     "id": "langfuse-70a78645531a",
     "title": "v4.50.0",
     "summary": "What's Changed Features feat(web): show error id in tRPC error toast and include it in issue reports by @niklassemmler in #17427 feat(evals): add facet type, built-in protection, and rule idle time by @LysanderKie in #18144 Fixes / Improvements feat(evals): show seven-day execution health in evaluator status by @wochinge in #18113 feat(web): show view owner name or email on avatar hover by @nimarb in #18032 fix(web): show full metadata JSONPath values in the modern session header by @nimarb in #",
@@ -651,26 +753,6 @@
     "releaseRelated": true,
     "releaseProject": "pydantic-ai",
     "releaseVersion": "v1.107.7"
-  },
-  {
-    "id": "pydantic-ai-fe732d49af59",
-    "title": "v2.52.0 (2026-09-29)",
-    "summary": "🛡️ Security This release fixes one security issue in web_fetch. See the advisory for full details and affected versions. GHSA-v36g-jcw9-x7cw (moderate): converting attacker-controlled HTML with deeply nested elements in the local web_fetch tool could consume excessive CPU and memory. Provider-native web fetching is not affected. Reported by @SounLabs. (#8984) Patched in 2.52.0 (v2) and 1.107.7 (v1). 📦 Harness and CLAI 2 pydantic-ai-harness now lives in this repository and ships with every Pyda",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.52.0",
-    "publishedDate": "2026-09-30T00:54:20.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai",
-    "releaseVersion": "v2.52.0"
   },
   {
     "id": "phoenix-ee1b30549640",

@@ -1,5 +1,13 @@
 [
   {
+    "project": "k8sgpt",
+    "version": "v0.4.40",
+    "publishedDate": "2026-10-09T20:24:09.000Z",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.40",
+    "sourceId": "k8sgpt",
+    "title": "v0.4.40"
+  },
+  {
     "project": "gateway-api",
     "version": "v1.7.0-rc.1",
     "publishedDate": "2026-10-08T23:54:16.000Z",
@@ -206,14 +214,6 @@
     "url": "https://istio.io/latest/news/releases/1.31.x/announcing-1.31.1/",
     "sourceId": "istio",
     "title": "Announcing Istio 1.31.1"
-  },
-  {
-    "project": "k8sgpt",
-    "version": "v0.4.39",
-    "publishedDate": "2026-09-14T14:25:02.000Z",
-    "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.39",
-    "sourceId": "k8sgpt",
-    "title": "v0.4.39"
   },
   {
     "project": "kyverno",
