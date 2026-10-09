@@ -1,5 +1,21 @@
 [
   {
+    "project": "gateway-api",
+    "version": "v1.7.0-rc.1",
+    "publishedDate": "2026-10-08T23:54:16.000Z",
+    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.7.0-rc.1",
+    "sourceId": "gateway-api",
+    "title": "v1.7.0-rc.1"
+  },
+  {
+    "project": "oci-oke",
+    "version": "v9.9.0",
+    "publishedDate": "2026-10-08T20:41:54.000Z",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.9.0",
+    "sourceId": "oci-oke",
+    "title": "v9.9.0"
+  },
+  {
     "project": "vector",
     "version": "v0.59.0",
     "publishedDate": "2026-10-08T15:35:29.000Z",
@@ -64,14 +80,6 @@
     "title": "0.51.0"
   },
   {
-    "project": "gateway-api",
-    "version": "v1.6.3",
-    "publishedDate": "2026-10-06T20:35:29.000Z",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.3",
-    "sourceId": "gateway-api",
-    "title": "v1.6.3"
-  },
-  {
     "project": "backstage",
     "version": "v1.56.0-next.2",
     "publishedDate": "2026-10-06T19:39:05.000Z",
@@ -134,14 +142,6 @@
     "url": "https://grafana.com/blog/tempo-3-1-release-all-the-latest-features/",
     "sourceId": "grafana",
     "title": "Tempo 3.1 release: new features for Kafka, TraceQL metrics updates, trace redaction, and more"
-  },
-  {
-    "project": "oci-oke",
-    "version": "v9.8.0",
-    "publishedDate": "2026-09-30T17:09:15.000Z",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.8.0",
-    "sourceId": "oci-oke",
-    "title": "v9.8.0"
   },
   {
     "project": "cncf",

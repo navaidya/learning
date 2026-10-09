@@ -1,5 +1,84 @@
 [
   {
+    "id": "gateway-api-3cbc64fa975d",
+    "title": "v1.7.0-rc.1",
+    "summary": "Major Themes Graduating to Standard HTTPRoute Retries (GEP-1731): the retry configuration of an HTTPRoute rule (codes, attempts and backoff) is promoted to the Standard channel, together with the HTTPRouteRetryCodes and HTTPRouteRetryConnectionError conformance features. The backoff field is implementation-specific because backoff behavior, especially jitter, varies between implementations. (#5357, @snorwin, #5359, @mikemorris) New in Experimental Gateway Address Routability (GEP-5093): routabil",
+    "source": "Gateway API",
+    "sourceId": "gateway-api",
+    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.7.0-rc.1",
+    "publishedDate": "2026-10-08T23:54:16.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "gateway-api",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "gateway-api",
+    "releaseVersion": "v1.7.0-rc.1"
+  },
+  {
+    "id": "gateway-api-840f59b72a2d",
+    "title": "conformance/v1.7.0-rc.1: chore: Release v1.7.0-rc.1 (#5363)",
+    "summary": "Signed-off-by: Ricardo Pchevuzinske Katz katz@redhat.com",
+    "source": "Gateway API",
+    "sourceId": "gateway-api",
+    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/conformance%2Fv1.7.0-rc.1",
+    "publishedDate": "2026-10-08T22:43:59.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "gateway-api",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "gateway-api",
+    "releaseVersion": "v1.7.0-rc.1"
+  },
+  {
+    "id": "cncf-a0d57e5aeca1",
+    "title": "Don’t give AI agents root. Make them propose the next system state.",
+    "summary": "The uncomfortable question In the past few months, I’ve been hearing different versions of the same question: under what conditions can we safely allow an autonomous system to operate a machine? It comes up when my...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/08/dont-give-ai-agents-root-make-them-propose-the-next-system-state/",
+    "publishedDate": "2026-10-08T22:21:41.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "oci-oke-d974e568f93b",
+    "title": "v9.9.0",
+    "summary": "9.9.0 (October 6, 2026) Added Support for Alloy - SKU Configuration/Enablement Support remote NVMe volumes Support for TERSI-4567 Extension to be Completed GenAI API Key Support Bug Fix remove duplicate shape argument from core instance example Correct OAC management attribute references Support OCI Cache upgrades with custom configuration sets TERSI-5553 support non-IAM hosted deployment destroy Metering Computation resource discovery only at tenancy scope",
+    "source": "OCI / OKE",
+    "sourceId": "oci-oke",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.9.0",
+    "publishedDate": "2026-10-08T20:41:54.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "oci",
+      "oke",
+      "oracle"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "oci-oke",
+    "releaseVersion": "v9.9.0"
+  },
+  {
     "id": "vector-bd1b77150b28",
     "title": "vdev-v0.3.28",
     "summary": "No content.",
@@ -8694,82 +8773,6 @@
     "sourceId": "pulumi",
     "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.257.0",
     "publishedDate": "2026-08-13T16:45:04.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.257.0"
-  },
-  {
-    "id": "hashicorp-834619ec0684",
-    "title": "Packer v1.16.0 brings verifiable provenance to machine images",
-    "summary": "Packer v1.16.0 adds native SLSA provenance generation and verification for machine images, along with new HCL2 features for provisioners and variables.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/packer-v1160-brings-verifiable-provenance-to-machine-images",
-    "publishedDate": "2026-08-13T16:00:00.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "hashicorp",
-    "releaseVersion": "v1.16.0"
-  },
-  {
-    "id": "grafana-2fd53c73e914",
-    "title": "How volumetric sampling makes the most of your trace budget in Grafana Cloud",
-    "summary": "Tracing is one of the richest observability signals, but it's also noisy and susceptible to data bloat. In a busy system, the vast majority of traces describe the same healthy, fast, successful request over and over, so most organizations downsample their traces to cut costs. But that approach has consequences, since the sampling strategy you choose determines whether you get a faithful picture of your whole system, or just a smaller, blurrier copy of your busiest endpoints.We want to help you g",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/how-volumetric-sampling-makes-the-most-of-your-trace-budget-in-grafana-cloud/",
-    "publishedDate": "2026-08-13T15:16:16.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "pulumi-58d71ae0fb83",
-    "title": "v3.257.0",
-    "summary": "3.257.0 (2026-08-13) Features [cli] Offer to create a first project after logging in to an account with no stacks #24133 [cli/do] Auto-assign identifiers to existing stack resources in pulumi do input expressions, and add pulumi do show-resources to list them #24184 [cli/do] Make \"pulumi do <pkg> <resource> patch <name> work in stateful mode, overlaying the supplied inputs onto the existing snippet\" #24295 [cli/state] Implement pulumi state get to show individual resources #24191 [cli/do] Fall b",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.257.0",
-    "publishedDate": "2026-08-13T14:42:12.000Z",
-    "domain": "logging",
-    "topics": [
-      "logging",
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.257.0"
-  },
-  {
-    "id": "pulumi-6412575f873b",
-    "title": "sdk/v3.257.0: TestNewDefaultOrgResolution: make sure promises are done (#24307)",
-    "summary": "This test currently triggers the race detector occasionally, because we are still writing to diagtest.LogSink (which in turn calls t.Logf, which is not allowed after the test is done). This comes from goroutines not being finished before the test exits. Wait for these goroutines to avoid this issue. Noticed this in https://github.com/pulumi/pulumi/actions/runs/31688936692/job/94412993439",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.257.0",
-    "publishedDate": "2026-08-13T12:30:24.000Z",
     "domain": "terraform",
     "topics": [
       "pulumi",
