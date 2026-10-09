@@ -1,5 +1,64 @@
 [
   {
+    "id": "pydantic-ai-ec5fb94d76bf",
+    "title": "CLAI2 bleeding",
+    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
+    "publishedDate": "2026-10-09T18:14:07.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "phoenix-3f5186249218",
+    "title": "arize-phoenix-evals: v3.9.2",
+    "summary": "3.9.2 (2026-10-09) Bug Fixes evals: reject non-finite precision recall beta (#16226) (a944a14)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-evals-v3.9.2",
+    "publishedDate": "2026-10-09T15:27:08.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v3.9.2"
+  },
+  {
+    "id": "langfuse-a78105f7ed13",
+    "title": "v4.56.0",
+    "summary": "Features feat(web): design-system CodeSection replaces CodeView by @nmtrang29 in #18462 feat(sessions): Add syntax highlighting to session tool previews by @bezbac in #18472 feat(billing): send spend alerts for ClickHouse-billed organizations by @Steffen911 in #17615 feat(web): ask new users what they will use Langfuse for by @AbdallahAHO in #18356 feat(topics): add adaptive map exploration and compact workspace by @nkabardin in #18492 feat(evals): revamp decision model results by @wochinge in #",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.56.0",
+    "publishedDate": "2026-10-09T10:13:50.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.56.0"
+  },
+  {
     "id": "phoenix-178ec334724a",
     "title": "arize-phoenix: v20.20.0",
     "summary": "20.20.0 (2026-10-08) Features harbor: prompt hill-climb task on a text-to-SQL dataset (#16458) (bd78550) mcp/sql: allowlist the annotation, evaluator, prompt, split and job tables (#16788) (a37b841) mcp: add GraphQL schema, query, and mutation tools (#16828) (9351580) playground: add claude-haiku-5-5 and remove retired Anthropic models (#16870) (b978e7c) pxi: make PXI's MCP code mode configurable for Harbor benchmarks (#16845) (7b43f9b) sandbox: add Docker Sandboxes provider (#16538) (a3966b2) B",
@@ -20,25 +79,6 @@
     "releaseRelated": true,
     "releaseProject": "phoenix",
     "releaseVersion": "v20.20.0"
-  },
-  {
-    "id": "pydantic-ai-ec5fb94d76bf",
-    "title": "CLAI2 bleeding",
-    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-08T17:33:43.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai"
   },
   {
     "id": "langfuse-2bdaf161d47a",
