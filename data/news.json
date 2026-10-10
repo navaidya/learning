@@ -1,5 +1,25 @@
 [
   {
+    "id": "karpenter-38a0f6314eef",
+    "title": "v1.15.0",
+    "summary": "Features dra prioritized alternatives support (#3142) #3142 (Ryan Mistretta) metrics: add karpenter_pods_disrupted_total counter (#3015) #3015 (praveen9354) metrics: add consolidation_policy and termination_mode labels to disruption metrics (#3179) #3179 (Derek Frank) add VPA prediction controller and store (#3134) #3134 (Jigisha Patil) default pod topology spread awareness (#3205) #3205 (Andrew Mitchell) account for instance type volume limits when provisioning (#3202) #3202 (Eddie) Reduce allo",
+    "source": "Karpenter",
+    "sourceId": "karpenter",
+    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.15.0",
+    "publishedDate": "2026-10-10T05:42:48.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "karpenter",
+      "kubernetes",
+      "autoscaling"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "karpenter",
+    "releaseVersion": "v1.15.0"
+  },
+  {
     "id": "vector-026ca175636f",
     "title": "vdev-v0.3.30",
     "summary": "No content.",
@@ -8729,24 +8749,6 @@
       "kubernetes",
       "cncf",
       "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "opentelemetry-1de267160b15",
-    "title": "What can you do with OpenTelemetry entity events?",
-    "summary": "Metrics, logs, and traces tell you how your systems behave. They are much quieter about what actually exists: which hosts, interfaces, switches, services, and volumes are out there right now, and, crucially, how that picture changed over the last hour, day, or quarter. That living inventory has stayed a blind spot in the open observability stack. OpenTelemetry&rsquo;s entity events, coming out of the Entities SIG and described in the Entity Data Model, are the piece that starts to close it. Enti",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/consuming-opentelemetry-entity-events/",
-    "publishedDate": "2026-08-14T07:10:08.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
     ],
     "importance": "medium",
     "architectureShift": false,
