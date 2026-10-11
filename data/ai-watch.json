@@ -1,5 +1,25 @@
 [
   {
+    "id": "phoenix-9773db063fb5",
+    "title": "arize-phoenix: v20.21.0",
+    "summary": "20.21.0 (2026-10-11) Features assign a random gradient to projects created by ingestion (#16873) (8946f7a) cost-tracking: support Mistral AI model pricing (#16880) (0e33736), closes #16878 Bug Fixes agents: upgrade pydantic-ai for CVE-2026-107286 (#16893) (3cdb004) deps: update arize-phoenix-evals to 3.9.2 (#16900) (e8aa1ea) playground: sync built-in model prices and model lists (#16894) (35f86e5) stop dropping evaluator metadata nested under result (#16902) (d927595) Documentation Add Phoenix r",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.21.0",
+    "publishedDate": "2026-10-11T14:23:03.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v20.21.0"
+  },
+  {
     "id": "pydantic-ai-ec5fb94d76bf",
     "title": "CLAI2 bleeding",
     "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
