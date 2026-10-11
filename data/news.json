@@ -8755,6 +8755,24 @@
     "releaseRelated": false
   },
   {
+    "id": "opentelemetry-1de267160b15",
+    "title": "What can you do with OpenTelemetry entity events?",
+    "summary": "Metrics, logs, and traces tell you how your systems behave. They are much quieter about what actually exists: which hosts, interfaces, switches, services, and volumes are out there right now, and, crucially, how that picture changed over the last hour, day, or quarter. That living inventory has stayed a blind spot in the open observability stack. OpenTelemetry&rsquo;s entity events, coming out of the Entities SIG and described in the Entity Data Model, are the piece that starts to close it. Enti",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/consuming-opentelemetry-entity-events/",
+    "publishedDate": "2026-08-14T07:10:08.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "tempo-1f1ad87d236d",
     "title": "v3.0.3",
     "summary": "Security operations: Update Go to 1.26.5 (CVE-2026-39822, CVE-2026-27145, CVE-2026-42504, CVE-2026-42505, CVE-2026-42507), google.golang.org/grpc to v1.82.1 (GHSA-hrxh-6v49-42gf), golang.org/x/net to v0.56.0 (CVE-2026-46600), golang.org/x/text to v0.39.0 (CVE-2026-56852), and go.opentelemetry.io/otel to v1.44.0 (CVE-2026-41178) (#7726) (@mattdurham) Enhancements query-frontend: Add Tempo configuration documentation to the MCP server via the docs-config tool and docs://config/overview and docs://",
@@ -8774,6 +8792,27 @@
     "releaseRelated": true,
     "releaseProject": "tempo",
     "releaseVersion": "v3.0.3"
+  },
+  {
+    "id": "tempo-9408bf2f67c0",
+    "title": "v2.10.8",
+    "summary": "Security operations: Update Go to 1.26.5 (CVE-2026-39822, CVE-2026-27145, CVE-2026-42504, CVE-2026-42505, CVE-2026-42507), google.golang.org/grpc to v1.82.1 (GHSA-hrxh-6v49-42gf), golang.org/x/net to v0.56.0 (CVE-2026-46600), golang.org/x/text to v0.39.0 (CVE-2026-56852), and go.opentelemetry.io/otel to v1.44.0 (CVE-2026-41178) (#7725) (@mattdurham)",
+    "source": "Grafana Tempo",
+    "sourceId": "tempo",
+    "url": "https://github.com/grafana/tempo/releases/tag/v2.10.8",
+    "publishedDate": "2026-08-13T20:37:12.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "tempo",
+      "tracing",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "tempo",
+    "releaseVersion": "v2.10.8"
   },
   {
     "id": "containerd-4faa18896850",
@@ -9669,49 +9708,5 @@
     "releaseRelated": true,
     "releaseProject": "opentelemetry",
     "releaseVersion": "2.26.0"
-  },
-  {
-    "id": "holmesgpt-f4a8a91f494f",
-    "title": "0.36.0",
-    "summary": "What's Changed Switch holmes image to Alpine base by @moshemorad in #2152 Bound conversation/tool-call claiming to worker capacity (ROB-388) by @naomi-robusta in #2246 ROB-306: github-mcp PAT path uses native HTTP mode by @RoiGlinik in #2247 feat: Add /api/info endpoint for operational visibility by @theTibi in #1956 ROB-415 remove KRR resource recommendation features by @naomi-robusta in #2259 ROB-197 add k8s mcp oauth info to datasources by @RoiGlinik in #2264 ROB-564 Mark multi-instance-capab",
-    "source": "HolmesGPT (Robusta)",
-    "sourceId": "holmesgpt",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.36.0",
-    "publishedDate": "2026-07-13T09:32:20.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "mcp",
-      "holmesgpt",
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "high",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "holmesgpt",
-    "releaseVersion": "0.36.0"
-  },
-  {
-    "id": "holmesgpt-0da6eb931d23",
-    "title": "0.36.0-alpha3",
-    "summary": "What's Changed ROB-597 AWS MCP: steer call_aws JSON args to escaped double quotes by @alonelish in #2280 Weekly Benchmark Results 2026-07-12_05-58 by @github-actions[bot] in #2283 [ROB-586] Add standalone manifest for additional Azure MCP accounts by @Avi-Robusta in #2277 ROB-586 - support multiple mcp servers without overriding identical tool names by @Avi-Robusta in #2284 Full Changelog: 0.36.0-alpha2...0.36.0-alpha3",
-    "source": "HolmesGPT (Robusta)",
-    "sourceId": "holmesgpt",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.36.0-alpha3",
-    "publishedDate": "2026-07-13T08:59:43.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "mcp",
-      "holmesgpt",
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "high",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "holmesgpt",
-    "releaseVersion": "0.36.0-alpha3"
   }
 ]
