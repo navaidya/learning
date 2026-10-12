@@ -1,5 +1,25 @@
 [
   {
+    "id": "opentelemetry-2bd575b6bf87",
+    "title": "Prometheus and OpenTelemetry interoperability in 2026: Survey results",
+    "summary": "We ran a survey asking users of OpenTelemetry and Prometheus how they collect, process, and store metrics. The goal was to understand, with real usage data rather than assumptions, how far the ecosystem has moved and whether the interoperability still causes friction. Key takeaways Interoperability has measurably improved since our 2024 survey: the average ease-of-use rating rose from 3.1 to 3.6, the equivalent of one in two respondents rating a whole category higher, and the share of respondent",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/otel-prometheus-interoperability/",
+    "publishedDate": "2026-10-12T06:51:10.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry",
+    "releaseVersion": "3.1"
+  },
+  {
     "id": "karpenter-38a0f6314eef",
     "title": "v1.15.0",
     "summary": "Features dra prioritized alternatives support (#3142) #3142 (Ryan Mistretta) metrics: add karpenter_pods_disrupted_total counter (#3015) #3015 (praveen9354) metrics: add consolidation_policy and termination_mode labels to disruption metrics (#3179) #3179 (Derek Frank) add VPA prediction controller and store (#3134) #3134 (Jigisha Patil) default pod topology spread awareness (#3205) #3205 (Andrew Mitchell) account for instance type volume limits when provisioning (#3202) #3202 (Eddie) Reduce allo",
@@ -2889,26 +2909,6 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "vector"
-  },
-  {
-    "id": "opentelemetry-2bd575b6bf87",
-    "title": "Prometheus and OpenTelemetry interoperability in 2026: Survey results",
-    "summary": "We ran a survey asking users of OpenTelemetry and Prometheus how they collect, process, and store metrics. The goal was to understand, with real usage data rather than assumptions, how far the ecosystem has moved and whether the interoperability still causes friction. Key takeaways Interoperability has measurably improved since our 2024 survey: the average ease-of-use rating rose from 3.1 to 3.6, the equivalent of one in two respondents rating a whole category higher, and the share of respondent",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/otel-prometheus-interoperability/",
-    "publishedDate": "2026-09-22T15:06:22.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentelemetry",
-    "releaseVersion": "3.1"
   },
   {
     "id": "cncf-6a4c11d02dc4",

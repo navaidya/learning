@@ -1,5 +1,13 @@
 [
   {
+    "project": "opentelemetry",
+    "version": "3.1",
+    "publishedDate": "2026-10-12T06:51:10.000Z",
+    "url": "https://opentelemetry.io/blog/2026/otel-prometheus-interoperability/",
+    "sourceId": "opentelemetry",
+    "title": "Prometheus and OpenTelemetry interoperability in 2026: Survey results"
+  },
+  {
     "project": "karpenter",
     "version": "v1.15.0",
     "publishedDate": "2026-10-10T05:42:48.000Z",
@@ -110,14 +118,6 @@
     "url": "https://kubernetes.io/blog/2026/10/06/kubernetes-cgroups-v2-shift/",
     "sourceId": "kubernetes",
     "title": "The Shift to cgroup v2 in Kubernetes: What You Need to Know"
-  },
-  {
-    "project": "opentelemetry",
-    "version": "3.0",
-    "publishedDate": "2026-10-06T16:43:08.000Z",
-    "url": "https://opentelemetry.io/blog/2026/java-agent-3.0-preview/",
-    "sourceId": "opentelemetry",
-    "title": "The OpenTelemetry Java agent 3.0 is almost here — preview it today"
   },
   {
     "project": "cilium",
