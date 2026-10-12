@@ -1,5 +1,102 @@
 [
   {
+    "id": "langfuse-22b3e582de87",
+    "title": "v3.225.12",
+    "summary": "What's Changed feat(web): hint self-hosted v3 deployments to upgrade to Langfuse v4 by @maxdeichmann in #18644 fix(web): tidy the v3 version menu upgrade hint by @maxdeichmann in #18661 Full Changelog: v3.225.11...v3.225.12",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v3.225.12",
+    "publishedDate": "2026-10-12T21:43:09.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v3.225.12"
+  },
+  {
+    "id": "phoenix-cc3b058adc16",
+    "title": "arize-phoenix: v20.21.1",
+    "summary": "20.21.1 (2026-10-12) Bug Fixes improve span ingestion reliability (#16889) (678740c) trace: accept empty dataframes in TraceDataset (#16913) (d0dc9e5) Documentation Add Scalekit to the Phoenix platform docs (#16896) (1afe1ea) readme: make the \"Add to Cursor\" MCP badge clickable on GitHub (#16926) (b8d0e3f)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.21.1",
+    "publishedDate": "2026-10-12T21:09:18.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v20.21.1"
+  },
+  {
+    "id": "pydantic-ai-ec5fb94d76bf",
+    "title": "CLAI2 bleeding",
+    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
+    "publishedDate": "2026-10-12T19:57:47.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "langfuse-b337b51e8356",
+    "title": "v4.57.0",
+    "summary": "What's Changed Features feat(ee): refuse FIPS mode with storage options that compute MD5 by @Steffen911 in #18443 feat(worker): add optional startup jitter before queue registration by @niklassemmler in #18525 feat(auth): hash passwords with PBKDF2 in FIPS mode by @Steffen911 in #18444 feat(web): restore optional Cloudflare Turnstile captcha on credential auth by @maxdeichmann in #18580 feat(web): carry the typed email over to the password reset form by @dergeraetbot in #18585 feat(gateway): add",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.57.0",
+    "publishedDate": "2026-10-12T17:20:29.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.57.0"
+  },
+  {
+    "id": "cncf-video-285a3bdcc4ef",
+    "title": "Scaling Agentic AI Inference with Cloud Native Infrastructure",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/shorts/owclIBk9_X8",
+    "publishedDate": "2026-10-12T16:05:40.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "phoenix-9773db063fb5",
     "title": "arize-phoenix: v20.21.0",
     "summary": "20.21.0 (2026-10-11) Features assign a random gradient to projects created by ingestion (#16873) (8946f7a) cost-tracking: support Mistral AI model pricing (#16880) (0e33736), closes #16878 Bug Fixes agents: upgrade pydantic-ai for CVE-2026-107286 (#16893) (3cdb004) deps: update arize-phoenix-evals to 3.9.2 (#16900) (e8aa1ea) playground: sync built-in model prices and model lists (#16894) (35f86e5) stop dropping evaluator metadata nested under result (#16902) (d927595) Documentation Add Phoenix r",
@@ -18,25 +115,6 @@
     "releaseRelated": true,
     "releaseProject": "phoenix",
     "releaseVersion": "v20.21.0"
-  },
-  {
-    "id": "pydantic-ai-ec5fb94d76bf",
-    "title": "CLAI2 bleeding",
-    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-10T13:19:36.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai"
   },
   {
     "id": "phoenix-720abc1ed78b",
@@ -3744,25 +3822,5 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "otel-ai-ae30a5b864f5",
-    "title": "The Voyage of a Small Environment Variable",
-    "summary": "The OpenTelemetry Spring Boot starter gained declarative-configuration support starting in version 2.26.0 — the same YAML schema the Java agent introduced in late 2025, now embedded inside application.yaml. This post traces what one env var, OTEL_SERVICE_NAME=petclinic, does in that new world, and where the seams are. In a hurry? Jump straight to the Spring Boot starter declarative-config docs, paste your application.properties into the interactive converter, or pick your SDK setup in the Ecosys",
-    "source": "OpenTelemetry",
-    "sourceId": "otel-ai",
-    "url": "https://opentelemetry.io/blog/2026/spring-boot-declarative-config/",
-    "publishedDate": "2026-07-14T07:47:36.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "agent-observability",
-      "news"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "otel-ai",
-    "releaseVersion": "2.26.0"
   }
 ]

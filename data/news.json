@@ -1,5 +1,127 @@
 [
   {
+    "id": "holmesgpt-9904000e0974",
+    "title": "0.44.0-alpha",
+    "summary": "What's Changed ROB-1237 Price Robusta models whose upstream name isn't provider/id by @naomi-robusta in #2546 ROB-1369 Default the auto executor to one conversation at a time by @naomi-robusta in #2566 ROB-1507 - GPT-6.1 Handle multi-choice LLM responses by merging choices by @Avi-Robusta in #2556 ROB-801 Refresh litellm cost map when a model lookup misses by @Avi-Robusta in #2553 ROB-1291 Per-user Dex auth for the Kubernetes MCP addon, with private CA support by @RoiGlinik in #2554 Weekly Bench",
+    "source": "HolmesGPT (Robusta)",
+    "sourceId": "holmesgpt",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.44.0-alpha",
+    "publishedDate": "2026-10-12T11:36:32.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "holmesgpt",
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "holmesgpt",
+    "releaseVersion": "0.44.0-alpha"
+  },
+  {
+    "id": "cncf-f6e13a4722f3",
+    "title": "From zero to agent builder: Running kagent on your laptop",
+    "summary": "If you have seen a demo of a no-code agent builder, you know the moment. Someone types one sentence, waits a minute, and there it is: a new agent, running, with tools. It is impressive. For...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/12/from-zero-to-agent-builder-running-kagent-on-your-laptop/",
+    "publishedDate": "2026-10-12T11:30:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "argo-d9c55cfaecf3",
+    "title": "v3.3.16",
+    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.3.16/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.3.16/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container im",
+    "source": "Argo",
+    "sourceId": "argo",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.16",
+    "publishedDate": "2026-10-12T11:04:05.000Z",
+    "domain": "gitops",
+    "topics": [
+      "gitops",
+      "argo-cd",
+      "argo",
+      "argocd"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "argo",
+    "releaseVersion": "v3.3.16"
+  },
+  {
+    "id": "argo-eb38715f5074",
+    "title": "v3.5.5",
+    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.5/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.5/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container imag",
+    "source": "Argo",
+    "sourceId": "argo",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.5",
+    "publishedDate": "2026-10-12T11:02:57.000Z",
+    "domain": "gitops",
+    "topics": [
+      "gitops",
+      "argo-cd",
+      "argo",
+      "argocd"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "argo",
+    "releaseVersion": "v3.5.5"
+  },
+  {
+    "id": "argo-5dc4e2b85510",
+    "title": "v3.4.11",
+    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.4.11/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.4.11/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container im",
+    "source": "Argo",
+    "sourceId": "argo",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.4.11",
+    "publishedDate": "2026-10-12T10:49:28.000Z",
+    "domain": "gitops",
+    "topics": [
+      "gitops",
+      "argo-cd",
+      "argo",
+      "argocd"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "argo",
+    "releaseVersion": "v3.4.11"
+  },
+  {
+    "id": "argo-520b0c0f61df",
+    "title": "stable: Bump version to 3.5.5 on release-3.5 branch (#30136)",
+    "summary": "Signed-off-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com> Co-authored-by: blakepettersson 1227954+blakepettersson@users.noreply.github.com",
+    "source": "Argo",
+    "sourceId": "argo",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/stable",
+    "publishedDate": "2026-10-12T10:04:33.000Z",
+    "domain": "gitops",
+    "topics": [
+      "argo",
+      "argocd",
+      "gitops"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "argo",
+    "releaseVersion": "3.5.5"
+  },
+  {
     "id": "opentelemetry-2bd575b6bf87",
     "title": "Prometheus and OpenTelemetry interoperability in 2026: Survey results",
     "summary": "We ran a survey asking users of OpenTelemetry and Prometheus how they collect, process, and store metrics. The goal was to understand, with real usage data rather than assumptions, how far the ecosystem has moved and whether the interoperability still causes friction. Key takeaways Interoperability has measurably improved since our 2024 survey: the average ease-of-use rating rose from 3.1 to 3.6, the equivalent of one in two respondents rating a whole category higher, and the share of respondent",
@@ -726,26 +848,6 @@
     "releaseRelated": true,
     "releaseProject": "gateway-api",
     "releaseVersion": "v1.6.3"
-  },
-  {
-    "id": "argo-520b0c0f61df",
-    "title": "stable: Bump version to 3.5.4 on release-3.5 branch (#30043)",
-    "summary": "Signed-off-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com> Co-authored-by: crenshaw-dev 350466+crenshaw-dev@users.noreply.github.com",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/stable",
-    "publishedDate": "2026-10-06T19:58:31.000Z",
-    "domain": "gitops",
-    "topics": [
-      "argo",
-      "argocd",
-      "gitops"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "3.5.4"
   },
   {
     "id": "backstage-1d6ca8167199",
@@ -8737,42 +8839,6 @@
     "releaseVersion": "v3.21.4"
   },
   {
-    "id": "cncf-f6206decda04",
-    "title": "Eleven minutes, zero humans: Building a self-healing Kubernetes upgrade pipeline on Kairos",
-    "summary": "Once upon a time, upgrading a Kubernetes control plane meant staying awake for it. SSH into every node. Run the upgrade by hand. Watch etcd health the whole time, hoping quorum holds through every reboot. This...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/08/14/eleven-minutes-zero-humans-building-a-self-healing-kubernetes-upgrade-pipeline-on-kairos/",
-    "publishedDate": "2026-08-14T11:14:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "opentelemetry-1de267160b15",
-    "title": "What can you do with OpenTelemetry entity events?",
-    "summary": "Metrics, logs, and traces tell you how your systems behave. They are much quieter about what actually exists: which hosts, interfaces, switches, services, and volumes are out there right now, and, crucially, how that picture changed over the last hour, day, or quarter. That living inventory has stayed a blind spot in the open observability stack. OpenTelemetry&rsquo;s entity events, coming out of the Entities SIG and described in the Entity Data Model, are the piece that starts to close it. Enti",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/consuming-opentelemetry-entity-events/",
-    "publishedDate": "2026-08-14T07:10:08.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "tempo-1f1ad87d236d",
     "title": "v3.0.3",
     "summary": "Security operations: Update Go to 1.26.5 (CVE-2026-39822, CVE-2026-27145, CVE-2026-42504, CVE-2026-42505, CVE-2026-42507), google.golang.org/grpc to v1.82.1 (GHSA-hrxh-6v49-42gf), golang.org/x/net to v0.56.0 (CVE-2026-46600), golang.org/x/text to v0.39.0 (CVE-2026-56852), and go.opentelemetry.io/otel to v1.44.0 (CVE-2026-41178) (#7726) (@mattdurham) Enhancements query-frontend: Add Tempo configuration documentation to the MCP server via the docs-config tool and docs://config/overview and docs://",
@@ -8792,27 +8858,6 @@
     "releaseRelated": true,
     "releaseProject": "tempo",
     "releaseVersion": "v3.0.3"
-  },
-  {
-    "id": "tempo-9408bf2f67c0",
-    "title": "v2.10.8",
-    "summary": "Security operations: Update Go to 1.26.5 (CVE-2026-39822, CVE-2026-27145, CVE-2026-42504, CVE-2026-42505, CVE-2026-42507), google.golang.org/grpc to v1.82.1 (GHSA-hrxh-6v49-42gf), golang.org/x/net to v0.56.0 (CVE-2026-46600), golang.org/x/text to v0.39.0 (CVE-2026-56852), and go.opentelemetry.io/otel to v1.44.0 (CVE-2026-41178) (#7725) (@mattdurham)",
-    "source": "Grafana Tempo",
-    "sourceId": "tempo",
-    "url": "https://github.com/grafana/tempo/releases/tag/v2.10.8",
-    "publishedDate": "2026-08-13T20:37:12.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "tempo",
-      "tracing",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "tempo",
-    "releaseVersion": "v2.10.8"
   },
   {
     "id": "containerd-4faa18896850",
@@ -9667,46 +9712,5 @@
     "importance": "high",
     "architectureShift": true,
     "releaseRelated": false
-  },
-  {
-    "id": "backstage-20c874a5e46d",
-    "title": "v1.53.0",
-    "summary": "These are the release notes for the v1.53.0 release of Backstage. A huge thanks to the whole team of maintainers and contributors as well as the amazing Backstage Community for the hard work in getting this release developed and done. Highlights BREAKING: Removed deprecated SSE transport from MCP actions The deprecated Server-Sent Events (SSE) MCP transport has been removed from @backstage/plugin-mcp-actions-backend. MCP clients must use the Streamable HTTP endpoint at /api/mcp-actions/v1 or a c",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.53.0",
-    "publishedDate": "2026-07-14T12:35:25.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "platform-engineering",
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "high",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.53.0"
-  },
-  {
-    "id": "opentelemetry-ae30a5b864f5",
-    "title": "The Voyage of a Small Environment Variable",
-    "summary": "The OpenTelemetry Spring Boot starter gained declarative-configuration support starting in version 2.26.0 — the same YAML schema the Java agent introduced in late 2025, now embedded inside application.yaml. This post traces what one env var, OTEL_SERVICE_NAME=petclinic, does in that new world, and where the seams are. In a hurry? Jump straight to the Spring Boot starter declarative-config docs, paste your application.properties into the interactive converter, or pick your SDK setup in the Ecosys",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/spring-boot-declarative-config/",
-    "publishedDate": "2026-07-14T07:47:36.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentelemetry",
-    "releaseVersion": "2.26.0"
   }
 ]

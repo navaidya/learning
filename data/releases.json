@@ -1,5 +1,21 @@
 [
   {
+    "project": "holmesgpt",
+    "version": "0.44.0-alpha",
+    "publishedDate": "2026-10-12T11:36:32.000Z",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.44.0-alpha",
+    "sourceId": "holmesgpt",
+    "title": "0.44.0-alpha"
+  },
+  {
+    "project": "argo",
+    "version": "v3.3.16",
+    "publishedDate": "2026-10-12T11:04:05.000Z",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.16",
+    "sourceId": "argo",
+    "title": "v3.3.16"
+  },
+  {
     "project": "opentelemetry",
     "version": "3.1",
     "publishedDate": "2026-10-12T06:51:10.000Z",
@@ -72,28 +88,12 @@
     "title": "operator: v0.12.0"
   },
   {
-    "project": "argo",
-    "version": "v3.5.4",
-    "publishedDate": "2026-10-07T16:03:15.000Z",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.4",
-    "sourceId": "argo",
-    "title": "v3.5.4"
-  },
-  {
     "project": "pulumi",
     "version": "v3.268.0",
     "publishedDate": "2026-10-07T13:09:03.000Z",
     "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.268.0",
     "sourceId": "pulumi",
     "title": "pkg/v3.268.0: Changelog and go.mod updates for v3.268.0 (#25095)"
-  },
-  {
-    "project": "holmesgpt",
-    "version": "0.43.0",
-    "publishedDate": "2026-10-07T09:13:36.000Z",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.43.0",
-    "sourceId": "holmesgpt",
-    "title": "0.43.0"
   },
   {
     "project": "robusta",
