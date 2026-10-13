@@ -1,11 +1,27 @@
 [
   {
+    "project": "backstage",
+    "version": "v1.56.0-next.3",
+    "publishedDate": "2026-10-13T16:20:16.000Z",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.56.0-next.3",
+    "sourceId": "backstage",
+    "title": "v1.56.0-next.3"
+  },
+  {
+    "project": "robusta",
+    "version": "0.52.0-alpha",
+    "publishedDate": "2026-10-13T13:34:34.000Z",
+    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.52.0-alpha",
+    "sourceId": "robusta",
+    "title": "0.52.0-alpha"
+  },
+  {
     "project": "holmesgpt",
-    "version": "0.44.0-alpha",
-    "publishedDate": "2026-10-12T11:36:32.000Z",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.44.0-alpha",
+    "version": "0.44.0-alpha.1",
+    "publishedDate": "2026-10-13T12:58:49.000Z",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.44.0-alpha.1",
     "sourceId": "holmesgpt",
-    "title": "0.44.0-alpha"
+    "title": "0.44.0-alpha.1"
   },
   {
     "project": "argo",
@@ -94,22 +110,6 @@
     "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.268.0",
     "sourceId": "pulumi",
     "title": "pkg/v3.268.0: Changelog and go.mod updates for v3.268.0 (#25095)"
-  },
-  {
-    "project": "robusta",
-    "version": "0.51.0",
-    "publishedDate": "2026-10-07T09:10:02.000Z",
-    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.51.0",
-    "sourceId": "robusta",
-    "title": "0.51.0"
-  },
-  {
-    "project": "backstage",
-    "version": "v1.56.0-next.2",
-    "publishedDate": "2026-10-06T19:39:05.000Z",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.56.0-next.2",
-    "sourceId": "backstage",
-    "title": "v1.56.0-next.2"
   },
   {
     "project": "kubernetes",

@@ -1,5 +1,44 @@
 [
   {
+    "id": "pydantic-ai-ec5fb94d76bf",
+    "title": "CLAI2 bleeding",
+    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
+    "publishedDate": "2026-10-13T19:49:16.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "phoenix-5d8ae6abaeaf",
+    "title": "arize-phoenix: v20.21.2",
+    "summary": "20.21.2 (2026-10-13) Bug Fixes experiments: coerce average repeated-run latency to float on PostgreSQL (#16957) (c05a170) graphql: normalize retrieval summary counts to int (#16960) (9735fc9)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.21.2",
+    "publishedDate": "2026-10-13T16:04:09.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v20.21.2"
+  },
+  {
     "id": "langfuse-ca10b959d8d7",
     "title": "v4.58.0",
     "summary": "What's Changed Features feat(web): require Turnstile on password-reset emails by @maxdeichmann in #18584 feat(ci): bump dependabot to opus5.5 by @nimarb in #18553 feat(otel): extract media before TypeScript parsing by @sumerman in #18239 feat(media): add upload pool with concurrency and byte limits by @sumerman in #18629 feat(worker): per-project trace idle time in tracing_readiness_settings by @LysanderKie in #18595 feat(topics): configure Topics on the project's own LLM connections by @Lysande",
@@ -38,25 +77,6 @@
     "releaseRelated": true,
     "releaseProject": "phoenix",
     "releaseVersion": "v0.2.0"
-  },
-  {
-    "id": "pydantic-ai-ec5fb94d76bf",
-    "title": "CLAI2 bleeding",
-    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-12T23:10:01.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai"
   },
   {
     "id": "langgraph-7bc51b459ec6",
