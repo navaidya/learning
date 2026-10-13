@@ -1,5 +1,164 @@
 [
   {
+    "id": "langfuse-ca10b959d8d7",
+    "title": "v4.58.0",
+    "summary": "What's Changed Features feat(web): require Turnstile on password-reset emails by @maxdeichmann in #18584 feat(ci): bump dependabot to opus5.5 by @nimarb in #18553 feat(otel): extract media before TypeScript parsing by @sumerman in #18239 feat(media): add upload pool with concurrency and byte limits by @sumerman in #18629 feat(worker): per-project trace idle time in tracing_readiness_settings by @LysanderKie in #18595 feat(topics): configure Topics on the project's own LLM connections by @Lysande",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.58.0",
+    "publishedDate": "2026-10-13T07:05:09.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.58.0"
+  },
+  {
+    "id": "phoenix-9a8dfc6593be",
+    "title": "arize-phoenix-sqlean: v0.2.0",
+    "summary": "0.2.0 (2026-10-12) Features phoenix-sqlean: bundle SQLite 3.54.0 and support Python 3.15 (#16936) (fff25bc)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-sqlean-v0.2.0",
+    "publishedDate": "2026-10-13T03:17:51.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v0.2.0"
+  },
+  {
+    "id": "pydantic-ai-ec5fb94d76bf",
+    "title": "CLAI2 bleeding",
+    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
+    "publishedDate": "2026-10-12T23:10:01.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "langgraph-7bc51b459ec6",
+    "title": "langgraph-checkpoint-postgres==3.1.3",
+    "summary": "Changes since checkpointpostgres==3.1.2 release(checkpoint-postgres): 3.1.3 (#9287) fix(checkpoint-postgres,checkpoint-sqlite): treat an empty checkpoint_id as the latest in delta history (#9262) perf(checkpoint-postgres): start the delta walk at the target (#9248) fix(checkpoint,checkpoint-postgres,checkpoint-sqlite): validate namespace labels before store dispatch (#9217) fix: order delta channel replay by task path (#8544) chore(deps): bump the minor-and-patch group in /libs/checkpoint-postgr",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointpostgres%3D%3D3.1.3",
+    "publishedDate": "2026-10-12T23:05:31.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "3.1.3"
+  },
+  {
+    "id": "langgraph-616e42a111a9",
+    "title": "langgraph-checkpoint-sqlite==3.1.2",
+    "summary": "Changes since checkpointsqlite==3.1.1 release(checkpoint-sqlite): 3.1.2 (#9288) fix(checkpoint-postgres,checkpoint-sqlite): treat an empty checkpoint_id as the latest in delta history (#9262) fix(checkpoint,checkpoint-postgres,checkpoint-sqlite): validate namespace labels before store dispatch (#9217) fix: order delta channel replay by task path (#8544) chore(deps-dev): bump the minor-and-patch group in /libs/checkpoint-sqlite with 3 updates (#9146) chore(deps): bump urllib3 from 2.7.0 to 2.8.0 ",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointsqlite%3D%3D3.1.2",
+    "publishedDate": "2026-10-12T22:54:47.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "3.1.2"
+  },
+  {
+    "id": "langgraph-d8242c807ecd",
+    "title": "langgraph-sdk==0.4.7",
+    "summary": "Changes since sdk==0.4.6 release(sdk-py): 0.4.7 (#9289) release(langgraph): 1.2.15 (#9283) fix(sdk-py): end a thread stream's run only on a root lifecycle event (#9228) fix: order delta channel replay by task path (#8544) release(langgraph): 1.2.14 (#9215)",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.7",
+    "publishedDate": "2026-10-12T22:54:19.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "0.4.7"
+  },
+  {
+    "id": "langgraph-6206b4d2a41b",
+    "title": "langgraph==1.2.15",
+    "summary": "Changes since 1.2.14 release(langgraph): 1.2.15 (#9283) fix(langgraph): give every message written to a messages DeltaChannel an id (#9275) fix(langgraph): save a cached node's writes like a node that ran (#9259) fix(langgraph): stop at an interrupt_before breakpoint when a drain is requested before it (#9281) fix(langgraph): keep an exit run from a checkpoint the thread moved past out of its newer branch (#9269) fix(langgraph): store an update_state input's writes on the checkpoint it updates (",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.15",
+    "publishedDate": "2026-10-12T22:38:26.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "1.2.15"
+  },
+  {
+    "id": "langgraph-18a807a692d8",
+    "title": "langgraph-checkpoint==4.3.0",
+    "summary": "Changes since checkpoint==4.2.0 fix(checkpoint): default InMemorySaver delta history to the latest checkpoint (#9257) test(checkpoint): run the delta conformance suite against InMemorySaver in CI (#9261) fix(checkpoint,checkpoint-postgres,checkpoint-sqlite): validate namespace labels before store dispatch (#9217) fix(checkpoint): keep serialized data when an object can't be rebuilt (#9251) fix(langgraph): replay a resumed exit-mode run's delta writes in live order (#9114) fix: order delta channe",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpoint%3D%3D4.3.0",
+    "publishedDate": "2026-10-12T22:26:41.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "4.3.0"
+  },
+  {
     "id": "langfuse-22b3e582de87",
     "title": "v3.225.12",
     "summary": "What's Changed feat(web): hint self-hosted v3 deployments to upgrade to Langfuse v4 by @maxdeichmann in #18644 fix(web): tidy the v3 version menu upgrade hint by @maxdeichmann in #18661 Full Changelog: v3.225.11...v3.225.12",
@@ -40,25 +199,6 @@
     "releaseRelated": true,
     "releaseProject": "phoenix",
     "releaseVersion": "v20.21.1"
-  },
-  {
-    "id": "pydantic-ai-ec5fb94d76bf",
-    "title": "CLAI2 bleeding",
-    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-12T19:57:47.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai"
   },
   {
     "id": "langfuse-b337b51e8356",
