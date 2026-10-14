@@ -1,5 +1,29 @@
 [
   {
+    "project": "robusta",
+    "version": "0.52.0",
+    "publishedDate": "2026-10-14T10:56:43.000Z",
+    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.52.0",
+    "sourceId": "robusta",
+    "title": "0.52.0"
+  },
+  {
+    "project": "terraform",
+    "version": "v1.17.0-rc2",
+    "publishedDate": "2026-10-14T10:37:18.000Z",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-rc2",
+    "sourceId": "terraform",
+    "title": "v1.17.0-rc2"
+  },
+  {
+    "project": "holmesgpt",
+    "version": "0.44.0",
+    "publishedDate": "2026-10-14T10:25:42.000Z",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.44.0",
+    "sourceId": "holmesgpt",
+    "title": "0.44.0"
+  },
+  {
     "project": "opentelemetry-collector",
     "version": "v1.69.0",
     "publishedDate": "2026-10-14T02:03:50.000Z",
@@ -30,22 +54,6 @@
     "url": "https://github.com/backstage/backstage/releases/tag/v1.56.0-next.3",
     "sourceId": "backstage",
     "title": "v1.56.0-next.3"
-  },
-  {
-    "project": "robusta",
-    "version": "0.52.0-alpha",
-    "publishedDate": "2026-10-13T13:34:34.000Z",
-    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.52.0-alpha",
-    "sourceId": "robusta",
-    "title": "0.52.0-alpha"
-  },
-  {
-    "project": "holmesgpt",
-    "version": "0.44.0-alpha.1",
-    "publishedDate": "2026-10-13T12:58:49.000Z",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.44.0-alpha.1",
-    "sourceId": "holmesgpt",
-    "title": "0.44.0-alpha.1"
   },
   {
     "project": "argo",
@@ -94,14 +102,6 @@
     "url": "https://github.com/vectordotdev/vector/releases/tag/v0.59.0",
     "sourceId": "vector",
     "title": "v0.59.0"
-  },
-  {
-    "project": "terraform",
-    "version": "v1.17.0-rc1",
-    "publishedDate": "2026-10-07T19:46:06.000Z",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-rc1",
-    "sourceId": "terraform",
-    "title": "v1.17.0-rc1"
   },
   {
     "project": "kubernetes-releases",

@@ -1,5 +1,103 @@
 [
   {
+    "id": "robusta-bd4f3e9bf712",
+    "title": "0.52.0",
+    "summary": "What's Changed Remove orphaned Perl 5.40 packages after Debian upgrade by @naomi-robusta in #2191 ROB-1604 Patch High/Critical CVEs in the runner image by @Avi-Robusta in #2197 ROB-1604 Backport openssh, curl, expat, util-linux, ncurses and systemd from forky by @Avi-Robusta in #2199 ROB-377 Add an MS Teams sink that posts via the Microsoft Graph API by @RoiGlinik in #2192 ROB-1604- Bump holmes chart to 0.44.0 by @Avi-Robusta in #2198 Full Changelog: 0.51.0...0.52.0",
+    "source": "Robusta",
+    "sourceId": "robusta",
+    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.52.0",
+    "publishedDate": "2026-10-14T10:56:43.000Z",
+    "domain": "aiops",
+    "topics": [
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "robusta",
+    "releaseVersion": "0.52.0"
+  },
+  {
+    "id": "terraform-c4e1235803f3",
+    "title": "v1.17.0-rc2",
+    "summary": "1.17.0-rc2 (October 14, 2026) NEW FEATURES: Terraform now supports variables and locals in provider requirements (#39153) A new -minimal-refresh planning option has been added, which will only refresh resources that have proposed changes. (#35290) policy: Terraform Policy is now generally available. The -policies flag for plan, apply, and query no longer requires an experimental build or the -allow-experimental-features flag. Query policies evaluate resources discovered by list blocks and report",
+    "source": "Terraform",
+    "sourceId": "terraform",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-rc2",
+    "publishedDate": "2026-10-14T10:37:18.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "terraform",
+    "releaseVersion": "v1.17.0-rc2"
+  },
+  {
+    "id": "holmesgpt-3fefa5bd2490",
+    "title": "0.44.0",
+    "summary": "What's Changed ROB-1237 Price Robusta models whose upstream name isn't provider/id by @naomi-robusta in #2546 ROB-1369 Default the auto executor to one conversation at a time by @naomi-robusta in #2566 ROB-1507 - GPT-6.1 Handle multi-choice LLM responses by merging choices by @Avi-Robusta in #2556 ROB-801 Refresh litellm cost map when a model lookup misses by @Avi-Robusta in #2553 ROB-1291 Per-user Dex auth for the Kubernetes MCP addon, with private CA support by @RoiGlinik in #2554 Weekly Bench",
+    "source": "HolmesGPT (Robusta)",
+    "sourceId": "holmesgpt",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.44.0",
+    "publishedDate": "2026-10-14T10:25:42.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "holmesgpt",
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "holmesgpt",
+    "releaseVersion": "0.44.0"
+  },
+  {
+    "id": "terraform-168a0a82b364",
+    "title": "v1.16.6",
+    "summary": "1.16.6 (October 14, 2026) BUG FIXES: cloud: terraform init can now find workspaces selected by key/value tags whose keys contain uppercase letters. (#39306) test: Allow module under test to use deprecated outputs. (#39207) NOTES: Prevent a HTTP/2 resource exhaustion via CVE-2026-78669. Exploitation would require a compromised (untrusted) provider/module registry. Such a threat is considered to be outside the perimeter of Terraform core security guarantees. (#39375)",
+    "source": "Terraform",
+    "sourceId": "terraform",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.6",
+    "publishedDate": "2026-10-14T09:31:54.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "iac"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "terraform",
+    "releaseVersion": "v1.16.6"
+  },
+  {
+    "id": "robusta-14a24a3e9403",
+    "title": "0.52.0-alpha.1",
+    "summary": "What's Changed ROB-1604 Backport openssh, curl, expat, util-linux, ncurses and systemd from forky by @Avi-Robusta in #2199 Full Changelog: 0.52.0-alpha...0.52.0-alpha.1",
+    "source": "Robusta",
+    "sourceId": "robusta",
+    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.52.0-alpha.1",
+    "publishedDate": "2026-10-14T08:28:01.000Z",
+    "domain": "aiops",
+    "topics": [
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "robusta",
+    "releaseVersion": "0.52.0-alpha.1"
+  },
+  {
     "id": "opentelemetry-collector-cd6e06938816",
     "title": "v1.69.0/v0.163.0",
     "summary": "Images and binaries here: https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.163.0 End User Changelog 💡 Enhancements 💡 cmd/builder: Add dist.resource.detection.detectors to the builder config, letting distributions opt into a smaller set of resourcedetectionprocessor detectors via generated go build tags. (#16075) cmd/mdatagen: Generate exporter queue/batch sender defaults from an opt-in sending_queue field in metadata.yaml. See the batching migration RFC. (#159",
@@ -208,6 +306,24 @@
     "releaseRelated": true,
     "releaseProject": "opentelemetry-collector",
     "releaseVersion": "v0.163.0"
+  },
+  {
+    "id": "openai-2f3282e48314",
+    "title": "The EU’s next chapter in AI is agentic",
+    "summary": "New analysis shows how agentic AI adoption is growing across EU enterprises and small businesses—and where deeper use could unlock more value.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
+    "publishedDate": "2026-10-14T00:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "opentelemetry-bfe74ec118e2",
@@ -8476,123 +8592,6 @@
     "importance": "high",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "backstage-9a13b1b6b242",
-    "title": "v1.54.0",
-    "summary": "These are the release notes for the v1.54.0 release of Backstage. A huge thanks to the whole team of maintainers and contributors as well as the amazing Backstage Community for the hard work in getting this release developed and done. Highlights BREAKING: Stricter OAuth redirect URI allowlist matching The OAuth redirect URI and client ID metadata document allowlists in @backstage/plugin-auth-backend now match patterns against each URL component separately instead of against the full URL string. ",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.0",
-    "publishedDate": "2026-08-19T11:20:23.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "platform-engineering",
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.54.0"
-  },
-  {
-    "id": "vector-96d1960fe4da",
-    "title": "vdev-v0.3.15",
-    "summary": "No content.",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.15",
-    "publishedDate": "2026-08-18T20:43:56.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector"
-  },
-  {
-    "id": "loki-f22f5c601561",
-    "title": "operator: v0.11.0",
-    "summary": "0.11.0 (2026-08-18) ⚠ BREAKING CHANGES Remove support for experimental LogQL variants() queries (#23823) Features operator: Enable multi-variant queries (#21009) (709e318) operator: Support private VPC S3 endpoints in endpoint validation (#22395) (394caef) operator: Watch object storage Services for NetworkPolicy updates and surface ports in status (#22436) (12822d5) Remove support for experimental LogQL variants() queries (#23823) (132e5f9) Bug Fixes operator: Move telemetry recording rules to ",
-    "source": "Grafana Loki",
-    "sourceId": "loki",
-    "url": "https://github.com/grafana/loki/releases/tag/operator%2Fv0.11.0",
-    "publishedDate": "2026-08-18T15:48:41.000Z",
-    "domain": "logging",
-    "topics": [
-      "loki",
-      "logging",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "loki",
-    "releaseVersion": "v0.11.0"
-  },
-  {
-    "id": "cncf-5ca4d1b0e097",
-    "title": "Cloud Native platform sovereignty through multi-plane architecture",
-    "summary": "When people talk about cloud sovereignty, the conversation often starts with regions: where a workload runs and where its data is stored. But choosing a region is only part of the story. The architecture of the...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/08/18/cloud-native-platform-sovereignty-through-multi-plane-architecture/",
-    "publishedDate": "2026-08-18T11:30:00.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "cilium-daeee3a4fe84",
-    "title": "1.20.1",
-    "summary": "Summary of Changes Major Changes: docs/clustermesh: overhaul Cluster Mesh documentation with a new introduction, improved load-balancing guidance, and Helm-first setup and certificate configuration instructions (Backport PR #47615, Upstream PR #47351, @MrFreezeex) Minor Changes: envoy: demote stale ADS endpoint warning (Backport PR #47805, Upstream PR #47148, @nezdolik) Speed up recovery time for disrupted TCP connections that access a DSR-enabled Service. (Backport PR #47881, Upstream PR #47529",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.20.1",
-    "publishedDate": "2026-08-18T10:36:16.000Z",
-    "domain": "ebpf-cilium",
-    "topics": [
-      "cilium",
-      "ebpf",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "1.20.1"
-  },
-  {
-    "id": "cilium-229019c484c4",
-    "title": "1.19.7",
-    "summary": "Summary of Changes Bugfixes: envoy: restore http-idle-timeout as the route idle timeout source (Backport PR #47688, Upstream PR #47583, @aanm) Fix a BPF verifier reject on pre-v5.12 kernels, when IPv6 is enabled. (Backport PR #47723, Upstream PR #47765, @julianwiedmann) Fix a spurious \"unable to find ifindex for interface MAC\" agent warning on EKS ENI IPAM by waiting for the ENI netlink interface before configuring ingress routes and rules. (Backport PR #47545, Upstream PR #47295, @aanm) Fix abn",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.19.7",
-    "publishedDate": "2026-08-18T10:35:54.000Z",
-    "domain": "ebpf-cilium",
-    "topics": [
-      "cilium",
-      "ebpf",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "1.19.7"
   },
   {
     "id": "prometheus-5e7ae51a3085",
