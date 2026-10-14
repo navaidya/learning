@@ -1,5 +1,42 @@
 [
   {
+    "id": "oci-oke-dcb09e15e2fa",
+    "title": "v9.10.0",
+    "summary": "9.10.0 (October 14, 2026) Added DEXREQ-9012: Database Migration Data Verification support Support for ADBS: Essbase Integration as External App Support for DBMCI - Key Pool for Oracle Database@AWS Support for DBAAS - Key Pool for Oracle Database@AWS Support OpenSearch master user authentication details Bug Fix cosmetic changes to reduce patches Retry KMS key creation on DNS NXDOMAIN TERSI-5525 correct identity tag default documentation references Support DEFAULT validator type for identity tag",
+    "source": "OCI / OKE",
+    "sourceId": "oci-oke",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.10.0",
+    "publishedDate": "2026-10-14T22:19:04.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "oci",
+      "oke",
+      "oracle"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "oci-oke",
+    "releaseVersion": "v9.10.0"
+  },
+  {
+    "id": "grafana-806428c88073",
+    "title": "Go from alert to post-incident review with Grafana Cloud IRM and AI",
+    "summary": "You’ve got 10 minutes before your next meeting when your phone starts ringing. You’re being paged because the frontend is erroring with failed API requests.You open one tool to see what fired, then another to figure out what’s going on. You message a teammate in Slack to see if they’re noticing the same thing.That’s a lot of context switching, and it’s still how a lot of teams' incident response works today. Opening another tool and catching someone up takes time. Details can get lost when you m",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/go-from-alert-to-post-incident-review-with-grafana-cloud-irm-and-ai/",
+    "publishedDate": "2026-10-14T17:39:29.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "opentofu-d339445ed41e",
     "title": "v1.12.8",
     "summary": "SECURITY ADVISORIES: Previous versions of OpenTofu could potentially experience excessive CPU usage if connecting to an attacker-controlled HTTP2 server while installing dependencies in tofu init. (#4700) BUG FIXES: Lifecycle destroy will no longer crash when given an expression with references (#4648)",
@@ -8517,44 +8554,6 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "grafana-31e923224157",
-    "title": "Knowledge Graph as context for LLMs: demonstrating decisive RCA and faster production performance",
-    "summary": "On the product team here at Grafana Labs, we consider AI agents our users, too. That’s why we set out to test how well agents can debug incidents across the full stack, and how much better they perform with Grafana Cloud’s Knowledge Graph vs. using raw telemetry alone. Our early results are promising. In one real incident we replayed 16 times each way, an agent with Knowledge Graph context found the correct root cause 15 times, compared with just once using raw telemetry alone. Along the way, we",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/knowledge-graph-as-context-for-llms-demonstrating-decisive-rca-and-faster-production-performance/",
-    "publishedDate": "2026-08-19T17:52:35.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "ai-agent",
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "pulumi-a7aaa409eb91",
-    "title": "sdk/v3.259.0: Collapse guided `pulumi new` prompts into a single confirmation (#24223)",
-    "summary": "What Guided interactive pulumi new shows the proposed project name, description, stack name, and resolved config in a single confirmation block and asks Do these look good?, instead of prompting for each value one question at a time. pulumi-new-demo.mp4 Why Nearly every prompt in the guided flow has a sensible default, so the common path is pressing Enter repeatedly. One confirmation lets that path finish in a single keystroke while keeping every value editable for anyone who wants to change som",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.259.0",
-    "publishedDate": "2026-08-19T16:51:55.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.259.0"
   },
   {
     "id": "oci-oke-cf0f0ec1f144",

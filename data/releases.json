@@ -1,5 +1,13 @@
 [
   {
+    "project": "oci-oke",
+    "version": "v9.10.0",
+    "publishedDate": "2026-10-14T22:19:04.000Z",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.10.0",
+    "sourceId": "oci-oke",
+    "title": "v9.10.0"
+  },
+  {
     "project": "opentofu",
     "version": "v1.12.8",
     "publishedDate": "2026-10-14T16:20:20.000Z",
@@ -102,14 +110,6 @@
     "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.7.0-rc.1",
     "sourceId": "gateway-api",
     "title": "v1.7.0-rc.1"
-  },
-  {
-    "project": "oci-oke",
-    "version": "v9.9.0",
-    "publishedDate": "2026-10-08T20:41:54.000Z",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.9.0",
-    "sourceId": "oci-oke",
-    "title": "v9.9.0"
   },
   {
     "project": "vector",

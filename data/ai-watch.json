@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-14T17:38:24.000Z",
+    "publishedDate": "2026-10-14T21:58:52.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,26 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "langgraph-2d7322b99e29",
+    "title": "langgraph-checkpoint-postgres==3.2.0",
+    "summary": "Changes since checkpointpostgres==3.1.3 release(checkpoint-postgres): 3.2.0 (#9313) feat(checkpoint-postgres): add prune to PostgresSaver and AsyncPostgresSaver (#9290)",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointpostgres%3D%3D3.2.0",
+    "publishedDate": "2026-10-14T19:54:57.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "3.2.0"
   },
   {
     "id": "phoenix-09d42f0cb4a8",
