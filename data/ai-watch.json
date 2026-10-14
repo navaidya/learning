@@ -1,5 +1,64 @@
 [
   {
+    "id": "pydantic-ai-ec5fb94d76bf",
+    "title": "CLAI2 bleeding",
+    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
+    "publishedDate": "2026-10-14T17:38:24.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "phoenix-09d42f0cb4a8",
+    "title": "arize-phoenix: v20.21.4",
+    "summary": "20.21.4 (2026-10-14) Bug Fixes ui: keep labels on Escape and fix table sort, a11y and accessor warnings (#16980) (53a1735)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.21.4",
+    "publishedDate": "2026-10-14T16:12:17.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v20.21.4"
+  },
+  {
+    "id": "langgraph-8a3b8e24b773",
+    "title": "langgraph-cli==0.4.35",
+    "summary": "Changes since cli==0.4.34 release(cli): 0.4.35 (#9310) feat(cli): add --image-pull-secret for deploying through a private registry (#9305) feat(cli): log in with the registry username the control plane returns (#9301) fix(cli): preserve failed deployment build logs (#9308) chore(deps): bump handlebars from 4.7.9 to 4.7.10 in /libs/cli/js-examples (#9286)",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.35",
+    "publishedDate": "2026-10-14T16:11:12.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "0.4.35"
+  },
+  {
     "id": "langfuse-30bfee99c0ea",
     "title": "v4.59.0",
     "summary": "What's Changed feat(llm-connections): label TypeSafe adapter as \"TypeSafe (System One)\" in picker by @hassiebp in #18670 perf(worker): poll queue metrics once per interval across workers by @Steffen911 in #18672 ci(notifications): stop sending redundant title, branch, and event to Slack by @nimarb in #18652 chore(pricing): correct Claude Sonnet 5.5 cache-read price by @langfuse-bot in #18667 fix(web): Improve tool response handling in sessions by @bezbac in #18640 fix(web): combine account and o",
@@ -18,25 +77,6 @@
     "releaseRelated": true,
     "releaseProject": "langfuse",
     "releaseVersion": "v4.59.0"
-  },
-  {
-    "id": "pydantic-ai-ec5fb94d76bf",
-    "title": "CLAI2 bleeding",
-    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-14T08:16:40.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai"
   },
   {
     "id": "phoenix-72c50d009b16",

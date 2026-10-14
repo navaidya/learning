@@ -1,5 +1,63 @@
 [
   {
+    "id": "opentofu-d339445ed41e",
+    "title": "v1.12.8",
+    "summary": "SECURITY ADVISORIES: Previous versions of OpenTofu could potentially experience excessive CPU usage if connecting to an attacker-controlled HTTP2 server while installing dependencies in tofu init. (#4700) BUG FIXES: Lifecycle destroy will no longer crash when given an expression with references (#4648)",
+    "source": "OpenTofu",
+    "sourceId": "opentofu",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.8",
+    "publishedDate": "2026-10-14T16:20:20.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "opentofu",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentofu",
+    "releaseVersion": "v1.12.8"
+  },
+  {
+    "id": "pulumi-e3bb839b42a4",
+    "title": "v3.269.0",
+    "summary": "3.269.0 (2026-10-14) Features [sdk] Add runtime functions to the Go, Node.js and Python SDKs that check whether a resource with a given ID exists without adopting it into the stack #24808 [engine] Negotiate OutputValues on Call so SDKs receive per-value return dependencies #25017 [auto] Add convert to the generated automation APIs for NodeJS, Python and Go #25050 [auto] Add refresh to the generated automation APIs for NodeJS, Python and Go #25052 [auto] Add about commands to the generated automa",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.269.0",
+    "publishedDate": "2026-10-14T14:04:06.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.269.0"
+  },
+  {
+    "id": "openai-a0e0fec2c2b5",
+    "title": "Amp puts AI agents to work beyond code with OpenAI models",
+    "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/amp-beyond-coding",
+    "publishedDate": "2026-10-14T12:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "openai",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "robusta-bd4f3e9bf712",
     "title": "0.52.0",
     "summary": "What's Changed Remove orphaned Perl 5.40 packages after Debian upgrade by @naomi-robusta in #2191 ROB-1604 Patch High/Critical CVEs in the runner image by @Avi-Robusta in #2197 ROB-1604 Backport openssh, curl, expat, util-linux, ncurses and systemd from forky by @Avi-Robusta in #2199 ROB-377 Add an MS Teams sink that posts via the Microsoft Graph API by @RoiGlinik in #2192 ROB-1604- Bump holmes chart to 0.44.0 by @Avi-Robusta in #2198 Full Changelog: 0.51.0...0.52.0",
@@ -36,6 +94,25 @@
     "releaseRelated": true,
     "releaseProject": "terraform",
     "releaseVersion": "v1.17.0-rc2"
+  },
+  {
+    "id": "pulumi-2f947111429e",
+    "title": "sdk/v3.269.0: Make `pulumi watch` error by default (#25202)",
+    "summary": "pulumi watch now returns an error by default. This is the second step of the removal schedule in #24717. The error links the issue and tells users to set PULUMI_DISABLE_EXPERIMENTAL_WATCH_REMOVAL_ERROR=1 to run the command until it is removed. Unlike pulumi logs (#25201), pulumi watch uses cobra's Deprecated field, so cobra prints the full removal notice before the command runs. The error does not repeat that notice. PULUMI_DISABLE_EXPERIMENTAL_WATCH_REMOVAL_WARNING still hides it.",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.269.0",
+    "publishedDate": "2026-10-14T10:31:05.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.269.0"
   },
   {
     "id": "holmesgpt-3fefa5bd2490",
@@ -96,6 +173,25 @@
     "releaseRelated": true,
     "releaseProject": "robusta",
     "releaseVersion": "0.52.0-alpha.1"
+  },
+  {
+    "id": "openai-e181547094b0",
+    "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
+    "summary": "With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/third-moment-research",
+    "publishedDate": "2026-10-14T07:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "openai"
   },
   {
     "id": "opentelemetry-collector-cd6e06938816",
@@ -8461,23 +8557,6 @@
     "releaseVersion": "v3.259.0"
   },
   {
-    "id": "grafana-af2b95d8a8d2",
-    "title": "From failed check to real user impact: Pairing Synthetic Monitoring and Frontend Observability in Grafana Cloud",
-    "summary": "Say you get a support escalation about a page in the app that won’t load. But when you pull up your synthetic checks, they're all green: 100% uptime, probes are passing. Something's not adding up, but which one do you trust?If you’ve run Grafana Cloud Synthetic Monitoring, you’ve been on both sides of this. Sometimes it's the ticket: real users hit a wall on the path but your checks pass cleanly. Other times, it’s the inverse: a check is failing, you're in a panic, and you start trying to reprod",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/from-failed-check-to-real-user-impact-pairing-synthetic-monitoring-and-frontend-observability-in-grafana-cloud/",
-    "publishedDate": "2026-08-19T15:40:21.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "oci-oke-cf0f0ec1f144",
     "title": "v8.28.0",
     "summary": "8.28.0 (August 19, 2026) Added Support for Support out-of-place restore (iRestore) - ZDRLA | ExaDB-C@C IPv4-IPv6 dualStack support for computeinstanceagent Data sources Bug Fix support Hosted Deployment IAM application Tolerate released private IP during mount target read (GetPrivateIp 404 wedges refresh) Notice to Deprecate 2025 Terraform Support for distributed_database remove hardcoded local path",
@@ -8497,84 +8576,6 @@
     "releaseRelated": true,
     "releaseProject": "oci-oke",
     "releaseVersion": "v8.28.0"
-  },
-  {
-    "id": "terraform-f30144931aa0",
-    "title": "v1.15.9",
-    "summary": "1.15.9 (August 19, 2026) BUG FIXES: validate: Child module validation has been fixed and will now raise errors or warning diagnostics for invalid blocks. (list, import, backend, and cloud) (#38994) NOTES: Update go-slug to v0.18.3 to mitigate CVE-2026-14978, which is a Unicode normalization issue that could lead to files not being correctly excluded via .terraformignore from upload to a Terraform Enterprise or HCP Terraform during a run (#39036)",
-    "source": "Terraform",
-    "sourceId": "terraform",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.15.9",
-    "publishedDate": "2026-08-19T14:29:32.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "terraform",
-    "releaseVersion": "v1.15.9"
-  },
-  {
-    "id": "terraform-ccfe76ae1574",
-    "title": "v1.16.0-rc2",
-    "summary": "1.16.0-rc2 (August 19, 2026) NEW FEATURES: Terraform now stores planned private data for providers, allowing provider-specific state to be preserved across plan and apply. (#37986) terraform_data: The new store block can hold ephemeral and sensitive values across plan and apply. (#38298) Providers can now use nested blocks as computed values (#38305) import: import blocks inside modules are now supported. (#38352) Terraform is now available as a pre-built binary for Linux s390x (zLinux). (#38384",
-    "source": "Terraform",
-    "sourceId": "terraform",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-rc2",
-    "publishedDate": "2026-08-19T12:08:45.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "terraform",
-    "releaseVersion": "v1.16.0-rc2"
-  },
-  {
-    "id": "opentofu-84ed80b3eb7f",
-    "title": "v1.12.6",
-    "summary": "SECURITY ADVISORIES: When interacting with OCI Distribution registries for module or provider package installation, earlier versions of OpenTofu could incorrectly resend credentials intended for the original origin to the target of an HTTP redirect. (#4422) When interacting with an attacker-controlled remote state backend or provider/module registry, tofu init in earlier versions of OpenTofu could potentially cause high CPU usage and/or high memory usage resolving crafted relative URLs in the AP",
-    "source": "OpenTofu",
-    "sourceId": "opentofu",
-    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.6",
-    "publishedDate": "2026-08-19T11:40:07.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "opentofu",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentofu",
-    "releaseVersion": "v1.12.6"
-  },
-  {
-    "id": "opentofu-eec7f5642539",
-    "title": "v1.11.14",
-    "summary": "SECURITY ADVISORIES: When interacting with OCI Distribution registries for module or provider package installation, previous versions of OpenTofu could incorrectly resend credentials intended for the original origin to the target of an HTTP redirect. (#4423) When interacting with an attacker-controlled remote state backend or provider/module registry, tofu init in earlier versions of OpenTofu could potentially cause high CPU usage and/or high memory usage resolving crafted relative URLs in the A",
-    "source": "OpenTofu",
-    "sourceId": "opentofu",
-    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.11.14",
-    "publishedDate": "2026-08-19T11:39:12.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "opentofu",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentofu",
-    "releaseVersion": "v1.11.14"
   },
   {
     "id": "cncf-c6c4bf55ed34",

@@ -1,5 +1,21 @@
 [
   {
+    "project": "opentofu",
+    "version": "v1.12.8",
+    "publishedDate": "2026-10-14T16:20:20.000Z",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.8",
+    "sourceId": "opentofu",
+    "title": "v1.12.8"
+  },
+  {
+    "project": "pulumi",
+    "version": "v3.269.0",
+    "publishedDate": "2026-10-14T14:04:06.000Z",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.269.0",
+    "sourceId": "pulumi",
+    "title": "v3.269.0"
+  },
+  {
     "project": "robusta",
     "version": "0.52.0",
     "publishedDate": "2026-10-14T10:56:43.000Z",
@@ -120,14 +136,6 @@
     "title": "operator: v0.12.0"
   },
   {
-    "project": "pulumi",
-    "version": "v3.268.0",
-    "publishedDate": "2026-10-07T13:09:03.000Z",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.268.0",
-    "sourceId": "pulumi",
-    "title": "pkg/v3.268.0: Changelog and go.mod updates for v3.268.0 (#25095)"
-  },
-  {
     "project": "kubernetes",
     "version": "v1.31",
     "publishedDate": "2026-10-06T18:00:00.000Z",
@@ -150,14 +158,6 @@
     "url": "https://github.com/prometheus/prometheus/releases/tag/v3.13.4",
     "sourceId": "prometheus",
     "title": "3.13.4 / 2026-09-29"
-  },
-  {
-    "project": "opentofu",
-    "version": "v1.12.7",
-    "publishedDate": "2026-10-01T18:40:21.000Z",
-    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.7",
-    "sourceId": "opentofu",
-    "title": "v1.12.7"
   },
   {
     "project": "flux",
