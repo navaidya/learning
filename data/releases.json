@@ -1,5 +1,29 @@
 [
   {
+    "project": "opentelemetry-collector",
+    "version": "v1.69.0",
+    "publishedDate": "2026-10-14T02:03:50.000Z",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.163.0",
+    "sourceId": "opentelemetry-collector",
+    "title": "v1.69.0/v0.163.0"
+  },
+  {
+    "project": "opentelemetry",
+    "version": "v0.160.0",
+    "publishedDate": "2026-10-13T23:35:21.000Z",
+    "url": "https://opentelemetry.io/blog/2026/hostmetrics-process-scraper-rc/",
+    "sourceId": "opentelemetry",
+    "title": "Versioned metrics: Shipping the first Release Candidate metrics in hostmetrics"
+  },
+  {
+    "project": "containerd",
+    "version": "2.3.7",
+    "publishedDate": "2026-10-13T22:46:58.000Z",
+    "url": "https://github.com/containerd/containerd/releases/tag/v2.3.7",
+    "sourceId": "containerd",
+    "title": "containerd 2.3.7"
+  },
+  {
     "project": "backstage",
     "version": "v1.56.0-next.3",
     "publishedDate": "2026-10-13T16:20:16.000Z",
@@ -30,14 +54,6 @@
     "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.16",
     "sourceId": "argo",
     "title": "v3.3.16"
-  },
-  {
-    "project": "opentelemetry",
-    "version": "3.1",
-    "publishedDate": "2026-10-12T06:51:10.000Z",
-    "url": "https://opentelemetry.io/blog/2026/otel-prometheus-interoperability/",
-    "sourceId": "opentelemetry",
-    "title": "Prometheus and OpenTelemetry interoperability in 2026: Survey results"
   },
   {
     "project": "karpenter",
@@ -176,28 +192,12 @@
     "title": "v3.1.0"
   },
   {
-    "project": "opentelemetry-collector",
-    "version": "v1.68.0",
-    "publishedDate": "2026-09-28T14:09:31.000Z",
-    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.162.0",
-    "sourceId": "opentelemetry-collector",
-    "title": "v1.68.0/v0.162.0"
-  },
-  {
     "project": "hashicorp",
     "version": "1.16",
     "publishedDate": "2026-09-28T07:00:00.000Z",
     "url": "https://www.hashicorp.com/blog/terraform-116-completes-actions-lifecycles-and-brings-imports-into-child-modules",
     "sourceId": "hashicorp",
     "title": "Terraform 1.16 completes Actions lifecycles and brings imports into child modules"
-  },
-  {
-    "project": "containerd",
-    "version": "1.7.36",
-    "publishedDate": "2026-09-24T23:44:00.000Z",
-    "url": "https://github.com/containerd/containerd/releases/tag/v1.7.36",
-    "sourceId": "containerd",
-    "title": "containerd 1.7.36"
   },
   {
     "project": "etcd",

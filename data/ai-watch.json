@@ -1,12 +1,32 @@
 [
   {
+    "id": "phoenix-72c50d009b16",
+    "title": "arize-phoenix: v20.21.3",
+    "summary": "20.21.3 (2026-10-13) Documentation fix dead Read the Docs links (#16967) (0fed1f4)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.21.3",
+    "publishedDate": "2026-10-14T03:38:44.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v20.21.3"
+  },
+  {
     "id": "pydantic-ai-ec5fb94d76bf",
     "title": "CLAI2 bleeding",
     "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-13T19:49:16.000Z",
+    "publishedDate": "2026-10-14T01:01:55.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +37,67 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "otel-ai-bfe74ec118e2",
+    "title": "Versioned metrics: Shipping the first Release Candidate metrics in hostmetrics",
+    "summary": "OpenTelemetry Collector Contrib v0.160.0 adds the ability to emit release candidate (RC) process semantic conventions metrics to the hostmetrics receiver’s process scraper, the last stage before a stable v1. The System SIG has worked on this for the better part of a year, and we think that the process metrics are in a good shape – but RC exists so the community can prove that. If you collect process metrics, we&rsquo;d like you to try the new versioned output and tell us what breaks.",
+    "source": "OpenTelemetry",
+    "sourceId": "otel-ai",
+    "url": "https://opentelemetry.io/blog/2026/hostmetrics-process-scraper-rc/",
+    "publishedDate": "2026-10-13T23:35:21.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "agent-observability",
+      "news"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "otel-ai",
+    "releaseVersion": "v0.160.0"
+  },
+  {
+    "id": "pydantic-ai-1a1242c0d2e7",
+    "title": "v2.56.0 (2026-10-13)",
+    "summary": "What's Changed ⚠️ Compatibility Notes Run BrowserUse on the host model by default and make browser-use telemetry opt-in by @mpfaffenberger in #9506 🚀 Features Let Skills layer project and personal libraries, name each skill's directory, and render a skill for a host command by @DouweM in #9802 Add base_url argument to ZaiProvider by @aisk in #10099 Adds PGTaskDurability based on pgtask by @adtyavrdhn in #10174 Adds Render Workflows Integration for Durable Execution engines by @ojusave in #9439 ",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.56.0",
+    "publishedDate": "2026-10-13T23:35:15.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.56.0"
+  },
+  {
+    "id": "langgraph-10c43f840992",
+    "title": "langgraph-cli==0.4.34",
+    "summary": "Changes since cli==0.4.33 release(cli): 0.4.34 (#9300) feat(cli): add --json to deploy listeners list (#9243)",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.34",
+    "publishedDate": "2026-10-13T21:18:10.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "0.4.34"
   },
   {
     "id": "phoenix-5d8ae6abaeaf",

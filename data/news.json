@@ -1,5 +1,316 @@
 [
   {
+    "id": "opentelemetry-collector-cd6e06938816",
+    "title": "v1.69.0/v0.163.0",
+    "summary": "Images and binaries here: https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.163.0 End User Changelog 💡 Enhancements 💡 cmd/builder: Add dist.resource.detection.detectors to the builder config, letting distributions opt into a smaller set of resourcedetectionprocessor detectors via generated go build tags. (#16075) cmd/mdatagen: Generate exporter queue/batch sender defaults from an opt-in sending_queue field in metadata.yaml. See the batching migration RFC. (#159",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.163.0",
+    "publishedDate": "2026-10-14T02:03:50.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v1.69.0"
+  },
+  {
+    "id": "opentelemetry-collector-e44b14ab3bb9",
+    "title": "service/v0.163.0",
+    "summary": "Module set beta, Version v0.163.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/service%2Fv0.163.0",
+    "publishedDate": "2026-10-14T02:03:22.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.163.0"
+  },
+  {
+    "id": "opentelemetry-collector-63830985bc87",
+    "title": "service/telemetry/telemetrytest/v0.163.0",
+    "summary": "Module set beta, Version v0.163.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/service%2Ftelemetry%2Ftelemetrytest%2Fv0.163.0",
+    "publishedDate": "2026-10-14T02:03:22.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.163.0"
+  },
+  {
+    "id": "opentelemetry-collector-bdc059192f95",
+    "title": "service/hostcapabilities/v0.163.0",
+    "summary": "Module set beta, Version v0.163.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/service%2Fhostcapabilities%2Fv0.163.0",
+    "publishedDate": "2026-10-14T02:03:22.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.163.0"
+  },
+  {
+    "id": "opentelemetry-collector-91af36006697",
+    "title": "scraper/xscraper/v0.163.0",
+    "summary": "Module set beta, Version v0.163.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fxscraper%2Fv0.163.0",
+    "publishedDate": "2026-10-14T02:03:21.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.163.0"
+  },
+  {
+    "id": "opentelemetry-collector-cde0b973dfe0",
+    "title": "scraper/scrapertest/v0.163.0",
+    "summary": "Module set beta, Version v0.163.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fscrapertest%2Fv0.163.0",
+    "publishedDate": "2026-10-14T02:03:21.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.163.0"
+  },
+  {
+    "id": "opentelemetry-collector-780e4b664f8f",
+    "title": "scraper/scraperhelper/xscraperhelper/v0.163.0",
+    "summary": "Module set beta, Version v0.163.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fscraperhelper%2Fxscraperhelper%2Fv0.163.0",
+    "publishedDate": "2026-10-14T02:03:21.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.163.0"
+  },
+  {
+    "id": "opentelemetry-collector-67fab95c25cb",
+    "title": "scraper/scraperhelper/v0.163.0",
+    "summary": "Module set beta, Version v0.163.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fscraperhelper%2Fv0.163.0",
+    "publishedDate": "2026-10-14T02:03:21.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.163.0"
+  },
+  {
+    "id": "opentelemetry-collector-d31eed3f94db",
+    "title": "scraper/v0.163.0",
+    "summary": "Module set beta, Version v0.163.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fv0.163.0",
+    "publishedDate": "2026-10-14T02:03:20.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.163.0"
+  },
+  {
+    "id": "opentelemetry-collector-57459432bcee",
+    "title": "receiver/xreceiver/v0.163.0",
+    "summary": "Module set beta, Version v0.163.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/receiver%2Fxreceiver%2Fv0.163.0",
+    "publishedDate": "2026-10-14T02:03:20.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.163.0"
+  },
+  {
+    "id": "opentelemetry-bfe74ec118e2",
+    "title": "Versioned metrics: Shipping the first Release Candidate metrics in hostmetrics",
+    "summary": "OpenTelemetry Collector Contrib v0.160.0 adds the ability to emit release candidate (RC) process semantic conventions metrics to the hostmetrics receiver’s process scraper, the last stage before a stable v1. The System SIG has worked on this for the better part of a year, and we think that the process metrics are in a good shape – but RC exists so the community can prove that. If you collect process metrics, we&rsquo;d like you to try the new versioned output and tell us what breaks.",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/hostmetrics-process-scraper-rc/",
+    "publishedDate": "2026-10-13T23:35:21.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry",
+    "releaseVersion": "v0.160.0"
+  },
+  {
+    "id": "containerd-5eae86f435b2",
+    "title": "containerd 2.3.7",
+    "summary": "Welcome to the v2.3.7 release of containerd! The seventh patch release for containerd 2.3 contains various fixes and updates including security patches. Security Updates containerd CVE-2026-95839 GHSA-5p7c-hggf-c748 GHSA-8647-2jxj-p2rc GHSA-hc94-p972-ch66 Highlights Container Runtime Interface (CRI) Apply hardening to not follow symlinks for container log files (#14301) Image Distribution Apply hardening to reject image references with \"..\" path components (#14281) Runtime Apply hardening to all",
+    "source": "containerd",
+    "sourceId": "containerd",
+    "url": "https://github.com/containerd/containerd/releases/tag/v2.3.7",
+    "publishedDate": "2026-10-13T22:46:58.000Z",
+    "domain": "containers",
+    "topics": [
+      "containers",
+      "containerd",
+      "runtime"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "containerd",
+    "releaseVersion": "2.3.7"
+  },
+  {
+    "id": "containerd-910a569f863d",
+    "title": "containerd 2.2.10",
+    "summary": "Welcome to the v2.2.10 release of containerd! The tenth patch release for containerd 2.2 contains various fixes and updates including security patches. Security Updates containerd CVE-2026-95839 GHSA-5p7c-hggf-c748 GHSA-8647-2jxj-p2rc GHSA-hc94-p972-ch66 Highlights Container Runtime Interface (CRI) Apply hardening to not follow symlinks for container log files (#14300) Image Distribution Avoid hang and data corruption during multipart image fetch (#14316) Apply hardening to reject image referenc",
+    "source": "containerd",
+    "sourceId": "containerd",
+    "url": "https://github.com/containerd/containerd/releases/tag/v2.2.10",
+    "publishedDate": "2026-10-13T22:45:05.000Z",
+    "domain": "containers",
+    "topics": [
+      "containers",
+      "containerd",
+      "runtime"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "containerd",
+    "releaseVersion": "2.2.10"
+  },
+  {
+    "id": "containerd-84cdafb83a38",
+    "title": "containerd 2.4.2",
+    "summary": "Welcome to the v2.4.2 release of containerd! The second patch release for containerd 2.4 contains various fixes and updates including security patches. Security Updates containerd CVE-2026-95839 GHSA-8647-2jxj-p2rc GHSA-hc94-p972-ch66 Highlights Container Runtime Interface (CRI) Apply hardening to not follow symlinks for container log files (#14302) Image Distribution Fix excessive memory usage during image pulls when registry downloads outpace content writes (#14342) Apply hardening to reject i",
+    "source": "containerd",
+    "sourceId": "containerd",
+    "url": "https://github.com/containerd/containerd/releases/tag/v2.4.2",
+    "publishedDate": "2026-10-13T22:35:06.000Z",
+    "domain": "containers",
+    "topics": [
+      "containers",
+      "containerd",
+      "runtime"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "containerd",
+    "releaseVersion": "2.4.2"
+  },
+  {
+    "id": "containerd-fcb986146306",
+    "title": "containerd 2.0.14",
+    "summary": "Welcome to the v2.0.14 release of containerd! The fourteenth patch release for containerd 2.0 contains various fixes and updates including a security patch. Security Updates containerd GHSA-hc94-p972-ch66 Highlights Container Runtime Interface (CRI) Apply hardening to not follow symlinks for container log files (#14299) Runtime Apply hardening to allowlist socket domains in the default seccomp profile (#14251) Snapshotters Apply hardening to filter ID-mapping labels from image annotations during",
+    "source": "containerd",
+    "sourceId": "containerd",
+    "url": "https://github.com/containerd/containerd/releases/tag/v2.0.14",
+    "publishedDate": "2026-10-13T22:26:44.000Z",
+    "domain": "containers",
+    "topics": [
+      "containers",
+      "containerd",
+      "runtime"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "containerd",
+    "releaseVersion": "2.0.14"
+  },
+  {
     "id": "vector-c99b29fadbbe",
     "title": "vdev-v0.3.31",
     "summary": "chore(vdev): publish binaries to S3 (#26650)",
@@ -8284,106 +8595,6 @@
     "releaseVersion": "1.19.7"
   },
   {
-    "id": "cilium-a5eb30abf33b",
-    "title": "1.18.13",
-    "summary": "Summary of Changes Major Changes: Add support for VRRP and IGMP protocols in host firewall (Backport PR #47619, Upstream PR #39872, @aditighag) Bugfixes: bpf: hostfw: tolerate unknown CT protocols and rely on policies (Backport PR #47619, Upstream PR #47343, @smagnani96) Fix abnormal ip allocation caused by hostnetwork pod (Backport PR #47687, Upstream PR #47552, @haozhangami) Fix potential hangs caused by Netlink errors in filterAndDestroySockets. (Backport PR #47799, Upstream PR #46967, @ysksu",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.18.13",
-    "publishedDate": "2026-08-18T10:35:40.000Z",
-    "domain": "ebpf-cilium",
-    "topics": [
-      "cilium",
-      "ebpf",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "1.18.13"
-  },
-  {
-    "id": "cilium-328442215ca7",
-    "title": "1.20.1",
-    "summary": "Release v1.20.1",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/1.20.1",
-    "publishedDate": "2026-08-18T09:35:14.000Z",
-    "domain": "ebpf-cilium",
-    "topics": [
-      "cilium",
-      "ebpf",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "1.20.1"
-  },
-  {
-    "id": "cilium-f0a867efa019",
-    "title": "1.19.7",
-    "summary": "Release v1.19.7",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/1.19.7",
-    "publishedDate": "2026-08-18T09:33:50.000Z",
-    "domain": "ebpf-cilium",
-    "topics": [
-      "cilium",
-      "ebpf",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "1.19.7"
-  },
-  {
-    "id": "cilium-112524f1b931",
-    "title": "1.18.13",
-    "summary": "Release v1.18.13",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/1.18.13",
-    "publishedDate": "2026-08-18T09:32:48.000Z",
-    "domain": "ebpf-cilium",
-    "topics": [
-      "cilium",
-      "ebpf",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "1.18.13"
-  },
-  {
-    "id": "kyverno-eb26cd7795b3",
-    "title": "v1.19.0-rc.4",
-    "summary": "No content.",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.0-rc.4",
-    "publishedDate": "2026-08-18T09:32:05.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno",
-    "releaseVersion": "v1.19.0-rc.4"
-  },
-  {
     "id": "prometheus-5e7ae51a3085",
     "title": "3.14.0 / 2026-08-17",
     "summary": "[CHANGE] API: Deprecate the stats query parameter of /api/v1/query and /api/v1/query_range for values other than true and all. Other values still enable basic statistics but now return a deprecation warning; they will be rejected in the next major release. #19124 [CHANGE] API: /api/v1/status/config now correctly shows separator: \"\" and replacement: \"\" in relabel configs when explicitly set to empty, instead of omitting them. #18653 [CHANGE] Discovery/Hetzner: Drop the __meta_hetzner_datacenter l",
@@ -8402,117 +8613,6 @@
     "releaseRelated": true,
     "releaseProject": "prometheus",
     "releaseVersion": "3.14.0"
-  },
-  {
-    "id": "kyverno-bc2fb6f81727",
-    "title": "kyverno-policies-chart-3.9.0-rc.4",
-    "summary": "kyverno-policies-chart-3.9.0-rc.4",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-policies-chart-3.9.0-rc.4",
-    "publishedDate": "2026-08-18T08:33:24.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno"
-  },
-  {
-    "id": "kyverno-671d94c7c666",
-    "title": "kyverno-chart-3.9.0-rc.4",
-    "summary": "kyverno-chart-3.9.0-rc.4",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-chart-3.9.0-rc.4",
-    "publishedDate": "2026-08-18T08:33:17.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno"
-  },
-  {
-    "id": "openai-7d7eacff40aa",
-    "title": "Asana completed a years-long code migration in 2 weeks with Codex",
-    "summary": "Asana used OpenAI Codex to replace an outdated testing system in two weeks, with about $12K in model and infrastructure costs.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/asana",
-    "publishedDate": "2026-08-18T07:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "pulumi-3f11a735762f",
-    "title": "pkg/v3.258.0: Changelog and go.mod updates for v3.258.0 (#24355)",
-    "summary": "Co-authored-by: github-actions github-actions@github.com",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.258.0",
-    "publishedDate": "2026-08-18T06:42:41.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.258.0"
-  },
-  {
-    "id": "pulumi-c5fc5e76a116",
-    "title": "v3.258.0",
-    "summary": "3.258.0 (2026-08-17) Features [cli] Add opt-in encryption of stored credentials with a key protected by the operating system, selected with PULUMI_CREDENTIAL_STORE #24212 [cli/new] Ask for a cloud provider and language in interactive pulumi new instead of listing every template #24226 [sdk/go] Add policyx.NewStackValidationPolicy and wire up the analyzer's AnalyzeStack RPC so Go policy packs can validate the full stack #24232 Bug Fixes [sdkgen/go] Generate valid Go package clauses for schema mod",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.258.0",
-    "publishedDate": "2026-08-17T19:04:32.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.258.0"
-  },
-  {
-    "id": "cncf-258d9cb2aad3",
-    "title": "Welcome Falkey the Falco and Ky the Kyverno Pyrenees",
-    "summary": "If you have yet to meet Phippy, she’s a friendly PHP app exploring the cloud native world with her pals. Over the last decade, Phippy’s circle has grown to include eighteen friends, with the newest members...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/08/17/welcome-falkey-the-falco-and-ky-the-kyverno-pyrenees/",
-    "publishedDate": "2026-08-17T17:50:06.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "opentelemetry-collector-09fcd0869f7d",
@@ -8763,60 +8863,6 @@
     "releaseVersion": "v0.314.0"
   },
   {
-    "id": "grafana-43c0053cf195",
-    "title": "Visual playback of the user journey: Introducing Session Replay in Grafana Cloud Frontend Observability",
-    "summary": "Grafana Cloud Frontend Observability helps engineering teams quantify the end user experience by bringing metrics, logs, traces, and user session context to client-side web applications. Teams can monitor application health and performance over time, triage errors, and correlate frontend signals with backend telemetry to investigate issues across the stack.Yet some of the hardest frontend problems remain difficult to diagnose. A support ticket might report that a checkout button did nothing, a f",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/visual-playback-of-the-user-journey-introducing-session-replay-in-grafana-cloud-frontend-observability/",
-    "publishedDate": "2026-08-17T14:23:00.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "pulumi-51374f4f33b0",
-    "title": "sdk/v3.258.0: Update language runtimes (#24345)",
-    "summary": "Overview Bumps language runtime versions: dotnet v3.111.1 → v3.112.0, java v1.36.0 → v1.36.1, yaml v1.38.2 → v1.38.3.",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.258.0",
-    "publishedDate": "2026-08-17T12:36:26.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.258.0"
-  },
-  {
-    "id": "openai-f137d9ea2f9f",
-    "title": "The Defender’s Window",
-    "summary": "AI is reshaping cybersecurity for attackers and defenders alike. Learn how OpenAI is strengthening its defenses and what security teams can do now.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/the-defenders-window",
-    "publishedDate": "2026-08-17T05:30:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "holmesgpt-392e74f65b8e",
     "title": "0.39.1-alpha",
     "summary": "What's Changed ROB-878 remove stale Sonnet 4.0/4.5 model recommendations from docs by @Sheeproid in #2378 Remove experimental Azure SQL toolset by @moshemorad in #2377 ROB-893 Fix command injection vulnerability in Kubernetes toolset by @naomi-robusta in #2382 Remove MariaDB MCP integration, consolidate to native MariaDB datasource by @moshemorad in #2389 Fix command injection in slab/kubevela/inspektor_gadget/aks toolsets (ROB-893 follow-up) by @naomi-robusta in #2386 Fix SSRF in internet/fetch",
@@ -8837,26 +8883,6 @@
     "releaseRelated": true,
     "releaseProject": "holmesgpt",
     "releaseVersion": "0.39.1-alpha"
-  },
-  {
-    "id": "crossplane-a96c06b0166e",
-    "title": "v2.4.0-rc.1",
-    "summary": "❗ Important Crossplane version v2.4.0-rc.1 is a release candidate intended to collect input from the community and offer users an opportunity to experiment with Crossplane in non-production environments before the official release of version v2.4.0. WarningThis is a pre-release; do not use it in production environments! To install Crossplane with this release: helm repo add crossplane-stable https://charts.crossplane.io/stable --force-update helm install crossplane --namespace crossplane-system ",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.0-rc.1",
-    "publishedDate": "2026-08-14T16:06:42.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v2.4.0-rc.1"
   },
   {
     "id": "tempo-1f1ad87d236d",
