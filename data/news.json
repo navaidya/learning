@@ -1,5 +1,84 @@
 [
   {
+    "id": "cncf-eb41c1a2a5f0",
+    "title": "Carbon as a first-class signal: Bringing software carbon intensity to OpenTelemetry",
+    "summary": "At Observability Summit Europe 2026 in Prague, I presented a keynote titled Carbon as a First-Class Signal: Designing a Standard for OpenTelemetry. The talk explored how Software Carbon Intensity (SCI) could become part of cloud-native observability...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/15/carbon-as-a-first-class-signal-bringing-software-carbon-intensity-to-opentelemetry/",
+    "publishedDate": "2026-10-15T22:21:45.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "loki-f7b162a57228",
+    "title": "v3.6.18",
+    "summary": "3.6.18 (2026-10-15) Bug Fixes deps: Update dependencies related to otel for 3.6 (#25180) (603de5a) security/LOW/: Update module go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc to v1.45.0 [SECURITY] (release-3.6.x) (#24619) (3e7c0ed) security/LOW/: Update module go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp to v1.45.0 [SECURITY] (release-3.6.x) (#24620) (ad5a87c) security: Bump Go to 1.26.9 [SECURITY] (release-3.6.x) (#25193) (c969f5c)",
+    "source": "Grafana Loki",
+    "sourceId": "loki",
+    "url": "https://github.com/grafana/loki/releases/tag/v3.6.18",
+    "publishedDate": "2026-10-15T19:55:55.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otlp",
+      "loki",
+      "logging",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "loki",
+    "releaseVersion": "v3.6.18"
+  },
+  {
+    "id": "pulumi-e3bb839b42a4",
+    "title": "v3.269.0",
+    "summary": "3.269.0 (2026-10-15) Features [sdk] Add runtime functions to the Go, Node.js and Python SDKs that check whether a resource with a given ID exists without adopting it into the stack #24808 [engine] Negotiate OutputValues on Call so SDKs receive per-value return dependencies #25017 [auto] Add convert to the generated automation APIs for NodeJS, Python and Go #25050 [auto] Add refresh to the generated automation APIs for NodeJS, Python and Go #25052 [auto] Add about commands to the generated automa",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.269.0",
+    "publishedDate": "2026-10-15T19:49:27.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.269.0"
+  },
+  {
+    "id": "kyverno-37f100ba4944",
+    "title": "v1.19.2-rc.1",
+    "summary": "test: expect the generation label protection webhook in chainsaw asse… …rts (#18039) #18033 always adds protect-generation-labels.kyverno.svc to kyverno-resource-validating-webhook-cfg, so every assert that lists that configuration's webhooks now fails with \"lengths of slices don't match\". Add the webhook at its name-sorted position in each of those asserts. Signed-off-by: aerosouund <aerosound161@gmail.com> Co-authored-by: Claude Opus 5.5 <noreply@anthropic.com>",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2-rc.1",
+    "publishedDate": "2026-10-15T18:51:03.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno",
+    "releaseVersion": "v1.19.2-rc.1"
+  },
+  {
     "id": "opentelemetry-f3c3a7f0f19a",
     "title": "The Humans of OpenTelemetry - KubeCon Japan 2026",
     "summary": "We&rsquo;re back with our fifth edition of Humans of OpenTelemetry, and for the first time, from Japan! At KubeCon + CloudNativeCon Japan 2026 in Yokohama, I interviewed OpenTelemetry end users and practitioners from the Japanese cloud native community, and learned how they got involved with OTel: Yuzuru Ohira (LayerX) Mikata Chikahisa (Loglass) Yoshiki Fujikane (CyberAgent) Takashi Okamoto (NTT DATA) Kohei Sugimoto (MIXI) The interviews were conducted in Japanese, and the transcript below is an",
@@ -407,25 +486,6 @@
     "releaseRelated": true,
     "releaseProject": "opentofu",
     "releaseVersion": "v1.12.8"
-  },
-  {
-    "id": "pulumi-e3bb839b42a4",
-    "title": "v3.269.0",
-    "summary": "3.269.0 (2026-10-14) Features [sdk] Add runtime functions to the Go, Node.js and Python SDKs that check whether a resource with a given ID exists without adopting it into the stack #24808 [engine] Negotiate OutputValues on Call so SDKs receive per-value return dependencies #25017 [auto] Add convert to the generated automation APIs for NodeJS, Python and Go #25050 [auto] Add refresh to the generated automation APIs for NodeJS, Python and Go #25052 [auto] Add about commands to the generated automa",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.269.0",
-    "publishedDate": "2026-10-14T14:04:06.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.269.0"
   },
   {
     "id": "openai-a0e0fec2c2b5",
@@ -8428,66 +8488,6 @@
     "releaseRelated": true,
     "releaseProject": "backstage",
     "releaseVersion": "v1.54.2"
-  },
-  {
-    "id": "karpenter-397a1d36ba1d",
-    "title": "v1.14.1",
-    "summary": "Chores cherrypicks for v1.14.1 (#3238) #3238 (Ryan Mistretta)",
-    "source": "Karpenter",
-    "sourceId": "karpenter",
-    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.14.1",
-    "publishedDate": "2026-08-21T22:35:30.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "karpenter",
-      "kubernetes",
-      "autoscaling"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "karpenter",
-    "releaseVersion": "v1.14.1"
-  },
-  {
-    "id": "crossplane-97b7caf289fa",
-    "title": "v1.20.12",
-    "summary": "v1.20.12 is a patch release scoped to fixing issues reported by users of Crossplane v1.20 and fixing security related issues in Crossplane's dependencies. 🎉 Highlights Dependency security updates: Bumps the Go toolchain to 1.25.13 (#7755), go-git (#7722), and golang.org/x/mod (#7740), plus two combined sets of vulnerable dependency updates (#7646, #7675), to pick up upstream CVE fixes. crossplane-runtime is also bumped to v1.20.11 (#7767), which carries its own set of security dependency update",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v1.20.12",
-    "publishedDate": "2026-08-21T17:24:11.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v1.20.12"
-  },
-  {
-    "id": "crossplane-6b8f4113a529",
-    "title": "v2.2.5",
-    "summary": "v2.2.5 is a patch release scoped to fixing issues reported by users of Crossplane v2.2 and fixing security related issues in Crossplane's dependencies. 🎉 Highlights Correct crank checksums for amd64 binaries (#7665, originally #7660): The published .sha256 files for linux_amd64 binaries had not matched the binaries themselves since v2.2.0, so any install script or Dockerfile that verified the amd64 checksum failed. Checksums are now calculated after Nix strips the binary, and the release workfl",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.2.5",
-    "publishedDate": "2026-08-21T17:21:51.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v2.2.5"
   },
   {
     "id": "kubernetes-releases-9b849e2d008a",
