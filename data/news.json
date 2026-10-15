@@ -1,12 +1,32 @@
 [
   {
+    "id": "helm-bf4bdbef1a35",
+    "title": "Helm v4.3.1",
+    "summary": "Helm v4.3.1 is a patch release. Users are encouraged to upgrade for the best experience. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/packages Notable Changes fix(action): wait for CRD establishment under HookOnlyStrategy #32672 by @pujitha24 fix(linters",
+    "source": "Helm",
+    "sourceId": "helm",
+    "url": "https://github.com/helm/helm/releases/tag/v4.3.1",
+    "publishedDate": "2026-10-15T01:08:37.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "helm",
+      "packaging"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "helm",
+    "releaseVersion": "v4.3.1"
+  },
+  {
     "id": "oci-oke-dcb09e15e2fa",
     "title": "v9.10.0",
     "summary": "9.10.0 (October 14, 2026) Added DEXREQ-9012: Database Migration Data Verification support Support for ADBS: Essbase Integration as External App Support for DBMCI - Key Pool for Oracle Database@AWS Support for DBAAS - Key Pool for Oracle Database@AWS Support OpenSearch master user authentication details Bug Fix cosmetic changes to reduce patches Retry KMS key creation on DNS NXDOMAIN TERSI-5525 correct identity tag default documentation references Support DEFAULT validator type for identity tag",
     "source": "OCI / OKE",
     "sourceId": "oci-oke",
     "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.10.0",
-    "publishedDate": "2026-10-14T22:19:04.000Z",
+    "publishedDate": "2026-10-14T23:04:35.000Z",
     "domain": "infrastructure",
     "topics": [
       "oci",
@@ -18,6 +38,22 @@
     "releaseRelated": true,
     "releaseProject": "oci-oke",
     "releaseVersion": "v9.10.0"
+  },
+  {
+    "id": "kubernetes-8c274fdc33d2",
+    "title": "Why Is My Kubernetes Job Still Pending? Tracing Kueue Admission with Headlamp",
+    "summary": "You submit a Kubernetes Job and wait for its Pods to appear. A minute passes. Then another. The Job is still suspended, there are no application logs, and there may not even be a Pod to inspect. In a cluster managed by Kueue, this can be completely normal. Kueue may still be deciding whether the Job can use the requested resources. The useful question is not only “Why is the Pod pending?” It is first “Has Kueue admitted the Workload?” The Kueue plugin for Headlamp brings that investigation into ",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/10/14/tracing-kueue-admission-with-headlamp/",
+    "publishedDate": "2026-10-14T18:35:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "grafana-806428c88073",
@@ -8518,42 +8554,6 @@
     "releaseRelated": true,
     "releaseProject": "pulumi",
     "releaseVersion": "v3.259.0"
-  },
-  {
-    "id": "openai-e396b6baa03e",
-    "title": "Offering Zero Data Retention for frontier models",
-    "summary": "OpenAI reaffirms Zero Data Retention for eligible API customers and previews Private Safety Processing for advanced AI safety without compromising data privacy.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/our-commitment-to-zero-data-retention",
-    "publishedDate": "2026-08-19T19:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "openai-ef913e9fdabc",
-    "title": "Offering Zero Data Retention for frontier models",
-    "summary": "OpenAI reaffirms Zero Data Retention for eligible API customers and previews Private Safety Processing for advanced AI safety without compromising data privacy.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
-    "publishedDate": "2026-08-19T19:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "oci-oke-cf0f0ec1f144",

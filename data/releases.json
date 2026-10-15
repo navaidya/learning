@@ -1,8 +1,16 @@
 [
   {
+    "project": "helm",
+    "version": "v4.3.1",
+    "publishedDate": "2026-10-15T01:08:37.000Z",
+    "url": "https://github.com/helm/helm/releases/tag/v4.3.1",
+    "sourceId": "helm",
+    "title": "Helm v4.3.1"
+  },
+  {
     "project": "oci-oke",
     "version": "v9.10.0",
-    "publishedDate": "2026-10-14T22:19:04.000Z",
+    "publishedDate": "2026-10-14T23:04:35.000Z",
     "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.10.0",
     "sourceId": "oci-oke",
     "title": "v9.10.0"
@@ -230,14 +238,6 @@
     "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.1",
     "sourceId": "kyverno",
     "title": "v1.19.1"
-  },
-  {
-    "project": "helm",
-    "version": "v3.22.0",
-    "publishedDate": "2026-09-10T00:12:40.000Z",
-    "url": "https://github.com/helm/helm/releases/tag/v3.22.0",
-    "sourceId": "helm",
-    "title": "Helm v3.22.0"
   },
   {
     "project": "openai",

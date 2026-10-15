@@ -1,12 +1,32 @@
 [
   {
+    "id": "langgraph-8add932a3ba8",
+    "title": "langgraph-prebuilt==1.1.1",
+    "summary": "Changes since prebuilt==1.1.0 release(prebuilt): 1.1.1 (#9316) release(checkpoint-postgres): 3.2.0 (#9313) release(checkpoint-postgres): 3.1.3 (#9287) release(checkpoint-sqlite): 3.1.2 (#9288) release(langgraph): 1.2.15 (#9283) fix(langgraph,prebuilt): stop ToolNode from swallowing invalid resume values (#9232) fix: order delta channel replay by task path (#8544) release(langgraph): 1.2.14 (#9215) release(langgraph): 1.2.13 (#9205) chore(deps): bump the minor-and-patch group in /libs/sdk-py with",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/prebuilt%3D%3D1.1.1",
+    "publishedDate": "2026-10-15T04:32:40.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "1.1.1"
+  },
+  {
     "id": "pydantic-ai-ec5fb94d76bf",
     "title": "CLAI2 bleeding",
     "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-14T21:58:52.000Z",
+    "publishedDate": "2026-10-15T01:21:50.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
