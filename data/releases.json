@@ -1,5 +1,37 @@
 [
   {
+    "project": "helm",
+    "version": "v3.22.1",
+    "publishedDate": "2026-10-15T17:02:01.000Z",
+    "url": "https://github.com/helm/helm/releases/tag/v3.22.1",
+    "sourceId": "helm",
+    "title": "Helm v3.22.1"
+  },
+  {
+    "project": "cilium",
+    "version": "1.20.3",
+    "publishedDate": "2026-10-15T15:26:34.000Z",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.20.3",
+    "sourceId": "cilium",
+    "title": "1.20.3"
+  },
+  {
+    "project": "argo",
+    "version": "v3.6.0-rc3",
+    "publishedDate": "2026-10-15T14:58:49.000Z",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.0-rc3",
+    "sourceId": "argo",
+    "title": "v3.6.0-rc3"
+  },
+  {
+    "project": "kyverno",
+    "version": "v1.19.2-rc1",
+    "publishedDate": "2026-10-15T14:51:38.000Z",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2-rc1",
+    "sourceId": "kyverno",
+    "title": "v1.19.2-rc1: fix(pss): support user namespace pods in validate.podSecurity (#17913)"
+  },
+  {
     "project": "robusta",
     "version": "0.53.0",
     "publishedDate": "2026-10-15T11:12:41.000Z",
@@ -14,14 +46,6 @@
     "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.45.0",
     "sourceId": "holmesgpt",
     "title": "0.45.0"
-  },
-  {
-    "project": "helm",
-    "version": "v4.3.1",
-    "publishedDate": "2026-10-15T01:08:37.000Z",
-    "url": "https://github.com/helm/helm/releases/tag/v4.3.1",
-    "sourceId": "helm",
-    "title": "Helm v4.3.1"
   },
   {
     "project": "oci-oke",
@@ -88,14 +112,6 @@
     "title": "v1.56.0-next.3"
   },
   {
-    "project": "argo",
-    "version": "v3.3.16",
-    "publishedDate": "2026-10-12T11:04:05.000Z",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.16",
-    "sourceId": "argo",
-    "title": "v3.3.16"
-  },
-  {
     "project": "karpenter",
     "version": "v1.15.0",
     "publishedDate": "2026-10-10T05:42:48.000Z",
@@ -150,14 +166,6 @@
     "url": "https://kubernetes.io/blog/2026/10/06/kubernetes-cgroups-v2-shift/",
     "sourceId": "kubernetes",
     "title": "The Shift to cgroup v2 in Kubernetes: What You Need to Know"
-  },
-  {
-    "project": "cilium",
-    "version": "1.21.0-pre.3",
-    "publishedDate": "2026-10-02T19:04:57.000Z",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.21.0-pre.3",
-    "sourceId": "cilium",
-    "title": "1.21.0-pre.3"
   },
   {
     "project": "prometheus",
@@ -230,14 +238,6 @@
     "url": "https://istio.io/latest/news/releases/1.31.x/announcing-1.31.1/",
     "sourceId": "istio",
     "title": "Announcing Istio 1.31.1"
-  },
-  {
-    "project": "kyverno",
-    "version": "v1.19.1",
-    "publishedDate": "2026-09-10T07:22:34.000Z",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.1",
-    "sourceId": "kyverno",
-    "title": "v1.19.1"
   },
   {
     "project": "openai",

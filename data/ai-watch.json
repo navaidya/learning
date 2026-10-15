@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-15T12:32:54.000Z",
+    "publishedDate": "2026-10-15T17:32:12.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,24 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "otel-ai-f3c3a7f0f19a",
+    "title": "The Humans of OpenTelemetry - KubeCon Japan 2026",
+    "summary": "We&rsquo;re back with our fifth edition of Humans of OpenTelemetry, and for the first time, from Japan! At KubeCon + CloudNativeCon Japan 2026 in Yokohama, I interviewed OpenTelemetry end users and practitioners from the Japanese cloud native community, and learned how they got involved with OTel: Yuzuru Ohira (LayerX) Mikata Chikahisa (Loglass) Yoshiki Fujikane (CyberAgent) Takashi Okamoto (NTT DATA) Kohei Sugimoto (MIXI) The interviews were conducted in Japanese, and the transcript below is an",
+    "source": "OpenTelemetry",
+    "sourceId": "otel-ai",
+    "url": "https://opentelemetry.io/blog/2026/humans-of-otel-japan/",
+    "publishedDate": "2026-10-15T17:11:30.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "news"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "langfuse-dffca236c92f",
