@@ -1,5 +1,65 @@
 [
   {
+    "id": "pydantic-ai-ec5fb94d76bf",
+    "title": "CLAI2 bleeding",
+    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
+    "publishedDate": "2026-10-15T12:32:54.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "langfuse-dffca236c92f",
+    "title": "v4.60.0",
+    "summary": "What's Changed Features feat(llm): add organization-level connections by @wochinge in #18450 feat(billing): record billable units in an append-only ClickHouse ledger by @Steffen911 in #18722 feat(skills): add CLI import instructions by @tobi12345 in #18794 feat(evals): restyle the evaluator gallery with score previews by @nmtrang29 in #18709 feat(topics): show facet descriptions in Configure Topics by @LysanderKie in #18753 feat(topics): assign automatic summaries to the serving map and start fi",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.60.0",
+    "publishedDate": "2026-10-15T10:26:45.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.60.0"
+  },
+  {
+    "id": "phoenix-3e2d7597aabe",
+    "title": "arize-phoenix: v20.22.0",
+    "summary": "20.22.0 (2026-10-15) Features playground: add Meta muse-wonder-1.0 and gemini-4-argon (#16976) (d5168d1) Bug Fixes oauth2: preserve SameSite=Strict cookies on server-owned return_url after IdP sign-in (#16997) (c332b0c) Documentation add Claude Managed Agents tracing docs (#16989) (54fe899) add standalone release note for the Harbor plugin (#16977) (fe4a06b)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.22.0",
+    "publishedDate": "2026-10-15T07:02:33.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "platform-engineering",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v20.22.0"
+  },
+  {
     "id": "langgraph-8add932a3ba8",
     "title": "langgraph-prebuilt==1.1.1",
     "summary": "Changes since prebuilt==1.1.0 release(prebuilt): 1.1.1 (#9316) release(checkpoint-postgres): 3.2.0 (#9313) release(checkpoint-postgres): 3.1.3 (#9287) release(checkpoint-sqlite): 3.1.2 (#9288) release(langgraph): 1.2.15 (#9283) fix(langgraph,prebuilt): stop ToolNode from swallowing invalid resume values (#9232) fix: order delta channel replay by task path (#8544) release(langgraph): 1.2.14 (#9215) release(langgraph): 1.2.13 (#9205) chore(deps): bump the minor-and-patch group in /libs/sdk-py with",
@@ -18,25 +78,6 @@
     "releaseRelated": true,
     "releaseProject": "langgraph",
     "releaseVersion": "1.1.1"
-  },
-  {
-    "id": "pydantic-ai-ec5fb94d76bf",
-    "title": "CLAI2 bleeding",
-    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-15T01:21:50.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai"
   },
   {
     "id": "langgraph-2d7322b99e29",
@@ -4141,24 +4182,6 @@
       "ai-agent",
       "podcast",
       "agent-development"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "practical-ai-53041813e353",
-    "title": "The Future of AI Infrastructure with CoreWeave",
-    "summary": "As AI applications become more complex, the infrastructure powering them needs to evolve. Corey Sanders, SVP of Product at CoreWeave, joins Chris to discuss why AI requires a fundamentally different approach than traditional cloud computing. They explore AI-native infrastructure, training and inference workloads, the rise of agentic development, optimizing GPU performance, AI research workflows, and why the future of software will be built around AI-first experiences rather than websites and app",
-    "source": "Practical AI",
-    "sourceId": "practical-ai",
-    "url": "https://share.transistor.fm/s/01c30767",
-    "publishedDate": "2026-07-17T09:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "podcast",
-      "agent-development",
-      "agentic-operations"
     ],
     "importance": "medium",
     "architectureShift": false,

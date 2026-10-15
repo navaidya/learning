@@ -1,5 +1,85 @@
 [
   {
+    "id": "robusta-6ec11a77e2fe",
+    "title": "0.53.0",
+    "summary": "What's Changed ROB-1617 Pin setuptools<82 in docs build for sphinxcontrib-images pkg_resources by @Avi-Robusta in #2200 Add Holmes-only install support (runner.enabled=false) by @arikalon1 in #2187 ROB-1624 Notify Slack when a release workflow fails by @Avi-Robusta in #2202 update holmes chart version to 0.45.0 by @arikalon1 in #2203 Full Changelog: 0.52.0...0.53.0",
+    "source": "Robusta",
+    "sourceId": "robusta",
+    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.53.0",
+    "publishedDate": "2026-10-15T11:12:41.000Z",
+    "domain": "aiops",
+    "topics": [
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "robusta",
+    "releaseVersion": "0.53.0"
+  },
+  {
+    "id": "robusta-51e37ad532d0",
+    "title": "0.53.0-alpha",
+    "summary": "No content.",
+    "source": "Robusta",
+    "sourceId": "robusta",
+    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.53.0-alpha",
+    "publishedDate": "2026-10-15T09:10:57.000Z",
+    "domain": "aiops",
+    "topics": [
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "robusta",
+    "releaseVersion": "0.53.0-alpha"
+  },
+  {
+    "id": "holmesgpt-0f4e57775046",
+    "title": "0.45.0",
+    "summary": "What's Changed ROB-1291 Multi-tenant Prometheus toolset (Mimir X-Scope-OrgID routed by a Kubernetes label) by @RoiGlinik in #2555 ROB-1525 Reuse the server's cached tool executor in /api/info and the OAuth callback by @RoiGlinik in #2592 Keep an executor rebuilt while a toolset refresh runs by @RoiGlinik in #2591 Check toolsets once in the refresh cycle that builds the executor by @RoiGlinik in #2595 ROB-1365 Stop regenerating the remediation MCP auth token on every render by @naomi-robusta in #",
+    "source": "HolmesGPT (Robusta)",
+    "sourceId": "holmesgpt",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.45.0",
+    "publishedDate": "2026-10-15T08:20:25.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "holmesgpt",
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "holmesgpt",
+    "releaseVersion": "0.45.0"
+  },
+  {
+    "id": "holmesgpt-a1adfd4e5056",
+    "title": "0.45.0-alpha",
+    "summary": "What's Changed ROB-1291 Multi-tenant Prometheus toolset (Mimir X-Scope-OrgID routed by a Kubernetes label) by @RoiGlinik in #2555 ROB-1525 Reuse the server's cached tool executor in /api/info and the OAuth callback by @RoiGlinik in #2592 Keep an executor rebuilt while a toolset refresh runs by @RoiGlinik in #2591 Check toolsets once in the refresh cycle that builds the executor by @RoiGlinik in #2595 ROB-1365 Stop regenerating the remediation MCP auth token on every render by @naomi-robusta in #",
+    "source": "HolmesGPT (Robusta)",
+    "sourceId": "holmesgpt",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.45.0-alpha",
+    "publishedDate": "2026-10-15T07:51:03.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "holmesgpt",
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "holmesgpt",
+    "releaseVersion": "0.45.0-alpha"
+  },
+  {
     "id": "helm-bf4bdbef1a35",
     "title": "Helm v4.3.1",
     "summary": "Helm v4.3.1 is a patch release. Users are encouraged to upgrade for the best experience. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/packages Notable Changes fix(action): wait for CRD establishment under HookOnlyStrategy #32672 by @pujitha24 fix(linters",
@@ -8460,44 +8540,6 @@
     "releaseProject": "kyverno"
   },
   {
-    "id": "kyverno-46dc84a0fb23",
-    "title": "kyverno-policies-chart-3.9.0",
-    "summary": "kyverno-policies-chart-3.9.0",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-policies-chart-3.9.0",
-    "publishedDate": "2026-08-20T08:53:39.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno"
-  },
-  {
-    "id": "pulumi-5a3174a3cad9",
-    "title": "pkg/v3.259.0: Changelog and go.mod updates for v3.259.0 (#24398)",
-    "summary": "Co-authored-by: github-actions github-actions@github.com",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.259.0",
-    "publishedDate": "2026-08-20T08:44:10.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.259.0"
-  },
-  {
     "id": "kubernetes-releases-dbd5f4fee98c",
     "title": "v1.37.0-rc.1",
     "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
@@ -8515,45 +8557,6 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes-releases",
     "releaseVersion": "v1.37.0-rc.1"
-  },
-  {
-    "id": "crossplane-58b7ae4e1f5b",
-    "title": "apis/v2.4.0",
-    "summary": "Release v2.4.0",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.4.0",
-    "publishedDate": "2026-08-20T00:40:39.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v2.4.0"
-  },
-  {
-    "id": "pulumi-237ba56fa11f",
-    "title": "v3.259.0",
-    "summary": "3.259.0 (2026-08-19) Features [cli/new] Show a single confirmation of project, stack, and config defaults in interactive pulumi new instead of prompting for each value #24223 [cli] Introduce PULUMI_DEFAULT_ORGANIZATION to be able to set the default org #24384 Bug Fixes [cli/stack] Announce Created stack when creating a stack against the Pulumi Cloud backend #24280 [cli] Retry pulumi neo cancellation requests that the service rejects and keep Esc responsive instead of showing \"Cancelling...\" fore",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.259.0",
-    "publishedDate": "2026-08-19T20:04:11.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.259.0"
   },
   {
     "id": "oci-oke-cf0f0ec1f144",

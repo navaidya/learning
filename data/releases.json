@@ -1,5 +1,21 @@
 [
   {
+    "project": "robusta",
+    "version": "0.53.0",
+    "publishedDate": "2026-10-15T11:12:41.000Z",
+    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.53.0",
+    "sourceId": "robusta",
+    "title": "0.53.0"
+  },
+  {
+    "project": "holmesgpt",
+    "version": "0.45.0",
+    "publishedDate": "2026-10-15T08:20:25.000Z",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.45.0",
+    "sourceId": "holmesgpt",
+    "title": "0.45.0"
+  },
+  {
     "project": "helm",
     "version": "v4.3.1",
     "publishedDate": "2026-10-15T01:08:37.000Z",
@@ -32,28 +48,12 @@
     "title": "v3.269.0"
   },
   {
-    "project": "robusta",
-    "version": "0.52.0",
-    "publishedDate": "2026-10-14T10:56:43.000Z",
-    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.52.0",
-    "sourceId": "robusta",
-    "title": "0.52.0"
-  },
-  {
     "project": "terraform",
     "version": "v1.17.0-rc2",
     "publishedDate": "2026-10-14T10:37:18.000Z",
     "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-rc2",
     "sourceId": "terraform",
     "title": "v1.17.0-rc2"
-  },
-  {
-    "project": "holmesgpt",
-    "version": "0.44.0",
-    "publishedDate": "2026-10-14T10:25:42.000Z",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.44.0",
-    "sourceId": "holmesgpt",
-    "title": "0.44.0"
   },
   {
     "project": "opentelemetry-collector",
