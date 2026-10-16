@@ -1,12 +1,33 @@
 [
   {
+    "id": "langfuse-e255862e7bbf",
+    "title": "v4.62.0",
+    "summary": "What's Changed ci: run ai-gateway e2e tests on ai-gateway crate changes by @wochinge in #18915 ci(deps): let the security maintainer remediate Rust Dependabot alerts by @wochinge in #18885 fix(web): tracing page header and search row spacing by @nmtrang29 in #18352 feat(ai-gateway): raise request limit to 16 MiB and make execution limits configurable by @wochinge in #18820 build: ship Rust license notices and cache AI gateway dependency builds by @wochinge in #18889 fix(search): escape LIKE wild",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.62.0",
+    "publishedDate": "2026-10-16T10:00:05.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.62.0"
+  },
+  {
     "id": "pydantic-ai-ec5fb94d76bf",
     "title": "CLAI2 bleeding",
     "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-16T05:53:03.000Z",
+    "publishedDate": "2026-10-16T09:51:47.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +38,26 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "langfuse-1145ad113c7b",
+    "title": "v4.61.0",
+    "summary": "What's Changed Features feat(topics): unify manual trace processing and topic generation by @LysanderKie in #18840 feat(ingestion): measure synchronous OTEL work and preparation codepaths by @sumerman in #18844 feat: Add status information on integrations screen directly by @jordibosch20 in #18718 feat(traces): add dedicated skills tab by @tobi12345 in #18872 feat(observability): gate ECS and container resource detectors behind a flag by @Steffen911 in #18854 feat(ai-gateway): route models by co",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.61.0",
+    "publishedDate": "2026-10-16T08:20:32.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.61.0"
   },
   {
     "id": "pydantic-ai-bdfd58cd98d4",
@@ -58,6 +99,22 @@
     "releaseRelated": true,
     "releaseProject": "phoenix",
     "releaseVersion": "v20.23.0"
+  },
+  {
+    "id": "cncf-video-d222be2792d3",
+    "title": "Building an Agentic IAM SaaS with kcp and Kubebuilder - Philipp Strube, Auweia",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=lgqKBkN62RQ",
+    "publishedDate": "2026-10-15T23:46:07.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "otel-ai-f3c3a7f0f19a",

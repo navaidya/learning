@@ -1,5 +1,60 @@
 [
   {
+    "id": "pulumi-e3bb839b42a4",
+    "title": "v3.269.0",
+    "summary": "3.269.0 (2026-10-16) Features [sdk] Add runtime functions to the Go, Node.js and Python SDKs that check whether a resource with a given ID exists without adopting it into the stack #24808 [engine] Negotiate OutputValues on Call so SDKs receive per-value return dependencies #25017 [auto] Add convert to the generated automation APIs for NodeJS, Python and Go #25050 [auto] Add refresh to the generated automation APIs for NodeJS, Python and Go #25052 [auto] Add about commands to the generated automa",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.269.0",
+    "publishedDate": "2026-10-16T11:36:44.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.269.0"
+  },
+  {
+    "id": "cncf-64d0db7e68cd",
+    "title": "Putting Nepal on the CNCF Golden Kubestronaut map",
+    "summary": "In this blog, I will share my Golden Kubestronaut journey, how I became the first and youngest Golden Kubestronaut from Nepal, what motivated me to pursue this path, and what it actually takes to earn the...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/16/putting-nepal-on-the-cncf-golden-kubestronaut-map/",
+    "publishedDate": "2026-10-16T11:30:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "pulumi-2f947111429e",
+    "title": "sdk/v3.269.0: Revert \"Freeze v3.269.0\" (#25247)",
+    "summary": "Reverts #25245 🤖 Generated with Claude Code Co-authored-by: Claude Opus 5.5 noreply@anthropic.com",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.269.0",
+    "publishedDate": "2026-10-16T09:55:11.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.269.0"
+  },
+  {
     "id": "grafana-0f9d14f9fee1",
     "title": "Get observability in your pocket with the Grafana mobile app",
     "summary": "When you’re on the go, your phone is often the only observability tool you have. And what you can do with it in the first few minutes matters. With the incredible innovation that has gone into mobile CPUs, GPUs and displays, a phone is a powerful device where you can immediately see what’s happening and start acting on it. And the Grafana mobile app now allows you to both see and act. The app (available for Android and iOS) has always been good at notifying you of what's happening—alerts, incide",
@@ -55,25 +110,6 @@
     "releaseRelated": true,
     "releaseProject": "loki",
     "releaseVersion": "v3.6.18"
-  },
-  {
-    "id": "pulumi-e3bb839b42a4",
-    "title": "v3.269.0",
-    "summary": "3.269.0 (2026-10-15) Features [sdk] Add runtime functions to the Go, Node.js and Python SDKs that check whether a resource with a given ID exists without adopting it into the stack #24808 [engine] Negotiate OutputValues on Call so SDKs receive per-value return dependencies #25017 [auto] Add convert to the generated automation APIs for NodeJS, Python and Go #25050 [auto] Add refresh to the generated automation APIs for NodeJS, Python and Go #25052 [auto] Add about commands to the generated automa",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.269.0",
-    "publishedDate": "2026-10-15T19:49:27.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.269.0"
   },
   {
     "id": "kyverno-37f100ba4944",
@@ -644,25 +680,6 @@
     "releaseRelated": true,
     "releaseProject": "terraform",
     "releaseVersion": "v1.17.0-rc2"
-  },
-  {
-    "id": "pulumi-2f947111429e",
-    "title": "sdk/v3.269.0: Make `pulumi watch` error by default (#25202)",
-    "summary": "pulumi watch now returns an error by default. This is the second step of the removal schedule in #24717. The error links the issue and tells users to set PULUMI_DISABLE_EXPERIMENTAL_WATCH_REMOVAL_ERROR=1 to run the command until it is removed. Unlike pulumi logs (#25201), pulumi watch uses cobra's Deprecated field, so cobra prints the full removal notice before the command runs. The error does not repeat that notice. PULUMI_DISABLE_EXPERIMENTAL_WATCH_REMOVAL_WARNING still hides it.",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.269.0",
-    "publishedDate": "2026-10-14T10:31:05.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.269.0"
   },
   {
     "id": "holmesgpt-3fefa5bd2490",
@@ -8473,26 +8490,6 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "backstage-da2fee5e5ad7",
-    "title": "v1.54.4",
-    "summary": "This patch release fixes the following issues: Fixed software template inline conditionals without an else branch to render an empty string when their condition is false.",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.4",
-    "publishedDate": "2026-08-24T18:16:07.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.54.4"
   },
   {
     "id": "kubernetes-releases-9b849e2d008a",

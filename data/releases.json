@@ -1,19 +1,19 @@
 [
   {
+    "project": "pulumi",
+    "version": "v3.269.0",
+    "publishedDate": "2026-10-16T11:36:44.000Z",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.269.0",
+    "sourceId": "pulumi",
+    "title": "v3.269.0"
+  },
+  {
     "project": "loki",
     "version": "v3.6.18",
     "publishedDate": "2026-10-15T19:55:55.000Z",
     "url": "https://github.com/grafana/loki/releases/tag/v3.6.18",
     "sourceId": "loki",
     "title": "v3.6.18"
-  },
-  {
-    "project": "pulumi",
-    "version": "v3.269.0",
-    "publishedDate": "2026-10-15T19:49:27.000Z",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.269.0",
-    "sourceId": "pulumi",
-    "title": "v3.269.0"
   },
   {
     "project": "kyverno",
