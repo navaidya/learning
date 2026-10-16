@@ -1,11 +1,27 @@
 [
   {
+    "project": "karpenter",
+    "version": "v1.14.2",
+    "publishedDate": "2026-10-16T21:52:03.000Z",
+    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.14.2",
+    "sourceId": "karpenter",
+    "title": "v1.14.2"
+  },
+  {
     "project": "pulumi",
-    "version": "v3.269.0",
-    "publishedDate": "2026-10-16T12:18:39.000Z",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.269.0",
+    "version": "v3.270.0",
+    "publishedDate": "2026-10-16T20:28:10.000Z",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.270.0",
     "sourceId": "pulumi",
-    "title": "pkg/v3.269.0: Changelog and go.mod updates for v3.269.0 (#25253)"
+    "title": "v3.270.0"
+  },
+  {
+    "project": "tempo",
+    "version": "v3.0.4",
+    "publishedDate": "2026-10-16T20:12:21.000Z",
+    "url": "https://github.com/grafana/tempo/releases/tag/v3.0.4",
+    "sourceId": "tempo",
+    "title": "v3.0.4"
   },
   {
     "project": "istio",
@@ -128,14 +144,6 @@
     "title": "v1.56.0-next.3"
   },
   {
-    "project": "karpenter",
-    "version": "v1.15.0",
-    "publishedDate": "2026-10-10T05:42:48.000Z",
-    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.15.0",
-    "sourceId": "karpenter",
-    "title": "v1.15.0"
-  },
-  {
     "project": "k8sgpt",
     "version": "v0.4.40",
     "publishedDate": "2026-10-09T20:24:09.000Z",
@@ -206,14 +214,6 @@
     "url": "https://www.cncf.io/blog/2026/09/30/argocon-north-america-2026-what-to-expect-as-the-argo-community-looks-toward-cd-4-0/",
     "sourceId": "cncf",
     "title": "ArgoCon North America 2026: What to expect as the Argo community looks toward CD 4.0"
-  },
-  {
-    "project": "tempo",
-    "version": "v3.1.0",
-    "publishedDate": "2026-09-29T17:07:23.000Z",
-    "url": "https://github.com/grafana/tempo/releases/tag/v3.1.0",
-    "sourceId": "tempo",
-    "title": "v3.1.0"
   },
   {
     "project": "hashicorp",

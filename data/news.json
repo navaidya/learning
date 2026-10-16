@@ -1,5 +1,102 @@
 [
   {
+    "id": "karpenter-a6101ef554fa",
+    "title": "v1.14.2",
+    "summary": "Bug Fixes allow enqueue onto NodeRepair controller if label synced after create (#3366) #3366 (Ryan Mistretta) capacity buffer: watch scalableRef workloads so buffers resolve … (#3387) #3387 (Ryan Mistretta)",
+    "source": "Karpenter",
+    "sourceId": "karpenter",
+    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.14.2",
+    "publishedDate": "2026-10-16T21:52:03.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "karpenter",
+      "kubernetes",
+      "autoscaling"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "karpenter",
+    "releaseVersion": "v1.14.2"
+  },
+  {
+    "id": "pulumi-e408d5fad8a0",
+    "title": "v3.270.0",
+    "summary": "3.270.0 (2026-10-16) Bug Fixes [cli/env] Fix pulumi env edit, env set, env rm and env provider overwriting changes made after they read the environment; on a conflict, env edit reopens the editor with your edits and the current definition, and the others fail #24983 [cli] Report an unknown drift status in pulumi stack drift status when drift detection has never run #25172",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.270.0",
+    "publishedDate": "2026-10-16T20:28:10.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.270.0"
+  },
+  {
+    "id": "tempo-ec78160e2dbe",
+    "title": "v3.0.4",
+    "summary": "Security deps: Update Go to 1.26.9 (CVE-2026-56858, CVE-2026-56862, CVE-2026-56860, CVE-2026-56859, CVE-2026-56853, CVE-2026-33818, CVE-2026-97031, CVE-2026-94440, CVE-2026-78669, CVE-2026-78667, CVE-2026-78660, CVE-2026-78659), google.golang.org/grpc to v1.83.2 (CVE-2026-84445, CVE-2026-84304), github.com/apache/thrift to v0.24.0 (CVE-2026-43871), golang.org/x/net to v0.60.0 (CVE-2026-39821, CVE-2026-78669, CVE-2026-78660, CVE-2026-78659, CVE-2026-46600), golang.org/x/text to v0.42.0 (CVE-2026-",
+    "source": "Grafana Tempo",
+    "sourceId": "tempo",
+    "url": "https://github.com/grafana/tempo/releases/tag/v3.0.4",
+    "publishedDate": "2026-10-16T20:12:21.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tempo",
+      "tracing",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "tempo",
+    "releaseVersion": "v3.0.4"
+  },
+  {
+    "id": "vector-3f1941b13957",
+    "title": "vdev-v0.3.32",
+    "summary": "chore(vdev): Rewrite check-docs.sh to vdev (#26665)",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.32",
+    "publishedDate": "2026-10-16T19:26:52.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
+    "id": "pulumi-a474bf2895f2",
+    "title": "sdk/v3.270.0: Skip to 3.270.0 (#25263)",
+    "summary": "Restores 3.270.0 but doesn't add the lock file, so doesn't trigger a release. 🤖 Generated with Claude Code Co-authored-by: Claude Opus 5.5 noreply@anthropic.com",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.270.0",
+    "publishedDate": "2026-10-16T18:26:30.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.270.0"
+  },
+  {
     "id": "cncf-bf56626fb794",
     "title": "Deploying, maintaining, and migrating production n8n on EKS",
     "summary": "n8n is easy to try and harder to run under production traffic. A single container with SQLite works great for a quick demo. Production is a different story entirely. You need workers, webhook processors, PostgreSQL, Redis,...",
@@ -110,6 +207,24 @@
     "releaseRelated": true,
     "releaseProject": "istio",
     "releaseVersion": "1.29"
+  },
+  {
+    "id": "openai-9db4940a53f8",
+    "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+    "summary": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+    "publishedDate": "2026-10-16T00:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "grafana-0f9d14f9fee1",
@@ -8319,100 +8434,6 @@
     "releaseVersion": "v1.37.0"
   },
   {
-    "id": "vector-dfa46aff4554",
-    "title": "v0.58.0",
-    "summary": "The COSE team is excited to announce version 0.58.0! 🚀 View release notes",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/v0.58.0",
-    "publishedDate": "2026-08-26T15:12:38.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector",
-    "releaseVersion": "v0.58.0"
-  },
-  {
-    "id": "robusta-3b45b7424a2a",
-    "title": "0.48.0",
-    "summary": "What's Changed Replace CairoSVG with resvg-py and migrate PDF generation to reportlab by @moshemorad in #2136 ROB-906 Document the cluster query param across Send Events docs by @Sheeproid in #2138 ROB-902 - Claude/runner clusterrole privilege 839vtf by @Avi-Robusta in #2141 Upgrade Flask dependency to ^3.1.3 by @moshemorad in #2143 ROB-944 harden pull configs by @Avi-Robusta in #2144 Prevent signing key leakage in email communications by @moshemorad in #2148 Fix shell variable expansion in rele",
-    "source": "Robusta",
-    "sourceId": "robusta",
-    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.48.0",
-    "publishedDate": "2026-08-26T14:00:00.000Z",
-    "domain": "aiops",
-    "topics": [
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "robusta",
-    "releaseVersion": "0.48.0"
-  },
-  {
-    "id": "terraform-ab050bf30f7c",
-    "title": "v1.16.0",
-    "summary": "1.16.0 (August 26, 2026) NEW FEATURES: Terraform now stores planned private data for providers, allowing provider-specific state to be preserved across plan and apply. (#37986) terraform_data: The new store block can hold ephemeral and sensitive values across plan and apply. (#38298) Providers can now use nested blocks as computed values (#38305) import: import blocks inside modules are now supported. (#38352) Terraform is now available as a pre-built binary for Linux s390x (zLinux). (#38384) Re",
-    "source": "Terraform",
-    "sourceId": "terraform",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0",
-    "publishedDate": "2026-08-26T13:05:28.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "terraform",
-    "releaseVersion": "v1.16.0"
-  },
-  {
-    "id": "cncf-8a0180c3184e",
-    "title": "Governance guidance for CNCF projects: Choosing the right structure for your project’s size and stage",
-    "summary": "Clear patterns have emerged from governance reviews across 72 CNCF projects, distinguishing between what the CNCF requires at each maturity level versus what the data recommends for long-term project health. This post captures those patterns as...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/08/26/governance-guidance-for-cncf-projects-choosing-the-right-structure-for-your-projects-size-and-stage/",
-    "publishedDate": "2026-08-26T11:30:00.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "robusta-16b27f48d798",
-    "title": "0.48.0-alpha",
-    "summary": "What's Changed Replace CairoSVG with resvg-py and migrate PDF generation to reportlab by @moshemorad in #2136 ROB-906 Document the cluster query param across Send Events docs by @Sheeproid in #2138 ROB-902 - Claude/runner clusterrole privilege 839vtf by @Avi-Robusta in #2141 Upgrade Flask dependency to ^3.1.3 by @moshemorad in #2143 ROB-944 harden pull configs by @Avi-Robusta in #2144 Prevent signing key leakage in email communications by @moshemorad in #2148 Fix shell variable expansion in rele",
-    "source": "Robusta",
-    "sourceId": "robusta",
-    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.48.0-alpha",
-    "publishedDate": "2026-08-26T09:29:34.000Z",
-    "domain": "aiops",
-    "topics": [
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "robusta",
-    "releaseVersion": "0.48.0-alpha"
-  },
-  {
     "id": "holmesgpt-ce4892e53606",
     "title": "0.40.0",
     "summary": "What's Changed ROB-878 remove stale Sonnet 4.0/4.5 model recommendations from docs by @Sheeproid in #2378 Remove experimental Azure SQL toolset by @moshemorad in #2377 ROB-893 Fix command injection vulnerability in Kubernetes toolset by @naomi-robusta in #2382 Remove MariaDB MCP integration, consolidate to native MariaDB datasource by @moshemorad in #2389 Fix command injection in slab/kubevela/inspektor_gadget/aks toolsets (ROB-893 follow-up) by @naomi-robusta in #2386 Fix SSRF in internet/fetch",
@@ -8433,26 +8454,6 @@
     "releaseRelated": true,
     "releaseProject": "holmesgpt",
     "releaseVersion": "0.40.0"
-  },
-  {
-    "id": "oci-oke-45d2095f941a",
-    "title": "v8.29.0",
-    "summary": "8.29.0 (August 25, 2026) Added Support for ZPR Security Attribute Onboarding for RCV CP Support for BDS 3.5.0 - Feature Enhancements Support for MySQL HeatWave Service: Blue/Green Deployments Bug Fix Remove restrictive DNS zone validation Send optional FastConnect update fields only when changed",
-    "source": "OCI / OKE",
-    "sourceId": "oci-oke",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v8.29.0",
-    "publishedDate": "2026-08-26T01:46:38.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "oci",
-      "oke",
-      "oracle"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "oci-oke",
-    "releaseVersion": "v8.29.0"
   },
   {
     "id": "kubernetes-506ba8d37c8f",
