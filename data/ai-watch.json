@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-15T22:18:07.000Z",
+    "publishedDate": "2026-10-16T05:53:03.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,47 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "pydantic-ai-bdfd58cd98d4",
+    "title": "v2.57.0 (2026-10-15)",
+    "summary": "What's Changed ⚠️ Compatibility Notes Attach namespaced origin and tool_call_id metadata to BackgroundTools completions by @michaeldunn9 in #10196 Take GPT-Live realtime history, usage, and reply waits from the session core by @DouweM in #10083 Honour disable-model-invocation and user-invocable in Skills, and skip stray skill library paths by @DouweM in #10378 Take Gemini Live realtime history, usage, and reply waits from the session core by @DouweM in #10082 🚀 Features Add MetaProvider for Met",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.57.0",
+    "publishedDate": "2026-10-16T03:35:35.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.57.0"
+  },
+  {
+    "id": "phoenix-35b50c73d42a",
+    "title": "arize-phoenix: v20.23.0",
+    "summary": "20.23.0 (2026-10-16) Features server: export server logs over OTLP (#17010) (add77bf) Bug Fixes playground: forward Bedrock tool results directly as text (#16951) (15355fd) Documentation add Atomic Agents tracing integration (#17000) (fe5e933) Add Phoenix release notes — 2026-10-14 (#16979) (97c4b2a)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.23.0",
+    "publishedDate": "2026-10-16T03:16:52.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otlp",
+      "agent-observability",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v20.23.0"
   },
   {
     "id": "otel-ai-f3c3a7f0f19a",

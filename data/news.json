@@ -1,5 +1,22 @@
 [
   {
+    "id": "grafana-0f9d14f9fee1",
+    "title": "Get observability in your pocket with the Grafana mobile app",
+    "summary": "When you’re on the go, your phone is often the only observability tool you have. And what you can do with it in the first few minutes matters. With the incredible innovation that has gone into mobile CPUs, GPUs and displays, a phone is a powerful device where you can immediately see what’s happening and start acting on it. And the Grafana mobile app now allows you to both see and act. The app (available for Android and iOS) has always been good at notifying you of what's happening—alerts, incide",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/get-observability-in-your-pocket-with-the-grafana-mobile-app/",
+    "publishedDate": "2026-10-15T22:39:33.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "cncf-eb41c1a2a5f0",
     "title": "Carbon as a first-class signal: Bringing software carbon intensity to OpenTelemetry",
     "summary": "At Observability Summit Europe 2026 in Prague, I presented a keynote titled Carbon as a First-Class Signal: Designing a Standard for OpenTelemetry. The talk explored how Software Carbon Intensity (SCI) could become part of cloud-native observability...",
@@ -413,6 +430,90 @@
     "releaseRelated": true,
     "releaseProject": "helm",
     "releaseVersion": "v4.3.1"
+  },
+  {
+    "id": "istio-41da0389d9e2",
+    "title": "ISTIO-SECURITY-2026-007",
+    "summary": "Disclosure Details CVE(s) CVSS Impact Score 7.7 CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H Affected Releases 1.31.0 to 1.31.1 1.30.0 to 1.30.5 1.29.0 to 1.29.8 CVE Envoy CVEs GHSA-8vc2-jrm4-835w: (CVSS score 7.5): Fixed an unauthenticated remote crash (null pointer dereference) in the OAuth2 HTTP filter when handling a CONNECT request without a :path header. GHSA-47vj-9r25-wv5j: (CVSS score 6.5): Fixed a crash in the api_key_auth HTTP filter when hiding credentials on a CONNECT request without",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/news/security/istio-security-2026-007/",
+    "publishedDate": "2026-10-15T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "istio",
+    "releaseVersion": "7.7"
+  },
+  {
+    "id": "istio-0abaad125428",
+    "title": "Announcing Istio 1.31.2",
+    "summary": "This release contains security fixes. This release note describes what&rsquo;s different between Istio 1.31.1 and 1.31.2. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Security update For more information, see ISTIO-SECURITY-2026-007. Envoy CVEs GHSA-8vc2-jrm4-835w: (CVSS score 7.5): Fixed an unauthenticated remote crash in the O",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/news/releases/1.31.x/announcing-1.31.2/",
+    "publishedDate": "2026-10-15T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "istio",
+    "releaseVersion": "1.31.2"
+  },
+  {
+    "id": "istio-fce2026ed5d2",
+    "title": "Announcing Istio 1.30.6",
+    "summary": "This release contains security fixes. This release note describes what&rsquo;s different between Istio 1.30.5 and 1.30.6. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Security update For more information, see ISTIO-SECURITY-2026-007. Envoy CVEs GHSA-8vc2-jrm4-835w: (CVSS score 7.5): Fixed an unauthenticated remote crash in the O",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/news/releases/1.30.x/announcing-1.30.6/",
+    "publishedDate": "2026-10-15T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "istio",
+    "releaseVersion": "1.30.6"
+  },
+  {
+    "id": "istio-a31da02bf35b",
+    "title": "Announcing Istio 1.29.9",
+    "summary": "This release contains security fixes. This release note describes what&rsquo;s different between Istio 1.29.8 and 1.29.9. This is the final 1.29 release, as 1.29 reached end of life on October 15, 2026. We encourage you to upgrade to a supported release. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Security update For more infor",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/news/releases/1.29.x/announcing-1.29.9/",
+    "publishedDate": "2026-10-15T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "istio",
+    "releaseVersion": "1.29.9"
   },
   {
     "id": "oci-oke-dcb09e15e2fa",
@@ -8392,102 +8493,6 @@
     "releaseRelated": true,
     "releaseProject": "backstage",
     "releaseVersion": "v1.54.4"
-  },
-  {
-    "id": "openai-df015003760c",
-    "title": "Advancing price-performance for developers with GPT‑5.6 in Kiro",
-    "summary": "GPT‑5.6 is now available in Kiro, helping developers plan, build, review, and test software with better price-performance.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/gpt-5-6-in-kiro",
-    "publishedDate": "2026-08-24T12:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "openai",
-    "releaseVersion": "5.6"
-  },
-  {
-    "id": "cncf-982808ab61d7",
-    "title": "Automating root cause analysis at scale: Multi-signal correlation for cloud native incident response",
-    "summary": "The problem: Humans shouldn’t be correlation engines At Atlassian’s scale, hundreds of interconnected microservices distributed across multiple regions mean a production incident generates an overwhelming volume of telemetry. The problem is that finding the causal factor...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/08/24/automating-root-cause-analysis-at-scale-multi-signal-correlation-for-cloud-native-incident-response/",
-    "publishedDate": "2026-08-24T11:00:00.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "istio-a6ccc2f5f55f",
-    "title": "Istio Project Announces 2026 Technical Oversight Committee Election Results",
-    "summary": "Under the governance system introduced in 2024 for the Technical Oversight Committee (TOC), the Istio project holds annual elections for three of the six seats. This ensures continuous technical leadership while maintaining community-driven momentum. This year&rsquo;s election saw four candidates stand for the three available two-year terms. Following the conclusion of the voting process by the Steering Committee, we are pleased to announce that three incumbents have been re-elected to serve ano",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/blog/2026/toc-election-results/",
-    "publishedDate": "2026-08-24T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "backstage-fcd344f8a1c0",
-    "title": "v1.54.3",
-    "summary": "This patch release fixes the following issues: Fixed the unintended removal of support for intrinsic string, number, array, Map, and Set methods in software templates.",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.3",
-    "publishedDate": "2026-08-22T14:16:39.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.54.3"
-  },
-  {
-    "id": "backstage-9a69f1bf3ff0",
-    "title": "v1.54.2",
-    "summary": "v1.54.2",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.2",
-    "publishedDate": "2026-08-22T13:41:12.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.54.2"
   },
   {
     "id": "kubernetes-releases-9b849e2d008a",
