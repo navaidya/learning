@@ -2,10 +2,18 @@
   {
     "project": "pulumi",
     "version": "v3.269.0",
-    "publishedDate": "2026-10-16T11:36:44.000Z",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.269.0",
+    "publishedDate": "2026-10-16T12:18:39.000Z",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.269.0",
     "sourceId": "pulumi",
-    "title": "v3.269.0"
+    "title": "pkg/v3.269.0: Changelog and go.mod updates for v3.269.0 (#25253)"
+  },
+  {
+    "project": "istio",
+    "version": "1.29",
+    "publishedDate": "2026-10-16T00:00:00.000Z",
+    "url": "https://istio.io/latest/news/support/announcing-1.29-eol-final/",
+    "sourceId": "istio",
+    "title": "Support for Istio 1.29 has ended"
   },
   {
     "project": "loki",
@@ -62,14 +70,6 @@
     "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.45.0",
     "sourceId": "holmesgpt",
     "title": "0.45.0"
-  },
-  {
-    "project": "istio",
-    "version": "7.7",
-    "publishedDate": "2026-10-15T00:00:00.000Z",
-    "url": "https://istio.io/latest/news/security/istio-security-2026-007/",
-    "sourceId": "istio",
-    "title": "ISTIO-SECURITY-2026-007"
   },
   {
     "project": "oci-oke",

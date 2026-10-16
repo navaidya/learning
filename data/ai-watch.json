@@ -1,5 +1,64 @@
 [
   {
+    "id": "pydantic-ai-ec5fb94d76bf",
+    "title": "CLAI2 bleeding",
+    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
+    "publishedDate": "2026-10-16T17:17:54.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "langgraph-2a79f6f08f6c",
+    "title": "langgraph-cli==0.4.36",
+    "summary": "Changes since cli==0.4.35 release(cli): 0.4.36 (#9330) fix(cli): accept serverless and dedicated deployment aliases (#9325) fix(cli): push through the active Docker context in langgraph deploy (#9321)",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.36",
+    "publishedDate": "2026-10-16T16:39:14.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "0.4.36"
+  },
+  {
+    "id": "langfuse-5dca919463a3",
+    "title": "v4.63.0",
+    "summary": "Features feat(web): link personal feature previews from organization settings by @nimarb in #18887 feat(traces): integrate PostHog analytics for IO parser comparison tracking by @marliessophie in #18896 feat(skills): improve browsing and editing UX by @tobi12345 in #18940 feat(ai-gateway): route slugless codex- models to OpenAI connections by @wochinge in #18938 feat(ai-gateway): attribute errors by origin and measure gateway overhead by @wochinge in #18919 feat(experiments): unify per-experimen",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.63.0",
+    "publishedDate": "2026-10-16T14:33:33.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.63.0"
+  },
+  {
     "id": "langfuse-e255862e7bbf",
     "title": "v4.62.0",
     "summary": "What's Changed ci: run ai-gateway e2e tests on ai-gateway crate changes by @wochinge in #18915 ci(deps): let the security maintainer remediate Rust Dependabot alerts by @wochinge in #18885 fix(web): tracing page header and search row spacing by @nmtrang29 in #18352 feat(ai-gateway): raise request limit to 16 MiB and make execution limits configurable by @wochinge in #18820 build: ship Rust license notices and cache AI gateway dependency builds by @wochinge in #18889 fix(search): escape LIKE wild",
@@ -19,25 +78,6 @@
     "releaseRelated": true,
     "releaseProject": "langfuse",
     "releaseVersion": "v4.62.0"
-  },
-  {
-    "id": "pydantic-ai-ec5fb94d76bf",
-    "title": "CLAI2 bleeding",
-    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-16T09:51:47.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai"
   },
   {
     "id": "langfuse-1145ad113c7b",

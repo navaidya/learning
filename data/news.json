@@ -1,5 +1,41 @@
 [
   {
+    "id": "cncf-bf56626fb794",
+    "title": "Deploying, maintaining, and migrating production n8n on EKS",
+    "summary": "n8n is easy to try and harder to run under production traffic. A single container with SQLite works great for a quick demo. Production is a different story entirely. You need workers, webhook processors, PostgreSQL, Redis,...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/16/deploying-maintaining-and-migrating-production-n8n-on-eks/",
+    "publishedDate": "2026-10-16T16:39:04.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "pulumi-a1cde94bb69a",
+    "title": "pkg/v3.269.0: Changelog and go.mod updates for v3.269.0 (#25253)",
+    "summary": "Co-authored-by: github-actions github-actions@github.com",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.269.0",
+    "publishedDate": "2026-10-16T12:18:39.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.269.0"
+  },
+  {
     "id": "pulumi-e3bb839b42a4",
     "title": "v3.269.0",
     "summary": "3.269.0 (2026-10-16) Features [sdk] Add runtime functions to the Go, Node.js and Python SDKs that check whether a resource with a given ID exists without adopting it into the stack #24808 [engine] Negotiate OutputValues on Call so SDKs receive per-value return dependencies #25017 [auto] Add convert to the generated automation APIs for NodeJS, Python and Go #25050 [auto] Add refresh to the generated automation APIs for NodeJS, Python and Go #25052 [auto] Add about commands to the generated automa",
@@ -53,6 +89,27 @@
     "releaseRelated": true,
     "releaseProject": "pulumi",
     "releaseVersion": "v3.269.0"
+  },
+  {
+    "id": "istio-5f0f1017a037",
+    "title": "Support for Istio 1.29 has ended",
+    "summary": "As previously announced, support for Istio 1.29 has now officially ended. At this point we will no longer back-port fixes for security issues and critical bugs to 1.29. We highly recommend that you upgrade to the latest version of Istio (1.31.2) if you haven&rsquo;t already.",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/news/support/announcing-1.29-eol-final/",
+    "publishedDate": "2026-10-16T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "istio",
+    "releaseVersion": "1.29"
   },
   {
     "id": "grafana-0f9d14f9fee1",
@@ -385,6 +442,24 @@
     "releaseRelated": true,
     "releaseProject": "robusta",
     "releaseVersion": "0.53.0"
+  },
+  {
+    "id": "cncf-867338a9d801",
+    "title": "Extending Kubernetes policy enforcement to runtime security for AI workloads",
+    "summary": "Nirmata created Kyverno and donated it to the CNCF in 2020. Kyverno is now a graduated CNCF project and is widely used for enforcing and automating configuration security and best practices. However, admission control answers one...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/15/extending-kubernetes-policy-enforcement-to-runtime-security-for-ai-workloads/",
+    "publishedDate": "2026-10-15T11:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": false
   },
   {
     "id": "robusta-51e37ad532d0",
@@ -8398,43 +8473,6 @@
     "releaseVersion": "v1.37"
   },
   {
-    "id": "backstage-99260156b3a0",
-    "title": "v1.55.0-next.0",
-    "summary": "See docs/releases/v1.55.0-next.0-changelog.md for more information.",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.55.0-next.0",
-    "publishedDate": "2026-08-25T19:13:49.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.55.0-next.0"
-  },
-  {
-    "id": "grafana-b1009baf00c2",
-    "title": "The Grafana AI SDK for Go: a shared foundation for building AI applications",
-    "summary": "Starting an experiment with an LLM has never been easier. Keeping a growing collection of those experiments consistent is another matter.Earlier this year, as more teams began exploring AI features here at Grafana Labs, we repeatedly encountered the same pattern: a new experiment would start, move quickly, and build its own client for whichever model provider it needed. The next experiment would do the same, with a slightly different abstraction for streaming, tools, errors, or provider configur",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/the-grafana-ai-sdk-for-go-a-shared-foundation-for-building-ai-applications/",
-    "publishedDate": "2026-08-25T17:33:01.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "holmesgpt-16b28f48f20c",
     "title": "0.40.0-alpha",
     "summary": "What's Changed ROB-878 remove stale Sonnet 4.0/4.5 model recommendations from docs by @Sheeproid in #2378 Remove experimental Azure SQL toolset by @moshemorad in #2377 ROB-893 Fix command injection vulnerability in Kubernetes toolset by @naomi-robusta in #2382 Remove MariaDB MCP integration, consolidate to native MariaDB datasource by @moshemorad in #2389 Fix command injection in slab/kubevela/inspektor_gadget/aks toolsets (ROB-893 follow-up) by @naomi-robusta in #2386 Fix SSRF in internet/fetch",
@@ -8455,41 +8493,6 @@
     "releaseRelated": true,
     "releaseProject": "holmesgpt",
     "releaseVersion": "0.40.0-alpha"
-  },
-  {
-    "id": "cncf-772da2eeaffc",
-    "title": "The lazy developer’s guide to observing your own code",
-    "summary": "It’s no secret that developers are increasingly being asked to shift left. It seems there’s always something new to shift left on. And now developers are being asked to shift left on observability. This means that...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/08/25/the-lazy-developers-guide-to-observing-your-own-code/",
-    "publishedDate": "2026-08-25T11:34:00.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "cncf-ca604985cbed",
-    "title": "Stop trying to learn all of Kubernetes at once",
-    "summary": "As a recovering VMware architect, it took me a little while to grasp Kubernetes. And I noticed I’m not alone in this.. From developers on our own team who need to get fluent in Kubernetes fast...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/08/25/stop-trying-to-learn-all-of-kubernetes-at-once/",
-    "publishedDate": "2026-08-25T11:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "kubernetes-releases-9b849e2d008a",
