@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-16T20:55:18.000Z",
+    "publishedDate": "2026-10-16T23:56:02.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,46 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "langgraph-30e8ce6ff93f",
+    "title": "langgraph==1.2.16",
+    "summary": "Changes since 1.2.15 release(langgraph): 1.2.16 (#9334) fix(langgraph): let other tasks finish when a resume value is invalid (#9265) fix(langgraph): apply a resumed Command's update once (#9322) fix(langgraph): stop a subgraph from rerunning its finished tasks on resume (#9315) fix(langgraph): save a resumed exit run's pending writes once (#9314) release(prebuilt): 1.1.1 (#9316) release(checkpoint-postgres): 3.2.0 (#9313) feat(checkpoint-postgres): add prune to PostgresSaver and AsyncPostgresSa",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.16",
+    "publishedDate": "2026-10-16T22:11:28.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "1.2.16"
+  },
+  {
+    "id": "langgraph-cc5e97a5fc9a",
+    "title": "langgraph-sdk==0.4.8",
+    "summary": "Changes since sdk==0.4.7 release(langgraph): 1.2.16 (#9334) release(sdk-py): 0.4.8 (#9335) fix(sdk-py): surface thread stream errors and stop retrying a rejected stream (#9317) release(prebuilt): 1.1.1 (#9316)",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.8",
+    "publishedDate": "2026-10-16T22:09:01.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "0.4.8"
   },
   {
     "id": "langgraph-2a79f6f08f6c",

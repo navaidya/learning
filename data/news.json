@@ -20,6 +20,25 @@
     "releaseVersion": "v1.14.2"
   },
   {
+    "id": "pulumi-58a8f24a333a",
+    "title": "pkg/v3.270.0: Changelog and go.mod updates for v3.270.0 (#25268)",
+    "summary": "Co-authored-by: github-actions github-actions@github.com",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.270.0",
+    "publishedDate": "2026-10-16T21:26:35.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.270.0"
+  },
+  {
     "id": "pulumi-e408d5fad8a0",
     "title": "v3.270.0",
     "summary": "3.270.0 (2026-10-16) Bug Fixes [cli/env] Fix pulumi env edit, env set, env rm and env provider overwriting changes made after they read the environment; on a conflict, env edit reopens the editor with your edits and the current definition, and the others fail #24983 [cli] Report an unknown drift status in pulumi stack drift status when drift detection has never run #25172",
@@ -8393,26 +8412,6 @@
     "releaseRelated": true,
     "releaseProject": "istio",
     "releaseVersion": "1.29.7"
-  },
-  {
-    "id": "backstage-17b87fcf7856",
-    "title": "v1.54.5",
-    "summary": "This patch release fixes the following issues: Fixed the catalog import owner autocomplete to write canonical group entity references instead of display names to generated catalog-info.yaml files. Fixed catalog pages opened from ownership cards to normalize legacy bare owner filters before rendering, preventing entity reference errors. Fixed ownership card links to filter the catalog by canonical owner entity references instead of mutable presentation titles.",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.5",
-    "publishedDate": "2026-08-26T17:02:51.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.54.5"
   },
   {
     "id": "kubernetes-releases-d9bffbd6a84b",
