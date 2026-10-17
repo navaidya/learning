@@ -1,5 +1,45 @@
 [
   {
+    "id": "kyverno-70498408f82d",
+    "title": "v1.19.2-rc3",
+    "summary": "What's Changed [release-1.19] fix(deps): update x/net for CVE-2026-97032 by @Sashang-debug in #18027 [release-1.19] fix(deps): update x/net for CVE-2026-78663 by @Sashang-debug in #18025 fix: repair the post-merge Tests workflow on main (#17761) by @aerosouund in #18035 test: expect the generation label protection webhook in chainsaw asserts by @aerosouund in #18039 [release-1.19] fix: preserve legacy generation scope and ownership by @sagark-nirmata in #17937 Full Changelog: v1.19.2-rc1...v1.19",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2-rc3",
+    "publishedDate": "2026-10-17T19:36:08.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno",
+    "releaseVersion": "v1.19.2-rc3"
+  },
+  {
+    "id": "kyverno-acbe3b7c4e23",
+    "title": "v1.19.2-rc.2",
+    "summary": "What's Changed feat: remove kyverno-json from test api by @eddycharly in #16929 feat: remove json scan command by @eddycharly in #16943 fix(policy): preserve validation warnings for generate rules in validateAction by @vishalmore90 in #16821 fix: bump oras.land/oras-go/v2 to v2.6.2 to resolve CVE-2026-50163 by @falloficaruss in #16945 chore(deps): bump zgosalvez/github-actions-ensure-sha-pinned-actions from 5.0.4 to 5.0.6 by @dependabot[bot] in #16933 chore(deps): bump Homebrew/actions/limit-pul",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2-rc.2",
+    "publishedDate": "2026-10-17T18:22:13.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno",
+    "releaseVersion": "v1.19.2-rc.2"
+  },
+  {
     "id": "karpenter-a6101ef554fa",
     "title": "v1.14.2",
     "summary": "Bug Fixes allow enqueue onto NodeRepair controller if label synced after create (#3366) #3366 (Ryan Mistretta) capacity buffer: watch scalableRef workloads so buffers resolve … (#3387) #3387 (Ryan Mistretta)",
@@ -8370,48 +8410,6 @@
     "releaseRelated": true,
     "releaseProject": "istio",
     "releaseVersion": "7.7"
-  },
-  {
-    "id": "istio-290d335c73b5",
-    "title": "Announcing Istio 1.30.4",
-    "summary": "This release contains security fixes. This release note describes what&rsquo;s different between Istio 1.30.3 and 1.30.4. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Security update For more information, see ISTIO-SECURITY-2026-006. Envoy CVEs CVE-2026-73513: (CVSS score 7.5): Fixed a heap use-after-free in oghttp2 when HTTP/2 ",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/releases/1.30.x/announcing-1.30.4/",
-    "publishedDate": "2026-08-27T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "1.30.4"
-  },
-  {
-    "id": "istio-9812c317a48d",
-    "title": "Announcing Istio 1.29.7",
-    "summary": "This release contains security fixes. This release note describes what&rsquo;s different between Istio 1.29.6 and 1.29.7. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Security update For more information, see ISTIO-SECURITY-2026-006. Envoy CVEs CVE-2026-73513: (CVSS score 7.5): Fixed a heap use-after-free in oghttp2 when HTTP/2 ",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/releases/1.29.x/announcing-1.29.7/",
-    "publishedDate": "2026-08-27T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "1.29.7"
   },
   {
     "id": "kubernetes-releases-d9bffbd6a84b",
