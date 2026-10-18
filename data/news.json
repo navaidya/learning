@@ -8412,6 +8412,27 @@
     "releaseVersion": "7.7"
   },
   {
+    "id": "istio-290d335c73b5",
+    "title": "Announcing Istio 1.30.4",
+    "summary": "This release contains security fixes. This release note describes what&rsquo;s different between Istio 1.30.3 and 1.30.4. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Security update For more information, see ISTIO-SECURITY-2026-006. Envoy CVEs CVE-2026-73513: (CVSS score 7.5): Fixed a heap use-after-free in oghttp2 when HTTP/2 ",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/news/releases/1.30.x/announcing-1.30.4/",
+    "publishedDate": "2026-08-27T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "istio",
+    "releaseVersion": "1.30.4"
+  },
+  {
     "id": "kubernetes-releases-d9bffbd6a84b",
     "title": "v1.37.0",
     "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
@@ -9734,23 +9755,5 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes-releases",
     "releaseVersion": "v1.37.0-beta.0"
-  },
-  {
-    "id": "opentelemetry-9d6cf2bf7067",
-    "title": "CocoaPods Deprecation Notice for OpenTelemetry Swift",
-    "summary": "As it was announced via CocoaPods Support Plan and via CocoaPods Spec Repository, CocoaPods is transitioning their project to maintenance mode, and cocoapods trunk is going to be read-only in a few months. The OpenTelemetry Swift maintainers are planning to deprecate CocoaPods support for all the pods published under opentelemetry-swift and opentelemetry-swift-core. Swift Package Manager (SPM) is now the recommended and preferred installation method for all new integrations. We encourage existin",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/otel-swift-cocoapods-deprecation/",
-    "publishedDate": "2026-07-20T14:05:37.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
-    ],
-    "importance": "critical",
-    "architectureShift": true,
-    "releaseRelated": false
   }
 ]
