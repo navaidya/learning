@@ -1,5 +1,13 @@
 [
   {
+    "project": "vector",
+    "version": "v0.60.0",
+    "publishedDate": "2026-10-19T17:55:58.000Z",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/v0.60.0",
+    "sourceId": "vector",
+    "title": "v0.60.0"
+  },
+  {
     "project": "kyverno",
     "version": "v1.19.2-rc3",
     "publishedDate": "2026-10-17T19:36:08.000Z",
@@ -158,14 +166,6 @@
     "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.7.0-rc.1",
     "sourceId": "gateway-api",
     "title": "v1.7.0-rc.1"
-  },
-  {
-    "project": "vector",
-    "version": "v0.59.0",
-    "publishedDate": "2026-10-08T15:35:29.000Z",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/v0.59.0",
-    "sourceId": "vector",
-    "title": "v0.59.0"
   },
   {
     "project": "kubernetes-releases",

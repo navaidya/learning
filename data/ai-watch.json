@@ -1,5 +1,66 @@
 [
   {
+    "id": "pydantic-ai-ec5fb94d76bf",
+    "title": "CLAI2 bleeding",
+    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
+    "publishedDate": "2026-10-19T22:44:33.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "langfuse-982df49c55bd",
+    "title": "v4.64.0",
+    "summary": "What's Changed Features feat(trace): Move messages tab and reuse session timeline by @bezbac in #18953 feat(api-keys): enable project API key permissions by default by @marksalpeter in #18950 feat: rename Langfuse Assistant to Halo by @Lotte-Verheyden in #18898 feat(api-keys): show the Admin role as Full access on API keys by @marksalpeter in #18981 feat(topics): show cost of runs by @nimarb in #18668 feat(web): page-based pagination for gateway API keys by @wochinge in #18965 feat(transcript): ",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.64.0",
+    "publishedDate": "2026-10-19T17:34:15.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "gateway-api",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.64.0"
+  },
+  {
+    "id": "phoenix-e6a311c0b8a9",
+    "title": "arize-phoenix-sqlean: v0.2.1",
+    "summary": "0.2.1 (2026-10-19) Bug Fixes phoenix-sqlean: bump bundled sqlean to 0.28.5 (#17058) (5e0262e)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-sqlean-v0.2.1",
+    "publishedDate": "2026-10-19T16:42:17.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v0.2.1"
+  },
+  {
     "id": "langgraph-4f73f9542c2c",
     "title": "langgraph-cli==0.4.37",
     "summary": "Changes since cli==0.4.36 release(cli): 0.4.37 (#9351) fix(cli): stop printing subprocess stdin in verbose output (#9350) Merge PR #9349 fix(cli): default deploy to serverless (#9333) chore(deps): bump the minor-and-patch group in /libs/cli/js-examples with 9 updates (#9152) chore(deps-dev): bump dotenv from 17.4.2 to 18.0.4 in /libs/cli/js-examples in the major group (#9154)",
@@ -18,25 +79,6 @@
     "releaseRelated": true,
     "releaseProject": "langgraph",
     "releaseVersion": "0.4.37"
-  },
-  {
-    "id": "pydantic-ai-ec5fb94d76bf",
-    "title": "CLAI2 bleeding",
-    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-19T13:47:34.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai"
   },
   {
     "id": "falco-6a5bdca355a5",

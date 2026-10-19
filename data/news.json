@@ -1,5 +1,43 @@
 [
   {
+    "id": "grafana-454b511e98cd",
+    "title": "6 improvements that make Grafana Assistant better at helping your workflows",
+    "summary": "When you ask Grafana Assistant to build a dashboard or investigate an alert, you're doing so because there's work to be done. To do that work effectively, you need the right data, changes you can inspect, and conclusions supported by evidence. You also want Assistant to avoid mistakes and act quickly.Over the past six months, our team has worked hard to improve what makes those outcomes possible. We’ve changed how agents find context, discover capabilities, edit dashboards, and recover from erro",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/six-improvements-that-make-grafana-assistant-better-at-helping-your-workflows/",
+    "publishedDate": "2026-10-19T18:10:01.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "dashboards",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "vector-c0bf55d11b2e",
+    "title": "v0.60.0",
+    "summary": "The COSE team is happy to announce Vector 0.60.0! 🚀 Vector is a lightweight, ultra-fast tool for building observability pipelines that puts you in control of your data. Thanks to the 15 contributors who made the 21 changes in this release: 2 breaking changes 1 security change 2 new features 6 enhancements 10 bug fixes Upgrading to 0.60? Read the upgrade guide. View the full release notes · See upcoming releases on the release calendar.",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/v0.60.0",
+    "publishedDate": "2026-10-19T17:55:58.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector",
+    "releaseVersion": "v0.60.0"
+  },
+  {
     "id": "cncf-433dc84d1cf7",
     "title": "How AI workloads are reshaping Kubernetes autoscaling",
     "summary": "Kubernetes has quietly run much of the world’s containerized software on a division of labor between two control loops that rarely had to talk to each other. The scheduler places each pod on a node that...",
@@ -74,6 +112,26 @@
     "releaseRelated": true,
     "releaseProject": "kyverno",
     "releaseVersion": "v1.19.2-rc.2"
+  },
+  {
+    "id": "kyverno-0a9b387c4295",
+    "title": "v1.19.2-rc.4",
+    "summary": "[release-1.19] fix: preserve legacy generation scope and ownership (#…",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2-rc.4",
+    "publishedDate": "2026-10-17T18:11:03.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno",
+    "releaseVersion": "v1.19.2-rc.4"
   },
   {
     "id": "karpenter-a6101ef554fa",
@@ -8366,65 +8424,6 @@
     "releaseRelated": true,
     "releaseProject": "argo",
     "releaseVersion": "v3.4.8"
-  },
-  {
-    "id": "argo-00d098f1d89d",
-    "title": "v3.5.2",
-    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.2/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.2/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container imag",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.2",
-    "publishedDate": "2026-08-27T09:58:55.000Z",
-    "domain": "gitops",
-    "topics": [
-      "gitops",
-      "argo-cd",
-      "argo",
-      "argocd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "v3.5.2"
-  },
-  {
-    "id": "k8sgpt-7fb9bfd3d2ce",
-    "title": "v0.4.37",
-    "summary": "0.4.37 (2026-08-19) Features add Amazon Bedrock Mantle (OpenAI-compatible) AI provider (#1640) (bdbc3c7) add LiteLLM backend (#1719) (47db90f) Bug Fixes clamp max-concurrency in custom analysis to avoid deadlock and panic (#1700) (6859e9c) deps: update k8s.io/utils digest to cf1189d (#1688) (8bda53b) deps: update module google.golang.org/grpc to v1.82.1 [security] (#1714) (1c8a56c) do not panic on an Ingress path with a resource backend (#1728) (b4a86de) guard against nil backend port in HTTPRou",
-    "source": "K8sGPT",
-    "sourceId": "k8sgpt",
-    "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.37",
-    "publishedDate": "2026-08-27T07:08:47.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "k8sgpt",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "k8sgpt",
-    "releaseVersion": "v0.4.37"
-  },
-  {
-    "id": "openai-57e276283c19",
-    "title": "Expanding OpenAI’s presence in Brazil",
-    "summary": "OpenAI is expanding its presence in Brazil, deepening engagement with developers, businesses, and communities to support AI adoption across the country.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/expanding-our-presence-in-brazil",
-    "publishedDate": "2026-08-27T03:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "istio-71fa4346196e",
