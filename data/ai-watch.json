@@ -1,12 +1,32 @@
 [
   {
+    "id": "langgraph-4f73f9542c2c",
+    "title": "langgraph-cli==0.4.37",
+    "summary": "Changes since cli==0.4.36 release(cli): 0.4.37 (#9351) fix(cli): stop printing subprocess stdin in verbose output (#9350) Merge PR #9349 fix(cli): default deploy to serverless (#9333) chore(deps): bump the minor-and-patch group in /libs/cli/js-examples with 9 updates (#9152) chore(deps-dev): bump dotenv from 17.4.2 to 18.0.4 in /libs/cli/js-examples in the major group (#9154)",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.37",
+    "publishedDate": "2026-10-19T14:06:22.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "0.4.37"
+  },
+  {
     "id": "pydantic-ai-ec5fb94d76bf",
     "title": "CLAI2 bleeding",
     "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-17T16:16:54.000Z",
+    "publishedDate": "2026-10-19T13:47:34.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +37,26 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "falco-6a5bdca355a5",
+    "title": "0.45.1",
+    "summary": "Packages Download rpm-x86_64 deb-x86_64 tgz-x86_64 tgz-static-x86_64 rpm-aarch64 deb-aarch64 tgz-aarch64 Images docker pull docker.io/falcosecurity/falco:0.45.1 docker pull public.ecr.aws/falcosecurity/falco:0.45.1 docker pull docker.io/falcosecurity/falco-driver-loader:0.45.1 docker pull docker.io/falcosecurity/falco-driver-loader:0.45.1-buster docker pull docker.io/falcosecurity/falco:0.45.1-debian v0.45.1 Released on 2026-10-19 Bug Fixes fix(packaging): the deb and rpm packages no longer stay",
+    "source": "Falco",
+    "sourceId": "falco",
+    "url": "https://github.com/falcosecurity/falco/releases/tag/0.45.1",
+    "publishedDate": "2026-10-19T11:26:03.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "infrastructure-security",
+      "release",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "falco",
+    "releaseVersion": "0.45.1"
   },
   {
     "id": "langgraph-30e8ce6ff93f",

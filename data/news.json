@@ -1,5 +1,41 @@
 [
   {
+    "id": "cncf-433dc84d1cf7",
+    "title": "How AI workloads are reshaping Kubernetes autoscaling",
+    "summary": "Kubernetes has quietly run much of the world’s containerized software on a division of labor between two control loops that rarely had to talk to each other. The scheduler places each pod on a node that...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/19/how-ai-workloads-are-reshaping-kubernetes-autoscaling/",
+    "publishedDate": "2026-10-19T11:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "opentelemetry-ab7b26b0e187",
+    "title": "Announcing the 2026 OpenTelemetry Governance Committee Election Candidates",
+    "summary": "The OpenTelemetry Election Committee is excited to announce the final list of candidates for the 2026 OpenTelemetry Governance Committee election! Eligible voters can help fill four Governance Committee seats through Helios Voting. Voting opens: 26 October 2026 at 12:00 UTC. Voting closes: 28 October 2026 at 23:59 Anywhere on Earth (AoE), equivalent to 29 October 2026 at 11:59 UTC. For candidate photos, GitHub profiles, and statements, see the candidates page. Antoine Toulme Dan Gomez Blanco Hux",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/gc-candidates/",
+    "publishedDate": "2026-10-19T10:59:07.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "kyverno-70498408f82d",
     "title": "v1.19.2-rc3",
     "summary": "What's Changed [release-1.19] fix(deps): update x/net for CVE-2026-97032 by @Sashang-debug in #18027 [release-1.19] fix(deps): update x/net for CVE-2026-78663 by @Sashang-debug in #18025 fix: repair the post-merge Tests workflow on main (#17761) by @aerosouund in #18035 test: expect the generation label protection webhook in chainsaw asserts by @aerosouund in #18039 [release-1.19] fix: preserve legacy generation scope and ownership by @sagark-nirmata in #17937 Full Changelog: v1.19.2-rc1...v1.19",
@@ -8410,48 +8446,6 @@
     "releaseRelated": true,
     "releaseProject": "istio",
     "releaseVersion": "7.7"
-  },
-  {
-    "id": "istio-290d335c73b5",
-    "title": "Announcing Istio 1.30.4",
-    "summary": "This release contains security fixes. This release note describes what&rsquo;s different between Istio 1.30.3 and 1.30.4. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Security update For more information, see ISTIO-SECURITY-2026-006. Envoy CVEs CVE-2026-73513: (CVSS score 7.5): Fixed a heap use-after-free in oghttp2 when HTTP/2 ",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/releases/1.30.x/announcing-1.30.4/",
-    "publishedDate": "2026-08-27T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "1.30.4"
-  },
-  {
-    "id": "istio-9812c317a48d",
-    "title": "Announcing Istio 1.29.7",
-    "summary": "This release contains security fixes. This release note describes what&rsquo;s different between Istio 1.29.6 and 1.29.7. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Security update For more information, see ISTIO-SECURITY-2026-006. Envoy CVEs CVE-2026-73513: (CVSS score 7.5): Fixed a heap use-after-free in oghttp2 when HTTP/2 ",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/releases/1.29.x/announcing-1.29.7/",
-    "publishedDate": "2026-08-27T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "1.29.7"
   },
   {
     "id": "kubernetes-releases-d9bffbd6a84b",
