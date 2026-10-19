@@ -8433,6 +8433,27 @@
     "releaseVersion": "1.30.4"
   },
   {
+    "id": "istio-9812c317a48d",
+    "title": "Announcing Istio 1.29.7",
+    "summary": "This release contains security fixes. This release note describes what&rsquo;s different between Istio 1.29.6 and 1.29.7. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Security update For more information, see ISTIO-SECURITY-2026-006. Envoy CVEs CVE-2026-73513: (CVSS score 7.5): Fixed a heap use-after-free in oghttp2 when HTTP/2 ",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/news/releases/1.29.x/announcing-1.29.7/",
+    "publishedDate": "2026-08-27T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "istio",
+    "releaseVersion": "1.29.7"
+  },
+  {
     "id": "kubernetes-releases-d9bffbd6a84b",
     "title": "v1.37.0",
     "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
@@ -9736,24 +9757,5 @@
     "releaseRelated": true,
     "releaseProject": "cilium",
     "releaseVersion": "1.20.0-rc.1"
-  },
-  {
-    "id": "kubernetes-releases-147867b4405f",
-    "title": "v1.37.0-beta.0",
-    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
-    "source": "Kubernetes Releases",
-    "sourceId": "kubernetes-releases",
-    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.0-beta.0",
-    "publishedDate": "2026-07-20T23:21:18.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "release"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kubernetes-releases",
-    "releaseVersion": "v1.37.0-beta.0"
   }
 ]
