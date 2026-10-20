@@ -1,5 +1,190 @@
 [
   {
+    "id": "tempo-5efca9445f93",
+    "title": "v2.10.9",
+    "summary": "Security deps: Update Go to 1.26.9 (CVE-2026-33818, CVE-2026-39821, CVE-2026-46600, CVE-2026-56853, CVE-2026-56857, CVE-2026-56858, CVE-2026-56859, CVE-2026-56860, CVE-2026-56862, CVE-2026-56866, CVE-2026-78659, CVE-2026-78660, CVE-2026-78663, CVE-2026-78667, CVE-2026-78669, CVE-2026-94439, CVE-2026-94440, CVE-2026-94448, CVE-2026-97030, CVE-2026-97031, CVE-2026-97032), golang.org/x/net to v0.60.0 (CVE-2026-78669, CVE-2026-78659, CVE-2026-78660, CVE-2026-78663, CVE-2026-97032), google.golang.org",
+    "source": "Grafana Tempo",
+    "sourceId": "tempo",
+    "url": "https://github.com/grafana/tempo/releases/tag/v2.10.9",
+    "publishedDate": "2026-10-20T17:38:28.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tempo",
+      "tracing",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "tempo",
+    "releaseVersion": "v2.10.9"
+  },
+  {
+    "id": "backstage-d979d354057c",
+    "title": "v1.56.0",
+    "summary": "These are the release notes for the v1.56.0 release of Backstage. A huge thanks to the whole team of maintainers and contributors as well as the amazing Backstage Community for the hard work in getting this release developed and done. Highlights BREAKING: Filter predicates must be objects at the root The FilterPredicate type, its zod schemas, and parseFilterPredicate in @backstage/filter-predicates now only accept objects at the root of a predicate. Primitive values such as \"component\" or true w",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.56.0",
+    "publishedDate": "2026-10-20T17:09:17.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "platform-engineering",
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.56.0"
+  },
+  {
+    "id": "kyverno-efb41f0befd1",
+    "title": "kyverno-policies-chart-3.9.2-rc.5: chore: bump chart to 3.9.2-rc.5 for v1.19.2-rc.5 (#18132)",
+    "summary": "Signed-off-by: aerosouund aerosound161@gmail.com Co-authored-by: Claude Opus 5.5 noreply@anthropic.com",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-policies-chart-3.9.2-rc.5",
+    "publishedDate": "2026-10-20T16:55:52.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno",
+    "releaseVersion": "3.9.2-rc.5"
+  },
+  {
+    "id": "kyverno-01c7d6755fb7",
+    "title": "kyverno-chart-3.9.2-rc.5: chore: bump chart to 3.9.2-rc.5 for v1.19.2-rc.5 (#18132)",
+    "summary": "Signed-off-by: aerosouund aerosound161@gmail.com Co-authored-by: Claude Opus 5.5 noreply@anthropic.com",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-chart-3.9.2-rc.5",
+    "publishedDate": "2026-10-20T16:55:52.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno",
+    "releaseVersion": "3.9.2-rc.5"
+  },
+  {
+    "id": "grafana-ed12900797a7",
+    "title": "Expand what’s possible with Grafana: The Grafana Marketplace is now generally available",
+    "summary": "Earlier this year, we launched the Grafana Marketplace, a platform that gives independent software vendors, systems integrators, and developers in the Grafana community a new way to sell and distribute plugins built for Grafana.The Marketplace builds on our existing plugin catalog by enabling third-party partners and developers to earn revenue from their plugins and invest further in their development. For end users, these paid Marketplace plugins come with guarantees for ongoing updates and sup",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/grafana-marketplace/",
+    "publishedDate": "2026-10-20T16:30:02.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "grafana"
+  },
+  {
+    "id": "grafana-855b3da779df",
+    "title": "ObservabilityCON 2026: A guide to all the announcements from Grafana Labs",
+    "summary": "Today at ObservabilityCON 2026 in San Francisco, we unveiled a range of new Grafana Cloud capabilities designed to reshape cloud economics, bring richer context and deeper visibility across your systems and end-user experiences, and help teams move toward autonomous operations.Check out the keynote to learn more about the latest updates to the open agentic observability cloud, and read on for a quick recap of all the news from ObservabilityCON 2026.Autonomous operations with the help of AIWith G",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/observabilitycon-2026-announcements/",
+    "publishedDate": "2026-10-20T16:30:02.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "grafana-d8e0ac0cbe2d",
+    "title": "From production problem to proposed fix: Implement autonomous operations with Grafana AI",
+    "summary": "You've just finished a deployment, and though your service is up, you start to notice some requests are getting slower. To address the lag, someone—or, more likely, some group of people on your team—needs to watch the dashboards, decide whether the change matters, investigate what happened, and turn the findings into a fix. At each step you're gathering context—and often explaining that context again to the next person or tool. To make matters worse for the team responsible for the service, all ",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/grafana-ai-autonomous-operations/",
+    "publishedDate": "2026-10-20T16:30:02.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "dashboards",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "grafana-cf8068e89d53",
+    "title": "Break the link between data volume and your observability bill with Adaptive Telemetry",
+    "summary": "In the AI era, where telemetry is generated by every model call, tool invocation, and agent step, organizations need more help than ever when it comes to navigating the economics of observability.For a lot of teams, the default response is a \"data diet\" of shorter retention, which leaves services or environments out of collection, or basic sampling, which is more guesswork than strategy. Either way, you end up cutting to control the bill, and you risk losing the very data you need during an inci",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/cut-costs-keep-what-you-need-adaptive-telemetry/",
+    "publishedDate": "2026-10-20T16:30:02.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "grafana-c9b5958e9a81",
+    "title": "Full-stack observability in Grafana Cloud: More connections, richer context, and faster investigations for users and agents",
+    "summary": "Most teams have telemetry from across their stack, but connecting those signals to understand what's happening and how it affects users isn't always easy. Critical context about service dependencies, ownership, and past incidents often lives across tools, runbooks, and conversations between team members.That’s why, today at ObservabilityCON 2026, we’re announcing new capabilities that advance full-stack observability across Grafana Cloud. Powering this experience is the Knowledge Graph, the runt",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/full-stack-observability-with-knowledge-graph/",
+    "publishedDate": "2026-10-20T16:30:02.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "grafana-5e1212ae4b05",
+    "title": "Grafana Pages: Turn data into interactive experiences with the next evolution of Grafana",
+    "summary": "Teams often spend as much time preparing information as discussing it: gathering charts, checking business reports, and finding the GitHub activity that explains a change. Every follow-up question can lead to yet another round of work. That's why, as part of ObservabilityCON 2026, we're excited to introduce Grafana Pages, a new feature in Grafana Cloud that gives you a canvas to describe what you need and build a live app in minutes, based on your real data, context, and interactions. From new t",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/grafana-ai-next-gen-visualization/",
+    "publishedDate": "2026-10-20T16:30:02.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "kyverno-f4ca9c599f95",
     "title": "v1.19.2-rc.5",
     "summary": "chore: pass GORELEASER_CURRENT_TAG to the goreleaser (#18124) Signed-off-by: aerosouund <aerosound161@gmail.com>",
@@ -8214,144 +8399,6 @@
     "releaseRelated": false
   },
   {
-    "id": "pulumi-29ad4002d93c",
-    "title": "v3.260.0",
-    "summary": "3.260.0 (2026-08-28) Features [cli/deployment] Make pulumi deployment settings get render every source kind and show environment variable values, changing the --output=json shape of environmentVariables from a list of names to a list of objects #24284 [sdk/go] Support Go 1.27 #24401 [cli/state] Add pulumi state promote to turn stateful snippets into Pulumi program code #24453 Bug Fixes [engine] Replace resources whose deletedWith target is being replaced, instead of leaving them orphaned in stat",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.260.0",
-    "publishedDate": "2026-08-28T11:06:12.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.260.0"
-  },
-  {
-    "id": "cncf-071f2a8b4afd",
-    "title": "Your Kubernetes platform is ready for containers. Is it ready for AI?",
-    "summary": "Kubernetes has given platform teams a consistent way to deploy, scale, and operate containerized applications. Now, many of those same teams are being asked to support AI. The transition is already underway. According to the CNCF...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/08/28/your-kubernetes-platform-is-ready-for-containers-is-it-ready-for-ai/",
-    "publishedDate": "2026-08-28T11:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "pulumi-dcbdefab6b35",
-    "title": "sdk/v3.260.0: redact secrets from URLs (#24488)",
-    "summary": "Currently we don't add secrets from URLs to the global secret filter. This inclueds e.g. postgres passwords in the postgres URL, and others. Add all secrets from URLs to the global secret filter, so they don't end up in logs.",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.260.0",
-    "publishedDate": "2026-08-28T09:51:27.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.260.0"
-  },
-  {
-    "id": "backstage-e821f0fc2f18",
-    "title": "v1.54.6",
-    "summary": "This patch release includes a collection of validation, permission handling, and robustness improvements across Backstage. Scaffolder Improved task visibility, ordering, retry behavior, permission evaluation, error handling, log redaction, and handling of internal task data. Added the opt-in scaffolder.requireScmUserCredentials setting for requiring user-provided credentials in supported GitHub, GitLab, Bitbucket, and Azure DevOps actions. Improved repository path and attachment handling in Bitb",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.6",
-    "publishedDate": "2026-08-28T08:26:31.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "platform-engineering",
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.54.6"
-  },
-  {
-    "id": "loki-735a48674ebe",
-    "title": "v3.6.16",
-    "summary": "3.6.16 (2026-08-27) Features Add flag to ignore missing chunks during deletion of logs with line filter [release-3.6.x] (#24232) (b87159f) Bug Fixes security/UNKNOWN/: Update module go.etcd.io/etcd/client/pkg/v3 to v3.5.33 [SECURITY] (release-3.6.x) (#24062) (bf4b367) storage: Pre-compute SHA-256 to avoid aws-chunked on PutObject [release-3.6.x] (#24214) (0a29895)",
-    "source": "Grafana Loki",
-    "sourceId": "loki",
-    "url": "https://github.com/grafana/loki/releases/tag/v3.6.16",
-    "publishedDate": "2026-08-27T21:54:42.000Z",
-    "domain": "logging",
-    "topics": [
-      "loki",
-      "logging",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "loki",
-    "releaseVersion": "v3.6.16"
-  },
-  {
-    "id": "loki-48d1499ed2e2",
-    "title": "v3.7.7",
-    "summary": "3.7.7 (2026-08-27) Features Add flag to ignore missing chunks during deletion of logs with line filter [release-3.7.x] (#24233) (7a40404) Bug Fixes security/UNKNOWN/: Update module github.com/containerd/containerd/v2 to v2.2.5 [SECURITY] (release-3.7.x) (#24097) (07cd1f0) security/UNKNOWN/: Update module go.etcd.io/etcd/client/pkg/v3 to v3.6.14 [SECURITY] (release-3.7.x) (#24061) (9d1c9ee) security/UNKNOWN/: Update module golang.org/x/mod to v0.40.0 [SECURITY] (release-3.7.x) (#23962) (1d5e027) ",
-    "source": "Grafana Loki",
-    "sourceId": "loki",
-    "url": "https://github.com/grafana/loki/releases/tag/v3.7.7",
-    "publishedDate": "2026-08-27T20:20:03.000Z",
-    "domain": "containers",
-    "topics": [
-      "containers",
-      "containerd",
-      "loki",
-      "logging",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "loki",
-    "releaseVersion": "v3.7.7"
-  },
-  {
-    "id": "vector-6991dad84a90",
-    "title": "vdev-v0.3.16",
-    "summary": "No content.",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.16",
-    "publishedDate": "2026-08-27T19:42:07.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector"
-  },
-  {
     "id": "kubernetes-f1d9baa9495e",
     "title": "Kubernetes v1.37: Metrics API graduates to stable",
     "summary": "Kubernetes v1.37 promotes the metrics.k8s.io API to stable (v1). This API provides CPU and memory usage for nodes and Pods, and is the API behind commands such as kubectl top and resource-metrics-based autoscaling. For cluster operators and application developers, this graduation means that the API now has the stability guarantees associated with a Kubernetes stable API. The v1 API has the same resource types and fields as v1beta1; this is an API-version graduation, not a change to the metrics t",
@@ -8388,60 +8435,6 @@
     "releaseRelated": true,
     "releaseProject": "opentofu",
     "releaseVersion": "v1.13.0-beta1"
-  },
-  {
-    "id": "grafana-8d913edf3827",
-    "title": "How to measure and improve instrumentation quality for better full-stack observability",
-    "summary": "Modern engineering teams instrument everything, with metrics, logs, traces, and profiles flowing from hundreds of services at once. But full-stack observability isn’t really about collecting more telemetry; it's about having a single, unified picture of how your services connect to every layer beneath them, including their dependencies, the pods and nodes they run on, and the logs, traces, and profiles that explain their behavior. But there's often a quiet problem hiding underneath all that data",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/how-to-measure-and-improve-instrumentation-quality-for-better-full-stack-observability/",
-    "publishedDate": "2026-08-27T13:03:49.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "cncf-86fc1fae0b02",
-    "title": "Building an AI factory on Kubernetes",
-    "summary": "An AI factory is not just a model or a cluster. It is a pool of GPUs that many teams draw from at once: one team fine-tuning, another serving inference, a third running evaluations, all on...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/08/27/building-an-ai-factory-on-kubernetes/",
-    "publishedDate": "2026-08-27T11:30:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "terraform-e33c33aa7500",
-    "title": "v1.17.0-alpha20260827",
-    "summary": "1.17.0-alpha20260827 (August 27, 2026) NEW FEATURES: A new -minimal-refresh planning option has been added, which will only refresh resources that have proposed changes. (#35290) ENHANCEMENTS: command/init: Enrich log messages with provider versions (#38918) command/login: display warning after successful login if user is subject to an organization's TTL policy BUG FIXES: funcs: pow and log no longer panic when result is not a number (#38912) ephemeral: Terraform will now use and display diagnos",
-    "source": "Terraform",
-    "sourceId": "terraform",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-alpha20260827",
-    "publishedDate": "2026-08-27T10:30:11.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "terraform",
-    "releaseVersion": "v1.17.0-alpha20260827"
   },
   {
     "id": "istio-71fa4346196e",

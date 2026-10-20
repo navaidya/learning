@@ -1,12 +1,32 @@
 [
   {
+    "id": "langfuse-b134af4b0b4a",
+    "title": "v4.66.0",
+    "summary": "What's Changed Features feat(topics): one gate for Topics visibility by @LysanderKie in #19091 Fixes fix(sessions): Don't allow expanding empty reasoning messages by @bezbac in #19096 fix(web): disable Owner role selection without ownership permission by @marksalpeter in #19092 fix(web): boxed, sticky I/O sections with a collapse caret by @nmtrang29 in #18684 fix(otel): store number-like metadata strings without their JSON quotes by @niklassemmler in #19076 fix(in-app-agent): bump bedrock v4 pro",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.66.0",
+    "publishedDate": "2026-10-20T17:31:25.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.66.0"
+  },
+  {
     "id": "pydantic-ai-ec5fb94d76bf",
     "title": "CLAI2 bleeding",
     "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-20T12:01:17.000Z",
+    "publishedDate": "2026-10-20T17:06:00.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +37,28 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "langfuse-6b9301ce0be3",
+    "title": "v4.65.0",
+    "summary": "What's Changed Features feat(topics): non-blocking clustering for large numbers by @nimarb in #18964 feat(topics): name topics by what their facet asks about by @LysanderKie in #19008 feat(routes): add recovery option for V4 experience and update sidebar toggle logic by @marliessophie in #19053 feat(skills): stabilize API and restore MCP access by @tobi12345 in #19025 feat(ai-gateway): add self-hosted \"None\" ingestion mode by @wochinge in #19032 feat(topics): be transparent about content filtere",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.65.0",
+    "publishedDate": "2026-10-20T13:35:55.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.65.0"
   },
   {
     "id": "pydantic-ai-327e0a536576",
