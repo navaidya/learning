@@ -1,5 +1,24 @@
 [
   {
+    "id": "pydantic-ai-ec5fb94d76bf",
+    "title": "CLAI2 bleeding",
+    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
+    "publishedDate": "2026-10-20T22:18:47.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai"
+  },
+  {
     "id": "langfuse-b134af4b0b4a",
     "title": "v4.66.0",
     "summary": "What's Changed Features feat(topics): one gate for Topics visibility by @LysanderKie in #19091 Fixes fix(sessions): Don't allow expanding empty reasoning messages by @bezbac in #19096 fix(web): disable Owner role selection without ownership permission by @marksalpeter in #19092 fix(web): boxed, sticky I/O sections with a collapse caret by @nmtrang29 in #18684 fix(otel): store number-like metadata strings without their JSON quotes by @niklassemmler in #19076 fix(in-app-agent): bump bedrock v4 pro",
@@ -18,25 +37,6 @@
     "releaseRelated": true,
     "releaseProject": "langfuse",
     "releaseVersion": "v4.66.0"
-  },
-  {
-    "id": "pydantic-ai-ec5fb94d76bf",
-    "title": "CLAI2 bleeding",
-    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-20T17:06:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai"
   },
   {
     "id": "langfuse-6b9301ce0be3",

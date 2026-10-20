@@ -1,5 +1,21 @@
 [
   {
+    "project": "kyverno",
+    "version": "3.9.2",
+    "publishedDate": "2026-10-20T22:13:49.000Z",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2",
+    "sourceId": "kyverno",
+    "title": "chore: bump chart to 3.9.2 for v1.19.2 (#18145)"
+  },
+  {
+    "project": "argo",
+    "version": "v3.4.12",
+    "publishedDate": "2026-10-20T22:04:14.000Z",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.4.12",
+    "sourceId": "argo",
+    "title": "v3.4.12"
+  },
+  {
     "project": "tempo",
     "version": "v2.10.9",
     "publishedDate": "2026-10-20T17:38:28.000Z",
@@ -14,14 +30,6 @@
     "url": "https://github.com/backstage/backstage/releases/tag/v1.56.0",
     "sourceId": "backstage",
     "title": "v1.56.0"
-  },
-  {
-    "project": "kyverno",
-    "version": "3.9.2-rc.5",
-    "publishedDate": "2026-10-20T16:55:52.000Z",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-policies-chart-3.9.2-rc.5",
-    "sourceId": "kyverno",
-    "title": "kyverno-policies-chart-3.9.2-rc.5: chore: bump chart to 3.9.2-rc.5 for v1.19.2-rc.5 (#18132)"
   },
   {
     "project": "robusta",
@@ -86,14 +94,6 @@
     "url": "https://github.com/cilium/cilium/releases/tag/v1.20.3",
     "sourceId": "cilium",
     "title": "1.20.3"
-  },
-  {
-    "project": "argo",
-    "version": "v3.6.0-rc3",
-    "publishedDate": "2026-10-15T14:58:49.000Z",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.0-rc3",
-    "sourceId": "argo",
-    "title": "v3.6.0-rc3"
   },
   {
     "project": "holmesgpt",
