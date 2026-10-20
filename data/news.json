@@ -8426,6 +8426,26 @@
     "releaseVersion": "v3.4.8"
   },
   {
+    "id": "k8sgpt-7fb9bfd3d2ce",
+    "title": "v0.4.37",
+    "summary": "0.4.37 (2026-08-19) Features add Amazon Bedrock Mantle (OpenAI-compatible) AI provider (#1640) (bdbc3c7) add LiteLLM backend (#1719) (47db90f) Bug Fixes clamp max-concurrency in custom analysis to avoid deadlock and panic (#1700) (6859e9c) deps: update k8s.io/utils digest to cf1189d (#1688) (8bda53b) deps: update module google.golang.org/grpc to v1.82.1 [security] (#1714) (1c8a56c) do not panic on an Ingress path with a resource backend (#1728) (b4a86de) guard against nil backend port in HTTPRou",
+    "source": "K8sGPT",
+    "sourceId": "k8sgpt",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.37",
+    "publishedDate": "2026-08-27T07:08:47.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "k8sgpt",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "k8sgpt",
+    "releaseVersion": "v0.4.37"
+  },
+  {
     "id": "istio-71fa4346196e",
     "title": "ISTIO-SECURITY-2026-006",
     "summary": "Disclosure Details CVE(s) CVE-2026-73513 CVE-2026-73552 CVE-2026-73512 CVE-2026-73547 CVE-2026-73549 CVE-2026-50572 CVE-2026-73546 CVE-2026-48521 CVE-2026-73551 CVE-2026-73511 CVE-2026-73548 CVE-2026-73550 CVE-2026-73553 CVSS Impact Score 7.7 CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H Affected Releases 1.29.0 to 1.29.6 1.30.0 to 1.30.3 CVE Envoy CVEs CVE-2026-73513: (CVSS score 7.5): Fixed a heap use-after-free where an untrusted upstream could send HTTP/2 response trailers without the END_STR",
@@ -9729,26 +9749,5 @@
     "releaseRelated": true,
     "releaseProject": "opentelemetry",
     "releaseVersion": "v0.157.0"
-  },
-  {
-    "id": "cilium-75024107db06",
-    "title": "1.20.0-rc.1",
-    "summary": "Summary of Changes Major Changes: Cilium's Beta Mutual Auth support is now deprecated and will be removed in a future version. (Backport PR #47374, Upstream PR #47162, @youngnick) clustermesh: promote Multi-Cluster Services API (MCS-API) to a stable support level and improve its documentation (Backport PR #47374, Upstream PR #46953, @MrFreezeex) Minor Changes: envoy: reject CECs with duplicate filter chains (Backport PR #47374, Upstream PR #46848, @asauber) Gateway API: Add HTTP Server header tr",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.20.0-rc.1",
-    "publishedDate": "2026-07-21T23:28:11.000Z",
-    "domain": "ebpf-cilium",
-    "topics": [
-      "ebpf-cilium",
-      "cilium",
-      "ebpf",
-      "networking"
-    ],
-    "importance": "high",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "1.20.0-rc.1"
   }
 ]

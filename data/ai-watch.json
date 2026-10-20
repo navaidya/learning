@@ -1,12 +1,54 @@
 [
   {
+    "id": "pydantic-ai-327e0a536576",
+    "title": "v1.107.8 (2026-10-19)",
+    "summary": "This comment was posted by codex-tui using gpt-6.1-sol on behalf of David. What's Changed 🛡️ Security Medium — MCP request telemetry: GHSA-xv4x-g8mx-ch56. Provider-native MCP configuration could expose server URLs, authorization tokens and custom header values in OpenTelemetry request traces, even with include_content=False. URL-based MCP capabilities could also expose a credential embedded in the URL-derived identifier. Fixed in v2.58.0 and v1.107.8. Restrict access to historical traces and ro",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v1.107.8",
+    "publishedDate": "2026-10-20T04:58:47.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v1.107.8"
+  },
+  {
+    "id": "pydantic-ai-d3e04cf57f7e",
+    "title": "v2.58.0 (2026-10-19)",
+    "summary": "This comment was posted by codex-tui using gpt-6.1-sol on behalf of David. What's Changed 🛡️ Security Medium — MCP request telemetry: GHSA-xv4x-g8mx-ch56. Provider-native MCP configuration could expose server URLs, authorization tokens and custom header values in OpenTelemetry request traces, even with include_content=False. URL-based MCP capabilities could also expose a credential embedded in the URL-derived identifier. Fixed in v2.58.0 and v1.107.8. Restrict access to historical traces and ro",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.58.0",
+    "publishedDate": "2026-10-20T04:58:32.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.58.0"
+  },
+  {
     "id": "pydantic-ai-ec5fb94d76bf",
     "title": "CLAI2 bleeding",
     "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-19T22:44:33.000Z",
+    "publishedDate": "2026-10-20T04:22:50.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -1007,7 +1049,7 @@
     "source": "OWASP GenAI Security",
     "sourceId": "owasp-genai",
     "url": "https://genai.owasp.org/2026/10/08/genai-and-agentic-ai-exploit-roundup-q3-2026/",
-    "publishedDate": "2026-10-08T12:07:03.000Z",
+    "publishedDate": "2026-10-08T12:07:42.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-security",
