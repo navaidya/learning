@@ -1,5 +1,44 @@
 [
   {
+    "id": "kyverno-f4ca9c599f95",
+    "title": "v1.19.2-rc.5",
+    "summary": "chore: pass GORELEASER_CURRENT_TAG to the goreleaser (#18124) Signed-off-by: aerosouund <aerosound161@gmail.com>",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2-rc.5",
+    "publishedDate": "2026-10-20T11:53:10.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno",
+    "releaseVersion": "v1.19.2-rc.5"
+  },
+  {
+    "id": "robusta-7990a0ff7f3d",
+    "title": "0.54.0-alpha",
+    "summary": "Remove the helm golden render tests (#2206) The golden files pinned the full rendered chart, so every change to any template failed CI until the files were regenerated. The targeted helm tests and the Holmes-only install tests stay; the shared values file they read moves to tests/holmes_values.yaml. Claude-Session: https://claude.ai/code/session_01QNTDU7nLkCv8qSJHW3kTE9 Signed-off-by: arik <alon.arik@gmail.com> Co-authored-by: Claude Fable 5.1 <noreply@anthropic.com>",
+    "source": "Robusta",
+    "sourceId": "robusta",
+    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.54.0-alpha",
+    "publishedDate": "2026-10-20T08:53:16.000Z",
+    "domain": "aiops",
+    "topics": [
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "robusta",
+    "releaseVersion": "0.54.0-alpha"
+  },
+  {
     "id": "grafana-454b511e98cd",
     "title": "6 improvements that make Grafana Assistant better at helping your workflows",
     "summary": "When you ask Grafana Assistant to build a dashboard or investigate an alert, you're doing so because there's work to be done. To do that work effectively, you need the right data, changes you can inspect, and conclusions supported by evidence. You also want Assistant to avoid mistakes and act quickly.Over the past six months, our team has worked hard to improve what makes those outcomes possible. We’ve changed how agents find context, discover capabilities, edit dashboards, and recover from erro",
@@ -8403,47 +8442,6 @@
     "releaseRelated": true,
     "releaseProject": "terraform",
     "releaseVersion": "v1.17.0-alpha20260827"
-  },
-  {
-    "id": "argo-051a22bfe481",
-    "title": "v3.4.8",
-    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.4.8/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.4.8/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container imag",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.4.8",
-    "publishedDate": "2026-08-27T10:00:19.000Z",
-    "domain": "gitops",
-    "topics": [
-      "gitops",
-      "argo-cd",
-      "argo",
-      "argocd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "v3.4.8"
-  },
-  {
-    "id": "k8sgpt-7fb9bfd3d2ce",
-    "title": "v0.4.37",
-    "summary": "0.4.37 (2026-08-19) Features add Amazon Bedrock Mantle (OpenAI-compatible) AI provider (#1640) (bdbc3c7) add LiteLLM backend (#1719) (47db90f) Bug Fixes clamp max-concurrency in custom analysis to avoid deadlock and panic (#1700) (6859e9c) deps: update k8s.io/utils digest to cf1189d (#1688) (8bda53b) deps: update module google.golang.org/grpc to v1.82.1 [security] (#1714) (1c8a56c) do not panic on an Ingress path with a resource backend (#1728) (b4a86de) guard against nil backend port in HTTPRou",
-    "source": "K8sGPT",
-    "sourceId": "k8sgpt",
-    "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.37",
-    "publishedDate": "2026-08-27T07:08:47.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "k8sgpt",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "k8sgpt",
-    "releaseVersion": "v0.4.37"
   },
   {
     "id": "istio-71fa4346196e",

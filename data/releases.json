@@ -1,19 +1,27 @@
 [
   {
+    "project": "kyverno",
+    "version": "v1.19.2-rc.5",
+    "publishedDate": "2026-10-20T11:53:10.000Z",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2-rc.5",
+    "sourceId": "kyverno",
+    "title": "v1.19.2-rc.5"
+  },
+  {
+    "project": "robusta",
+    "version": "0.54.0-alpha",
+    "publishedDate": "2026-10-20T08:53:16.000Z",
+    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.54.0-alpha",
+    "sourceId": "robusta",
+    "title": "0.54.0-alpha"
+  },
+  {
     "project": "vector",
     "version": "v0.60.0",
     "publishedDate": "2026-10-19T17:55:58.000Z",
     "url": "https://github.com/vectordotdev/vector/releases/tag/v0.60.0",
     "sourceId": "vector",
     "title": "v0.60.0"
-  },
-  {
-    "project": "kyverno",
-    "version": "v1.19.2-rc3",
-    "publishedDate": "2026-10-17T19:36:08.000Z",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2-rc3",
-    "sourceId": "kyverno",
-    "title": "v1.19.2-rc3"
   },
   {
     "project": "karpenter",
@@ -78,14 +86,6 @@
     "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.0-rc3",
     "sourceId": "argo",
     "title": "v3.6.0-rc3"
-  },
-  {
-    "project": "robusta",
-    "version": "0.53.0",
-    "publishedDate": "2026-10-15T11:12:41.000Z",
-    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.53.0",
-    "sourceId": "robusta",
-    "title": "0.53.0"
   },
   {
     "project": "holmesgpt",
