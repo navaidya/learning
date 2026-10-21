@@ -1,5 +1,63 @@
 [
   {
+    "id": "oci-oke-625a7665d8f3",
+    "title": "v9.11.0",
+    "summary": "9.11.0 (October 21, 2026) Added Support for Oracle Public Safety and Security (AI-World) OCI OpenSearch remote reindexing support and tests Support for OCI GoldenGate Release 12 connections Support for OCI Console support for Dynamic Resource VM Resource Management Support for GenAI - Bring Your Own Reservations for DAC Support for Include support for PostgreSQL (Changes to existing API/UI-ONLY) Support child tenancy creation with governance options Support for CDB Clone and Snapshot feature for",
+    "source": "OCI / OKE",
+    "sourceId": "oci-oke",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.11.0",
+    "publishedDate": "2026-10-21T22:19:51.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "oci",
+      "oke",
+      "oracle"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "oci-oke",
+    "releaseVersion": "v9.11.0"
+  },
+  {
+    "id": "vector-5409fb7450dd",
+    "title": "vdev-v0.3.34",
+    "summary": "fix(ci): publish complete coverage with suite flags (#26786)",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.34",
+    "publishedDate": "2026-10-21T21:28:08.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
+    "id": "pulumi-fa17226b4ba3",
+    "title": "pkg/v3.271.0: Changelog and go.mod updates for v3.271.0 (#25312)",
+    "summary": "Co-authored-by: github-actions github-actions@github.com",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.271.0",
+    "publishedDate": "2026-10-21T18:02:55.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.271.0"
+  },
+  {
     "id": "terraform-9892c42b2137",
     "title": "v1.17.0",
     "summary": "1.17.0 (October 21, 2026) NEW FEATURES: Terraform now supports variables and locals in provider requirements (#39153) A new -minimal-refresh planning option has been added, which will only refresh resources that have proposed changes. (#35290) policy: Terraform Policy is now generally available. The -policies flag for plan, apply, and query no longer requires an experimental build or the -allow-experimental-features flag. Query policies evaluate resources discovered by list blocks and report hum",
@@ -8031,26 +8089,6 @@
     "releaseProject": "vector"
   },
   {
-    "id": "gateway-api-c0aa35ccc88f",
-    "title": "v1.6.2",
-    "summary": "v1.6.2 Major Changes Since v1.6.1 Bug or Regression HTTPRequestRedirectFilter status codes 303, 307, and 308 are Extended conformance, not Core. (#5173, @kflynn) Other (Cleanup or Flake) Fix flaky TCPRouteWeightedRouting and UDPRouteWeightedRouting conformance tests by adding a data-plane readiness check before performing weighted routing assertions. (#5064, @arybolovlev) Fix FailFast not working as expected (#5204, @zirain) Allow disabling parallel tests at the suite level (#5184, @zirain)",
-    "source": "Gateway API",
-    "sourceId": "gateway-api",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.2",
-    "publishedDate": "2026-09-03T18:49:15.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "gateway-api",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "gateway-api",
-    "releaseVersion": "v1.6.2"
-  },
-  {
     "id": "kubernetes-90b5ee36e2b9",
     "title": "Kubernetes v1.37: DRA Updates",
     "summary": "Kubernetes 1.37 is here and Dynamic Resource Allocation (DRA) keeps pushing past where it started! This release brings DRA Extended Resource support to GA, a milestone the team has been building toward for three straight releases. Several more features graduate to Beta or GA. A fresh batch of alpha features rounds out the release. I'll dive into what's new for DRA in Kubernetes 1.37! What's stable in 1.37DRA Extended Resource support has graduated to GA. This is the mechanism that lets DRA drive",
@@ -8067,43 +8105,6 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes",
     "releaseVersion": "v1.37"
-  },
-  {
-    "id": "hashicorp-599966057ce0",
-    "title": "Introducing HCP Terraform Metrics: operational visibility at scale",
-    "summary": "Gain deeper visibility into your HCP Terraform-managed estate by pulling metrics from a single Prometheus endpoint into your data visualization tools.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/introducing-hcp-terraform-metrics-operational-visibility-at-scale",
-    "publishedDate": "2026-09-03T18:00:00.000Z",
-    "domain": "prometheus",
-    "topics": [
-      "prometheus",
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "hashicorp-b7a665faeb00",
-    "title": "The common security controls behind India's regulatory wave",
-    "summary": "Learn more about how India’s data protection and cybersecurity rules are converging.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/the-common-security-controls-behind-indias-regulatory-wave",
-    "publishedDate": "2026-09-03T16:00:00.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "kubernetes-d1c3bfab278d",

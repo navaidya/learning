@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-21T16:37:28.000Z",
+    "publishedDate": "2026-10-21T22:22:53.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,27 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "phoenix-6da3e6ecb220",
+    "title": "arize-phoenix: v20.24.0",
+    "summary": "20.24.0 (2026-10-21) Features report uncaught frontend errors to the server log (#17005) (2c0873c) Bug Fixes deps: exclude compromised litellm 1.107.0 (#17087) (f6a0231) deps: require certifi 2026.10.18 to distrust the compromised emSign root (#17093) (9056a4a) deps: require Node releases patched in the October 2026 security release (#17091) (b7d454d) Documentation add Atomic Agents to the Python tracing integrations table (#17024) (23162f5) add Phoenix release notes (#17083) (4f06b2f) add UTM p",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.24.0",
+    "publishedDate": "2026-10-21T18:32:14.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v20.24.0"
   },
   {
     "id": "phoenix-3940416d9c28",

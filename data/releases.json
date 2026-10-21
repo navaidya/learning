@@ -1,19 +1,27 @@
 [
   {
+    "project": "oci-oke",
+    "version": "v9.11.0",
+    "publishedDate": "2026-10-21T22:19:51.000Z",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.11.0",
+    "sourceId": "oci-oke",
+    "title": "v9.11.0"
+  },
+  {
+    "project": "pulumi",
+    "version": "v3.271.0",
+    "publishedDate": "2026-10-21T18:02:55.000Z",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.271.0",
+    "sourceId": "pulumi",
+    "title": "pkg/v3.271.0: Changelog and go.mod updates for v3.271.0 (#25312)"
+  },
+  {
     "project": "terraform",
     "version": "v1.17.0",
     "publishedDate": "2026-10-21T17:32:54.000Z",
     "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0",
     "sourceId": "terraform",
     "title": "v1.17.0"
-  },
-  {
-    "project": "pulumi",
-    "version": "v3.271.0",
-    "publishedDate": "2026-10-21T17:20:09.000Z",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.271.0",
-    "sourceId": "pulumi",
-    "title": "v3.271.0"
   },
   {
     "project": "tempo",
@@ -142,14 +150,6 @@
     "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.45.0",
     "sourceId": "holmesgpt",
     "title": "0.45.0"
-  },
-  {
-    "project": "oci-oke",
-    "version": "v9.10.0",
-    "publishedDate": "2026-10-14T23:04:35.000Z",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.10.0",
-    "sourceId": "oci-oke",
-    "title": "v9.10.0"
   },
   {
     "project": "opentelemetry-collector",
