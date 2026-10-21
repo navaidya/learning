@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-21T12:18:37.000Z",
+    "publishedDate": "2026-10-21T16:37:28.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,129 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "phoenix-3940416d9c28",
+    "title": "@arizeai/phoenix-mcp@4.3.17",
+    "summary": "Patch Changes Updated dependencies [67cc379] @arizeai/phoenix-config@0.5.1 @arizeai/phoenix-client@7.16.2",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-mcp%404.3.17",
+    "publishedDate": "2026-10-21T16:07:02.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "4.3.17"
+  },
+  {
+    "id": "phoenix-4b6fd5ef4038",
+    "title": "@arizeai/phoenix-cli@1.18.9",
+    "summary": "Patch Changes Updated dependencies [67cc379] @arizeai/phoenix-config@0.5.1 @arizeai/phoenix-client@7.16.2",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-cli%401.18.9",
+    "publishedDate": "2026-10-21T16:06:59.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "1.18.9"
+  },
+  {
+    "id": "phoenix-6971f1ccdad8",
+    "title": "@arizeai/phoenix-client@7.16.2",
+    "summary": "Patch Changes Updated dependencies [67cc379] Updated dependencies [188ce28] @arizeai/phoenix-config@0.5.1 @arizeai/phoenix-otel@2.3.0",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-client%407.16.2",
+    "publishedDate": "2026-10-21T16:06:55.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "7.16.2"
+  },
+  {
+    "id": "phoenix-f7a7010d7bd0",
+    "title": "@arizeai/phoenix-otel@2.3.0",
+    "summary": "Minor Changes 188ce28: feat(phoenix-otel): Upgrade openinference-vercel tracing dependency to support decision model tracing Patch Changes Updated dependencies [67cc379] @arizeai/phoenix-config@0.5.1",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-otel%402.3.0",
+    "publishedDate": "2026-10-21T16:06:53.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "2.3.0"
+  },
+  {
+    "id": "phoenix-74d0c738de81",
+    "title": "@arizeai/phoenix-evals@2.7.0",
+    "summary": "Minor Changes b00c105: Classification evaluators, including every built-in, can now run on AI SDK decision models such as openai.decisionModel(\"gpt-6-luna\"). The label comes from experimental_decide, with label probabilities (and the provider's confidence, when reported) in metadata. The rendered prompt is sent as plain text, and refusals throw the AI SDK's Experimental_DecisionRefusalError. Decide spans now record the decision state, question and answer. New exports: isDecisionModel and the Dec",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-evals%402.7.0",
+    "publishedDate": "2026-10-21T16:06:50.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "2.7.0"
+  },
+  {
+    "id": "phoenix-30d70391b83a",
+    "title": "@arizeai/phoenix-config@0.5.1",
+    "summary": "Patch Changes 67cc379: fix(phoenix-config): treat a lone carriage return as a line break in .env.phoenix, matching the Python SDKs",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-config%400.5.1",
+    "publishedDate": "2026-10-21T16:06:47.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "0.5.1"
   },
   {
     "id": "otel-ai-f3c3a7f0f19a",
@@ -4591,23 +4714,5 @@
     "releaseRelated": true,
     "releaseProject": "langgraph",
     "releaseVersion": "1.2.10"
-  },
-  {
-    "id": "otel-ai-8c3dc634aeca",
-    "title": "One-command OpenTelemetry setup on Linux hosts",
-    "summary": "OpenTelemetry as system dependency Setting up OpenTelemetry for your applications and systems depends on where those apps and systems run. Some are very automated, especially Kubernetes, thanks to the OpenTelemetry Operator, or AWS Lambda, with the OpenTelemetry Lambda layers. But the countless Java, .NET, Node.js, and Python apps running directly on Linux hosts have had no such automation. Instrumenting those has meant downloading agents by hand and wiring up environment variables yourself. At ",
-    "source": "OpenTelemetry",
-    "sourceId": "otel-ai",
-    "url": "https://opentelemetry.io/blog/2026/packaging-first-repo/",
-    "publishedDate": "2026-07-23T16:51:56.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "agent-observability",
-      "news"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   }
 ]
