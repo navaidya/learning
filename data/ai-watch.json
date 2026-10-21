@@ -1,5 +1,82 @@
 [
   {
+    "id": "pydantic-ai-ec5fb94d76bf",
+    "title": "CLAI2 bleeding",
+    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
+    "publishedDate": "2026-10-21T12:18:37.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "otel-ai-f3c3a7f0f19a",
+    "title": "The Humans of OpenTelemetry - KubeCon Japan 2026",
+    "summary": "We&rsquo;re back with our fifth edition of Humans of OpenTelemetry, and for the first time, from Japan! At KubeCon + CloudNativeCon Japan 2026 in Yokohama, I interviewed OpenTelemetry end users and practitioners from the Japanese cloud native community, and learned how they got involved with OTel: Yuzuru Ohira (LayerX) Chikahisa Mikata (Loglass) Yoshiki Fujikane (CyberAgent) Takashi Okamoto (NTT DATA) Kohei Sugimoto (MIXI) The interviews were conducted in Japanese, and the transcript below is an",
+    "source": "OpenTelemetry",
+    "sourceId": "otel-ai",
+    "url": "https://opentelemetry.io/blog/2026/humans-of-otel-japan/",
+    "publishedDate": "2026-10-21T11:33:27.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "news"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "langfuse-571ce609ef8a",
+    "title": "v4.67.0",
+    "summary": "What's Changed Features feat(skills): simplify CLI install and import setup by @tobi12345 in #19128 feat(web): add name search and gateway key filter to organization API keys by @wochinge in #19108 Fixes fix(slack): marketplace review – link buttons and private channel visibility by @wochinge in #19075 fix(web): Use correct step size on numeric filters by @bezbac in #19099 fix(sessions): Include trace name when searching by @bezbac in #19095 fix(web): Clean up ValueCell by @bezbac in #19100 fix(",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.67.0",
+    "publishedDate": "2026-10-21T11:31:17.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.67.0"
+  },
+  {
+    "id": "nvidia-security-3a3a0075b7d7",
+    "title": "Inside NVIDIA Sentry: Secure AI Agents at Runtime",
+    "summary": "An AI agent can complete its assignment and still cross a security boundary. Recent incidents show that agents can circumvent security controls while using...",
+    "source": "NVIDIA Technical Blog",
+    "sourceId": "nvidia-security",
+    "url": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
+    "publishedDate": "2026-10-21T09:52:16.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "infrastructure-security",
+      "news",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "pydantic-ai-fa82640f0e4b",
     "title": "v1.107.9 (2026-10-20)",
     "summary": "This comment was posted by Codex Desktop using gpt-6.1-sol on behalf of David. What's Changed 🛡️ Security High — HTML conversion in web_fetch: GHSA-4whf-38hw-pxxh. When web_fetch_tool fetched attacker-controlled HTML containing many elements, conversion could delay unrelated work in the same process. Fixed in v2.59.0 and v1.107.9. Upgrade if the tool can fetch such pages. Full Changelog: v1.107.8...v1.107.9",
@@ -38,25 +115,6 @@
     "releaseRelated": true,
     "releaseProject": "pydantic-ai",
     "releaseVersion": "v2.59.0"
-  },
-  {
-    "id": "pydantic-ai-ec5fb94d76bf",
-    "title": "CLAI2 bleeding",
-    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-21T04:23:23.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai"
   },
   {
     "id": "langfuse-b134af4b0b4a",
@@ -397,24 +455,6 @@
     "topics": [
       "video",
       "infrastructure"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "otel-ai-f3c3a7f0f19a",
-    "title": "The Humans of OpenTelemetry - KubeCon Japan 2026",
-    "summary": "We&rsquo;re back with our fifth edition of Humans of OpenTelemetry, and for the first time, from Japan! At KubeCon + CloudNativeCon Japan 2026 in Yokohama, I interviewed OpenTelemetry end users and practitioners from the Japanese cloud native community, and learned how they got involved with OTel: Yuzuru Ohira (LayerX) Mikata Chikahisa (Loglass) Yoshiki Fujikane (CyberAgent) Takashi Okamoto (NTT DATA) Kohei Sugimoto (MIXI) The interviews were conducted in Japanese, and the transcript below is an",
-    "source": "OpenTelemetry",
-    "sourceId": "otel-ai",
-    "url": "https://opentelemetry.io/blog/2026/humans-of-otel-japan/",
-    "publishedDate": "2026-10-15T17:11:30.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "agent-observability",
-      "news"
     ],
     "importance": "medium",
     "architectureShift": false,
@@ -4565,25 +4605,6 @@
       "opentelemetry",
       "agent-observability",
       "news"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "practical-ai-89410cf49273",
-    "title": "Surviving the New Economics of a Post-Agentic World",
-    "summary": "The agentic transformation isn’t coming. It has already begun.Companies are deploying thousands — and sometimes tens of thousands — of AI agents. Enterprise software giants are watching their old economic moats erode. Capital is moving, productivity is being redefined, and human labor is being repriced in real time.In this Fully Connected episode, Daniel and Chris explore the new economics of a post-agentic world: the global order that emerges after agents have been woven into every conceivable ",
-    "source": "Practical AI",
-    "sourceId": "practical-ai",
-    "url": "https://share.transistor.fm/s/8a2e4fc0",
-    "publishedDate": "2026-07-23T09:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "ai-agent",
-      "podcast",
-      "agent-development"
     ],
     "importance": "medium",
     "architectureShift": false,

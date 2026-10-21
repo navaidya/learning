@@ -1,5 +1,120 @@
 [
   {
+    "id": "opentofu-df78af993cef",
+    "title": "v1.12.9",
+    "summary": "1.12.9",
+    "source": "OpenTofu",
+    "sourceId": "opentofu",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.9",
+    "publishedDate": "2026-10-21T12:33:26.000Z",
+    "domain": "terraform",
+    "topics": [
+      "opentofu",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentofu",
+    "releaseVersion": "v1.12.9"
+  },
+  {
+    "id": "prometheus-775b5ff21bd1",
+    "title": "3.13.5 / 2026-10-21",
+    "summary": "[SECURITY] Container images: Update CA certificates to distrust \"emSign ECC Root CA - G3\" and \"Comodo AAA Services root\" following the compromise of eMudhra intermediate CA private keys. [SECURITY] Build with Go 1.26.10 to fix vulnerabilities in net/http, net/textproto, crypto/tls and html/template. [SECURITY] Bump golang.org/x/net to v0.60.0 to fix HTTP/2 vulnerabilities (GO-2026-6603, GO-2026-6610, GO-2026-6611, GO-2026-6612, GO-2026-6617). [SECURITY] Bump OpenTelemetry to v1.45.0 to fix expor",
+    "source": "Prometheus",
+    "sourceId": "prometheus",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.13.5",
+    "publishedDate": "2026-10-21T12:06:36.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "prometheus",
+      "promql",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "prometheus",
+    "releaseVersion": "3.13.5"
+  },
+  {
+    "id": "opentelemetry-f3c3a7f0f19a",
+    "title": "The Humans of OpenTelemetry - KubeCon Japan 2026",
+    "summary": "We&rsquo;re back with our fifth edition of Humans of OpenTelemetry, and for the first time, from Japan! At KubeCon + CloudNativeCon Japan 2026 in Yokohama, I interviewed OpenTelemetry end users and practitioners from the Japanese cloud native community, and learned how they got involved with OTel: Yuzuru Ohira (LayerX) Chikahisa Mikata (Loglass) Yoshiki Fujikane (CyberAgent) Takashi Okamoto (NTT DATA) Kohei Sugimoto (MIXI) The interviews were conducted in Japanese, and the transcript below is an",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/humans-of-otel-japan/",
+    "publishedDate": "2026-10-21T11:33:27.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-a69027169a9a",
+    "title": "Before you evaluate an AI SRE, give your existing agent context",
+    "summary": "If you’re evaluating AI SRE products, you probably own most of one already. The coding agent your engineers use, whether that’s Claude Code, Codex or Cursor, can already investigate a Kubernetes cluster. What it usually lacks...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/21/before-you-evaluate-an-ai-sre-give-your-existing-agent-context/",
+    "publishedDate": "2026-10-21T11:00:00.000Z",
+    "domain": "aiops",
+    "topics": [
+      "aiops",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "prometheus-18695e59ebcc",
+    "title": "v0.313.5",
+    "summary": "v0.313.5",
+    "source": "Prometheus",
+    "sourceId": "prometheus",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v0.313.5",
+    "publishedDate": "2026-10-21T10:30:32.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "promql",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "prometheus",
+    "releaseVersion": "v0.313.5"
+  },
+  {
+    "id": "k8sgpt-31cc07cc431a",
+    "title": "v0.4.41",
+    "summary": "0.4.41 (2026-10-20) Features add Claude 4.5 and 5.x models for Amazon Bedrock (#1819) (a49636c) enable to source customHeaders from the config file (#1339) (37b87f1) prompt to auto-pull missing ollama models (#1766) (e977dc5) Bug Fixes accept an empty storageClassName in StatefulSet claim templates (#1830) (642c3a4) do not report an unsupported KEDA scaleTargetRef as missing (#1831) (7fd1b40) harden completion calls against empty responses and hangs (#1731) (dca17b9) honor matchExpressions in Ne",
+    "source": "K8sGPT",
+    "sourceId": "k8sgpt",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.41",
+    "publishedDate": "2026-10-21T10:16:28.000Z",
+    "domain": "aiops",
+    "topics": [
+      "k8sgpt",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "k8sgpt",
+    "releaseVersion": "v0.4.41"
+  },
+  {
     "id": "argo-d1f0d0c2ff53",
     "title": "v3.3.17",
     "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.3.17/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.3.17/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container im",
@@ -101,6 +216,46 @@
     "releaseRelated": true,
     "releaseProject": "loki",
     "releaseVersion": "v3.6.19"
+  },
+  {
+    "id": "kyverno-0a1ba7d48724",
+    "title": "kyverno-policies-chart-3.9.2: chore: bump chart to 3.9.2 for v1.19.2 (#18145)",
+    "summary": "Signed-off-by: aerosouund aerosound161@gmail.com Co-authored-by: Claude Opus 5.5 noreply@anthropic.com",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-policies-chart-3.9.2",
+    "publishedDate": "2026-10-20T22:13:49.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno",
+    "releaseVersion": "3.9.2"
+  },
+  {
+    "id": "kyverno-73f8db3214ed",
+    "title": "kyverno-chart-3.9.2: chore: bump chart to 3.9.2 for v1.19.2 (#18145)",
+    "summary": "Signed-off-by: aerosouund aerosound161@gmail.com Co-authored-by: Claude Opus 5.5 noreply@anthropic.com",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-chart-3.9.2",
+    "publishedDate": "2026-10-20T22:13:49.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno",
+    "releaseVersion": "3.9.2"
   },
   {
     "id": "opentelemetry-8e2557b2cb46",
@@ -861,24 +1016,6 @@
     "releaseRelated": true,
     "releaseProject": "kyverno",
     "releaseVersion": "v1.19.2-rc.1"
-  },
-  {
-    "id": "opentelemetry-f3c3a7f0f19a",
-    "title": "The Humans of OpenTelemetry - KubeCon Japan 2026",
-    "summary": "We&rsquo;re back with our fifth edition of Humans of OpenTelemetry, and for the first time, from Japan! At KubeCon + CloudNativeCon Japan 2026 in Yokohama, I interviewed OpenTelemetry end users and practitioners from the Japanese cloud native community, and learned how they got involved with OTel: Yuzuru Ohira (LayerX) Mikata Chikahisa (Loglass) Yoshiki Fujikane (CyberAgent) Takashi Okamoto (NTT DATA) Kohei Sugimoto (MIXI) The interviews were conducted in Japanese, and the transcript below is an",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/humans-of-otel-japan/",
-    "publishedDate": "2026-10-15T17:11:30.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "helm-0b2c3985ba37",
@@ -8229,26 +8366,6 @@
     "releaseVersion": "v3.22.0-rc.1"
   },
   {
-    "id": "helm-7b2623572ac3",
-    "title": "Helm v4.3.0-rc.1",
-    "summary": "Helm v4.3.0-rc.1 is a pre-release. It is to help gather feedback from the community as well as give users a chance to test Helm in staging environments before v4.3.0 is officially released. The official changelog will come out with the v4.3.0 release. For now, you can see the commit changes from v4.2.4 here. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Pu",
-    "source": "Helm",
-    "sourceId": "helm",
-    "url": "https://github.com/helm/helm/releases/tag/v4.3.0-rc.1",
-    "publishedDate": "2026-08-31T22:09:46.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "helm",
-      "packaging"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "helm",
-    "releaseVersion": "v4.3.0-rc.1"
-  },
-  {
     "id": "kubernetes-93963e423904",
     "title": "Kubernetes v1.37: Storage Version Migration Enabled by Default",
     "summary": "I am excited that storage version migration (SVM) has graduated to General Availability (GA) in Kubernetes v1.37! After a number of releases of work and testing, the built-in StorageVersionMigration API (storagemigration.k8s.io/v1) and control plane controller are now fully stable and enabled by default across all v1.37 Kubernetes clusters. The problem with stale storage versionsIn Kubernetes, stored API resources are written using a specific storage version (schema representation). The way Kube",
@@ -8265,26 +8382,6 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes",
     "releaseVersion": "v1.37"
-  },
-  {
-    "id": "flux-690daa9b8fa6",
-    "title": "v2.9.5",
-    "summary": "Highlights Flux v2.9.5 is a patch release that moves helm-controller and source-controller back to upstream Helm, now at v4.2.4, dropping the temporary Flux fork. It hardens the handling of kubeconfig Secrets in helm-controller and kustomize-controller, which now reject kubeconfigs referencing files on the local filesystem and require credentials and certificates to be embedded inline. It also stops kustomize-controller from leaving behind the temporary directories of a previous process that exi",
-    "source": "Flux",
-    "sourceId": "flux",
-    "url": "https://github.com/fluxcd/flux2/releases/tag/v2.9.5",
-    "publishedDate": "2026-08-31T17:07:22.000Z",
-    "domain": "gitops",
-    "topics": [
-      "flux",
-      "gitops",
-      "cd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "flux",
-    "releaseVersion": "v2.9.5"
   },
   {
     "id": "opentelemetry-b3455561499b",
@@ -8325,42 +8422,6 @@
     "releaseRelated": false
   },
   {
-    "id": "cncf-df2acc50d56e",
-    "title": "Observability in Kubernetes: From metrics to meaning",
-    "summary": "Kubernetes made infrastructure more programmable, scalable, and resilient. It also made production systems harder to reason about. Workloads move, replicas churn, dependencies multiply, and a single user request can cross ingress, services, queues, storage, and background...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/08/31/observability-in-kubernetes-from-metrics-to-meaning/",
-    "publishedDate": "2026-08-31T11:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "openai-7bc341571432",
-    "title": "Polimill builds Japan's next-generation public AI infrastructure",
-    "summary": "Polimill uses OpenAI GPT models and Codex to help municipalities search and use administrative knowledge while accelerating development.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/polimill",
-    "publishedDate": "2026-08-31T07:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "istio-e9de8974e58b",
     "title": "Istio 1.31.0 Change Notes",
     "summary": "Traffic Management Improved logging when a Gateway API CRD installed in the cluster is below the minimum version required by this Istio version. The message is now logged at warn level and explains that resources of that kind will not be processed until the CRDs are upgraded. Previously, this was logged at info level and easy to miss, which made TLS passthrough breakage after upgrading to 1.30 with stale CRDs hard to diagnose. Improved istiod scalability in ambient mode by scoping XDS pushes fro",
@@ -8381,69 +8442,6 @@
     "releaseRelated": true,
     "releaseProject": "istio",
     "releaseVersion": "1.31.0"
-  },
-  {
-    "id": "istio-8bc4aa5ba033",
-    "title": "Announcing Istio 1.31.0",
-    "summary": "We are pleased to announce the release of Istio 1.31. Thank you to all our contributors, testers, users, and enthusiasts for helping us get the 1.31.0 release published! We would like to thank the Release Managers for this release, Jacek Ewertowski from Red Hat, Jackson Greer from Microsoft, and Jianpeng He from Tetrate. CHANGE NOTES Get a detailed list of what's changed. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the do",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/releases/1.31.x/announcing-1.31/",
-    "publishedDate": "2026-08-31T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "1.31.0"
-  },
-  {
-    "id": "backstage-745a1d123495",
-    "title": "v1.49.6",
-    "summary": "Backstage 1.49.6 This patch release contains security fixes and is recommended for all users of Backstage 1.49.",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.49.6",
-    "publishedDate": "2026-08-29T11:21:57.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "platform-engineering",
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.49.6"
-  },
-  {
-    "id": "backstage-7d8228ba8ec0",
-    "title": "v1.50.5",
-    "summary": "Backstage 1.50.5 This patch release contains security fixes and is recommended for all users of Backstage 1.50.",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.50.5",
-    "publishedDate": "2026-08-29T10:53:27.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "platform-engineering",
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.50.5"
   },
   {
     "id": "kubernetes-62fba4389f31",
