@@ -1,23 +1,24 @@
 [
   {
-    "id": "kyverno-a64b97845b2a",
-    "title": "chore: bump chart to 3.9.2 for v1.19.2 (#18145)",
-    "summary": "Signed-off-by: aerosouund aerosound161@gmail.com Co-authored-by: Claude Opus 5.5 noreply@anthropic.com",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2",
-    "publishedDate": "2026-10-20T22:13:49.000Z",
-    "domain": "kubernetes",
+    "id": "argo-d1f0d0c2ff53",
+    "title": "v3.3.17",
+    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.3.17/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.3.17/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container im",
+    "source": "Argo",
+    "sourceId": "argo",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.17",
+    "publishedDate": "2026-10-21T03:44:43.000Z",
+    "domain": "gitops",
     "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
+      "gitops",
+      "argo-cd",
+      "argo",
+      "argocd"
     ],
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": true,
-    "releaseProject": "kyverno",
-    "releaseVersion": "3.9.2"
+    "releaseProject": "argo",
+    "releaseVersion": "v3.3.17"
   },
   {
     "id": "argo-95b00e8d259f",
@@ -26,7 +27,7 @@
     "source": "Argo",
     "sourceId": "argo",
     "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.4.12",
-    "publishedDate": "2026-10-20T22:04:14.000Z",
+    "publishedDate": "2026-10-21T00:42:15.000Z",
     "domain": "gitops",
     "topics": [
       "gitops",
@@ -39,6 +40,67 @@
     "releaseRelated": true,
     "releaseProject": "argo",
     "releaseVersion": "v3.4.12"
+  },
+  {
+    "id": "kyverno-a64b97845b2a",
+    "title": "v1.19.2",
+    "summary": "chore: bump chart to 3.9.2 for v1.19.2 (#18145) Signed-off-by: aerosouund <aerosound161@gmail.com> Co-authored-by: Claude Opus 5.5 <noreply@anthropic.com>",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2",
+    "publishedDate": "2026-10-20T23:55:04.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno",
+    "releaseVersion": "v1.19.2"
+  },
+  {
+    "id": "loki-98b9c922c45c",
+    "title": "v3.7.9",
+    "summary": "3.7.9 (2026-10-20) Bug Fixes deps: Update github.com/thanos-io/objstore digest to 72d3b9f (release-3.7.x) (#25389) (e7d6809) deps: Update go4.org/netipx digest to 3075585 (release-3.7.x) (#25390) (24be2f4) deps: Update k8s.io/utils digest to cf1189d (release-3.7.x) (#25391) (a5218df) ingester: Concurrent WAL Append() calls could lead to inconsitent record order and irrecoverable WAL state (#25125) (72aa93e) Limit request body size for ruler \"CreateRuleGroup\" API and LogQLAnalyzer API [release-3.",
+    "source": "Grafana Loki",
+    "sourceId": "loki",
+    "url": "https://github.com/grafana/loki/releases/tag/v3.7.9",
+    "publishedDate": "2026-10-20T22:53:57.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "loki",
+      "logging",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "loki",
+    "releaseVersion": "v3.7.9"
+  },
+  {
+    "id": "loki-dae45124d707",
+    "title": "v3.6.19",
+    "summary": "3.6.19 (2026-10-20) Bug Fixes security: Bump Go to 1.26.10 [SECURITY] (release-3.6.x) (#25457) (de41836)",
+    "source": "Grafana Loki",
+    "sourceId": "loki",
+    "url": "https://github.com/grafana/loki/releases/tag/v3.6.19",
+    "publishedDate": "2026-10-20T22:36:42.000Z",
+    "domain": "logging",
+    "topics": [
+      "loki",
+      "logging",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "loki",
+    "releaseVersion": "v3.6.19"
   },
   {
     "id": "opentelemetry-8e2557b2cb46",
@@ -322,6 +384,26 @@
     "releaseRelated": true,
     "releaseProject": "robusta",
     "releaseVersion": "0.54.0-alpha"
+  },
+  {
+    "id": "openai-a84b6a7bee5c",
+    "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+    "summary": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/terminal-x",
+    "publishedDate": "2026-10-20T07:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "openai",
+    "releaseVersion": "88.6"
   },
   {
     "id": "grafana-454b511e98cd",
@@ -8364,26 +8446,6 @@
     "releaseVersion": "v1.50.5"
   },
   {
-    "id": "backstage-c7bdd76f2340",
-    "title": "v1.51.3",
-    "summary": "This patch release includes a robustness improvement in the Catalog. Catalog Improved validation of catalog entity placeholder paths.",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.51.3",
-    "publishedDate": "2026-08-29T09:25:31.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.51.3"
-  },
-  {
     "id": "kubernetes-62fba4389f31",
     "title": "Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles",
     "summary": "Pod Certificate / Cluster Trust Bundles Blog PostKubernetes brings a wealth of features that make it easy to run your production workloads securely and reliably. While aspects like scheduling, health checks and resource limits are probably at the front of your mind, one other important feature of Kubernetes is production identity — how your workload can authenticate to other systems in order to do its job. Up until now, the primary production identity mechanism built into Kubernetes has been ser",
@@ -8420,26 +8482,6 @@
     "releaseRelated": true,
     "releaseProject": "containerd",
     "releaseVersion": "1.12.0-rc.0"
-  },
-  {
-    "id": "backstage-7b8ed336ab9f",
-    "title": "v1.53.2",
-    "summary": "This patch release includes robustness improvements across the Scaffolder and Catalog. Scaffolder Improved task response serialization, retry behavior, and permission evaluation. Catalog Improved validation of catalog entity placeholder paths.",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.53.2",
-    "publishedDate": "2026-08-28T16:42:55.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.53.2"
   },
   {
     "id": "kubernetes-f1d9baa9495e",
@@ -9705,43 +9747,5 @@
     "importance": "high",
     "architectureShift": true,
     "releaseRelated": false
-  },
-  {
-    "id": "kubernetes-releases-baa6bf322d04",
-    "title": "v1.36.3",
-    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
-    "source": "Kubernetes Releases",
-    "sourceId": "kubernetes-releases",
-    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.36.3",
-    "publishedDate": "2026-07-23T00:35:52.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "release"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kubernetes-releases",
-    "releaseVersion": "v1.36.3"
-  },
-  {
-    "id": "kubernetes-releases-69591e1c3c99",
-    "title": "v1.35.7",
-    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
-    "source": "Kubernetes Releases",
-    "sourceId": "kubernetes-releases",
-    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.35.7",
-    "publishedDate": "2026-07-22T22:28:35.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "release"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kubernetes-releases",
-    "releaseVersion": "v1.35.7"
   }
 ]

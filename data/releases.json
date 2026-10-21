@@ -1,19 +1,27 @@
 [
   {
-    "project": "kyverno",
-    "version": "3.9.2",
-    "publishedDate": "2026-10-20T22:13:49.000Z",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2",
-    "sourceId": "kyverno",
-    "title": "chore: bump chart to 3.9.2 for v1.19.2 (#18145)"
+    "project": "argo",
+    "version": "v3.3.17",
+    "publishedDate": "2026-10-21T03:44:43.000Z",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.17",
+    "sourceId": "argo",
+    "title": "v3.3.17"
   },
   {
-    "project": "argo",
-    "version": "v3.4.12",
-    "publishedDate": "2026-10-20T22:04:14.000Z",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.4.12",
-    "sourceId": "argo",
-    "title": "v3.4.12"
+    "project": "kyverno",
+    "version": "v1.19.2",
+    "publishedDate": "2026-10-20T23:55:04.000Z",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2",
+    "sourceId": "kyverno",
+    "title": "v1.19.2"
+  },
+  {
+    "project": "loki",
+    "version": "v3.7.9",
+    "publishedDate": "2026-10-20T22:53:57.000Z",
+    "url": "https://github.com/grafana/loki/releases/tag/v3.7.9",
+    "sourceId": "loki",
+    "title": "v3.7.9"
   },
   {
     "project": "tempo",
@@ -38,6 +46,14 @@
     "url": "https://github.com/robusta-dev/robusta/releases/tag/0.54.0-alpha",
     "sourceId": "robusta",
     "title": "0.54.0-alpha"
+  },
+  {
+    "project": "openai",
+    "version": "88.6",
+    "publishedDate": "2026-10-20T07:00:00.000Z",
+    "url": "https://openai.com/index/terminal-x",
+    "sourceId": "openai",
+    "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1"
   },
   {
     "project": "vector",
@@ -70,14 +86,6 @@
     "url": "https://istio.io/latest/news/support/announcing-1.29-eol-final/",
     "sourceId": "istio",
     "title": "Support for Istio 1.29 has ended"
-  },
-  {
-    "project": "loki",
-    "version": "v3.6.18",
-    "publishedDate": "2026-10-15T19:55:55.000Z",
-    "url": "https://github.com/grafana/loki/releases/tag/v3.6.18",
-    "sourceId": "loki",
-    "title": "v3.6.18"
   },
   {
     "project": "helm",

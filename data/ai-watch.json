@@ -1,12 +1,52 @@
 [
   {
+    "id": "pydantic-ai-fa82640f0e4b",
+    "title": "v1.107.9 (2026-10-20)",
+    "summary": "This comment was posted by Codex Desktop using gpt-6.1-sol on behalf of David. What's Changed 🛡️ Security High — HTML conversion in web_fetch: GHSA-4whf-38hw-pxxh. When web_fetch_tool fetched attacker-controlled HTML containing many elements, conversion could delay unrelated work in the same process. Fixed in v2.59.0 and v1.107.9. Upgrade if the tool can fetch such pages. Full Changelog: v1.107.8...v1.107.9",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v1.107.9",
+    "publishedDate": "2026-10-21T04:36:51.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v1.107.9"
+  },
+  {
+    "id": "pydantic-ai-0e3826b49c28",
+    "title": "v2.59.0 (2026-10-20)",
+    "summary": "This comment was posted by Codex Desktop using gpt-6.1-sol on behalf of David. What's Changed 🛡️ Security High — HTML conversion in web_fetch: GHSA-4whf-38hw-pxxh. When web_fetch_tool fetched attacker-controlled HTML containing many elements, conversion could delay unrelated work in the same process. Fixed in v2.59.0 and v1.107.9. Upgrade if the tool can fetch such pages. ⚠️ Compatibility Notes Remove shut-down Groq models playai-tts, playai-tts-arabic, meta-llama/llama-guard-4-12b and meta-lla",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.59.0",
+    "publishedDate": "2026-10-21T04:36:13.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.59.0"
+  },
+  {
     "id": "pydantic-ai-ec5fb94d76bf",
     "title": "CLAI2 bleeding",
     "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-20T22:18:47.000Z",
+    "publishedDate": "2026-10-21T04:23:23.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
