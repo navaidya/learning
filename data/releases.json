@@ -1,5 +1,21 @@
 [
   {
+    "project": "argo",
+    "version": "v3.6.0-rc4",
+    "publishedDate": "2026-10-22T10:59:00.000Z",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.0-rc4",
+    "sourceId": "argo",
+    "title": "v3.6.0-rc4"
+  },
+  {
+    "project": "terraform",
+    "version": "v1.17.0",
+    "publishedDate": "2026-10-22T09:46:11.000Z",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0",
+    "sourceId": "terraform",
+    "title": "v1.17.0"
+  },
+  {
     "project": "oci-oke",
     "version": "v9.11.0",
     "publishedDate": "2026-10-21T22:25:40.000Z",
@@ -14,14 +30,6 @@
     "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.271.0",
     "sourceId": "pulumi",
     "title": "pkg/v3.271.0: Changelog and go.mod updates for v3.271.0 (#25312)"
-  },
-  {
-    "project": "terraform",
-    "version": "v1.17.0",
-    "publishedDate": "2026-10-21T17:32:54.000Z",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0",
-    "sourceId": "terraform",
-    "title": "v1.17.0"
   },
   {
     "project": "tempo",
@@ -72,12 +80,12 @@
     "title": "v0.4.41"
   },
   {
-    "project": "argo",
-    "version": "v3.3.17",
-    "publishedDate": "2026-10-21T03:44:43.000Z",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.17",
-    "sourceId": "argo",
-    "title": "v3.3.17"
+    "project": "istio",
+    "version": "1.31.0",
+    "publishedDate": "2026-10-21T00:00:00.000Z",
+    "url": "https://istio.io/latest/news/security/istio-security-2026-008/",
+    "sourceId": "istio",
+    "title": "ISTIO-SECURITY-2026-008"
   },
   {
     "project": "loki",
@@ -118,14 +126,6 @@
     "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.14.2",
     "sourceId": "karpenter",
     "title": "v1.14.2"
-  },
-  {
-    "project": "istio",
-    "version": "1.29",
-    "publishedDate": "2026-10-16T00:00:00.000Z",
-    "url": "https://istio.io/latest/news/support/announcing-1.29-eol-final/",
-    "sourceId": "istio",
-    "title": "Support for Istio 1.29 has ended"
   },
   {
     "project": "helm",

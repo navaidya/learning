@@ -1,5 +1,122 @@
 [
   {
+    "id": "loki-79dd696b137d",
+    "title": "helm-loki-7.5.0",
+    "summary": "ci(helm): Bump update-helm-repo pin past blocked app-token SHA (#25558)",
+    "source": "Grafana Loki",
+    "sourceId": "loki",
+    "url": "https://github.com/grafana/loki/releases/tag/helm-loki-7.5.0",
+    "publishedDate": "2026-10-22T12:32:03.000Z",
+    "domain": "logging",
+    "topics": [
+      "loki",
+      "logging",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "loki"
+  },
+  {
+    "id": "cncf-1d7bce931aa8",
+    "title": "Filtering and reducing AI agent telemetry with the OpenTelemetry Collector",
+    "summary": "Turn on an AI coding agent’s telemetry and it throws a wall of text at you. It’s expensive to store and what’s worse, you can’t make sense of it. It’s all OpenTelemetry native, though. So you...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/22/filtering-and-reducing-ai-agent-telemetry-with-the-opentelemetry-collector/",
+    "publishedDate": "2026-10-22T11:00:00.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "argo-e5913f308505",
+    "title": "v3.6.0-rc4",
+    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.6.0-rc4/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.6.0-rc4/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for contai",
+    "source": "Argo",
+    "sourceId": "argo",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.0-rc4",
+    "publishedDate": "2026-10-22T10:59:00.000Z",
+    "domain": "gitops",
+    "topics": [
+      "gitops",
+      "argo-cd",
+      "argo",
+      "argocd"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "argo",
+    "releaseVersion": "v3.6.0-rc4"
+  },
+  {
+    "id": "argo-2e6a9f828167",
+    "title": "gitops-engine/v3.6.0-rc4: chore: bump version to 3.6.0-rc4 on release-3.6 branch (#30347)",
+    "summary": "Signed-off-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com> Co-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>",
+    "source": "Argo",
+    "sourceId": "argo",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/gitops-engine%2Fv3.6.0-rc4",
+    "publishedDate": "2026-10-22T09:53:28.000Z",
+    "domain": "gitops",
+    "topics": [
+      "gitops",
+      "argo",
+      "argocd"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "argo",
+    "releaseVersion": "v3.6.0-rc4"
+  },
+  {
+    "id": "terraform-9892c42b2137",
+    "title": "v1.17.0",
+    "summary": "1.17.0 (October 21, 2026) NEW FEATURES: Terraform now supports variables and locals in provider requirements (#39153) A new -minimal-refresh planning option has been added, which will only refresh resources that have proposed changes. (#35290) policy: Terraform Policy is now generally available. The -policies flag for plan, apply, and query no longer requires an experimental build or the -allow-experimental-features flag. Query policies evaluate resources discovered by list blocks and report hum",
+    "source": "Terraform",
+    "sourceId": "terraform",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0",
+    "publishedDate": "2026-10-22T09:46:11.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "terraform",
+    "releaseVersion": "v1.17.0"
+  },
+  {
+    "id": "terraform-e3fd31589712",
+    "title": "v1.16.7",
+    "summary": "1.16.7 (October 22, 2026) BUG FIXES: command/test: Avoid panic when testing schema w/ deprecated values (#39406) NOTES: Terraform is now built with Go 1.26.10, which no longer trusts certificates issued through a set of compromised eMudhra intermediate CAs (CVE-2026-111943) (#39417)",
+    "source": "Terraform",
+    "sourceId": "terraform",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.7",
+    "publishedDate": "2026-10-22T09:30:19.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "iac"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "terraform",
+    "releaseVersion": "v1.16.7"
+  },
+  {
     "id": "oci-oke-625a7665d8f3",
     "title": "v9.11.0",
     "summary": "9.11.0 (October 21, 2026) Added Support for Oracle Public Safety and Security (AI-World) OCI OpenSearch remote reindexing support and tests Support for OCI GoldenGate Release 12 connections Support for OCI Console support for Dynamic Resource VM Resource Management Support for GenAI - Bring Your Own Reservations for DAC Support for Include support for PostgreSQL (Changes to existing API/UI-ONLY) Support child tenancy creation with governance options Support for CDB Clone and Snapshot feature for",
@@ -56,25 +173,6 @@
     "releaseRelated": true,
     "releaseProject": "pulumi",
     "releaseVersion": "v3.271.0"
-  },
-  {
-    "id": "terraform-9892c42b2137",
-    "title": "v1.17.0",
-    "summary": "1.17.0 (October 21, 2026) NEW FEATURES: Terraform now supports variables and locals in provider requirements (#39153) A new -minimal-refresh planning option has been added, which will only refresh resources that have proposed changes. (#35290) policy: Terraform Policy is now generally available. The -policies flag for plan, apply, and query no longer requires an experimental build or the -allow-experimental-features flag. Query policies evaluate resources discovered by list blocks and report hum",
-    "source": "Terraform",
-    "sourceId": "terraform",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0",
-    "publishedDate": "2026-10-21T17:32:54.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "terraform",
-    "releaseVersion": "v1.17.0"
   },
   {
     "id": "pulumi-70be3d0aa2cc",
@@ -541,6 +639,90 @@
     "importance": "high",
     "architectureShift": false,
     "releaseRelated": false
+  },
+  {
+    "id": "istio-fb5e07e9fcc7",
+    "title": "ISTIO-SECURITY-2026-008",
+    "summary": "Disclosure Details CVE(s) CVE-2026-111943 CVSS Impact Score N/A Affected Releases 1.31.0 to 1.31.2 1.30.0 to 1.30.6 1.29.0 to 1.29.9 eMudhra intermediate CA compromise The private keys of eight eMudhra intermediate CA certificates, including their Sectigo cross-signs, were disclosed as compromised on October 20, 2026. Anyone holding one of these keys can issue certificates for any domain that chains to roots trusted by the public CA bundles shipped in Istio images. Browsers that enforce Certific",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/news/security/istio-security-2026-008/",
+    "publishedDate": "2026-10-21T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "istio",
+    "releaseVersion": "1.31.0"
+  },
+  {
+    "id": "istio-c0476567be45",
+    "title": "Announcing Istio 1.31.3",
+    "summary": "This release contains security fixes. This release note describes what&rsquo;s different between Istio 1.31.2 and 1.31.3. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Security update For more information, see ISTIO-SECURITY-2026-008. Removed trust in the compromised eMudhra intermediate CA certificates. The CA bundle in the ubun",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/news/releases/1.31.x/announcing-1.31.3/",
+    "publishedDate": "2026-10-21T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "istio",
+    "releaseVersion": "1.31.3"
+  },
+  {
+    "id": "istio-61cadedfd9b1",
+    "title": "Announcing Istio 1.30.7",
+    "summary": "This release contains security fixes. This release note describes what&rsquo;s different between Istio 1.30.6 and 1.30.7. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Security update For more information, see ISTIO-SECURITY-2026-008. Removed trust in the compromised eMudhra intermediate CA certificates. The CA bundle in the ubun",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/news/releases/1.30.x/announcing-1.30.7/",
+    "publishedDate": "2026-10-21T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "istio",
+    "releaseVersion": "1.30.7"
+  },
+  {
+    "id": "istio-33f87af47f15",
+    "title": "Announcing Istio 1.29.10",
+    "summary": "This release contains security fixes. This release note describes what&rsquo;s different between Istio 1.29.9 and 1.29.10. 1.29 reached end of life on October 15, 2026, and this is an exceptional release to address ISTIO-SECURITY-2026-008. We encourage you to upgrade to a supported release. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code ch",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/news/releases/1.29.x/announcing-1.29.10/",
+    "publishedDate": "2026-10-21T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "istio",
+    "releaseVersion": "1.29.10"
   },
   {
     "id": "loki-98b9c922c45c",
@@ -7916,125 +8098,6 @@
     "releaseVersion": "v0.313.3"
   },
   {
-    "id": "holmesgpt-c46f13b9572f",
-    "title": "0.41.0-alpha",
-    "summary": "What's Changed ROB-1161 Fetch the Supabase api key from relay with caching and local fallback by @Avi-Robusta in #2420 Patch all High CVEs (and Mediums >60 days) in the holmes image by @moshemorad in #2432 ROB-1258 Live-refresh git-synced skills via first-class skill_repos by @naomi-robusta in #2434 ROB-889 Refresh the realtime JWT before it expires by @Avi-Robusta in #2383 Full Changelog: 0.40.0...0.41.0-alpha",
-    "source": "HolmesGPT (Robusta)",
-    "sourceId": "holmesgpt",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.41.0-alpha",
-    "publishedDate": "2026-09-06T08:53:05.000Z",
-    "domain": "aiops",
-    "topics": [
-      "holmesgpt",
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "holmesgpt",
-    "releaseVersion": "0.41.0-alpha"
-  },
-  {
-    "id": "openai-19672c4832d4",
-    "title": "Research acceleration: The view inside OpenAI",
-    "summary": "Inside OpenAI, coding agents are reshaping AI research. Explore early data on agent usage, experiment velocity, task complexity, and research acceleration.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/research-acceleration-view-inside-openai",
-    "publishedDate": "2026-09-06T08:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "containerd-ed8202b16bdc",
-    "title": "containerd 1.7.35",
-    "summary": "Welcome to the v1.7.35 release of containerd! The thirty-fifth patch release for containerd 1.7 contains various fixes and updates including security patches. Security Updates containerd CVE-2026-53495 GHSA-rp3h-jf77-q9p4 Highlights Image Distribution Apply hardening to strip sensitive authentication headers when fetching descriptor URLs (#14046) Runtime Enable log scrubbing by default on Windows (#13889) Please try out the release binaries and report any issues at https://github.com/containerd/",
-    "source": "containerd",
-    "sourceId": "containerd",
-    "url": "https://github.com/containerd/containerd/releases/tag/v1.7.35",
-    "publishedDate": "2026-09-04T21:17:15.000Z",
-    "domain": "containers",
-    "topics": [
-      "containers",
-      "containerd",
-      "runtime"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "containerd",
-    "releaseVersion": "1.7.35"
-  },
-  {
-    "id": "containerd-446074bc98cf",
-    "title": "containerd 2.0.12",
-    "summary": "Welcome to the v2.0.12 release of containerd! The twelfth patch release for containerd 2.0 contains various fixes and updates including security patches. Security Updates containerd CVE-2026-53495 GHSA-rp3h-jf77-q9p4 Highlights Image Distribution Apply hardening to strip sensitive authentication headers when fetching descriptor URLs (#14045) Surface OCI error bodies in registry 403 responses by falling back to GET requests (#13749) Runtime Set SystemTemp environment variable on Windows so temp d",
-    "source": "containerd",
-    "sourceId": "containerd",
-    "url": "https://github.com/containerd/containerd/releases/tag/v2.0.12",
-    "publishedDate": "2026-09-04T20:49:56.000Z",
-    "domain": "containers",
-    "topics": [
-      "containers",
-      "containerd",
-      "runtime"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "containerd",
-    "releaseVersion": "2.0.12"
-  },
-  {
-    "id": "containerd-5a7685ead5f4",
-    "title": "containerd 2.3.5",
-    "summary": "Welcome to the v2.3.5 release of containerd! The fifth patch release for containerd 2.3 contains various fixes and updates including security patches. Security Updates containerd CVE-2026-53495 GHSA-rp3h-jf77-q9p4 Highlights Image Distribution Apply hardening to strip sensitive authentication headers when fetching descriptor URLs (#14030) Runtime Avoid hangs and data races when streaming container standard I/O in CRI (#14094) Fix missing error messages in OpenTelemetry trace attributes (#14049) ",
-    "source": "containerd",
-    "sourceId": "containerd",
-    "url": "https://github.com/containerd/containerd/releases/tag/v2.3.5",
-    "publishedDate": "2026-09-04T20:49:28.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "containerd",
-      "containers",
-      "runtime"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "containerd",
-    "releaseVersion": "2.3.5"
-  },
-  {
-    "id": "containerd-0a6384e4c10e",
-    "title": "containerd 2.2.8",
-    "summary": "Welcome to the v2.2.8 release of containerd! The eighth patch release for containerd 2.2 contains various fixes and updates including security patches. Security Updates containerd CVE-2026-53495 GHSA-rp3h-jf77-q9p4 Highlights Image Distribution Apply hardening to strip sensitive authentication headers when fetching descriptor URLs (#14044) Runtime Set SystemTemp environment variable on Windows so temp directory overrides work for SYSTEM services (#14102) Fix user and group lookup failures in con",
-    "source": "containerd",
-    "sourceId": "containerd",
-    "url": "https://github.com/containerd/containerd/releases/tag/v2.2.8",
-    "publishedDate": "2026-09-04T20:49:23.000Z",
-    "domain": "containers",
-    "topics": [
-      "containers",
-      "containerd",
-      "runtime"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "containerd",
-    "releaseVersion": "2.2.8"
-  },
-  {
     "id": "kubernetes-1560f468b87f",
     "title": "Kubernetes v1.37: KubeletInUserNamespace (aka Rootless mode) Graduates to Beta",
     "summary": "Kubernetes v1.37 promotes the KubeletInUserNamespace feature gate to beta. With this feature enabled, all of the node components (kubelet, CRI and OCI runtimes, CNI plugins, and kube-proxy) can run as a non-root user on the host, using a Linux user namespace. This technique is also known as rootless mode. The work started as an experiment in 2018, and was merged into Kubernetes v1.22 (2021) as an alpha feature (Kubernetes Enhancement Proposal KEP-2033). This feature should not be confused with u",
@@ -8051,60 +8114,6 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes",
     "releaseVersion": "v1.37"
-  },
-  {
-    "id": "cncf-8a3a27f5235d",
-    "title": "CPU + GPU: Why AI platform engineering is a heterogeneous infrastructure problem",
-    "summary": "AI infrastructure conversations often start with GPUs. Accelerators provide much of the compute behind model training and inference, so the focus is understandable. But a production AI workload rarely starts and ends on a GPU. Data...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/09/04/cpu-gpu-why-ai-platform-engineering-is-a-heterogeneous-infrastructure-problem/",
-    "publishedDate": "2026-09-04T11:00:00.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "cncf-d1dc7eee8029",
-    "title": "Kubernetes isn’t new, but AI makes It scary again",
-    "summary": "Kubernetes isn’t brand new anymore. Yet, for many teams, adopting it still feels intimidating. Even if you’ve watched Kubernetes become the default foundation for production software and AI workloads, it can still feel like a big...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/09/04/kubernetes-isnt-new-but-ai-makes-it-scary-again/",
-    "publishedDate": "2026-09-04T11:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "vector-ca11c1324320",
-    "title": "vdev-v0.3.18",
-    "summary": "No content.",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.18",
-    "publishedDate": "2026-09-03T20:16:14.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector"
   },
   {
     "id": "kubernetes-90b5ee36e2b9",

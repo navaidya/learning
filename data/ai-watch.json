@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-22T02:57:02.000Z",
+    "publishedDate": "2026-10-22T10:12:12.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,24 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "practical-ai-f046c69816ab",
+    "title": "Exploit Development, Agentic Vulnerability Discovery, and Fake PoCs",
+    "summary": "AI is changing cybersecurity, accelerating vulnerability research and exploit development while raising new questions about reliability, risk, and guardrails. Daniel and Chris talk with Spencer McIntyre, Director of Exploit Development at VulnCheck, about how agents are being used to discover vulnerabilities, why many proof-of-concept exploits (POCs) fail to deliver, and how initial access intelligence helps security teams prioritize real threats. They also explore the limitations of AI-assisted",
+    "source": "Practical AI",
+    "sourceId": "practical-ai",
+    "url": "https://share.transistor.fm/s/9a42098b",
+    "publishedDate": "2026-10-22T09:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "podcast",
+      "agent-development",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "phoenix-6da3e6ecb220",
