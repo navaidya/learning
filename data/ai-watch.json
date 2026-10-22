@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-22T10:12:12.000Z",
+    "publishedDate": "2026-10-22T17:08:18.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,48 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "langfuse-7a865c91e916",
+    "title": "v4.68.0",
+    "summary": "What's Changed Features feat(mcp): add listLlmConnections tool by @wochinge in #19139 feat(web): Treemap and Grid views for Topics results by @nmtrang29 in #19106 feat(ai-gateway): log per-connection socket writes and output completeness by @wochinge in #19154 feat(blob-export): add opt-in score metadata and provenance field groups by @niklassemmler in #19138 feat(ai-gateway): global enable flag and derived JWT public key / key ID for self-hosting by @wochinge in #19159 feat(topics): internal us",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.68.0",
+    "publishedDate": "2026-10-22T14:30:27.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.68.0"
+  },
+  {
+    "id": "phoenix-0d22912f5d99",
+    "title": "arize-phoenix-evals: v3.9.3",
+    "summary": "3.9.3 (2026-10-22) Bug Fixes deps: exclude compromised litellm 1.107.0 (#17087) (f6a0231) deps: require certifi 2026.10.18 to distrust the compromised emSign root (#17093) (9056a4a) evals: typecheck JSONPath extraction against jsonpath-ng (#16935) (aa4b05b) Documentation fix dead Read the Docs links (#16967) (0fed1f4)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-evals-v3.9.3",
+    "publishedDate": "2026-10-22T14:14:13.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v3.9.3"
   },
   {
     "id": "practical-ai-f046c69816ab",

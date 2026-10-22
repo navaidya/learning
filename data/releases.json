@@ -1,11 +1,27 @@
 [
   {
+    "project": "crossplane",
+    "version": "v1.20.14",
+    "publishedDate": "2026-10-22T15:50:38.000Z",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v1.20.14",
+    "sourceId": "crossplane",
+    "title": "v1.20.14"
+  },
+  {
     "project": "argo",
-    "version": "v3.6.0-rc4",
-    "publishedDate": "2026-10-22T10:59:00.000Z",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.0-rc4",
+    "version": "v3.6.0-rc3",
+    "publishedDate": "2026-10-22T15:38:05.000Z",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.0-rc3",
     "sourceId": "argo",
-    "title": "v3.6.0-rc4"
+    "title": "v3.6.0-rc3"
+  },
+  {
+    "project": "backstage",
+    "version": "v1.56.2",
+    "publishedDate": "2026-10-22T13:10:25.000Z",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.56.2",
+    "sourceId": "backstage",
+    "title": "v1.56.2"
   },
   {
     "project": "terraform",
@@ -62,14 +78,6 @@
     "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.2",
     "sourceId": "opentofu",
     "title": "v1.13.2"
-  },
-  {
-    "project": "backstage",
-    "version": "v1.54.10",
-    "publishedDate": "2026-10-21T13:45:28.000Z",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.10",
-    "sourceId": "backstage",
-    "title": "v1.54.10"
   },
   {
     "project": "k8sgpt",
@@ -238,13 +246,5 @@
     "url": "https://github.com/etcd-io/etcd/releases/tag/v3.7.2",
     "sourceId": "etcd",
     "title": "v3.7.2"
-  },
-  {
-    "project": "crossplane",
-    "version": "v2.4.2",
-    "publishedDate": "2026-09-22T19:11:31.000Z",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.2",
-    "sourceId": "crossplane",
-    "title": "v2.4.2"
   }
 ]

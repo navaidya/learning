@@ -1,5 +1,247 @@
 [
   {
+    "id": "vector-0e7053730d08",
+    "title": "vdev-v0.3.35",
+    "summary": "chore(vdev): compile integration suites with their own features (#26783)",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.35",
+    "publishedDate": "2026-10-22T15:59:44.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
+    "id": "crossplane-d254171565bf",
+    "title": "v1.20.14",
+    "summary": "v1.20.14 is a patch release scoped to fixing security related issues in Crossplane's dependencies. 🎉 Highlights Distrust of compromised eMudhra intermediate CAs: Bumps the Go toolchain to 1.26.10 (#7956), whose crypto/x509 rejects the compromised eMudhra intermediate certificates (CVE-2026-111943), and removes the AAA Certificate Services and emSign ECC Root CA - G3 roots they chain to from the image's CA bundle (#7960, by moving to the latest distroless/static base image). Dependency security ",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v1.20.14",
+    "publishedDate": "2026-10-22T15:50:38.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v1.20.14"
+  },
+  {
+    "id": "crossplane-44f25ad65fa4",
+    "title": "v2.2.7",
+    "summary": "v2.2.7 is a patch release scoped to fixing issues reported by users of Crossplane v2.2 and fixing security related issues in Crossplane and its dependencies. 🎉 Highlights Distrust of compromised eMudhra intermediate CAs: Bumps the Go toolchain to 1.26.10, whose crypto/x509 rejects the compromised eMudhra intermediate certificates (CVE-2026-111943), and removes the AAA Certificate Services and emSign ECC Root CA - G3 roots they chain to from the image's CA bundle (#7959). Truncated package downl",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.2.7",
+    "publishedDate": "2026-10-22T15:50:33.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.2.7"
+  },
+  {
+    "id": "crossplane-b4974d7667a5",
+    "title": "v2.3.7",
+    "summary": "v2.3.7 is a patch release scoped to fixing issues reported by users of Crossplane v2.3 and fixing security related issues in Crossplane and its dependencies. 🎉 Highlights Distrust of compromised eMudhra intermediate CAs: Bumps the Go toolchain to 1.26.10, whose crypto/x509 rejects the compromised eMudhra intermediate certificates (CVE-2026-111943), and removes the AAA Certificate Services and emSign ECC Root CA - G3 roots they chain to from the image's CA bundle (#7958). Truncated package downl",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.3.7",
+    "publishedDate": "2026-10-22T15:50:25.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.3.7"
+  },
+  {
+    "id": "crossplane-24ceaaa0aa87",
+    "title": "v2.4.3",
+    "summary": "v2.4.3 is a patch release scoped to fixing issues reported by users of Crossplane v2.4 and fixing security related issues in Crossplane and its dependencies. 🎉 Highlights Distrust of compromised eMudhra intermediate CAs: Bumps the Go toolchain to 1.26.10, whose crypto/x509 rejects the compromised eMudhra intermediate certificates (CVE-2026-111943), and removes the AAA Certificate Services and emSign ECC Root CA - G3 roots they chain to from the image's CA bundle (#7957). Truncated package downl",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.3",
+    "publishedDate": "2026-10-22T15:50:21.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.4.3"
+  },
+  {
+    "id": "argo-1710a9f1b956",
+    "title": "v3.6.0-rc3",
+    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.6.0-rc3/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.6.0-rc3/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for contai",
+    "source": "Argo",
+    "sourceId": "argo",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.0-rc3",
+    "publishedDate": "2026-10-22T15:38:05.000Z",
+    "domain": "gitops",
+    "topics": [
+      "gitops",
+      "argo-cd",
+      "argo",
+      "argocd"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "argo",
+    "releaseVersion": "v3.6.0-rc3"
+  },
+  {
+    "id": "argo-e5913f308505",
+    "title": "v3.6.0-rc4",
+    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.6.0-rc4/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.6.0-rc4/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for contai",
+    "source": "Argo",
+    "sourceId": "argo",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.0-rc4",
+    "publishedDate": "2026-10-22T15:37:23.000Z",
+    "domain": "gitops",
+    "topics": [
+      "gitops",
+      "argo-cd",
+      "argo",
+      "argocd"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "argo",
+    "releaseVersion": "v3.6.0-rc4"
+  },
+  {
+    "id": "argo-10c3447acdf6",
+    "title": "v3.3.18",
+    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.3.18/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.3.18/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container im",
+    "source": "Argo",
+    "sourceId": "argo",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.18",
+    "publishedDate": "2026-10-22T15:14:52.000Z",
+    "domain": "gitops",
+    "topics": [
+      "gitops",
+      "argo-cd",
+      "argo",
+      "argocd"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "argo",
+    "releaseVersion": "v3.3.18"
+  },
+  {
+    "id": "opentelemetry-1a0053519eda",
+    "title": "Strengthening OpenTelemetry security while preserving API stability",
+    "summary": "OpenTelemetry has updated its client versioning policy to make room for security fixes that need to change behavior. Stable SDKs and Contrib components, such as instrumentation libraries and exporters, can now make narrowly scoped, necessary security changes in minor or patch releases, even when those changes affect existing users. Public API compatibility remains protected. The intent is to help users receive security improvements within the major version they already use. Some upgrades may req",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/security-versioning-policy/",
+    "publishedDate": "2026-10-22T14:59:07.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry"
+  },
+  {
+    "id": "crossplane-d239bf5aa971",
+    "title": "apis/v2.3.7",
+    "summary": "Release v2.3.7",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.3.7",
+    "publishedDate": "2026-10-22T13:45:41.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.3.7"
+  },
+  {
+    "id": "crossplane-972c83947d0c",
+    "title": "apis/v2.4.3",
+    "summary": "Release v2.4.3",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.4.3",
+    "publishedDate": "2026-10-22T13:45:40.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.4.3"
+  },
+  {
+    "id": "backstage-be5c72e10a29",
+    "title": "v1.56.2",
+    "summary": "This patch release fixes the following issues: Made the @yarnpkg/* dependencies of @backstage/cli-module-package-manager-yarn optional peers, to work around @yarnpkg/core@4.9.2 breaking installation",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.56.2",
+    "publishedDate": "2026-10-22T13:10:25.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "platform-engineering",
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.56.2"
+  },
+  {
     "id": "loki-79dd696b137d",
     "title": "helm-loki-7.5.0",
     "summary": "ci(helm): Bump update-helm-repo pin past blocked app-token SHA (#25558)",
@@ -36,27 +278,6 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "argo-e5913f308505",
-    "title": "v3.6.0-rc4",
-    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.6.0-rc4/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.6.0-rc4/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for contai",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.0-rc4",
-    "publishedDate": "2026-10-22T10:59:00.000Z",
-    "domain": "gitops",
-    "topics": [
-      "gitops",
-      "argo-cd",
-      "argo",
-      "argocd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "v3.6.0-rc4"
   },
   {
     "id": "argo-2e6a9f828167",
@@ -1644,27 +1865,6 @@
     "releaseRelated": true,
     "releaseProject": "cilium",
     "releaseVersion": "1.18.15"
-  },
-  {
-    "id": "argo-1710a9f1b956",
-    "title": "v3.6.0-rc3",
-    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.6.0-rc3/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.6.0-rc3/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for contai",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.0-rc3",
-    "publishedDate": "2026-10-15T14:58:49.000Z",
-    "domain": "gitops",
-    "topics": [
-      "gitops",
-      "argo-cd",
-      "argo",
-      "argocd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "v3.6.0-rc3"
   },
   {
     "id": "kyverno-91100de25d27",
@@ -7837,82 +8037,6 @@
     "releaseVersion": "v1.37"
   },
   {
-    "id": "robusta-4781b16712c3",
-    "title": "0.49.0",
-    "summary": "What's Changed Claude runner workflow trigger docs by @arikalon1 in #2161 Add optional label-based rate limiting to trigger_workflow action by @arikalon1 in #2164 Add conversation_link pass-through field to Holmes chat params by @ezra-robusta in #2163 ROB-887 Cache node IP lookups for prometheus alerts by @Avi-Robusta in #2154 ROB-1161 Support Supabase publishable keys and fetch the api key from relay by @Avi-Robusta in #2162 ROB-1256 Backport perl/glibc/git CVE fixes from Debian forky by @RoiGl",
-    "source": "Robusta",
-    "sourceId": "robusta",
-    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.49.0",
-    "publishedDate": "2026-09-08T12:59:31.000Z",
-    "domain": "prometheus",
-    "topics": [
-      "prometheus",
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "robusta",
-    "releaseVersion": "0.49.0"
-  },
-  {
-    "id": "holmesgpt-1f963f304639",
-    "title": "0.41.0",
-    "summary": "What's Changed ROB-1161 Fetch the Supabase api key from relay with caching and local fallback by @Avi-Robusta in #2420 Patch all High CVEs (and Mediums >60 days) in the holmes image by @moshemorad in #2432 ROB-1258 Live-refresh git-synced skills via first-class skill_repos by @naomi-robusta in #2434 ROB-889 Refresh the realtime JWT before it expires by @Avi-Robusta in #2383 Full Changelog: 0.40.0...0.41.0",
-    "source": "HolmesGPT (Robusta)",
-    "sourceId": "holmesgpt",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.41.0",
-    "publishedDate": "2026-09-08T12:17:06.000Z",
-    "domain": "aiops",
-    "topics": [
-      "holmesgpt",
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "holmesgpt",
-    "releaseVersion": "0.41.0"
-  },
-  {
-    "id": "cncf-4d0015b64e55",
-    "title": "Kubernetes access via an identity provider: Public client, not confidential",
-    "summary": "Access control belongs on the same day-zero checklist as networking and storage. On most on-prem clusters, it never makes the list. The Identity Gap Managed cloud Kubernetes ships IAM or SSO integration out of the box....",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/09/08/kubernetes-access-via-an-identity-provider-public-client-not-confidential/",
-    "publishedDate": "2026-09-08T11:30:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "cncf-ea9cbf4aefa4",
-    "title": "Distributed tracing for CI pipelines without touching a single workflow file",
-    "summary": "You’ve probably felt this one: GitHub Actions usage creeps up across your org, and your actual visibility into it doesn’t keep pace. Which workflows are slow? Which are flaky? How long are jobs sitting queued for...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/09/08/distributed-tracing-for-ci-pipelines-without-touching-a-single-workflow-file/",
-    "publishedDate": "2026-09-08T11:00:00.000Z",
-    "domain": "tracing",
-    "topics": [
-      "tracing",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "cncf-19b2443eed41",
     "title": "Cloud Native Computing Foundation Announces Karmada Graduation",
     "summary": "Multi-cluster, multi-cloud Kubernetes orchestration project reaches production maturity as global enterprises scale AI training and inference across hybrid infrastructure Key Highlights SHANGHAI, China – KubeCon + CloudNativeCon + OpenInfra Summit + PyTorch Conference China 2026 –...",
@@ -7929,116 +8053,6 @@
     "importance": "high",
     "architectureShift": true,
     "releaseRelated": false
-  },
-  {
-    "id": "cncf-eea09873e228",
-    "title": "CNCF Welcomes New Silver Members as Enterprises Scale AI From Training to Inference",
-    "summary": "New members including SoftBank Corp. and Crusoe join the cloud native community to help build cost-efficient, sovereign infrastructure SHANGHAI, China – KubeCon + CloudNativeCon + OpenInfra Summit + PyTorch Conference China 2026 – September 8, 2026...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/announcements/2026/09/07/cncf-welcomes-new-silver-members-as-enterprises-scale-ai-from-training-to-inference/",
-    "publishedDate": "2026-09-08T01:58:47.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "cncf-0152a6f6df37",
-    "title": "China Merchants Bank Wins CNCF End User Case Study Contest for Unifying AI Training and Inference on Kubernetes",
-    "summary": "New cloud native platform lifted average accelerator compute utilization from 35% to more than 60% and cut inference cost per 1 million tokens by more than 60% Key Highlights SHANGHAI, China – KubeCon + CloudNativeCon +...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/announcements/2026/09/07/china-merchants-bank-wins-cncf-end-user-case-study-contest-for-unifying-ai-training-and-inference-on-kubernetes/",
-    "publishedDate": "2026-09-08T01:54:31.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "cncf-4ad5d484c08e",
-    "title": "CNCF and SlashData Report Highlights China’s Cloud Native Momentum as AI Moves to Inference",
-    "summary": "New research finds China’s IIoT developers (48%) outpace the global average (42%) in cloud native adoption as AI infrastructure matures Key Highlights: SHANGHAI – KubeCon + CloudNativeCon + OpenInfra Summit + PyTorch Conference China —Sept. 8,...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/announcements/2026/09/07/cncf-and-slashdata-report-highlights-chinas-cloud-native-momentum-as-ai-moves-to-inference/",
-    "publishedDate": "2026-09-08T01:50:55.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "openai-9816f5beea82",
-    "title": "1Password increases engineering productivity 21% with Codex",
-    "summary": "Engineers at 1Password use Codex to rapidly build new features and internal tools, reaching production-readiness while maintaining rigorous security policies.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/1password",
-    "publishedDate": "2026-09-08T00:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "cilium-bde9651005ea",
-    "title": "v1.21.0-pre.1",
-    "summary": "Release v1.21.0-pre.1",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.21.0-pre.1",
-    "publishedDate": "2026-09-07T16:18:20.000Z",
-    "domain": "ebpf-cilium",
-    "topics": [
-      "cilium",
-      "ebpf",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "v1.21.0-pre.1"
-  },
-  {
-    "id": "cilium-185a603ed9c6",
-    "title": "1.21.0-pre.1",
-    "summary": "Release v1.21.0-pre.1",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/1.21.0-pre.1",
-    "publishedDate": "2026-09-07T16:18:18.000Z",
-    "domain": "ebpf-cilium",
-    "topics": [
-      "cilium",
-      "ebpf",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "1.21.0-pre.1"
   },
   {
     "id": "prometheus-e559b04f597d",
