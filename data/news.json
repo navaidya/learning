@@ -6,7 +6,7 @@
     "source": "OCI / OKE",
     "sourceId": "oci-oke",
     "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.11.0",
-    "publishedDate": "2026-10-21T22:19:51.000Z",
+    "publishedDate": "2026-10-21T22:25:40.000Z",
     "domain": "infrastructure",
     "topics": [
       "oci",
@@ -523,6 +523,24 @@
     "releaseRelated": true,
     "releaseProject": "argo",
     "releaseVersion": "v3.4.12"
+  },
+  {
+    "id": "openai-9201054eeb4c",
+    "title": "Cloudflare links vulnerability discovery to defense with OpenAI",
+    "summary": "Cloudflare uses OpenAI Daybreak to investigate vulnerabilities and propose fixes for review. Its developers use Codex to build faster and improve code quality.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/cloudflare-cyber",
+    "publishedDate": "2026-10-21T00:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "loki-98b9c922c45c",
@@ -9736,22 +9754,5 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "mcp-spec"
-  },
-  {
-    "id": "grafana-a6f6f9b62e3b",
-    "title": "A new allowlists design for Grafana Cloud IP addresses: What you need to know",
-    "summary": "If your network restricts inbound or outbound traffic, you likely maintain an allowlist of Grafana Cloud IP addresses so your systems and Grafana Cloud can talk to each other. Today we're introducing a new allowlists design: a single, structured API that replaces the collection of per-product lists we've published until now.If you don't use IP allowlisting—or you connect to Grafana Cloud over private connectivity such as AWS PrivateLink—nothing changes for you, and no action is needed. If you do",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/a-new-allowlists-design-for-grafana-cloud-ip-addresses-what-you-need-to-know/",
-    "publishedDate": "2026-07-24T02:22:13.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": true,
-    "releaseRelated": false
   }
 ]
