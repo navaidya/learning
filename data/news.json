@@ -1,5 +1,261 @@
 [
   {
+    "id": "etcd-c20d0d9a2baf",
+    "title": "v3.5.35",
+    "summary": "Please check out CHANGELOG for a full list of changes. And make sure to read upgrade guide before upgrading etcd (there may be breaking changes). For installation guides, please check out play.etcd.io and operating etcd. Latest support status for common architectures and operating systems can be found at supported platforms. Linux ETCD_VER=v3.5.35 # choose either URL GOOGLE_URL=https://storage.googleapis.com/etcd GITHUB_URL=https://github.com/etcd-io/etcd/releases/download DOWNLOAD_URL=${GOOGLE_",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/v3.5.35",
+    "publishedDate": "2026-10-22T21:36:15.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.5.35"
+  },
+  {
+    "id": "pulumi-7f29a3b20de3",
+    "title": "v3.272.0",
+    "summary": "3.272.0 (2026-10-22) Features [cli/display] Collapse policy violations that an exception exempts under Policies: into one line per policy, and add --show-policy-exceptions to up and preview to list them with their exceptions #25290 [engine] Add an AwaitError provider protocol error indicating an operation needs to be awaited; the deployment continues, the resource's outputs are unknown, and the CLI exits with the dedicated ExitAwaitError code (10) #25278 [cli/env] Add pulumi env change-request c",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.272.0",
+    "publishedDate": "2026-10-22T21:29:34.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.272.0"
+  },
+  {
+    "id": "etcd-e7b466300f61",
+    "title": "tests/v3.5.35",
+    "summary": "v3.5.35",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/tests%2Fv3.5.35",
+    "publishedDate": "2026-10-22T21:01:29.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.5.35"
+  },
+  {
+    "id": "etcd-dc58df1716e4",
+    "title": "etcdctl/v3.5.35",
+    "summary": "v3.5.35",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/etcdctl%2Fv3.5.35",
+    "publishedDate": "2026-10-22T21:01:26.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.5.35"
+  },
+  {
+    "id": "etcd-f9b83be8866e",
+    "title": "etcdutl/v3.5.35",
+    "summary": "v3.5.35",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/etcdutl%2Fv3.5.35",
+    "publishedDate": "2026-10-22T21:01:24.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.5.35"
+  },
+  {
+    "id": "etcd-685ed946a96f",
+    "title": "server/v3.5.35",
+    "summary": "v3.5.35",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/server%2Fv3.5.35",
+    "publishedDate": "2026-10-22T21:01:22.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.5.35"
+  },
+  {
+    "id": "etcd-b16d4bf90564",
+    "title": "client/v3.5.35",
+    "summary": "v3.5.35",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/client%2Fv3.5.35",
+    "publishedDate": "2026-10-22T21:01:20.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.5.35"
+  },
+  {
+    "id": "etcd-606eff239050",
+    "title": "client/v2.305.35",
+    "summary": "v2.305.35",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/client%2Fv2.305.35",
+    "publishedDate": "2026-10-22T21:01:18.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v2.305.35"
+  },
+  {
+    "id": "etcd-5e158aad15f5",
+    "title": "client/pkg/v3.5.35",
+    "summary": "v3.5.35",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/client%2Fpkg%2Fv3.5.35",
+    "publishedDate": "2026-10-22T21:01:16.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.5.35"
+  },
+  {
+    "id": "etcd-703213627215",
+    "title": "raft/v3.5.35",
+    "summary": "v3.5.35",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/raft%2Fv3.5.35",
+    "publishedDate": "2026-10-22T21:01:14.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.5.35"
+  },
+  {
+    "id": "etcd-7e551855da9d",
+    "title": "pkg/v3.5.35",
+    "summary": "v3.5.35",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/pkg%2Fv3.5.35",
+    "publishedDate": "2026-10-22T21:01:12.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.5.35"
+  },
+  {
+    "id": "openai-27825e300358",
+    "title": "Build more responsive apps with the Decisions API",
+    "summary": "Fast, focused, low-cost decisions for any application.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/decisions-api",
+    "publishedDate": "2026-10-22T19:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "pulumi-f7d9cc13eb1c",
+    "title": "sdk/v3.272.0: Keep the unknown outputs of remote components (#25291)",
+    "summary": "A remote component's output that depends on a child resource that's awaiting (or failed, or skipped) is unknown during an update, but the calling program saw it as an empty value, so apply callbacks and dependent resources ran too early with the wrong value. The unknown was lost in four places: The Go provider SDK only kept unknowns in its Construct response during previews. The engine only kept unknowns when reading a Construct response during previews. The Go SDK didn't advertise SupportsParti",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.272.0",
+    "publishedDate": "2026-10-22T18:46:43.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.272.0"
+  },
+  {
     "id": "vector-0e7053730d08",
     "title": "vdev-v0.3.35",
     "summary": "chore(vdev): compile integration suites with their own features (#26783)",
@@ -7733,82 +7989,6 @@
     "releaseVersion": "v1.19.1"
   },
   {
-    "id": "helm-ba2184aeb481",
-    "title": "Helm v3.22.0",
-    "summary": "Helm v3.22.0 is a feature release. Users are encouraged to upgrade for the best experience. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/packages Notable Changes primarily dependency updates and k8s-io group to 0.37.0 Installation and Upgrading Download ",
-    "source": "Helm",
-    "sourceId": "helm",
-    "url": "https://github.com/helm/helm/releases/tag/v3.22.0",
-    "publishedDate": "2026-09-10T00:12:40.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "helm",
-      "packaging"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "helm",
-    "releaseVersion": "v3.22.0"
-  },
-  {
-    "id": "helm-88aab34271b1",
-    "title": "Helm v4.3.0",
-    "summary": "Helm v4.3.0 is a feature release. Users are encouraged to upgrade for the best experience. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/packages Notable Changes feat: Add duration functions by @aeroyorch in #31695 feat(engine): add debug logging when loo",
-    "source": "Helm",
-    "sourceId": "helm",
-    "url": "https://github.com/helm/helm/releases/tag/v4.3.0",
-    "publishedDate": "2026-09-10T00:12:24.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "helm",
-      "packaging"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "helm",
-    "releaseVersion": "v4.3.0"
-  },
-  {
-    "id": "openai-4e410dad70fb",
-    "title": "Build more natural voice experiences with GPT‑Live‑1 in the API",
-    "summary": "GPT‑Live‑1 brings natural, full-duplex voice conversations to the API, with stronger instruction following, custom voices, and telephony support.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
-    "publishedDate": "2026-09-10T00:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "openai-2b26a8066576",
-    "title": "Introducing the Agents API",
-    "summary": "Build and launch cloud agents with the Agents API, a managed service powered by the Codex harness for orchestration, long-running sessions, and tool use.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/introducing-the-agents-api",
-    "publishedDate": "2026-09-10T00:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "kubernetes-06f4b9d8c79c",
     "title": "Kubernetes v1.37: Introducing Node Lifecycle Conditions",
     "summary": "Kubernetes has many ways to describe what is happening on a Node. Readiness, taints, Pod state, labels, annotations, and provider-specific APIs each expose part of the picture. What has been missing is a shared, Kubernetes-owned way to say that a Node is draining, undergoing maintenance, or undergoing Graceful Node Shutdown. Kubernetes v1.37 introduces five well-known Node conditions that provide that description: DrainInProgress Drained MaintenancePlanned MaintenanceInProgress GracefulNodeShutd",
@@ -7825,61 +8005,6 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes",
     "releaseVersion": "v1.37"
-  },
-  {
-    "id": "terraform-9e6f9c1b37a1",
-    "title": "v1.17.0-beta1",
-    "summary": "1.17.0-beta1 (September 09, 2026) NEW FEATURES: Terraform now supports variables and locals in provider requirements (#39153) A new -minimal-refresh planning option has been added, which will only refresh resources that have proposed changes. (#35290) policy: Terraform Policy is now generally available. The -policies flag for plan, apply, and init no longer requires the -allow-experimental-features flag. See https://developer.hashicorp.com/terraform/policy for more information. (#38970) ENHANCEM",
-    "source": "Terraform",
-    "sourceId": "terraform",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-beta1",
-    "publishedDate": "2026-09-09T17:13:24.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "terraform",
-    "releaseVersion": "v1.17.0-beta1"
-  },
-  {
-    "id": "grafana-deec40cf4041",
-    "title": "How to monitor Cypress tests with Grafana Cloud",
-    "summary": "If your Cypress suite has tests that fail more often or run slower, you know it can be hard to figure out the pattern from a single job. It could be one spec that slowed down, or a single test that fails, or maybe the entire suite is trending slower. The root cause could be a bug in the app, or a flaky test, or something else. Your terminal output and CI log will tell you what happened on a single run, but that doesn't help you spot any larger trends—especially since you lose that data as soon a",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/how-to-monitor-cypress-tests-with-grafana-cloud/",
-    "publishedDate": "2026-09-09T13:35:09.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "terraform-8ef9e15ab07d",
-    "title": "v1.16.2",
-    "summary": "1.16.2 (September 9, 2026) BUG FIXES: Fix panic in module installation when encoutering invalid module calls (#39129)",
-    "source": "Terraform",
-    "sourceId": "terraform",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.2",
-    "publishedDate": "2026-09-09T13:22:31.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "terraform",
-    "releaseVersion": "v1.16.2"
   },
   {
     "id": "cilium-910d05dfd62f",
@@ -7901,122 +8026,6 @@
     "releaseRelated": true,
     "releaseProject": "cilium",
     "releaseVersion": "1.21.0-pre.2"
-  },
-  {
-    "id": "cncf-dbbc2a8533ef",
-    "title": "Whose GPUs are these, anyway? Secure, self-service metrics for multi-tenant Kubernetes",
-    "summary": "The question that stopped the meeting It was a routine cost review. The slide showed the month’s GPU spend, the biggest line on the whole infrastructure bill, and someone asked a five-word question: “Are we using...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/09/09/whose-gpus-are-these-anyway-secure-self-service-metrics-for-multi-tenant-kubernetes/",
-    "publishedDate": "2026-09-09T11:27:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "cilium-2e6bc5e1f1ec",
-    "title": "1.21.0-pre.2",
-    "summary": "Release v1.21.0-pre.2",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/1.21.0-pre.2",
-    "publishedDate": "2026-09-09T10:48:25.000Z",
-    "domain": "ebpf-cilium",
-    "topics": [
-      "cilium",
-      "ebpf",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "1.21.0-pre.2"
-  },
-  {
-    "id": "cncf-a74039093e10",
-    "title": "How cloud native goes AI native",
-    "summary": "“A sales guy writing code” used to be the lead-up to a joke. But now no one’s laughing. Designers used to sit meekly waiting for the high priests of code to make their designs real. Now...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/09/09/how-cloud-native-goes-ai-native/",
-    "publishedDate": "2026-09-09T08:13:23.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "kyverno-84913252623e",
-    "title": "v1.19.1-rc.1",
-    "summary": "No content.",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.1-rc.1",
-    "publishedDate": "2026-09-09T06:52:42.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno",
-    "releaseVersion": "v1.19.1-rc.1"
-  },
-  {
-    "id": "istio-b1cb741c9cd5",
-    "title": "Support for Istio 1.29 ends on the 12th of October, 2026",
-    "summary": "According to Istio&rsquo;s support policy, minor releases like 1.29 are supported until six weeks after the N+2 minor release (1.31 in this case). Istio 1.31 was released on the 31st of August, 2026, and support for 1.29 will end on the 12th of October, 2026. At that point we will stop back-porting fixes for security issues and critical bugs to 1.29, so we encourage you to upgrade to the latest version of Istio (1.31). If you don&rsquo;t do this you may put yourself in the position of having to ",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/support/announcing-1.29-eol/",
-    "publishedDate": "2026-09-09T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "1.29"
-  },
-  {
-    "id": "backstage-0bcd9819b6a0",
-    "title": "v1.55.0-next.2",
-    "summary": "See docs/releases/v1.55.0-next.2-changelog.md for more information.",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.55.0-next.2",
-    "publishedDate": "2026-09-08T22:51:08.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.55.0-next.2"
   },
   {
     "id": "kubernetes-20f9c0303b71",

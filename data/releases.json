@@ -1,5 +1,21 @@
 [
   {
+    "project": "etcd",
+    "version": "v3.5.35",
+    "publishedDate": "2026-10-22T21:36:15.000Z",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/v3.5.35",
+    "sourceId": "etcd",
+    "title": "v3.5.35"
+  },
+  {
+    "project": "pulumi",
+    "version": "v3.272.0",
+    "publishedDate": "2026-10-22T21:29:34.000Z",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.272.0",
+    "sourceId": "pulumi",
+    "title": "v3.272.0"
+  },
+  {
     "project": "crossplane",
     "version": "v1.20.14",
     "publishedDate": "2026-10-22T15:50:38.000Z",
@@ -38,14 +54,6 @@
     "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.11.0",
     "sourceId": "oci-oke",
     "title": "v9.11.0"
-  },
-  {
-    "project": "pulumi",
-    "version": "v3.271.0",
-    "publishedDate": "2026-10-21T18:02:55.000Z",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.271.0",
-    "sourceId": "pulumi",
-    "title": "pkg/v3.271.0: Changelog and go.mod updates for v3.271.0 (#25312)"
   },
   {
     "project": "tempo",
@@ -238,13 +246,5 @@
     "url": "https://www.hashicorp.com/blog/terraform-116-completes-actions-lifecycles-and-brings-imports-into-child-modules",
     "sourceId": "hashicorp",
     "title": "Terraform 1.16 completes Actions lifecycles and brings imports into child modules"
-  },
-  {
-    "project": "etcd",
-    "version": "v3.7.2",
-    "publishedDate": "2026-09-22T21:22:39.000Z",
-    "url": "https://github.com/etcd-io/etcd/releases/tag/v3.7.2",
-    "sourceId": "etcd",
-    "title": "v3.7.2"
   }
 ]
