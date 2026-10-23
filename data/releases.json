@@ -1,19 +1,35 @@
 [
   {
+    "project": "kyverno",
+    "version": "v1.19.2",
+    "publishedDate": "2026-10-23T04:36:19.000Z",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2",
+    "sourceId": "kyverno",
+    "title": "v1.19.2"
+  },
+  {
+    "project": "karpenter",
+    "version": "v1.14.3",
+    "publishedDate": "2026-10-23T00:00:52.000Z",
+    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.14.3",
+    "sourceId": "karpenter",
+    "title": "v1.14.3"
+  },
+  {
     "project": "etcd",
-    "version": "v3.5.35",
-    "publishedDate": "2026-10-22T21:36:15.000Z",
-    "url": "https://github.com/etcd-io/etcd/releases/tag/v3.5.35",
+    "version": "v3.7.3",
+    "publishedDate": "2026-10-22T23:12:51.000Z",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/v3.7.3",
     "sourceId": "etcd",
-    "title": "v3.5.35"
+    "title": "v3.7.3"
   },
   {
     "project": "pulumi",
     "version": "v3.272.0",
-    "publishedDate": "2026-10-22T21:29:34.000Z",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.272.0",
+    "publishedDate": "2026-10-22T22:07:54.000Z",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.272.0",
     "sourceId": "pulumi",
-    "title": "v3.272.0"
+    "title": "pkg/v3.272.0: Changelog and go.mod updates for v3.272.0 (#25352)"
   },
   {
     "project": "crossplane",
@@ -72,14 +88,6 @@
     "title": "3.15.1 / 2026-10-21"
   },
   {
-    "project": "kyverno",
-    "version": "v1.19.2",
-    "publishedDate": "2026-10-21T15:33:13.000Z",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2",
-    "sourceId": "kyverno",
-    "title": "v1.19.2"
-  },
-  {
     "project": "opentofu",
     "version": "v1.13.2",
     "publishedDate": "2026-10-21T14:36:09.000Z",
@@ -134,14 +142,6 @@
     "url": "https://github.com/vectordotdev/vector/releases/tag/v0.60.0",
     "sourceId": "vector",
     "title": "v0.60.0"
-  },
-  {
-    "project": "karpenter",
-    "version": "v1.14.2",
-    "publishedDate": "2026-10-16T21:52:03.000Z",
-    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.14.2",
-    "sourceId": "karpenter",
-    "title": "v1.14.2"
   },
   {
     "project": "helm",

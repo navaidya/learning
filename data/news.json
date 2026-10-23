@@ -1,5 +1,184 @@
 [
   {
+    "id": "kyverno-a64b97845b2a",
+    "title": "v1.19.2",
+    "summary": "Security Kyverno v1.19.2 addresses 24 published GitHub Security Advisories: 9 Critical, 14 High, and 1 Moderate. The fixes include: Cherry-pick workflow script-injection hardening (Critical): GHSA-5gq8-3xxc-jm92 (#18014). API path validation and namespace confinement (Critical): GHSA-3xfv-vq8x-qhg4, GHSA-pcx2-xcq4-65vf, GHSA-4pqm-wqq6-h9q2, GHSA-p58h-r4j3-h5vx, and GHSA-rcxg-3f92-3mgr (#17984, #18021). NamespacedMutatingPolicy target confinement (Critical and High): GHSA-jcw5-3wcg-fqx5, GHSA-f96",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2",
+    "publishedDate": "2026-10-23T04:36:19.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno",
+    "releaseVersion": "v1.19.2"
+  },
+  {
+    "id": "karpenter-cfdd4a3ab17e",
+    "title": "v1.14.3",
+    "summary": "Chores bump go to 1.26.10 and golang.org/x/net to v0.60.0 (release-v1.14.x) (#3454) #3454 (Derek Frank) cherrypicks for v1.14.3 (#3462) #3462 (Derek Frank)",
+    "source": "Karpenter",
+    "sourceId": "karpenter",
+    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.14.3",
+    "publishedDate": "2026-10-23T00:00:52.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "karpenter",
+      "kubernetes",
+      "autoscaling"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "karpenter",
+    "releaseVersion": "v1.14.3"
+  },
+  {
+    "id": "etcd-8adf60e73140",
+    "title": "v3.7.3",
+    "summary": "Please check out CHANGELOG for a full list of changes. And make sure to read upgrade guide before upgrading etcd (there may be breaking changes). For installation guides, please check out play.etcd.io and operating etcd. Latest support status for common architectures and operating systems can be found at supported platforms. Linux ETCD_VER=v3.7.3 # choose either URL GOOGLE_URL=https://storage.googleapis.com/etcd GITHUB_URL=https://github.com/etcd-io/etcd/releases/download DOWNLOAD_URL=${GOOGLE_U",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/v3.7.3",
+    "publishedDate": "2026-10-22T23:12:51.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.7.3"
+  },
+  {
+    "id": "etcd-4ce165b63c6f",
+    "title": "tests/v3.7.3",
+    "summary": "v3.7.3",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/tests%2Fv3.7.3",
+    "publishedDate": "2026-10-22T23:03:11.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.7.3"
+  },
+  {
+    "id": "etcd-67635dd9bcab",
+    "title": "server/v3.7.3",
+    "summary": "v3.7.3",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/server%2Fv3.7.3",
+    "publishedDate": "2026-10-22T23:03:05.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.7.3"
+  },
+  {
+    "id": "etcd-44de31e4eac3",
+    "title": "v3.6.16",
+    "summary": "Please check out CHANGELOG for a full list of changes. And make sure to read upgrade guide before upgrading etcd (there may be breaking changes). For installation guides, please check out play.etcd.io and operating etcd. Latest support status for common architectures and operating systems can be found at supported platforms. Linux ETCD_VER=v3.6.16 # choose either URL GOOGLE_URL=https://storage.googleapis.com/etcd GITHUB_URL=https://github.com/etcd-io/etcd/releases/download DOWNLOAD_URL=${GOOGLE_",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/v3.6.16",
+    "publishedDate": "2026-10-22T23:00:22.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.6.16"
+  },
+  {
+    "id": "etcd-0886fd624661",
+    "title": "tests/v3.6.16",
+    "summary": "v3.6.16",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/tests%2Fv3.6.16",
+    "publishedDate": "2026-10-22T22:54:42.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.6.16"
+  },
+  {
+    "id": "etcd-7bd43507e789",
+    "title": "server/v3.6.16",
+    "summary": "v3.6.16",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/server%2Fv3.6.16",
+    "publishedDate": "2026-10-22T22:54:36.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.6.16"
+  },
+  {
+    "id": "pulumi-b1904c1e6917",
+    "title": "pkg/v3.272.0: Changelog and go.mod updates for v3.272.0 (#25352)",
+    "summary": "Co-authored-by: github-actions github-actions@github.com",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.272.0",
+    "publishedDate": "2026-10-22T22:07:54.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.272.0"
+  },
+  {
     "id": "etcd-c20d0d9a2baf",
     "title": "v3.5.35",
     "summary": "Please check out CHANGELOG for a full list of changes. And make sure to read upgrade guide before upgrading etcd (there may be breaking changes). For installation guides, please check out play.etcd.io and operating etcd. Latest support status for common architectures and operating systems can be found at supported platforms. Linux ETCD_VER=v3.5.35 # choose either URL GOOGLE_URL=https://storage.googleapis.com/etcd GITHUB_URL=https://github.com/etcd-io/etcd/releases/download DOWNLOAD_URL=${GOOGLE_",
@@ -729,26 +908,6 @@
     "releaseRelated": true,
     "releaseProject": "tempo",
     "releaseVersion": "v3.0.5"
-  },
-  {
-    "id": "kyverno-a64b97845b2a",
-    "title": "v1.19.2",
-    "summary": "What's Changed feat: Add filter field to imageExtractors for wildcard array filtering by @arewm in #16269 perf: reduce engine context checkpoint copy cost by @ANAMASGARD in #17565 ci: record failed job instances in workflow failure issues (Cherry-pick #16889) by @kyverno-pr-updater[bot] in #17587 perf(cel): build the request activation once per admission request (Cherry-pick #17572) by @kyverno-pr-updater[bot] in #17588 test(ci): CEL admission-path allocation-regression gate (post-merge) (Cherry",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2",
-    "publishedDate": "2026-10-21T15:33:13.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno",
-    "releaseVersion": "v1.19.2"
   },
   {
     "id": "grafana-9e65cdc52c5b",
@@ -7836,157 +7995,6 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "openai-4d4e7920d8a7",
-    "title": "Now everyone can put data to work",
-    "summary": "Meet the Data agent in ChatGPT Work. Connect company data, uncover insights, and build interactive dashboards with AI using natural language.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/put-data-to-work",
-    "publishedDate": "2026-09-10T15:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "pulumi-a85b5129aecd",
-    "title": "pkg/v3.262.0: Changelog and go.mod updates for v3.262.0 (#24624)",
-    "summary": "Co-authored-by: github-actions github-actions@github.com",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.262.0",
-    "publishedDate": "2026-09-10T12:16:24.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.262.0"
-  },
-  {
-    "id": "pulumi-5364b560f4e5",
-    "title": "v3.262.0",
-    "summary": "3.262.0 (2026-09-10) Features [engine] Support importing a pulumi:index:Stash resource. The stash adopts the given id and holds a null value, and the program's configured input then applies as an update #24544 Bug Fixes [auto/go] Match wrapped errors in the Automation API error predicates, and unwrap the underlying cause #24197 [cli/deployment] Stop pulumi deployment settings edit clearing settings it was not asked to change, let --branch and --commit replace one another rather than be combined,",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.262.0",
-    "publishedDate": "2026-09-10T11:37:48.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.262.0"
-  },
-  {
-    "id": "cncf-cb7194d443ef",
-    "title": "Kubernetes disaster recovery: Guidance from three reproducible failure scenarios",
-    "summary": "Scope This document describes three failure scenarios that separate having backups from being able to recover, and the guidance that follows from each. Every scenario is reproducible on a laptop from the lab repository above, and...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/09/10/kubernetes-disaster-recovery-guidance-from-three-reproducible-failure-scenarios/",
-    "publishedDate": "2026-09-10T11:37:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "pulumi-2ca0bb3ea8f3",
-    "title": "sdk/v3.262.0: Update CheckRequest/Response to use property.Map (#24619)",
-    "summary": "Took the chance to rename some of the fields here as well, given the TODO. - // TODO Change to (State, Input) - Olds, News resource.PropertyMap - // OldOutputs is the previously persisted outputs of the resource, if any. - OldOutputs resource.PropertyMap + // NewInputs are the new inputs for the resource from the program. + NewInputs property.Map + // OldInputs are the previously persisted inputs of the resource, if any. + OldInputs property.Map + // OldOutputs are the previously persisted outpu",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.262.0",
-    "publishedDate": "2026-09-10T09:29:13.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.262.0"
-  },
-  {
-    "id": "kyverno-8c710d687790",
-    "title": "kyverno-policies-chart-3.9.1",
-    "summary": "kyverno-policies-chart-3.9.1",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-policies-chart-3.9.1",
-    "publishedDate": "2026-09-10T07:23:01.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno"
-  },
-  {
-    "id": "kyverno-4dd064779ff7",
-    "title": "kyverno-chart-3.9.1",
-    "summary": "kyverno-chart-3.9.1",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-chart-3.9.1",
-    "publishedDate": "2026-09-10T07:23:01.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno"
-  },
-  {
-    "id": "kyverno-baccad3abf05",
-    "title": "v1.19.1",
-    "summary": "What's Changed fix: bump Go 1.26.6 and x/net to resolve CVE-2026-39821 by @Manoj-Kumar-Selvaraj in #17230 fix: update Go to address CVE-2026-56853 by @Sashang-debug in #17232 Fix missing autogen webhook expansion for NamespacedValidatingPolicy (Cherry-pick #17262) by @kyverno-pr-updater[bot] in #17273 fix: apply HTTP blocklist to apiCall.service executor (cherry-pick #17234) by @realshuting in #17298 fix: harden apiCall.service egress proxy path and cover CABundle branch (Cherry-pick #17299) by ",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.1",
-    "publishedDate": "2026-09-10T07:22:34.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno",
-    "releaseVersion": "v1.19.1"
   },
   {
     "id": "kubernetes-06f4b9d8c79c",

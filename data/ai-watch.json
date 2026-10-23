@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-22T22:15:30.000Z",
+    "publishedDate": "2026-10-23T04:59:54.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,46 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "pydantic-ai-df7038aad77e",
+    "title": "v2.60.0 (2026-10-22)",
+    "summary": "What's Changed ⚠️ Compatibility Notes Raise model error categories like ModelRateLimitError from embedding models by @DouweM in #10804 Add usage_limits, deadline, run_id and conversation_id to ModelSelectionContext by @DouweM in #10856 Default BedrockConverseModel's maxTokens to Claude's maximum output, streaming such requests behind the scenes by @DouweM in #10845 Deprecate RetryPromptPart in favor of ToolReturnPart(outcome='retried') and RetryFeedbackPart by @dsfaccini in #8094 Summarize harne",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.60.0",
+    "publishedDate": "2026-10-23T01:44:06.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.60.0"
+  },
+  {
+    "id": "phoenix-7178f443bc08",
+    "title": "arize-phoenix: v20.25.0",
+    "summary": "20.25.0 (2026-10-22) Features factory: scaffold managed agents issue-to-PR factory (#17020) (e5e360b) Bug Fixes factory: keep claude-lock.json on a factory-state branch instead of main (#17169) (2e131a8) sandbox: keep teardown alive on cancellation (#17166) (2779b46) server: format the ID in the experiments 404 error details (#17079) (33ed20a) server: work around graphql-core 3.3.0 subfield cache collision in multi-root queries (#17100) (80f2a1d) Documentation factory: document switching the fac",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.25.0",
+    "publishedDate": "2026-10-23T00:33:33.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v20.25.0"
   },
   {
     "id": "langfuse-7a865c91e916",
