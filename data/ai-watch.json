@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-23T17:15:58.000Z",
+    "publishedDate": "2026-10-23T22:00:58.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,26 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "phoenix-6d7a7aa69caa",
+    "title": "arize-phoenix: v20.26.0",
+    "summary": "20.26.0 (2026-10-23) Features factory: link session IDs in factory comments to the Claude Console (#17192) (b022cfd) factory: nominate factory candidates in triage and dispatch trusted ones (#17170) (2dcd97c) server: add service.version to the server's OpenTelemetry resource (#17212) (6933827) Bug Fixes deps: update arize-phoenix-evals to 3.9.3 (#17175) (846ccbf) Documentation agents: add guidance for enabling PR auto-merge (#17184) (d26ca5a) integrations: add Pipecat tracing page (#17180) (be3e",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.26.0",
+    "publishedDate": "2026-10-23T18:11:17.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v20.26.0"
   },
   {
     "id": "langgraph-acbd74fc043d",

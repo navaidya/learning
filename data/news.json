@@ -1,5 +1,45 @@
 [
   {
+    "id": "gateway-api-ce943420720d",
+    "title": "v1.7.0-rc.3",
+    "summary": "Note: v1.7.0-rc.2 was retired due to a problem on its release. Major Changes Since v1.7.0-rc.1 Feature Added pre-routing listener filters (filters) to ListenerSet (GEP-5224). (#5370, @snorwin) Bug or Regression Reverted HTTPRouteRetry.Attempts back to *int and lowered its minimum value to 0 so retries can be disabled per rule. (#5387, @mikemorris) Added CEL validation for LabelKey in XBackend's endpointSelector.matchLabels. (#5397, @snorwin) Marked the TLSRouteMixedMode feature as Standard chann",
+    "source": "Gateway API",
+    "sourceId": "gateway-api",
+    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.7.0-rc.3",
+    "publishedDate": "2026-10-23T22:13:19.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "gateway-api",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "gateway-api",
+    "releaseVersion": "v1.7.0-rc.3"
+  },
+  {
+    "id": "gateway-api-592d36af92da",
+    "title": "conformance/v1.7.0-rc.3: chore: release v1.7.0-rc.3 (#5423)",
+    "summary": "Signed-off-by: Ricardo Pchevuzinske Katz katz@redhat.com",
+    "source": "Gateway API",
+    "sourceId": "gateway-api",
+    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/conformance%2Fv1.7.0-rc.3",
+    "publishedDate": "2026-10-23T20:16:59.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "gateway-api",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "gateway-api",
+    "releaseVersion": "v1.7.0-rc.3"
+  },
+  {
     "id": "gateway-api-eccf0d867e09",
     "title": "v1.7.0-rc.2",
     "summary": "Feature Added pre-routing listener filters (filters) to ListenerSet (GEP-5224). (#5370, @snorwin) Bug or Regression Reverted HTTPRouteRetry.Attempts back to *int and lowered its minimum value to 0 so retries can be disabled per rule. (#5387, @mikemorris) Added CEL validation for LabelKey in XBackend's endpointSelector.matchLabels. (#5397, @snorwin) Marked the TLSRouteMixedMode feature as Standard channel rather than Experimental. (#5412, @rikatz) Lowered the go directive in go.mod and conformanc",
@@ -7909,41 +7949,6 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes",
     "releaseVersion": "v1.0.0"
-  },
-  {
-    "id": "grafana-585608a8bdff",
-    "title": "Digital Experience Monitoring with Grafana Cloud: Session Replay, synthetic checks, and faster investigations",
-    "summary": "When something breaks in production, the questions that matter most are also the toughest to answer from metrics alone: who was affected, what did they actually see, and is this worth waking someone up for? Answering those questions requires a fuller picture of the issue and its impact on your users. That’s where Digital Experience Monitoring (DEM) in Grafana Cloud comes in. By combining Frontend Observability and Synthetic Monitoring, DEM connects real user experiences with proactive testing, h",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/digital-experience-monitoring-with-grafana-cloud-session-replay-synthetic-checks-and-faster-investigations/",
-    "publishedDate": "2026-09-14T18:02:58.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "opentelemetry-6c9203505e82",
-    "title": "Inside the LLM Call: GenAI Observability with OpenTelemetry",
-    "summary": "Your AI agent just took 45 seconds to answer a simple question. Was it the model? A slow tool call? A retry loop? Every time an application calls an LLM, a chain of model calls, tool invocations, and token exchanges happens behind the scenes — and without observability, you are guessing. The OpenTelemetry Semantic Conventions for Generative AI give you that visibility. They standardize how GenAI operations are recorded — the model being called, input and output token counts, and when opted in, t",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/genai-observability/",
-    "publishedDate": "2026-09-14T16:56:42.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "cncf-a433dd823abf",
