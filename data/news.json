@@ -1,5 +1,23 @@
 [
   {
+    "id": "cncf-87f276b20e85",
+    "title": "Multi-tenant GPU Kubernetes on simulated hardware with Kamaji and HAMi",
+    "summary": "GPU teams usually face a bad trade-off. Give every team its own Kubernetes cluster and you pay for a control plane per team. Put everyone in one shared cluster and you get weak isolation. Either way,...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/23/multi-tenant-gpu-kubernetes-on-simulated-hardware-with-kamaji-and-hami/",
+    "publishedDate": "2026-10-23T11:30:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "kyverno-a64b97845b2a",
     "title": "v1.19.2",
     "summary": "Security Kyverno v1.19.2 addresses 24 published GitHub Security Advisories: 9 Critical, 14 High, and 1 Moderate. The fixes include: Cherry-pick workflow script-injection hardening (Critical): GHSA-5gq8-3xxc-jm92 (#18014). API path validation and namespace confinement (Critical): GHSA-3xfv-vq8x-qhg4, GHSA-pcx2-xcq4-65vf, GHSA-4pqm-wqq6-h9q2, GHSA-p58h-r4j3-h5vx, and GHSA-rcxg-3f92-3mgr (#17984, #18021). NamespacedMutatingPolicy target confinement (Critical and High): GHSA-jcw5-3wcg-fqx5, GHSA-f96",
@@ -38,6 +56,25 @@
     "releaseRelated": true,
     "releaseProject": "karpenter",
     "releaseVersion": "v1.14.3"
+  },
+  {
+    "id": "istio-30b241750f6a",
+    "title": "Istio at KubeCon North America 2026: Let’s Connect in Salt Lake City!",
+    "summary": "Get ready for a packed agenda of Istio activities at KubeCon + CloudNativeCon North America 2026, including Istio Day sessions in the Cloud Native Theater on AI-aware traffic management, multicluster scalability, and agent identity, a ContribFest for new contributors, and chances to meet maintainers and fellow community members in person. Istio Day at Cloud Native Theater Join us at Istio Day on Wednesday, November 11 2026, part of the Cloud Native Theater at KubeCon + CloudNativeCon North Ameri",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/blog/2026/kubecon-na/",
+    "publishedDate": "2026-10-23T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "etcd-8adf60e73140",
@@ -7958,43 +7995,6 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes",
     "releaseVersion": "v1.37"
-  },
-  {
-    "id": "oci-oke-26bb4b392861",
-    "title": "v9.1.0",
-    "summary": "9.1.0 (September 9, 2026) Added Support for Configurable fault domain Redis CRR secondary and standalone conversion support with tests and documentation Bug Fix Fix ResolverEndpoint security attributes state handling ignore empty string for maximum_surge and maximum_unavailable",
-    "source": "OCI / OKE",
-    "sourceId": "oci-oke",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.1.0",
-    "publishedDate": "2026-09-10T16:32:50.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "oci",
-      "oke",
-      "oracle"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "oci-oke",
-    "releaseVersion": "v9.1.0"
-  },
-  {
-    "id": "grafana-7e4ed3474c78",
-    "title": "Custom labels in Grafana Cloud Synthetic Monitoring: New updates for consistency and ease-of-use",
-    "summary": "Labels are a powerful way to organize telemetry and define policies across Grafana Cloud, helping to streamline alerting, attribution, access control, and more. But traditionally, custom labels in Synthetic Monitoring have worked a little differently: they only lived on a single sm_check_info metric, and Grafana Cloud prefixed each one with label_. To make custom labels in Synthetic Monitoring work consistently with the rest of Grafana Cloud—without extra joins, naming conventions, or workaround",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/synthetic-monitoring-labels-update/",
-    "publishedDate": "2026-09-10T16:11:53.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "kubernetes-06f4b9d8c79c",
