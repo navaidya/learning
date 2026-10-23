@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-23T04:59:54.000Z",
+    "publishedDate": "2026-10-23T17:15:58.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,67 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "langgraph-acbd74fc043d",
+    "title": "langgraph-cli==0.4.38",
+    "summary": "Changes since cli==0.4.37 release(cli): 0.4.38 (#9411) feat(cli): add the priority section to langgraph.json (#9393) chore(deps): bump uv from 0.11.15 to 0.13.4 in /libs/cli (#9366) chore(deps): bump certifi from 2026.2.25 to 2026.10.19 in /libs/cli (#9374) chore(deps): bump the uv group across 2 directories with 1 update (#9373) fix(cli): patch missed brace-expansion dependency majors (#9360)",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.38",
+    "publishedDate": "2026-10-23T14:22:29.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "0.4.38"
+  },
+  {
+    "id": "langgraph-9398364210f2",
+    "title": "langgraph-sdk==0.4.9",
+    "summary": "Changes since sdk==0.4.8 release(sdk-py): 0.4.9 (#9398) feat(sdk-py): add Priority for thread priority settings (#9392) chore(deps): remove precautionary third-party upper bounds (#9390) chore(deps): bump certifi from 2026.2.25 to 2026.10.19 in /libs/sdk-py (#9370) chore(deps-dev): bump dotenv from 17.4.2 to 18.0.4 in /libs/cli/js-examples in the major group (#9154) chore(deps-dev): bump the minor-and-patch group in /libs/prebuilt with 6 updates (#9150)",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.9",
+    "publishedDate": "2026-10-23T14:19:24.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "0.4.9"
+  },
+  {
+    "id": "langfuse-7f45d9a2651a",
+    "title": "v4.69.0",
+    "summary": "What's Changed Features feat(ai-gateway): show per-tool setup instructions after creating a gateway key by @wochinge in #19186 feat(topics): write rules as target trace transcript by @marliessophie in #19236 feat(blob-storage): add an outbound host allowlist for blob storage endpoints by @niklassemmler in #18907 feat(web): gate self-hosted AI gateway on LANGFUSE_AI_GATEWAY_DEPLOYED by @wochinge in #19237 feat(tracing): show requested skill loads and file paths by @tobi12345 in #19239 feat(ai-gat",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.69.0",
+    "publishedDate": "2026-10-23T14:03:13.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.69.0"
   },
   {
     "id": "pydantic-ai-df7038aad77e",

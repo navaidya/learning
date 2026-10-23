@@ -1,19 +1,35 @@
 [
   {
+    "project": "gateway-api",
+    "version": "v1.7.0-rc.2",
+    "publishedDate": "2026-10-23T17:52:19.000Z",
+    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.7.0-rc.2",
+    "sourceId": "gateway-api",
+    "title": "v1.7.0-rc.2"
+  },
+  {
+    "project": "karpenter",
+    "version": "v1.15.1",
+    "publishedDate": "2026-10-23T17:31:13.000Z",
+    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.15.1",
+    "sourceId": "karpenter",
+    "title": "v1.15.1"
+  },
+  {
+    "project": "cilium",
+    "version": "1.20.4",
+    "publishedDate": "2026-10-23T14:51:39.000Z",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.20.4",
+    "sourceId": "cilium",
+    "title": "1.20.4"
+  },
+  {
     "project": "kyverno",
     "version": "v1.19.2",
     "publishedDate": "2026-10-23T04:36:19.000Z",
     "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2",
     "sourceId": "kyverno",
     "title": "v1.19.2"
-  },
-  {
-    "project": "karpenter",
-    "version": "v1.14.3",
-    "publishedDate": "2026-10-23T00:00:52.000Z",
-    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.14.3",
-    "sourceId": "karpenter",
-    "title": "v1.14.3"
   },
   {
     "project": "etcd",
@@ -152,14 +168,6 @@
     "title": "Helm v3.22.1"
   },
   {
-    "project": "cilium",
-    "version": "1.20.3",
-    "publishedDate": "2026-10-15T15:26:34.000Z",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.20.3",
-    "sourceId": "cilium",
-    "title": "1.20.3"
-  },
-  {
     "project": "holmesgpt",
     "version": "0.45.0",
     "publishedDate": "2026-10-15T08:20:25.000Z",
@@ -190,14 +198,6 @@
     "url": "https://github.com/containerd/containerd/releases/tag/v2.3.7",
     "sourceId": "containerd",
     "title": "containerd 2.3.7"
-  },
-  {
-    "project": "gateway-api",
-    "version": "v1.7.0-rc.1",
-    "publishedDate": "2026-10-08T23:54:16.000Z",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.7.0-rc.1",
-    "sourceId": "gateway-api",
-    "title": "v1.7.0-rc.1"
   },
   {
     "project": "kubernetes-releases",

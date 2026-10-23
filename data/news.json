@@ -1,5 +1,204 @@
 [
   {
+    "id": "gateway-api-eccf0d867e09",
+    "title": "v1.7.0-rc.2",
+    "summary": "Feature Added pre-routing listener filters (filters) to ListenerSet (GEP-5224). (#5370, @snorwin) Bug or Regression Reverted HTTPRouteRetry.Attempts back to *int and lowered its minimum value to 0 so retries can be disabled per rule. (#5387, @mikemorris) Added CEL validation for LabelKey in XBackend's endpointSelector.matchLabels. (#5397, @snorwin) Marked the TLSRouteMixedMode feature as Standard channel rather than Experimental. (#5412, @rikatz) Lowered the go directive in go.mod and conformanc",
+    "source": "Gateway API",
+    "sourceId": "gateway-api",
+    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.7.0-rc.2",
+    "publishedDate": "2026-10-23T17:52:19.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "gateway-api",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "gateway-api",
+    "releaseVersion": "v1.7.0-rc.2"
+  },
+  {
+    "id": "karpenter-0180914be025",
+    "title": "v1.15.1",
+    "summary": "Chores cherrypicks for v1.15.1 (#3463) #3463 (Derek Frank)",
+    "source": "Karpenter",
+    "sourceId": "karpenter",
+    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.15.1",
+    "publishedDate": "2026-10-23T17:31:13.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "karpenter",
+      "kubernetes",
+      "autoscaling"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "karpenter",
+    "releaseVersion": "v1.15.1"
+  },
+  {
+    "id": "openai-298c8de07d18",
+    "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+    "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+    "publishedDate": "2026-10-23T17:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "opentelemetry-3d5a54dab4dc",
+    "title": "Help us understand how you use OpenTelemetry's ecosystem lists",
+    "summary": "Do you use OpenTelemetry&rsquo;s registry or ecosystem lists? Comment on the issue and tell us which pages you need and why. We are reviewing the future of these pages. Understanding how people use them will help us focus our efforts within the maintainer time available. Which pages are affected? We have frozen new entries and updates to the following lists while we consider retiring or changing them: Registry: libraries, Collector components, and other tools for using and extending OpenTelemetr",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/ecosystem-lists-user-feedback/",
+    "publishedDate": "2026-10-23T16:07:27.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cilium-e26fa5c7874b",
+    "title": "1.20.4",
+    "summary": "Security patch release Out-of-band security patch release to fix CVE-2026-111943 (golang/go#82345): upgrades Go to 1.26.10 so that the compromised eMudhra intermediate CA certificates are no longer trusted, and updates all dependencies to their latest patch versions. Summary of Changes Minor Changes: alibabacloud: support RRSA (RAM Roles for Service Accounts) credentials in the IPAM allocator, alongside static AccessKeys and ECS instance RAM roles (Backport PR #49474, Upstream PR #49093, @4n4nd)",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.20.4",
+    "publishedDate": "2026-10-23T14:51:39.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.20.4"
+  },
+  {
+    "id": "cilium-13df71db286e",
+    "title": "1.19.10",
+    "summary": "Security patch release Out-of-band security patch release to fix CVE-2026-111943 (golang/go#82345): upgrades Go to 1.26.10 so that the compromised eMudhra intermediate CA certificates are no longer trusted, and updates all dependencies to their latest patch versions. Summary of Changes Bugfixes: CiliumEnvoyConfig now only redirects Services in its own namespace, as documented; service references in CiliumClusterwideEnvoyConfig without a namespace default to \"default\" again. (Backport PR #49475, ",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.19.10",
+    "publishedDate": "2026-10-23T14:51:33.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "ebpf-cilium",
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.19.10"
+  },
+  {
+    "id": "cilium-5020de2b93db",
+    "title": "1.18.16",
+    "summary": "Security patch release Out-of-band security patch release to fix CVE-2026-111943 (golang/go#82345): upgrades Go to 1.26.10 so that the compromised eMudhra intermediate CA certificates are no longer trusted, and updates all dependencies to their latest patch versions. Summary of Changes Bugfixes: CiliumEnvoyConfig now only redirects Services in its own namespace, as documented; service references in CiliumClusterwideEnvoyConfig without a namespace default to \"default\" again. (Backport PR #49476, ",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.18.16",
+    "publishedDate": "2026-10-23T14:51:27.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "ebpf-cilium",
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.18.16"
+  },
+  {
+    "id": "cilium-c62625dfc0b2",
+    "title": "1.20.4",
+    "summary": "Release v1.20.4",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/1.20.4",
+    "publishedDate": "2026-10-23T14:11:32.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.20.4"
+  },
+  {
+    "id": "cilium-be8084c281ea",
+    "title": "1.19.10",
+    "summary": "Release v1.19.10",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/1.19.10",
+    "publishedDate": "2026-10-23T14:10:40.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.19.10"
+  },
+  {
+    "id": "cilium-6e232668b99a",
+    "title": "1.18.16",
+    "summary": "Release v1.18.16",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/1.18.16",
+    "publishedDate": "2026-10-23T14:10:04.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.18.16"
+  },
+  {
     "id": "cncf-87f276b20e85",
     "title": "Multi-tenant GPU Kubernetes on simulated hardware with Kamaji and HAMi",
     "summary": "GPU teams usually face a bad trade-off. Give every team its own Kubernetes cluster and you pay for a control plane per team. Put everyone in one shared cluster and you get weak isolation. Either way,...",
@@ -7747,25 +7946,6 @@
     "releaseRelated": false
   },
   {
-    "id": "k8sgpt-25f98b32b4d6",
-    "title": "v0.4.39",
-    "summary": "0.4.39 (2026-09-14) Features add --resource flag to analyze a single resource (#1761) (6863057) add ValidatingAdmissionPolicy analyzer (#1765) (c520d4a) Bug Fixes anonymise resource names in event-derived failures (#1778) (1813838) deps: update module google.golang.org/grpc to v1.83.1 [security] (#1772) (e69dbc7) deps: update module google.golang.org/grpc to v1.83.2 [security] (#1780) (9c515b0) do not also report an unsupported scaleTargetRef as missing (#1729) (48737a8) filter service events by",
-    "source": "K8sGPT",
-    "sourceId": "k8sgpt",
-    "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.39",
-    "publishedDate": "2026-09-14T14:25:02.000Z",
-    "domain": "aiops",
-    "topics": [
-      "k8sgpt",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "k8sgpt",
-    "releaseVersion": "v0.4.39"
-  },
-  {
     "id": "cncf-a433dd823abf",
     "title": "Cilium 1.20: Gateway API ExternalAuth, TCPRoute/UDPRoute, ENI IPAM for IPv6, and more",
     "summary": "Cilium 1.20, the second major open source Cilium release of 2026 after Cilium 1.19, is finally here. Three themes stand out in this release: Thank you to every contributor, reviewer and maintainer who made Cilium 1.20...",
@@ -7787,48 +7967,6 @@
     "releaseVersion": "1.20"
   },
   {
-    "id": "argo-e7ed44150861",
-    "title": "v3.5.3",
-    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.3/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.3/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container imag",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.3",
-    "publishedDate": "2026-09-14T08:03:40.000Z",
-    "domain": "gitops",
-    "topics": [
-      "gitops",
-      "argo-cd",
-      "argo",
-      "argocd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "v3.5.3"
-  },
-  {
-    "id": "argo-c4413eb5b8c3",
-    "title": "v3.4.9",
-    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.4.9/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.4.9/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container imag",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.4.9",
-    "publishedDate": "2026-09-14T06:45:58.000Z",
-    "domain": "gitops",
-    "topics": [
-      "gitops",
-      "argo-cd",
-      "argo",
-      "argocd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "v3.4.9"
-  },
-  {
     "id": "kubernetes-b23e96a33235",
     "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
     "summary": "I'm excited to announce that native histogram support for Kubernetes metrics is graduating to Beta and is enabled by default in Kubernetes v1.37! Native histograms (previously introduced as Alpha in Kubernetes v1.36 under KEP-5808) bring high-resolution, low-cardinality observability to Kubernetes metrics. By adopting Prometheus Native Histograms, Kubernetes components now expose latency and duration metrics with far greater accuracy while significantly reducing telemetry storage and scraping ov",
@@ -7846,137 +7984,6 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes",
     "releaseVersion": "v1.37"
-  },
-  {
-    "id": "cncf-0c250d6c4e83",
-    "title": "KubeCon + CloudNativeCon North America 2026: Your Week in Salt Lake City",
-    "summary": "This November, the cloud native community is heading to Salt Lake City. From November 9–12, 2026, KubeCon + CloudNativeCon North America will bring together adopters and technologists from across open source and cloud native communities for...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/09/11/kubecon-cloudnativecon-north-america-2026-your-week-in-salt-lake-city/",
-    "publishedDate": "2026-09-11T12:29:33.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "backstage-0ea3350529d2",
-    "title": "v1.49.7",
-    "summary": "This patch release improves OAuth profile normalization when processing email verification information.",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.49.7",
-    "publishedDate": "2026-09-11T11:55:25.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.49.7"
-  },
-  {
-    "id": "opentelemetry-56832c497b28",
-    "title": "Help us stabilize environment variable context propagation",
-    "summary": "A trace does not always cross a network boundary. A workflow runner starts a shell, the shell launches a build tool, and the build tool starts test processes. Batch and data-processing systems create similar chains of child processes. Without a shared way to pass trace information across these boundaries, spans from each process can end up in separate traces. If context propagation is new to you, it is the mechanism that carries information from one service or process to the next. For tracing, t",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/environment-variable-context-propagation/",
-    "publishedDate": "2026-09-11T11:01:22.000Z",
-    "domain": "tracing",
-    "topics": [
-      "tracing",
-      "opentelemetry",
-      "otel",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "cncf-cb2a80d50b55",
-    "title": "Building a reliable cloud native foundation for distributed AI training",
-    "summary": "AI workloads are changing what platform teams need from infrastructure. Provisioning GPUs and standing up a cluster no longer makes a platform “AI-ready.” Once training spans more than one node, the bottlenecks show up in places...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/09/11/building-a-reliable-cloud-native-foundation-for-distributed-ai-training/",
-    "publishedDate": "2026-09-11T11:00:00.000Z",
-    "domain": "tracing",
-    "topics": [
-      "tracing",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "backstage-b9a6349504e1",
-    "title": "v1.54.7",
-    "summary": "This patch release improves OAuth profile normalization when processing email verification information.",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.7",
-    "publishedDate": "2026-09-11T10:50:32.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.54.7"
-  },
-  {
-    "id": "openai-c7d3c8aeae42",
-    "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
-    "summary": "Learn how OpenAI evolved Habitat from a Python library into a globally distributed storage platform serving 1 billion ChatGPT users and 22M requests per second.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one",
-    "publishedDate": "2026-09-11T10:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "vector-765a97fd97a9",
-    "title": "vdev-v0.3.19",
-    "summary": "No content.",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.19",
-    "publishedDate": "2026-09-10T21:06:02.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector"
   },
   {
     "id": "kubernetes-e2763381898a",
