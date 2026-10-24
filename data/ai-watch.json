@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-24T04:22:23.000Z",
+    "publishedDate": "2026-10-24T16:20:47.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,46 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "phoenix-d85ccf5cb9e0",
+    "title": "arize-phoenix-evals: v3.9.4",
+    "summary": "3.9.4 (2026-10-24) Bug Fixes evals: apply template_format override when copying a PromptTemplate (#17071) (7121ade) evals: let sync/async client kwargs override the shared LLM kwargs (#17043) (27361d4)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-evals-v3.9.4",
+    "publishedDate": "2026-10-24T14:23:10.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v3.9.4"
+  },
+  {
+    "id": "langfuse-68cc35962e79",
+    "title": "v4.70.0",
+    "summary": "What's Changed Features feat(public-api): add unstable read-only Topics endpoints by @LysanderKie in #19104 feat(ai-gateway): update Claude Desktop setup steps and merge Claude tabs by @wochinge in #19298 feat(web): warn ClickHouse staff viewing data by @maxdeichmann in #19266 feat(web): syntax-highlight shell, TOML and JSON setup snippets by @wochinge in #19306 feat(ai-gateway): describe gateway keys inline and invite people from the keys page by @wochinge in #19310 feat(evals): runBatchEvaluat",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.70.0",
+    "publishedDate": "2026-10-24T12:54:58.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.70.0"
   },
   {
     "id": "pydantic-ai-8d6613140e4f",
