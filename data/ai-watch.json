@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-23T22:00:58.000Z",
+    "publishedDate": "2026-10-24T04:22:23.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,46 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "pydantic-ai-8d6613140e4f",
+    "title": "v2.61.0 (2026-10-23)",
+    "summary": "What's Changed ⚠️ Compatibility Notes Warn when a provider-specific thinking setting from a broader scope overrides thinking by @dsfaccini in #10231 Send the least thinking a model accepts for thinking=False on models that can't turn thinking off by @DouweM in #11036 Raise NotImplementedError for a file in a CohereModel tool return instead of dropping it by @dsfaccini in #11114 Keep concurrent workspace runs attached to their own Prefect environments by @dsfaccini in #11160 Keep bool and int inp",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.61.0",
+    "publishedDate": "2026-10-24T03:13:40.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.61.0"
+  },
+  {
+    "id": "langgraph-a4b8870eeb94",
+    "title": "langgraph==1.2.17",
+    "summary": "Changes since 1.2.16 release(langgraph): 1.2.17 (#9418) fix(langgraph): apply an explicit recursion_limit equal to the default (#9417) fix(langgraph): keep the caller's namespace in RemoteGraph.stream(subgraphs=True) (#9401) chore(deps): remove precautionary third-party upper bounds (#9390) chore(deps): bump certifi from 2026.1.4 to 2026.10.19 in /libs/langgraph (#9375) chore(deps-dev): bump the minor-and-patch group in /libs/prebuilt with 6 updates (#9150)",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.17",
+    "publishedDate": "2026-10-24T01:08:05.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "1.2.17"
   },
   {
     "id": "phoenix-6d7a7aa69caa",

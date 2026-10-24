@@ -2,7 +2,7 @@
   {
     "project": "gateway-api",
     "version": "v1.7.0-rc.3",
-    "publishedDate": "2026-10-23T22:13:19.000Z",
+    "publishedDate": "2026-10-23T22:15:01.000Z",
     "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.7.0-rc.3",
     "sourceId": "gateway-api",
     "title": "v1.7.0-rc.3"

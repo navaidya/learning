@@ -2,11 +2,11 @@
   {
     "id": "gateway-api-ce943420720d",
     "title": "v1.7.0-rc.3",
-    "summary": "Note: v1.7.0-rc.2 was retired due to a problem on its release. Major Changes Since v1.7.0-rc.1 Feature Added pre-routing listener filters (filters) to ListenerSet (GEP-5224). (#5370, @snorwin) Bug or Regression Reverted HTTPRouteRetry.Attempts back to *int and lowered its minimum value to 0 so retries can be disabled per rule. (#5387, @mikemorris) Added CEL validation for LabelKey in XBackend's endpointSelector.matchLabels. (#5397, @snorwin) Marked the TLSRouteMixedMode feature as Standard chann",
+    "summary": "Note: v1.7.0-rc.2 was retired due to a problem on its release manifests Major Changes Since v1.7.0-rc.1 Feature Added pre-routing listener filters (filters) to ListenerSet (GEP-5224). (#5370, @snorwin) Bug or Regression Reverted HTTPRouteRetry.Attempts back to *int and lowered its minimum value to 0 so retries can be disabled per rule. (#5387, @mikemorris) Added CEL validation for LabelKey in XBackend's endpointSelector.matchLabels. (#5397, @snorwin) Marked the TLSRouteMixedMode feature as Stand",
     "source": "Gateway API",
     "sourceId": "gateway-api",
     "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.7.0-rc.3",
-    "publishedDate": "2026-10-23T22:13:19.000Z",
+    "publishedDate": "2026-10-23T22:15:01.000Z",
     "domain": "kubernetes",
     "topics": [
       "kubernetes",
