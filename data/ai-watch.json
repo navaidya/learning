@@ -1,12 +1,33 @@
 [
   {
+    "id": "phoenix-1653a95ddba5",
+    "title": "arize-phoenix: v20.26.1",
+    "summary": "20.26.1 (2026-10-25) Bug Fixes playground: refresh MiniMax text model presets (#17237) (a49a47b) Documentation add star history chart and rank badge to READMEs (#17238) (3123853) integrations: add Microsoft Agent Framework tracing page (#17209) (a772dad)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.26.1",
+    "publishedDate": "2026-10-25T18:28:18.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v20.26.1"
+  },
+  {
     "id": "pydantic-ai-ec5fb94d76bf",
     "title": "CLAI2 bleeding",
     "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-25T04:56:32.000Z",
+    "publishedDate": "2026-10-25T17:43:50.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
