@@ -19,6 +19,56 @@
     "releaseProject": "pydantic-ai"
   },
   {
+    "id": "cncf-video-4709e77a36aa",
+    "title": "OpenTelemetry Beyond Observability: Security, CI/CD, and Network Management - Antoine Toulme, Cisco",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=IHb1oB_NK8o",
+    "publishedDate": "2026-10-25T00:01:08.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "video",
+      "infrastructure"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-bba336a1056d",
+    "title": "The Noisy Neighbour Inside Your GPU:... - Sagar Utekar, CrowdStrike & Oshi Gupta, Improving Pune",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=YNqpm7LH3_4",
+    "publishedDate": "2026-10-25T00:01:08.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-64960ee78d7b",
+    "title": "Vendor-Neutral GPU Observability for Kubernetes - Reza Jelveh, Dynamia.ai",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=zrGFmLHI7hg",
+    "publishedDate": "2026-10-25T00:00:19.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "phoenix-d85ccf5cb9e0",
     "title": "arize-phoenix-evals: v3.9.4",
     "summary": "3.9.4 (2026-10-24) Bug Fixes evals: apply template_format override when copying a PromptTemplate (#17071) (7121ade) evals: let sync/async client kwargs override the shared LLM kwargs (#17043) (27361d4)",
