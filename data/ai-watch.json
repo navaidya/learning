@@ -1,12 +1,33 @@
 [
   {
+    "id": "langgraph-f83301a10334",
+    "title": "langgraph-cli==0.4.39",
+    "summary": "Changes since cli==0.4.38 release(cli): 0.4.39 (#9442) feat(cli): add --json to deploy list (#9395) chore(deps): bump zod from 4.3.6 to 4.6.7 in /libs/cli/js-examples (#9432) chore(deps): bump langgraph-checkpoint-postgres from 3.1.1 to 3.1.3 in /libs/cli/uv-examples/monorepo in the uv group across 1 directory (#9422) chore(deps): bump virtualenv from 21.7.13 to 21.14.13 in /libs/cli (#9427) chore(deps): bump setuptools from 83.0.0 to 84.1.0 in /libs/cli (#9425) chore(deps): bump opentelemetry-a",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.39",
+    "publishedDate": "2026-10-26T14:16:53.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "0.4.39"
+  },
+  {
     "id": "pydantic-ai-ec5fb94d76bf",
     "title": "CLAI2 bleeding",
     "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-25T22:42:54.000Z",
+    "publishedDate": "2026-10-26T12:27:29.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +38,66 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "langfuse-3474a2929233",
+    "title": "v3.225.14",
+    "summary": "What's Changed security: rebuild to pull node.js patches test(worker): skip Azure LLM connection tests until CI key is replaced (v3 backport of #17924) by @Steffen911 in #19386 Full Changelog: v3.225.13...v3.225.14",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v3.225.14",
+    "publishedDate": "2026-10-26T12:04:35.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v3.225.14"
+  },
+  {
+    "id": "langfuse-ba9538ce2b3d",
+    "title": "v3.225.13",
+    "summary": "chore: release v3.225.13",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v3.225.13",
+    "publishedDate": "2026-10-26T11:18:39.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v3.225.13"
+  },
+  {
+    "id": "langfuse-7ca397ea7bb3",
+    "title": "v4.70.1",
+    "summary": "What's Changed chore(pricing): remove retired legacy OpenAI snapshots from the model picker by @langfuse-bot in #19176 chore(deps): bump node to 24.22.1 by @nimarb in #19339 chore(design-sync): apply fixes from the daily design-system sync by @marksalpeter in #19297 chore(design-sync): apply fixes from the daily design-system sync by @marksalpeter in #19354 feat(topics): make it work well on mobile by @nimarb in #19364 fix(web): renew expired signed URLs when native media chips reopen by @wochin",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.70.1",
+    "publishedDate": "2026-10-26T11:01:26.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.70.1"
   },
   {
     "id": "phoenix-1653a95ddba5",

@@ -1,5 +1,22 @@
 [
   {
+    "id": "cncf-4eb9d9360015",
+    "title": "Isolation. Security. Scale.",
+    "summary": "Without these three things, Agents cannot be properly implemented in a controlled environment, they will not have policy enforcement to ensure they do what they’re supposed to do, and there’s zero way of ensuring that the...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/26/isolation-security-scale/",
+    "publishedDate": "2026-10-26T11:30:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "gateway-api-ce943420720d",
     "title": "v1.7.0-rc.3",
     "summary": "Note: v1.7.0-rc.2 was retired due to a problem on its release manifests Major Changes Since v1.7.0-rc.1 Feature Added pre-routing listener filters (filters) to ListenerSet (GEP-5224). (#5370, @snorwin) Bug or Regression Reverted HTTPRouteRetry.Attempts back to *int and lowered its minimum value to 0 so retries can be disabled per rule. (#5387, @mikemorris) Added CEL validation for LabelKey in XBackend's endpointSelector.matchLabels. (#5397, @snorwin) Marked the TLSRouteMixedMode feature as Stand",
@@ -7644,26 +7661,6 @@
     "releaseRelated": true,
     "releaseProject": "crossplane",
     "releaseVersion": "v2.3.6"
-  },
-  {
-    "id": "crossplane-b0955bb6ddc4",
-    "title": "apis/v2.4.1",
-    "summary": "Release v2.4.1",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.4.1",
-    "publishedDate": "2026-09-15T10:06:07.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v2.4.1"
   },
   {
     "id": "containerd-781497ac61c8",
