@@ -1,5 +1,38 @@
 [
   {
+    "id": "cncf-cbeca2c8839f",
+    "title": "Over 500 Golden Kubestronauts: The evolving standard for cloud native mastery",
+    "summary": "Since launching the Kubestronaut program at KubeCon Paris in 2024, the community has grown faster than expected. Today, more than 570 professionals have reached an even higher bar: Golden Kubestronaut status. Becoming a standard Kubestronaut is...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/27/over-500-golden-kubestronauts-the-evolving-standard-for-cloud-native-mastery/",
+    "publishedDate": "2026-10-27T11:30:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "kubernetes-72f530f5e4c9",
+    "title": "Announcing the Workload Conformance Working Group",
+    "summary": "We are excited to announce that the Kubernetes community now has a Workload Conformance Working Group. The working group is writing a shared standard for how workloads behave at runtime on Kubernetes. To get it right, we need input from the people who build those workloads and from the people who run the clusters they're deployed on. Why workloads need a shared standardCertified Kubernetes tests the cluster, and Kubernetes AI Conformance tests whether a cluster can run AI and ML workloads. Nothi",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/10/27/announcing-workload-conformance-wg/",
+    "publishedDate": "2026-10-27T04:30:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "vector-8bdd65f6ae45",
     "title": "vdev-v0.3.36",
     "summary": "chore(ci): only fail deny on new errors and run daily (#26846)",
@@ -7654,26 +7687,6 @@
     "releaseVersion": "1.32"
   },
   {
-    "id": "argo-04315e6a173e",
-    "title": "gitops-engine/v3.6.0-rc1: chore: bump version to 3.6.0-rc1 on release-3.6 branch (#29730)",
-    "summary": "Signed-off-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com> Co-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/gitops-engine%2Fv3.6.0-rc1",
-    "publishedDate": "2026-09-15T23:18:18.000Z",
-    "domain": "gitops",
-    "topics": [
-      "gitops",
-      "argo",
-      "argocd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "v3.6.0-rc1"
-  },
-  {
     "id": "kubernetes-993e015ba316",
     "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
     "summary": "With the release of Kubernetes v1.37, the Pod-Level Resource Managers feature has graduated to Beta status (disabled by default)! First introduced as an Alpha feature in Kubernetes v1.36, this enhancement builds on Pod-Level Resources by equipping Kubelet's Topology Manager, CPU Manager, and Memory Manager to use Pod-level resource declarations (.spec.resources) directly when making hardware placement decisions. Bringing pod-level resources to node managersBefore this feature, obtaining exclusiv",
@@ -7690,26 +7703,6 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes",
     "releaseVersion": "v1.37"
-  },
-  {
-    "id": "crossplane-a04efac48598",
-    "title": "v2.4.1",
-    "summary": "v2.4.1 is a patch release scoped to fixing issues reported by users of Crossplane v2.4 and fixing security related issues in Crossplane and its dependencies. 🎉 Highlights Package revisions now take control of established objects from the revision they replace: An outgoing package revision could fail to relinquish control of the package's CRDs, leaving the incoming revision permanently unhealthy with cannot establish control of object. The provider's pod would never be created, so that provider ",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.1",
-    "publishedDate": "2026-09-15T17:16:10.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v2.4.1"
   },
   {
     "id": "backstage-ee56ce233a53",
