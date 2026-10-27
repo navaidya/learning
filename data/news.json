@@ -7692,6 +7692,26 @@
     "releaseVersion": "v1.37"
   },
   {
+    "id": "crossplane-a04efac48598",
+    "title": "v2.4.1",
+    "summary": "v2.4.1 is a patch release scoped to fixing issues reported by users of Crossplane v2.4 and fixing security related issues in Crossplane and its dependencies. 🎉 Highlights Package revisions now take control of established objects from the revision they replace: An outgoing package revision could fail to relinquish control of the package's CRDs, leaving the incoming revision permanently unhealthy with cannot establish control of object. The provider's pod would never be created, so that provider ",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.1",
+    "publishedDate": "2026-09-15T17:16:10.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.4.1"
+  },
+  {
     "id": "backstage-ee56ce233a53",
     "title": "v1.55.0",
     "summary": "These are the release notes for the v1.55.0 release of Backstage. A huge thanks to the whole team of maintainers and contributors as well as the amazing Backstage Community for the hard work in getting this release developed and done. Highlights BREAKING: Removed deprecated catalog APIs and configuration This release removes several deprecated features from @backstage/plugin-catalog-backend. The catalog.enableRelationsCompatibility config option and its associated compatibility layer have been r",
@@ -9794,27 +9814,5 @@
     "releaseRelated": true,
     "releaseProject": "prometheus",
     "releaseVersion": "3.13.2"
-  },
-  {
-    "id": "oci-oke-374b276d2d86",
-    "title": "v8.25.0",
-    "summary": "8.25.0 (July 28, 2026) Added Support for Azure & GCP KMS Integration for ExaDB-XS context propagation for subset of resources in database service. Support for OCI-AWS interconnect virtual circuit fields Support for OCI GoldenGate Release 11 connections Support for Tasks for ORM : Tracking Ticket API Access Control for ADB-D and ADB-C@C Support Retention Lock for Block Backups Bug Fix Database Tools - MCP Server, DB API Gateway Config, IAM Auth (Data Plane)",
-    "source": "OCI / OKE",
-    "sourceId": "oci-oke",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v8.25.0",
-    "publishedDate": "2026-07-29T00:57:31.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "mcp",
-      "oci",
-      "oke",
-      "oracle"
-    ],
-    "importance": "high",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "oci-oke",
-    "releaseVersion": "v8.25.0"
   }
 ]
