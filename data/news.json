@@ -100,6 +100,24 @@
     "releaseVersion": "v0.164.0"
   },
   {
+    "id": "openai-d42fb1eb3362",
+    "title": "Retell uses OpenAI models to help power 100M monthly calls",
+    "summary": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/retell-ai",
+    "publishedDate": "2026-10-27T15:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "grafana-31588df96572",
     "title": "Agent Observability FAQ: Understand the value of monitoring, evaluating, and improving your AI agents",
     "summary": "Agents have quickly become part of the tech landscape as organizations embrace AI across their businesses. But embracing agents also means embracing the monitoring best practices that have long been part of engineers' workflows: tracking performance, catching errors, and responding to incidents But it doesn't stop there. Agents also introduce new challenges. They can give different answers to the same question, be confidently wrong without throwing an error, and turn one request into a long chai",
@@ -2884,6 +2902,42 @@
     "source": "OpenAI Developer Updates",
     "sourceId": "openai",
     "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+    "publishedDate": "2026-10-16T00:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "openai-1d7d75b47c31",
+    "title": "How Grupo Boticário uses AI to strengthen human connections",
+    "summary": "Almost 50 years after starting in a compounding pharmacy in Paraná, the group operates a proprietary agent platform that autonomously resolves up to 80% of resellers’ operational requests—enabling the sales force to take on an advisory role.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/grupo-boticario",
+    "publishedDate": "2026-10-16T00:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "openai-827221925d8d",
+    "title": "How Localiza reorganized work around generative AI",
+    "summary": "See how Localiza uses ChatGPT Enterprise, the OpenAI API, Codex, and 60+ specialized agents to reorganize work and build AI-native mobility experiences.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/localiza-generative-ai",
     "publishedDate": "2026-10-16T00:00:00.000Z",
     "domain": "agentic-operations",
     "topics": [
@@ -7607,61 +7661,6 @@
     "releaseRelated": true,
     "releaseProject": "terraform",
     "releaseVersion": "v1.16.3"
-  },
-  {
-    "id": "openai-52752974efc0",
-    "title": "Reimagining advertising with AI",
-    "summary": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/reimagining-advertising-with-ai",
-    "publishedDate": "2026-09-16T13:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "pulumi-b911c06867f7",
-    "title": "pkg/v3.263.0: Changelog and go.mod updates for v3.263.0 (#24679)",
-    "summary": "Co-authored-by: github-actions github-actions@github.com",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.263.0",
-    "publishedDate": "2026-09-16T12:01:10.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.263.0"
-  },
-  {
-    "id": "openai-973a91148c50",
-    "title": "Hex turns complex analysis into visual reports with GPT‑6 Astra",
-    "summary": "GPT-6 Astra helps Hex’s data agents turn answers into interactive visualizations that employees are proud to share.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/hex-gpt-6-astra",
-    "publishedDate": "2026-09-16T12:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "opentelemetry-7b7c72fb5cd9",
