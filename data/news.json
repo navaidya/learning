@@ -1,5 +1,124 @@
 [
   {
+    "id": "prometheus-b8e6426bf452",
+    "title": "v3.16.0-rc.1",
+    "summary": "v3.16.0-rc.1",
+    "source": "Prometheus",
+    "sourceId": "prometheus",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.16.0-rc.1",
+    "publishedDate": "2026-10-27T18:25:52.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "promql",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "prometheus",
+    "releaseVersion": "v3.16.0-rc.1"
+  },
+  {
+    "id": "backstage-2ebb625a4dec",
+    "title": "v1.57.0-next.0",
+    "summary": "See docs/releases/v1.57.0-next.0-changelog.md for more information.",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.57.0-next.0",
+    "publishedDate": "2026-10-27T17:44:00.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.57.0-next.0"
+  },
+  {
+    "id": "vector-eb6c70bc239e",
+    "title": "vdev-v0.3.37",
+    "summary": "chore(ci): announce releases on Discord (#26897)",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.37",
+    "publishedDate": "2026-10-27T17:32:18.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
+    "id": "prometheus-10985660e895",
+    "title": "v3.16.0-rc.0",
+    "summary": "v3.16.0-rc.0",
+    "source": "Prometheus",
+    "sourceId": "prometheus",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.16.0-rc.0",
+    "publishedDate": "2026-10-27T15:41:23.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "promql",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "prometheus",
+    "releaseVersion": "v3.16.0-rc.0"
+  },
+  {
+    "id": "opentelemetry-c22fb3e04be8",
+    "title": "OpenTelemetry Transformation Language reaches v1",
+    "summary": "The OpenTelemetry Transformation Language (OTTL) is now v1. Starting with opentelemetry-collector-contrib v0.164.0, OTTL is stable for traces, metrics, and logs. The release of v1 means OTTL meets the Collector&rsquo;s &lsquo;stable&rsquo; stability criteria for testing, benchmarking, documentation, and telemetry. It also comes with a compatibility promise for all of 1.x. If you write OTTL statements, the syntax and the standard functions stay backward compatible. If you build your own component",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/ottl-v1/",
+    "publishedDate": "2026-10-27T15:00:47.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry",
+    "releaseVersion": "v0.164.0"
+  },
+  {
+    "id": "grafana-31588df96572",
+    "title": "Agent Observability FAQ: Understand the value of monitoring, evaluating, and improving your AI agents",
+    "summary": "Agents have quickly become part of the tech landscape as organizations embrace AI across their businesses. But embracing agents also means embracing the monitoring best practices that have long been part of engineers' workflows: tracking performance, catching errors, and responding to incidents But it doesn't stop there. Agents also introduce new challenges. They can give different answers to the same question, be confidently wrong without throwing an error, and turn one request into a long chai",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/agent-observability-faq-understand-the-value-of-monitoring-evaluating-and-improving-your-ai-agents/",
+    "publishedDate": "2026-10-27T14:32:18.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "cncf-cbeca2c8839f",
     "title": "Over 500 Golden Kubestronauts: The evolving standard for cloud native mastery",
     "summary": "Since launching the Kubestronaut program at KubeCon Paris in 2024, the community has grown faster than expected. Today, more than 570 professionals have reached an even higher bar: Golden Kubestronaut status. Becoming a standard Kubestronaut is...",
@@ -11,6 +130,25 @@
     "topics": [
       "cncf",
       "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "openai-a3a879144b29",
+    "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+    "summary": "OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/oracle-apps-in-chatgpt",
+    "publishedDate": "2026-10-27T07:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "openai",
+      "mcp"
     ],
     "importance": "medium",
     "architectureShift": false,
@@ -7526,63 +7664,6 @@
     "releaseRelated": false
   },
   {
-    "id": "cncf-be720e47bdfd",
-    "title": "Running OpenBao on Kubernetes with a CloudNativePG PostgreSQL backend",
-    "summary": "Managing infrastructure secrets on Kubernetes needs a backend that is self-healing and free of vendor lock-in, and that is exactly what OpenBao (the Linux Foundation’s open-source fork of HashiCorp Vault) and CloudNativePG give you: an entirely...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/09/16/running-openbao-on-kubernetes-with-a-cloudnativepg-postgresql-backend/",
-    "publishedDate": "2026-09-16T11:30:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "pulumi-d5b749198345",
-    "title": "v3.263.0",
-    "summary": "3.263.0 (2026-09-15) Bug Fixes [cli/deployment] Stop pulumi deployment settings edit overwriting the source of stacks that use a provider other than GitHub, take --path-filter once per filter rather than splitting it on commas, and report an unconfigured stack from get instead of failing #24526 [engine] Fix remote component provider state migrations being skipped when the caller also supplies migrations #24620 [engine] Forward caller error hooks to remote component providers #24622 [cli/do] Erro",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.263.0",
-    "publishedDate": "2026-09-16T11:16:53.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.263.0"
-  },
-  {
-    "id": "oci-oke-a3ae99a8d7a3",
-    "title": "v9.2.0",
-    "summary": "9.2.0 (September 16, 2026) Added Support OCVP VMware binary action data sources Support for BYOK - Bring Your Own Keys for PSQL.",
-    "source": "OCI / OKE",
-    "sourceId": "oci-oke",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.2.0",
-    "publishedDate": "2026-09-16T10:56:39.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "oci",
-      "oke",
-      "oracle"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "oci-oke",
-    "releaseVersion": "v9.2.0"
-  },
-  {
     "id": "opentelemetry-7b7c72fb5cd9",
     "title": "Kubernetes attributes processor reaches v1.0.0 milestone",
     "summary": "The Kubernetes attributes processor, which enriches your telemetry with Kubernetes metadata, has officially moved to v1.0.0! You can try it out on your custom distro, and it is also available as part of the latest opentelemetry-collector-contrib and opentelemetry-collector-k8s distro releases. Being v1.0.0 means the component is now verified to fulfill the &lsquo;stable&rsquo; stability criteria including requirements around testing, benchmarking, documentation and telemetry stability. It also e",
@@ -7602,89 +7683,6 @@
     "releaseRelated": true,
     "releaseProject": "opentelemetry",
     "releaseVersion": "v1.0.0"
-  },
-  {
-    "id": "cilium-cb9ee79b9b3e",
-    "title": "1.20.2",
-    "summary": "Summary of Changes Minor Changes: gateway-api: node label selector for when hostNetwork is enabled (Backport PR #48636, Upstream PR #47463, @xtineskim) Bugfixes: aws/ipam: Fixed a bug where the operator in ENI IPAM mode would try to release prefix IPs as individual IPs even when they were in use. (Backport PR #48418, Upstream PR #48125, @41ks) aws/ipam: Fixed a bug where the operator would fail to allocate new IPs to nodes with prefix delegation enabled on subnets that ran out of prefixes. (Back",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.20.2",
-    "publishedDate": "2026-09-16T01:53:22.000Z",
-    "domain": "ebpf-cilium",
-    "topics": [
-      "cilium",
-      "ebpf",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "1.20.2"
-  },
-  {
-    "id": "cilium-94e7a93450a0",
-    "title": "1.19.8",
-    "summary": "Summary of Changes Bugfixes: aws/ipam: Fixed a bug where the operator would fail to allocate new IPs to nodes with prefix delegation enabled on subnets that ran out of prefixes. (Backport PR #48604, Upstream PR #48193, @41ks) bpf: Fix agent crash when dumping map events (Backport PR #48379, Upstream PR #48273, @joestringer) bpf: hostfw: tolerate unknown CT protocols and rely on policies (Backport PR #47620, Upstream PR #47343, @smagnani96) datapath/linux/config: fix IPV4_DIRECT_ROUTING selection",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.19.8",
-    "publishedDate": "2026-09-16T01:53:16.000Z",
-    "domain": "ebpf-cilium",
-    "topics": [
-      "cilium",
-      "ebpf",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "1.19.8"
-  },
-  {
-    "id": "cilium-26f9309d075e",
-    "title": "1.18.14",
-    "summary": "Summary of Changes Bugfixes: aws/ipam: Fixed a bug where the operator would fail to allocate new IPs to nodes with prefix delegation enabled on subnets that ran out of prefixes. (Backport PR #48607, Upstream PR #48193, @41ks) bpf: Fix agent crash when dumping map events (Backport PR #48380, Upstream PR #48273, @joestringer) datapath/linux/config: fix IPV4_DIRECT_ROUTING selection on lo device (Backport PR #48554, Upstream PR #46861, @fdomain) Fix Hubble Relay remains running during termination (",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.18.14",
-    "publishedDate": "2026-09-16T01:53:07.000Z",
-    "domain": "ebpf-cilium",
-    "topics": [
-      "ebpf-cilium",
-      "hubble",
-      "cilium",
-      "ebpf",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "1.18.14"
-  },
-  {
-    "id": "istio-f63c96f1f45a",
-    "title": "Retirement of Kubernetes integration jobs for unsupported Kubernetes versions",
-    "summary": "The Istio Test and Release Working Group is retiring CI integration tests for older Kubernetes versions from the master branch, affecting Istio versions 1.32 and newer. What&rsquo;s changing Previously, Istio would have a supported range of Kubernetes versions that were typically N-3 or N-4 of the latest Kubernetes version, but would continue testing older Kubernetes versions. Currently, this means we are testing Kubernetes 1.23 through 1.36. With test-infra PR 6048, we are removing the tested o",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/blog/2026/retirement-of-k8s-integration-jobs/",
-    "publishedDate": "2026-09-16T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "1.32"
   },
   {
     "id": "kubernetes-993e015ba316",

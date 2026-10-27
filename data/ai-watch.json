@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-27T12:50:05.000Z",
+    "publishedDate": "2026-10-27T18:41:24.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,48 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "langfuse-4ea6d2ceb3dc",
+    "title": "v4.71.0",
+    "summary": "What's Changed Features feat(ai-gateway): record model, key owner, byte and upstream error facts on generations by @hassiebp in #19161 feat(ai-gateway): product analytics for setup, credentials, invites, keys and model access by @wochinge in #19379 feat(ai-gateway): restore empty-state placeholders for providers, models and gateway API keys by @wochinge in #19391 feat(ee)!: add self-hosted government plan for lf_gov_ license keys by @Steffen911 in #19316 feat(ai-gateway): pick team recipients wi",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.71.0",
+    "publishedDate": "2026-10-27T15:03:06.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "gateway-api",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.71.0"
+  },
+  {
+    "id": "langfuse-de31179c57ad",
+    "title": "v3.225.15",
+    "summary": "What's Changed fix(web): check that an invite's project belongs to the organization (v3 backport of #19404) by @Steffen911 in #19408 fix(annotation-queues): validate queue when adding items (v3 backport of #19407) by @Steffen911 in #19409 fix(automations): mask and encrypt legacy webhook headers (v3 backport of #19207) by @Steffen911 in #19421 fix(security): require secrets again when webhook or PostHog destination changes (v3 backport of #19261) by @Steffen911 in #19422 Full Changelog: v3.225.1",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v3.225.15",
+    "publishedDate": "2026-10-27T14:40:56.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v3.225.15"
   },
   {
     "id": "pydantic-ai-ffeda51de8da",
