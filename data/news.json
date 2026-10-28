@@ -1,11 +1,222 @@
 [
   {
+    "id": "cncf-38160a4a38b0",
+    "title": "Volcano v1.16 Released: NamespaceQueue, fairshare, and a broader HyperNode ecosystem",
+    "summary": "Volcano v1.16.0 is available . v1.16.0 introduces NamespaceQueue and the fairshare plugin. Tenants can use hierarchical queues within their own namespaces to organize quotas and queue hierarchies within administrator-authorized resource pools. Fairshare brings historical resource consumption...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/28/volcano-v1-16-released-namespacequeue-fairshare-and-a-broader-hypernode-ecosystem/",
+    "publishedDate": "2026-10-28T20:45:08.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cncf",
+    "releaseVersion": "v1.16"
+  },
+  {
+    "id": "opentelemetry-8e2557b2cb46",
+    "title": "Join us for OpenTelemetry Talks and Activities at KubeCon NA 2026",
+    "summary": "The OpenTelemetry project maintainers, members of the governance committee, and technical committee are thrilled to be at KubeCon NA in Salt Lake City from November 9 - 12, 2026. Register today to join us! Read on to learn about all the events related to OpenTelemetry during KubeCon. OpenTelemetry Contribfest Join the OpenTelemetry maintainers for the OpenTelemetry Contribfest to make the project better for everyone. You can choose between several opportunities to contribute, and you can count o",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/kubecon-na/",
+    "publishedDate": "2026-10-28T20:29:41.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "pulumi-f1aae1d00811",
+    "title": "v3.273.0",
+    "summary": "3.273.0 (2026-10-28) Features [auto] Add up to the generated automation APIs for NodeJS, Python and Go #25055 [auto] Add logs commands to the generated automation APIs for NodeJS, Python and Go #25065 [pcl] Add a resourceExists builtin that checks whether a resource with a given ID exists without adopting it into the stack #25321 [sdkgen/nodejs] Generate static exists methods that check whether a resource with a given ID exists without adopting it into the stack #25329 [programgen/nodejs] Suppor",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.273.0",
+    "publishedDate": "2026-10-28T19:51:35.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.273.0"
+  },
+  {
+    "id": "opentelemetry-2fceeec47152",
+    "title": "Faster, smaller checkpoints: the File Log receiver now uses protobuf",
+    "summary": "If you run the File Log receiver with a storage extension, the Collector writes a checkpoint every time it polls your log files. That checkpoint is how the receiver remembers where it stopped reading, so a restart does not lose or duplicate logs. For years that checkpoint format was JSON. Starting with OpenTelemetry Collector Contrib v0.164.0, checkpoints are always written as protobuf. On our benchmarks, saving a checkpoint is almost 5 times faster, loading one is more than 5 times faster, and ",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/filelog-protobuf-checkpoints/",
+    "publishedDate": "2026-10-28T18:28:33.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry",
+    "releaseVersion": "v0.164.0"
+  },
+  {
+    "id": "terraform-d39e8c90964e",
+    "title": "v1.17.1",
+    "summary": "1.17.1 (October 28, 2026) BUG FIXES: fmt: The original content of a file is now preserved if Terraform experiences an error writing to the original file. (#39303) Always evaluate module policies during destroy plan (#39455) stacks: report every policy result for a replaced resource instead of only one of them (#39453)",
+    "source": "Terraform",
+    "sourceId": "terraform",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.1",
+    "publishedDate": "2026-10-28T18:02:22.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "terraform",
+    "releaseVersion": "v1.17.1"
+  },
+  {
+    "id": "prometheus-d9b54a91d71f",
+    "title": "v0.316.0-rc.2",
+    "summary": "v0.316.0-rc.2",
+    "source": "Prometheus",
+    "sourceId": "prometheus",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v0.316.0-rc.2",
+    "publishedDate": "2026-10-28T16:47:50.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "promql",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "prometheus",
+    "releaseVersion": "v0.316.0-rc.2"
+  },
+  {
+    "id": "prometheus-731caa3c3191",
+    "title": "3.16.0-rc.2 / 2026-10-27",
+    "summary": "[CHANGE] API: The experimental search endpoints now clamp batch_size to 1000. (#19731, @roidelapluie) [CHANGE] Configuration: Default --web.external-url to https when --web.config.file enables TLS. (#19241, @hexonal) [CHANGE] PromQL: Subquery samples are now included in the query TotalSamples and TotalSamplesPerStep statistics, and SamplesRead now counts reads from subqueries with an @ modifier in range queries. (#19165, @DanCech) [CHANGE] Remote write: Stop exposing the deprecated prometheus_re",
+    "source": "Prometheus",
+    "sourceId": "prometheus",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.16.0-rc.2",
+    "publishedDate": "2026-10-28T16:47:18.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "promql",
+      "observability"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "prometheus",
+    "releaseVersion": "3.16.0-rc.2"
+  },
+  {
+    "id": "grafana-e92794675a23",
+    "title": "Evaluate AI models for observability: o11y-bench joins Fireworks' Specialized Intelligence Index and reaches v1.1",
+    "summary": "When evaluating AI models for observability, generating a plausible query or explanation isn't enough. Teams need to know whether an agent's conclusions are supported by telemetry, whether its changes to dashboards actually work, and whether it can deliver reliable results consistently.This is why we built o11y-bench, Grafana Labs' open benchmark for evaluating AI models on observability and SRE tasks. And today, we're excited to share two updates: o11y-bench is now part of the Specialized Intel",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/evaluate-ai-models-for-observability-o11y-bench-joins-fireworks-specialized-intelligence-index-and-reaches-v1-1/",
+    "publishedDate": "2026-10-28T16:08:24.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "dashboards",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "grafana",
+    "releaseVersion": "v1.1"
+  },
+  {
+    "id": "pulumi-c3da962beff8",
+    "title": "sdk/v3.273.0: Update module golang.org/x/net to v0.62.0 [SECURITY] (#25431)",
+    "summary": "This PR contains the following updates: | Package | Change | Age | Confidence | |---|---|---|---| | golang.org/x/net | v0.60.0 → v0.62.0 | | | | golang.org/x/net | v0.61.0 → v0.62.0 | | | WarningSome dependencies could not be looked up. Check the Dependency Dashboard for more information. Avoid quadratic complexity when coalescing text nodes in html in golang.org/x/net CVE-2026-78661 / GO-2026-6860 More information Details When coalescing adjacent text nodes in addText and fosterParent, appendin",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.273.0",
+    "publishedDate": "2026-10-28T15:19:21.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.273.0"
+  },
+  {
+    "id": "openai-75e2017ed4c5",
+    "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+    "summary": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+    "publishedDate": "2026-10-28T13:15:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "openai-2fc8e689e413",
     "title": "Legora is building the agentic operating system for legal work",
     "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
     "source": "OpenAI Developer Updates",
     "sourceId": "openai",
     "url": "https://openai.com/index/legora-agentic-operating-system-for-legal-work",
+    "publishedDate": "2026-10-28T09:30:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "openai-41c97fe8dc29",
+    "title": "Legora is building the agentic operating system for legal work",
+    "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/legora",
     "publishedDate": "2026-10-28T09:30:00.000Z",
     "domain": "agentic-operations",
     "topics": [
@@ -2342,24 +2553,6 @@
     "releaseRelated": true,
     "releaseProject": "kyverno",
     "releaseVersion": "3.9.2"
-  },
-  {
-    "id": "opentelemetry-8e2557b2cb46",
-    "title": "Join us for OpenTelemetry Talks and Activities at KubeCon NA 2026",
-    "summary": "The OpenTelemetry project maintainers, members of the governance committee, and technical committee are thrilled to be at KubeCon NA in Salt Lake City from November 9 - 12, 2026. Register today to join us! Read on to learn about all the events related to OpenTelemetry during KubeCon. OpenTelemetry Contribfest Join the OpenTelemetry maintainers for the OpenTelemetry Contribfest to make the project better for everyone. You can choose between several opportunities to contribute, and you can count o",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/kubecon-na/",
-    "publishedDate": "2026-10-20T19:58:06.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "argo-f2c843d61c1c",
@@ -7334,89 +7527,6 @@
     "releaseRelated": false
   },
   {
-    "id": "openai-d1749ba76a98",
-    "title": "How V7 gives AI agents institutional memory",
-    "summary": "Using GPT-5.6, V7 turns scattered company files into context agents can use to complete complex, source-linked work.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/v7",
-    "publishedDate": "2026-09-21T00:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "ai-agent",
-      "openai",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "openai"
-  },
-  {
-    "id": "istio-07af3a6ea2d3",
-    "title": "Announcing Istio 1.31.1",
-    "summary": "This release contains bug fixes to improve robustness. This release note describes what&rsquo;s different between Istio 1.31.0 and 1.31.1. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Security Update Istio CVEs GHSA-qm8v-g4f9-qhjx (CVSS score 6.8, Moderate): BackendTLSPolicy fails open to plaintext on sidecar proxies when its CA",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/releases/1.31.x/announcing-1.31.1/",
-    "publishedDate": "2026-09-21T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "1.31.1"
-  },
-  {
-    "id": "istio-0d3c2b9623d5",
-    "title": "Announcing Istio 1.30.5",
-    "summary": "This release contains bug fixes to improve robustness. This release note describes what&rsquo;s different between Istio 1.30.4 and 1.30.5. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Changes Fixed an issue in ambient mode where the CNI node agent&rsquo;s auto-detected iptables backend (legacy vs nft) could flip between agent re",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/releases/1.30.x/announcing-1.30.5/",
-    "publishedDate": "2026-09-21T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "1.30.5"
-  },
-  {
-    "id": "istio-2a8906c34461",
-    "title": "Announcing Istio 1.29.8",
-    "summary": "This release contains bug fixes to improve robustness. This release note describes what&rsquo;s different between Istio 1.29.7 and 1.29.8. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Changes Fixed an issue in ambient mode where the CNI node agent&rsquo;s auto-detected iptables backend (legacy vs nft) could flip between agent re",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/releases/1.29.x/announcing-1.29.8/",
-    "publishedDate": "2026-09-21T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "1.29.8"
-  },
-  {
     "id": "opentelemetry-e7cdb0ee5b0e",
     "title": "Dual-exporting .NET metrics with OTLP and Prometheus",
     "summary": "Many applications export their metrics directly to Prometheus. If you&rsquo;re unfamiliar with Prometheus, in a nutshell it&rsquo;s a time-series database for storing metrics, like counters and histograms. Applications that store their metrics in Prometheus typically use a popular Prometheus client as part of the integration. Now that OpenTelemetry is a graduated CNCF project, many companies are now increasingly looking to move to OpenTelemetry to add more signals beyond metrics to their observa",
@@ -7434,87 +7544,6 @@
     "importance": "high",
     "architectureShift": true,
     "releaseRelated": false
-  },
-  {
-    "id": "tempo-2edd95a2e2ba",
-    "title": "v3.1.0-rc.1",
-    "summary": "Grafana Tempo 3.1 adds query-based trace redaction, TraceQL metrics arithmetic and sampling-aware extrapolation, Kafka connectivity improvements, and experimental tools for comparing and pruning traces. It also makes vParquet5 the default format for newly written blocks. This is a release candidate for testing, not the final Tempo 3.1 release. Highlights Redaction by query: Submit redaction jobs using a TraceQL selector instead of enumerating trace IDs, with optional time windows and redaction r",
-    "source": "Grafana Tempo",
-    "sourceId": "tempo",
-    "url": "https://github.com/grafana/tempo/releases/tag/v3.1.0-rc.1",
-    "publishedDate": "2026-09-17T17:37:20.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "tempo",
-      "tracing",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "tempo",
-    "releaseVersion": "v3.1.0-rc.1"
-  },
-  {
-    "id": "hashicorp-9cf80580a863",
-    "title": "HCP Vagrant deprecation: important dates and migration guidance",
-    "summary": "HCP Vagrant will be deprecated in 2026. Users should begin planning migrations as box creation, support, and operations are phased out.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/hcp-vagrant-deprecation-important-dates-and-migration-guidance",
-    "publishedDate": "2026-09-17T16:00:00.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "loki-efd17f6a537d",
-    "title": "v3.7.8",
-    "summary": "3.7.8 (2026-09-17) Bug Fixes security/HIGH/pkg/push: Update module google.golang.org/grpc to v1.83.2 [SECURITY] (release-3.7.x) (#24433) (4d5dc2b) security/HIGH/: Update module google.golang.org/grpc to v1.83.1 [SECURITY] (release-3.7.x) (#24328) (0a01797) security/HIGH/: Update module google.golang.org/grpc to v1.83.2 [SECURITY] (release-3.7.x) (#24429) (14b5da8) security/MEDIUM/: Update module github.com/containerd/containerd/v2 to v2.2.8 [SECURITY] (release-3.7.x) (#24460) (3e917f2) security/",
-    "source": "Grafana Loki",
-    "sourceId": "loki",
-    "url": "https://github.com/grafana/loki/releases/tag/v3.7.8",
-    "publishedDate": "2026-09-17T15:51:10.000Z",
-    "domain": "containers",
-    "topics": [
-      "containers",
-      "containerd",
-      "loki",
-      "logging",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "loki",
-    "releaseVersion": "v3.7.8"
-  },
-  {
-    "id": "tempo-bc170da59a5d",
-    "title": "v3.1.0-rc.0",
-    "summary": "v3.1.0-rc.0",
-    "source": "Grafana Tempo",
-    "sourceId": "tempo",
-    "url": "https://github.com/grafana/tempo/releases/tag/v3.1.0-rc.0",
-    "publishedDate": "2026-09-17T15:27:27.000Z",
-    "domain": "tracing",
-    "topics": [
-      "tempo",
-      "tracing",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "tempo",
-    "releaseVersion": "v3.1.0-rc.0"
   },
   {
     "id": "opentofu-0b1714f0beaa",
@@ -7535,44 +7564,6 @@
     "releaseRelated": true,
     "releaseProject": "opentofu",
     "releaseVersion": "v1.13.0-rc1"
-  },
-  {
-    "id": "loki-43e3fe0d6662",
-    "title": "v3.6.17",
-    "summary": "3.6.17 (2026-09-09) Bug Fixes security/HIGH/pkg/push: Update module google.golang.org/grpc to v1.83.1 [SECURITY] (release-3.6.x) (#24330) (d8d78f6) security/HIGH/pkg/push: Update module google.golang.org/grpc to v1.83.2 [SECURITY] (release-3.6.x) (#24444) (6d21d6b) security/HIGH/: Update module google.golang.org/grpc to v1.83.1 [SECURITY] (release-3.6.x) (#24329) (ed9df58) security/HIGH/: Update module google.golang.org/grpc to v1.83.2 [SECURITY] (release-3.6.x) (#24430) (ee0ef56) security/MEDIU",
-    "source": "Grafana Loki",
-    "sourceId": "loki",
-    "url": "https://github.com/grafana/loki/releases/tag/v3.6.17",
-    "publishedDate": "2026-09-17T11:41:38.000Z",
-    "domain": "logging",
-    "topics": [
-      "loki",
-      "logging",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "loki",
-    "releaseVersion": "v3.6.17"
-  },
-  {
-    "id": "cncf-4eeef7f5a309",
-    "title": "OpenTelemetry everywhere: Migrating a metrics platform at scale",
-    "summary": "Why we did this at all For most of the last decade our metrics pipeline ran on gostatsd, the open-source StatsD implementation we maintain. It primarily did two jobs: as sidecar on every host and the...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/09/17/opentelemetry-everywhere-migrating-a-metrics-platform-at-scale/",
-    "publishedDate": "2026-09-17T11:00:00.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "containerd-e525061d9efa",

@@ -1,5 +1,24 @@
 [
   {
+    "id": "pydantic-ai-ec5fb94d76bf",
+    "title": "CLAI2 bleeding",
+    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
+    "publishedDate": "2026-10-28T22:47:48.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai"
+  },
+  {
     "id": "phoenix-cb53a5299f04",
     "title": "@arizeai/phoenix-mcp@4.3.18",
     "summary": "Patch Changes Updated dependencies [86ab99c] @arizeai/phoenix-client@7.16.3",
@@ -80,25 +99,6 @@
     "releaseRelated": true,
     "releaseProject": "phoenix",
     "releaseVersion": "7.16.3"
-  },
-  {
-    "id": "pydantic-ai-ec5fb94d76bf",
-    "title": "CLAI2 bleeding",
-    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-28T02:05:11.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai"
   },
   {
     "id": "phoenix-767f6bfdc88f",
@@ -5334,45 +5334,5 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "langgraph-cf18a4efcea3",
-    "title": "langgraph-checkpoint-sqlite==3.1.1",
-    "summary": "Changes since checkpointsqlite==3.1.0 release(checkpoint-sqlite): 3.1.1 (#8481) fix(checkpoint-postgres,checkpoint-sqlite): scope namespace matching to segment boundaries (#8478) chore(deps): bump the minor-and-patch group in /libs/checkpoint-sqlite with 4 updates (#8249) chore(deps): bump langsmith from 0.8.0 to 0.8.18 in /libs/checkpoint-sqlite (#8177) docs: standardize package README.md structure (#8064) chore: migrate Python type checking to ty (#8002) chore(deps): bump the minor-and-patch g",
-    "source": "LangGraph",
-    "sourceId": "langgraph",
-    "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointsqlite%3D%3D3.1.1",
-    "publishedDate": "2026-07-30T19:19:47.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "langgraph",
-    "releaseVersion": "3.1.1"
-  },
-  {
-    "id": "langgraph-0a64acddc46b",
-    "title": "langgraph-checkpoint-postgres==3.1.1",
-    "summary": "Changes since checkpointpostgres==3.1.0 release(checkpoint-postgres): 3.1.1 (#8480) fix(checkpoint-postgres,checkpoint-sqlite): scope namespace matching to segment boundaries (#8478) feat(checkpoint,checkpoint-postgres): add opt-in omit_expired to skip expired rows on read (#8354) chore(deps): bump the minor-and-patch group in /libs/checkpoint-postgres with 5 updates (#8250) chore(deps): bump langsmith from 0.8.0 to 0.8.18 in /libs/checkpoint-postgres (#8171) docs: standardize package README.md ",
-    "source": "LangGraph",
-    "sourceId": "langgraph",
-    "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointpostgres%3D%3D3.1.1",
-    "publishedDate": "2026-07-30T19:16:01.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "langgraph",
-    "releaseVersion": "3.1.1"
   }
 ]
