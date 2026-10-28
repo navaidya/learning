@@ -1,5 +1,81 @@
 [
   {
+    "id": "kubernetes-releases-222276eb07f0",
+    "title": "v1.36.6",
+    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
+    "source": "Kubernetes Releases",
+    "sourceId": "kubernetes-releases",
+    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.36.6",
+    "publishedDate": "2026-10-28T04:56:35.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes-releases",
+    "releaseVersion": "v1.36.6"
+  },
+  {
+    "id": "kubernetes-releases-79b9582719d0",
+    "title": "v1.37.2",
+    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
+    "source": "Kubernetes Releases",
+    "sourceId": "kubernetes-releases",
+    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.2",
+    "publishedDate": "2026-10-28T04:37:53.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes-releases",
+    "releaseVersion": "v1.37.2"
+  },
+  {
+    "id": "kubernetes-releases-7f0fee67ec04",
+    "title": "v1.34.13",
+    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
+    "source": "Kubernetes Releases",
+    "sourceId": "kubernetes-releases",
+    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.34.13",
+    "publishedDate": "2026-10-28T04:37:39.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes-releases",
+    "releaseVersion": "v1.34.13"
+  },
+  {
+    "id": "kubernetes-releases-3e480a7c4f1b",
+    "title": "v1.35.10",
+    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
+    "source": "Kubernetes Releases",
+    "sourceId": "kubernetes-releases",
+    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.35.10",
+    "publishedDate": "2026-10-28T04:37:28.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes-releases",
+    "releaseVersion": "v1.35.10"
+  },
+  {
     "id": "prometheus-b8e6426bf452",
     "title": "v3.16.0-rc.1",
     "summary": "v3.16.0-rc.1",
@@ -7462,25 +7538,6 @@
     "releaseRelated": false
   },
   {
-    "id": "robusta-91135b6e19dd",
-    "title": "0.50.0",
-    "summary": "What's Changed ROB-1370 Fix docs build: use pydantic.v1.fields in autorobusta by @Avi-Robusta in #2171 Namespace scope runner permissions by @arikalon1 in #2173 Full Changelog: 0.49.0...0.50.0",
-    "source": "Robusta",
-    "sourceId": "robusta",
-    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.50.0",
-    "publishedDate": "2026-09-16T22:35:29.000Z",
-    "domain": "aiops",
-    "topics": [
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "robusta",
-    "releaseVersion": "0.50.0"
-  },
-  {
     "id": "containerd-e525061d9efa",
     "title": "containerd 2.4.0",
     "summary": "Welcome to the v2.4.0 release of containerd! containerd 2.4 is a regular (non-LTS) release with a shorter support window, intended for users who want to adopt new features sooner. As the release following the 2.3 LTS, it is the point in the release cycle where previously deprecated features may be removed, so this release may include breaking changes; check the notes below and clear any deprecation warnings from your current version before upgrading. Users prioritizing stability and a longer sup",
@@ -7499,25 +7556,6 @@
     "releaseRelated": true,
     "releaseProject": "containerd",
     "releaseVersion": "2.4.0"
-  },
-  {
-    "id": "robusta-a77c863e199e",
-    "title": "0.50.0-alpha",
-    "summary": "No content.",
-    "source": "Robusta",
-    "sourceId": "robusta",
-    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.50.0-alpha",
-    "publishedDate": "2026-09-16T19:53:04.000Z",
-    "domain": "aiops",
-    "topics": [
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "robusta",
-    "releaseVersion": "0.50.0-alpha"
   },
   {
     "id": "holmesgpt-016b8318257c",
@@ -7621,46 +7659,6 @@
     "releaseRelated": true,
     "releaseProject": "containerd",
     "releaseVersion": "1.12.0"
-  },
-  {
-    "id": "argo-797e2cca8e00",
-    "title": "v3.6.0-rc1",
-    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.6.0-rc1/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.6.0-rc1/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for contai",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.0-rc1",
-    "publishedDate": "2026-09-16T16:11:35.000Z",
-    "domain": "gitops",
-    "topics": [
-      "gitops",
-      "argo-cd",
-      "argo",
-      "argocd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "v3.6.0-rc1"
-  },
-  {
-    "id": "terraform-9ff53c3d650f",
-    "title": "v1.16.3",
-    "summary": "1.16.3 (September 16, 2026) BUG FIXES: Fix handling of destroy=false around create_before_destroy instances (#39169) Fix function result comparison when there are multiple marks (#39170) Filter logic for marks could cause values with multiple marks to erroneously fail validations (#39171) Fix issue with import provider resolution (#39185)",
-    "source": "Terraform",
-    "sourceId": "terraform",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.3",
-    "publishedDate": "2026-09-16T14:33:39.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "terraform",
-    "releaseVersion": "v1.16.3"
   },
   {
     "id": "opentelemetry-7b7c72fb5cd9",

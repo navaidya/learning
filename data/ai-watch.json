@@ -1,12 +1,94 @@
 [
   {
+    "id": "phoenix-cb53a5299f04",
+    "title": "@arizeai/phoenix-mcp@4.3.18",
+    "summary": "Patch Changes Updated dependencies [86ab99c] @arizeai/phoenix-client@7.16.3",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-mcp%404.3.18",
+    "publishedDate": "2026-10-28T05:19:19.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "4.3.18"
+  },
+  {
+    "id": "phoenix-50699151d821",
+    "title": "@arizeai/phoenix-cli@1.18.10",
+    "summary": "Patch Changes Updated dependencies [86ab99c] @arizeai/phoenix-client@7.16.3",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-cli%401.18.10",
+    "publishedDate": "2026-10-28T05:19:16.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "1.18.10"
+  },
+  {
+    "id": "phoenix-d857fae2a6cb",
+    "title": "@arizeai/phoenix-evals@2.7.1",
+    "summary": "Patch Changes 0128562: fix(phoenix-evals): keep metadata returned by custom evaluator functions wrapped with createEvaluator",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-evals%402.7.1",
+    "publishedDate": "2026-10-28T05:19:13.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "2.7.1"
+  },
+  {
+    "id": "phoenix-e81a90fcca0c",
+    "title": "@arizeai/phoenix-client@7.16.3",
+    "summary": "Patch Changes 86ab99c: fix(client): keep description, default and other keywords next to anyOf when converting prompt tool and response-format schemas with toSDK",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-client%407.16.3",
+    "publishedDate": "2026-10-28T05:19:10.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "7.16.3"
+  },
+  {
     "id": "pydantic-ai-ec5fb94d76bf",
     "title": "CLAI2 bleeding",
     "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-27T22:46:47.000Z",
+    "publishedDate": "2026-10-28T02:05:11.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +99,46 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "phoenix-767f6bfdc88f",
+    "title": "arize-phoenix-evals: v3.9.5",
+    "summary": "3.9.5 (2026-10-27) Documentation evals: fix PrecisionRecallFScore docstring examples that call the evaluator directly (#17039) (e84f16b)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-evals-v3.9.5",
+    "publishedDate": "2026-10-28T01:21:36.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v3.9.5"
+  },
+  {
+    "id": "pydantic-ai-86b54ca29dbd",
+    "title": "v2.63.0 (2026-10-27)",
+    "summary": "What's Changed ⚠️ Compatibility Notes Default CodeMode to dynamic_catalog=True, so a revealed tool is appended instead of rewriting the cached prompt by @DouweM in #11358 Pass the Gemini Live reconnect replay to GoogleRealtimeConnection's dial as a keyword-only replay argument by @DouweM in #11515 Give Harness LLMReminder a default interval=10 instead of generating on every request by @DouweM in #11641 Replay signed and encrypted history data to providers with the same canonical_system by @Douwe",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.63.0",
+    "publishedDate": "2026-10-28T00:55:47.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.63.0"
   },
   {
     "id": "langfuse-4ea6d2ceb3dc",
