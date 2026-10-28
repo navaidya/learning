@@ -5374,24 +5374,5 @@
     "releaseRelated": true,
     "releaseProject": "langgraph",
     "releaseVersion": "3.1.1"
-  },
-  {
-    "id": "practical-ai-851ae208d484",
-    "title": "Reconstructing how OpenAI agents attacked Hugging Face",
-    "summary": "What happens when AI agents driven by a top frontier model escape their secure sandbox? Join Daniel and Chris as they unpack the AI wonk's equivalent of a murder mystery! OpenAI agents went rogue and successfully attacked Hugging Face private infrastructure. Our Dynamic Duo uncover how OpenAI's agents exploited vulnerabilities, moved through networks, and launched a large-scale autonomous attack. They explore what this reveals about agentic AI, cybersecurity, sandboxing, and why organizations ne",
-    "source": "Practical AI",
-    "sourceId": "practical-ai",
-    "url": "https://share.transistor.fm/s/9d74230b",
-    "publishedDate": "2026-07-30T09:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "ai-agent",
-      "podcast",
-      "agent-development"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   }
 ]
