@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-29T13:32:47.000Z",
+    "publishedDate": "2026-10-29T23:16:22.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,68 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "phoenix-6da9245d2482",
+    "title": "arize-phoenix: v20.27.0",
+    "summary": "20.27.0 (2026-10-29) Features api: expose prompt version creation timestamps (#17188) (87a9934) evals: support TypeSafe Jev decision models in Python classification evaluators (#16953) (9089efc) factory: grade PR reviews with one verdict and report only that verdict (#17314) (2dcaa0b) factory: review a pull request on demand with the pr-reviewer lane (#17235) (b21d451) Bug Fixes agents: harden GitHub token handling and subagent write access (#15828) (80f2715) deps: require graphql-core>=3.3.1 an",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.27.0",
+    "publishedDate": "2026-10-29T20:23:40.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v20.27.0"
+  },
+  {
+    "id": "falco-807a5a9093ca",
+    "title": "0.45.2",
+    "summary": "Packages Download rpm-x86_64 deb-x86_64 tgz-x86_64 tgz-static-x86_64 rpm-aarch64 deb-aarch64 tgz-aarch64 Images docker pull docker.io/falcosecurity/falco:0.45.2 docker pull public.ecr.aws/falcosecurity/falco:0.45.2 docker pull docker.io/falcosecurity/falco-driver-loader:0.45.2 docker pull docker.io/falcosecurity/falco-driver-loader:0.45.2-buster docker pull docker.io/falcosecurity/falco:0.45.2-debian v0.45.2 Released on 2026-10-29 Minor Changes update(cmake): bump bundled OpenSSL to 3.5.9 LTS, a",
+    "source": "Falco",
+    "sourceId": "falco",
+    "url": "https://github.com/falcosecurity/falco/releases/tag/0.45.2",
+    "publishedDate": "2026-10-29T17:18:36.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "infrastructure-security",
+      "release",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "falco",
+    "releaseVersion": "0.45.2"
+  },
+  {
+    "id": "langfuse-a5abf8105ffa",
+    "title": "v4.72.0",
+    "summary": "What's Changed Features feat(ingestion): attribute AI gateway spans to their gateway API key and service by @wochinge in #19398 feat(telemetry): report AI gateway request counts from self-hosted instances by @wochinge in #19433 feat(pagerduty): send alerts, project notifications and prompt changes to PagerDuty, with the routing key on the automation by @marksalpeter in #19411 feat(evals): add filter conditions for trace-level by @marliessophie in #19400 feat(ai-gateway): add an analytics tab to ",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.72.0",
+    "publishedDate": "2026-10-29T16:14:48.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "gateway-api",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.72.0"
   },
   {
     "id": "practical-ai-0a7d4dd62c31",

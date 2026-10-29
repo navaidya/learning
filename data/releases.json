@@ -1,5 +1,37 @@
 [
   {
+    "project": "opentofu",
+    "version": "v1.13.5",
+    "publishedDate": "2026-10-29T21:42:59.000Z",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.5",
+    "sourceId": "opentofu",
+    "title": "v1.13.5"
+  },
+  {
+    "project": "gateway-api",
+    "version": "v1.7.0",
+    "publishedDate": "2026-10-29T18:19:26.000Z",
+    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.7.0",
+    "sourceId": "gateway-api",
+    "title": "v1.7.0"
+  },
+  {
+    "project": "vector",
+    "version": "v0.61.0",
+    "publishedDate": "2026-10-29T16:51:24.000Z",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/v0.61.0",
+    "sourceId": "vector",
+    "title": "v0.61.0"
+  },
+  {
+    "project": "grafana",
+    "version": "13.3",
+    "publishedDate": "2026-10-29T15:01:42.000Z",
+    "url": "https://grafana.com/blog/grafana-13-3-release-all-the-latest-features/",
+    "sourceId": "grafana",
+    "title": "Grafana 13.3 release: manage variables across dashboards, share findings with Notebooks, a UI refresh, and more"
+  },
+  {
     "project": "pulumi",
     "version": "v3.273.0",
     "publishedDate": "2026-10-29T08:23:01.000Z",
@@ -38,14 +70,6 @@
     "url": "https://github.com/prometheus/prometheus/releases/tag/v0.316.0-rc.2",
     "sourceId": "prometheus",
     "title": "v0.316.0-rc.2"
-  },
-  {
-    "project": "grafana",
-    "version": "v1.1",
-    "publishedDate": "2026-10-28T16:08:24.000Z",
-    "url": "https://grafana.com/blog/evaluate-ai-models-for-observability-o11y-bench-joins-fireworks-specialized-intelligence-index-and-reaches-v1-1/",
-    "sourceId": "grafana",
-    "title": "Evaluate AI models for observability: o11y-bench joins Fireworks' Specialized Intelligence Index and reaches v1.1"
   },
   {
     "project": "kubernetes-releases",
@@ -94,14 +118,6 @@
     "url": "https://istio.io/latest/blog/2026/closing-the-gap-bringing-sidecar-level-tracing-to-istio-ambient-and-kiali/",
     "sourceId": "istio",
     "title": "Closing the Gap: Bringing Sidecar-Level Tracing to Istio's Ambient Mode with Kiali"
-  },
-  {
-    "project": "gateway-api",
-    "version": "v1.7.0-rc.3",
-    "publishedDate": "2026-10-23T22:15:01.000Z",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.7.0-rc.3",
-    "sourceId": "gateway-api",
-    "title": "v1.7.0-rc.3"
   },
   {
     "project": "karpenter",
@@ -168,14 +184,6 @@
     "title": "v3.1.1"
   },
   {
-    "project": "opentofu",
-    "version": "v1.13.2",
-    "publishedDate": "2026-10-21T14:36:09.000Z",
-    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.2",
-    "sourceId": "opentofu",
-    "title": "v1.13.2"
-  },
-  {
     "project": "k8sgpt",
     "version": "v0.4.41",
     "publishedDate": "2026-10-21T10:16:28.000Z",
@@ -198,14 +206,6 @@
     "url": "https://openai.com/index/terminal-x",
     "sourceId": "openai",
     "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1"
-  },
-  {
-    "project": "vector",
-    "version": "v0.60.0",
-    "publishedDate": "2026-10-19T17:55:58.000Z",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/v0.60.0",
-    "sourceId": "vector",
-    "title": "v0.60.0"
   },
   {
     "project": "helm",

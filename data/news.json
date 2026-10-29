@@ -1,5 +1,252 @@
 [
   {
+    "id": "opentofu-0b6b19ad60f0",
+    "title": "v1.13.5",
+    "summary": "1.13.5",
+    "source": "OpenTofu",
+    "sourceId": "opentofu",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.5",
+    "publishedDate": "2026-10-29T21:42:59.000Z",
+    "domain": "terraform",
+    "topics": [
+      "opentofu",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentofu",
+    "releaseVersion": "v1.13.5"
+  },
+  {
+    "id": "opentofu-fb7f5851f0e6",
+    "title": "v1.12.11",
+    "summary": "BUG FIXES: Fixed panic when provided invalid state encryption configuration. (#4784)",
+    "source": "OpenTofu",
+    "sourceId": "opentofu",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.11",
+    "publishedDate": "2026-10-29T19:37:42.000Z",
+    "domain": "terraform",
+    "topics": [
+      "opentofu",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentofu",
+    "releaseVersion": "v1.12.11"
+  },
+  {
+    "id": "opentofu-3a1cb9fcbe63",
+    "title": "v1.13.4",
+    "summary": "1.13.4",
+    "source": "OpenTofu",
+    "sourceId": "opentofu",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.4",
+    "publishedDate": "2026-10-29T18:35:38.000Z",
+    "domain": "terraform",
+    "topics": [
+      "opentofu",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentofu",
+    "releaseVersion": "v1.13.4"
+  },
+  {
+    "id": "gateway-api-980d52795e37",
+    "title": "v1.7.0",
+    "summary": "Major Themes Graduating to Standard HTTPRoute Retries (GEP-1731): the retry configuration of an HTTPRoute rule (codes, attempts and backoff) is promoted to the Standard channel, together with the HTTPRouteRetryCodes and HTTPRouteRetryConnectionError conformance features. The backoff field is implementation-specific because backoff behavior, especially jitter, varies between implementations. (#5357, @snorwin, #5359, @mikemorris) New in Experimental Gateway Address Routability (GEP-5093): routabil",
+    "source": "Gateway API",
+    "sourceId": "gateway-api",
+    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.7.0",
+    "publishedDate": "2026-10-29T18:19:26.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "gateway-api",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "gateway-api",
+    "releaseVersion": "v1.7.0"
+  },
+  {
+    "id": "cncf-6c97fe8bb17d",
+    "title": "The boundary problem in agentic AI is a platform problem",
+    "summary": "An autonomous agent will do exactly what its tools let it do, and no more. This sounds like a constraint. In practice it is the whole risk, because the set of things an agent’s tools let...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/29/the-boundary-problem-in-agentic-ai-is-a-platform-problem/",
+    "publishedDate": "2026-10-29T18:11:50.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "opentofu-936d40c3b2fa",
+    "title": "v1.12.10",
+    "summary": "1.12.10",
+    "source": "OpenTofu",
+    "sourceId": "opentofu",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.10",
+    "publishedDate": "2026-10-29T17:12:07.000Z",
+    "domain": "terraform",
+    "topics": [
+      "opentofu",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentofu",
+    "releaseVersion": "v1.12.10"
+  },
+  {
+    "id": "gateway-api-fa6b20752e74",
+    "title": "conformance/v1.7.0",
+    "summary": "chore: Prep for v1.7.0 (#5433)",
+    "source": "Gateway API",
+    "sourceId": "gateway-api",
+    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/conformance%2Fv1.7.0",
+    "publishedDate": "2026-10-29T16:57:38.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "gateway-api",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "gateway-api",
+    "releaseVersion": "v1.7.0"
+  },
+  {
+    "id": "vector-9c950aad21cd",
+    "title": "v0.61.0",
+    "summary": "The COSE team is happy to announce Vector 0.61.0! 🚀 Vector is a lightweight, ultra-fast tool for building observability pipelines that puts you in control of your data. Thanks to the 10 contributors who made the 24 changes in this release: 1 breaking change 3 security changes 3 new features 6 enhancements 11 bug fixes Upgrading to 0.61? Read the upgrade guide. View the full release notes · See upcoming releases on the release calendar.",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/v0.61.0",
+    "publishedDate": "2026-10-29T16:51:24.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector",
+    "releaseVersion": "v0.61.0"
+  },
+  {
+    "id": "opentofu-f84eaaaf35e3",
+    "title": "v1.13.3",
+    "summary": "1.13.3",
+    "source": "OpenTofu",
+    "sourceId": "opentofu",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.3",
+    "publishedDate": "2026-10-29T16:48:30.000Z",
+    "domain": "terraform",
+    "topics": [
+      "opentofu",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentofu",
+    "releaseVersion": "v1.13.3"
+  },
+  {
+    "id": "opentelemetry-6f0cb7142c5b",
+    "title": "Announcing the 2026 Governance Committee Election Results",
+    "summary": "We are delighted to announce the results of the 2026 OpenTelemetry Governance Committee Election! The OpenTelemetry project continues to bring together an exceptionally vibrant community, who are shaping the future of observability with their contributions. This year, active contributors have shown their commitment again by participating in our election process, and they&rsquo;ve done it in great numbers. 836 contributors were eligible to vote this year, and 345 of them cast their ballot. With a",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/gc-elections-results/",
+    "publishedDate": "2026-10-29T16:31:20.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "opentelemetry-d21a334cc2e7",
+    "title": "Only include resource detectors you need by building your own Collector",
+    "summary": "There are many reasons for building your own OpenTelemetry Collector distribution. The existing distributions are designed to be broadly useful, which means they include many more components than what an individual deployment uses. Building your own gives you the ability to select only the components you care about, add your own custom components, and control exactly what ends up in the binary you run in production. One of the reasons I prefer to build my own distribution is to limit the size of",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/collector-with-less-dependencies/",
+    "publishedDate": "2026-10-29T15:39:27.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "grafana-88af68a55b19",
+    "title": "Grafana 13.3 release: manage variables across dashboards, share findings with Notebooks, a UI refresh, and more",
+    "summary": "Grafana 13.3 is here, bringing more consistency and control to how you work across Grafana. Cross-dashboard variables help you manage shared dashboard controls from one place, while Notebooks let you capture and share findings from across Grafana in a single, editable document. You'll also get a first look at Grafana's biggest visual refresh since Grafana 7, along with new ways to guide and refine dashboards built with Grafana Assistant.Below are just some of the highlights from this release. Yo",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/grafana-13-3-release-all-the-latest-features/",
+    "publishedDate": "2026-10-29T15:01:42.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "dashboards",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "grafana",
+    "releaseVersion": "13.3"
+  },
+  {
+    "id": "openai-d28967fce9c6",
+    "title": "How we detect frontier model misalignment",
+    "summary": "OpenAI uses layered monitoring to detect frontier model misalignment and unauthorized agent behavior so responders can intervene before incidents escalate.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+    "publishedDate": "2026-10-29T09:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "pulumi-5a72e1c25071",
     "title": "pkg/v3.273.0: Changelog and go.mod updates for v3.273.0 (#25440)",
     "summary": "Co-authored-by: github-actions github-actions@github.com",
@@ -7262,156 +7509,6 @@
     "releaseVersion": "v3.5.34"
   },
   {
-    "id": "etcd-6e10505c5664",
-    "title": "raft/v3.5.34",
-    "summary": "v3.5.34",
-    "source": "etcd",
-    "sourceId": "etcd",
-    "url": "https://github.com/etcd-io/etcd/releases/tag/raft%2Fv3.5.34",
-    "publishedDate": "2026-09-22T20:40:54.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "etcd",
-      "kubernetes",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "etcd",
-    "releaseVersion": "v3.5.34"
-  },
-  {
-    "id": "crossplane-d69774ae0a8d",
-    "title": "v2.4.2",
-    "summary": "v2.4.2 is a patch release scoped to fixing issues reported by users of Crossplane v2.4 and fixing security related issues in Crossplane and its dependencies. 🎉 Highlights Fixed a bug where ownership of ServiceAccounts was not correctly transferred to newly active package revisions (#7838). Fixed in #7839 and backported in #7852. What's Changed [Backport release-2.4] fix: demote old revision controller ownerReference for SA by @github-actions[bot] in #7852 chore(deps): update module go.opentelem",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.2",
-    "publishedDate": "2026-09-22T19:11:31.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v2.4.2"
-  },
-  {
-    "id": "crossplane-3dc72cda31f6",
-    "title": "apis/v2.4.2",
-    "summary": "Release v2.4.2",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.4.2",
-    "publishedDate": "2026-09-22T18:41:37.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v2.4.2"
-  },
-  {
-    "id": "kubernetes-bdc88dc4e212",
-    "title": "Spotlight on SIG Apps",
-    "summary": "As Kubernetes adoption has grown, the conversation has shifted beyond running containers to managing increasingly complex application lifecycles. Modern platforms support stateless web services, stateful databases, batch processing, AI workloads, and platform services. At the same time, they must remain reliable during upgrades, scaling events, and infrastructure failures. Every Kubernetes user relies on SIG Apps, whether they realize it or not. Deployments, StatefulSets, DaemonSets, Jobs, and C",
-    "source": "Kubernetes",
-    "sourceId": "kubernetes",
-    "url": "https://kubernetes.io/blog/2026/09/22/sig-apps-spotlight/",
-    "publishedDate": "2026-09-22T18:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "backstage-3c1ab051259a",
-    "title": "v1.56.0-next.0",
-    "summary": "See docs/releases/v1.56.0-next.0-changelog.md for more information.",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.56.0-next.0",
-    "publishedDate": "2026-09-22T17:09:55.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.56.0-next.0"
-  },
-  {
-    "id": "vector-bb3930985fb5",
-    "title": "vdev-v0.3.21",
-    "summary": "No content.",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.21",
-    "publishedDate": "2026-09-22T16:39:41.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector"
-  },
-  {
-    "id": "cncf-6a4c11d02dc4",
-    "title": "From attendee badge to speaker badge: My first KubeCon at KubeCon + CloudNativeCon India 2026",
-    "summary": "There is something surreal about your first KubeCon being one where you walk onto the stage as a speaker. Most people ease into this community by attending a few conferences, lurking in hallway tracks, and working...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/09/22/from-attendee-badge-to-speaker-badge-my-first-kubecon-at-kubecon-cloudnativecon-india-2026/",
-    "publishedDate": "2026-09-22T13:34:05.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "openai-ce45d8dc0f6c",
-    "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
-    "summary": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
-    "publishedDate": "2026-09-22T12:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "prometheus-6d74b19c9129",
     "title": "3.15.0-rc.1 / 2026-09-21",
     "summary": "[BUGFIX] TSDB: Avoid WAL corruption after a failed WAL write in Agent mode. #19700",
@@ -7452,42 +7549,6 @@
     "releaseVersion": "v0.315.0-rc.1"
   },
   {
-    "id": "vector-88b0f04015a6",
-    "title": "vdev-v0.3.20",
-    "summary": "No content.",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.20",
-    "publishedDate": "2026-09-21T21:10:30.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector"
-  },
-  {
-    "id": "grafana-bd823b392af0",
-    "title": "Grafana Alerting: Scale alert routing without scaling complexity using multiple notification policies",
-    "summary": "Alert routing often starts simple. A team creates a few contact points, adds some label matchers, and builds a notification policy tree that sends each alert to the right destination.But alerting configurations rarely stay simple.As an organization grows, its notification policy tree must accommodate more teams, services, and routing requirements. Changes for one team still require editing a global configuration, making ownership less clear and independent provisioning harder. Over time, even sm",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/grafana-alerting-scale-alert-routing-without-scaling-complexity-using-multiple-notification-policies/",
-    "publishedDate": "2026-09-21T18:45:23.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "kubernetes-a668dc129d9d",
     "title": "Kubernetes v1.37: Tracking When a PersistentVolumeClaim Was Last Used (Beta)",
     "summary": "Kubernetes v1.37 promotes the PersistentVolumeClaimUnusedSinceTime feature gate to Beta (enabled by default). With this feature, the PersistentVolumeClaim (PVC) protection controller adds an Unused condition to each PVC, telling you whether any running pod currently references it — no custom tooling or cross-referencing required. For the API definition of PVC conditions, see the PersistentVolumeClaim API reference. Read on to learn how the Unused condition works and how to use it. Why track PVC ",
@@ -7504,24 +7565,6 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes",
     "releaseVersion": "v1.37"
-  },
-  {
-    "id": "opentelemetry-b3cce3e068df",
-    "title": "Announcing the 2026 OpenTelemetry Governance Committee Election",
-    "summary": "The OpenTelemetry project is excited to announce the 2026 OpenTelemetry Governance Committee (GC) election. Nominations are due by 16 October 2026 23:59 AoE. The list of eligible candidates will be shared on 19 October 2026. Voting will take place between 26 October 2026 12:00 UTC and 28 October 2026 end of day AoE (29 October 2026 11:59 UTC), and the final election results will be announced 30 October 2026. Vote! If you are a member of standing in the OpenTelemetry community, we invite you to p",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/gc-elections/",
-    "publishedDate": "2026-09-21T17:09:33.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "opentelemetry-e7cdb0ee5b0e",
@@ -9750,42 +9793,5 @@
     "importance": "high",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "grafana-4d6892211749",
-    "title": "Reflections on AI Week, and the future of solving problems with observability and AI",
-    "summary": "Thank you for spending AI Week with us. We’re thrilled by the reaction and we all enjoyed replying to your questions. Thanks for engaging.Some of my favorite quotes from LinkedIn and Reddit include:“Grafana’s latest announcements aren’t just 'AI features.' They signal a shift in what observability platforms are becoming.”“I had Claude migrate and update and validate dozens of hand-rolled dashboards… Worked astonishingly well… 95% done in 30m with the MCP and Claude.”Good vibesWhile AI Week is co",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/ai-week-recap/",
-    "publishedDate": "2026-07-31T22:04:12.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "mcp",
-      "grafana",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": true,
-    "releaseRelated": false
-  },
-  {
-    "id": "kubernetes-8b269f445851",
-    "title": "Kubernetes v1.37 Sneak Peek",
-    "summary": "As we get closer to the release date for Kubernetes v1.37, the project develops and matures, features may be deprecated, removed, or replaced with better ones for the project's overall health. This blog outlines some of the planned changes for the Kubernetes v1.37 release that the release team feels you should be aware of for the continued maintenance of your Kubernetes environment and keeping up to date with the latest changes. The information below reflects the current status of the v1.37 rele",
-    "source": "Kubernetes",
-    "sourceId": "kubernetes",
-    "url": "https://kubernetes.io/blog/2026/07/31/kubernetes-v1-37-sneak-peek/",
-    "publishedDate": "2026-07-31T16:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes"
-    ],
-    "importance": "critical",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "kubernetes",
-    "releaseVersion": "v1.37"
   }
 ]
