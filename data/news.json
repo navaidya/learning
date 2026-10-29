@@ -1,5 +1,40 @@
 [
   {
+    "id": "pulumi-5a72e1c25071",
+    "title": "pkg/v3.273.0: Changelog and go.mod updates for v3.273.0 (#25440)",
+    "summary": "Co-authored-by: github-actions github-actions@github.com",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.273.0",
+    "publishedDate": "2026-10-29T08:23:01.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.273.0"
+  },
+  {
+    "id": "kubernetes-eaceb9188b83",
+    "title": "From Working Group to SIG Architecture: spotlight on AI Conformance",
+    "summary": "In this SIG Architecture spotlight we talked with Janet Kuo (Google) and Yuan Tang (Red Hat) about the journey of AI Conformance in Kubernetes, from the initial Working Group to the integration SIG Architecture as a subproject. IntroductionsFrederico Muñoz and Kirti Goyal (FK): Hi Janet, Yuan, and thank you for the opportunity to learn a bit more about AI Conformance. Can you tell us a bit about yourselves and how you got involved in Kubernetes? Janet Kuo: I'm a Senior Staff Software Engineer at",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/10/29/sig-arch-ai-conformance-2026/",
+    "publishedDate": "2026-10-29T05:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "cncf-38160a4a38b0",
     "title": "Volcano v1.16 Released: NamespaceQueue, fairshare, and a broader HyperNode ecosystem",
     "summary": "Volcano v1.16.0 is available . v1.16.0 introduces NamespaceQueue and the fairshare plugin. Tenants can use hierarchical queues within their own namespaces to organize quotas and queue hierarchies within administrator-authorized resource pools. Fairshare brings historical resource consumption...",
@@ -7483,44 +7518,6 @@
       "opentelemetry",
       "otel",
       "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "backstage-b5f79c748c21",
-    "title": "v1.55.1",
-    "summary": "This patch release fixes the following issues: Fix the Yarn patch verifier failing to load unless consumers separately install the Yarn CLI package. (#35749) Fix TechDocs addons not rendering on the new frontend system. (#35770)",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.55.1",
-    "publishedDate": "2026-09-21T15:13:10.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.55.1"
-  },
-  {
-    "id": "openai-530db518a73a",
-    "title": "Expanding OpenAI Academy with new learning paths",
-    "summary": "Explore new OpenAI Academy learning paths for employees, developers, leaders, educators, and students to build and demonstrate practical AI skills.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
-    "publishedDate": "2026-09-21T07:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
     ],
     "importance": "medium",
     "architectureShift": false,
