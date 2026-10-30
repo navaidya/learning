@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-29T23:16:22.000Z",
+    "publishedDate": "2026-10-30T04:46:37.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,110 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "phoenix-9a785c2bfdec",
+    "title": "arize-phoenix-client: v3.6.0",
+    "summary": "3.6.0 (2026-10-30) Features annotations: add DECISION and AGENT kinds (#17306) (9e7a797) api: expose prompt version creation timestamps (#17188) (87a9934) client: expose trace and session filter expressions (#16078) (dab09f1) client: sort get_spans by start_time (#16386) (9f44910) harbor: prompt hill-climb task on a text-to-SQL dataset (#16458) (bd78550) load optional Harbor task reference outputs (#16656) (7556cee) record Harbor agent responses as run output (#16645) (c739243) Bug Fixes client:",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-client-v3.6.0",
+    "publishedDate": "2026-10-30T03:37:14.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v3.6.0"
+  },
+  {
+    "id": "phoenix-4e6015fce111",
+    "title": "@arizeai/phoenix-mcp@4.3.19",
+    "summary": "Patch Changes Updated dependencies [9e7a797] @arizeai/phoenix-client@7.17.0",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-mcp%404.3.19",
+    "publishedDate": "2026-10-30T03:31:29.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "4.3.19"
+  },
+  {
+    "id": "phoenix-583c4a342065",
+    "title": "@arizeai/phoenix-cli@1.19.0",
+    "summary": "Minor Changes 9e7a797: Accept DECISION and AGENT as annotator kinds for span, document, trace, session and experiment run annotations. In px, --annotator-kind on annotate and the *-annotations delete commands accepts both. Phoenix servers that predate these kinds reject them. Patch Changes Updated dependencies [9e7a797] @arizeai/phoenix-client@7.17.0",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-cli%401.19.0",
+    "publishedDate": "2026-10-30T03:31:26.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "1.19.0"
+  },
+  {
+    "id": "phoenix-91bd832c946f",
+    "title": "@arizeai/phoenix-client@7.17.0",
+    "summary": "Minor Changes 9e7a797: Accept DECISION and AGENT as annotator kinds for span, document, trace, session and experiment run annotations. In px, --annotator-kind on annotate and the *-annotations delete commands accepts both. Phoenix servers that predate these kinds reject them.",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-client%407.17.0",
+    "publishedDate": "2026-10-30T03:31:23.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "7.17.0"
+  },
+  {
+    "id": "phoenix-15dc7acbff0a",
+    "title": "arize-phoenix: v21.0.0",
+    "summary": "21.0.0 (2026-10-30) MIGRATION.md Features add system_state table (3c5c523) annotations: add DECISION and AGENT kinds (#17306) (9e7a797) auth: enable auth by default without requiring PHOENIX_SECRET (#16737) (c9c7353) cost-tracking: fetch the model cost manifest at runtime (#17019) (bae8382) Bug Fixes annotations: type experiment-run annotator kind like the others (3fdddc6) auth: apply PHOENIX_DEFAULT_ADMIN_INITIAL_PASSWORD when upgrading an unchanged default admin (840d2b9) auth: end OAuth2 sess",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v21.0.0",
+    "publishedDate": "2026-10-30T03:29:55.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v21.0.0"
   },
   {
     "id": "phoenix-6da9245d2482",

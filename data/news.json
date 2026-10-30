@@ -1,5 +1,22 @@
 [
   {
+    "id": "cncf-e13bb5a65d1d",
+    "title": "KubeCon + CloudNativeCon NA 2026: End User TAB recommendations and tips",
+    "summary": "KubeCon + CloudNativeCon NA 2026 in Salt Lake City will bring the cloud native community together with projects, vendors and end users in what is one of the largest open source events. In this post, we...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/29/kubecon-cloudnativecon-na-2026-end-user-tab-recommendations-and-tips/",
+    "publishedDate": "2026-10-30T00:43:04.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "opentofu-0b6b19ad60f0",
     "title": "v1.13.5",
     "summary": "1.13.5",
@@ -7476,26 +7493,6 @@
     "sourceId": "etcd",
     "url": "https://github.com/etcd-io/etcd/releases/tag/tests%2Fv3.5.34",
     "publishedDate": "2026-09-22T20:41:09.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "etcd",
-      "kubernetes",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "etcd",
-    "releaseVersion": "v3.5.34"
-  },
-  {
-    "id": "etcd-f7bde7290c17",
-    "title": "server/v3.5.34",
-    "summary": "v3.5.34",
-    "source": "etcd",
-    "sourceId": "etcd",
-    "url": "https://github.com/etcd-io/etcd/releases/tag/server%2Fv3.5.34",
-    "publishedDate": "2026-09-22T20:41:02.000Z",
     "domain": "kubernetes",
     "topics": [
       "etcd",
