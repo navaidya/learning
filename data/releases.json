@@ -1,5 +1,13 @@
 [
   {
+    "project": "opentelemetry",
+    "version": "v1.0.0",
+    "publishedDate": "2026-10-30T15:42:24.000Z",
+    "url": "https://opentelemetry.io/blog/2026/obi-v1-release/",
+    "sourceId": "opentelemetry",
+    "title": "OpenTelemetry eBPF Instrumentation reaches v1.0.0"
+  },
+  {
     "project": "opentofu",
     "version": "v1.13.5",
     "publishedDate": "2026-10-29T21:42:59.000Z",
@@ -46,14 +54,6 @@
     "url": "https://www.cncf.io/blog/2026/10/28/volcano-v1-16-released-namespacequeue-fairshare-and-a-broader-hypernode-ecosystem/",
     "sourceId": "cncf",
     "title": "Volcano v1.16 Released: NamespaceQueue, fairshare, and a broader HyperNode ecosystem"
-  },
-  {
-    "project": "opentelemetry",
-    "version": "v0.164.0",
-    "publishedDate": "2026-10-28T18:28:33.000Z",
-    "url": "https://opentelemetry.io/blog/2026/filelog-protobuf-checkpoints/",
-    "sourceId": "opentelemetry",
-    "title": "Faster, smaller checkpoints: the File Log receiver now uses protobuf"
   },
   {
     "project": "terraform",

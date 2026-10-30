@@ -1,5 +1,25 @@
 [
   {
+    "id": "opentelemetry-450c1c0b5763",
+    "title": "OpenTelemetry eBPF Instrumentation reaches v1.0.0",
+    "summary": "We&rsquo;re excited to announce v1.0.0 of OpenTelemetry eBPF Instrumentation—OBI! OBI brings OpenTelemetry observability to running Linux applications without requiring changes to their source code. It uses eBPF, together with runtime-specific instrumentation, to capture application metrics and traces across services, languages, and frameworks. You can start with request rates, errors, latency, and service dependencies, then build deeper visibility as your needs grow. This release fulfills the f",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/obi-v1-release/",
+    "publishedDate": "2026-10-30T15:42:24.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry",
+    "releaseVersion": "v1.0.0"
+  },
+  {
     "id": "vector-8a0d56147cdc",
     "title": "vdev-v0.3.38",
     "summary": "chore(vdev): compile Vector once per e2e job (#26784)",
@@ -7483,26 +7503,6 @@
     "releaseRelated": true,
     "releaseProject": "etcd",
     "releaseVersion": "v3.6.15"
-  },
-  {
-    "id": "etcd-d1a3a1653469",
-    "title": "v3.5.34",
-    "summary": "Please check out CHANGELOG for a full list of changes. And make sure to read upgrade guide before upgrading etcd (there may be breaking changes). For installation guides, please check out play.etcd.io and operating etcd. Latest support status for common architectures and operating systems can be found at supported platforms. Linux ETCD_VER=v3.5.34 # choose either URL GOOGLE_URL=https://storage.googleapis.com/etcd GITHUB_URL=https://github.com/etcd-io/etcd/releases/download DOWNLOAD_URL=${GOOGLE_",
-    "source": "etcd",
-    "sourceId": "etcd",
-    "url": "https://github.com/etcd-io/etcd/releases/tag/v3.5.34",
-    "publishedDate": "2026-09-22T20:50:57.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "etcd",
-      "kubernetes",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "etcd",
-    "releaseVersion": "v3.5.34"
   },
   {
     "id": "prometheus-6d74b19c9129",
