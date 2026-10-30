@@ -1,5 +1,24 @@
 [
   {
+    "id": "vector-8a0d56147cdc",
+    "title": "vdev-v0.3.38",
+    "summary": "chore(vdev): compile Vector once per e2e job (#26784)",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.38",
+    "publishedDate": "2026-10-30T09:55:56.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
     "id": "cncf-e13bb5a65d1d",
     "title": "KubeCon + CloudNativeCon NA 2026: End User TAB recommendations and tips",
     "summary": "KubeCon + CloudNativeCon NA 2026 in Salt Lake City will bring the cloud native community together with projects, vendors and end users in what is one of the largest open source events. In this post, we...",
@@ -7473,26 +7492,6 @@
     "sourceId": "etcd",
     "url": "https://github.com/etcd-io/etcd/releases/tag/v3.5.34",
     "publishedDate": "2026-09-22T20:50:57.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "etcd",
-      "kubernetes",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "etcd",
-    "releaseVersion": "v3.5.34"
-  },
-  {
-    "id": "etcd-a5504ad42922",
-    "title": "tests/v3.5.34",
-    "summary": "v3.5.34",
-    "source": "etcd",
-    "sourceId": "etcd",
-    "url": "https://github.com/etcd-io/etcd/releases/tag/tests%2Fv3.5.34",
-    "publishedDate": "2026-09-22T20:41:09.000Z",
     "domain": "kubernetes",
     "topics": [
       "etcd",
