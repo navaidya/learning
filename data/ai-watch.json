@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-10-30T22:54:11.000Z",
+    "publishedDate": "2026-10-31T05:02:21.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,26 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "pydantic-ai-f3e55897bd17",
+    "title": "v2.64.0 (2026-10-30)",
+    "summary": "What's Changed ⚠️ Compatibility Notes Raise an error status a retrying transport gave up on as ModelHTTPError, so fallback moves on by @DouweM in #11934 Send stored response, item, conversation and container IDs back only to the endpoint that created them, via Model.accepts_server_state by @DouweM in #11774 Make json-repair an optional dependency, needed only by Coder and RepairToolArguments by @mpfaffenberger in #11768 Turn off strict tool schemas for Coder's tools by default, with Coder(strict",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.64.0",
+    "publishedDate": "2026-10-30T23:27:24.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.64.0"
   },
   {
     "id": "langgraph-4d3e8ddaeb7b",

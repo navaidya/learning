@@ -816,6 +816,24 @@
     "releaseRelated": false
   },
   {
+    "id": "cncf-89c54995104a",
+    "title": "OpenTelemetry-powered distributed tracing and Kubernetes events in OpenChoreo",
+    "summary": "Getting code from a developer’s editor into production means building it, testing it, deploying it, and then understanding how it behaves once it’s running. Internal Developer Platforms (IDPs) promise a “golden path” through all of that,...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/27/opentelemetry-powered-distributed-tracing-and-kubernetes-events-in-openchoreo/",
+    "publishedDate": "2026-10-27T11:00:00.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "openai-a3a879144b29",
     "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
     "summary": "OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.",
@@ -2625,6 +2643,24 @@
     "domain": "aiops",
     "topics": [
       "aiops",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-9301678f5697",
+    "title": "Distributed tracing for CI pipelines without touching a single workflow file",
+    "summary": "You’ve probably felt this one: GitHub Actions usage creeps up across your org, and your actual visibility into it doesn’t keep pace. Which workflows are slow? Which are flaky? How long are jobs sitting queued for...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/10/21/distributed-tracing-for-ci-pipelines-without-touching-a-single-workflow-file-2/",
+    "publishedDate": "2026-10-21T11:00:00.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
       "cncf",
       "cloud-native"
     ],
@@ -7452,46 +7488,6 @@
     "sourceId": "etcd",
     "url": "https://github.com/etcd-io/etcd/releases/tag/v3.6.15",
     "publishedDate": "2026-09-22T21:06:14.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "etcd",
-      "kubernetes",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "etcd",
-    "releaseVersion": "v3.6.15"
-  },
-  {
-    "id": "etcd-30ed253b9dd4",
-    "title": "tests/v3.6.15",
-    "summary": "v3.6.15",
-    "source": "etcd",
-    "sourceId": "etcd",
-    "url": "https://github.com/etcd-io/etcd/releases/tag/tests%2Fv3.6.15",
-    "publishedDate": "2026-09-22T20:54:06.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "etcd",
-      "kubernetes",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "etcd",
-    "releaseVersion": "v3.6.15"
-  },
-  {
-    "id": "etcd-7405d61a8dec",
-    "title": "server/v3.6.15",
-    "summary": "v3.6.15",
-    "source": "etcd",
-    "sourceId": "etcd",
-    "url": "https://github.com/etcd-io/etcd/releases/tag/server%2Fv3.6.15",
-    "publishedDate": "2026-09-22T20:53:59.000Z",
     "domain": "kubernetes",
     "topics": [
       "etcd",
