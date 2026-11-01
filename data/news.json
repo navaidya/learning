@@ -7501,6 +7501,62 @@
     "releaseVersion": "v3.6.15"
   },
   {
+    "id": "crossplane-d69774ae0a8d",
+    "title": "v2.4.2",
+    "summary": "v2.4.2 is a patch release scoped to fixing issues reported by users of Crossplane v2.4 and fixing security related issues in Crossplane and its dependencies. 🎉 Highlights Fixed a bug where ownership of ServiceAccounts was not correctly transferred to newly active package revisions (#7838). Fixed in #7839 and backported in #7852. What's Changed [Backport release-2.4] fix: demote old revision controller ownerReference for SA by @github-actions[bot] in #7852 chore(deps): update module go.opentelem",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.2",
+    "publishedDate": "2026-09-22T19:11:31.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.4.2"
+  },
+  {
+    "id": "crossplane-3dc72cda31f6",
+    "title": "apis/v2.4.2",
+    "summary": "Release v2.4.2",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.4.2",
+    "publishedDate": "2026-09-22T18:41:37.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.4.2"
+  },
+  {
+    "id": "kubernetes-bdc88dc4e212",
+    "title": "Spotlight on SIG Apps",
+    "summary": "As Kubernetes adoption has grown, the conversation has shifted beyond running containers to managing increasingly complex application lifecycles. Modern platforms support stateless web services, stateful databases, batch processing, AI workloads, and platform services. At the same time, they must remain reliable during upgrades, scaling events, and infrastructure failures. Every Kubernetes user relies on SIG Apps, whether they realize it or not. Deployments, StatefulSets, DaemonSets, Jobs, and C",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/09/22/sig-apps-spotlight/",
+    "publishedDate": "2026-09-22T18:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "prometheus-6d74b19c9129",
     "title": "3.15.0-rc.1 / 2026-09-21",
     "summary": "[BUGFIX] TSDB: Avoid WAL corruption after a failed WAL write in Agent mode. #19700",
@@ -9730,60 +9786,5 @@
     "releaseRelated": true,
     "releaseProject": "opentelemetry-collector",
     "releaseVersion": "v0.158.0"
-  },
-  {
-    "id": "kubernetes-8df0ba7203be",
-    "title": "Gateway API v1.6: TCPRoute and UDPRoute Graduate to Standard",
-    "summary": "The Kubernetes SIG Network community is thrilled to share the release of Gateway API v1.6.0, which was released on June 30th of this year! Gateway API has become the standard for modern, role-oriented, and expressive service networking in Kubernetes. In previous releases, Gateway API established a production-grade foundation for HTTP and TLS layer 7 traffic. With version 1.6.0, Gateway API takes a major step forward by expanding standard layer 4 protocol routing and introducing cleaner API bound",
-    "source": "Kubernetes",
-    "sourceId": "kubernetes",
-    "url": "https://kubernetes.io/blog/2026/08/03/gateway-api-v1-6-release/",
-    "publishedDate": "2026-08-03T16:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "gateway-api"
-    ],
-    "importance": "critical",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "kubernetes",
-    "releaseVersion": "v1.6"
-  },
-  {
-    "id": "kubernetes-gateway-api-v1-6-release",
-    "title": "Gateway API v1.6: TCPRoute and UDPRoute Graduate to Standard",
-    "summary": "Gateway API v1.6 promotes TCPRoute and UDPRoute from experimental to the standard channel.",
-    "source": "Kubernetes",
-    "sourceId": "kubernetes",
-    "url": "https://kubernetes.io/blog/2026/08/03/gateway-api-v1-6-release/",
-    "publishedDate": "2026-08-03T08:00:00-08:00",
-    "domain": "kubernetes",
-    "topics": [
-      "gateway-api"
-    ],
-    "importance": "high",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "kubernetes",
-    "releaseVersion": "v1.6"
-  },
-  {
-    "id": "cncf-073607dbf550",
-    "title": "Cortex completes OSTIF security audit",
-    "summary": "The Open Source Technology Improvement Fund is proud to share the results of our security audit of Cortex. Cortex functions as a long-term, multi-tenant scalable open source storage for Prometheus and OpenTelemetry. Thanks to Quarkslab and...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/08/03/cortex-completes-ostif-security-audit/",
-    "publishedDate": "2026-08-03T11:30:00.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": false
   }
 ]

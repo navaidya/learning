@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-01T03:36:55.000Z",
+    "publishedDate": "2026-11-01T16:12:49.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -5575,25 +5575,6 @@
       "ai-agent",
       "podcast",
       "agent-development"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "nvidia-security-dacccd7c52d6",
-    "title": "How to Run Isolated Tenant Kubernetes Clusters on Shared GPU Infrastructure",
-    "summary": "Running a dedicated Kubernetes cluster per team often results in more isolation than an organization requires. While one cluster can be successfully shared...",
-    "source": "NVIDIA Technical Blog",
-    "sourceId": "nvidia-security",
-    "url": "https://developer.nvidia.com/blog/how-to-run-isolated-tenant-kubernetes-clusters-on-shared-gpu-infrastructure/",
-    "publishedDate": "2026-08-03T16:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "infrastructure-security",
-      "news",
-      "infrastructure"
     ],
     "importance": "medium",
     "architectureShift": false,
