@@ -1,5 +1,37 @@
 [
   {
+    "project": "kyverno",
+    "version": "v1.20.0-rc.1",
+    "publishedDate": "2026-11-02T21:38:17.000Z",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.20.0-rc.1",
+    "sourceId": "kyverno",
+    "title": "v1.20.0-rc.1"
+  },
+  {
+    "project": "cilium",
+    "version": "v1.21.0-pre.4",
+    "publishedDate": "2026-11-02T21:31:37.000Z",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.21.0-pre.4",
+    "sourceId": "cilium",
+    "title": "v1.21.0-pre.4"
+  },
+  {
+    "project": "argo",
+    "version": "v3.3.19",
+    "publishedDate": "2026-11-02T20:39:57.000Z",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.19",
+    "sourceId": "argo",
+    "title": "v3.3.19"
+  },
+  {
+    "project": "backstage",
+    "version": "v1.56.3",
+    "publishedDate": "2026-11-02T15:10:28.000Z",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.56.3",
+    "sourceId": "backstage",
+    "title": "v1.56.3"
+  },
+  {
     "project": "opentelemetry",
     "version": "v1.0.0",
     "publishedDate": "2026-10-30T15:42:24.000Z",
@@ -80,14 +112,6 @@
     "title": "v1.38.0-alpha.3"
   },
   {
-    "project": "backstage",
-    "version": "v1.57.0-next.0",
-    "publishedDate": "2026-10-27T17:44:00.000Z",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.57.0-next.0",
-    "sourceId": "backstage",
-    "title": "v1.57.0-next.0"
-  },
-  {
     "project": "loki",
     "version": "v3.6.19",
     "publishedDate": "2026-10-26T17:05:50.000Z",
@@ -128,22 +152,6 @@
     "title": "v1.15.1"
   },
   {
-    "project": "cilium",
-    "version": "1.20.4",
-    "publishedDate": "2026-10-23T14:51:39.000Z",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.20.4",
-    "sourceId": "cilium",
-    "title": "1.20.4"
-  },
-  {
-    "project": "kyverno",
-    "version": "v1.19.2",
-    "publishedDate": "2026-10-23T04:36:19.000Z",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2",
-    "sourceId": "kyverno",
-    "title": "v1.19.2"
-  },
-  {
     "project": "etcd",
     "version": "v3.7.3",
     "publishedDate": "2026-10-22T23:12:51.000Z",
@@ -158,14 +166,6 @@
     "url": "https://github.com/crossplane/crossplane/releases/tag/v1.20.14",
     "sourceId": "crossplane",
     "title": "v1.20.14"
-  },
-  {
-    "project": "argo",
-    "version": "v3.6.0-rc3",
-    "publishedDate": "2026-10-22T15:38:05.000Z",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.0-rc3",
-    "sourceId": "argo",
-    "title": "v3.6.0-rc3"
   },
   {
     "project": "oci-oke",

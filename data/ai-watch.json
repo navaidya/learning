@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-01T16:12:49.000Z",
+    "publishedDate": "2026-11-02T21:24:05.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,102 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "cncf-video-4e084dbf27d2",
+    "title": "Does anyone still need Prometheus Agent mode? - Kyle Eckhart",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=VBfD0j23oss",
+    "publishedDate": "2026-11-02T19:23:56.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-d33f0c274cb6",
+    "title": "Pushing the Limits: Scaling Prometheus for High-Performance AI & GPU Workloads - Sagar Utekar",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=0inJjgIBBus",
+    "publishedDate": "2026-11-02T19:23:55.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "phoenix-18dc803d51b3",
+    "title": "@arizeai/phoenix-mcp@4.3.20",
+    "summary": "Patch Changes Updated dependencies [ead7dd8] @arizeai/phoenix-client@7.18.0",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-mcp%404.3.20",
+    "publishedDate": "2026-11-02T18:12:59.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "4.3.20"
+  },
+  {
+    "id": "phoenix-da1ea2d640cc",
+    "title": "@arizeai/phoenix-cli@1.19.1",
+    "summary": "Patch Changes Updated dependencies [ead7dd8] @arizeai/phoenix-client@7.18.0",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-cli%401.19.1",
+    "publishedDate": "2026-11-02T18:12:56.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "1.19.1"
+  },
+  {
+    "id": "phoenix-1b9817a3a5ac",
+    "title": "@arizeai/phoenix-client@7.18.0",
+    "summary": "Minor Changes ead7dd8: Add typed dataset-label resource and assignment helpers to the existing @arizeai/phoenix-client/datasets scope. Callers can manage reusable global labels, list them with cursor pagination, and assign or replace labels on datasets selected by name or GlobalID.",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-client%407.18.0",
+    "publishedDate": "2026-11-02T18:12:53.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "7.18.0"
   },
   {
     "id": "pydantic-ai-f3e55897bd17",
