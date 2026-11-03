@@ -1,19 +1,19 @@
 [
   {
+    "project": "cilium",
+    "version": "1.21.0-pre.4",
+    "publishedDate": "2026-11-02T23:21:19.000Z",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.21.0-pre.4",
+    "sourceId": "cilium",
+    "title": "1.21.0-pre.4"
+  },
+  {
     "project": "kyverno",
     "version": "v1.20.0-rc.1",
-    "publishedDate": "2026-11-02T21:38:17.000Z",
+    "publishedDate": "2026-11-02T23:07:36.000Z",
     "url": "https://github.com/kyverno/kyverno/releases/tag/v1.20.0-rc.1",
     "sourceId": "kyverno",
     "title": "v1.20.0-rc.1"
-  },
-  {
-    "project": "cilium",
-    "version": "v1.21.0-pre.4",
-    "publishedDate": "2026-11-02T21:31:37.000Z",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.21.0-pre.4",
-    "sourceId": "cilium",
-    "title": "v1.21.0-pre.4"
   },
   {
     "project": "argo",

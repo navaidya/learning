@@ -1,12 +1,32 @@
 [
   {
+    "id": "cilium-cf51a61164c8",
+    "title": "1.21.0-pre.4",
+    "summary": "Summary of Changes Major Changes: bgp: support interface-based BGP unnumbered peering through autoDiscovery.mode: Unnumbered, discovering the peer's IPv6 link-local address on a configured interface and sending Router Advertisements for peer discovery. (#47394, @ecbaldwin) Enable BPF masquerading by default (#49411, @pchaigno) gateway-api: Add frontend client certificate validation (mTLS) support. (#48587, @arybolovlev) gateway-api: add initial support for listener TLS version options. (#49063, ",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.21.0-pre.4",
+    "publishedDate": "2026-11-02T23:21:19.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.21.0-pre.4"
+  },
+  {
     "id": "kyverno-ee729613aa1c",
     "title": "v1.20.0-rc.1",
-    "summary": "v1.20.0-rc.1",
+    "summary": "All mandatory release validation and remote verification completed for 24e23f9328749fba9f9b249ce8b10c732517d9c8. Charts: {\"kyverno\": \"3.10.0-rc.1\", \"kyverno-policies\": \"3.10.0-rc.1\"}. Full matrix and diagnostics: https://github.com/kyverno/kyverno/actions/runs/41530175668.",
     "source": "Kyverno",
     "sourceId": "kyverno",
     "url": "https://github.com/kyverno/kyverno/releases/tag/v1.20.0-rc.1",
-    "publishedDate": "2026-11-02T21:38:17.000Z",
+    "publishedDate": "2026-11-02T23:07:36.000Z",
     "domain": "kubernetes",
     "topics": [
       "kyverno",
@@ -20,24 +40,23 @@
     "releaseVersion": "v1.20.0-rc.1"
   },
   {
-    "id": "cilium-cf51a61164c8",
-    "title": "v1.21.0-pre.4",
-    "summary": "Release v1.21.0-pre.4",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.21.0-pre.4",
-    "publishedDate": "2026-11-02T21:31:37.000Z",
-    "domain": "ebpf-cilium",
+    "id": "vector-8354038d25ef",
+    "title": "vdev-v0.3.39",
+    "summary": "feat(releasing): inline Vector upgrade guides (#26974)",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.39",
+    "publishedDate": "2026-11-02T21:44:04.000Z",
+    "domain": "logging",
     "topics": [
-      "cilium",
-      "ebpf",
-      "networking"
+      "vector",
+      "logging",
+      "pipelines"
     ],
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "v1.21.0-pre.4"
+    "releaseProject": "vector"
   },
   {
     "id": "cilium-d3b99711f4a5",
@@ -9756,25 +9775,5 @@
     "releaseRelated": true,
     "releaseProject": "cncf",
     "releaseVersion": "1.121.0"
-  },
-  {
-    "id": "containerd-fa5e763994a2",
-    "title": "containerd API 1.12.0-beta.0",
-    "summary": "Welcome to the api/v1.12.0-beta.0 release of containerd! This is a pre-release of containerd The 13th release for the containerd 1.x API aligns with the containerd 2.4 release. Highlights Include media type in content create event (#13833) Add parent path to runc checkpoint options (#13699) Deprecations Fix sandbox task API endpoints for non-runc runtimes (#13360) Please try out the release binaries and report any issues at https://github.com/containerd/containerd/issues. Contributors Maksym Pav",
-    "source": "containerd",
-    "sourceId": "containerd",
-    "url": "https://github.com/containerd/containerd/releases/tag/api%2Fv1.12.0-beta.0",
-    "publishedDate": "2026-08-05T02:33:29.000Z",
-    "domain": "containers",
-    "topics": [
-      "containers",
-      "containerd",
-      "runtime"
-    ],
-    "importance": "high",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "containerd",
-    "releaseVersion": "1.12.0-beta.0"
   }
 ]

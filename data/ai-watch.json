@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-02T21:24:05.000Z",
+    "publishedDate": "2026-11-03T03:27:49.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,26 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "pydantic-ai-e4df2528a7b1",
+    "title": "v2.65.0 (2026-11-02)",
+    "summary": "What's Changed ⚠️ Compatibility Notes Protect the gh-aw canonical session capture from agent tools by @dsfaccini in #10606 Add multimodal notes to AskUserAnswer by @dsfaccini in #11664 Count BrowserUse model calls toward the host run's usage and UsageLimits by @mpfaffenberger in #11860 Name the V2 replacement when code imports a name V2 removed, like OpenAIModel or MCPServerStdio by @DouweM in #12035 Fall back to the next model in ModelFallback when a model refuses, and let ContentFilterError in",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.65.0",
+    "publishedDate": "2026-11-03T01:25:27.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.65.0"
   },
   {
     "id": "cncf-video-4e084dbf27d2",
