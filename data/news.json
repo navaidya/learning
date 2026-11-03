@@ -1,5 +1,143 @@
 [
   {
+    "id": "argo-c8379d2f6bb5",
+    "title": "v3.3.19",
+    "summary": "ImportantEND OF LIFE NOTICE This is the final release of the v3.3 release series. As of November 3rd, 2026 this version has reached end of life and will no longer receive bug fixes or security updates. Action Required: Please upgrade to a supported version (v3.4.13, v3.5.7, or v3.6.0). Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.3.19/manifests/install.yaml HA: kubectl create n",
+    "source": "Argo",
+    "sourceId": "argo",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.19",
+    "publishedDate": "2026-11-03T20:02:14.000Z",
+    "domain": "gitops",
+    "topics": [
+      "gitops",
+      "argo-cd",
+      "argo",
+      "argocd"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "argo",
+    "releaseVersion": "v3.3.19"
+  },
+  {
+    "id": "prometheus-085f7a213897",
+    "title": "v0.316.0-rc.4",
+    "summary": "v0.316.0-rc.4",
+    "source": "Prometheus",
+    "sourceId": "prometheus",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v0.316.0-rc.4",
+    "publishedDate": "2026-11-03T19:23:14.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "promql",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "prometheus",
+    "releaseVersion": "v0.316.0-rc.4"
+  },
+  {
+    "id": "prometheus-916b4fa3479a",
+    "title": "3.16.0-rc.4 / 2026-11-03",
+    "summary": "[CHANGE] API: The experimental search endpoints now clamp batch_size to 1000. #19731 [CHANGE] Configuration: Default --web.external-url to https when --web.config.file enables TLS. #19241 [CHANGE] PromQL: Subquery samples are now included in the query TotalSamples and TotalSamplesPerStep statistics, and SamplesRead now counts reads from subqueries with an @ modifier in range queries. #19165 [CHANGE] Remote write: Stop exposing the deprecated prometheus_remote_storage_metadata_total, prometheus_r",
+    "source": "Prometheus",
+    "sourceId": "prometheus",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.16.0-rc.4",
+    "publishedDate": "2026-11-03T19:23:03.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "promql",
+      "observability"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "prometheus",
+    "releaseVersion": "3.16.0-rc.4"
+  },
+  {
+    "id": "backstage-b6cc8453cb26",
+    "title": "v1.57.0-next.1",
+    "summary": "See docs/releases/v1.57.0-next.1-changelog.md for more information.",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.57.0-next.1",
+    "publishedDate": "2026-11-03T18:58:50.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.57.0-next.1"
+  },
+  {
+    "id": "prometheus-9cbc97e928d1",
+    "title": "v3.16.0-rc.3",
+    "summary": "v3.16.0-rc.3",
+    "source": "Prometheus",
+    "sourceId": "prometheus",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.16.0-rc.3",
+    "publishedDate": "2026-11-03T15:23:40.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "promql",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "prometheus",
+    "releaseVersion": "v3.16.0-rc.3"
+  },
+  {
+    "id": "grafana-71a049e2bfc1",
+    "title": "Trace linkage: connect the dots between your app traces and database queries",
+    "summary": "When an application request slows down, a trace can show a database call. Finding the database query behind it can be tedious, requiring you to switch between traces and database telemetry, as well as match timestamps or query text by hand. In Grafana Cloud, the Database Observability app already provides a window into all of your database telemetry, including query samples, performance history, and explain plan. But what if you could jump from that database call in the trace straight to its que",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/trace-linkage-connect-the-dots-between-your-app-traces-and-database-queries/",
+    "publishedDate": "2026-11-03T15:05:03.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-bb771d725d5d",
+    "title": "OpenKruise Agents v0.6.0: Leaping ahead in agent Sandbox security and automation",
+    "summary": "About OpenKruise Agents OpenKruise Agents is a sub-project of OpenKruise, the CNCF open-source application automation and workload orchestration project. It provides full lifecycle management for Agent Sandboxes running at scale on Kubernetes, together with a complete...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/11/03/openkruise-agents-v0-6-0-leaping-ahead-in-agent-sandbox-security-and-automation/",
+    "publishedDate": "2026-11-03T12:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cncf",
+    "releaseVersion": "v0.6.0"
+  },
+  {
     "id": "cilium-cf51a61164c8",
     "title": "1.21.0-pre.4",
     "summary": "Summary of Changes Major Changes: bgp: support interface-based BGP unnumbered peering through autoDiscovery.mode: Unnumbered, discovering the peer's IPv6 link-local address on a configured interface and sending Router Advertisements for peer discovery. (#47394, @ecbaldwin) Enable BPF masquerading by default (#49411, @pchaigno) gateway-api: Add frontend client certificate validation (mTLS) support. (#48587, @arybolovlev) gateway-api: add initial support for listener TLS version options. (#49063, ",
@@ -77,27 +215,6 @@
     "releaseRelated": true,
     "releaseProject": "cilium",
     "releaseVersion": "1.21.0-pre.4"
-  },
-  {
-    "id": "argo-c8379d2f6bb5",
-    "title": "v3.3.19",
-    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.3.19/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.3.19/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container im",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.19",
-    "publishedDate": "2026-11-02T20:39:57.000Z",
-    "domain": "gitops",
-    "topics": [
-      "gitops",
-      "argo-cd",
-      "argo",
-      "argocd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "v3.3.19"
   },
   {
     "id": "argo-947e9ee8338c",
@@ -1201,6 +1318,24 @@
     "releaseRelated": false
   },
   {
+    "id": "hashicorp-9f2999dc4f8a",
+    "title": "Announcing the public preview of HashiCorp Vault Arc: Evolve security for emerging workloads",
+    "summary": "HashiCorp Vault Arc enters public preview, advancing security governance and supporting emerging machine and agentic workloads.",
+    "source": "HashiCorp",
+    "sourceId": "hashicorp",
+    "url": "https://www.hashicorp.com/blog/announcing-the-public-preview-of-hashicorp-vault-arc-evolve-security-for-emerging",
+    "publishedDate": "2026-10-26T16:00:00.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "vault",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "flux-9fe8a9dc9139",
     "title": "v2.10.0",
     "summary": "Highlights Flux v2.10.0 is a feature release. Users are encouraged to upgrade for the best experience. Overview of the new features: Object identity is generally available; the ObjectLevelWorkloadIdentity feature gate is retired SPIFFE mTLS for inter-controller communication Notification Event, Alert and Provider APIs promoted to v1 OCIRepository as a chart source for HelmRelease SOPS decryption for files encrypted with comment regexes, and --override-manager-before-dry-run (Kustomization) Image",
@@ -1488,6 +1623,24 @@
     "releaseRelated": false
   },
   {
+    "id": "hashicorp-8495483c8fc2",
+    "title": "Strengthen security for agentic AI with new Vault, Verify, Boundary, and Secure Hub capabilities",
+    "summary": "Explore new capabilities across HashiCorp Vault, IBM Verify, Boundary, and Secure Hub designed to strengthen identity, access, and security governance for agentic AI workloads.",
+    "source": "HashiCorp",
+    "sourceId": "hashicorp",
+    "url": "https://www.hashicorp.com/blog/strengthen-security-for-agentic-ai-with-new-vault-verify-boundary-and-secure-hub",
+    "publishedDate": "2026-10-26T05:11:00.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "vault",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "istio-2dc1c31519df",
     "title": "Closing the Gap: Bringing Sidecar-Level Tracing to Istio's Ambient Mode with Kiali",
     "summary": "Istio&rsquo;s ambient mode has steadily evolved across recent releases. Although it achieved GA in version 1.24, behavior has evolved as features have changed and stabilized in subsequent releases. With the release of Istio 1.29 and Kiali 2.25, we can now confidently state that tracing in ambient mode has reached full parity with sidecar mode. The Role of Waypoint Proxies As background, it is important to note that Layer 7 (L7) telemetry — both metrics and traces — is provided by waypoint proxie",
@@ -1764,6 +1917,28 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
+  },
+  {
+    "id": "hashicorp-128d75e1cc7a",
+    "title": "Boundary 1.1 improves target discovery, external app integration, and introduces MCP server",
+    "summary": "Boundary 1.1 improves integration with app tokens, simplifies cross-account AWS host discovery, and introduces an MCP server.",
+    "source": "HashiCorp",
+    "sourceId": "hashicorp",
+    "url": "https://www.hashicorp.com/blog/boundary-secures-ai-agent-access-improves-target-discovery-and-introduces-mcp-ser",
+    "publishedDate": "2026-10-23T07:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "terraform",
+      "vault",
+      "iac"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "hashicorp",
+    "releaseVersion": "1.1"
   },
   {
     "id": "kyverno-a64b97845b2a",
@@ -2218,6 +2393,46 @@
     "releaseRelated": true,
     "releaseProject": "pulumi",
     "releaseVersion": "v3.272.0"
+  },
+  {
+    "id": "hashicorp-9c9d59a171e3",
+    "title": "Drive adoption and operations across hybrid environments with Vault",
+    "summary": "Vault 2.2 accelerates adoption with a more intuitive experience for usability and adoption, and consistent secrets and identity security across hybrid environments.",
+    "source": "HashiCorp",
+    "sourceId": "hashicorp",
+    "url": "https://www.hashicorp.com/blog/drive-adoption-and-operations-across-hybrid-environments-with-vault",
+    "publishedDate": "2026-10-22T16:00:00.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "vault",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "hashicorp",
+    "releaseVersion": "2.2"
+  },
+  {
+    "id": "hashicorp-f7f98c1d0ca9",
+    "title": "Eliminate Secret Zero for on-prem workloads with Vault 2.2",
+    "summary": "Vault 2.2 introduces TPM Support so on-prem applications can authenticate using a virtual TPM, reducing bootstrap credential distribution and the risk of credential reuse from another machine.",
+    "source": "HashiCorp",
+    "sourceId": "hashicorp",
+    "url": "https://www.hashicorp.com/blog/eliminate-secret-zero-for-on-prem-workloads-with-vault",
+    "publishedDate": "2026-10-22T16:00:00.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "vault",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "hashicorp",
+    "releaseVersion": "2.2"
   },
   {
     "id": "vector-0e7053730d08",
@@ -3962,6 +4177,28 @@
     "releaseVersion": "v1.19.2-rc.1"
   },
   {
+    "id": "hashicorp-3272f669dd05",
+    "title": "Securely govern human and agentic identities with Vault",
+    "summary": "Vault 2.2 combines SCIM GA and enhanced NHI governance so teams can securely manage human, machine, and AI agent identities across their lifecycle.",
+    "source": "HashiCorp",
+    "sourceId": "hashicorp",
+    "url": "https://www.hashicorp.com/blog/govern-human-and-agentic-identities-with-confidence-with-vault",
+    "publishedDate": "2026-10-15T18:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "terraform",
+      "vault",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "hashicorp",
+    "releaseVersion": "2.2"
+  },
+  {
     "id": "helm-0b2c3985ba37",
     "title": "Helm v3.22.1",
     "summary": "Helm v3.22.1 is a patch release. Users are encouraged to upgrade for the best experience. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/packages Notable Changes Bumps dependencies to remove Go package vulnerabilities Updates the k8s.io Go packages Install",
@@ -4897,6 +5134,26 @@
     "releaseRelated": true,
     "releaseProject": "containerd",
     "releaseVersion": "2.0.14"
+  },
+  {
+    "id": "hashicorp-628dcabe4330",
+    "title": "Vault Enterprise 2.2 advances identity security, PKI, and crypto-agility",
+    "summary": "Vault 2.2 secures AI identities, automates secrets and certificates, advances post-quantum readiness, and standardizes security across enterprise environments.",
+    "source": "HashiCorp",
+    "sourceId": "hashicorp",
+    "url": "https://www.hashicorp.com/blog/vault-enterprise-advances-identity-security-pki-and-crypto-agility",
+    "publishedDate": "2026-10-13T17:00:00.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "vault",
+      "iac"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "hashicorp",
+    "releaseVersion": "2.2"
   },
   {
     "id": "vector-c99b29fadbbe",
@@ -7542,240 +7799,6 @@
     "releaseRelated": false
   },
   {
-    "id": "pulumi-13a5909af9d2",
-    "title": "pkg/v3.264.0: Changelog and go.mod updates for v3.264.0 (#24753)",
-    "summary": "Co-authored-by: github-actions github-actions@github.com",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.264.0",
-    "publishedDate": "2026-09-23T13:30:27.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.264.0"
-  },
-  {
-    "id": "openai-1d77064cbebb",
-    "title": "OpenAI extends cyber access to Ukraine for civilian defense",
-    "summary": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
-    "publishedDate": "2026-09-23T13:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "terraform-73d05ec3e0cd",
-    "title": "v1.16.4",
-    "summary": "1.16.4 (September 23, 2026) BUG FIXES: Fixed an issue where Terraform fails when rendering policy evaluation outcomes for older versions of Terraform Enterprise (#39095) stacks: Fix invalid deferred error triggered by provider returning a deferral when a resource also has an unknown count/for_each. (#39237)",
-    "source": "Terraform",
-    "sourceId": "terraform",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.4",
-    "publishedDate": "2026-09-23T12:44:16.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "terraform",
-    "releaseVersion": "v1.16.4"
-  },
-  {
-    "id": "openai-7cff1964bf19",
-    "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
-    "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/ringg",
-    "publishedDate": "2026-09-23T12:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "ai-agent",
-      "openai",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "openai"
-  },
-  {
-    "id": "pulumi-759f2577d4f3",
-    "title": "v3.264.0",
-    "summary": "3.264.0 (2026-09-23) Features [sdk/python] Add component state migration callbacks to ResourceOptions #24331 [cli/deployment] Allow pulumi deployment settings edit to configure git authentication, dependency caching, template sources and drift remediation #24528 [cli/deployment] Allow pulumi deployment settings edit to configure tag triggers, review stack labels and the version control integration #24527 [backend/service] Enable component state migrations for Pulumi Cloud updates using journal v",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.264.0",
-    "publishedDate": "2026-09-23T09:54:16.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.264.0"
-  },
-  {
-    "id": "pulumi-0a5067f07f02",
-    "title": "sdk/v3.264.0",
-    "summary": "Preserve root-first state ordering between chained state migration ca…",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.264.0",
-    "publishedDate": "2026-09-23T08:40:46.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.264.0"
-  },
-  {
-    "id": "hashicorp-eb596cec824e",
-    "title": "Terraform provider for Google Cloud 8.0 now generally available",
-    "summary": "The Terraform provider for Google Cloud 8.0 builds on expanded infrastructure discovery workflows, modernizes provider defaults, removes support for retired Google Cloud services, and improves consistency between Terraform configurations and Google Cloud APIs.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/terraform-provider-for-google-cloud-80-now-generally-available",
-    "publishedDate": "2026-09-23T04:00:00.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "hashicorp",
-    "releaseVersion": "8.0"
-  },
-  {
-    "id": "etcd-5a3d7eb2e5a3",
-    "title": "v3.7.2",
-    "summary": "Please check out CHANGELOG for a full list of changes. And make sure to read upgrade guide before upgrading etcd (there may be breaking changes). For installation guides, please check out play.etcd.io and operating etcd. Latest support status for common architectures and operating systems can be found at supported platforms. Linux ETCD_VER=v3.7.2 # choose either URL GOOGLE_URL=https://storage.googleapis.com/etcd GITHUB_URL=https://github.com/etcd-io/etcd/releases/download DOWNLOAD_URL=${GOOGLE_U",
-    "source": "etcd",
-    "sourceId": "etcd",
-    "url": "https://github.com/etcd-io/etcd/releases/tag/v3.7.2",
-    "publishedDate": "2026-09-22T21:22:39.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "etcd",
-      "kubernetes",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "etcd",
-    "releaseVersion": "v3.7.2"
-  },
-  {
-    "id": "etcd-b6c72451a98d",
-    "title": "tests/v3.7.2",
-    "summary": "v3.7.2",
-    "source": "etcd",
-    "sourceId": "etcd",
-    "url": "https://github.com/etcd-io/etcd/releases/tag/tests%2Fv3.7.2",
-    "publishedDate": "2026-09-22T21:09:21.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "etcd",
-      "kubernetes",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "etcd",
-    "releaseVersion": "v3.7.2"
-  },
-  {
-    "id": "etcd-31d24d5898f7",
-    "title": "server/v3.7.2",
-    "summary": "v3.7.2",
-    "source": "etcd",
-    "sourceId": "etcd",
-    "url": "https://github.com/etcd-io/etcd/releases/tag/server%2Fv3.7.2",
-    "publishedDate": "2026-09-22T21:09:14.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "etcd",
-      "kubernetes",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "etcd",
-    "releaseVersion": "v3.7.2"
-  },
-  {
-    "id": "etcd-aab202293be5",
-    "title": "v3.6.15",
-    "summary": "Please check out CHANGELOG for a full list of changes. And make sure to read upgrade guide before upgrading etcd (there may be breaking changes). For installation guides, please check out play.etcd.io and operating etcd. Latest support status for common architectures and operating systems can be found at supported platforms. Linux ETCD_VER=v3.6.15 # choose either URL GOOGLE_URL=https://storage.googleapis.com/etcd GITHUB_URL=https://github.com/etcd-io/etcd/releases/download DOWNLOAD_URL=${GOOGLE_",
-    "source": "etcd",
-    "sourceId": "etcd",
-    "url": "https://github.com/etcd-io/etcd/releases/tag/v3.6.15",
-    "publishedDate": "2026-09-22T21:06:14.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "etcd",
-      "kubernetes",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "etcd",
-    "releaseVersion": "v3.6.15"
-  },
-  {
-    "id": "crossplane-d69774ae0a8d",
-    "title": "v2.4.2",
-    "summary": "v2.4.2 is a patch release scoped to fixing issues reported by users of Crossplane v2.4 and fixing security related issues in Crossplane and its dependencies. 🎉 Highlights Fixed a bug where ownership of ServiceAccounts was not correctly transferred to newly active package revisions (#7838). Fixed in #7839 and backported in #7852. What's Changed [Backport release-2.4] fix: demote old revision controller ownerReference for SA by @github-actions[bot] in #7852 chore(deps): update module go.opentelem",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.2",
-    "publishedDate": "2026-09-22T19:11:31.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v2.4.2"
-  },
-  {
     "id": "prometheus-6d74b19c9129",
     "title": "3.15.0-rc.1 / 2026-09-21",
     "summary": "[BUGFIX] TSDB: Avoid WAL corruption after a failed WAL write in Agent mode. #19700",
@@ -9755,25 +9778,5 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes-releases",
     "releaseVersion": "v1.38.0-alpha.0"
-  },
-  {
-    "id": "cncf-38c9f07af113",
-    "title": "OpenCost 1.121.0: First-of-a-kind Kubernetes inference cost tracking",
-    "summary": "Your GPU bill is rising. Your models are serving billions of tokens. Yet one question remains unanswered: what does each token actually cost? This is not a hypothetical problem. Platform teams today operate in a fog...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/08/05/opencost-1-121-0-first-of-a-kind-kubernetes-inference-cost-tracking/",
-    "publishedDate": "2026-08-05T11:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "cncf",
-    "releaseVersion": "1.121.0"
   }
 ]

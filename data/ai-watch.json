@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-03T03:27:49.000Z",
+    "publishedDate": "2026-11-03T20:03:32.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,106 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "langgraph-ebb5a46fd381",
+    "title": "langgraph-sdk==0.4.12",
+    "summary": "Changes since sdk==0.4.11 release(sdk-py): 0.4.12 (#9569) feat(sdk-py): remove fairness_weight from PrioritySettings (#9441) fix(sdk-py): rejoin a run stream that closes before the run ends (#9554)",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.12",
+    "publishedDate": "2026-11-03T18:10:30.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "0.4.12"
+  },
+  {
+    "id": "langfuse-b0d12b480bcc",
+    "title": "v3.227.0",
+    "summary": "What's Changed feat(blob-export): add opt-in trace field groups for the legacy traces export (v3 backport of #19244) by @niklassemmler in #19563 Full Changelog: v3.226.0...v3.227.0",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v3.227.0",
+    "publishedDate": "2026-11-03T16:18:08.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v3.227.0"
+  },
+  {
+    "id": "langfuse-4fbdb157a2e7",
+    "title": "v4.74.0",
+    "summary": "What's Changed Features feat(ai-gateway): per-organization request and byte rate limits at /resolve by @hassiebp in #19585 feat(audit-logs): always record support access reads and mark them in ClickHouse by @Steffen911 in #19622 feat(admin-api): transfer projects between organizations by @Steffen911 in #19587 feat(topics): combine pending Topics schema migrations by @LysanderKie in #19513 Fixes fix(ai-gateway): hide shut-down OpenAI and retired Anthropic models by @wochinge in #19615 fix(web): s",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.74.0",
+    "publishedDate": "2026-11-03T13:49:10.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.74.0"
+  },
+  {
+    "id": "langfuse-119a3480c068",
+    "title": "v3.226.0",
+    "summary": "What's Changed feat(admin-api): transfer projects between organizations (v3 backport of #19587) by @Steffen911 in #19588 Full Changelog: v3.225.15...v3.226.0",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v3.226.0",
+    "publishedDate": "2026-11-03T13:07:56.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v3.226.0"
+  },
+  {
+    "id": "langfuse-f83566c70fa1",
+    "title": "v4.73.0",
+    "summary": "What's Changed Features feat(ai-gateway): filter gateway analytics by user and API key by @wochinge in #19458 feat(skills): support version automations by @tobi12345 in #19296 feat(rbac): add AI_GATEWAY organization membership role by @marksalpeter in #19262 feat(monitors): add new monitor automation dialog by @marksalpeter in #19448 feat(ai-gateway): add GitHub Copilot CLI and app setup instructions by @wochinge in #19462 feat(ai-gateway): invite new gateway team members with the AI_GATEWAY rol",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.73.0",
+    "publishedDate": "2026-11-03T11:35:53.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.73.0"
   },
   {
     "id": "pydantic-ai-e4df2528a7b1",
