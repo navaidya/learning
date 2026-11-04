@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-04T04:19:19.000Z",
+    "publishedDate": "2026-11-04T20:11:25.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,66 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "pydantic-ai-7266573c3643",
+    "title": "v1.107.10 (2026-11-04)",
+    "summary": "What's Changed 🛡️ Security GHSA-m5vj-8mcw-82qx (high): web_fetch_tool and the WebFetch capability's local fallback re-indented a JSON response on the event loop before applying the returned-content limit, so a deeply nested document within the download size limit could expand to hundreds of times its size, using large amounts of memory and delaying other work in the same process. You are affected if an attacker can choose or influence the URLs the tool fetches. Provider-native web fetching is n",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v1.107.10",
+    "publishedDate": "2026-11-04T11:51:48.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v1.107.10"
+  },
+  {
+    "id": "pydantic-ai-406bf50865c5",
+    "title": "v2.66.0 (2026-11-04)",
+    "summary": "What's Changed 🛡️ Security GHSA-m5vj-8mcw-82qx (high): web_fetch_tool and the WebFetch capability's local fallback re-indented a JSON response on the event loop before applying the returned-content limit, so a deeply nested document within the download size limit could expand to hundreds of times its size, using large amounts of memory and delaying other work in the same process. You are affected if an attacker can choose or influence the URLs the tool fetches. Provider-native web fetching is n",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.66.0",
+    "publishedDate": "2026-11-04T11:51:46.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.66.0"
+  },
+  {
+    "id": "langfuse-2225eacb55f1",
+    "title": "v4.75.0",
+    "summary": "What's Changed Features feat(ai-gateway): raise Pro/Team/Enterprise gateway limits to 10k req/min and 5 GiB/min by @hassiebp in #19630 feat: improve internal error messages by @jordibosch20 in #19635 feat(skills): trace Codex skill resource loads by @tobi12345 in #19586 feat(web): friendly AI Gateway tile for gateway-only members on the organizations overview by @wochinge in #19646 feat(ai-gateway): simplify Codex setup to an exported key and config.toml by @wochinge in #19655 feat(ai-gateway): ",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.75.0",
+    "publishedDate": "2026-11-04T09:26:19.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.75.0"
   },
   {
     "id": "langgraph-ebb5a46fd381",
@@ -5776,24 +5836,5 @@
     "releaseRelated": true,
     "releaseProject": "langgraph",
     "releaseVersion": "4.2.0"
-  },
-  {
-    "id": "practical-ai-760a4e366ee7",
-    "title": "Models, Harnesses, and Multi-Agent Systems",
-    "summary": "AI has moved far beyond chatbots, but what exactly are AI models, agents, agent harnesses, and multi-agent systems, and why do they matter?In this episode, Daniel and Chris break down the terminology behind today's AI landscape, explain the differences between AI features and autonomous agents, and explore why organizations are shifting toward fleets of AI agents powered by multiple models. They also discuss open vs. closed models, enterprise AI architectures, vendor lock-in, and practical ways ",
-    "source": "Practical AI",
-    "sourceId": "practical-ai",
-    "url": "https://share.transistor.fm/s/063cfaad",
-    "publishedDate": "2026-08-06T09:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "ai-agent",
-      "podcast",
-      "agent-development"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   }
 ]

@@ -1,5 +1,265 @@
 [
   {
+    "id": "opentofu-0316aeb990e2",
+    "title": "v1.13.6",
+    "summary": "1.13.6",
+    "source": "OpenTofu",
+    "sourceId": "opentofu",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.6",
+    "publishedDate": "2026-11-04T20:26:24.000Z",
+    "domain": "terraform",
+    "topics": [
+      "opentofu",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentofu",
+    "releaseVersion": "v1.13.6"
+  },
+  {
+    "id": "vector-ad59feda89c1",
+    "title": "vdev-v0.3.41",
+    "summary": "feat(releasing): inline VRL upgrade guides (#27033)",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.41",
+    "publishedDate": "2026-11-04T17:06:04.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
+    "id": "loki-2f2af3dd09c3",
+    "title": "v4.0.0-rc.2",
+    "summary": "See CHANGELOG.md for the full list of changes. 4.0.0-rc.2 (2026-11-04) Reverts Disable Multipath TCP on listeners by default (#26237) (7637697) 4.0.0-rc.1 (2026-11-03) ⚠ BREAKING CHANGES Upgrade Go module to github.com/grafana/loki/v4 (#25972) querytee: Configure a primary and a secondary backend (#25552) querytee: Remove the request splitting (#25496) engine: Unplug the V2 query engine from the config and modules (#25353) querytee: Remove the routing modes (#25487) Rename remaining loki_boltdb_",
+    "source": "Grafana Loki",
+    "sourceId": "loki",
+    "url": "https://github.com/grafana/loki/releases/tag/v4.0.0-rc.2",
+    "publishedDate": "2026-11-04T15:40:52.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "loki",
+      "logging",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "loki",
+    "releaseVersion": "v4.0.0-rc.2"
+  },
+  {
+    "id": "robusta-1681514ef625",
+    "title": "0.54.0",
+    "summary": "What's Changed ROB-1648 Trigger Triggered Workflows from any trigger, and on Deployment rollouts by @Sheeproid in #2204 ROB-1654 Name the rollout revision in trigger_workflow_event's payload by @Sheeproid in #2205 Remove the helm golden render tests by @arikalon1 in #2206 feat(helm): support dnsConfig on the forwarder deployment by @DrFaust92 in #2124 ROB-1707 Holmes Chat API docs: match start_tool_calling and token_count payloads by @naomi-robusta in #2209 Never block or drop Slack messages on ",
+    "source": "Robusta",
+    "sourceId": "robusta",
+    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.54.0",
+    "publishedDate": "2026-11-04T15:26:09.000Z",
+    "domain": "aiops",
+    "topics": [
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "robusta",
+    "releaseVersion": "0.54.0"
+  },
+  {
+    "id": "vector-39a54720ed0b",
+    "title": "vdev-v0.3.40",
+    "summary": "chore(website): generate missing release descriptions (#27035)",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.40",
+    "publishedDate": "2026-11-04T14:52:27.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
+    "id": "holmesgpt-02c13cf50c49",
+    "title": "0.46.0",
+    "summary": "What's Changed ROB-1624 Notify Slack when a release workflow fails by @Avi-Robusta in #2606 Add allowed_tools to MCP servers to load only some of a server's tools by @elidrissi-amine in #2598 feat(alert): add webhook destination by @mrchocha in #2612 ROB-616: Migrate AWS MCP to the hosted AWS MCP Server by @Avi-Robusta in #2529 Add notify input to eval-benchmarks workflow for quiet manual runs by @moshemorad in #2627 ROB-1490 Cleanup repeated Holmes server logs by @moshemorad in #2608 ROB-1544 S",
+    "source": "HolmesGPT (Robusta)",
+    "sourceId": "holmesgpt",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.46.0",
+    "publishedDate": "2026-11-04T14:51:32.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "holmesgpt",
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "holmesgpt",
+    "releaseVersion": "0.46.0"
+  },
+  {
+    "id": "argo-c342aaa3161f",
+    "title": "v3.6.1",
+    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.6.1/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.6.1/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container imag",
+    "source": "Argo",
+    "sourceId": "argo",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.1",
+    "publishedDate": "2026-11-04T14:23:53.000Z",
+    "domain": "gitops",
+    "topics": [
+      "gitops",
+      "argo-cd",
+      "argo",
+      "argocd"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "argo",
+    "releaseVersion": "v3.6.1"
+  },
+  {
+    "id": "argo-c45fde317da6",
+    "title": "gitops-engine/v3.6.1",
+    "summary": "fix(ui): keep the sidebar layout in sync after toggling it (cherry-pi…",
+    "source": "Argo",
+    "sourceId": "argo",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/gitops-engine%2Fv3.6.1",
+    "publishedDate": "2026-11-04T13:21:06.000Z",
+    "domain": "gitops",
+    "topics": [
+      "gitops",
+      "argo",
+      "argocd"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "argo",
+    "releaseVersion": "v3.6.1"
+  },
+  {
+    "id": "pulumi-0d687a171d99",
+    "title": "v3.274.0",
+    "summary": "3.274.0 (2026-11-03) Features [cli/policy] Add pulumi policy get to show a policy pack's policies #25297 [cli/policy] Add --output json to pulumi policy publish, enable, disable, rm and validate-config, and print the updated policy group after enable and disable #25347 [cli/policy] Add --stack-rule and --account-rule to pulumi policy group new and edit, and show match rules in policy group console output #25345 [cli/policy] Add pulumi stack policy ls to list the policy groups and policy packs th",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.274.0",
+    "publishedDate": "2026-11-04T12:04:08.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.274.0"
+  },
+  {
+    "id": "cncf-1fe1924b02fc",
+    "title": "OpenShell on Kubernetes: A guide for platform engineers",
+    "summary": "What OpenShell is AI agents do more than call APIs. They run shells, install packages, read files, and open network connections. Often they act on text they pulled from the internet a minute earlier. So every...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/11/04/openshell-on-kubernetes-a-guide-for-platform-engineers/",
+    "publishedDate": "2026-11-04T12:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "oci-oke-653af3d9cd91",
+    "title": "v9.12.0",
+    "summary": "9.12.0 (November 4, 2026) Added Support for OCIR: Enabling Pull-through cache, multi-region and top-level repository capabilities and Global Endpoint for US Multi region Support for listingId in SELF usage submission APIs Bug Fix Data Science artifact signature lifecycle handling and model deployment update support Restore systemTags support to container engine resources Prevent sending node_pool_cycling_details in update request if there are no changes Fix database import panic on nil Data Guar",
+    "source": "OCI / OKE",
+    "sourceId": "oci-oke",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.12.0",
+    "publishedDate": "2026-11-04T10:40:46.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "oci",
+      "oke",
+      "oracle"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "oci-oke",
+    "releaseVersion": "v9.12.0"
+  },
+  {
+    "id": "robusta-d9127df60a62",
+    "title": "0.54.0-alpha.1",
+    "summary": "What's Changed feat(helm): support dnsConfig on the forwarder deployment by @DrFaust92 in #2124 ROB-1707 Holmes Chat API docs: match start_tool_calling and token_count payloads by @naomi-robusta in #2209 Never block or drop Slack messages on the Holmes slackbot check by @Avi-Robusta in #2210 ROB-1738 Fix Pillow, filelock, h2, virtualenv, certifi, black CVEs by @moshemorad in #2212 ROB-1291 Prometheus tenant from the namespace label (option B: UI + alert graphs) by @RoiGlinik in #2215 ROB-1743 Do",
+    "source": "Robusta",
+    "sourceId": "robusta",
+    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.54.0-alpha.1",
+    "publishedDate": "2026-11-04T10:22:01.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "robusta",
+    "releaseVersion": "0.54.0-alpha.1"
+  },
+  {
+    "id": "holmesgpt-cb3316270a1c",
+    "title": "0.46.0-alpha",
+    "summary": "What's Changed ROB-1624 Notify Slack when a release workflow fails by @Avi-Robusta in #2606 Add allowed_tools to MCP servers to load only some of a server's tools by @elidrissi-amine in #2598 feat(alert): add webhook destination by @mrchocha in #2612 ROB-616: Migrate AWS MCP to the hosted AWS MCP Server by @Avi-Robusta in #2529 Add notify input to eval-benchmarks workflow for quiet manual runs by @moshemorad in #2627 ROB-1490 Cleanup repeated Holmes server logs by @moshemorad in #2608 ROB-1544 S",
+    "source": "HolmesGPT (Robusta)",
+    "sourceId": "holmesgpt",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.46.0-alpha",
+    "publishedDate": "2026-11-04T10:04:34.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "holmesgpt",
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "holmesgpt",
+    "releaseVersion": "0.46.0-alpha"
+  },
+  {
     "id": "argo-ce3b9f46853a",
     "title": "v3.6.0",
     "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.6.0/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.6.0/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container imag",
@@ -41,26 +301,6 @@
     "releaseRelated": false
   },
   {
-    "id": "argo-520b0c0f61df",
-    "title": "stable: chore: bump version to 3.6.0 on release-3.6 branch (#30754)",
-    "summary": "Signed-off-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com> Co-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/stable",
-    "publishedDate": "2026-11-03T21:24:39.000Z",
-    "domain": "gitops",
-    "topics": [
-      "argo",
-      "argocd",
-      "gitops"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "3.6.0"
-  },
-  {
     "id": "argo-8359e0bdff19",
     "title": "gitops-engine/v3.6.0: chore: bump version to 3.6.0 on release-3.6 branch (#30754)",
     "summary": "Signed-off-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com> Co-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>",
@@ -79,6 +319,44 @@
     "releaseRelated": true,
     "releaseProject": "argo",
     "releaseVersion": "v3.6.0"
+  },
+  {
+    "id": "pulumi-f21ec96cb485",
+    "title": "sdk/v3.274.0",
+    "summary": "Harvest propertyDependencies from OutputValue inputs on RegisterResou…",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.274.0",
+    "publishedDate": "2026-11-03T20:30:23.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.274.0"
+  },
+  {
+    "id": "pulumi-30526e028a50",
+    "title": "pkg/v3.274.0",
+    "summary": "Harvest propertyDependencies from OutputValue inputs on RegisterResou…",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.274.0",
+    "publishedDate": "2026-11-03T20:30:23.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.274.0"
   },
   {
     "id": "argo-c8379d2f6bb5",
@@ -7474,26 +7752,6 @@
     "releaseVersion": "v1.54.9"
   },
   {
-    "id": "backstage-bbcb895aa160",
-    "title": "v1.50.7",
-    "summary": "This patch release contains the following commits: fix: normalize TechDocs Markdown extension configuration",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.50.7",
-    "publishedDate": "2026-09-25T10:58:44.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.50.7"
-  },
-  {
     "id": "prometheus-3a8dbb72ffa9",
     "title": "3.15.0 / 2026-09-24",
     "summary": "[CHANGE] PromQL: A range query whose end was not aligned to step caused subqueries inside it to evaluate past the parent's last actual step, inflating peakSamples in the query stats and against the query.max-samples limit, and wasting storage I/O reading samples that were never used in the result. Add tests to prevent regression of the fix made in #18081. #18598 [CHANGE] PromQL: Do not register a start timestamp reset if the start timestamp hasn't changed between subsequent samples. #19454 [CHAN",
@@ -7532,220 +7790,6 @@
     "releaseRelated": true,
     "releaseProject": "prometheus",
     "releaseVersion": "v0.315.0"
-  },
-  {
-    "id": "containerd-4c0d7bf422d9",
-    "title": "containerd 1.7.36",
-    "summary": "Welcome to the v1.7.36 release of containerd! The thirty-sixth patch release for containerd 1.7 contains various fixes and updates including a security patch. Security Updates containerd CVE-2026-53493 Highlights Image Storage Ensure all layers are fetched when multiple manifests in an index share a config descriptor (#14142) Runtime Mask /proc/interrupts and CPU thermal throttle sysfs paths in Linux containers by default (#14184) Please try out the release binaries and report any issues at http",
-    "source": "containerd",
-    "sourceId": "containerd",
-    "url": "https://github.com/containerd/containerd/releases/tag/v1.7.36",
-    "publishedDate": "2026-09-24T23:44:00.000Z",
-    "domain": "containers",
-    "topics": [
-      "containers",
-      "containerd",
-      "runtime"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "containerd",
-    "releaseVersion": "1.7.36"
-  },
-  {
-    "id": "containerd-255443ec756a",
-    "title": "containerd 2.4.1",
-    "summary": "Welcome to the v2.4.1 release of containerd! The first patch release for containerd 2.4 contains various fixes and updates including a security patch. Security Updates containerd CVE-2026-53493 Highlights Container Runtime Interface (CRI) Fix bug where failed container start cleanup leaked tasks and prevented container removal (#14223) Fix bug where container creation failed when SELinux relabeling was unsupported by the filesystem (#14212) Image Distribution Fix content upload failures when ret",
-    "source": "containerd",
-    "sourceId": "containerd",
-    "url": "https://github.com/containerd/containerd/releases/tag/v2.4.1",
-    "publishedDate": "2026-09-24T23:40:25.000Z",
-    "domain": "containers",
-    "topics": [
-      "containers",
-      "containerd",
-      "runtime"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "containerd",
-    "releaseVersion": "2.4.1"
-  },
-  {
-    "id": "containerd-136163670aca",
-    "title": "containerd 2.2.9",
-    "summary": "Welcome to the v2.2.9 release of containerd! The ninth patch release for containerd 2.2 contains various fixes and updates including a security patch. Security Updates containerd CVE-2026-53493 Highlights Container Runtime Interface (CRI) Fix bug where container creation failed when SELinux relabeling was unsupported by the filesystem (#14210) Enable mount manager for image mounts in CRI (#14148) Image Storage Ensure all layers are fetched when multiple manifests in an index share a config descr",
-    "source": "containerd",
-    "sourceId": "containerd",
-    "url": "https://github.com/containerd/containerd/releases/tag/v2.2.9",
-    "publishedDate": "2026-09-24T23:16:37.000Z",
-    "domain": "containers",
-    "topics": [
-      "containers",
-      "containerd",
-      "runtime"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "containerd",
-    "releaseVersion": "2.2.9"
-  },
-  {
-    "id": "containerd-2afe8c37689c",
-    "title": "containerd 2.3.6",
-    "summary": "Welcome to the v2.3.6 release of containerd! The sixth patch release for containerd 2.3 contains various fixes and updates including a security patch. Security Updates containerd CVE-2026-53493 Highlights Container Runtime Interface (CRI) Fix bug where container creation failed when SELinux relabeling was unsupported by the filesystem (#14211) Enable mount manager for image mounts in CRI (#14147) Image Storage Ensure all layers are fetched when multiple manifests in an index share a config descr",
-    "source": "containerd",
-    "sourceId": "containerd",
-    "url": "https://github.com/containerd/containerd/releases/tag/v2.3.6",
-    "publishedDate": "2026-09-24T23:13:08.000Z",
-    "domain": "containers",
-    "topics": [
-      "containers",
-      "containerd",
-      "runtime"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "containerd",
-    "releaseVersion": "2.3.6"
-  },
-  {
-    "id": "containerd-438e1e1bafed",
-    "title": "containerd 2.0.13",
-    "summary": "Welcome to the v2.0.13 release of containerd! The thirteenth patch release for containerd 2.0 contains various fixes and updates including a security patch. Security Updates containerd CVE-2026-53493 Highlights Image Storage Ensure all layers are fetched when multiple manifests in an index share a config descriptor (#14141) Runtime Mask /proc/interrupts and CPU thermal throttle sysfs paths in Linux containers by default (#14183) Please try out the release binaries and report any issues at https:",
-    "source": "containerd",
-    "sourceId": "containerd",
-    "url": "https://github.com/containerd/containerd/releases/tag/v2.0.13",
-    "publishedDate": "2026-09-24T23:04:59.000Z",
-    "domain": "containers",
-    "topics": [
-      "containers",
-      "containerd",
-      "runtime"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "containerd",
-    "releaseVersion": "2.0.13"
-  },
-  {
-    "id": "vector-4a525bca85a7",
-    "title": "vdev-v0.3.24",
-    "summary": "feat(releasing): push post-release housekeeping directly to master (#… …26471)",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.24",
-    "publishedDate": "2026-09-24T21:17:23.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector"
-  },
-  {
-    "id": "grafana-872090f6788c",
-    "title": "What if your agent's hallucinations had a budget? How to start using SLOs for agent behavior",
-    "summary": "At Grafana Labs, observability is what we do. So as we started building AI agents, we naturally reached for the same instincts we bring to every system: measure it, set targets, and make reliability something you can reason about instead of hope for.That instinct led us somewhere unexpectedly useful. It turns out one of the oldest ideas in reliability engineering, the error budget, maps beautifully onto one of the newest problems in software: how do you know if an AI agent is actually any good?T",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/what-if-your-agent-s-hallucinations-had-a-budget-how-to-start-using-slos-for-agent-behavior/",
-    "publishedDate": "2026-09-24T17:14:13.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "ai-agent",
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "vector-99cc11bfff83",
-    "title": "vdev-v0.3.23",
-    "summary": "No content.",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.23",
-    "publishedDate": "2026-09-24T16:14:14.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector"
-  },
-  {
-    "id": "cncf-4a197736897f",
-    "title": "Observability Day: Where the community comes together at KubeCon + CloudNativeCon North America 2026",
-    "summary": "Observability Day returns to KubeCon + CloudNativeCon North America on November 9, 2026, in Salt Lake City, Utah, bringing together maintainers, operators, and end users from across the CNCF observability community. Observability has reached an important...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/09/24/observability-day-where-the-community-comes-together-at-kubecon-cloudnativecon-north-america-2026/",
-    "publishedDate": "2026-09-24T12:22:50.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "oci-oke-d296a2ff51d8",
-    "title": "v9.3.0",
-    "summary": "9.3.0 (September 22, 2026) Added DEXREQ-8552: fix generated Assessment conflicts Support for Generative AI model discovery and routing profiles support for Data Safe Crypto Posture Assessment Support for Usage Based SaaS listings on Marketplace [SELF v2] OCI Functions source_details support for container images, archives, pre-built sources, runtime configuration, runtime data sources, validation, work-request waits, tests, examples, deprecation message and documentations Support for Recurring Ma",
-    "source": "OCI / OKE",
-    "sourceId": "oci-oke",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.3.0",
-    "publishedDate": "2026-09-24T08:20:38.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "oci",
-      "oke",
-      "oracle"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "oci-oke",
-    "releaseVersion": "v9.3.0"
-  },
-  {
-    "id": "vector-5345d4e464be",
-    "title": "vdev-v0.3.22",
-    "summary": "feat(releasing): automate release freeze and refresh Kubernetes manif… …ests (#26463)",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.22",
-    "publishedDate": "2026-09-23T23:29:43.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector"
   },
   {
     "id": "kubernetes-releases-1bc3a2b4b103",
@@ -7822,25 +7866,6 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes-releases",
     "releaseVersion": "v1.36.5"
-  },
-  {
-    "id": "terraform-c79ceb465e4a",
-    "title": "v1.17.0-beta2",
-    "summary": "1.17.0-beta2 (September 23, 2026) NEW FEATURES: Terraform now supports variables and locals in provider requirements (#39153) A new -minimal-refresh planning option has been added, which will only refresh resources that have proposed changes. (#35290) policy: Terraform Policy is now generally available. The -policies flag for plan, apply, and query no longer requires an experimental build or the -allow-experimental-features flag. Query policies evaluate resources discovered by list blocks and re",
-    "source": "Terraform",
-    "sourceId": "terraform",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-beta2",
-    "publishedDate": "2026-09-23T15:48:24.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "terraform",
-    "releaseVersion": "v1.17.0-beta2"
   },
   {
     "id": "prometheus-6d74b19c9129",
@@ -9762,24 +9787,5 @@
     "importance": "high",
     "architectureShift": true,
     "releaseRelated": false
-  },
-  {
-    "id": "kubernetes-releases-75234708d31b",
-    "title": "v1.37.0-rc.0",
-    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
-    "source": "Kubernetes Releases",
-    "sourceId": "kubernetes-releases",
-    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.0-rc.0",
-    "publishedDate": "2026-08-06T12:04:57.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "release"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kubernetes-releases",
-    "releaseVersion": "v1.37.0-rc.0"
   }
 ]
