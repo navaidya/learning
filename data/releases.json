@@ -1,11 +1,11 @@
 [
   {
     "project": "argo",
-    "version": "v3.3.19",
-    "publishedDate": "2026-11-03T20:02:14.000Z",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.19",
+    "version": "v3.6.0",
+    "publishedDate": "2026-11-03T23:00:04.000Z",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.0",
     "sourceId": "argo",
-    "title": "v3.3.19"
+    "title": "v3.6.0"
   },
   {
     "project": "prometheus",

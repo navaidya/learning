@@ -1,5 +1,86 @@
 [
   {
+    "id": "argo-ce3b9f46853a",
+    "title": "v3.6.0",
+    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.6.0/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.6.0/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container imag",
+    "source": "Argo",
+    "sourceId": "argo",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.0",
+    "publishedDate": "2026-11-03T23:00:04.000Z",
+    "domain": "gitops",
+    "topics": [
+      "gitops",
+      "argo-cd",
+      "argo",
+      "argocd"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "argo",
+    "releaseVersion": "v3.6.0"
+  },
+  {
+    "id": "grafana-3fdf39866779",
+    "title": "Bridging Alloy and OpenTelemetry: the OTel engine is now in Public Preview",
+    "summary": "Many Grafana Cloud customers love what Alloy offers them, but we're also seeing a growing base of users who feel the same way about the OpenTelemetry Collector. We want to make it easy for customers to make the decision that makes the most sense, regardless of their preference.When we introduced the OpenTelemetry engine for Grafana Alloy, we set out to give teams a way to run native OTLP pipelines without giving up the power and flexibility Alloy is known for. Since then we've kept building: iro",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/bridging-alloy-and-opentelemetry-the-otel-engine-is-now-in-public-preview/",
+    "publishedDate": "2026-11-03T21:32:18.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otlp",
+      "collector",
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "argo-520b0c0f61df",
+    "title": "stable: chore: bump version to 3.6.0 on release-3.6 branch (#30754)",
+    "summary": "Signed-off-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com> Co-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>",
+    "source": "Argo",
+    "sourceId": "argo",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/stable",
+    "publishedDate": "2026-11-03T21:24:39.000Z",
+    "domain": "gitops",
+    "topics": [
+      "argo",
+      "argocd",
+      "gitops"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "argo",
+    "releaseVersion": "3.6.0"
+  },
+  {
+    "id": "argo-8359e0bdff19",
+    "title": "gitops-engine/v3.6.0: chore: bump version to 3.6.0 on release-3.6 branch (#30754)",
+    "summary": "Signed-off-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com> Co-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>",
+    "source": "Argo",
+    "sourceId": "argo",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/gitops-engine%2Fv3.6.0",
+    "publishedDate": "2026-11-03T21:24:39.000Z",
+    "domain": "gitops",
+    "topics": [
+      "gitops",
+      "argo",
+      "argocd"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "argo",
+    "releaseVersion": "v3.6.0"
+  },
+  {
     "id": "argo-c8379d2f6bb5",
     "title": "v3.3.19",
     "summary": "ImportantEND OF LIFE NOTICE This is the final release of the v3.3 release series. As of November 3rd, 2026 this version has reached end of life and will no longer receive bug fixes or security updates. Action Required: Please upgrade to a supported version (v3.4.13, v3.5.7, or v3.6.0). Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.3.19/manifests/install.yaml HA: kubectl create n",
@@ -257,26 +338,6 @@
     "releaseRelated": true,
     "releaseProject": "argo",
     "releaseVersion": "v3.4.13"
-  },
-  {
-    "id": "argo-520b0c0f61df",
-    "title": "stable",
-    "summary": "Release 3.5.7",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/stable",
-    "publishedDate": "2026-11-02T19:27:02.000Z",
-    "domain": "gitops",
-    "topics": [
-      "argo",
-      "argocd",
-      "gitops"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "3.5.7"
   },
   {
     "id": "grafana-a342800fb7d6",
@@ -7782,23 +7843,6 @@
     "releaseVersion": "v1.17.0-beta2"
   },
   {
-    "id": "cncf-bf5d8ede87ac",
-    "title": "Which hat am I wearing right now?",
-    "summary": "Neutrality is quietly the hardest part of open source. It gets tricky the moment someone pays your salary — and staying honest about it takes more effort than anyone admits. Here’s something we don’t say out...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/09/23/which-hat-am-i-wearing-right-now/",
-    "publishedDate": "2026-09-23T14:47:15.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "prometheus-6d74b19c9129",
     "title": "3.15.0-rc.1 / 2026-09-21",
     "summary": "[BUGFIX] TSDB: Avoid WAL corruption after a failed WAL write in Agent mode. #19700",
@@ -9737,46 +9781,5 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes-releases",
     "releaseVersion": "v1.37.0-rc.0"
-  },
-  {
-    "id": "holmesgpt-d14a7940586d",
-    "title": "0.38.2",
-    "summary": "What's Changed ROB-770 Add cross-cluster tools documentation by @naomi-robusta in #2341 ROB-808 docs: add Bitbucket instructions for loading custom skills by @Avi-Robusta in #2342 ROB-836 Pin *.sha256 manifests to LF so the Docker build works on Windows clones by @alonelish in #2354 ROB-841 Add RFC 8707 resource indicator support to MCP OAuth flow by @Avi-Robusta in #2355 Full Changelog: 0.38.1...0.38.2",
-    "source": "HolmesGPT (Robusta)",
-    "sourceId": "holmesgpt",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.38.2",
-    "publishedDate": "2026-08-06T07:18:17.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "mcp",
-      "holmesgpt",
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "high",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "holmesgpt",
-    "releaseVersion": "0.38.2"
-  },
-  {
-    "id": "kubernetes-releases-8638c07af9ff",
-    "title": "v1.38.0-alpha.0",
-    "summary": "Kubernetes rc release v1.38.0-alpha.0",
-    "source": "Kubernetes Releases",
-    "sourceId": "kubernetes-releases",
-    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.38.0-alpha.0",
-    "publishedDate": "2026-08-06T02:39:02.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "release"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kubernetes-releases",
-    "releaseVersion": "v1.38.0-alpha.0"
   }
 ]
