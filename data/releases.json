@@ -1,27 +1,67 @@
 [
   {
+    "project": "opentofu",
+    "version": "v1.13.9",
+    "publishedDate": "2026-11-05T19:09:38.000Z",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.9",
+    "sourceId": "opentofu",
+    "title": "v1.13.9"
+  },
+  {
+    "project": "pulumi",
+    "version": "v3.274.1",
+    "publishedDate": "2026-11-05T16:58:45.000Z",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.274.1",
+    "sourceId": "pulumi",
+    "title": "v3.274.1"
+  },
+  {
+    "project": "kyverno",
+    "version": "v1.20.0-rc.1",
+    "publishedDate": "2026-11-05T16:36:16.000Z",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.20.0-rc.1",
+    "sourceId": "kyverno",
+    "title": "v1.20.0-rc.1"
+  },
+  {
+    "project": "prometheus",
+    "version": "3.16.0",
+    "publishedDate": "2026-11-05T16:06:52.000Z",
+    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.16.0",
+    "sourceId": "prometheus",
+    "title": "3.16.0 / 2026-11-04"
+  },
+  {
+    "project": "opentelemetry",
+    "version": "3.0",
+    "publishedDate": "2026-11-05T15:54:08.000Z",
+    "url": "https://opentelemetry.io/blog/2026/otel-js-sdk-3-0/",
+    "sourceId": "opentelemetry",
+    "title": "Announcing the OpenTelemetry JavaScript SDK 3.0"
+  },
+  {
+    "project": "loki",
+    "version": "v4.0.0-rc.2",
+    "publishedDate": "2026-11-05T15:08:47.000Z",
+    "url": "https://github.com/grafana/loki/releases/tag/v4.0.0-rc.2",
+    "sourceId": "loki",
+    "title": "v4.0.0-rc.2"
+  },
+  {
+    "project": "cncf",
+    "version": "v1.0.0",
+    "publishedDate": "2026-11-05T12:00:00.000Z",
+    "url": "https://www.cncf.io/blog/2026/11/05/kpt-v1-0-0-is-released/",
+    "sourceId": "cncf",
+    "title": "kpt v1.0.0 is released"
+  },
+  {
     "project": "oci-oke",
     "version": "v9.12.1",
     "publishedDate": "2026-11-05T07:44:03.000Z",
     "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.12.1",
     "sourceId": "oci-oke",
     "title": "v9.12.1"
-  },
-  {
-    "project": "opentofu",
-    "version": "v1.13.8",
-    "publishedDate": "2026-11-04T21:45:55.000Z",
-    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.8",
-    "sourceId": "opentofu",
-    "title": "v1.13.8"
-  },
-  {
-    "project": "loki",
-    "version": "v4.0.0-rc.2",
-    "publishedDate": "2026-11-04T15:40:52.000Z",
-    "url": "https://github.com/grafana/loki/releases/tag/v4.0.0-rc.2",
-    "sourceId": "loki",
-    "title": "v4.0.0-rc.2"
   },
   {
     "project": "robusta",
@@ -48,28 +88,12 @@
     "title": "v3.6.1"
   },
   {
-    "project": "pulumi",
-    "version": "v3.274.0",
-    "publishedDate": "2026-11-04T12:04:08.000Z",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.274.0",
-    "sourceId": "pulumi",
-    "title": "v3.274.0"
-  },
-  {
     "project": "openai",
     "version": "2.6",
     "publishedDate": "2026-11-04T00:00:00.000Z",
     "url": "https://openai.com/index/introducing-images-2-6",
     "sourceId": "openai",
     "title": "Introducing Images 2.6"
-  },
-  {
-    "project": "prometheus",
-    "version": "v0.316.0-rc.4",
-    "publishedDate": "2026-11-03T19:23:14.000Z",
-    "url": "https://github.com/prometheus/prometheus/releases/tag/v0.316.0-rc.4",
-    "sourceId": "prometheus",
-    "title": "v0.316.0-rc.4"
   },
   {
     "project": "backstage",
@@ -80,36 +104,12 @@
     "title": "v1.57.0-next.1"
   },
   {
-    "project": "cncf",
-    "version": "v0.6.0",
-    "publishedDate": "2026-11-03T12:00:00.000Z",
-    "url": "https://www.cncf.io/blog/2026/11/03/openkruise-agents-v0-6-0-leaping-ahead-in-agent-sandbox-security-and-automation/",
-    "sourceId": "cncf",
-    "title": "OpenKruise Agents v0.6.0: Leaping ahead in agent Sandbox security and automation"
-  },
-  {
     "project": "cilium",
     "version": "1.21.0-pre.4",
     "publishedDate": "2026-11-02T23:21:19.000Z",
     "url": "https://github.com/cilium/cilium/releases/tag/v1.21.0-pre.4",
     "sourceId": "cilium",
     "title": "1.21.0-pre.4"
-  },
-  {
-    "project": "kyverno",
-    "version": "v1.20.0-rc.1",
-    "publishedDate": "2026-11-02T23:07:36.000Z",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.20.0-rc.1",
-    "sourceId": "kyverno",
-    "title": "v1.20.0-rc.1"
-  },
-  {
-    "project": "opentelemetry",
-    "version": "v1.0.0",
-    "publishedDate": "2026-10-30T15:42:24.000Z",
-    "url": "https://opentelemetry.io/blog/2026/obi-v1-release/",
-    "sourceId": "opentelemetry",
-    "title": "OpenTelemetry eBPF Instrumentation reaches v1.0.0"
   },
   {
     "project": "gateway-api",

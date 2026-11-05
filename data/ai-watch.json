@@ -1,5 +1,64 @@
 [
   {
+    "id": "langfuse-dca2c54342d1",
+    "title": "v4.76.0",
+    "summary": "What's Changed Features feat(sessions): Add chronological session list view by @bezbac in #19650 feat(telemetry): report AI gateway key count from self-hosted instances by @wochinge in #19680 feat(topics): add Topics summaries, assignments and rules to the public API, MCP and in-app agent by @LysanderKie in #19308 feat(audit-logs): record read-access events for tRPC trace, session and score reads by @Steffen911 in #19625 feat(sessions): Add session tab in trace peek view by @bezbac in #19301 fea",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.76.0",
+    "publishedDate": "2026-11-05T18:08:03.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.76.0"
+  },
+  {
+    "id": "pydantic-ai-ec5fb94d76bf",
+    "title": "CLAI2 bleeding",
+    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
+    "publishedDate": "2026-11-05T17:26:14.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "cncf-video-49ff5c444338",
+    "title": "CNCF On-Demand: Governing & Understanding AI Agent Decisions",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=-rtcL6IlVbk",
+    "publishedDate": "2026-11-05T08:00:13.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "phoenix-792b1c506b18",
     "title": "arize-phoenix-client: v3.7.0",
     "summary": "3.7.0 (2026-11-05) Features harbor: record model parameters and agent settings in experiment metadata (#17457) (2b2b9fb) Bug Fixes client: validate required name and annotator_kind columns in annotation dataframes (#17433) (3146086)",
@@ -78,25 +137,6 @@
     "releaseRelated": true,
     "releaseProject": "langgraph",
     "releaseVersion": "0.4.13"
-  },
-  {
-    "id": "pydantic-ai-ec5fb94d76bf",
-    "title": "CLAI2 bleeding",
-    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-05T01:46:42.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai"
   },
   {
     "id": "phoenix-cb4c95e340da",
@@ -5917,45 +5957,5 @@
     "releaseRelated": true,
     "releaseProject": "langgraph",
     "releaseVersion": "1.2.11"
-  },
-  {
-    "id": "langgraph-1a48cc42b5e5",
-    "title": "langgraph-checkpoint-postgres==3.1.2",
-    "summary": "Changes since checkpointpostgres==3.1.1 release(checkpoint-postgres): 3.1.2 (#8565) release(checkpoint): 4.2.0 (#8563) test(checkpoint-postgres,checkpoint-sqlite): run the conformance suite (#8537) fix(checkpoint-postgres): find plain-value seeds when walking delta history (#8535) chore: enable RUF100 and clear unused noqa directives (#8546) chore(checkpoint-postgres,checkpoint-sqlite): enable PLC0415 lint rule (#8540) chore(deps): bump the minor-and-patch group in /libs/checkpoint-postgres with",
-    "source": "LangGraph",
-    "sourceId": "langgraph",
-    "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointpostgres%3D%3D3.1.2",
-    "publishedDate": "2026-08-07T20:40:16.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "langgraph",
-    "releaseVersion": "3.1.2"
-  },
-  {
-    "id": "langgraph-75f03a2ec54e",
-    "title": "langgraph-checkpoint==4.2.0",
-    "summary": "Changes since checkpoint==4.1.1 release(checkpoint): 4.2.0 (#8563) fix(checkpoint): collect writes at plain-value seed in delta channel history (#8526) chore: enforce PLC0415 in tests for the remaining packages (#8547) chore: enable RUF100 and clear unused noqa directives (#8546) chore(deps): bump the minor-and-patch group in /libs/checkpoint with 4 updates (#8490) feat(checkpoint,checkpoint-postgres): add opt-in omit_expired to skip expired rows on read (#8354) chore(deps): bump the minor-and-p",
-    "source": "LangGraph",
-    "sourceId": "langgraph",
-    "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpoint%3D%3D4.2.0",
-    "publishedDate": "2026-08-07T20:05:22.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "langgraph",
-    "releaseVersion": "4.2.0"
   }
 ]
