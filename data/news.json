@@ -1,5 +1,63 @@
 [
   {
+    "id": "oci-oke-e938bae015e4",
+    "title": "v9.12.1",
+    "summary": "9.12.0 (November 4, 2026) Added Support for OCIR: Enabling Pull-through cache, multi-region and top-level repository capabilities and Global Endpoint for US Multi region Support for listingId in SELF usage submission APIs Bug Fix Data Science artifact signature lifecycle handling and model deployment update support Restore systemTags support to container engine resources Prevent sending node_pool_cycling_details in update request if there are no changes Fix database import panic on nil Data Guar",
+    "source": "OCI / OKE",
+    "sourceId": "oci-oke",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.12.1",
+    "publishedDate": "2026-11-05T07:44:03.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "oci",
+      "oke",
+      "oracle"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "oci-oke",
+    "releaseVersion": "v9.12.1"
+  },
+  {
+    "id": "opentofu-ae0094b17c3a",
+    "title": "v1.13.8",
+    "summary": "BUG FIXES: The -v short option now again works as an alias for the version command and --version option, fixing an unintended regression in v1.13.0. (#4769) Fixed panic when provided invalid state encryption configuration. (#4783) Full Changelog: v1.13.2...v1.13.8",
+    "source": "OpenTofu",
+    "sourceId": "opentofu",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.8",
+    "publishedDate": "2026-11-04T21:45:55.000Z",
+    "domain": "terraform",
+    "topics": [
+      "opentofu",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentofu",
+    "releaseVersion": "v1.13.8"
+  },
+  {
+    "id": "opentofu-6c87eb3cc4e6",
+    "title": "v1.13.7",
+    "summary": "1.13.7",
+    "source": "OpenTofu",
+    "sourceId": "opentofu",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.7",
+    "publishedDate": "2026-11-04T21:06:18.000Z",
+    "domain": "terraform",
+    "topics": [
+      "opentofu",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentofu",
+    "releaseVersion": "v1.13.7"
+  },
+  {
     "id": "opentofu-0316aeb990e2",
     "title": "v1.13.6",
     "summary": "1.13.6",
@@ -258,6 +316,26 @@
     "releaseRelated": true,
     "releaseProject": "holmesgpt",
     "releaseVersion": "0.46.0-alpha"
+  },
+  {
+    "id": "openai-0a437d67f2ef",
+    "title": "Introducing Images 2.6",
+    "summary": "Images 2.6 brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Codex, and the API.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/introducing-images-2-6",
+    "publishedDate": "2026-11-04T00:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "openai",
+    "releaseVersion": "2.6"
   },
   {
     "id": "argo-ce3b9f46853a",
@@ -7657,44 +7735,6 @@
     "releaseVersion": "v3.265.0"
   },
   {
-    "id": "pulumi-52f7faf507f1",
-    "title": "sdk/v3.265.0: Authenticode-sign Windows binaries in release builds (#24785)",
-    "summary": "Part of IAC-4046 None of the .exe files we ship for Windows have ever been Authenticode-signed. Only the winget MSI container is, and it wraps the same unsigned zip. Defender is now quarantining pulumi-language-bun.exe as a trojan for customers. It's a false positive (the binary reproduces byte-for-byte from source), but it will keep happening to small unsigned launchers until we sign them. The analysis is on the Linear issue. goreleaser signs each Windows .exe it builds with jsign and Azure Tru",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.265.0",
-    "publishedDate": "2026-09-25T16:17:57.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.265.0"
-  },
-  {
-    "id": "opentelemetry-65be769cd7f4",
-    "title": "Exploring the OpenTelemetry Instrumentation Ecosystem",
-    "summary": "OpenTelemetry has a lot of pieces: APIs, SDKs, a protocol, semantic conventions, instrumentation, and tools like the Collector. The APIs and protocol define how telemetry is created and exchanged, while instrumentation is what actually observes what happens inside an application and turns it into telemetry. Semantic conventions give the people writing that instrumentation a shared way to describe what they&rsquo;re observing. The beauty of this approach is that completely separate authors can in",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/exploring-instrumentation-ecosystem/",
-    "publishedDate": "2026-09-25T11:24:23.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "collector",
-      "otel",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "cncf-8e96ccb87cd8",
     "title": "Security Slam 2026 – Fall edition",
     "summary": "Security Slam 2026 – Fall Edition is a 30-day virtual event from October 5 through November 6, 2026. What Is the Security Slam? The Open Source Security Foundation (OpenSSF) is partnering with the Cloud Native Computing...",
@@ -7710,46 +7750,6 @@
     "importance": "high",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "backstage-731f064dcfb1",
-    "title": "v1.55.2",
-    "summary": "This patch release contains the following commits: fix: normalize TechDocs Markdown extension configuration",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.55.2",
-    "publishedDate": "2026-09-25T10:58:52.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.55.2"
-  },
-  {
-    "id": "backstage-9d5f441a2cc9",
-    "title": "v1.54.9",
-    "summary": "This patch release contains the following commits: fix: normalize TechDocs Markdown extension configuration",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.9",
-    "publishedDate": "2026-09-25T10:58:48.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.54.9"
   },
   {
     "id": "prometheus-3a8dbb72ffa9",

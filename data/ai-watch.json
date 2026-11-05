@@ -1,12 +1,92 @@
 [
   {
+    "id": "phoenix-792b1c506b18",
+    "title": "arize-phoenix-client: v3.7.0",
+    "summary": "3.7.0 (2026-11-05) Features harbor: record model parameters and agent settings in experiment metadata (#17457) (2b2b9fb) Bug Fixes client: validate required name and annotator_kind columns in annotation dataframes (#17433) (3146086)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-client-v3.7.0",
+    "publishedDate": "2026-11-05T03:07:57.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v3.7.0"
+  },
+  {
+    "id": "langgraph-e5deefd66a9f",
+    "title": "langgraph-cli==0.4.41",
+    "summary": "Changes since cli==0.4.40 release(cli): 0.4.41 (#9596) chore(deps): bump langgraph from 1.2.3 to 1.2.14 in /libs/cli (#9512) chore(deps): bump the minor-and-patch group in /libs/cli/js-examples with 9 updates (#9528) chore(deps): bump the minor-and-patch group in /libs/cli/js-monorepo-example with 8 updates (#9526) chore(deps): bump the uv group across 2 directories with 1 update (#9513) chore(deps): bump langgraph-sdk from 0.4.5 to 0.4.6 in /libs/cli (#9514) fix(cli): remove outdated deploy pri",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.41",
+    "publishedDate": "2026-11-05T02:30:54.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "0.4.41"
+  },
+  {
+    "id": "langgraph-f0ce2d309fd4",
+    "title": "langgraph==1.2.20",
+    "summary": "Changes since 1.2.19 release(langgraph): 1.2.20 (#9595) feat(langgraph): give each interrupt() in a task its own id (#9589) fix(langgraph): point the multiple-interrupts error at the current docs (#9590) feat(langgraph): add a strict resume mode that refuses stale interrupt answers (#9574) chore(deps-dev): bump types-requests from 2.33.0.20260906 to 2.33.0.20261006 in /libs/langgraph (#9535) chore(deps-dev): bump pycryptodome from 3.23.0 to 4.2.0 in /libs/langgraph in the major group (#9534)",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.20",
+    "publishedDate": "2026-11-05T02:20:53.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "1.2.20"
+  },
+  {
+    "id": "langgraph-7469db3b5ce9",
+    "title": "langgraph-sdk==0.4.13",
+    "summary": "Changes since sdk==0.4.12 release(langgraph): 1.2.20 (#9595) release(sdk-py): 0.4.13 (#9594) feat(sdk-py): add cancel_reason to Run (#9571) docs(sdk-py): show the run's status in the stream example's end event (#9588) feat(sdk-py): add select to threads.get_state and get_history (#9568)",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.13",
+    "publishedDate": "2026-11-05T02:16:06.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "0.4.13"
+  },
+  {
     "id": "pydantic-ai-ec5fb94d76bf",
     "title": "CLAI2 bleeding",
     "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-04T20:11:25.000Z",
+    "publishedDate": "2026-11-05T01:46:42.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +97,47 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "phoenix-cb4c95e340da",
+    "title": "@arizeai/phoenix-cli@1.19.2",
+    "summary": "Patch Changes Updated dependencies [6a60c71] Updated dependencies [491ae7a] @arizeai/phoenix-client@7.18.1",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-cli%401.19.2",
+    "publishedDate": "2026-11-04T21:31:02.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "1.19.2"
+  },
+  {
+    "id": "phoenix-d3599653290f",
+    "title": "@arizeai/phoenix-client@7.18.1",
+    "summary": "Patch Changes 6a60c71: fix(phoenix-client): preserve the error status of failed experiment task spans 491ae7a: fix(phoenix-client): preserve system and developer instructions when converting prompts to Anthropic, omitting empty text blocks from the system array",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-client%407.18.1",
+    "publishedDate": "2026-11-04T21:30:58.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "7.18.1"
   },
   {
     "id": "pydantic-ai-7266573c3643",

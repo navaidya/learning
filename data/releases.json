@@ -1,11 +1,19 @@
 [
   {
+    "project": "oci-oke",
+    "version": "v9.12.1",
+    "publishedDate": "2026-11-05T07:44:03.000Z",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.12.1",
+    "sourceId": "oci-oke",
+    "title": "v9.12.1"
+  },
+  {
     "project": "opentofu",
-    "version": "v1.13.6",
-    "publishedDate": "2026-11-04T20:26:24.000Z",
-    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.6",
+    "version": "v1.13.8",
+    "publishedDate": "2026-11-04T21:45:55.000Z",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.8",
     "sourceId": "opentofu",
-    "title": "v1.13.6"
+    "title": "v1.13.8"
   },
   {
     "project": "loki",
@@ -48,12 +56,12 @@
     "title": "v3.274.0"
   },
   {
-    "project": "oci-oke",
-    "version": "v9.12.0",
-    "publishedDate": "2026-11-04T10:40:46.000Z",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.12.0",
-    "sourceId": "oci-oke",
-    "title": "v9.12.0"
+    "project": "openai",
+    "version": "2.6",
+    "publishedDate": "2026-11-04T00:00:00.000Z",
+    "url": "https://openai.com/index/introducing-images-2-6",
+    "sourceId": "openai",
+    "title": "Introducing Images 2.6"
   },
   {
     "project": "prometheus",
@@ -214,14 +222,6 @@
     "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.41",
     "sourceId": "k8sgpt",
     "title": "v0.4.41"
-  },
-  {
-    "project": "openai",
-    "version": "88.6",
-    "publishedDate": "2026-10-20T07:00:00.000Z",
-    "url": "https://openai.com/index/terminal-x",
-    "sourceId": "openai",
-    "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1"
   },
   {
     "project": "helm",
