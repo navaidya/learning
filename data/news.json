@@ -1,5 +1,63 @@
 [
   {
+    "id": "kubernetes-releases-317fc5b7e9b5",
+    "title": "v1.38.0-beta.0",
+    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
+    "source": "Kubernetes Releases",
+    "sourceId": "kubernetes-releases",
+    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.38.0-beta.0",
+    "publishedDate": "2026-11-06T04:34:14.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes-releases",
+    "releaseVersion": "v1.38.0-beta.0"
+  },
+  {
+    "id": "kyverno-dec3424a8259",
+    "title": "v1.20.0-rc.2",
+    "summary": "v1.20.0-rc.2",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.20.0-rc.2",
+    "publishedDate": "2026-11-05T23:13:53.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno",
+    "releaseVersion": "v1.20.0-rc.2"
+  },
+  {
+    "id": "vector-9f417f71ba30",
+    "title": "vdev-v0.3.42",
+    "summary": "fix(vdev): accept deprecations in changelog checks (#27061)",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.42",
+    "publishedDate": "2026-11-05T20:18:26.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
     "id": "grafana-e6ea88d4fe05",
     "title": "What’s new with Grafana variables: less clutter, easier reuse across dashboards, and more",
     "summary": "Template variables are one of the most used features in Grafana, providing users with a dropdown to turn one dashboard into hundreds: pick a different cluster, region, or service, and every panel updates.For most of Grafana's history, variables had a single home at the top of the dashboard. Each dashboard had one flat list of variables, and that list was shared by every panel on it. But as dashboards grew in size and number, those controls became harder to organize and maintain. The top of a das",
@@ -7424,65 +7482,6 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "pulumi-922ff7e20759",
-    "title": "sdk/v3.266.0: Update CreateRequest/Response to use `property.Map` (#24930)",
-    "summary": "Continuing the property.Map migration.",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.266.0",
-    "publishedDate": "2026-09-30T08:58:03.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.266.0"
-  },
-  {
-    "id": "vector-f3156e01e7be",
-    "title": "vdev-v0.3.25",
-    "summary": "No content.",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.25",
-    "publishedDate": "2026-09-29T18:30:07.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector"
-  },
-  {
-    "id": "tempo-e946803f4ad2",
-    "title": "v3.1.0",
-    "summary": "Grafana Tempo 3.1.0 adds query-based trace redaction, TraceQL metrics arithmetic and sampling-aware extrapolation, Kafka connectivity improvements, and experimental tools for comparing and pruning traces. It also makes vParquet5 the default format for newly written blocks. Highlights Redaction by query: Submit redaction jobs using a TraceQL selector instead of enumerating trace IDs, with optional time windows and redaction reliability improvements. TraceQL metrics: Combine aggregations with arit",
-    "source": "Grafana Tempo",
-    "sourceId": "tempo",
-    "url": "https://github.com/grafana/tempo/releases/tag/v3.1.0",
-    "publishedDate": "2026-09-29T17:07:23.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "tempo",
-      "tracing",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "tempo",
-    "releaseVersion": "v3.1.0"
   },
   {
     "id": "prometheus-756bf516f9eb",

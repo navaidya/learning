@@ -1,5 +1,21 @@
 [
   {
+    "project": "kubernetes-releases",
+    "version": "v1.38.0-beta.0",
+    "publishedDate": "2026-11-06T04:34:14.000Z",
+    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.38.0-beta.0",
+    "sourceId": "kubernetes-releases",
+    "title": "v1.38.0-beta.0"
+  },
+  {
+    "project": "kyverno",
+    "version": "v1.20.0-rc.2",
+    "publishedDate": "2026-11-05T23:13:53.000Z",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.20.0-rc.2",
+    "sourceId": "kyverno",
+    "title": "v1.20.0-rc.2"
+  },
+  {
     "project": "opentofu",
     "version": "v1.13.9",
     "publishedDate": "2026-11-05T19:09:38.000Z",
@@ -14,14 +30,6 @@
     "url": "https://github.com/pulumi/pulumi/releases/tag/v3.274.1",
     "sourceId": "pulumi",
     "title": "v3.274.1"
-  },
-  {
-    "project": "kyverno",
-    "version": "v1.20.0-rc.1",
-    "publishedDate": "2026-11-05T16:36:16.000Z",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.20.0-rc.1",
-    "sourceId": "kyverno",
-    "title": "v1.20.0-rc.1"
   },
   {
     "project": "prometheus",
@@ -142,14 +150,6 @@
     "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.1",
     "sourceId": "terraform",
     "title": "v1.17.1"
-  },
-  {
-    "project": "kubernetes-releases",
-    "version": "v1.38.0-alpha.3",
-    "publishedDate": "2026-10-28T09:02:26.000Z",
-    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.38.0-alpha.3",
-    "sourceId": "kubernetes-releases",
-    "title": "v1.38.0-alpha.3"
   },
   {
     "project": "flux",
