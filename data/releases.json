@@ -1,11 +1,27 @@
 [
   {
+    "project": "loki",
+    "version": "v3.6.20",
+    "publishedDate": "2026-11-06T16:11:18.000Z",
+    "url": "https://github.com/grafana/loki/releases/tag/v3.6.20",
+    "sourceId": "loki",
+    "title": "v3.6.20"
+  },
+  {
     "project": "kubernetes-releases",
     "version": "v1.38.0-beta.0",
     "publishedDate": "2026-11-06T04:34:14.000Z",
     "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.38.0-beta.0",
     "sourceId": "kubernetes-releases",
     "title": "v1.38.0-beta.0"
+  },
+  {
+    "project": "istio",
+    "version": "8.2",
+    "publishedDate": "2026-11-06T00:00:00.000Z",
+    "url": "https://istio.io/latest/news/security/istio-security-2026-009/",
+    "sourceId": "istio",
+    "title": "ISTIO-SECURITY-2026-009"
   },
   {
     "project": "kyverno",
@@ -46,14 +62,6 @@
     "url": "https://opentelemetry.io/blog/2026/otel-js-sdk-3-0/",
     "sourceId": "opentelemetry",
     "title": "Announcing the OpenTelemetry JavaScript SDK 3.0"
-  },
-  {
-    "project": "loki",
-    "version": "v4.0.0-rc.2",
-    "publishedDate": "2026-11-05T15:08:47.000Z",
-    "url": "https://github.com/grafana/loki/releases/tag/v4.0.0-rc.2",
-    "sourceId": "loki",
-    "title": "v4.0.0-rc.2"
   },
   {
     "project": "cncf",
@@ -166,14 +174,6 @@
     "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.164.0",
     "sourceId": "opentelemetry-collector",
     "title": "v1.70.0/v0.164.0"
-  },
-  {
-    "project": "istio",
-    "version": "1.24",
-    "publishedDate": "2026-10-26T00:00:00.000Z",
-    "url": "https://istio.io/latest/blog/2026/closing-the-gap-bringing-sidecar-level-tracing-to-istio-ambient-and-kiali/",
-    "sourceId": "istio",
-    "title": "Closing the Gap: Bringing Sidecar-Level Tracing to Istio's Ambient Mode with Kiali"
   },
   {
     "project": "karpenter",

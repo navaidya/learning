@@ -1,5 +1,81 @@
 [
   {
+    "id": "grafana-17a0037d718f",
+    "title": "Any agent anywhere: How to use Grafana Cloud with Claude, Cursor, and any other AI agent",
+    "summary": "AI agents are becoming part of everyday engineering workflows, helping teams write code, troubleshoot issues, and automate tasks. But to be truly useful in production, these agents need access to more than code. They also need observability data and context to understand what's happening across your systems, investigate problems, and help you take action.At Grafana Labs, we believe that context should be available wherever you work. That’s one of the core ideas behind Grafana Cloud as the open a",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/any-agent-anywhere-how-to-use-grafana-cloud-with-claude-cursor-and-any-other-ai-agent/",
+    "publishedDate": "2026-11-06T18:37:07.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "loki-411315522d4a",
+    "title": "v3.6.20",
+    "summary": "3.6.20 (2026-11-06) Bug Fixes deps: Update go4.org/netipx digest to 3075585 (release-3.6.x) (#26156) (5124776) deps: Update google.golang.org/genproto/googleapis/rpc digest to 2ffab32 (release-3.6.x) (#26157) (88e351e) deps: Update k8s.io/utils digest to ca04ba5 (release-3.6.x) (#26161) (8d2391d) security/HIGH/: Update module github.com/go-jose/go-jose/v4 to v4.1.6 [SECURITY] (release-3.6.x) (#25829) (d1915f4) security/HIGH/: Update module github.com/go-openapi/swag/jsonutils to v0.29.2 [SECURIT",
+    "source": "Grafana Loki",
+    "sourceId": "loki",
+    "url": "https://github.com/grafana/loki/releases/tag/v3.6.20",
+    "publishedDate": "2026-11-06T16:11:18.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "loki",
+      "logging",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "loki",
+    "releaseVersion": "v3.6.20"
+  },
+  {
+    "id": "opentelemetry-d21a334cc2e7",
+    "title": "Only include resource detectors you need by building your own Collector",
+    "summary": "There are many reasons for building your own OpenTelemetry Collector distribution. The existing distributions are designed to be broadly useful, which means they include many more components than what an individual deployment uses. Building your own gives you the ability to select only the components you care about, add your own custom components, and control exactly what ends up in the binary you run in production. One of the reasons I prefer to build my own distribution is to limit the size of",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/collector-with-less-dependencies/",
+    "publishedDate": "2026-11-06T14:49:46.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-1b5e88f32273",
+    "title": "Faster LLM inference startup: What you need to know",
+    "summary": "Adding an inference replica creates capacity only after the new instance can serve requests. Between starting a process and generating a response, an LLM server may need to load weights, initialize GPU resources, compile kernels, capture...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/11/06/faster-llm-inference-startup-what-you-need-to-know/",
+    "publishedDate": "2026-11-06T12:00:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "kubernetes-releases-317fc5b7e9b5",
     "title": "v1.38.0-beta.0",
     "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
@@ -17,6 +93,88 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes-releases",
     "releaseVersion": "v1.38.0-beta.0"
+  },
+  {
+    "id": "istio-36c44efabd70",
+    "title": "ISTIO-SECURITY-2026-009",
+    "summary": "Disclosure Details CVE(s) CVSS Impact Score 8.2 CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N Affected Releases 1.31.0 to 1.31.3 1.30.0 to 1.30.7 CVE Istio CVEs GHSA-rr2c-p22p-6r9r (CVSS score 8.2, High): In ambient mode, an operator-precedence error let a port-level STRICT PeerAuthentication be skipped when the workload mode was PERMISSIVE or DISABLE under a mesh-wide STRICT policy, allowing plaintext traffic to reach a port that required mTLS. Reported by Ravikanth Reddy. GHSA-7m6f-j3gp-2r53 (C",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/news/security/istio-security-2026-009/",
+    "publishedDate": "2026-11-06T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "istio",
+    "releaseVersion": "8.2"
+  },
+  {
+    "id": "openai-cfd4354afa14",
+    "title": "Measuring how AI agents handle everyday wet-lab science",
+    "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+    "publishedDate": "2026-11-06T00:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "openai",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "istio-c0092936a336",
+    "title": "Announcing Istio 1.31.4",
+    "summary": "This release contains security fixes. This release note describes what&rsquo;s different between Istio 1.31.3 and 1.31.4. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Security update For more information, see ISTIO-SECURITY-2026-009. Istio CVEs GHSA-rr2c-p22p-6r9r (CVSS score 8.2, High): In ambient mode, an operator-precedence e",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/news/releases/1.31.x/announcing-1.31.4/",
+    "publishedDate": "2026-11-06T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "istio",
+    "releaseVersion": "1.31.4"
+  },
+  {
+    "id": "istio-cd88e9582f98",
+    "title": "Announcing Istio 1.30.8",
+    "summary": "This release contains security fixes. This release note describes what&rsquo;s different between Istio 1.30.7 and 1.30.8. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Security update For more information, see ISTIO-SECURITY-2026-009. Istio CVEs GHSA-rr2c-p22p-6r9r (CVSS score 8.2, High): In ambient mode, an operator-precedence e",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/news/releases/1.30.x/announcing-1.30.8/",
+    "publishedDate": "2026-11-06T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "istio",
+    "releaseVersion": "1.30.8"
   },
   {
     "id": "kyverno-dec3424a8259",
@@ -1352,25 +1510,6 @@
     "domain": "opentelemetry",
     "topics": [
       "opentelemetry",
-      "otel",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "opentelemetry-d21a334cc2e7",
-    "title": "Only include resource detectors you need by building your own Collector",
-    "summary": "There are many reasons for building your own OpenTelemetry Collector distribution. The existing distributions are designed to be broadly useful, which means they include many more components than what an individual deployment uses. Building your own gives you the ability to select only the components you care about, add your own custom components, and control exactly what ends up in the binary you run in production. One of the reasons I prefer to build my own distribution is to limit the size of",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/collector-with-less-dependencies/",
-    "publishedDate": "2026-10-29T15:39:27.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "collector",
       "otel",
       "observability"
     ],
@@ -7346,142 +7485,6 @@
     "releaseRelated": true,
     "releaseProject": "pulumi",
     "releaseVersion": "v3.267.0"
-  },
-  {
-    "id": "grafana-72791ddd890a",
-    "title": "Tempo 3.1 release: new features for Kafka, TraceQL metrics updates, trace redaction, and more",
-    "summary": "Building on the major release of Tempo 3.0, Tempo 3.1 is here, delivering community-contributed Kafka client improvements, query-based trace redaction, sampling-aware TraceQL metrics, and more. Together, the updates in 3.1 make it easier to operate Tempo, get accurate insights from your trace data, and investigate issues more efficiently. You can continue reading and check out the video below to learn more about the latest features. The Tempo 3.1 release notes and changelog provide more in-depth",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/tempo-3-1-release-all-the-latest-features/",
-    "publishedDate": "2026-09-30T19:03:30.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "grafana",
-    "releaseVersion": "3.1"
-  },
-  {
-    "id": "oci-oke-92bcc9c12db3",
-    "title": "v9.8.0",
-    "summary": "9.8.0 (September 30, 2026) Added Fixed root compartment export name resolution Fixed documentation categorization and explicitly mention unavailable resources Support for Data Safe - ExaDB-C@C and ExaDB-D integration for target registration at scale Support for NatOnDrg Support for VM Cluster horizontal scaling | ADB-D & ADB-C@C - Phase 2 Support for Data Safe - Data Subsetting support Deprecation Add kms_key_id deprecation notice for Fusion Environment Bug Fix Fixed indentation in of markdown f",
-    "source": "OCI / OKE",
-    "sourceId": "oci-oke",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.8.0",
-    "publishedDate": "2026-09-30T17:09:15.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "oci",
-      "oke",
-      "oracle"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "oci-oke",
-    "releaseVersion": "v9.8.0"
-  },
-  {
-    "id": "cncf-50a6af1abf1a",
-    "title": "ArgoCon North America 2026: What to expect as the Argo community looks toward CD 4.0",
-    "summary": "Work across the Argo Project is accelerating, with growing adoption, new use cases, and more maintainers contributing across the community. The community is also beginning the visioning process for Argo CD 4.0, making ArgoCon an opportunity...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/09/30/argocon-north-america-2026-what-to-expect-as-the-argo-community-looks-toward-cd-4-0/",
-    "publishedDate": "2026-09-30T15:24:47.000Z",
-    "domain": "gitops",
-    "topics": [
-      "gitops",
-      "argo-cd",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "cncf",
-    "releaseVersion": "4.0"
-  },
-  {
-    "id": "opentofu-656fa0497be5",
-    "title": "v1.13.0",
-    "summary": "OpenTofu 1.13.0 We're proud to announce that OpenTofu 1.13.0 is now officially available! 🎉 Highlights Windows on ARM64 is now a supported platform Starting with OpenTofu v1.13.0 we are now offering official packages targeting Windows on the ARM64 (also known as \"aarch64\") CPU architecture. Reducing unknowns during planning OpenTofu v1.13 introduces a number of new functions that are all intended to allow module authors to give OpenTofu additional hints about what they know to be true even thou",
-    "source": "OpenTofu",
-    "sourceId": "opentofu",
-    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0",
-    "publishedDate": "2026-09-30T13:57:49.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "opentofu",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentofu",
-    "releaseVersion": "v1.13.0"
-  },
-  {
-    "id": "pulumi-4566ee19e466",
-    "title": "pkg/v3.266.0: Changelog and go.mod updates for v3.266.0 (#24946)",
-    "summary": "Co-authored-by: github-actions github-actions@github.com",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.266.0",
-    "publishedDate": "2026-09-30T12:35:19.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.266.0"
-  },
-  {
-    "id": "pulumi-c7390311c4c7",
-    "title": "v3.266.0",
-    "summary": "3.266.0 (2026-09-30) Bug Fixes [sdk/go] Use an explicit provider for resources from an extension package, instead of falling back to a default provider #24702 [sdk/python] Use an explicit provider for resources from an extension package, instead of falling back to a default provider #24702 [pcl] Order the members of a union type by a fixed structural order rather than by their printed form, so that a recursive object type prints all of its properties and diagnostics list union members consistent",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.266.0",
-    "publishedDate": "2026-09-30T11:33:14.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.266.0"
-  },
-  {
-    "id": "cncf-a1091457395c",
-    "title": "From 40 seconds to under 10: rebuilding incident detection on OpenTelemetry, Apache Kafka, and Apache Flink on Kubernetes",
-    "summary": "Every SaaS company has the same uncomfortable question after a major incident: who noticed first, the monitoring or the customers? For a long time our honest answer was “it depends”. This post describes how a small...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/09/30/from-40-seconds-to-under-10-rebuilding-incident-detection-on-opentelemetry-apache-kafka-and-apache-flink-on-kubernetes/",
-    "publishedDate": "2026-09-30T11:00:00.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "prometheus-756bf516f9eb",
