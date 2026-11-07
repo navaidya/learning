@@ -1,5 +1,24 @@
 [
   {
+    "id": "cncf-fc4548b8ed86",
+    "title": "We organized Sustainability Month. Here’s what we learned. 🌱",
+    "summary": "What do Kubernetes resource allocation, eBPF, carbon observability, and GPUs have in common? Quite a lot, actually. Especially when you start looking at them through the lens of environmental sustainability. This October, we brought these conversations...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/11/07/we-organized-sustainability-month-heres-what-we-learned-%f0%9f%8c%b1/",
+    "publishedDate": "2026-11-07T12:30:00.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "ebpf-cilium",
+      "ebpf",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "opentelemetry-collector-f6ed06e7a3fb",
     "title": "v1.71.0/v0.165.0",
     "summary": "Images and binaries here: https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.165.0 End User Changelog 🛑 Breaking changes 🛑 pkg/confighttp: Remove deprecated fields IdleConnTimeout, MaxIdleConns, MaxIdleConnsPerHost, DisableKeepAlives. (#15973) 🚀 New components 🚀 pkg/xreceiverhelper: Add xreceiverhelper with an ObsReport that reports profile sample metrics per sample type. (#16251) ObsReport.EndProfilesOpBySampleType records the otelcol_receiver_{accepted,refus",
@@ -7486,24 +7505,6 @@
     "publishedDate": "2026-10-02T00:13:19.000Z",
     "domain": "infrastructure",
     "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "cncf-63665b1bdcb3",
-    "title": "KubeCon + CloudNativeCon North America 2026: Build your infrastructure engineer journey",
-    "summary": "Infrastructure engineers sit at one of the busiest intersections in cloud native. Kubernetes clusters need to scale. Networks need to connect them. Storage needs to follow workloads. Platforms need to make infrastructure usable. Security needs to...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/10/01/kubecon-cloudnativecon-north-america-2026-build-your-infrastructure-engineer-journey/",
-    "publishedDate": "2026-10-02T00:06:46.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
       "cncf",
       "cloud-native"
     ],
