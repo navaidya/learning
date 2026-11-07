@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-06T17:46:34.000Z",
+    "publishedDate": "2026-11-07T05:49:09.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,67 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "phoenix-a6be56cf4f37",
+    "title": "@arizeai/phoenix-cli@1.20.1",
+    "summary": "Patch Changes Updated dependencies [6e6e101] @arizeai/phoenix-client@7.18.2",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-cli%401.20.1",
+    "publishedDate": "2026-11-07T00:08:09.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "1.20.1"
+  },
+  {
+    "id": "phoenix-4f0ab48e3230",
+    "title": "@arizeai/phoenix-client@7.18.2",
+    "summary": "Patch Changes 6e6e101: fix(phoenix-client): preserve literal dollar sequences in prompt variables",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-client%407.18.2",
+    "publishedDate": "2026-11-07T00:08:06.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "7.18.2"
+  },
+  {
+    "id": "phoenix-f3badddf3856",
+    "title": "arize-phoenix-otel: v0.17.3",
+    "summary": "0.17.3 (2026-11-06) Bug Fixes otel, client, config: parse .env.phoenix the same way in Python and TypeScript (#17075) (67cc379), closes #17048 otel: pick the OTLP protocol once (#17531) (0f5024c) otel: show the header name in the URL-encoding warning (#16428) (30949b8) Documentation fix dead Read the Docs links (#16967) (0fed1f4)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-otel-v0.17.3",
+    "publishedDate": "2026-11-06T23:31:35.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otlp",
+      "agent-observability",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v0.17.3"
   },
   {
     "id": "langgraph-bf5ea9a6a07c",
