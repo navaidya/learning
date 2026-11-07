@@ -1,19 +1,19 @@
 [
   {
+    "project": "loki",
+    "version": "v4.0.0-rc.3",
+    "publishedDate": "2026-11-07T16:04:35.000Z",
+    "url": "https://github.com/grafana/loki/releases/tag/v4.0.0-rc.3",
+    "sourceId": "loki",
+    "title": "v4.0.0-rc.3"
+  },
+  {
     "project": "opentelemetry-collector",
     "version": "v1.71.0",
     "publishedDate": "2026-11-06T23:42:20.000Z",
     "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.165.0",
     "sourceId": "opentelemetry-collector",
     "title": "v1.71.0/v0.165.0"
-  },
-  {
-    "project": "loki",
-    "version": "v3.6.20",
-    "publishedDate": "2026-11-06T16:11:18.000Z",
-    "url": "https://github.com/grafana/loki/releases/tag/v3.6.20",
-    "sourceId": "loki",
-    "title": "v3.6.20"
   },
   {
     "project": "kubernetes-releases",

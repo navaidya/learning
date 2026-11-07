@@ -1,5 +1,25 @@
 [
   {
+    "id": "loki-c431dc125a89",
+    "title": "v4.0.0-rc.3",
+    "summary": "4.0.0-rc.3 (2026-11-06) ⚠ BREAKING CHANGES storage: Limit supported S3 storage classes to STANDARD and STANDARD_IA (#26273) [release-4.0.0] (#26310) Bug Fixes compactor: Use main compactor for deletes (#26305) [release-4.0.0] (#26311) (1665c02) storage: Limit supported S3 storage classes to STANDARD and STANDARD_IA (#26273) [release-4.0.0] (#26310) (cea7d12)",
+    "source": "Grafana Loki",
+    "sourceId": "loki",
+    "url": "https://github.com/grafana/loki/releases/tag/v4.0.0-rc.3",
+    "publishedDate": "2026-11-07T16:04:35.000Z",
+    "domain": "logging",
+    "topics": [
+      "loki",
+      "logging",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "loki",
+    "releaseVersion": "v4.0.0-rc.3"
+  },
+  {
     "id": "cncf-fc4548b8ed86",
     "title": "We organized Sustainability Month. Here’s what we learned. 🌱",
     "summary": "What do Kubernetes resource allocation, eBPF, carbon observability, and GPUs have in common? Quite a lot, actually. Especially when you start looking at them through the lens of environmental sustainability. This October, we brought these conversations...",
@@ -9792,27 +9812,5 @@
     "releaseRelated": true,
     "releaseProject": "holmesgpt",
     "releaseVersion": "0.39.0"
-  },
-  {
-    "id": "holmesgpt-c9f21e1a8a34",
-    "title": "0.39.0-alpha",
-    "summary": "What's Changed ROB-856 Add Atlassian Rovo MCP integration documentation by @Avi-Robusta in #2373 ROB-855 pulling skills with github app credentials by @Avi-Robusta in #2371 Full Changelog: 0.38.2...0.39.0-alpha",
-    "source": "HolmesGPT (Robusta)",
-    "sourceId": "holmesgpt",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.39.0-alpha",
-    "publishedDate": "2026-08-09T16:15:42.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "mcp",
-      "holmesgpt",
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "high",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "holmesgpt",
-    "releaseVersion": "0.39.0-alpha"
   }
 ]
