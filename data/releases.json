@@ -1,5 +1,21 @@
 [
   {
+    "project": "kyverno",
+    "version": "v1.20.0-rc.3",
+    "publishedDate": "2026-11-08T15:24:59.000Z",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.20.0-rc.3",
+    "sourceId": "kyverno",
+    "title": "v1.20.0-rc.3"
+  },
+  {
+    "project": "cncf",
+    "version": "v2.3",
+    "publishedDate": "2026-11-08T12:30:00.000Z",
+    "url": "https://www.cncf.io/blog/2026/11/08/lima-v2-3-native-on-windows-vmnet-on-linux-and-menu-tui/",
+    "sourceId": "cncf",
+    "title": "Lima v2.3: Native on Windows, VMnet on Linux, and menu TUI"
+  },
+  {
     "project": "loki",
     "version": "v4.0.0-rc.3",
     "publishedDate": "2026-11-07T16:04:35.000Z",
@@ -32,14 +48,6 @@
     "title": "ISTIO-SECURITY-2026-009"
   },
   {
-    "project": "kyverno",
-    "version": "v1.20.0-rc.2",
-    "publishedDate": "2026-11-05T23:13:53.000Z",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.20.0-rc.2",
-    "sourceId": "kyverno",
-    "title": "v1.20.0-rc.2"
-  },
-  {
     "project": "opentofu",
     "version": "v1.13.9",
     "publishedDate": "2026-11-05T19:09:38.000Z",
@@ -70,14 +78,6 @@
     "url": "https://opentelemetry.io/blog/2026/otel-js-sdk-3-0/",
     "sourceId": "opentelemetry",
     "title": "Announcing the OpenTelemetry JavaScript SDK 3.0"
-  },
-  {
-    "project": "cncf",
-    "version": "v1.0.0",
-    "publishedDate": "2026-11-05T12:00:00.000Z",
-    "url": "https://www.cncf.io/blog/2026/11/05/kpt-v1-0-0-is-released/",
-    "sourceId": "cncf",
-    "title": "kpt v1.0.0 is released"
   },
   {
     "project": "oci-oke",

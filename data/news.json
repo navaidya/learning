@@ -1,5 +1,44 @@
 [
   {
+    "id": "kyverno-7ff0fe811d11",
+    "title": "v1.20.0-rc.3",
+    "summary": "All mandatory release validation and remote verification completed for 318806fc3764734e9c26dae0ea083d7e42f3d4dc. Charts: {\"kyverno\": \"3.10.0-rc.3\", \"kyverno-policies\": \"3.10.0-rc.3\"}. Full matrix and diagnostics: https://github.com/kyverno/kyverno/actions/runs/42486167168.",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.20.0-rc.3",
+    "publishedDate": "2026-11-08T15:24:59.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno",
+    "releaseVersion": "v1.20.0-rc.3"
+  },
+  {
+    "id": "cncf-5662981c753d",
+    "title": "Lima v2.3: Native on Windows, VMnet on Linux, and menu TUI",
+    "summary": "Back in July with v2.2, we added support for Windows guests. On November 6, we shipped v2.3 of Lima and now it runs without extra dependencies on Windows: VMs start through the same Host Compute System...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/11/08/lima-v2-3-native-on-windows-vmnet-on-linux-and-menu-tui/",
+    "publishedDate": "2026-11-08T12:30:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cncf",
+    "releaseVersion": "v2.3"
+  },
+  {
     "id": "loki-c431dc125a89",
     "title": "v4.0.0-rc.3",
     "summary": "4.0.0-rc.3 (2026-11-06) ⚠ BREAKING CHANGES storage: Limit supported S3 storage classes to STANDARD and STANDARD_IA (#26273) [release-4.0.0] (#26310) Bug Fixes compactor: Use main compactor for deletes (#26305) [release-4.0.0] (#26311) (1665c02) storage: Limit supported S3 storage classes to STANDARD and STANDARD_IA (#26273) [release-4.0.0] (#26310) (cea7d12)",
@@ -9770,47 +9809,5 @@
     "releaseRelated": true,
     "releaseProject": "prometheus",
     "releaseVersion": "v0.314.0-rc.0"
-  },
-  {
-    "id": "containerd-b0cfe50b0a7f",
-    "title": "containerd 2.4.0-beta.0",
-    "summary": "Welcome to the v2.4.0-beta.0 release of containerd! This is a pre-release of containerd containerd 2.4 is a regular (non-LTS) release with a shorter support window, intended for users who want to adopt new features sooner. As the release following the 2.3 LTS, it is the point in the release cycle where previously deprecated features may be removed, so this release may include breaking changes; check the notes below and clear any deprecation warnings from your current version before upgrading. Us",
-    "source": "containerd",
-    "sourceId": "containerd",
-    "url": "https://github.com/containerd/containerd/releases/tag/v2.4.0-beta.0",
-    "publishedDate": "2026-08-10T16:56:55.000Z",
-    "domain": "containers",
-    "topics": [
-      "containers",
-      "containerd",
-      "runtime"
-    ],
-    "importance": "high",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "containerd",
-    "releaseVersion": "2.4.0-beta.0"
-  },
-  {
-    "id": "holmesgpt-9557df72eecf",
-    "title": "0.39.0",
-    "summary": "What's Changed ROB-856 Add Atlassian Rovo MCP integration documentation by @Avi-Robusta in #2373 ROB-855 pulling skills with github app credentials by @Avi-Robusta in #2371 Weekly Benchmark Results 2026-08-05_12-14 by @github-actions[bot] in #2357 ROB-853: support GitHub App installed on multiple orgs in github MCP addon by @Avi-Robusta in #2374 Full Changelog: 0.38.2...0.39.0",
-    "source": "HolmesGPT (Robusta)",
-    "sourceId": "holmesgpt",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.39.0",
-    "publishedDate": "2026-08-10T15:02:51.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "mcp",
-      "holmesgpt",
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "high",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "holmesgpt",
-    "releaseVersion": "0.39.0"
   }
 ]
