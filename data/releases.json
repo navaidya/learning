@@ -1,5 +1,29 @@
 [
   {
+    "project": "backstage",
+    "version": "v1.56.4",
+    "publishedDate": "2026-11-09T22:03:35.000Z",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.56.4",
+    "sourceId": "backstage",
+    "title": "v1.56.4"
+  },
+  {
+    "project": "openai",
+    "version": "4.5",
+    "publishedDate": "2026-11-09T08:00:00.000Z",
+    "url": "https://openai.com/index/kuken",
+    "sourceId": "openai",
+    "title": "Kuken Industries searches 70 years of drawings in minutes"
+  },
+  {
+    "project": "istio",
+    "version": "1.32.0",
+    "publishedDate": "2026-11-09T00:00:00.000Z",
+    "url": "https://istio.io/latest/news/releases/1.32.x/announcing-1.32/",
+    "sourceId": "istio",
+    "title": "Announcing Istio 1.32.0"
+  },
+  {
     "project": "kyverno",
     "version": "v1.20.0-rc.3",
     "publishedDate": "2026-11-08T15:24:59.000Z",
@@ -38,14 +62,6 @@
     "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.38.0-beta.0",
     "sourceId": "kubernetes-releases",
     "title": "v1.38.0-beta.0"
-  },
-  {
-    "project": "istio",
-    "version": "8.2",
-    "publishedDate": "2026-11-06T00:00:00.000Z",
-    "url": "https://istio.io/latest/news/security/istio-security-2026-009/",
-    "sourceId": "istio",
-    "title": "ISTIO-SECURITY-2026-009"
   },
   {
     "project": "opentofu",
@@ -110,22 +126,6 @@
     "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.1",
     "sourceId": "argo",
     "title": "v3.6.1"
-  },
-  {
-    "project": "openai",
-    "version": "2.6",
-    "publishedDate": "2026-11-04T00:00:00.000Z",
-    "url": "https://openai.com/index/introducing-images-2-6",
-    "sourceId": "openai",
-    "title": "Introducing Images 2.6"
-  },
-  {
-    "project": "backstage",
-    "version": "v1.57.0-next.1",
-    "publishedDate": "2026-11-03T18:58:50.000Z",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.57.0-next.1",
-    "sourceId": "backstage",
-    "title": "v1.57.0-next.1"
   },
   {
     "project": "cilium",

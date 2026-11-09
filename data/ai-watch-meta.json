@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-11-09T08:00:14.156Z",
+  "collectedAt": "2026-11-09T22:59:55.051Z",
   "sourceIds": [
     "langgraph",
     "pydantic-ai",
@@ -13,5 +13,5 @@
     "otel-ai"
   ],
   "failedSourceIds": [],
-  "itemCount": 305
+  "itemCount": 306
 }
