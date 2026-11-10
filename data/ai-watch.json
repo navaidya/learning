@@ -1,5 +1,64 @@
 [
   {
+    "id": "pydantic-ai-ec5fb94d76bf",
+    "title": "CLAI2 bleeding",
+    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
+    "publishedDate": "2026-11-10T20:00:44.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "langfuse-35673ba35e9c",
+    "title": "v4.78.0",
+    "summary": "What's Changed Features feat(web): EmptyState with illustrated drawings by @AbdallahAHO in #19864 feat(web): LangfuseIllustration with lazy product scenes by @AbdallahAHO in #19865 feat(topics): filter traces in the Topics setup flow by @LysanderKie in #19947 feat(rbac): mirror memberships into role assignments by @marksalpeter in #19263 feat(rbac): add USER api key scope evaluated against user and key policies by @marksalpeter in #19517 feat(web): always show AI Gateway nav at org level and lin",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.78.0",
+    "publishedDate": "2026-11-10T13:11:37.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.78.0"
+  },
+  {
+    "id": "langfuse-3535a4899c91",
+    "title": "v3.227.1",
+    "summary": "What's Changed fix(web-callouts): require header values again when the endpoint URL changes (v3 backport of #19565) by @Steffen911 in #19816 fix(blob-export): stop gzip exports from stalling when the uploader reads late (v3 backport of #19717) by @Steffen911 in #19867 fix(security): require storage secrets again when the bucket or endpoint changes (v3 backport of #19566) by @Steffen911 in #19817 Full Changelog: v3.227.0...v3.227.1",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v3.227.1",
+    "publishedDate": "2026-11-10T12:43:44.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v3.227.1"
+  },
+  {
     "id": "phoenix-e0b62abdbbba",
     "title": "@arizeai/phoenix-cli@1.21.0",
     "summary": "Minor Changes 1e47750: Add px dataset-versions list <dataset-identifier> with cursor pagination, optional limits, and pretty, JSON, and raw output.",
@@ -125,25 +184,6 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "pydantic-ai-ec5fb94d76bf",
-    "title": "CLAI2 bleeding",
-    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-10T00:18:19.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai"
   },
   {
     "id": "phoenix-69f9b47683dd",

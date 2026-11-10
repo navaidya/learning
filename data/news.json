@@ -1,5 +1,224 @@
 [
   {
+    "id": "loki-bafbb455fd73",
+    "title": "helm-loki-7.6.0: chore: Release loki helm chart 7.6.0 (#26393)",
+    "summary": "Co-authored-by: loki-gh-app[bot] <160051081+loki-gh-app[bot]@users.noreply.github.com> Co-authored-by: Julie Stickler julie.stickler@grafana.com",
+    "source": "Grafana Loki",
+    "sourceId": "loki",
+    "url": "https://github.com/grafana/loki/releases/tag/helm-loki-7.6.0",
+    "publishedDate": "2026-11-10T20:11:14.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "loki",
+      "logging",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "loki",
+    "releaseVersion": "7.6.0"
+  },
+  {
+    "id": "kyverno-1c4a57c0e3ff",
+    "title": "v1.20.0-rc.4",
+    "summary": "All mandatory release validation and remote verification completed for cc47289fd60468f1d902a6fdd045acfec76c400e. Charts: {\"kyverno\": \"3.10.0-rc.4\", \"kyverno-policies\": \"3.10.0-rc.4\"}. Full matrix and diagnostics: https://github.com/kyverno/kyverno/actions/runs/42849925864.",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.20.0-rc.4",
+    "publishedDate": "2026-11-10T18:21:33.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno",
+    "releaseVersion": "v1.20.0-rc.4"
+  },
+  {
+    "id": "cncf-6a6d0b226b5b",
+    "title": "CNCF Welcomes Twelve New Members as Organizations Look to Run AI Agents on Open, Sovereign Infrastructure",
+    "summary": "Organizations join the cloud native community to strengthen security, visibility, and control for production AI Key Highlights KUBECON + CLOUDNATIVECON NORTH AMERICA, SALT LAKE CITY – November 10, 2026 – The Cloud Native Computing Foundation® (CNCF®),...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/announcements/2026/11/10/cncf-welcomes-twelve-new-members-as-organizations-look-to-run-ai-agents-on-open-sovereign-infrastructure/",
+    "publishedDate": "2026-11-10T16:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-41f38c1b45be",
+    "title": "CNCF Welcomes CoreWeave as a Platinum Member to Further Open Source AI Infrastructure",
+    "summary": "Investment underscores CoreWeave’s continued push to build open, cloud native infrastructure for production AI at scale Key Highlights SAN FRANCISCO — November 10, 2026 — The Cloud Native Computing Foundation® (CNCF®), which builds sustainable ecosystems for...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/announcements/2026/11/10/cncf-welcomes-coreweave-as-a-platinum-member-to-further-open-source-ai-infrastructure/",
+    "publishedDate": "2026-11-10T16:00:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-a991414984fe",
+    "title": "Open Cluster Management (OCM) becomes a CNCF Incubating Project",
+    "summary": "The CNCF Technical Oversight Committee (TOC) voted to accept Open Cluster Management as a CNCF incubating project. Open Cluster Management is an open source project that simplifies the management of Kubernetes clusters across cloud, on-premises, and...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/11/10/open-cluster-management-ocm-becomes-a-cncf-incubating-project/",
+    "publishedDate": "2026-11-10T16:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-fc47f6885151",
+    "title": "CNCF Welcomes Vultr as a Platinum Member to Advance Open and Sovereign Cloud Infrastructure for AI",
+    "summary": "Upgrade extends Vultr’s 5-year history with CNCF and expands its voice in shaping open interoperability for AI factory infrastructure at global scale Key Highlights KUBECON + CLOUDNATIVECON NORTH AMERICA, SALT LAKE CITY – November 10, 2026–...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/announcements/2026/11/10/cncf-welcomes-vultr-as-a-platinum-member-to-advance-open-and-sovereign-cloud-infrastructure-for-ai/",
+    "publishedDate": "2026-11-10T16:00:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-21f8e11e8f23",
+    "title": "CNCF and SlashData Report Finds Cloud Native Developers Are More AI-Ready, Global Population Surpasses 21 Million",
+    "summary": "New research released finds 75% of cloud native developers use AI coding tools, compared to 55% of non-cloud native developer peers Key Highlights: SALT LAKE CITY – KubeCon + CloudNativeCon North America – Nov. 10, 2026...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/announcements/2026/11/10/cncf-and-slashdata-report-finds-cloud-native-developers-are-more-ai-ready-global-population-surpasses-21-million/",
+    "publishedDate": "2026-11-10T16:00:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cncf"
+  },
+  {
+    "id": "cncf-9e1a4d25f4cb",
+    "title": "CNCF Welcomes Qualcomm Upgrade to Gold Membership to Advance AI Infrastructure Across the Edge-to-Cloud Continuum",
+    "summary": "Key Highlights KubeCon + CloudNativeCon North America, SALT LAKE CITY, UT – November 10, 2026 – The Cloud Native Computing Foundation® (CNCF®), which builds sustainable ecosystems for cloud native software, today announced that Qualcomm Technologies has...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/announcements/2026/11/10/cncf-welcomes-qualcomm-upgrade-to-gold-membership-to-advance-ai-infrastructure-across-the-edge-to-cloud-continuum/",
+    "publishedDate": "2026-11-10T16:00:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-8bcf2963d7ab",
+    "title": "Donating KubeRay to CNCF",
+    "summary": "The PARK stack (PyTorch, AI models, Ray, and Kubernetes) is emerging as the de facto open source standard for production AI. Within that stack, KubeRay has become the bridge connecting scalable AI applications built on Ray...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/11/10/donating-kuberay-to-cncf/",
+    "publishedDate": "2026-11-10T16:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-8e1867568698",
+    "title": "CNCF and SlashData Report Finds Platform Engineering Strategies Are Shaping AI Infrastructure Adoption",
+    "summary": "Latest research finds 54% of developers with independently managed tooling use hybrid approaches for AI workflows, compared to just 5% at organizations building custom internal platforms Key Highlights: SALT LAKE CITY – KubeCon + CloudNativeCon North...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/announcements/2026/11/10/cncf-and-slashdata-report-finds-platform-engineering-strategies-are-shaping-ai-infrastructure-adoption/",
+    "publishedDate": "2026-11-10T16:00:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-efac9e1d0000",
+    "title": "CNCF Hits Major Milestones with Global Community Growth, Record Industry Investment and a New Generation of Projects to Build AI Systems in Production",
+    "summary": "New Sandbox projects, including Agent Substrate and OpenShell, expand CNCF’s portfolio to 231 projects as the community adds over 5.5 million cloud native developers in 12 months, welcomes eight Platinum memberships and brings together 82,000 attendees...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/announcements/2026/11/10/cncf-hits-major-milestones-with-global-community-growth-record-industry-investment-and-a-new-generation-of-projects-to-build-ai-systems-in-production/",
+    "publishedDate": "2026-11-10T16:00:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cncf",
+    "releaseVersion": "5.5"
+  },
+  {
+    "id": "cncf-4e988805ff38",
+    "title": "CNCF Launches Certified Kubernetes Network Engineer Certification (CKNE) to Advance Production Ready Networking Skills for AI Era",
+    "summary": "New certification validates specialized expertise in Kubernetes networking, security and troubleshooting as demand for cloud native skills grows Key Highlights SALT LAKE CITY – KubeCon + CloudNativeCon North America – November 10, 2026 – The Cloud...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/announcements/2026/11/10/cncf-launches-certified-kubernetes-network-engineer-certification-ckne-to-advance-production-ready-networking-skills-for-ai-era/",
+    "publishedDate": "2026-11-10T16:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "opentelemetry-f2020fc8a1a5",
     "title": "When Missing Telemetry Is the Signal",
     "summary": "An empty dashboard can mean that nothing happened. It can also mean that the system stopped reporting what happened. On a dashboard, they look the same. One needs no action. The other means you are missing the information you need to act. Take a workflow where events enter a service, pass through a processing stage, and reach storage. An operator then uses the stored result. Every service can remain available while one data transfer silently drops events. Error rates stay low, yet the operator i",
@@ -7368,102 +7587,6 @@
     "releaseVersion": "0.51.0"
   },
   {
-    "id": "pulumi-fed96bb2d9d9",
-    "title": "sdk/v3.268.0: pin maven to latest 3.9.* version (#25082)",
-    "summary": "Maven 3.10 has a bug, where it ignores -Dorg.slf4j.simpleLogger.logFile=System.err, and thus writes everything to stdout. This breaks pulumi-java plugin downloads, as the JSON is now mixed with the regular output and we can't parse it properly. I've reported the bug upstream in apache/maven#13380. If we can't get it fixed upstream, we can patch pulumi-java to just not show any output, but I think the right fix would be upstream, so let's pin this temporarily and see if we can get it resolved. Fi",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.268.0",
-    "publishedDate": "2026-10-07T08:59:55.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.268.0"
-  },
-  {
-    "id": "cncf-37c84aae624d",
-    "title": "CNCF Welcomes OVHcloud, One of Europe’s Largest Independent Cloud Providers, as a Platinum Member",
-    "summary": "Upgrade builds on OVHcloud’s decade-plus commitment to open infrastructure, interoperability and cloud portability Key Highlights PRAGUE – Open Source Summit Europe – October 7, 2026 – The Cloud Native Computing Foundation® (CNCF®), which builds sustainable ecosystems...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/announcements/2026/10/07/cncf-welcomes-ovhcloud-a-leading-european-cloud-provider-and-global-cloud-and-ai-player-as-a-platinum-member/",
-    "publishedDate": "2026-10-07T07:00:00.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "gateway-api-dff06d8a8b51",
-    "title": "v1.6.3",
-    "summary": "v1.6.3 Major Changes Since v1.6.2 Conformance Conformance tests for stable features (notable TCPRoute and UDPRoute) are no longer marked as \"provisional\" (#5260, @rikatz) Force the timeout for the ExpectMirroredRequest conformance test to MaxTimeToConsistency (#5296, @kl52752) Actually remove unused namespaces in Mesh conformance tests (#5251, @xtineskim) Add the GatewayInvalidParametersRef conformance test (#5236, @kl52752) Build Ensure the Go toolchain matches go.work (#5234, @snorwin)",
-    "source": "Gateway API",
-    "sourceId": "gateway-api",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.3",
-    "publishedDate": "2026-10-06T20:35:29.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "gateway-api",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "gateway-api",
-    "releaseVersion": "v1.6.3"
-  },
-  {
-    "id": "backstage-1d6ca8167199",
-    "title": "v1.56.0-next.2",
-    "summary": "See docs/releases/v1.56.0-next.2-changelog.md for more information.",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.56.0-next.2",
-    "publishedDate": "2026-10-06T19:39:05.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.56.0-next.2"
-  },
-  {
-    "id": "argo-e49d712e358f",
-    "title": "gitops-engine/v3.6.0-rc2: chore: bump version to 3.6.0-rc2 on release-3.6 branch (#30042)",
-    "summary": "Signed-off-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com> Co-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/gitops-engine%2Fv3.6.0-rc2",
-    "publishedDate": "2026-10-06T19:00:50.000Z",
-    "domain": "gitops",
-    "topics": [
-      "gitops",
-      "argo",
-      "argocd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "v3.6.0-rc2"
-  },
-  {
     "id": "kubernetes-fc4272a4d245",
     "title": "The Shift to cgroup v2 in Kubernetes: What You Need to Know",
     "summary": "In Linux, cgroups (control groups) are a kernel feature used for managing system resources. Kubernetes uses cgroups to allocate resources like CPU and memory to containers, ensuring that applications run smoothly without interfering with each other. With the release of Kubernetes v1.31, support for v1 cgroup management moved into maintenance mode. Support for v2 cgroup management has been stable since Kubernetes v1.25. Compared with cgroup v1, cgroup v2 provides a single unified hierarchy, a mor",
@@ -7500,99 +7623,6 @@
     "releaseRelated": true,
     "releaseProject": "opentelemetry",
     "releaseVersion": "3.0"
-  },
-  {
-    "id": "vector-651d625403fb",
-    "title": "vdev-v0.3.27",
-    "summary": "No content.",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.27",
-    "publishedDate": "2026-10-06T16:19:03.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector"
-  },
-  {
-    "id": "gateway-api-49e59b3b6654",
-    "title": "conformance/v1.6.3: chore: Release 1.6.3 (#5335)",
-    "summary": "chore: Release 1.6.3 Signed-off-by: Flynn emissary@flynn.kodachi.com chore: Update the VAP bundle-version annotations, too Signed-off-by: Flynn emissary@flynn.kodachi.com chore: Clean up some trailing whitespace Signed-off-by: Flynn emissary@flynn.kodachi.com Signed-off-by: Flynn emissary@flynn.kodachi.com",
-    "source": "Gateway API",
-    "sourceId": "gateway-api",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/conformance%2Fv1.6.3",
-    "publishedDate": "2026-10-06T15:00:41.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "gateway-api",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "gateway-api",
-    "releaseVersion": "v1.6.3"
-  },
-  {
-    "id": "cncf-fd461ae07814",
-    "title": "The 2026-2028 CNCF ambassador cohort",
-    "summary": "This year we accepted 58 new ambassadors and said goodbye to 48. All ambassadors have given their spare time to the ecosystem in one way or another, whether they are contributing to a CNCF project, preparing...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/10/06/2026-2028-cncf-ambassador-cohort/",
-    "publishedDate": "2026-10-06T11:33:00.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "opentelemetry-7b7ac304eddf",
-    "title": "Zero-code trace-log correlation with OBI",
-    "summary": "You get paged. A trace shows a request failing in one of your services, and you know the answer is in the logs — but which log lines belong to that request? If the service never adopted structured logging with trace context, the honest answer is: you grep by timestamp and hope. OpenTelemetry eBPF Instrumentation (OBI) can now add that missing trace context to the logs your services already write. Your applications don&rsquo;t change: no SDK, no logging-library configuration, no application rebui",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/obi-trace-log-correlation/",
-    "publishedDate": "2026-10-06T10:19:48.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "openai-9964af802e9c",
-    "title": "Advancing computer use with Ironclad",
-    "summary": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
-    "publishedDate": "2026-10-06T10:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "ai-agent",
-      "openai",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "prometheus-43c41ecf951c",
@@ -9772,45 +9802,5 @@
     "releaseRelated": true,
     "releaseProject": "tempo",
     "releaseVersion": "v3.0.3"
-  },
-  {
-    "id": "containerd-4faa18896850",
-    "title": "containerd 2.2.7",
-    "summary": "Welcome to the v2.2.7 release of containerd! The seventh patch release for containerd 2.2 contains various fixes and updates. Highlights Container Runtime Interface (CRI) Disable checkpoint restore in CreateContainer by default, requiring the enable_experimental_restore_via_create configuration option to enable (#13937) Deprecate checkpoint restore in CreateContainer (#13872) Support non-UTF-8 binary environment variable values in CRI (#13455) Disable checkpoint restore codepaths when CRIU is no",
-    "source": "containerd",
-    "sourceId": "containerd",
-    "url": "https://github.com/containerd/containerd/releases/tag/v2.2.7",
-    "publishedDate": "2026-08-12T18:02:29.000Z",
-    "domain": "containers",
-    "topics": [
-      "containers",
-      "containerd",
-      "runtime"
-    ],
-    "importance": "high",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "containerd",
-    "releaseVersion": "2.2.7"
-  },
-  {
-    "id": "containerd-3427cac90dc0",
-    "title": "containerd 2.3.4",
-    "summary": "Welcome to the v2.3.4 release of containerd! The fourth patch release for containerd 2.3 contains various fixes and updates. Highlights Container Runtime Interface (CRI) Disable checkpoint restore in CreateContainer by default, requiring the enable_experimental_restore_via_create configuration option to enable (#13913) Set default runtimeFeatures.UserNamespacesHostNetwork to true in CRI (#13914) Deprecate checkpoint restore in CreateContainer (#13868) Support non-UTF-8 binary environment variabl",
-    "source": "containerd",
-    "sourceId": "containerd",
-    "url": "https://github.com/containerd/containerd/releases/tag/v2.3.4",
-    "publishedDate": "2026-08-12T17:59:47.000Z",
-    "domain": "containers",
-    "topics": [
-      "containers",
-      "containerd",
-      "runtime"
-    ],
-    "importance": "high",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "containerd",
-    "releaseVersion": "2.3.4"
   }
 ]

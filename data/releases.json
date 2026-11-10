@@ -1,5 +1,29 @@
 [
   {
+    "project": "loki",
+    "version": "7.6.0",
+    "publishedDate": "2026-11-10T20:11:14.000Z",
+    "url": "https://github.com/grafana/loki/releases/tag/helm-loki-7.6.0",
+    "sourceId": "loki",
+    "title": "helm-loki-7.6.0: chore: Release loki helm chart 7.6.0 (#26393)"
+  },
+  {
+    "project": "kyverno",
+    "version": "v1.20.0-rc.4",
+    "publishedDate": "2026-11-10T18:21:33.000Z",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.20.0-rc.4",
+    "sourceId": "kyverno",
+    "title": "v1.20.0-rc.4"
+  },
+  {
+    "project": "cncf",
+    "version": "5.5",
+    "publishedDate": "2026-11-10T16:00:00.000Z",
+    "url": "https://www.cncf.io/announcements/2026/11/10/cncf-hits-major-milestones-with-global-community-growth-record-industry-investment-and-a-new-generation-of-projects-to-build-ai-systems-in-production/",
+    "sourceId": "cncf",
+    "title": "CNCF Hits Major Milestones with Global Community Growth, Record Industry Investment and a New Generation of Projects to Build AI Systems in Production"
+  },
+  {
     "project": "backstage",
     "version": "v1.56.4",
     "publishedDate": "2026-11-09T22:03:35.000Z",
@@ -22,30 +46,6 @@
     "url": "https://istio.io/latest/news/releases/1.32.x/announcing-1.32/",
     "sourceId": "istio",
     "title": "Announcing Istio 1.32.0"
-  },
-  {
-    "project": "kyverno",
-    "version": "v1.20.0-rc.3",
-    "publishedDate": "2026-11-08T15:24:59.000Z",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.20.0-rc.3",
-    "sourceId": "kyverno",
-    "title": "v1.20.0-rc.3"
-  },
-  {
-    "project": "cncf",
-    "version": "v2.3",
-    "publishedDate": "2026-11-08T12:30:00.000Z",
-    "url": "https://www.cncf.io/blog/2026/11/08/lima-v2-3-native-on-windows-vmnet-on-linux-and-menu-tui/",
-    "sourceId": "cncf",
-    "title": "Lima v2.3: Native on Windows, VMnet on Linux, and menu TUI"
-  },
-  {
-    "project": "loki",
-    "version": "v4.0.0-rc.3",
-    "publishedDate": "2026-11-07T16:04:35.000Z",
-    "url": "https://github.com/grafana/loki/releases/tag/v4.0.0-rc.3",
-    "sourceId": "loki",
-    "title": "v4.0.0-rc.3"
   },
   {
     "project": "opentelemetry-collector",
