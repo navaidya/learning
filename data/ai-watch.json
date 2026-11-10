@@ -1,5 +1,151 @@
 [
   {
+    "id": "phoenix-e0b62abdbbba",
+    "title": "@arizeai/phoenix-cli@1.21.0",
+    "summary": "Minor Changes 1e47750: Add px dataset-versions list <dataset-identifier> with cursor pagination, optional limits, and pretty, JSON, and raw output.",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-cli%401.21.0",
+    "publishedDate": "2026-11-10T04:24:19.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "1.21.0"
+  },
+  {
+    "id": "phoenix-fb744020b42e",
+    "title": "arize-phoenix-evals: v3.10.0",
+    "summary": "3.10.0 (2026-11-10) Features decision-models: support OpenAI Decisions API in Python classification evaluators (#17514) (f6dc888) evals: support TypeSafe Jev decision models in Python classification evaluators (#16953) (9089efc) evals: use Anthropic native structured output in AnthropicAdapter (#17476) (2fffecb) Bug Fixes evals: ask for the Anthropic tool call instead of forcing tool_choice (#17366) (be808f6) evals: drop hardcoded decision instructions (#17372) (a600c71) evals: keep metadata fro",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-evals-v3.10.0",
+    "publishedDate": "2026-11-10T03:34:13.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v3.10.0"
+  },
+  {
+    "id": "cncf-video-44a82c6c87f3",
+    "title": "Can Your Agent Execute Anything? Authorization for Backstage MCP Actions - Masato Kozuka",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=U6yxleV704c",
+    "publishedDate": "2026-11-10T03:07:21.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "platform-engineering",
+      "backstage",
+      "video",
+      "infrastructure"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-1c689464dac4",
+    "title": "IDPs Are Dead: Platform Engineering in the Age of AI Agents - Tiago Reichert & Lucas Duarte, AWS",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=kfqmqnnf85g",
+    "publishedDate": "2026-11-10T03:07:19.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-0330e202b2ff",
+    "title": "Your Agent Shouldn't Log in as You: Identity for MCP in Backstage - Shivay Lamba & Hrittik Roy",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=QJ-C_CBU2cQ",
+    "publishedDate": "2026-11-10T03:07:18.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "platform-engineering",
+      "backstage",
+      "video",
+      "infrastructure"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-adf7076b044e",
+    "title": "Context Is the New Code: How Spotify Runs Agentic Engineering at Scale - Joe Combopiano, Spotify",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=fwypmxVg96U",
+    "publishedDate": "2026-11-10T03:07:18.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-e117cb534c28",
+    "title": "Treating Backstage Like a Product: Observability with OpenTelemetry - Ekansh Gupta",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=x6pAupyoZGQ",
+    "publishedDate": "2026-11-10T03:07:18.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "pydantic-ai-ec5fb94d76bf",
+    "title": "CLAI2 bleeding",
+    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
+    "publishedDate": "2026-11-10T00:18:19.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai"
+  },
+  {
     "id": "phoenix-69f9b47683dd",
     "title": "arize-phoenix-sqlean: v0.2.2",
     "summary": "0.2.2 (2026-11-09) Bug Fixes phoenix-sqlean: bump bundled sqlean to 0.29.0 (#17798) (a0a8b49)",
@@ -18,25 +164,6 @@
     "releaseRelated": true,
     "releaseProject": "phoenix",
     "releaseVersion": "v0.2.2"
-  },
-  {
-    "id": "pydantic-ai-ec5fb94d76bf",
-    "title": "CLAI2 bleeding",
-    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-09T22:35:10.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai"
   },
   {
     "id": "langfuse-238fce4e1d7b",

@@ -1,5 +1,23 @@
 [
   {
+    "id": "opentelemetry-f2020fc8a1a5",
+    "title": "When Missing Telemetry Is the Signal",
+    "summary": "An empty dashboard can mean that nothing happened. It can also mean that the system stopped reporting what happened. On a dashboard, they look the same. One needs no action. The other means you are missing the information you need to act. Take a workflow where events enter a service, pass through a processing stage, and reach storage. An operator then uses the stored result. Every service can remain available while one data transfer silently drops events. Error rates stay low, yet the operator i",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/when-missing-telemetry-is-the-signal/",
+    "publishedDate": "2026-11-10T06:42:06.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "backstage-d02f275377f6",
     "title": "v1.56.4",
     "summary": "Documentation update for https://backstage.io",
@@ -7571,23 +7589,6 @@
       "ai-agent",
       "openai",
       "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "cncf-14b483a6b87c",
-    "title": "Kubelet watches inodes. Just not until it’s an emergency.",
-    "summary": "A worker node pages with NodeFilesystemFilesFillingUp. It’s on course to run out of inodes. You check the disk first, because that’s what everyone checks first, and it reads 83% used: 103G used, 22G available. Then you...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/10/05/kubelet-watches-inodes-just-not-until-its-an-emergency/",
-    "publishedDate": "2026-10-05T21:27:03.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
     ],
     "importance": "medium",
     "architectureShift": false,
