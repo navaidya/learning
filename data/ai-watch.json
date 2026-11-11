@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-10T20:00:44.000Z",
+    "publishedDate": "2026-11-11T02:16:34.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,86 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "phoenix-7cc9e6b70637",
+    "title": "@arizeai/phoenix-cli@1.22.0",
+    "summary": "Minor Changes 80bac51: Move @arizeai/phoenix-otel to OpenTelemetry JS 3 (@opentelemetry/sdk-trace 3.x, @opentelemetry/api 1.10) so spans created by apps on OpenTelemetry JS 3 are recorded after register(). register() now returns the @opentelemetry/sdk-trace TracerProvider (still exported as the NodeTracerProvider type), which no longer has a register() method. Custom spanProcessors must come from @opentelemetry/sdk-trace and take an options object, e.g. new BatchSpanProcessor({ exporter }); Batc",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-cli%401.22.0",
+    "publishedDate": "2026-11-11T00:56:26.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "1.22.0"
+  },
+  {
+    "id": "phoenix-1bb353ce1be2",
+    "title": "@arizeai/phoenix-client@8.0.0",
+    "summary": "Major Changes 80bac51: Move @arizeai/phoenix-otel to OpenTelemetry JS 3 (@opentelemetry/sdk-trace 3.x, @opentelemetry/api 1.10) so spans created by apps on OpenTelemetry JS 3 are recorded after register(). register() now returns the @opentelemetry/sdk-trace TracerProvider (still exported as the NodeTracerProvider type), which no longer has a register() method. Custom spanProcessors must come from @opentelemetry/sdk-trace and take an options object, e.g. new BatchSpanProcessor({ exporter }); Batc",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-client%408.0.0",
+    "publishedDate": "2026-11-11T00:56:23.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "8.0.0"
+  },
+  {
+    "id": "phoenix-45fd648da869",
+    "title": "@arizeai/phoenix-otel@3.0.0",
+    "summary": "Major Changes 80bac51: Move @arizeai/phoenix-otel to OpenTelemetry JS 3 (@opentelemetry/sdk-trace 3.x, @opentelemetry/api 1.10) so spans created by apps on OpenTelemetry JS 3 are recorded after register(). register() now returns the @opentelemetry/sdk-trace TracerProvider (still exported as the NodeTracerProvider type), which no longer has a register() method. Custom spanProcessors must come from @opentelemetry/sdk-trace and take an options object, e.g. new BatchSpanProcessor({ exporter }); Batc",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-otel%403.0.0",
+    "publishedDate": "2026-11-11T00:56:20.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "3.0.0"
+  },
+  {
+    "id": "pydantic-ai-4bb48bbb1405",
+    "title": "v2.67.0 (2026-11-10)",
+    "summary": "What's Changed ⚠️ Compatibility Notes Support SubAgents(dynamic_agents=...) under durable execution by @mpfaffenberger in #12418 Strip every default-ignorable character before ArtifactScanner phrase matching and flag hidden variation selectors by @mpfaffenberger in #11475 Load one instruction file per directory and nested files by default in RepoContext, add walk_up, and have Coder build on them by @DouweM in #11691 Cap inlined nested instructions at 32,000 characters per conversation by default",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.67.0",
+    "publishedDate": "2026-11-10T23:11:23.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.67.0"
   },
   {
     "id": "langfuse-35673ba35e9c",

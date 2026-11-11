@@ -1,5 +1,13 @@
 [
   {
+    "project": "backstage",
+    "version": "v1.57.0-next.2",
+    "publishedDate": "2026-11-11T03:14:20.000Z",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.57.0-next.2",
+    "sourceId": "backstage",
+    "title": "v1.57.0-next.2"
+  },
+  {
     "project": "loki",
     "version": "7.6.0",
     "publishedDate": "2026-11-10T20:11:14.000Z",
@@ -22,14 +30,6 @@
     "url": "https://www.cncf.io/announcements/2026/11/10/cncf-hits-major-milestones-with-global-community-growth-record-industry-investment-and-a-new-generation-of-projects-to-build-ai-systems-in-production/",
     "sourceId": "cncf",
     "title": "CNCF Hits Major Milestones with Global Community Growth, Record Industry Investment and a New Generation of Projects to Build AI Systems in Production"
-  },
-  {
-    "project": "backstage",
-    "version": "v1.56.4",
-    "publishedDate": "2026-11-09T22:03:35.000Z",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.56.4",
-    "sourceId": "backstage",
-    "title": "v1.56.4"
   },
   {
     "project": "openai",

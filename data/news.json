@@ -1,5 +1,25 @@
 [
   {
+    "id": "backstage-fe74146e5a9c",
+    "title": "v1.57.0-next.2",
+    "summary": "See docs/releases/v1.57.0-next.2-changelog.md for more information.",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.57.0-next.2",
+    "publishedDate": "2026-11-11T03:14:20.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.57.0-next.2"
+  },
+  {
     "id": "loki-bafbb455fd73",
     "title": "helm-loki-7.6.0: chore: Release loki helm chart 7.6.0 (#26393)",
     "summary": "Co-authored-by: loki-gh-app[bot] <160051081+loki-gh-app[bot]@users.noreply.github.com> Co-authored-by: Julie Stickler julie.stickler@grafana.com",
@@ -219,6 +239,24 @@
     "releaseRelated": false
   },
   {
+    "id": "openai-4e3e5904c85a",
+    "title": "Singapore Airlines elevates travel & work with OpenAI technology",
+    "summary": "Discover how Singapore Airlines uses OpenAI models and API to enhance customer support, travel discovery, and employee productivity, doubling CSAT for its Kris chatbot.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/singapore-airlines-travel-work",
+    "publishedDate": "2026-11-10T08:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "opentelemetry-f2020fc8a1a5",
     "title": "When Missing Telemetry Is the Signal",
     "summary": "An empty dashboard can mean that nothing happened. It can also mean that the system stopped reporting what happened. On a dashboard, they look the same. One needs no action. The other means you are missing the information you need to act. Take a workflow where events enter a service, pass through a processing stage, and reach storage. An operator then uses the stored result. Every service can remain available while one data transfer silently drops events. Error rates stay low, yet the operator i",
@@ -231,6 +269,24 @@
       "opentelemetry",
       "otel",
       "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "openai-1ff74ee2cb10",
+    "title": "Cogent and OpenAI build cyber defense factories for enterprises",
+    "summary": "Cogent combines OpenAI models with enterprise context to help automatically remediate vulnerabilities with agents.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/cogent-security",
+    "publishedDate": "2026-11-10T00:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
     ],
     "importance": "medium",
     "architectureShift": false,
@@ -7508,62 +7564,6 @@
     "releaseRelated": true,
     "releaseProject": "pulumi",
     "releaseVersion": "v3.268.0"
-  },
-  {
-    "id": "cncf-5a0b753c14a2",
-    "title": "Meshery becomes a CNCF Incubating project",
-    "summary": "The CNCF Technical Oversight Committee (TOC) voted to accept Meshery as a CNCF incubating project. Meshery is used by organizations spanning aerospace, telecommunications, networking, and enterprise software as a single cloud native management plane that gives...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/10/07/meshery-becomes-a-cncf-incubating-project/",
-    "publishedDate": "2026-10-07T12:05:16.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "pulumi-884aa918515c",
-    "title": "v3.268.0",
-    "summary": "3.268.0 (2026-10-07) Features [engine] Negotiate OutputValues on Invoke so SDKs can pass dependency-carrying values in args and receive them in the response, and providers can process them, gated by a new accepts_outputs_in_invoke handshake capability #24953 [auto] Add version to the generated automation APIs for NodeJS, Python and Go #24990 [auto] Add whoami to the generated automation APIs for NodeJS, Python and Go #25024 [auto] Add install to the generated automation APIs for NodeJS, Python a",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.268.0",
-    "publishedDate": "2026-10-07T10:24:48.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.268.0"
-  },
-  {
-    "id": "holmesgpt-8787cd8e2e30",
-    "title": "0.43.0",
-    "summary": "What's Changed ROB-357 Remove kube-lineage from Holmes by @RoiGlinik in #2464 ROB-1233 Constrain impact claims in the narrative to observed evidence by @naomi-robusta in #2449 ROB-1107 Bind conversation worker identity to the Conversations row owner by @naomi-robusta in #2480 ROB-1402 Document Baseten Model APIs as a provider by @ezra-robusta in #2483 ROB-1402 Drop the Baseten rate-limits section by @ezra-robusta in #2489 ROB-1104 Reject shell metacharacters in propagated HTTP headers by @RoiGli",
-    "source": "HolmesGPT (Robusta)",
-    "sourceId": "holmesgpt",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.43.0",
-    "publishedDate": "2026-10-07T09:13:36.000Z",
-    "domain": "aiops",
-    "topics": [
-      "holmesgpt",
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "holmesgpt",
-    "releaseVersion": "0.43.0"
   },
   {
     "id": "robusta-5a2419fcde6c",
