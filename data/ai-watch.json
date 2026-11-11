@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-11T02:16:34.000Z",
+    "publishedDate": "2026-11-11T20:04:12.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,56 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "cncf-video-3f53f89da414",
+    "title": "Sandbox Your Agents - Jessica Forrester, Red Hat",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=ARFC0ono7qk",
+    "publishedDate": "2026-11-11T01:37:07.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-8fdb7c1b245f",
+    "title": "Agent Substrate: Open... Jaana Dogan, Dmitry Berkovich, Tim Hockin, Eitan Yarmush & Luiz Scheidegger",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=CC872qQ-eNQ",
+    "publishedDate": "2026-11-11T01:37:07.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-bf3afe252767",
+    "title": "The Identity Crisis: Who is the AI Agent in Your Cluster? - Abdel Sghiouar, Google Cloud",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=ayZY2rwSCGw",
+    "publishedDate": "2026-11-11T01:37:07.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "phoenix-7cc9e6b70637",

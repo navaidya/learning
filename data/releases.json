@@ -1,5 +1,37 @@
 [
   {
+    "project": "vector",
+    "version": "5.5",
+    "publishedDate": "2026-11-11T18:45:52.000Z",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.44",
+    "sourceId": "vector",
+    "title": "vdev-v0.3.44: chore(ci): fail cargo deny on all warnings except allowed lints (#27134)"
+  },
+  {
+    "project": "kyverno",
+    "version": "v1.20.0",
+    "publishedDate": "2026-11-11T14:43:05.000Z",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.20.0",
+    "sourceId": "kyverno",
+    "title": "v1.20.0"
+  },
+  {
+    "project": "terraform",
+    "version": "v1.17.2",
+    "publishedDate": "2026-11-11T11:56:51.000Z",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.2",
+    "sourceId": "terraform",
+    "title": "v1.17.2"
+  },
+  {
+    "project": "oci-oke",
+    "version": "v9.13.0",
+    "publishedDate": "2026-11-11T11:03:21.000Z",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.13.0",
+    "sourceId": "oci-oke",
+    "title": "v9.13.0"
+  },
+  {
     "project": "backstage",
     "version": "v1.57.0-next.2",
     "publishedDate": "2026-11-11T03:14:20.000Z",
@@ -14,14 +46,6 @@
     "url": "https://github.com/grafana/loki/releases/tag/helm-loki-7.6.0",
     "sourceId": "loki",
     "title": "helm-loki-7.6.0: chore: Release loki helm chart 7.6.0 (#26393)"
-  },
-  {
-    "project": "kyverno",
-    "version": "v1.20.0-rc.4",
-    "publishedDate": "2026-11-10T18:21:33.000Z",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.20.0-rc.4",
-    "sourceId": "kyverno",
-    "title": "v1.20.0-rc.4"
   },
   {
     "project": "cncf",
@@ -54,6 +78,14 @@
     "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.165.0",
     "sourceId": "opentelemetry-collector",
     "title": "v1.71.0/v0.165.0"
+  },
+  {
+    "project": "hashicorp",
+    "version": "2.1.0",
+    "publishedDate": "2026-11-06T08:00:00.000Z",
+    "url": "https://www.hashicorp.com/blog/consul-210-advancing-secure-resilient-connectivity-for-modern-and-agentic-applica",
+    "sourceId": "hashicorp",
+    "title": "Consul 2.1.0: Advancing secure, resilient connectivity for modern and agentic applications"
   },
   {
     "project": "kubernetes-releases",
@@ -96,14 +128,6 @@
     "title": "Announcing the OpenTelemetry JavaScript SDK 3.0"
   },
   {
-    "project": "oci-oke",
-    "version": "v9.12.1",
-    "publishedDate": "2026-11-05T07:44:03.000Z",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.12.1",
-    "sourceId": "oci-oke",
-    "title": "v9.12.1"
-  },
-  {
     "project": "robusta",
     "version": "0.54.0",
     "publishedDate": "2026-11-04T15:26:09.000Z",
@@ -144,28 +168,12 @@
     "title": "v1.7.0"
   },
   {
-    "project": "vector",
-    "version": "v0.61.0",
-    "publishedDate": "2026-10-29T16:51:24.000Z",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/v0.61.0",
-    "sourceId": "vector",
-    "title": "v0.61.0"
-  },
-  {
     "project": "grafana",
     "version": "13.3",
     "publishedDate": "2026-10-29T15:01:42.000Z",
     "url": "https://grafana.com/blog/grafana-13-3-release-all-the-latest-features/",
     "sourceId": "grafana",
     "title": "Grafana 13.3 release: manage variables across dashboards, share findings with Notebooks, a UI refresh, and more"
-  },
-  {
-    "project": "terraform",
-    "version": "v1.17.1",
-    "publishedDate": "2026-10-28T18:02:22.000Z",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.1",
-    "sourceId": "terraform",
-    "title": "v1.17.1"
   },
   {
     "project": "flux",
@@ -182,14 +190,6 @@
     "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.15.1",
     "sourceId": "karpenter",
     "title": "v1.15.1"
-  },
-  {
-    "project": "hashicorp",
-    "version": "1.1",
-    "publishedDate": "2026-10-23T07:00:00.000Z",
-    "url": "https://www.hashicorp.com/blog/boundary-secures-ai-agent-access-improves-target-discovery-and-introduces-mcp-ser",
-    "sourceId": "hashicorp",
-    "title": "Boundary 1.1 improves target discovery, external app integration, and introduces MCP server"
   },
   {
     "project": "etcd",
