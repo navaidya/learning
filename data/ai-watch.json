@@ -1,5 +1,104 @@
 [
   {
+    "id": "pydantic-ai-ec5fb94d76bf",
+    "title": "CLAI2 bleeding",
+    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
+    "publishedDate": "2026-11-12T20:40:57.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "langgraph-e485cd9663d8",
+    "title": "langgraph==1.2.21",
+    "summary": "Changes since 1.2.20 release(langgraph): 1.2.21 (#9683) chore(deps): bump the minor-and-patch group across 1 directory with 9 updates (#9530) fix(langgraph): match whole namespace segments in get_subgraphs (#9615) fix(langgraph): read an undeclared subgraph namespace with the parent graph (#9614) docs(langgraph): say each interrupt() call has its own id in UnknownInterruptError (#9600) chore(deps): bump filelock and langgraph-api for security fixes (#9606)",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.21",
+    "publishedDate": "2026-11-12T18:06:43.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "1.2.21"
+  },
+  {
+    "id": "langgraph-0a63f2b06679",
+    "title": "langgraph-cli==0.4.43",
+    "summary": "Changes since cli==0.4.42 release(cli): 0.4.43 (#9682) feat(cli): use Agent Server flags with hidden deployment aliases (#9666) fix(cli): remove discontinued local debugger image (#8543) chore(deps): bump the minor-and-patch group across 1 directory with 9 updates (#9532)",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.43",
+    "publishedDate": "2026-11-12T16:20:16.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "0.4.43"
+  },
+  {
+    "id": "otel-ai-c235ba0229ac",
+    "title": "Building an Agent Harness for OTel Instrumentation with GenAI Semantic Conventions and Weaver",
+    "summary": "Instrumenting a GenAI framework means finding suitable extension points, mapping its operations to OpenTelemetry semantic conventions, testing the result, and maintaining it as the framework changes. Doing that for each new framework takes substantial engineering time. We have been testing whether a team of agents can do much of that work. The agents inspect a framework, propose a plan, implement it against the OpenTelemetry Semantic Conventions for GenAI, and use OpenTelemetry Weaver to check t",
+    "source": "OpenTelemetry",
+    "sourceId": "otel-ai",
+    "url": "https://opentelemetry.io/blog/2026/agent-harness-genai-instrumentation/",
+    "publishedDate": "2026-11-12T13:55:25.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "news"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "langfuse-e133fe70f64c",
+    "title": "v4.79.0",
+    "summary": "What's Changed Features feat(ai-gateway): add OpenRouter as a pre-release gateway provider by @wochinge in #20002 feat: add SUBSTITUTE_OK no-data mode for monitors by @marksalpeter in #19981 feat(ai-gateway): add xAI as a pre-release gateway provider by @wochinge in #20004 feat(audit-logs): record read-access events for MCP tools by @Steffen911 in #19759 feat: Delete isAdmin flag by @jordibosch20 in #19582 feat(audit-logs): stage and relay audit events on self-hosted enterprise installs by @Stef",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.79.0",
+    "publishedDate": "2026-11-12T09:40:45.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.79.0"
+  },
+  {
     "id": "pydantic-ai-bceeb4aee8ac",
     "title": "v2.68.0 (2026-11-11)",
     "summary": "What's Changed ⚠️ Compatibility Notes Note text that looks like an application frame in user and tool content instead of escaping it by @DouweM in #11813 Add OutputTokenLimitExceeded, and fall back to the next model in ModelFallback when a response is cut off at max_tokens by @DouweM in #12407 Ask for approvals and answers inside the run with RequestInput, put AskUser on the deferred pipeline, and mark deferred calls with kind and answered_by by @DouweM in #12757 Add DelegationTasks.discover() a",
@@ -18,25 +117,6 @@
     "releaseRelated": true,
     "releaseProject": "pydantic-ai",
     "releaseVersion": "v2.68.0"
-  },
-  {
-    "id": "pydantic-ai-ec5fb94d76bf",
-    "title": "CLAI2 bleeding",
-    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-12T03:05:54.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai"
   },
   {
     "id": "cncf-video-09a7d9156247",

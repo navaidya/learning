@@ -1,5 +1,231 @@
 [
   {
+    "id": "openai-372847c94994",
+    "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+    "summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/amplitude",
+    "publishedDate": "2026-11-12T20:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "pulumi-220d4b71dee9",
+    "title": "v3.276.0",
+    "summary": "3.276.0 (2026-11-12) Features [auto] Add destroy to the generated automation APIs for NodeJS, Python and Go #25053 [auto] Add template commands to the generated automation APIs for NodeJS, Python and Go #25061 [auto] Add insights commands to the generated automation APIs for NodeJS, Python and Go #25069 Bug Fixes [sdkgen/nodejs] Fix resource reference imports for modules with upper-case letters #25599 [ci] Serialize prepare-release runs per version to prevent checksum/binary mismatches on draft ",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.276.0",
+    "publishedDate": "2026-11-12T17:56:15.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.276.0"
+  },
+  {
+    "id": "backstage-d01efbced604",
+    "title": "v1.55.4",
+    "summary": "This patch release contains the following commits: Fixed matching of action input values in scaffolder permission policies, including identifiers that are provided either as numbers or as strings. GitLab discovery entity provider: catalog locations and refresh keys resulting from push events are now derived from the project record fetched from the GitLab API, instead of fields of the event payload. Committed file paths that do not resolve within the project itself are ignored.",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.55.4",
+    "publishedDate": "2026-11-12T17:42:00.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.55.4"
+  },
+  {
+    "id": "backstage-099e4bd3c59f",
+    "title": "v1.56.5",
+    "summary": "This patch release contains the following commits: Fixed matching of action input values in scaffolder permission policies, including identifiers that are provided either as numbers or as strings. GitLab discovery entity provider: catalog locations and refresh keys resulting from push events are now derived from the project record fetched from the GitLab API, instead of fields of the event payload. Committed file paths that do not resolve within the project itself are ignored. Restricts markdown",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.56.5",
+    "publishedDate": "2026-11-12T17:41:59.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.56.5"
+  },
+  {
+    "id": "grafana-ec2cf7993a7c",
+    "title": "An early look at the Grafana UI refresh: Building a clearer, more consistent user experience",
+    "summary": "Whether you’re investigating an incident or just exploring your data, a clear, consistent UI helps you move between workflows and find what matters faster. As Grafana has grown to support more use cases, we’ve seen opportunities to improve on that experience. That’s why, as part of the Grafana 13.3 release, we introduced the first phase of our biggest visual refresh since Grafana 7.We’re approaching this work in phases, with the refreshed UI currently in public preview in both Grafana Cloud and ",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/an-early-look-at-the-grafana-ui-refresh-building-a-clearer-more-consistent-user-experience/",
+    "publishedDate": "2026-11-12T17:01:40.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "grafana",
+    "releaseVersion": "13.3"
+  },
+  {
+    "id": "cncf-30a0e458c8ba",
+    "title": "CNCF Recognizes Cloud Native Champions in 2026 Community Awards",
+    "summary": "Annual awards honor leaders, maintainers, and documentarians building open source infrastructure Key Highlights KUBECON + CLOUDNATIVECON NORTH AMERICA, SALT LAKE CITY – November 12, 2026 – The Cloud Native Computing Foundation® (CNCF®), which builds sustainable ecosystems...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/announcements/2026/11/12/cncf-recognizes-cloud-native-champions-in-2026-community-awards/",
+    "publishedDate": "2026-11-12T16:00:00.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "opentelemetry-c235ba0229ac",
+    "title": "Building an Agent Harness for OTel Instrumentation with GenAI Semantic Conventions and Weaver",
+    "summary": "Instrumenting a GenAI framework means finding suitable extension points, mapping its operations to OpenTelemetry semantic conventions, testing the result, and maintaining it as the framework changes. Doing that for each new framework takes substantial engineering time. We have been testing whether a team of agents can do much of that work. The agents inspect a framework, propose a plan, implement it against the OpenTelemetry Semantic Conventions for GenAI, and use OpenTelemetry Weaver to check t",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/agent-harness-genai-instrumentation/",
+    "publishedDate": "2026-11-12T13:55:25.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "pulumi-be88c634a9d4",
+    "title": "sdk/v3.276.0",
+    "summary": "Serialize prepare-release runs to fix release checksum/binary mismatc…",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.276.0",
+    "publishedDate": "2026-11-12T12:59:22.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.276.0"
+  },
+  {
+    "id": "pulumi-b08722024ddf",
+    "title": "pkg/v3.276.0",
+    "summary": "Serialize prepare-release runs to fix release checksum/binary mismatc…",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.276.0",
+    "publishedDate": "2026-11-12T12:59:22.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.276.0"
+  },
+  {
+    "id": "cncf-5749d3f98fc6",
+    "title": "Gang scheduling and topology-aware placement for AI training in Kubernetes",
+    "summary": "Distributed AI training workloads impose complex scheduling requirements that Kubernetes’s built-in scheduler can’t meet. Kubernetes schedules pods individually and independently, but distributed training introduces two requirements that break this model: Pods must land on hardware with...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/11/12/gang-scheduling-and-topology-aware-placement-for-ai-training-in-kubernetes/",
+    "publishedDate": "2026-11-12T12:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "kyverno-c80d12326dcb",
+    "title": "v1.20.0",
+    "summary": "What's Changed feat: remove kyverno-json from test api by @eddycharly in #16929 feat: remove json scan command by @eddycharly in #16943 fix(policy): preserve validation warnings for generate rules in validateAction by @vishalmore90 in #16821 fix: bump oras.land/oras-go/v2 to v2.6.2 to resolve CVE-2026-50163 by @falloficaruss in #16945 chore(deps): bump zgosalvez/github-actions-ensure-sha-pinned-actions from 5.0.4 to 5.0.6 by @dependabot[bot] in #16933 chore(deps): bump Homebrew/actions/limit-pul",
+    "source": "Kyverno",
+    "sourceId": "kyverno",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.20.0",
+    "publishedDate": "2026-11-12T09:42:36.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kyverno",
+      "kubernetes",
+      "policy"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kyverno",
+    "releaseVersion": "v1.20.0"
+  },
+  {
+    "id": "pulumi-8846d8043327",
+    "title": "v3.275.0",
+    "summary": "3.275.0 (2026-11-10) Features [cli/policy] Add --stacks and --accounts to pulumi policy group get to list every member of a group, including those matched by its match rule #25369 [auto] Add login to the generated automation APIs for NodeJS, Python and Go #25051 [auto] Add do commands to the generated automation APIs for NodeJS, Python and Go #25056 [auto] Add template commands to the generated automation APIs for NodeJS, Python and Go #25061 [auto] Add project commands to the generated automati",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.275.0",
+    "publishedDate": "2026-11-12T08:32:42.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.275.0"
+  },
+  {
     "id": "vector-4fa699517b47",
     "title": "vdev-v0.3.44: chore(ci): fail cargo deny on all warnings except allowed lints (#27134)",
     "summary": "Co-authored-by: datadog-bits 263423550+datadog-bits@users.noreply.github.com Co-authored-by: Claude Opus 5.5 (1M context) noreply@anthropic.com",
@@ -109,26 +335,6 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "kyverno-c80d12326dcb",
-    "title": "v1.20.0",
-    "summary": "v1.20.0",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.20.0",
-    "publishedDate": "2026-11-11T14:43:05.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno",
-    "releaseVersion": "v1.20.0"
   },
   {
     "id": "kyverno-ec25465ee5bb",
@@ -463,6 +669,44 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
+  },
+  {
+    "id": "pulumi-99106ecf0321",
+    "title": "sdk/v3.275.0: Add `template` commands to the generated automation APIs (#25061)",
+    "summary": "Remove the template exclusion from automation-overrides.json and regenerate the NodeJS, Python and Go automation APIs. 🤖 Generated with Claude Code Co-authored-by: Claude Opus 5.5 noreply@anthropic.com",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.275.0",
+    "publishedDate": "2026-11-10T15:26:01.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.275.0"
+  },
+  {
+    "id": "pulumi-79f44255c7f7",
+    "title": "pkg/v3.275.0: Add `template` commands to the generated automation APIs (#25061)",
+    "summary": "Remove the template exclusion from automation-overrides.json and regenerate the NodeJS, Python and Go automation APIs. 🤖 Generated with Claude Code Co-authored-by: Claude Opus 5.5 noreply@anthropic.com",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.275.0",
+    "publishedDate": "2026-11-10T15:26:01.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.275.0"
   },
   {
     "id": "openai-4e3e5904c85a",
@@ -7294,249 +7538,6 @@
     "releaseRelated": true,
     "releaseProject": "k8sgpt",
     "releaseVersion": "v0.4.40"
-  },
-  {
-    "id": "vector-65d629765d89",
-    "title": "vdev-v0.3.29",
-    "summary": "No content.",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.29",
-    "publishedDate": "2026-10-09T17:51:05.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector"
-  },
-  {
-    "id": "opentelemetry-3f93c5a252d8",
-    "title": "OTel-Native by Design - Building Products That Export to Any Observability Stack",
-    "summary": "With contributions from Dan Gomez Blanco (New Relic). If you&rsquo;re building self-hosted software or a SaaS product, your users will eventually ask to send logs, traces, and metrics to their own observability stack, whether to satisfy compliance, manage costs, or centralize all their observability data in one place. Locking them into your built-in dashboards or limiting exports to certain vendors creates unnecessary friction. Instead, supporting export to any OpenTelemetry (OTel)-compatible ba",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/otel-native-by-design/",
-    "publishedDate": "2026-10-09T15:50:03.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "cncf-248fed748c88",
-    "title": "Join Platform Engineering Day at KubeCon + CloudNativeCon North America 2026",
-    "summary": "As organizations accelerate their adoption of AI and cloud native technologies, platform teams are being asked to solve a growing set of challenges. How can developers access new capabilities such as AI safely and efficiently? How...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/10/09/join-platform-engineering-day-at-kubecon-cloudnativecon-north-america-2026/",
-    "publishedDate": "2026-10-09T12:00:00.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "cncf-e5beefe15e5c",
-    "title": "Making the Golden Kubestronaut a little more golden",
-    "summary": "When I became a Golden Kubestronaut, I wanted to celebrate the achievement in a way that felt lasting. Like most technical achievements, certifications usually live digitally. You receive the badge, update your profile, and eventually move...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/10/09/making-the-golden-kubestronaut-a-little-more-golden/",
-    "publishedDate": "2026-10-09T11:30:00.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "cncf-4e643eab898d",
-    "title": "Who owns NIS2 and DORA on a Kubernetes platform team",
-    "summary": "There is a meeting that repeats across a lot of European engineering organizations right now. Someone from legal or risk brings a NIS2 control, a DORA article, or a “can we evidence this” request into the...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/10/09/who-owns-nis2-and-dora-on-a-kubernetes-platform-team/",
-    "publishedDate": "2026-10-09T08:07:47.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "openai-90995f7dbc9c",
-    "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
-    "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/asana-browser-agent",
-    "publishedDate": "2026-10-09T07:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "openai"
-  },
-  {
-    "id": "gateway-api-3cbc64fa975d",
-    "title": "v1.7.0-rc.1",
-    "summary": "Major Themes Graduating to Standard HTTPRoute Retries (GEP-1731): the retry configuration of an HTTPRoute rule (codes, attempts and backoff) is promoted to the Standard channel, together with the HTTPRouteRetryCodes and HTTPRouteRetryConnectionError conformance features. The backoff field is implementation-specific because backoff behavior, especially jitter, varies between implementations. (#5357, @snorwin, #5359, @mikemorris) New in Experimental Gateway Address Routability (GEP-5093): routabil",
-    "source": "Gateway API",
-    "sourceId": "gateway-api",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.7.0-rc.1",
-    "publishedDate": "2026-10-08T23:54:16.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "gateway-api",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "gateway-api",
-    "releaseVersion": "v1.7.0-rc.1"
-  },
-  {
-    "id": "gateway-api-840f59b72a2d",
-    "title": "conformance/v1.7.0-rc.1: chore: Release v1.7.0-rc.1 (#5363)",
-    "summary": "Signed-off-by: Ricardo Pchevuzinske Katz katz@redhat.com",
-    "source": "Gateway API",
-    "sourceId": "gateway-api",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/conformance%2Fv1.7.0-rc.1",
-    "publishedDate": "2026-10-08T22:43:59.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "gateway-api",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "gateway-api",
-    "releaseVersion": "v1.7.0-rc.1"
-  },
-  {
-    "id": "cncf-a0d57e5aeca1",
-    "title": "Don’t give AI agents root. Make them propose the next system state.",
-    "summary": "The uncomfortable question In the past few months, I’ve been hearing different versions of the same question: under what conditions can we safely allow an autonomous system to operate a machine? It comes up when my...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/10/08/dont-give-ai-agents-root-make-them-propose-the-next-system-state/",
-    "publishedDate": "2026-10-08T22:21:41.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "ai-agent",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "oci-oke-d974e568f93b",
-    "title": "v9.9.0",
-    "summary": "9.9.0 (October 6, 2026) Added Support for Alloy - SKU Configuration/Enablement Support remote NVMe volumes Support for TERSI-4567 Extension to be Completed GenAI API Key Support Bug Fix remove duplicate shape argument from core instance example Correct OAC management attribute references Support OCI Cache upgrades with custom configuration sets TERSI-5553 support non-IAM hosted deployment destroy Metering Computation resource discovery only at tenancy scope",
-    "source": "OCI / OKE",
-    "sourceId": "oci-oke",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.9.0",
-    "publishedDate": "2026-10-08T20:41:54.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "oci",
-      "oke",
-      "oracle"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "oci-oke",
-    "releaseVersion": "v9.9.0"
-  },
-  {
-    "id": "vector-bd1b77150b28",
-    "title": "vdev-v0.3.28",
-    "summary": "No content.",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.28",
-    "publishedDate": "2026-10-08T18:56:38.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector"
-  },
-  {
-    "id": "grafana-0c082a25d2f2",
-    "title": "Take Grafana Labs' 5th annual Observability Survey",
-    "summary": "Over the past year, \"agentic\" has gone from an emerging buzzword to an integral part of worklife for many engineers—and that's just scratching the surface on all that's changed. With so much upheaval, there's never been a better time to capture the pulse of the industry, which is why we want you to take Grafana Labs' fifth annual Observability Survey.We're asking the questions you're probably already arguing about in Slack: Do you trust an agent to ship without review? Are your dashboards still ",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/take-grafana-labs-5th-annual-observability-survey/",
-    "publishedDate": "2026-10-08T17:00:28.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "dashboards",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "terraform-09dbe3159c12",
-    "title": "v1.17.0-rc1",
-    "summary": "1.17.0-rc1 (October 07, 2026) NEW FEATURES: Terraform now supports variables and locals in provider requirements (#39153) A new -minimal-refresh planning option has been added, which will only refresh resources that have proposed changes. (#35290) policy: Terraform Policy is now generally available. The -policies flag for plan, apply, and query no longer requires an experimental build or the -allow-experimental-features flag. Query policies evaluate resources discovered by list blocks and report",
-    "source": "Terraform",
-    "sourceId": "terraform",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-rc1",
-    "publishedDate": "2026-10-07T19:46:06.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "terraform",
-    "releaseVersion": "v1.17.0-rc1"
   },
   {
     "id": "kubernetes-releases-98cb80d12c02",

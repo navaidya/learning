@@ -1,19 +1,43 @@
 [
   {
+    "project": "pulumi",
+    "version": "v3.276.0",
+    "publishedDate": "2026-11-12T17:56:15.000Z",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.276.0",
+    "sourceId": "pulumi",
+    "title": "v3.276.0"
+  },
+  {
+    "project": "backstage",
+    "version": "v1.55.4",
+    "publishedDate": "2026-11-12T17:42:00.000Z",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.55.4",
+    "sourceId": "backstage",
+    "title": "v1.55.4"
+  },
+  {
+    "project": "grafana",
+    "version": "13.3",
+    "publishedDate": "2026-11-12T17:01:40.000Z",
+    "url": "https://grafana.com/blog/an-early-look-at-the-grafana-ui-refresh-building-a-clearer-more-consistent-user-experience/",
+    "sourceId": "grafana",
+    "title": "An early look at the Grafana UI refresh: Building a clearer, more consistent user experience"
+  },
+  {
+    "project": "kyverno",
+    "version": "v1.20.0",
+    "publishedDate": "2026-11-12T09:42:36.000Z",
+    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.20.0",
+    "sourceId": "kyverno",
+    "title": "v1.20.0"
+  },
+  {
     "project": "vector",
     "version": "5.5",
     "publishedDate": "2026-11-11T18:45:52.000Z",
     "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.44",
     "sourceId": "vector",
     "title": "vdev-v0.3.44: chore(ci): fail cargo deny on all warnings except allowed lints (#27134)"
-  },
-  {
-    "project": "kyverno",
-    "version": "v1.20.0",
-    "publishedDate": "2026-11-11T14:43:05.000Z",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.20.0",
-    "sourceId": "kyverno",
-    "title": "v1.20.0"
   },
   {
     "project": "terraform",
@@ -30,14 +54,6 @@
     "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.13.0",
     "sourceId": "oci-oke",
     "title": "v9.13.0"
-  },
-  {
-    "project": "backstage",
-    "version": "v1.57.0-next.2",
-    "publishedDate": "2026-11-11T03:14:20.000Z",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.57.0-next.2",
-    "sourceId": "backstage",
-    "title": "v1.57.0-next.2"
   },
   {
     "project": "loki",
@@ -104,14 +120,6 @@
     "title": "v1.13.9"
   },
   {
-    "project": "pulumi",
-    "version": "v3.274.1",
-    "publishedDate": "2026-11-05T16:58:45.000Z",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.274.1",
-    "sourceId": "pulumi",
-    "title": "v3.274.1"
-  },
-  {
     "project": "prometheus",
     "version": "3.16.0",
     "publishedDate": "2026-11-05T16:06:52.000Z",
@@ -166,14 +174,6 @@
     "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.7.0",
     "sourceId": "gateway-api",
     "title": "v1.7.0"
-  },
-  {
-    "project": "grafana",
-    "version": "13.3",
-    "publishedDate": "2026-10-29T15:01:42.000Z",
-    "url": "https://grafana.com/blog/grafana-13-3-release-all-the-latest-features/",
-    "sourceId": "grafana",
-    "title": "Grafana 13.3 release: manage variables across dashboards, share findings with Notebooks, a UI refresh, and more"
   },
   {
     "project": "flux",
