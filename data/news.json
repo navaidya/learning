@@ -7520,6 +7520,25 @@
     "releaseRelated": false
   },
   {
+    "id": "terraform-09dbe3159c12",
+    "title": "v1.17.0-rc1",
+    "summary": "1.17.0-rc1 (October 07, 2026) NEW FEATURES: Terraform now supports variables and locals in provider requirements (#39153) A new -minimal-refresh planning option has been added, which will only refresh resources that have proposed changes. (#35290) policy: Terraform Policy is now generally available. The -policies flag for plan, apply, and query no longer requires an experimental build or the -allow-experimental-features flag. Query policies evaluate resources discovered by list blocks and report",
+    "source": "Terraform",
+    "sourceId": "terraform",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-rc1",
+    "publishedDate": "2026-10-07T19:46:06.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "terraform",
+    "releaseVersion": "v1.17.0-rc1"
+  },
+  {
     "id": "kubernetes-releases-98cb80d12c02",
     "title": "v1.38.0-alpha.2",
     "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
@@ -9772,26 +9791,5 @@
     "releaseRelated": true,
     "releaseProject": "holmesgpt",
     "releaseVersion": "0.39.1-alpha"
-  },
-  {
-    "id": "tempo-1f1ad87d236d",
-    "title": "v3.0.3",
-    "summary": "Security operations: Update Go to 1.26.5 (CVE-2026-39822, CVE-2026-27145, CVE-2026-42504, CVE-2026-42505, CVE-2026-42507), google.golang.org/grpc to v1.82.1 (GHSA-hrxh-6v49-42gf), golang.org/x/net to v0.56.0 (CVE-2026-46600), golang.org/x/text to v0.39.0 (CVE-2026-56852), and go.opentelemetry.io/otel to v1.44.0 (CVE-2026-41178) (#7726) (@mattdurham) Enhancements query-frontend: Add Tempo configuration documentation to the MCP server via the docs-config tool and docs://config/overview and docs://",
-    "source": "Grafana Tempo",
-    "sourceId": "tempo",
-    "url": "https://github.com/grafana/tempo/releases/tag/v3.0.3",
-    "publishedDate": "2026-08-13T20:37:13.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "tempo",
-      "tracing",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "tempo",
-    "releaseVersion": "v3.0.3"
   }
 ]

@@ -1,12 +1,32 @@
 [
   {
+    "id": "pydantic-ai-bceeb4aee8ac",
+    "title": "v2.68.0 (2026-11-11)",
+    "summary": "What's Changed ⚠️ Compatibility Notes Note text that looks like an application frame in user and tool content instead of escaping it by @DouweM in #11813 Add OutputTokenLimitExceeded, and fall back to the next model in ModelFallback when a response is cut off at max_tokens by @DouweM in #12407 Ask for approvals and answers inside the run with RequestInput, put AskUser on the deferred pipeline, and mark deferred calls with kind and answered_by by @DouweM in #12757 Add DelegationTasks.discover() a",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.68.0",
+    "publishedDate": "2026-11-12T03:23:15.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.68.0"
+  },
+  {
     "id": "pydantic-ai-ec5fb94d76bf",
     "title": "CLAI2 bleeding",
     "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-11T20:04:12.000Z",
+    "publishedDate": "2026-11-12T03:05:54.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +37,56 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "cncf-video-09a7d9156247",
+    "title": "Sandbox Your Agents - Jessica Forrester, Red Hat (ASL)",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=HE4-Jb1CgNw",
+    "publishedDate": "2026-11-11T20:58:32.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-3079430e4c7e",
+    "title": "The Identity Crisis: Who is the AI Agent in Your Cluster? - Abdel Sghiouar, Google Cloud (ASL)",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=QyXPRV_bU4A",
+    "publishedDate": "2026-11-11T20:58:32.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-58085f564e48",
+    "title": "Human Scale, Agent Scale - Jonathan Bryce, The Linux Foundation (ASL)",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=cqwKzInzpLA",
+    "publishedDate": "2026-11-11T20:58:32.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "cncf-video-3f53f89da414",
