@@ -1,5 +1,42 @@
 [
   {
+    "id": "grafana-040f0db746a4",
+    "title": "What's new in Pyroscope: profile more of your workflows, troubleshoot with AI agents, and more",
+    "summary": "When an application slows down or memory usage keeps climbing, knowing which code is responsible can help you find a fix faster. Continuous profiling gives you that visibility, so you can see where your application spends resources such as CPU time and memory.We’ve made updates to Pyroscope, our open source continuous profiling database, that make it easier to profile your applications, find performance bottlenecks, and optimize your code, whether you're doing the work yourself or with an AI age",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/whats-new-in-pyroscope-profile-more-of-your-workflows-troubleshoot-with-ai-agents-and-more/",
+    "publishedDate": "2026-11-13T17:14:29.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "openai-5bf4951adbe9",
+    "title": "Introducing ChatGPT Wallet",
+    "summary": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/introducing-chatgpt-wallet",
+    "publishedDate": "2026-11-13T15:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "loki-ae18738edbe7",
     "title": "v3.7.10",
     "summary": "3.7.10 (2026-11-13) Features server: Enable configurable TLS curve preferences [release-3.7.x] (#25796) (a297d55) Bug Fixes deps: Update github.com/grafana/gomemcache digest to 9448343 (release-3.7.x) (#25608) (a815365) deps: Update github.com/grafana/jsonparser digest to 5f43846 (release-3.7.x) (#25609) (b85d0d2) deps: Update github.com/joncrlsn/dque digest to 7723fd1 (release-3.7.x) (#25387) (ad44cbb) deps: Update github.com/thanos-io/objstore digest to 72d3b9f (release-3.7.x) (#25389) (e7d680",
@@ -7475,48 +7512,6 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "argo-d9c55cfaecf3",
-    "title": "v3.3.16",
-    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.3.16/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.3.16/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container im",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.16",
-    "publishedDate": "2026-10-12T11:04:05.000Z",
-    "domain": "gitops",
-    "topics": [
-      "gitops",
-      "argo-cd",
-      "argo",
-      "argocd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "v3.3.16"
-  },
-  {
-    "id": "argo-eb38715f5074",
-    "title": "v3.5.5",
-    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.5/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.5/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container imag",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.5",
-    "publishedDate": "2026-10-12T11:02:57.000Z",
-    "domain": "gitops",
-    "topics": [
-      "gitops",
-      "argo-cd",
-      "argo",
-      "argocd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "v3.5.5"
   },
   {
     "id": "opentelemetry-2bd575b6bf87",

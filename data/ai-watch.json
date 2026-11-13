@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-13T07:49:05.000Z",
+    "publishedDate": "2026-11-13T20:17:07.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,45 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "practical-ai-3c42ca3aa07c",
+    "title": "Implementing Federated Learning to enhance Agentic AI",
+    "summary": "How can AI models learn from private data without compromising privacy? Chris is joined by Lorenzo Sani, Research Scientist at Flower Labs and PhD researcher at Cambridge, to explore federated learning and privacy-preserving AI. They discuss how collaborative learning can expand access to private data for LLM training, how model trajectories can help improve agentic AI systems, and the benefits of open-weight models. The conversation also explores real-world applications of locally hosted AI age",
+    "source": "Practical AI",
+    "sourceId": "practical-ai",
+    "url": "https://share.transistor.fm/s/58a69653",
+    "publishedDate": "2026-11-13T17:59:46.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "podcast",
+      "agent-development",
+      "agentic-operations"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "langfuse-40c9b8792456",
+    "title": "v4.80.0",
+    "summary": "What's Changed Features feat(clickhouse): send query parameters in the request body by default by @Steffen911 in #20049 feat(ai-gateway): add Google AI Studio as a gateway provider by @wochinge in #20086 feat(ai-gateway): rename to Connections & Models and hide Models tab without connections by @wochinge in #20112 feat(in-app-agent): add \"Copy session link\" to Halo's session menu and hide session links in HIPAA by @nimarb in #20103 feat(native): decode typed OTLP envelopes without a document tre",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.80.0",
+    "publishedDate": "2026-11-13T10:32:14.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otlp",
+      "agent-observability",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.80.0"
   },
   {
     "id": "phoenix-bf39339c8afb",
