@@ -1,11 +1,90 @@
 [
   {
+    "id": "loki-ae18738edbe7",
+    "title": "v3.7.10",
+    "summary": "3.7.10 (2026-11-13) Features server: Enable configurable TLS curve preferences [release-3.7.x] (#25796) (a297d55) Bug Fixes deps: Update github.com/grafana/gomemcache digest to 9448343 (release-3.7.x) (#25608) (a815365) deps: Update github.com/grafana/jsonparser digest to 5f43846 (release-3.7.x) (#25609) (b85d0d2) deps: Update github.com/joncrlsn/dque digest to 7723fd1 (release-3.7.x) (#25387) (ad44cbb) deps: Update github.com/thanos-io/objstore digest to 72d3b9f (release-3.7.x) (#25389) (e7d680",
+    "source": "Grafana Loki",
+    "sourceId": "loki",
+    "url": "https://github.com/grafana/loki/releases/tag/v3.7.10",
+    "publishedDate": "2026-11-13T07:52:26.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "loki",
+      "logging",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "loki",
+    "releaseVersion": "v3.7.10"
+  },
+  {
+    "id": "loki-c6505b9b0db0",
+    "title": "v3.6.21",
+    "summary": "3.6.21 (2026-11-12) Bug Fixes security/UNKNOWN/: Update module golang.org/x/crypto to v0.59.0 [SECURITY] (release-3.6.x) (#26423) (af033ff)",
+    "source": "Grafana Loki",
+    "sourceId": "loki",
+    "url": "https://github.com/grafana/loki/releases/tag/v3.6.21",
+    "publishedDate": "2026-11-13T07:49:02.000Z",
+    "domain": "logging",
+    "topics": [
+      "loki",
+      "logging",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "loki",
+    "releaseVersion": "v3.6.21"
+  },
+  {
+    "id": "helm-4a7cf49d1aaa",
+    "title": "Helm v4.3.2",
+    "summary": "Helm v4.3.2 is a patch release. Users are encouraged to upgrade for the best experience. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/packages Notable Changes docs(cmd): correct list --max and HELM_COLOR help text #32807 by @ZainnQureshii fix(registry): ",
+    "source": "Helm",
+    "sourceId": "helm",
+    "url": "https://github.com/helm/helm/releases/tag/v4.3.2",
+    "publishedDate": "2026-11-13T04:56:51.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "helm",
+      "packaging"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "helm",
+    "releaseVersion": "v4.3.2"
+  },
+  {
     "id": "openai-372847c94994",
     "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
     "summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
     "source": "OpenAI Developer Updates",
     "sourceId": "openai",
     "url": "https://openai.com/index/amplitude",
+    "publishedDate": "2026-11-12T20:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "openai-5b0f73df89a6",
+    "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+    "summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/business/customer-stories/amplitude",
     "publishedDate": "2026-11-12T20:00:00.000Z",
     "domain": "agentic-operations",
     "topics": [
@@ -7440,27 +7519,6 @@
     "releaseVersion": "v3.5.5"
   },
   {
-    "id": "argo-5dc4e2b85510",
-    "title": "v3.4.11",
-    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.4.11/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.4.11/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container im",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.4.11",
-    "publishedDate": "2026-10-12T10:49:28.000Z",
-    "domain": "gitops",
-    "topics": [
-      "gitops",
-      "argo-cd",
-      "argo",
-      "argocd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "v3.4.11"
-  },
-  {
     "id": "opentelemetry-2bd575b6bf87",
     "title": "Prometheus and OpenTelemetry interoperability in 2026: Survey results",
     "summary": "We ran a survey asking users of OpenTelemetry and Prometheus how they collect, process, and store metrics. The goal was to understand, with real usage data rather than assumptions, how far the ecosystem has moved and whether the interoperability still causes friction. Key takeaways Interoperability has measurably improved since our 2024 survey: the average ease-of-use rating rose from 3.1 to 3.6, the equivalent of one in two respondents rating a whole category higher, and the share of respondent",
@@ -7479,65 +7537,6 @@
     "releaseRelated": true,
     "releaseProject": "opentelemetry",
     "releaseVersion": "3.1"
-  },
-  {
-    "id": "karpenter-38a0f6314eef",
-    "title": "v1.15.0",
-    "summary": "Features dra prioritized alternatives support (#3142) #3142 (Ryan Mistretta) metrics: add karpenter_pods_disrupted_total counter (#3015) #3015 (praveen9354) metrics: add consolidation_policy and termination_mode labels to disruption metrics (#3179) #3179 (Derek Frank) add VPA prediction controller and store (#3134) #3134 (Jigisha Patil) default pod topology spread awareness (#3205) #3205 (Andrew Mitchell) account for instance type volume limits when provisioning (#3202) #3202 (Eddie) Reduce allo",
-    "source": "Karpenter",
-    "sourceId": "karpenter",
-    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.15.0",
-    "publishedDate": "2026-10-10T05:42:48.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "karpenter",
-      "kubernetes",
-      "autoscaling"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "karpenter",
-    "releaseVersion": "v1.15.0"
-  },
-  {
-    "id": "vector-026ca175636f",
-    "title": "vdev-v0.3.30",
-    "summary": "No content.",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.30",
-    "publishedDate": "2026-10-09T22:30:38.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector"
-  },
-  {
-    "id": "k8sgpt-0ed1acb16a11",
-    "title": "v0.4.40",
-    "summary": "0.4.40 (2026-10-09) Features add ResourceClaim analyzer for missing DeviceClasses (#1768) (f2dd92e) Bug Fixes close the custom analyzer gRPC connection after each analysis (#1800) (d6d75f7) correct API doc lookups for the webhook analyzers (#1802) (ce78560) handle empty AI responses and respect configured language (#1756) (9456068) honor StatefulSet start ordinals (#1759) (dd16466) honour K8SGPT_BACKEND on every serve start (#1749) (6959a93) ignore in-progress Deployment replica mismatches (#174",
-    "source": "K8sGPT",
-    "sourceId": "k8sgpt",
-    "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.40",
-    "publishedDate": "2026-10-09T20:24:09.000Z",
-    "domain": "aiops",
-    "topics": [
-      "aiops",
-      "k8sgpt",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "k8sgpt",
-    "releaseVersion": "v0.4.40"
   },
   {
     "id": "kubernetes-releases-98cb80d12c02",

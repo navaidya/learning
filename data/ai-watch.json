@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-12T20:40:57.000Z",
+    "publishedDate": "2026-11-13T07:49:05.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,111 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "phoenix-bf39339c8afb",
+    "title": "arize-phoenix: v21.1.0",
+    "summary": "21.1.0 (2026-11-13) Features app: add pnpm dev:ui-only and pnpm dev:down (#17848) (4ab080c) cli: add dataset-versions list command (#17758) (1e47750), closes #12016 cli: add prompt-versions list command (#17189) (974be43) evals: deprecate gpt 4o mini and add decision models in docs (#17718) (ecfe6f5) factory: add a docs reviewer that holds docs changes to the phoenix-docs skill (#17641) (97df6e2) factory: add the finish lane that takes a labeled PR to mergeable (#17579) (74fa0ed) factory: cc the",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v21.1.0",
+    "publishedDate": "2026-11-13T06:26:01.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v21.1.0"
+  },
+  {
+    "id": "cncf-video-3309be2f9b5a",
+    "title": "Cloud Native Without Limits: What Can AI Agents Do for Us? - Lin Sun, Solo.io (ASL)",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=IGwFVa8rIdg",
+    "publishedDate": "2026-11-12T23:43:01.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-3c9417aae679",
+    "title": "Agentic AI, Assembled in the Open - Jorge Palma, Microsoft (ASL)",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=jmvXyFnIxeI",
+    "publishedDate": "2026-11-12T23:43:01.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-743bc2fbb174",
+    "title": "Cloud Native Without Limits: What Can AI Agents Do for Us? - Lin Sun, Solo.io",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=Ec2Dm5de8Ys",
+    "publishedDate": "2026-11-12T23:42:05.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-58367f9d57bf",
+    "title": "Agentic AI, Assembled in the Open - Jorge Palma, Microsoft",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=jLJGfYAe09o",
+    "publishedDate": "2026-11-12T23:42:05.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-f704ae42f6e0",
+    "title": "Scaling Multi-Modal Models and Computer-Use Agents on Kubernetes - Kai-Hsun Chen & Hao Jiang, Hark",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=06JNFaNF5ng",
+    "publishedDate": "2026-11-12T23:37:59.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "langgraph-e485cd9663d8",
