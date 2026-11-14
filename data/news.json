@@ -37,6 +37,24 @@
     "releaseRelated": false
   },
   {
+    "id": "openai-d1318183fe17",
+    "title": "Shield helps technicians hand off legacy portal work with OpenAI",
+    "summary": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/business/customer-stories/shield",
+    "publishedDate": "2026-11-13T08:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "loki-ae18738edbe7",
     "title": "v3.7.10",
     "summary": "3.7.10 (2026-11-13) Features server: Enable configurable TLS curve preferences [release-3.7.x] (#25796) (a297d55) Bug Fixes deps: Update github.com/grafana/gomemcache digest to 9448343 (release-3.7.x) (#25608) (a815365) deps: Update github.com/grafana/jsonparser digest to 5f43846 (release-3.7.x) (#25609) (b85d0d2) deps: Update github.com/joncrlsn/dque digest to 7723fd1 (release-3.7.x) (#25387) (ad44cbb) deps: Update github.com/thanos-io/objstore digest to 72d3b9f (release-3.7.x) (#25389) (e7d680",
@@ -7495,23 +7513,6 @@
     "releaseRelated": true,
     "releaseProject": "holmesgpt",
     "releaseVersion": "0.44.0-alpha"
-  },
-  {
-    "id": "cncf-f6e13a4722f3",
-    "title": "From zero to agent builder: Running kagent on your laptop",
-    "summary": "If you have seen a demo of a no-code agent builder, you know the moment. Someone types one sentence, waits a minute, and there it is: a new agent, running, with tools. It is impressive. For...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/10/12/from-zero-to-agent-builder-running-kagent-on-your-laptop/",
-    "publishedDate": "2026-10-12T11:30:00.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "opentelemetry-2bd575b6bf87",

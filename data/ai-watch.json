@@ -1,12 +1,92 @@
 [
   {
+    "id": "langgraph-859ffa3f2fa7",
+    "title": "langgraph==1.2.22",
+    "summary": "Changes since 1.2.21 release(langgraph): 1.2.22 (#9702) release(checkpoint-postgres): 3.2.1 (#9700) release(prebuilt): 1.1.2 (#9701) release(checkpoint): 4.3.2 (#9699) fix(langgraph): stream a child graph on its own thread to a caller streaming subgraphs (#9698) perf(langgraph): skip message conversion in add_messages for plain messages (#9631) perf(langgraph): filter pending writes to the given tasks before reading their statuses (#9634) perf(langgraph): match update keys against a set on wide ",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.22",
+    "publishedDate": "2026-11-14T01:43:55.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "1.2.22"
+  },
+  {
+    "id": "langgraph-aec9c12901d2",
+    "title": "langgraph-checkpoint-postgres==3.2.1",
+    "summary": "Changes since checkpointpostgres==3.2.0 release(checkpoint-postgres): 3.2.1 (#9700) release(checkpoint): 4.3.2 (#9699) perf(checkpoint-postgres): run a lone store read outside a pipeline (#9635) perf(checkpoint-postgres): skip the async saver's lock for connection pools (#9638) perf(checkpoint-postgres): load no pending writes without a thread hop (#9639) release(checkpoint): 4.3.1 (#9447) chore(deps): bump certifi from 2026.1.4 to 2026.10.19 in /libs/checkpoint-postgres (#9369)",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointpostgres%3D%3D3.2.1",
+    "publishedDate": "2026-11-14T01:39:04.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "3.2.1"
+  },
+  {
+    "id": "langgraph-4e9d9267895a",
+    "title": "langgraph-prebuilt==1.1.2",
+    "summary": "Changes since prebuilt==1.1.1 release(langgraph): 1.2.22 (#9702) release(checkpoint-postgres): 3.2.1 (#9700) release(prebuilt): 1.1.2 (#9701) release(checkpoint): 4.3.2 (#9699) perf(prebuilt): only format the call_model error message when raising (#9628) release(langgraph): 1.2.21 (#9683) chore(deps): bump the minor-and-patch group across 1 directory with 9 updates (#9530) chore(deps-dev): bump the minor-and-patch group across 1 directory with 6 updates (#9527) release(langgraph): 1.2.20 (#9595)",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/prebuilt%3D%3D1.1.2",
+    "publishedDate": "2026-11-14T01:33:52.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "1.1.2"
+  },
+  {
+    "id": "langgraph-30e87202a634",
+    "title": "langgraph-checkpoint==4.3.2",
+    "summary": "Changes since checkpoint==4.3.1 release(checkpoint): 4.3.2 (#9699) perf(checkpoint): stop InMemoryStore search at the requested page (#9633) perf(checkpoint): dedupe batched store reads with a dict (#9636) chore(deps): bump the minor-and-patch group in /libs/checkpoint with 6 updates (#9529) chore(deps-dev): bump pycryptodome from 3.23.0 to 4.2.0 in /libs/checkpoint in the major group (#9531)",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpoint%3D%3D4.3.2",
+    "publishedDate": "2026-11-14T01:31:16.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "4.3.2"
+  },
+  {
     "id": "pydantic-ai-ec5fb94d76bf",
     "title": "CLAI2 bleeding",
     "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-13T20:17:07.000Z",
+    "publishedDate": "2026-11-13T23:10:22.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
