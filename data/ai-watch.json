@@ -1,5 +1,24 @@
 [
   {
+    "id": "pydantic-ai-ec5fb94d76bf",
+    "title": "CLAI2 bleeding",
+    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
+    "publishedDate": "2026-11-14T18:37:40.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai"
+  },
+  {
     "id": "langgraph-859ffa3f2fa7",
     "title": "langgraph==1.2.22",
     "summary": "Changes since 1.2.21 release(langgraph): 1.2.22 (#9702) release(checkpoint-postgres): 3.2.1 (#9700) release(prebuilt): 1.1.2 (#9701) release(checkpoint): 4.3.2 (#9699) fix(langgraph): stream a child graph on its own thread to a caller streaming subgraphs (#9698) perf(langgraph): skip message conversion in add_messages for plain messages (#9631) perf(langgraph): filter pending writes to the given tasks before reading their statuses (#9634) perf(langgraph): match update keys against a set on wide ",
@@ -78,25 +97,6 @@
     "releaseRelated": true,
     "releaseProject": "langgraph",
     "releaseVersion": "4.3.2"
-  },
-  {
-    "id": "pydantic-ai-ec5fb94d76bf",
-    "title": "CLAI2 bleeding",
-    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-13T23:10:22.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai"
   },
   {
     "id": "practical-ai-3c42ca3aa07c",
