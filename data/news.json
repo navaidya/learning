@@ -7555,6 +7555,142 @@
     "releaseVersion": "v1.15.0"
   },
   {
+    "id": "k8sgpt-0ed1acb16a11",
+    "title": "v0.4.40",
+    "summary": "0.4.40 (2026-10-09) Features add ResourceClaim analyzer for missing DeviceClasses (#1768) (f2dd92e) Bug Fixes close the custom analyzer gRPC connection after each analysis (#1800) (d6d75f7) correct API doc lookups for the webhook analyzers (#1802) (ce78560) handle empty AI responses and respect configured language (#1756) (9456068) honor StatefulSet start ordinals (#1759) (dd16466) honour K8SGPT_BACKEND on every serve start (#1749) (6959a93) ignore in-progress Deployment replica mismatches (#174",
+    "source": "K8sGPT",
+    "sourceId": "k8sgpt",
+    "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.40",
+    "publishedDate": "2026-10-09T20:24:09.000Z",
+    "domain": "aiops",
+    "topics": [
+      "aiops",
+      "k8sgpt",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "k8sgpt",
+    "releaseVersion": "v0.4.40"
+  },
+  {
+    "id": "opentelemetry-3f93c5a252d8",
+    "title": "OTel-Native by Design - Building Products That Export to Any Observability Stack",
+    "summary": "With contributions from Dan Gomez Blanco (New Relic). If you&rsquo;re building self-hosted software or a SaaS product, your users will eventually ask to send logs, traces, and metrics to their own observability stack, whether to satisfy compliance, manage costs, or centralize all their observability data in one place. Locking them into your built-in dashboards or limiting exports to certain vendors creates unnecessary friction. Instead, supporting export to any OpenTelemetry (OTel)-compatible ba",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/otel-native-by-design/",
+    "publishedDate": "2026-10-09T15:50:03.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "openai-90995f7dbc9c",
+    "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+    "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/asana-browser-agent",
+    "publishedDate": "2026-10-09T07:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "openai"
+  },
+  {
+    "id": "gateway-api-3cbc64fa975d",
+    "title": "v1.7.0-rc.1",
+    "summary": "Major Themes Graduating to Standard HTTPRoute Retries (GEP-1731): the retry configuration of an HTTPRoute rule (codes, attempts and backoff) is promoted to the Standard channel, together with the HTTPRouteRetryCodes and HTTPRouteRetryConnectionError conformance features. The backoff field is implementation-specific because backoff behavior, especially jitter, varies between implementations. (#5357, @snorwin, #5359, @mikemorris) New in Experimental Gateway Address Routability (GEP-5093): routabil",
+    "source": "Gateway API",
+    "sourceId": "gateway-api",
+    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.7.0-rc.1",
+    "publishedDate": "2026-10-08T23:54:16.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "gateway-api",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "gateway-api",
+    "releaseVersion": "v1.7.0-rc.1"
+  },
+  {
+    "id": "gateway-api-840f59b72a2d",
+    "title": "conformance/v1.7.0-rc.1: chore: Release v1.7.0-rc.1 (#5363)",
+    "summary": "Signed-off-by: Ricardo Pchevuzinske Katz katz@redhat.com",
+    "source": "Gateway API",
+    "sourceId": "gateway-api",
+    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/conformance%2Fv1.7.0-rc.1",
+    "publishedDate": "2026-10-08T22:43:59.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "gateway-api",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "gateway-api",
+    "releaseVersion": "v1.7.0-rc.1"
+  },
+  {
+    "id": "oci-oke-d974e568f93b",
+    "title": "v9.9.0",
+    "summary": "9.9.0 (October 6, 2026) Added Support for Alloy - SKU Configuration/Enablement Support remote NVMe volumes Support for TERSI-4567 Extension to be Completed GenAI API Key Support Bug Fix remove duplicate shape argument from core instance example Correct OAC management attribute references Support OCI Cache upgrades with custom configuration sets TERSI-5553 support non-IAM hosted deployment destroy Metering Computation resource discovery only at tenancy scope",
+    "source": "OCI / OKE",
+    "sourceId": "oci-oke",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.9.0",
+    "publishedDate": "2026-10-08T20:41:54.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "oci",
+      "oke",
+      "oracle"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "oci-oke",
+    "releaseVersion": "v9.9.0"
+  },
+  {
+    "id": "terraform-09dbe3159c12",
+    "title": "v1.17.0-rc1",
+    "summary": "1.17.0-rc1 (October 07, 2026) NEW FEATURES: Terraform now supports variables and locals in provider requirements (#39153) A new -minimal-refresh planning option has been added, which will only refresh resources that have proposed changes. (#35290) policy: Terraform Policy is now generally available. The -policies flag for plan, apply, and query no longer requires an experimental build or the -allow-experimental-features flag. Query policies evaluate resources discovered by list blocks and report",
+    "source": "Terraform",
+    "sourceId": "terraform",
+    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-rc1",
+    "publishedDate": "2026-10-07T19:46:06.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "terraform",
+    "releaseVersion": "v1.17.0-rc1"
+  },
+  {
     "id": "kubernetes-releases-98cb80d12c02",
     "title": "v1.38.0-alpha.2",
     "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
@@ -7592,6 +7728,26 @@
     "releaseRelated": false
   },
   {
+    "id": "holmesgpt-8787cd8e2e30",
+    "title": "0.43.0",
+    "summary": "What's Changed ROB-357 Remove kube-lineage from Holmes by @RoiGlinik in #2464 ROB-1233 Constrain impact claims in the narrative to observed evidence by @naomi-robusta in #2449 ROB-1107 Bind conversation worker identity to the Conversations row owner by @naomi-robusta in #2480 ROB-1402 Document Baseten Model APIs as a provider by @ezra-robusta in #2483 ROB-1402 Drop the Baseten rate-limits section by @ezra-robusta in #2489 ROB-1104 Reject shell metacharacters in propagated HTTP headers by @RoiGli",
+    "source": "HolmesGPT (Robusta)",
+    "sourceId": "holmesgpt",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.43.0",
+    "publishedDate": "2026-10-07T09:13:36.000Z",
+    "domain": "aiops",
+    "topics": [
+      "holmesgpt",
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "holmesgpt",
+    "releaseVersion": "0.43.0"
+  },
+  {
     "id": "robusta-5a2419fcde6c",
     "title": "0.51.0",
     "summary": "What's Changed docs: point account_id lookups at Settings → General instead of generated_values.yaml by @claude[bot] in #2177 ROB-1429 Bump tornado to 6.5.10 to fix CVE-2026-82397 by @Avi-Robusta in #2181 Replace pygal with native SVG chart renderer by @arikalon1 in #2178 Fix poetry.lock / pre-commit poetry-lock hook version mismatch by @naomi-robusta in #2184 ROB-1472 Ship Holmes chart 0.42.0 and check Helm dependencies in CI by @ezra-robusta in #2186 Add Platform MCP API and LLM Models API doc",
@@ -7611,6 +7767,26 @@
     "releaseRelated": true,
     "releaseProject": "robusta",
     "releaseVersion": "0.51.0"
+  },
+  {
+    "id": "gateway-api-dff06d8a8b51",
+    "title": "v1.6.3",
+    "summary": "v1.6.3 Major Changes Since v1.6.2 Conformance Conformance tests for stable features (notable TCPRoute and UDPRoute) are no longer marked as \"provisional\" (#5260, @rikatz) Force the timeout for the ExpectMirroredRequest conformance test to MaxTimeToConsistency (#5296, @kl52752) Actually remove unused namespaces in Mesh conformance tests (#5251, @xtineskim) Add the GatewayInvalidParametersRef conformance test (#5236, @kl52752) Build Ensure the Go toolchain matches go.work (#5234, @snorwin)",
+    "source": "Gateway API",
+    "sourceId": "gateway-api",
+    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.3",
+    "publishedDate": "2026-10-06T20:35:29.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "gateway-api",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "gateway-api",
+    "releaseVersion": "v1.6.3"
   },
   {
     "id": "kubernetes-fc4272a4d245",
@@ -7649,6 +7825,61 @@
     "releaseRelated": true,
     "releaseProject": "opentelemetry",
     "releaseVersion": "3.0"
+  },
+  {
+    "id": "gateway-api-49e59b3b6654",
+    "title": "conformance/v1.6.3: chore: Release 1.6.3 (#5335)",
+    "summary": "chore: Release 1.6.3 Signed-off-by: Flynn emissary@flynn.kodachi.com chore: Update the VAP bundle-version annotations, too Signed-off-by: Flynn emissary@flynn.kodachi.com chore: Clean up some trailing whitespace Signed-off-by: Flynn emissary@flynn.kodachi.com Signed-off-by: Flynn emissary@flynn.kodachi.com",
+    "source": "Gateway API",
+    "sourceId": "gateway-api",
+    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/conformance%2Fv1.6.3",
+    "publishedDate": "2026-10-06T15:00:41.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "gateway-api",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "gateway-api",
+    "releaseVersion": "v1.6.3"
+  },
+  {
+    "id": "openai-9964af802e9c",
+    "title": "Advancing computer use with Ironclad",
+    "summary": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
+    "publishedDate": "2026-10-06T10:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "openai",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "kubernetes-5af07d1ea056",
+    "title": "Scaling Kubernetes Workloads with Node Swap",
+    "summary": "Memory is often the first hard limit a Kubernetes cluster hits. Nodes run out of RAM long before they run out of CPU, and the new wave of agentic AI workloads makes this worse. These workloads demand large memory footprints to start up and run untrusted code, then sit idle waiting for the next prompt. That idle but resident memory is expensive, and it caps how many pods a node can hold. This is where swap helps. Kubernetes support for running nodes with swap enabled reached General Availability ",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/10/05/scaling-kubernetes-workloads-with-node-swap/",
+    "publishedDate": "2026-10-05T18:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "prometheus-43c41ecf951c",
@@ -9537,253 +9768,5 @@
     "releaseRelated": true,
     "releaseProject": "prometheus",
     "releaseVersion": "3.14.0"
-  },
-  {
-    "id": "opentelemetry-collector-09fcd0869f7d",
-    "title": "v1.65.0/v0.159.0",
-    "summary": "Images and binaries here: https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.159.0 End User Changelog 💡 Enhancements 💡 pkg/exporterhelper: Add the pkg.exporterhelper.queueBatchEnabled feature gate (#14038, #13582, #12022) When enabled, the batch settings returned by NewDefaultQueueConfig() have batch::enabled true. See migration RFC. 🧰 Bug fixes 🧰 pkg/exporterhelper: Record otelcol_exporter_queue_batch_send_size and otelcol_exporter_queue_batch_send_size_bytes",
-    "source": "OpenTelemetry Collector",
-    "sourceId": "opentelemetry-collector",
-    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.159.0",
-    "publishedDate": "2026-08-17T17:37:33.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "collector",
-      "otel",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentelemetry-collector",
-    "releaseVersion": "v1.65.0"
-  },
-  {
-    "id": "opentelemetry-collector-f57666357df8",
-    "title": "service/v0.159.0",
-    "summary": "Module set beta, Version v0.159.0",
-    "source": "OpenTelemetry Collector",
-    "sourceId": "opentelemetry-collector",
-    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/service%2Fv0.159.0",
-    "publishedDate": "2026-08-17T17:22:35.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "collector",
-      "otel",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentelemetry-collector",
-    "releaseVersion": "v0.159.0"
-  },
-  {
-    "id": "opentelemetry-collector-4a520325cc1a",
-    "title": "service/telemetry/telemetrytest/v0.159.0",
-    "summary": "Module set beta, Version v0.159.0",
-    "source": "OpenTelemetry Collector",
-    "sourceId": "opentelemetry-collector",
-    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/service%2Ftelemetry%2Ftelemetrytest%2Fv0.159.0",
-    "publishedDate": "2026-08-17T17:22:35.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "collector",
-      "otel",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentelemetry-collector",
-    "releaseVersion": "v0.159.0"
-  },
-  {
-    "id": "opentelemetry-collector-ba05fa772b1e",
-    "title": "service/hostcapabilities/v0.159.0",
-    "summary": "Module set beta, Version v0.159.0",
-    "source": "OpenTelemetry Collector",
-    "sourceId": "opentelemetry-collector",
-    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/service%2Fhostcapabilities%2Fv0.159.0",
-    "publishedDate": "2026-08-17T17:22:35.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "collector",
-      "otel",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentelemetry-collector",
-    "releaseVersion": "v0.159.0"
-  },
-  {
-    "id": "opentelemetry-collector-699e3b0da3d3",
-    "title": "scraper/xscraper/v0.159.0",
-    "summary": "Module set beta, Version v0.159.0",
-    "source": "OpenTelemetry Collector",
-    "sourceId": "opentelemetry-collector",
-    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fxscraper%2Fv0.159.0",
-    "publishedDate": "2026-08-17T17:22:35.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "collector",
-      "otel",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentelemetry-collector",
-    "releaseVersion": "v0.159.0"
-  },
-  {
-    "id": "opentelemetry-collector-35d9c3181bfb",
-    "title": "scraper/scrapertest/v0.159.0",
-    "summary": "Module set beta, Version v0.159.0",
-    "source": "OpenTelemetry Collector",
-    "sourceId": "opentelemetry-collector",
-    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fscrapertest%2Fv0.159.0",
-    "publishedDate": "2026-08-17T17:22:35.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "collector",
-      "otel",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentelemetry-collector",
-    "releaseVersion": "v0.159.0"
-  },
-  {
-    "id": "opentelemetry-collector-5b872e012dbc",
-    "title": "scraper/scraperhelper/xscraperhelper/v0.159.0",
-    "summary": "Module set beta, Version v0.159.0",
-    "source": "OpenTelemetry Collector",
-    "sourceId": "opentelemetry-collector",
-    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fscraperhelper%2Fxscraperhelper%2Fv0.159.0",
-    "publishedDate": "2026-08-17T17:22:35.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "collector",
-      "otel",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentelemetry-collector",
-    "releaseVersion": "v0.159.0"
-  },
-  {
-    "id": "opentelemetry-collector-00d59c58aeb0",
-    "title": "scraper/scraperhelper/v0.159.0",
-    "summary": "Module set beta, Version v0.159.0",
-    "source": "OpenTelemetry Collector",
-    "sourceId": "opentelemetry-collector",
-    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fscraperhelper%2Fv0.159.0",
-    "publishedDate": "2026-08-17T17:22:35.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "collector",
-      "otel",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentelemetry-collector",
-    "releaseVersion": "v0.159.0"
-  },
-  {
-    "id": "opentelemetry-collector-a201a6fd700f",
-    "title": "scraper/v0.159.0",
-    "summary": "Module set beta, Version v0.159.0",
-    "source": "OpenTelemetry Collector",
-    "sourceId": "opentelemetry-collector",
-    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fv0.159.0",
-    "publishedDate": "2026-08-17T17:22:34.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "collector",
-      "otel",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentelemetry-collector",
-    "releaseVersion": "v0.159.0"
-  },
-  {
-    "id": "opentelemetry-collector-e27aa565fd5e",
-    "title": "receiver/xreceiver/v0.159.0",
-    "summary": "Module set beta, Version v0.159.0",
-    "source": "OpenTelemetry Collector",
-    "sourceId": "opentelemetry-collector",
-    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/receiver%2Fxreceiver%2Fv0.159.0",
-    "publishedDate": "2026-08-17T17:22:34.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "collector",
-      "otel",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentelemetry-collector",
-    "releaseVersion": "v0.159.0"
-  },
-  {
-    "id": "cncf-63a9b329673e",
-    "title": "CNCF Announces Kubeflow’s Graduation, Solidifying a Standard for Cloud Native AI Operations",
-    "summary": "Milestone marks widespread enterprise adoption for automating end-to-end AI and machine learning lifecycles on Kubernetes Key Highlights SAN FRANCISCO — August 17, 2026 — The Cloud Native Computing Foundation® (CNCF®), which builds sustainable ecosystems for cloud...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/announcements/2026/08/17/cncf-announces-kubeflows-graduation-solidifying-the-standard-for-cloud-native-ai-operations/",
-    "publishedDate": "2026-08-17T16:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "high",
-    "architectureShift": true,
-    "releaseRelated": false
-  },
-  {
-    "id": "prometheus-d7b2a0adfb8d",
-    "title": "v0.314.0",
-    "summary": "v0.314.0",
-    "source": "Prometheus",
-    "sourceId": "prometheus",
-    "url": "https://github.com/prometheus/prometheus/releases/tag/v0.314.0",
-    "publishedDate": "2026-08-17T15:42:14.000Z",
-    "domain": "prometheus",
-    "topics": [
-      "prometheus",
-      "promql",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "prometheus",
-    "releaseVersion": "v0.314.0"
   }
 ]
