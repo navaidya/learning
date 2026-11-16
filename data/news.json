@@ -1,5 +1,63 @@
 [
   {
+    "id": "helm-4a7cf49d1aaa",
+    "title": "Helm v4.3.2",
+    "summary": "Helm v4.3.2 is a patch release. Users are encouraged to upgrade for the best experience. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/packages Notable Changes docs(cmd): correct list --max and HELM_COLOR help text #32807 by @ZainnQureshii fix(registry): ",
+    "source": "Helm",
+    "sourceId": "helm",
+    "url": "https://github.com/helm/helm/releases/tag/v4.3.2",
+    "publishedDate": "2026-11-16T02:49:16.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "helm",
+      "packaging"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "helm",
+    "releaseVersion": "v4.3.2"
+  },
+  {
+    "id": "helm-bf4bdbef1a35",
+    "title": "Helm v4.3.1",
+    "summary": "Helm v4.3.1 is a patch release. Users are encouraged to upgrade for the best experience. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/packages Notable Changes fix(action): wait for CRD establishment under HookOnlyStrategy #32672 by @pujitha24 fix(linters",
+    "source": "Helm",
+    "sourceId": "helm",
+    "url": "https://github.com/helm/helm/releases/tag/v4.3.1",
+    "publishedDate": "2026-11-16T02:47:55.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "helm",
+      "packaging"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "helm",
+    "releaseVersion": "v4.3.1"
+  },
+  {
+    "id": "opentelemetry-8e2557b2cb46",
+    "title": "Join us for OpenTelemetry Talks and Activities at KubeCon NA 2026",
+    "summary": "The OpenTelemetry project maintainers, members of the governance committee, and technical committee are thrilled to be at KubeCon NA in Salt Lake City from November 9 - 12, 2026. Register today to join us! Read on to learn about all the events related to OpenTelemetry during KubeCon. OpenTelemetry Contribfest Join the OpenTelemetry maintainers for the OpenTelemetry Contribfest to make the project better for everyone. You can choose between several opportunities to contribute, and you can count o",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/kubecon-na/",
+    "publishedDate": "2026-11-15T22:54:23.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "grafana-040f0db746a4",
     "title": "What's new in Pyroscope: profile more of your workflows, troubleshoot with AI agents, and more",
     "summary": "When an application slows down or memory usage keeps climbing, knowing which code is responsible can help you find a fix faster. Continuous profiling gives you that visibility, so you can see where your application spends resources such as CPU time and memory.We’ve made updates to Pyroscope, our open source continuous profiling database, that make it easier to profile your applications, find performance bottlenecks, and optimize your code, whether you're doing the work yourself or with an AI age",
@@ -94,26 +152,6 @@
     "releaseRelated": true,
     "releaseProject": "loki",
     "releaseVersion": "v3.6.21"
-  },
-  {
-    "id": "helm-4a7cf49d1aaa",
-    "title": "Helm v4.3.2",
-    "summary": "Helm v4.3.2 is a patch release. Users are encouraged to upgrade for the best experience. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/packages Notable Changes docs(cmd): correct list --max and HELM_COLOR help text #32807 by @ZainnQureshii fix(registry): ",
-    "source": "Helm",
-    "sourceId": "helm",
-    "url": "https://github.com/helm/helm/releases/tag/v4.3.2",
-    "publishedDate": "2026-11-13T04:56:51.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "helm",
-      "packaging"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "helm",
-    "releaseVersion": "v4.3.2"
   },
   {
     "id": "openai-372847c94994",
@@ -3005,24 +3043,6 @@
     "releaseRelated": true,
     "releaseProject": "cncf",
     "releaseVersion": "v1.16"
-  },
-  {
-    "id": "opentelemetry-8e2557b2cb46",
-    "title": "Join us for OpenTelemetry Talks and Activities at KubeCon NA 2026",
-    "summary": "The OpenTelemetry project maintainers, members of the governance committee, and technical committee are thrilled to be at KubeCon NA in Salt Lake City from November 9 - 12, 2026. Register today to join us! Read on to learn about all the events related to OpenTelemetry during KubeCon. OpenTelemetry Contribfest Join the OpenTelemetry maintainers for the OpenTelemetry Contribfest to make the project better for everyone. You can choose between several opportunities to contribute, and you can count o",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/kubecon-na/",
-    "publishedDate": "2026-10-28T20:29:41.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "pulumi-f1aae1d00811",
@@ -6750,26 +6770,6 @@
     "releaseRelated": true,
     "releaseProject": "holmesgpt",
     "releaseVersion": "0.45.0-alpha"
-  },
-  {
-    "id": "helm-bf4bdbef1a35",
-    "title": "Helm v4.3.1",
-    "summary": "Helm v4.3.1 is a patch release. Users are encouraged to upgrade for the best experience. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/packages Notable Changes fix(action): wait for CRD establishment under HookOnlyStrategy #32672 by @pujitha24 fix(linters",
-    "source": "Helm",
-    "sourceId": "helm",
-    "url": "https://github.com/helm/helm/releases/tag/v4.3.1",
-    "publishedDate": "2026-10-15T01:08:37.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "helm",
-      "packaging"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "helm",
-    "releaseVersion": "v4.3.1"
   },
   {
     "id": "istio-41da0389d9e2",

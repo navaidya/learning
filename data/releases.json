@@ -1,19 +1,19 @@
 [
   {
+    "project": "helm",
+    "version": "v4.3.2",
+    "publishedDate": "2026-11-16T02:49:16.000Z",
+    "url": "https://github.com/helm/helm/releases/tag/v4.3.2",
+    "sourceId": "helm",
+    "title": "Helm v4.3.2"
+  },
+  {
     "project": "loki",
     "version": "v3.7.10",
     "publishedDate": "2026-11-13T07:52:26.000Z",
     "url": "https://github.com/grafana/loki/releases/tag/v3.7.10",
     "sourceId": "loki",
     "title": "v3.7.10"
-  },
-  {
-    "project": "helm",
-    "version": "v4.3.2",
-    "publishedDate": "2026-11-13T04:56:51.000Z",
-    "url": "https://github.com/helm/helm/releases/tag/v4.3.2",
-    "sourceId": "helm",
-    "title": "Helm v4.3.2"
   },
   {
     "project": "pulumi",
