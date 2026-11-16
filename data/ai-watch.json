@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-16T05:57:14.000Z",
+    "publishedDate": "2026-11-16T22:50:13.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,26 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "langfuse-a7f151cfdd95",
+    "title": "v4.81.0",
+    "summary": "What's Changed Features feat(datasets): filter dataset items by status by @marliessophie in #20186 feat(ai-gateway): add Google Vertex AI as a gateway provider by @wochinge in #20079 feat(trace): show topics transcript on trace via three dots (internal) by @nimarb in #20183 feat(native): apply model pricing and enrichment to owned OTEL events by @sumerman in #19959 feat(evals): support Gemini decision models in decision-model evaluators by @wochinge in #20189 feat(sessions): Add custom view pers",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.81.0",
+    "publishedDate": "2026-11-16T16:26:13.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.81.0"
   },
   {
     "id": "langgraph-859ffa3f2fa7",

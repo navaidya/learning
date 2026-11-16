@@ -1,5 +1,78 @@
 [
   {
+    "id": "opentelemetry-def514b4167d",
+    "title": "Announcing the 2026 OpenTelemetry Community Award Winners",
+    "summary": "Congratulations to our 2026 OpenTelemetry Community Award winners! We are very pleased to announce the winners of the 2026 OpenTelemetry Community Awards! These awards recognize individuals who have made a notable impact to the OpenTelemetry project over the past year, through code, documentation, project management, outreach, adoption, and more. We’d like to extend a sincere thank you to everyone who took the time to nominate a contributor, and to project Maintainers for recognizing their peers",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/otel-community-awards/",
+    "publishedDate": "2026-11-16T19:30:06.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "vector-d29139e57069",
+    "title": "v0.62.0",
+    "summary": "The COSE team is happy to announce Vector 0.62.0! 🚀 Vector is a lightweight, ultra-fast tool for building observability pipelines that puts you in control of your data. Thanks to the 18 contributors who made the 40 changes in this release: 6 breaking changes 3 new features 8 enhancements 23 bug fixes Upgrading to 0.62? Read the upgrade guide. View the full release notes · See upcoming releases on the release calendar.",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/v0.62.0",
+    "publishedDate": "2026-11-16T17:00:40.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector",
+    "releaseVersion": "v0.62.0"
+  },
+  {
+    "id": "openai-b0ded74e06b0",
+    "title": "Advancing computer-use agents for healthcare teams",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+    "publishedDate": "2026-11-16T06:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "openai-cfcc7acb02e9",
+    "title": "More ways to move care forward with ChatGPT for Healthcare",
+    "summary": "Introducing computer-use agents, improved clinical answers, and new healthcare plugins that work across healthcare software to get real work done.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
+    "publishedDate": "2026-11-16T06:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "helm-4a7cf49d1aaa",
     "title": "Helm v4.3.2",
     "summary": "Helm v4.3.2 is a patch release. Users are encouraged to upgrade for the best experience. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/packages Notable Changes docs(cmd): correct list --max and HELM_COLOR help text #32807 by @ZainnQureshii fix(registry): ",
@@ -152,6 +225,27 @@
     "releaseRelated": true,
     "releaseProject": "loki",
     "releaseVersion": "v3.6.21"
+  },
+  {
+    "id": "istio-33a2d728cb5f",
+    "title": "Support for Istio 1.30 ends on the 16th of December, 2026",
+    "summary": "According to Istio&rsquo;s support policy, minor releases like 1.30 are supported until six weeks after the N+2 minor release (1.32 in this case). Istio 1.32 was released on the 9th of November, 2026, and support for 1.30 will end on the 16th of December, 2026. At that point we will stop back-porting fixes for security issues and critical bugs to 1.30, so we encourage you to upgrade to the latest version of Istio (1.32). If you don&rsquo;t do this you may put yourself in the position of having t",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/news/support/announcing-1.30-eol/",
+    "publishedDate": "2026-11-13T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "istio",
+    "releaseVersion": "1.30"
   },
   {
     "id": "openai-372847c94994",
@@ -7769,26 +7863,6 @@
     "releaseVersion": "0.51.0"
   },
   {
-    "id": "gateway-api-dff06d8a8b51",
-    "title": "v1.6.3",
-    "summary": "v1.6.3 Major Changes Since v1.6.2 Conformance Conformance tests for stable features (notable TCPRoute and UDPRoute) are no longer marked as \"provisional\" (#5260, @rikatz) Force the timeout for the ExpectMirroredRequest conformance test to MaxTimeToConsistency (#5296, @kl52752) Actually remove unused namespaces in Mesh conformance tests (#5251, @xtineskim) Add the GatewayInvalidParametersRef conformance test (#5236, @kl52752) Build Ensure the Go toolchain matches go.work (#5234, @snorwin)",
-    "source": "Gateway API",
-    "sourceId": "gateway-api",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.6.3",
-    "publishedDate": "2026-10-06T20:35:29.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "gateway-api",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "gateway-api",
-    "releaseVersion": "v1.6.3"
-  },
-  {
     "id": "kubernetes-fc4272a4d245",
     "title": "The Shift to cgroup v2 in Kubernetes: What You Need to Know",
     "summary": "In Linux, cgroups (control groups) are a kernel feature used for managing system resources. Kubernetes uses cgroups to allocate resources like CPU and memory to containers, ensuring that applications run smoothly without interfering with each other. With the release of Kubernetes v1.31, support for v1 cgroup management moved into maintenance mode. Support for v2 cgroup management has been stable since Kubernetes v1.25. Compared with cgroup v1, cgroup v2 provides a single unified hierarchy, a mor",
@@ -7825,61 +7899,6 @@
     "releaseRelated": true,
     "releaseProject": "opentelemetry",
     "releaseVersion": "3.0"
-  },
-  {
-    "id": "gateway-api-49e59b3b6654",
-    "title": "conformance/v1.6.3: chore: Release 1.6.3 (#5335)",
-    "summary": "chore: Release 1.6.3 Signed-off-by: Flynn emissary@flynn.kodachi.com chore: Update the VAP bundle-version annotations, too Signed-off-by: Flynn emissary@flynn.kodachi.com chore: Clean up some trailing whitespace Signed-off-by: Flynn emissary@flynn.kodachi.com Signed-off-by: Flynn emissary@flynn.kodachi.com",
-    "source": "Gateway API",
-    "sourceId": "gateway-api",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/conformance%2Fv1.6.3",
-    "publishedDate": "2026-10-06T15:00:41.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "gateway-api",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "gateway-api",
-    "releaseVersion": "v1.6.3"
-  },
-  {
-    "id": "openai-9964af802e9c",
-    "title": "Advancing computer use with Ironclad",
-    "summary": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
-    "publishedDate": "2026-10-06T10:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "ai-agent",
-      "openai",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "kubernetes-5af07d1ea056",
-    "title": "Scaling Kubernetes Workloads with Node Swap",
-    "summary": "Memory is often the first hard limit a Kubernetes cluster hits. Nodes run out of RAM long before they run out of CPU, and the new wave of agentic AI workloads makes this worse. These workloads demand large memory footprints to start up and run untrusted code, then sit idle waiting for the next prompt. That idle but resident memory is expensive, and it caps how many pods a node can hold. This is where swap helps. Kubernetes support for running nodes with swap enabled reached General Availability ",
-    "source": "Kubernetes",
-    "sourceId": "kubernetes",
-    "url": "https://kubernetes.io/blog/2026/10/05/scaling-kubernetes-workloads-with-node-swap/",
-    "publishedDate": "2026-10-05T18:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "prometheus-43c41ecf951c",
@@ -9748,25 +9767,5 @@
     "importance": "high",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "prometheus-5e7ae51a3085",
-    "title": "3.14.0 / 2026-08-17",
-    "summary": "[CHANGE] API: Deprecate the stats query parameter of /api/v1/query and /api/v1/query_range for values other than true and all. Other values still enable basic statistics but now return a deprecation warning; they will be rejected in the next major release. #19124 [CHANGE] API: /api/v1/status/config now correctly shows separator: \"\" and replacement: \"\" in relabel configs when explicitly set to empty, instead of omitting them. #18653 [CHANGE] Discovery/Hetzner: Drop the __meta_hetzner_datacenter l",
-    "source": "Prometheus",
-    "sourceId": "prometheus",
-    "url": "https://github.com/prometheus/prometheus/releases/tag/v3.14.0",
-    "publishedDate": "2026-08-18T08:49:40.000Z",
-    "domain": "prometheus",
-    "topics": [
-      "prometheus",
-      "promql",
-      "observability"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "prometheus",
-    "releaseVersion": "3.14.0"
   }
 ]

@@ -1,5 +1,13 @@
 [
   {
+    "project": "vector",
+    "version": "v0.62.0",
+    "publishedDate": "2026-11-16T17:00:40.000Z",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/v0.62.0",
+    "sourceId": "vector",
+    "title": "v0.62.0"
+  },
+  {
     "project": "helm",
     "version": "v4.3.2",
     "publishedDate": "2026-11-16T02:49:16.000Z",
@@ -14,6 +22,14 @@
     "url": "https://github.com/grafana/loki/releases/tag/v3.7.10",
     "sourceId": "loki",
     "title": "v3.7.10"
+  },
+  {
+    "project": "istio",
+    "version": "1.30",
+    "publishedDate": "2026-11-13T00:00:00.000Z",
+    "url": "https://istio.io/latest/news/support/announcing-1.30-eol/",
+    "sourceId": "istio",
+    "title": "Support for Istio 1.30 ends on the 16th of December, 2026"
   },
   {
     "project": "pulumi",
@@ -48,14 +64,6 @@
     "title": "v1.20.0"
   },
   {
-    "project": "vector",
-    "version": "5.5",
-    "publishedDate": "2026-11-11T18:45:52.000Z",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.44",
-    "sourceId": "vector",
-    "title": "vdev-v0.3.44: chore(ci): fail cargo deny on all warnings except allowed lints (#27134)"
-  },
-  {
     "project": "terraform",
     "version": "v1.17.2",
     "publishedDate": "2026-11-11T11:56:51.000Z",
@@ -86,14 +94,6 @@
     "url": "https://openai.com/index/kuken",
     "sourceId": "openai",
     "title": "Kuken Industries searches 70 years of drawings in minutes"
-  },
-  {
-    "project": "istio",
-    "version": "1.32.0",
-    "publishedDate": "2026-11-09T00:00:00.000Z",
-    "url": "https://istio.io/latest/news/releases/1.32.x/announcing-1.32/",
-    "sourceId": "istio",
-    "title": "Announcing Istio 1.32.0"
   },
   {
     "project": "opentelemetry-collector",
