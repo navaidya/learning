@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-16T22:50:13.000Z",
+    "publishedDate": "2026-11-17T06:49:23.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,86 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "phoenix-27efaa210eb0",
+    "title": "@arizeai/phoenix-cli@1.22.1",
+    "summary": "Patch Changes @arizeai/phoenix-client@8.0.1",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-cli%401.22.1",
+    "publishedDate": "2026-11-17T02:11:27.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "1.22.1"
+  },
+  {
+    "id": "phoenix-2bc0c6a6108e",
+    "title": "@arizeai/phoenix-client@8.0.1",
+    "summary": "Patch Changes Updated dependencies [f35755b] @arizeai/phoenix-otel@3.1.0",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-client%408.0.1",
+    "publishedDate": "2026-11-17T02:11:24.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "8.0.1"
+  },
+  {
+    "id": "phoenix-0293a3be937e",
+    "title": "@arizeai/phoenix-otel@3.1.0",
+    "summary": "Minor Changes f35755b: register() accepts sampler and spanLimits, and AlwaysOnSampler, AlwaysOffSampler, ParentBasedSampler, and TraceIdRatioBasedSampler are re-exported. When OTEL_TRACES_SAMPLER, OTEL_TRACES_SAMPLER_ARG, OTEL_SPAN_*, OTEL_ATTRIBUTE_*, or OTEL_BSP_* is set and the matching setting is not configured in code, register() (or, for OTEL_BSP_* with custom processors, the re-exported BatchSpanProcessor) logs one warning per variable, since OpenTelemetry JS 3 ignores them. The re-export",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-otel%403.1.0",
+    "publishedDate": "2026-11-17T02:11:21.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "3.1.0"
+  },
+  {
+    "id": "pydantic-ai-4c6a4cfa8e65",
+    "title": "v2.69.0 (2026-11-16)",
+    "summary": "What's Changed ⚠️ Compatibility Notes Fold RequestInput into HandleDeferredToolCalls, whose handler can take a resume token by @DouweM in #13285 Support Gemini 4 Hydrogen (gemini-4-hydrogen) on GoogleModel by @dsfaccini in #13299 Generalize response-scoped tool call IDs into the tool_call_ids_are_response_scoped profile flag by @DouweM in #13128 Add service_tier support to GroqModel by @dsfaccini in #13521 Detect loops in streamed thinking, text and tool call arguments in DetectLoops by @mpfaffe",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.69.0",
+    "publishedDate": "2026-11-17T01:13:30.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.69.0"
   },
   {
     "id": "langfuse-a7f151cfdd95",

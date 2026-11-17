@@ -1,5 +1,13 @@
 [
   {
+    "project": "kubernetes",
+    "version": "1.29",
+    "publishedDate": "2026-11-16T18:35:00.000Z",
+    "url": "https://kubernetes.io/blog/2026/11/16/ipvs-removal/",
+    "sourceId": "kubernetes",
+    "title": "Scheduling the removal of the kube-proxy IPVS backend"
+  },
+  {
     "project": "vector",
     "version": "v0.62.0",
     "publishedDate": "2026-11-16T17:00:40.000Z",
@@ -238,13 +246,5 @@
     "url": "https://github.com/containerd/containerd/releases/tag/v2.3.7",
     "sourceId": "containerd",
     "title": "containerd 2.3.7"
-  },
-  {
-    "project": "kubernetes",
-    "version": "v1.31",
-    "publishedDate": "2026-10-06T18:00:00.000Z",
-    "url": "https://kubernetes.io/blog/2026/10/06/kubernetes-cgroups-v2-shift/",
-    "sourceId": "kubernetes",
-    "title": "The Shift to cgroup v2 in Kubernetes: What You Need to Know"
   }
 ]

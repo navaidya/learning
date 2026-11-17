@@ -18,6 +18,24 @@
     "releaseRelated": false
   },
   {
+    "id": "kubernetes-2d69f72d1326",
+    "title": "Scheduling the removal of the kube-proxy IPVS backend",
+    "summary": "The ipvs backend for kube-proxy was an experiment in providing a service proxy implementation with better performance than the iptables backend. While it succeeded in that goal, the kernel IPVS API has turned out to be a bad match for the Kubernetes Services API, and the ipvs backend was never able to implement all of the edge cases of Kubernetes Service functionality correctly. In Kubernetes 1.29, the project introduced the nftables backend for kube-proxy, which became GA in 1.33. Part of the p",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/11/16/ipvs-removal/",
+    "publishedDate": "2026-11-16T18:35:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes",
+    "releaseVersion": "1.29"
+  },
+  {
     "id": "vector-d29139e57069",
     "title": "v0.62.0",
     "summary": "The COSE team is happy to announce Vector 0.62.0! 🚀 Vector is a lightweight, ultra-fast tool for building observability pipelines that puts you in control of your data. Thanks to the 18 contributors who made the 40 changes in this release: 6 breaking changes 3 new features 8 enhancements 23 bug fixes Upgrading to 0.62? Read the upgrade guide. View the full release notes · See upcoming releases on the release calendar.",
@@ -7820,26 +7838,6 @@
     "importance": "high",
     "architectureShift": true,
     "releaseRelated": false
-  },
-  {
-    "id": "holmesgpt-8787cd8e2e30",
-    "title": "0.43.0",
-    "summary": "What's Changed ROB-357 Remove kube-lineage from Holmes by @RoiGlinik in #2464 ROB-1233 Constrain impact claims in the narrative to observed evidence by @naomi-robusta in #2449 ROB-1107 Bind conversation worker identity to the Conversations row owner by @naomi-robusta in #2480 ROB-1402 Document Baseten Model APIs as a provider by @ezra-robusta in #2483 ROB-1402 Drop the Baseten rate-limits section by @ezra-robusta in #2489 ROB-1104 Reject shell metacharacters in propagated HTTP headers by @RoiGli",
-    "source": "HolmesGPT (Robusta)",
-    "sourceId": "holmesgpt",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.43.0",
-    "publishedDate": "2026-10-07T09:13:36.000Z",
-    "domain": "aiops",
-    "topics": [
-      "holmesgpt",
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "holmesgpt",
-    "releaseVersion": "0.43.0"
   },
   {
     "id": "robusta-5a2419fcde6c",
