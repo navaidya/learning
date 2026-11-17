@@ -1,5 +1,261 @@
 [
   {
+    "id": "backstage-717599ed2cdb",
+    "title": "v1.57.0",
+    "summary": "These are the release notes for the v1.57.0 release of Backstage. A huge thanks to the whole team of maintainers and contributors as well as the amazing Backstage Community for the hard work in getting this release developed and done. Highlights Front-end system 1.0 The front-end system reaches its 1.0 milestone in this release! The public APIs of @backstage/frontend-plugin-api, @backstage/frontend-app-api, @backstage/frontend-test-utils, and @backstage/frontend-dev-utils are now stable under th",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.57.0",
+    "publishedDate": "2026-11-17T21:24:51.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "platform-engineering",
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.57.0"
+  },
+  {
+    "id": "vector-07ee8c0bb370",
+    "title": "vdev-v0.3.45",
+    "summary": "test(core): cover allocation telemetry (#27238)",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.45",
+    "publishedDate": "2026-11-17T18:34:10.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
+    "id": "opentelemetry-3905f9db0a6c",
+    "title": "Updates to our blog policy",
+    "summary": "The OpenTelemetry blog is one of our most valuable communication avenues with our community. The web is changing, though, and we need to change with it. Like many websites, we&rsquo;ve seen organic search collapse: 50% fewer visitors arrive on opentelemetry.io via Google today than they did in January. This doesn&rsquo;t mean that traffic is down, though. Over the last 30 days, we&rsquo;ve had over 15 million page views, nearly a million unique visitors, and 1.4 TB of bandwidth usage.",
+    "source": "OpenTelemetry",
+    "sourceId": "opentelemetry",
+    "url": "https://opentelemetry.io/blog/2026/blog-policy-update/",
+    "publishedDate": "2026-11-17T18:23:18.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry",
+    "releaseVersion": "1.4"
+  },
+  {
+    "id": "openai-549a77347d5e",
+    "title": "Introducing GPT-6.2 Astra and Sol",
+    "summary": "Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+    "publishedDate": "2026-11-17T17:45:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "openai",
+    "releaseVersion": "6.2"
+  },
+  {
+    "id": "grafana-398a527d6d78",
+    "title": "Find the log line that matters faster with full-text search in Grafana Cloud Logs",
+    "summary": "A support ticket comes in with one clue: a transaction ID. The answer is somewhere in your logs, but you don't know which service logged it, which pod handled it, or which day it happened. So you write the query you always write, {service=\"payments\"} |= \"txn-123456\", widen the time range to the last two weeks, and wait. Then the query times out.Loki was originally built around a simple idea: index labels, not log content, and store compressed logs cheaply in object storage. That design keeps sto",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/find-the-log-line-that-matters-faster-with-full-text-search-in-grafana-cloud-logs/",
+    "publishedDate": "2026-11-17T16:53:32.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "pulumi-8846d8043327",
+    "title": "v3.275.0",
+    "summary": "3.275.0 (2026-11-10) N.B. The checksums uploaded for this release were corrupted due to a race in the release job. See #25685. Later releases are fixed. Features [cli/policy] Add --stacks and --accounts to pulumi policy group get to list every member of a group, including those matched by its match rule #25369 [auto] Add login to the generated automation APIs for NodeJS, Python and Go #25051 [auto] Add do commands to the generated automation APIs for NodeJS, Python and Go #25056 [auto] Add templ",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.275.0",
+    "publishedDate": "2026-11-17T16:34:43.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.275.0"
+  },
+  {
+    "id": "cncf-39c0f800eeae",
+    "title": "Is your OpenTelemetry pipeline becoming a performance bottleneck?",
+    "summary": "At Cloud Native Days Austria 2026, I presented a talk called How to Defeat OTel’s Silent Killer: The Performance Overhead, exploring a problem that is easy to overlook when building observability pipelines: the cost of collecting...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/11/17/is-your-opentelemetry-pipeline-becoming-a-performance-bottleneck/",
+    "publishedDate": "2026-11-17T12:21:00.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": false
+  },
+  {
+    "id": "cilium-ee801c09a8dc",
+    "title": "1.20.5",
+    "summary": "Summary of Changes Minor Changes: loadbalancer: Add metrics that provide visibility into the capacity and utilisation of ID allocators within the loadbalancer control plane. (Backport PR #49921, Upstream PR #47746, @ajmmm) Bugfixes: clustermesh: fix ownerReferences check in MCS-API EndpointSlice mirror (#50009, @brb) datapath/iptables: scope iptables rules for tunnel traffic (NOTRACK) to local node addresses by matching addrtype (Backport PR #50040, Upstream PR #49266, @bersoare) datapath/loader",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.20.5",
+    "publishedDate": "2026-11-17T09:53:42.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.20.5"
+  },
+  {
+    "id": "cilium-e163de44caab",
+    "title": "1.19.11",
+    "summary": "Summary of Changes Minor Changes: loadbalancer: Add metrics that provide visibility into the capacity and utilisation of ID allocators within the loadbalancer control plane. (Backport PR #49923, Upstream PR #47746, @ajmmm) Bugfixes: clustermesh: fix ownerReferences check in MCS-API EndpointSlice mirror (#50010, @brb) datapath/iptables: scope iptables rules for tunnel traffic (NOTRACK) to local node addresses by matching addrtype (Backport PR #50041, Upstream PR #49266, @bersoare) endpoint: use f",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.19.11",
+    "publishedDate": "2026-11-17T09:53:38.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.19.11"
+  },
+  {
+    "id": "cilium-ee4dca65cdfb",
+    "title": "1.18.17",
+    "summary": "Summary of Changes Bugfixes: clustermesh: fix ownerReferences check in MCS-API EndpointSlice mirror (#50011, @brb) Fix egress policy rules that combine toServices with toPorts allowing traffic to any destination on those ports when the referenced Service doesn't exist or is selector-less with no backends. (Backport PR #49636, Upstream PR #49430, @christarazi) Fix HTTP URL query not being redacted in Hubble flows when the Envoy access log URL fails to parse. (Backport PR #49806, Upstream PR #4942",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.18.17",
+    "publishedDate": "2026-11-17T09:53:36.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "ebpf-cilium",
+      "hubble",
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.18.17"
+  },
+  {
+    "id": "cilium-636b626deebc",
+    "title": "1.20.5",
+    "summary": "Release v1.20.5",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/1.20.5",
+    "publishedDate": "2026-11-17T09:19:56.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.20.5"
+  },
+  {
+    "id": "cilium-abbe9c629eb8",
+    "title": "1.19.11",
+    "summary": "Release v1.19.11",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/1.19.11",
+    "publishedDate": "2026-11-17T09:19:04.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.19.11"
+  },
+  {
+    "id": "cilium-da9d82d36ead",
+    "title": "1.18.17",
+    "summary": "Release v1.18.17",
+    "source": "Cilium",
+    "sourceId": "cilium",
+    "url": "https://github.com/cilium/cilium/releases/tag/1.18.17",
+    "publishedDate": "2026-11-17T09:18:19.000Z",
+    "domain": "ebpf-cilium",
+    "topics": [
+      "cilium",
+      "ebpf",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cilium",
+    "releaseVersion": "1.18.17"
+  },
+  {
     "id": "opentelemetry-def514b4167d",
     "title": "Announcing the 2026 OpenTelemetry Community Award Winners",
     "summary": "Congratulations to our 2026 OpenTelemetry Community Award winners! We are very pleased to announce the winners of the 2026 OpenTelemetry Community Awards! These awards recognize individuals who have made a notable impact to the OpenTelemetry project over the past year, through code, documentation, project management, outreach, adoption, and more. We’d like to extend a sincere thank you to everyone who took the time to nominate a contributor, and to project Maintainers for recognizing their peers",
@@ -489,25 +745,6 @@
     "releaseRelated": true,
     "releaseProject": "kyverno",
     "releaseVersion": "v1.20.0"
-  },
-  {
-    "id": "pulumi-8846d8043327",
-    "title": "v3.275.0",
-    "summary": "3.275.0 (2026-11-10) Features [cli/policy] Add --stacks and --accounts to pulumi policy group get to list every member of a group, including those matched by its match rule #25369 [auto] Add login to the generated automation APIs for NodeJS, Python and Go #25051 [auto] Add do commands to the generated automation APIs for NodeJS, Python and Go #25056 [auto] Add template commands to the generated automation APIs for NodeJS, Python and Go #25061 [auto] Add project commands to the generated automati",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.275.0",
-    "publishedDate": "2026-11-12T08:32:42.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.275.0"
   },
   {
     "id": "vector-4fa699517b47",
@@ -7565,46 +7802,6 @@
     "releaseVersion": "v1.56.0-next.3"
   },
   {
-    "id": "robusta-c717e95af0f1",
-    "title": "0.52.0-alpha",
-    "summary": "What's Changed Remove orphaned Perl 5.40 packages after Debian upgrade by @naomi-robusta in #2191 ROB-1604 Patch High/Critical CVEs in the runner image by @Avi-Robusta in #2197 Full Changelog: 0.51.0...0.52.0-alpha",
-    "source": "Robusta",
-    "sourceId": "robusta",
-    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.52.0-alpha",
-    "publishedDate": "2026-10-13T13:34:34.000Z",
-    "domain": "aiops",
-    "topics": [
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "robusta",
-    "releaseVersion": "0.52.0-alpha"
-  },
-  {
-    "id": "holmesgpt-5dda9aee4bb1",
-    "title": "0.44.0-alpha.1",
-    "summary": "What's Changed Add Ezra Yellin (@ezra-robusta) to MAINTAINERS.md by @arikalon1 in #2518 ROB-1574 - Patch Critical/High CVEs in the holmes image by @Avi-Robusta in #2584 ROB-1564: Add namespace/label/field selectors to kubernetes query tools by @RoiGlinik in #2585 ROB-1580 Retry expired-JWT PostgREST calls with the new credentials by @naomi-robusta in #2583 Full Changelog: 0.44.0-alpha...0.44.0-alpha.1",
-    "source": "HolmesGPT (Robusta)",
-    "sourceId": "holmesgpt",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.44.0-alpha.1",
-    "publishedDate": "2026-10-13T12:58:49.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "holmesgpt",
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "holmesgpt",
-    "releaseVersion": "0.44.0-alpha.1"
-  },
-  {
     "id": "holmesgpt-9904000e0974",
     "title": "0.44.0-alpha",
     "summary": "What's Changed ROB-1237 Price Robusta models whose upstream name isn't provider/id by @naomi-robusta in #2546 ROB-1369 Default the auto executor to one conversation at a time by @naomi-robusta in #2566 ROB-1507 - GPT-6.1 Handle multi-choice LLM responses by merging choices by @Avi-Robusta in #2556 ROB-801 Refresh litellm cost map when a model lookup misses by @Avi-Robusta in #2553 ROB-1291 Per-user Dex auth for the Kubernetes MCP addon, with private CA support by @RoiGlinik in #2554 Weekly Bench",
@@ -7645,162 +7842,6 @@
     "releaseRelated": true,
     "releaseProject": "opentelemetry",
     "releaseVersion": "3.1"
-  },
-  {
-    "id": "karpenter-38a0f6314eef",
-    "title": "v1.15.0",
-    "summary": "Features dra prioritized alternatives support (#3142) #3142 (Ryan Mistretta) metrics: add karpenter_pods_disrupted_total counter (#3015) #3015 (praveen9354) metrics: add consolidation_policy and termination_mode labels to disruption metrics (#3179) #3179 (Derek Frank) add VPA prediction controller and store (#3134) #3134 (Jigisha Patil) default pod topology spread awareness (#3205) #3205 (Andrew Mitchell) account for instance type volume limits when provisioning (#3202) #3202 (Eddie) Reduce allo",
-    "source": "Karpenter",
-    "sourceId": "karpenter",
-    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.15.0",
-    "publishedDate": "2026-10-10T05:42:48.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "karpenter",
-      "kubernetes",
-      "autoscaling"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "karpenter",
-    "releaseVersion": "v1.15.0"
-  },
-  {
-    "id": "k8sgpt-0ed1acb16a11",
-    "title": "v0.4.40",
-    "summary": "0.4.40 (2026-10-09) Features add ResourceClaim analyzer for missing DeviceClasses (#1768) (f2dd92e) Bug Fixes close the custom analyzer gRPC connection after each analysis (#1800) (d6d75f7) correct API doc lookups for the webhook analyzers (#1802) (ce78560) handle empty AI responses and respect configured language (#1756) (9456068) honor StatefulSet start ordinals (#1759) (dd16466) honour K8SGPT_BACKEND on every serve start (#1749) (6959a93) ignore in-progress Deployment replica mismatches (#174",
-    "source": "K8sGPT",
-    "sourceId": "k8sgpt",
-    "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.40",
-    "publishedDate": "2026-10-09T20:24:09.000Z",
-    "domain": "aiops",
-    "topics": [
-      "aiops",
-      "k8sgpt",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "k8sgpt",
-    "releaseVersion": "v0.4.40"
-  },
-  {
-    "id": "opentelemetry-3f93c5a252d8",
-    "title": "OTel-Native by Design - Building Products That Export to Any Observability Stack",
-    "summary": "With contributions from Dan Gomez Blanco (New Relic). If you&rsquo;re building self-hosted software or a SaaS product, your users will eventually ask to send logs, traces, and metrics to their own observability stack, whether to satisfy compliance, manage costs, or centralize all their observability data in one place. Locking them into your built-in dashboards or limiting exports to certain vendors creates unnecessary friction. Instead, supporting export to any OpenTelemetry (OTel)-compatible ba",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/otel-native-by-design/",
-    "publishedDate": "2026-10-09T15:50:03.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "openai-90995f7dbc9c",
-    "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
-    "summary": "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/asana-browser-agent",
-    "publishedDate": "2026-10-09T07:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "openai"
-  },
-  {
-    "id": "gateway-api-3cbc64fa975d",
-    "title": "v1.7.0-rc.1",
-    "summary": "Major Themes Graduating to Standard HTTPRoute Retries (GEP-1731): the retry configuration of an HTTPRoute rule (codes, attempts and backoff) is promoted to the Standard channel, together with the HTTPRouteRetryCodes and HTTPRouteRetryConnectionError conformance features. The backoff field is implementation-specific because backoff behavior, especially jitter, varies between implementations. (#5357, @snorwin, #5359, @mikemorris) New in Experimental Gateway Address Routability (GEP-5093): routabil",
-    "source": "Gateway API",
-    "sourceId": "gateway-api",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.7.0-rc.1",
-    "publishedDate": "2026-10-08T23:54:16.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "gateway-api",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "gateway-api",
-    "releaseVersion": "v1.7.0-rc.1"
-  },
-  {
-    "id": "gateway-api-840f59b72a2d",
-    "title": "conformance/v1.7.0-rc.1: chore: Release v1.7.0-rc.1 (#5363)",
-    "summary": "Signed-off-by: Ricardo Pchevuzinske Katz katz@redhat.com",
-    "source": "Gateway API",
-    "sourceId": "gateway-api",
-    "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/conformance%2Fv1.7.0-rc.1",
-    "publishedDate": "2026-10-08T22:43:59.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "gateway-api",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "gateway-api",
-    "releaseVersion": "v1.7.0-rc.1"
-  },
-  {
-    "id": "oci-oke-d974e568f93b",
-    "title": "v9.9.0",
-    "summary": "9.9.0 (October 6, 2026) Added Support for Alloy - SKU Configuration/Enablement Support remote NVMe volumes Support for TERSI-4567 Extension to be Completed GenAI API Key Support Bug Fix remove duplicate shape argument from core instance example Correct OAC management attribute references Support OCI Cache upgrades with custom configuration sets TERSI-5553 support non-IAM hosted deployment destroy Metering Computation resource discovery only at tenancy scope",
-    "source": "OCI / OKE",
-    "sourceId": "oci-oke",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.9.0",
-    "publishedDate": "2026-10-08T20:41:54.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "oci",
-      "oke",
-      "oracle"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "oci-oke",
-    "releaseVersion": "v9.9.0"
-  },
-  {
-    "id": "terraform-09dbe3159c12",
-    "title": "v1.17.0-rc1",
-    "summary": "1.17.0-rc1 (October 07, 2026) NEW FEATURES: Terraform now supports variables and locals in provider requirements (#39153) A new -minimal-refresh planning option has been added, which will only refresh resources that have proposed changes. (#35290) policy: Terraform Policy is now generally available. The -policies flag for plan, apply, and query no longer requires an experimental build or the -allow-experimental-features flag. Query policies evaluate resources discovered by list blocks and report",
-    "source": "Terraform",
-    "sourceId": "terraform",
-    "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-rc1",
-    "publishedDate": "2026-10-07T19:46:06.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "terraform",
-    "releaseVersion": "v1.17.0-rc1"
   },
   {
     "id": "kubernetes-releases-98cb80d12c02",
@@ -9727,43 +9768,5 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes-releases",
     "releaseVersion": "v1.37.0-rc.1"
-  },
-  {
-    "id": "oci-oke-cf0f0ec1f144",
-    "title": "v8.28.0",
-    "summary": "8.28.0 (August 19, 2026) Added Support for Support out-of-place restore (iRestore) - ZDRLA | ExaDB-C@C IPv4-IPv6 dualStack support for computeinstanceagent Data sources Bug Fix support Hosted Deployment IAM application Tolerate released private IP during mount target read (GetPrivateIp 404 wedges refresh) Notice to Deprecate 2025 Terraform Support for distributed_database remove hardcoded local path",
-    "source": "OCI / OKE",
-    "sourceId": "oci-oke",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v8.28.0",
-    "publishedDate": "2026-08-19T15:13:38.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "oci",
-      "oke",
-      "oracle"
-    ],
-    "importance": "high",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "oci-oke",
-    "releaseVersion": "v8.28.0"
-  },
-  {
-    "id": "cncf-c6c4bf55ed34",
-    "title": "Kyverno is a platform primitive, not a security tool",
-    "summary": "Where does Kyverno live in your organization? I don’t mean which cluster! On which team’s slide deck does it show up? Whose budget line? For most companies I’ve talked to, the answer is security. Kyverno is...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/08/19/kyverno-is-a-platform-primitive-not-a-security-tool/",
-    "publishedDate": "2026-08-19T11:21:00.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": false
   }
 ]

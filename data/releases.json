@@ -1,5 +1,45 @@
 [
   {
+    "project": "backstage",
+    "version": "v1.57.0",
+    "publishedDate": "2026-11-17T21:24:51.000Z",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.57.0",
+    "sourceId": "backstage",
+    "title": "v1.57.0"
+  },
+  {
+    "project": "opentelemetry",
+    "version": "1.4",
+    "publishedDate": "2026-11-17T18:23:18.000Z",
+    "url": "https://opentelemetry.io/blog/2026/blog-policy-update/",
+    "sourceId": "opentelemetry",
+    "title": "Updates to our blog policy"
+  },
+  {
+    "project": "openai",
+    "version": "6.2",
+    "publishedDate": "2026-11-17T17:45:00.000Z",
+    "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+    "sourceId": "openai",
+    "title": "Introducing GPT-6.2 Astra and Sol"
+  },
+  {
+    "project": "pulumi",
+    "version": "v3.275.0",
+    "publishedDate": "2026-11-17T16:34:43.000Z",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.275.0",
+    "sourceId": "pulumi",
+    "title": "v3.275.0"
+  },
+  {
+    "project": "cilium",
+    "version": "1.20.5",
+    "publishedDate": "2026-11-17T09:53:42.000Z",
+    "url": "https://github.com/cilium/cilium/releases/tag/v1.20.5",
+    "sourceId": "cilium",
+    "title": "1.20.5"
+  },
+  {
     "project": "kubernetes",
     "version": "1.29",
     "publishedDate": "2026-11-16T18:35:00.000Z",
@@ -38,22 +78,6 @@
     "url": "https://istio.io/latest/news/support/announcing-1.30-eol/",
     "sourceId": "istio",
     "title": "Support for Istio 1.30 ends on the 16th of December, 2026"
-  },
-  {
-    "project": "pulumi",
-    "version": "v3.276.0",
-    "publishedDate": "2026-11-12T17:56:15.000Z",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.276.0",
-    "sourceId": "pulumi",
-    "title": "v3.276.0"
-  },
-  {
-    "project": "backstage",
-    "version": "v1.55.4",
-    "publishedDate": "2026-11-12T17:42:00.000Z",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.55.4",
-    "sourceId": "backstage",
-    "title": "v1.55.4"
   },
   {
     "project": "grafana",
@@ -96,14 +120,6 @@
     "title": "CNCF Hits Major Milestones with Global Community Growth, Record Industry Investment and a New Generation of Projects to Build AI Systems in Production"
   },
   {
-    "project": "openai",
-    "version": "4.5",
-    "publishedDate": "2026-11-09T08:00:00.000Z",
-    "url": "https://openai.com/index/kuken",
-    "sourceId": "openai",
-    "title": "Kuken Industries searches 70 years of drawings in minutes"
-  },
-  {
     "project": "opentelemetry-collector",
     "version": "v1.71.0",
     "publishedDate": "2026-11-06T23:42:20.000Z",
@@ -144,14 +160,6 @@
     "title": "3.16.0 / 2026-11-04"
   },
   {
-    "project": "opentelemetry",
-    "version": "3.0",
-    "publishedDate": "2026-11-05T15:54:08.000Z",
-    "url": "https://opentelemetry.io/blog/2026/otel-js-sdk-3-0/",
-    "sourceId": "opentelemetry",
-    "title": "Announcing the OpenTelemetry JavaScript SDK 3.0"
-  },
-  {
     "project": "robusta",
     "version": "0.54.0",
     "publishedDate": "2026-11-04T15:26:09.000Z",
@@ -174,14 +182,6 @@
     "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.1",
     "sourceId": "argo",
     "title": "v3.6.1"
-  },
-  {
-    "project": "cilium",
-    "version": "1.21.0-pre.4",
-    "publishedDate": "2026-11-02T23:21:19.000Z",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.21.0-pre.4",
-    "sourceId": "cilium",
-    "title": "1.21.0-pre.4"
   },
   {
     "project": "gateway-api",

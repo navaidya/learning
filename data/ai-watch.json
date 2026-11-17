@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-17T06:49:23.000Z",
+    "publishedDate": "2026-11-17T21:47:17.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,46 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "phoenix-4e5a5e1c7ff3",
+    "title": "@arizeai/phoenix-cli@1.23.0",
+    "summary": "Minor Changes 5160fd5: Add px prompt tag <prompt-version-id> --tag <name> [--description <text>] to create a prompt version tag or move an existing one. Omitting --description clears the tag's existing description.",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-cli%401.23.0",
+    "publishedDate": "2026-11-17T20:56:15.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "1.23.0"
+  },
+  {
+    "id": "langfuse-1949764388fa",
+    "title": "v4.82.0",
+    "summary": "What's Changed Features feat(cloud): gate legacy v3 surfaces behind cutoff switches by @maxdeichmann in #20054 feat(api-keys): add Developer preset and rename Ingestion to Application by @marksalpeter in #20201 feat(native): normalize provider usage and supplied costs by @sumerman in #19962 feat(web): split the v4 banner into brownout and extended-deadline copy by @maxdeichmann in #20320 feat(audit-logs): read audit logs from ClickHouse by @Steffen911 in #20045 Fixes fix: prevent SSRF attacks in",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.82.0",
+    "publishedDate": "2026-11-17T14:28:42.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.82.0"
   },
   {
     "id": "phoenix-27efaa210eb0",
@@ -6849,25 +6889,5 @@
     "importance": "high",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "langgraph-82ae6b0c4baa",
-    "title": "langgraph-sdk==0.4.3",
-    "summary": "Changes since sdk==0.4.2 release(sdk-py): 0.4.3 (#8657) feat(sdk-py): add decrypt replacement result (#8598) release(langgraph): 1.2.11 (#8595) chore(deps): bump the minor-and-patch group across 1 directory with 5 updates (#8532) release(checkpoint): 4.2.0 (#8563) chore: enforce PLC0415 in tests for the remaining packages (#8547) release(langgraph): 1.2.10 (#8462) chore(deps): bump websockets from 15.0.1 to 16.0 in /libs/sdk-py in the major group (#8253) fix(sdk-py): support clearing cron end_ti",
-    "source": "LangGraph",
-    "sourceId": "langgraph",
-    "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.3",
-    "publishedDate": "2026-08-19T18:05:32.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "langgraph",
-    "releaseVersion": "0.4.3"
   }
 ]
