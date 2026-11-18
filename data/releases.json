@@ -1,11 +1,59 @@
 [
   {
+    "project": "etcd",
+    "version": "v3.5.36",
+    "publishedDate": "2026-11-18T20:45:15.000Z",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/v3.5.36",
+    "sourceId": "etcd",
+    "title": "v3.5.36"
+  },
+  {
+    "project": "argo",
+    "version": "v3.6.2",
+    "publishedDate": "2026-11-18T20:04:42.000Z",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.2",
+    "sourceId": "argo",
+    "title": "v3.6.2"
+  },
+  {
     "project": "backstage",
-    "version": "v1.54.11",
-    "publishedDate": "2026-11-18T06:17:43.000Z",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.11",
+    "version": "v1.54.12",
+    "publishedDate": "2026-11-18T15:38:51.000Z",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.12",
     "sourceId": "backstage",
-    "title": "v1.54.11"
+    "title": "v1.54.12"
+  },
+  {
+    "project": "loki",
+    "version": "v3.6.22",
+    "publishedDate": "2026-11-18T15:16:46.000Z",
+    "url": "https://github.com/grafana/loki/releases/tag/v3.6.22",
+    "sourceId": "loki",
+    "title": "v3.6.22"
+  },
+  {
+    "project": "pulumi",
+    "version": "v3.277.0",
+    "publishedDate": "2026-11-18T13:02:51.000Z",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.277.0",
+    "sourceId": "pulumi",
+    "title": "v3.277.0"
+  },
+  {
+    "project": "oci-oke",
+    "version": "v9.14.0",
+    "publishedDate": "2026-11-18T12:38:55.000Z",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.14.0",
+    "sourceId": "oci-oke",
+    "title": "v9.14.0"
+  },
+  {
+    "project": "crossplane",
+    "version": "v2.5.0-rc.1",
+    "publishedDate": "2026-11-18T10:19:37.000Z",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.5.0-rc.1",
+    "sourceId": "crossplane",
+    "title": "v2.5.0-rc.1"
   },
   {
     "project": "opentelemetry",
@@ -22,14 +70,6 @@
     "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
     "sourceId": "openai",
     "title": "Introducing GPT-6.2 Astra and Sol"
-  },
-  {
-    "project": "pulumi",
-    "version": "v3.275.0",
-    "publishedDate": "2026-11-17T16:34:43.000Z",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.275.0",
-    "sourceId": "pulumi",
-    "title": "v3.275.0"
   },
   {
     "project": "cilium",
@@ -64,14 +104,6 @@
     "title": "Helm v4.3.2"
   },
   {
-    "project": "loki",
-    "version": "v3.7.10",
-    "publishedDate": "2026-11-13T07:52:26.000Z",
-    "url": "https://github.com/grafana/loki/releases/tag/v3.7.10",
-    "sourceId": "loki",
-    "title": "v3.7.10"
-  },
-  {
     "project": "istio",
     "version": "1.30",
     "publishedDate": "2026-11-13T00:00:00.000Z",
@@ -102,14 +134,6 @@
     "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.2",
     "sourceId": "terraform",
     "title": "v1.17.2"
-  },
-  {
-    "project": "oci-oke",
-    "version": "v9.13.0",
-    "publishedDate": "2026-11-11T11:03:21.000Z",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.13.0",
-    "sourceId": "oci-oke",
-    "title": "v9.13.0"
   },
   {
     "project": "cncf",
@@ -176,14 +200,6 @@
     "title": "0.46.0"
   },
   {
-    "project": "argo",
-    "version": "v3.6.1",
-    "publishedDate": "2026-11-04T14:23:53.000Z",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.1",
-    "sourceId": "argo",
-    "title": "v3.6.1"
-  },
-  {
     "project": "gateway-api",
     "version": "v1.7.0",
     "publishedDate": "2026-10-29T18:19:26.000Z",
@@ -208,22 +224,6 @@
     "title": "v1.15.1"
   },
   {
-    "project": "etcd",
-    "version": "v3.7.3",
-    "publishedDate": "2026-10-22T23:12:51.000Z",
-    "url": "https://github.com/etcd-io/etcd/releases/tag/v3.7.3",
-    "sourceId": "etcd",
-    "title": "v3.7.3"
-  },
-  {
-    "project": "crossplane",
-    "version": "v1.20.14",
-    "publishedDate": "2026-10-22T15:50:38.000Z",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v1.20.14",
-    "sourceId": "crossplane",
-    "title": "v1.20.14"
-  },
-  {
     "project": "tempo",
     "version": "v3.1.1",
     "publishedDate": "2026-10-21T17:02:10.000Z",
@@ -241,10 +241,10 @@
   },
   {
     "project": "containerd",
-    "version": "2.3.7",
-    "publishedDate": "2026-10-13T22:46:58.000Z",
-    "url": "https://github.com/containerd/containerd/releases/tag/v2.3.7",
+    "version": "2.4.0",
+    "publishedDate": "2026-09-16T20:08:21.000Z",
+    "url": "https://github.com/containerd/containerd/releases/tag/v2.4.0",
     "sourceId": "containerd",
-    "title": "containerd 2.3.7"
+    "title": "containerd 2.4.0"
   }
 ]
