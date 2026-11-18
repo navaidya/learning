@@ -1,11 +1,11 @@
 [
   {
     "project": "backstage",
-    "version": "v1.57.0",
-    "publishedDate": "2026-11-17T21:24:51.000Z",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.57.0",
+    "version": "v1.54.11",
+    "publishedDate": "2026-11-18T06:17:43.000Z",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.11",
     "sourceId": "backstage",
-    "title": "v1.57.0"
+    "title": "v1.54.11"
   },
   {
     "project": "opentelemetry",

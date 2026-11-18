@@ -1,5 +1,68 @@
 [
   {
+    "id": "backstage-82865b944a2a",
+    "title": "v1.54.11",
+    "summary": "Release v1.54.11 Upgrade Helper: https://backstage.github.io/upgrade-helper/?to=1.54.11 @backstage/plugin-catalog-backend@3.9.3 Patch Changes e74403f: Improved repository validation for catalog entity placeholders on Azure DevOps. Placeholder-driven reads on a configured Azure DevOps integration are now restricted to the entity's own repository on every Azure DevOps host shape, including legacy {org}.visualstudio.com hosts and Azure DevOps Server hosts, and targets that cannot be attributed to a",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.11",
+    "publishedDate": "2026-11-18T06:17:43.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "platform-engineering",
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.54.11"
+  },
+  {
+    "id": "backstage-1debfb7f813d",
+    "title": "v1.55.5",
+    "summary": "Release v1.55.5 Upgrade Helper: https://backstage.github.io/upgrade-helper/?to=1.55.5 @backstage/plugin-scaffolder-backend@4.2.4 Patch Changes b8b4bfa: Check the host that relative fetch URLs resolve to when user credentials are required. When scaffolder.requireScmUserCredentials is enabled, the fetch actions now apply the user-credential requirement to the host that the fetch URL resolves to, rather than the host of the template location. This makes the requirement effective also for fetch URLs",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.55.5",
+    "publishedDate": "2026-11-18T06:17:42.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "platform-engineering",
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.55.5"
+  },
+  {
+    "id": "backstage-0663d891347e",
+    "title": "v1.56.6",
+    "summary": "Release v1.56.6 Upgrade Helper: https://backstage.github.io/upgrade-helper/?to=1.56.6 @backstage/plugin-api-docs@0.14.8 Patch Changes 640f025: The AsyncAPI definition widget no longer resolves external references by default. References to whole external documents still render, with a placeholder naming the document that was not loaded; references that point into an external document (using a # fragment) fail to render with an error naming the reference. To resolve external references — for examp",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.56.6",
+    "publishedDate": "2026-11-18T06:17:40.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "platform-engineering",
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.56.6"
+  },
+  {
     "id": "backstage-717599ed2cdb",
     "title": "v1.57.0",
     "summary": "These are the release notes for the v1.57.0 release of Backstage. A huge thanks to the whole team of maintainers and contributors as well as the amazing Backstage Community for the hard work in getting this release developed and done. Highlights Front-end system 1.0 The front-end system reaches its 1.0 milestone in this release! The public APIs of @backstage/frontend-plugin-api, @backstage/frontend-app-api, @backstage/frontend-test-utils, and @backstage/frontend-dev-utils are now stable under th",
@@ -7763,45 +7826,6 @@
     "releaseVersion": "2.2"
   },
   {
-    "id": "vector-c99b29fadbbe",
-    "title": "vdev-v0.3.31",
-    "summary": "chore(vdev): publish binaries to S3 (#26650)",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.31",
-    "publishedDate": "2026-10-13T16:27:47.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector"
-  },
-  {
-    "id": "backstage-d8053d2aedfb",
-    "title": "v1.56.0-next.3",
-    "summary": "See docs/releases/v1.56.0-next.3-changelog.md for more information.",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.56.0-next.3",
-    "publishedDate": "2026-10-13T16:20:16.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.56.0-next.3"
-  },
-  {
     "id": "holmesgpt-9904000e0974",
     "title": "0.44.0-alpha",
     "summary": "What's Changed ROB-1237 Price Robusta models whose upstream name isn't provider/id by @naomi-robusta in #2546 ROB-1369 Default the auto executor to one conversation at a time by @naomi-robusta in #2566 ROB-1507 - GPT-6.1 Handle multi-choice LLM responses by merging choices by @Avi-Robusta in #2556 ROB-801 Refresh litellm cost map when a model lookup misses by @Avi-Robusta in #2553 ROB-1291 Per-user Dex auth for the Kubernetes MCP addon, with private CA support by @RoiGlinik in #2554 Weekly Bench",
@@ -9749,24 +9773,5 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes-releases",
     "releaseVersion": "v1.36.4"
-  },
-  {
-    "id": "kubernetes-releases-dbd5f4fee98c",
-    "title": "v1.37.0-rc.1",
-    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
-    "source": "Kubernetes Releases",
-    "sourceId": "kubernetes-releases",
-    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.0-rc.1",
-    "publishedDate": "2026-08-20T02:44:01.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "release"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kubernetes-releases",
-    "releaseVersion": "v1.37.0-rc.1"
   }
 ]

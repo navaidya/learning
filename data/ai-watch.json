@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-17T21:47:17.000Z",
+    "publishedDate": "2026-11-18T05:45:50.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,46 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "phoenix-50173b838561",
+    "title": "arize-phoenix: v21.2.0",
+    "summary": "21.2.0 (2026-11-18) Features cli: add prompt tag command (#17759) (5160fd5) Bug Fixes evaluators: run LLM evaluators on Anthropic prompts with extended thinking (#17734) (593a776) factory: pin commits and screen inputs before agent sessions (#17811) (7d3a245) factory: send a user agent Railway accepts from the preview deploy script (#18007) (a94d129) factory: stop mentioning the requester in factory comments (#18012) (9f9ee7d) notebooks: deprecate legacy eval benchmark notebooks (#17981) (9c80b6",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v21.2.0",
+    "publishedDate": "2026-11-18T02:55:22.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v21.2.0"
+  },
+  {
+    "id": "pydantic-ai-bc05fadfa40f",
+    "title": "v2.70.0 (2026-11-17)",
+    "summary": "What's Changed 🛡️ Security GHSA-m4cr-m4qc-9hh3 (high): With strip_ansi=True, Pydantic AI Harness's ToolOutputLimits capability removed ANSI escape sequences with a pattern that took time quadratic in the length of a line, so a tool result of a few hundred kilobytes with many unterminated escape sequences could occupy the event loop for tens of seconds to minutes. You are affected if you set strip_ansi=True (named OverflowingToolOutput before 0.13.0) and run tools whose output an attacker can in",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.70.0",
+    "publishedDate": "2026-11-18T00:12:16.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.70.0"
   },
   {
     "id": "phoenix-4e5a5e1c7ff3",
