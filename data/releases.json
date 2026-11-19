@@ -1,11 +1,19 @@
 [
   {
+    "project": "loki",
+    "version": "7.7.0",
+    "publishedDate": "2026-11-19T00:54:23.000Z",
+    "url": "https://github.com/grafana/loki/releases/tag/helm-loki-7.7.0",
+    "sourceId": "loki",
+    "title": "helm-loki-7.7.0: chore: Release loki helm chart 7.7.0 (#26577)"
+  },
+  {
     "project": "etcd",
-    "version": "v3.5.36",
-    "publishedDate": "2026-11-18T20:45:15.000Z",
-    "url": "https://github.com/etcd-io/etcd/releases/tag/v3.5.36",
+    "version": "v3.7.4",
+    "publishedDate": "2026-11-19T00:06:43.000Z",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/v3.7.4",
     "sourceId": "etcd",
-    "title": "v3.5.36"
+    "title": "v3.7.4"
   },
   {
     "project": "argo",
@@ -22,14 +30,6 @@
     "url": "https://github.com/backstage/backstage/releases/tag/v1.54.12",
     "sourceId": "backstage",
     "title": "v1.54.12"
-  },
-  {
-    "project": "loki",
-    "version": "v3.6.22",
-    "publishedDate": "2026-11-18T15:16:46.000Z",
-    "url": "https://github.com/grafana/loki/releases/tag/v3.6.22",
-    "sourceId": "loki",
-    "title": "v3.6.22"
   },
   {
     "project": "pulumi",

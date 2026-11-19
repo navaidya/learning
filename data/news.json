@@ -1,5 +1,146 @@
 [
   {
+    "id": "loki-c4d0a84a7260",
+    "title": "helm-loki-7.7.0: chore: Release loki helm chart 7.7.0 (#26577)",
+    "summary": "Co-authored-by: loki-gh-app[bot] <160051081+loki-gh-app[bot]@users.noreply.github.com> Co-authored-by: Julie Stickler julie.stickler@grafana.com",
+    "source": "Grafana Loki",
+    "sourceId": "loki",
+    "url": "https://github.com/grafana/loki/releases/tag/helm-loki-7.7.0",
+    "publishedDate": "2026-11-19T00:54:23.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "loki",
+      "logging",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "loki",
+    "releaseVersion": "7.7.0"
+  },
+  {
+    "id": "etcd-effd298a544e",
+    "title": "v3.7.4",
+    "summary": "Please check out CHANGELOG for a full list of changes. And make sure to read upgrade guide before upgrading etcd (there may be breaking changes). For installation guides, please check out play.etcd.io and operating etcd. Latest support status for common architectures and operating systems can be found at supported platforms. Linux ETCD_VER=v3.7.4 # choose either URL GOOGLE_URL=https://storage.googleapis.com/etcd GITHUB_URL=https://github.com/etcd-io/etcd/releases/download DOWNLOAD_URL=${GOOGLE_U",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/v3.7.4",
+    "publishedDate": "2026-11-19T00:06:43.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.7.4"
+  },
+  {
+    "id": "etcd-d5abc4711dd4",
+    "title": "tests/v3.7.4",
+    "summary": "v3.7.4",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/tests%2Fv3.7.4",
+    "publishedDate": "2026-11-18T23:39:39.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.7.4"
+  },
+  {
+    "id": "etcd-1d4fc1a41151",
+    "title": "server/v3.7.4",
+    "summary": "v3.7.4",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/server%2Fv3.7.4",
+    "publishedDate": "2026-11-18T23:39:33.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.7.4"
+  },
+  {
+    "id": "etcd-10c97360ab0a",
+    "title": "v3.6.17",
+    "summary": "Please check out CHANGELOG for a full list of changes. And make sure to read upgrade guide before upgrading etcd (there may be breaking changes). For installation guides, please check out play.etcd.io and operating etcd. Latest support status for common architectures and operating systems can be found at supported platforms. Linux ETCD_VER=v3.6.17 # choose either URL GOOGLE_URL=https://storage.googleapis.com/etcd GITHUB_URL=https://github.com/etcd-io/etcd/releases/download DOWNLOAD_URL=${GOOGLE_",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/v3.6.17",
+    "publishedDate": "2026-11-18T23:03:50.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.6.17"
+  },
+  {
+    "id": "etcd-dddb619e7e10",
+    "title": "tests/v3.6.17",
+    "summary": "v3.6.17",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/tests%2Fv3.6.17",
+    "publishedDate": "2026-11-18T22:39:49.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.6.17"
+  },
+  {
+    "id": "etcd-018ce369899d",
+    "title": "server/v3.6.17",
+    "summary": "v3.6.17",
+    "source": "etcd",
+    "sourceId": "etcd",
+    "url": "https://github.com/etcd-io/etcd/releases/tag/server%2Fv3.6.17",
+    "publishedDate": "2026-11-18T22:39:43.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "etcd",
+      "kubernetes",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "etcd",
+    "releaseVersion": "v3.6.17"
+  },
+  {
     "id": "etcd-69fe8ae023bd",
     "title": "v3.5.36",
     "summary": "Please check out CHANGELOG for a full list of changes. And make sure to read upgrade guide before upgrading etcd (there may be breaking changes). For installation guides, please check out play.etcd.io and operating etcd. Latest support status for common architectures and operating systems can be found at supported platforms. Linux ETCD_VER=v3.5.36 # choose either URL GOOGLE_URL=https://storage.googleapis.com/etcd GITHUB_URL=https://github.com/etcd-io/etcd/releases/download DOWNLOAD_URL=${GOOGLE_",
@@ -558,6 +699,24 @@
     "releaseRelated": true,
     "releaseProject": "crossplane",
     "releaseVersion": "v2.6.0-rc.0"
+  },
+  {
+    "id": "openai-9fa731b0ef6c",
+    "title": "Research acceleration: The jagged frontier",
+    "summary": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/research-acceleration-jagged-frontier",
+    "publishedDate": "2026-11-18T08:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "backstage-82865b944a2a",
@@ -7348,163 +7507,6 @@
     "importance": "medium",
     "architectureShift": false,
     "releaseRelated": false
-  },
-  {
-    "id": "openai-827221925d8d",
-    "title": "How Localiza reorganized work around generative AI",
-    "summary": "See how Localiza uses ChatGPT Enterprise, the OpenAI API, Codex, and 60+ specialized agents to reorganize work and build AI-native mobility experiences.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/localiza-generative-ai",
-    "publishedDate": "2026-10-16T00:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "grafana-0f9d14f9fee1",
-    "title": "Get observability in your pocket with the Grafana mobile app",
-    "summary": "When you’re on the go, your phone is often the only observability tool you have. And what you can do with it in the first few minutes matters. With the incredible innovation that has gone into mobile CPUs, GPUs and displays, a phone is a powerful device where you can immediately see what’s happening and start acting on it. And the Grafana mobile app now allows you to both see and act. The app (available for Android and iOS) has always been good at notifying you of what's happening—alerts, incide",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/get-observability-in-your-pocket-with-the-grafana-mobile-app/",
-    "publishedDate": "2026-10-15T22:39:33.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "cncf-eb41c1a2a5f0",
-    "title": "Carbon as a first-class signal: Bringing software carbon intensity to OpenTelemetry",
-    "summary": "At Observability Summit Europe 2026 in Prague, I presented a keynote titled Carbon as a First-Class Signal: Designing a Standard for OpenTelemetry. The talk explored how Software Carbon Intensity (SCI) could become part of cloud-native observability...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/10/15/carbon-as-a-first-class-signal-bringing-software-carbon-intensity-to-opentelemetry/",
-    "publishedDate": "2026-10-15T22:21:45.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "loki-f7b162a57228",
-    "title": "v3.6.18",
-    "summary": "3.6.18 (2026-10-15) Bug Fixes deps: Update dependencies related to otel for 3.6 (#25180) (603de5a) security/LOW/: Update module go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc to v1.45.0 [SECURITY] (release-3.6.x) (#24619) (3e7c0ed) security/LOW/: Update module go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp to v1.45.0 [SECURITY] (release-3.6.x) (#24620) (ad5a87c) security: Bump Go to 1.26.9 [SECURITY] (release-3.6.x) (#25193) (c969f5c)",
-    "source": "Grafana Loki",
-    "sourceId": "loki",
-    "url": "https://github.com/grafana/loki/releases/tag/v3.6.18",
-    "publishedDate": "2026-10-15T19:55:55.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otlp",
-      "loki",
-      "logging",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "loki",
-    "releaseVersion": "v3.6.18"
-  },
-  {
-    "id": "kyverno-37f100ba4944",
-    "title": "v1.19.2-rc.1",
-    "summary": "test: expect the generation label protection webhook in chainsaw asse… …rts (#18039) #18033 always adds protect-generation-labels.kyverno.svc to kyverno-resource-validating-webhook-cfg, so every assert that lists that configuration's webhooks now fails with \"lengths of slices don't match\". Add the webhook at its name-sorted position in each of those asserts. Signed-off-by: aerosouund <aerosound161@gmail.com> Co-authored-by: Claude Opus 5.5 <noreply@anthropic.com>",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2-rc.1",
-    "publishedDate": "2026-10-15T18:51:03.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno",
-    "releaseVersion": "v1.19.2-rc.1"
-  },
-  {
-    "id": "hashicorp-3272f669dd05",
-    "title": "Securely govern human and agentic identities with Vault",
-    "summary": "Vault 2.2 combines SCIM GA and enhanced NHI governance so teams can securely manage human, machine, and AI agent identities across their lifecycle.",
-    "source": "HashiCorp",
-    "sourceId": "hashicorp",
-    "url": "https://www.hashicorp.com/blog/govern-human-and-agentic-identities-with-confidence-with-vault",
-    "publishedDate": "2026-10-15T18:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "ai-agent",
-      "terraform",
-      "vault",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "hashicorp",
-    "releaseVersion": "2.2"
-  },
-  {
-    "id": "helm-0b2c3985ba37",
-    "title": "Helm v3.22.1",
-    "summary": "Helm v3.22.1 is a patch release. Users are encouraged to upgrade for the best experience. The community keeps growing, and we'd love to see you there! Join the discussion in Kubernetes Slack: for questions and just to hang out for discussing PRs, code, and bugs Hang out at the Public Developer Call: Thursday, 9:30 Pacific via Zoom Test, debug, and contribute charts: ArtifactHub/packages Notable Changes Bumps dependencies to remove Go package vulnerabilities Updates the k8s.io Go packages Install",
-    "source": "Helm",
-    "sourceId": "helm",
-    "url": "https://github.com/helm/helm/releases/tag/v3.22.1",
-    "publishedDate": "2026-10-15T17:02:01.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "helm",
-      "packaging"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "helm",
-    "releaseVersion": "v3.22.1"
-  },
-  {
-    "id": "cilium-9de1af4c5046",
-    "title": "1.20.3",
-    "summary": "Summary of Changes Minor Changes: alibabacloud: support IMDSv2 (token-based) instance metadata access (Backport PR #49336, Upstream PR #49182, @4n4nd) Fix conntrack garbage collection deleting CT entries that the datapath reopened between the GC batch read and the delete, which could cascade into NAT mapping deletion and SNAT source-port reallocation for live connections. (Backport PR #49119, Upstream PR #46750, @gyutaeb) operator: prevent CNPs with nodeSelector from silently enforcing nothing (",
-    "source": "Cilium",
-    "sourceId": "cilium",
-    "url": "https://github.com/cilium/cilium/releases/tag/v1.20.3",
-    "publishedDate": "2026-10-15T15:26:34.000Z",
-    "domain": "ebpf-cilium",
-    "topics": [
-      "cilium",
-      "ebpf",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "cilium",
-    "releaseVersion": "1.20.3"
   },
   {
     "id": "kyverno-91100de25d27",
