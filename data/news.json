@@ -1,5 +1,62 @@
 [
   {
+    "id": "holmesgpt-42cc67095514",
+    "title": "0.47.0-alpha.1",
+    "summary": "What's Changed chore(deps): bump mcp to 1.30.0 by @nikunjmittal-msft in #2709 ROB-1511 Fix eval-blocking bugs and tag evals that separate model tiers by @naomi-robusta in #2695 ROB-1599 Run the Kubernetes MCP add-on inside the Holmes pod with a mounted kubeconfig, and require bash off there by @ezra-robusta in #2646 ROB-1511 Run the credential-blocked evals against self-hosted backends by @naomi-robusta in #2720 ROB-1761 Benchmark haiku-5.5-medium instead of haiku-4.5 by @RoiGlinik in #2706 ROB-",
+    "source": "HolmesGPT (Robusta)",
+    "sourceId": "holmesgpt",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.47.0-alpha.1",
+    "publishedDate": "2026-11-19T20:13:35.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "holmesgpt",
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "holmesgpt",
+    "releaseVersion": "0.47.0-alpha.1"
+  },
+  {
+    "id": "grafana-8c48840c1bff",
+    "title": "Grafana Labs’ First Executive Briefing Center Coming to Ginza",
+    "summary": "Grafana Labs does not have a headquarters office. Since its founding in 2014, it has been fully remote-first.It began with three co-founders living on different continents, and today our team spans more than 50 countries.From day one, the organization was designed with the assumption that everyone works remotely. Real-time meetings are kept to a minimum, information is shared through documentation, and we have cultivated a culture that trusts people to “work autonomously.” At its core lies the t",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/grafana-labs-ebc1/",
+    "publishedDate": "2026-11-19T16:32:02.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "grafana-033022d8319f",
+    "title": "Bring charts, queries, and context into one shareable document: Introducing Grafana Notebooks",
+    "summary": "A teammate asks why you think a deployment caused checkout failures. You have an error-rate chart in your dashboard, a query that narrows the failures to one payment provider, and an explanation you've been exploring with Grafana Assistant. To bring your teammate up to speed, you start collecting screenshots and query links, then write out how they connect.That explanation is part of the analysis. Your teammate needs to see what supports the conclusion and where you're still making an assumption",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/bring-charts-queries-and-context-into-one-shareable-document-introducing-grafana-notebooks/",
+    "publishedDate": "2026-11-19T15:22:49.000Z",
+    "domain": "grafana",
+    "topics": [
+      "grafana",
+      "dashboards",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "loki-c4d0a84a7260",
     "title": "helm-loki-7.7.0: chore: Release loki helm chart 7.7.0 (#26577)",
     "summary": "Co-authored-by: loki-gh-app[bot] <160051081+loki-gh-app[bot]@users.noreply.github.com> Co-authored-by: Julie Stickler julie.stickler@grafana.com",
@@ -501,6 +558,26 @@
     "releaseRelated": true,
     "releaseProject": "loki",
     "releaseVersion": "v3.6.22"
+  },
+  {
+    "id": "holmesgpt-a4c61ae06793",
+    "title": "0.47.0-alpha: ROB-1683 Check request headers only when a YAML tool reads them (#2725)",
+    "summary": "Summary /api/chat forwards every request header to tools. The shell metacharacter check (ROB-1104) ran on all of them up front, so a default Accept: */* failed every YAML tool (kubectl included) with \"disallowed shell metacharacter '*'\", even tools that never use that header. Headers are now held in _ShellSafeOnReadDict, a read-only, case-insensitive mapping that runs the same check when a template reads a value. Unused headers are ignored. A header the template renders is still rejected if it c",
+    "source": "HolmesGPT (Robusta)",
+    "sourceId": "holmesgpt",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.47.0-alpha",
+    "publishedDate": "2026-11-18T13:44:31.000Z",
+    "domain": "aiops",
+    "topics": [
+      "holmesgpt",
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "holmesgpt",
+    "releaseVersion": "0.47.0-alpha"
   },
   {
     "id": "pulumi-b48f62ca8efe",
@@ -7427,82 +7504,6 @@
     "topics": [
       "cncf",
       "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "pulumi-2f947111429e",
-    "title": "sdk/v3.269.0: Revert \"Freeze v3.269.0\" (#25247)",
-    "summary": "Reverts #25245 🤖 Generated with Claude Code Co-authored-by: Claude Opus 5.5 noreply@anthropic.com",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.269.0",
-    "publishedDate": "2026-10-16T09:55:11.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.269.0"
-  },
-  {
-    "id": "istio-5f0f1017a037",
-    "title": "Support for Istio 1.29 has ended",
-    "summary": "As previously announced, support for Istio 1.29 has now officially ended. At this point we will no longer back-port fixes for security issues and critical bugs to 1.29. We highly recommend that you upgrade to the latest version of Istio (1.31.2) if you haven&rsquo;t already.",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/support/announcing-1.29-eol-final/",
-    "publishedDate": "2026-10-16T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "1.29"
-  },
-  {
-    "id": "openai-9db4940a53f8",
-    "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-    "summary": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
-    "publishedDate": "2026-10-16T00:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "openai-1d7d75b47c31",
-    "title": "How Grupo Boticário uses AI to strengthen human connections",
-    "summary": "Almost 50 years after starting in a compounding pharmacy in Paraná, the group operates a proprietary agent platform that autonomously resolves up to 80% of resellers’ operational requests—enabling the sales force to take on an advisory role.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/grupo-boticario",
-    "publishedDate": "2026-10-16T00:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
     ],
     "importance": "medium",
     "architectureShift": false,

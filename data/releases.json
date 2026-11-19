@@ -1,5 +1,13 @@
 [
   {
+    "project": "holmesgpt",
+    "version": "0.47.0-alpha.1",
+    "publishedDate": "2026-11-19T20:13:35.000Z",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.47.0-alpha.1",
+    "sourceId": "holmesgpt",
+    "title": "0.47.0-alpha.1"
+  },
+  {
     "project": "loki",
     "version": "7.7.0",
     "publishedDate": "2026-11-19T00:54:23.000Z",
@@ -190,14 +198,6 @@
     "url": "https://github.com/robusta-dev/robusta/releases/tag/0.54.0",
     "sourceId": "robusta",
     "title": "0.54.0"
-  },
-  {
-    "project": "holmesgpt",
-    "version": "0.46.0",
-    "publishedDate": "2026-11-04T14:51:32.000Z",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.46.0",
-    "sourceId": "holmesgpt",
-    "title": "0.46.0"
   },
   {
     "project": "gateway-api",

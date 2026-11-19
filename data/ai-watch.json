@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-19T06:36:26.000Z",
+    "publishedDate": "2026-11-19T21:16:46.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,44 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "langfuse-6a09fc220344",
+    "title": "v4.83.0",
+    "summary": "What's Changed Features feat(topics): new Scatter view, remove List by @nmtrang29 in #20355 feat(annotation-queues): navigate between items from single queue item view (LFE-18664) by @nkabardin in #20120 feat(native): extract skill requests and share project ID resolution by @sumerman in #19963 feat(web): collapse large filter value groups by @nkabardin in #20114 feat(command-k): offer Halo for unmatched queries by @nkabardin in #20301 feat(native): assemble owned OTEL resources and events by @s",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.83.0",
+    "publishedDate": "2026-11-19T10:30:16.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.83.0"
+  },
+  {
+    "id": "practical-ai-103349f98498",
+    "title": "Building Human-Centered AI",
+    "summary": "How can enterprises adopt AI and agentic systems while keeping people, business value, and trust at the center?Chris is joined by Dr. Gautham Pallapa, Principal Director of AI and Innovation at Scotiabank and author of Invaluable, to explore how organizations can approach AI-driven transformation. They discuss identifying meaningful opportunities for AI in highly regulated industries like banking, rethinking developer productivity, and using multi-agent systems to bring different roles and capab",
+    "source": "Practical AI",
+    "sourceId": "practical-ai",
+    "url": "https://share.transistor.fm/s/bb4dad17",
+    "publishedDate": "2026-11-19T10:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "podcast",
+      "agent-development",
+      "agentic-operations"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "langgraph-70495a773c8d",
@@ -7011,25 +7049,5 @@
     "releaseRelated": true,
     "releaseProject": "pydantic-ai",
     "releaseVersion": "v2.34.0"
-  },
-  {
-    "id": "nvidia-security-e44419166d2d",
-    "title": "Where Security Fits in an AI Agent Stack",
-    "summary": "As AI agents become more capable and operate over longer horizons, building security and trust into the applications they power becomes increasingly important....",
-    "source": "NVIDIA Technical Blog",
-    "sourceId": "nvidia-security",
-    "url": "https://developer.nvidia.com/blog/where-security-fits-in-an-ai-agent-stack/",
-    "publishedDate": "2026-08-21T13:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "ai-agent",
-      "infrastructure-security",
-      "news",
-      "infrastructure"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": false
   }
 ]
