@@ -1,19 +1,27 @@
 [
   {
+    "project": "flux",
+    "version": "v2.10.1",
+    "publishedDate": "2026-11-20T13:10:16.000Z",
+    "url": "https://github.com/fluxcd/flux2/releases/tag/v2.10.1",
+    "sourceId": "flux",
+    "title": "v2.10.1"
+  },
+  {
+    "project": "loki",
+    "version": "v4.0.0-rc.4",
+    "publishedDate": "2026-11-20T10:31:52.000Z",
+    "url": "https://github.com/grafana/loki/releases/tag/v4.0.0-rc.4",
+    "sourceId": "loki",
+    "title": "v4.0.0-rc.4"
+  },
+  {
     "project": "holmesgpt",
     "version": "0.47.0-alpha.1",
     "publishedDate": "2026-11-19T20:13:35.000Z",
     "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.47.0-alpha.1",
     "sourceId": "holmesgpt",
     "title": "0.47.0-alpha.1"
-  },
-  {
-    "project": "loki",
-    "version": "7.7.0",
-    "publishedDate": "2026-11-19T00:54:23.000Z",
-    "url": "https://github.com/grafana/loki/releases/tag/helm-loki-7.7.0",
-    "sourceId": "loki",
-    "title": "helm-loki-7.7.0: chore: Release loki helm chart 7.7.0 (#26577)"
   },
   {
     "project": "etcd",
@@ -206,14 +214,6 @@
     "url": "https://github.com/kubernetes-sigs/gateway-api/releases/tag/v1.7.0",
     "sourceId": "gateway-api",
     "title": "v1.7.0"
-  },
-  {
-    "project": "flux",
-    "version": "v2.10.0",
-    "publishedDate": "2026-10-26T15:54:58.000Z",
-    "url": "https://github.com/fluxcd/flux2/releases/tag/v2.10.0",
-    "sourceId": "flux",
-    "title": "v2.10.0"
   },
   {
     "project": "karpenter",

@@ -1,5 +1,84 @@
 [
   {
+    "id": "grafana-8f3be2c20612",
+    "title": "From AI agents to fishing dashboards: The latest stories from Unprompted, the Grafana Labs engineering blog",
+    "summary": "Some of the best technical insights come from sharing what you've built and what you've learned along the way.That's one of the core ideas behind Unprompted, the blog we launched on Medium earlier this year to give Grafana Labs engineers and our broader OSS community a space to showcase their work. From behind-the-scenes engineering stories and technical deep dives to creative use cases for Grafana (a fishing dashboard, anyone?), it's a place to share ideas and learn from one another.To give you",
+    "source": "Grafana Labs",
+    "sourceId": "grafana",
+    "url": "https://grafana.com/blog/from-ai-agents-to-fishing-dashboards-the-latest-stories-from-unprompted/",
+    "publishedDate": "2026-11-20T15:07:25.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "grafana",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "flux-c974e19fc0ad",
+    "title": "v2.10.1",
+    "summary": "Highlights Flux v2.10.1 is a patch release that fixes credential caching across the controllers, so changes to the credential.auth.fluxcd.io/username and gcp.auth.fluxcd.io/workload-identity-provider ServiceAccount annotations take effect on the next reconcile instead of continuing to use the previously cached authenticator until it expires or the controller restarts. It also resolves the default decryption ServiceAccount lazily for Kustomizations that only use Age or PGP keys, restores authenti",
+    "source": "Flux",
+    "sourceId": "flux",
+    "url": "https://github.com/fluxcd/flux2/releases/tag/v2.10.1",
+    "publishedDate": "2026-11-20T13:10:16.000Z",
+    "domain": "gitops",
+    "topics": [
+      "flux",
+      "gitops",
+      "cd"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "flux",
+    "releaseVersion": "v2.10.1"
+  },
+  {
+    "id": "cncf-996f82590093",
+    "title": "When a sync window closes: How Argo CD self-heal skipped the migration hook",
+    "summary": "The uncomfortable question A few days ago, a customer asked me a question that sounded simple: “Argo CD said the sync succeeded, so why didn’t our migration run?” They had pushed a release while a deny...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/11/20/when-a-sync-window-closes-how-argo-cd-self-heal-skipped-the-migration-hook/",
+    "publishedDate": "2026-11-20T12:30:00.000Z",
+    "domain": "gitops",
+    "topics": [
+      "gitops",
+      "argo-cd",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cncf"
+  },
+  {
+    "id": "loki-a0e2fcb16785",
+    "title": "v4.0.0-rc.4",
+    "summary": "4.0.0-rc.4 (2026-11-20) ⚠ BREAKING CHANGES limits: Remove unused max_chunks_per_query limit [release-4.0.0] (#26404) Bug Fixes logline: Backport v4 default and YAML config [release-4.0.0] (#26592) (5ca9e5e) logql: Skip every new series once the Logs Drilldown series limit trips [release-4.0.0] (#26434) (1228128) security/UNKNOWN/pkg/push: Update module golang.org/x/net to v0.62.0 [SECURITY] (release-4.0.0) (#26353) (42b3047) security/UNKNOWN/: Update module github.com/andybalholm/brotli to v1.2.",
+    "source": "Grafana Loki",
+    "sourceId": "loki",
+    "url": "https://github.com/grafana/loki/releases/tag/v4.0.0-rc.4",
+    "publishedDate": "2026-11-20T10:31:52.000Z",
+    "domain": "logging",
+    "topics": [
+      "loki",
+      "logging",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "loki",
+    "releaseVersion": "v4.0.0-rc.4"
+  },
+  {
     "id": "holmesgpt-42cc67095514",
     "title": "0.47.0-alpha.1",
     "summary": "What's Changed chore(deps): bump mcp to 1.30.0 by @nikunjmittal-msft in #2709 ROB-1511 Fix eval-blocking bugs and tag evals that separate model tiers by @naomi-robusta in #2695 ROB-1599 Run the Kubernetes MCP add-on inside the Holmes pod with a mounted kubeconfig, and require bash off there by @ezra-robusta in #2646 ROB-1511 Run the credential-blocked evals against self-hosted backends by @naomi-robusta in #2720 ROB-1761 Benchmark haiku-5.5-medium instead of haiku-4.5 by @RoiGlinik in #2706 ROB-",
@@ -7436,78 +7515,6 @@
     "releaseRelated": true,
     "releaseProject": "pulumi",
     "releaseVersion": "v3.270.0"
-  },
-  {
-    "id": "cncf-bf56626fb794",
-    "title": "Deploying, maintaining, and migrating production n8n on EKS",
-    "summary": "n8n is easy to try and harder to run under production traffic. A single container with SQLite works great for a quick demo. Production is a different story entirely. You need workers, webhook processors, PostgreSQL, Redis,...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/10/16/deploying-maintaining-and-migrating-production-n8n-on-eks/",
-    "publishedDate": "2026-10-16T16:39:04.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "pulumi-a1cde94bb69a",
-    "title": "pkg/v3.269.0: Changelog and go.mod updates for v3.269.0 (#25253)",
-    "summary": "Co-authored-by: github-actions github-actions@github.com",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.269.0",
-    "publishedDate": "2026-10-16T12:18:39.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.269.0"
-  },
-  {
-    "id": "pulumi-e3bb839b42a4",
-    "title": "v3.269.0",
-    "summary": "3.269.0 (2026-10-16) Features [sdk] Add runtime functions to the Go, Node.js and Python SDKs that check whether a resource with a given ID exists without adopting it into the stack #24808 [engine] Negotiate OutputValues on Call so SDKs receive per-value return dependencies #25017 [auto] Add convert to the generated automation APIs for NodeJS, Python and Go #25050 [auto] Add refresh to the generated automation APIs for NodeJS, Python and Go #25052 [auto] Add about commands to the generated automa",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.269.0",
-    "publishedDate": "2026-10-16T11:36:44.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.269.0"
-  },
-  {
-    "id": "cncf-64d0db7e68cd",
-    "title": "Putting Nepal on the CNCF Golden Kubestronaut map",
-    "summary": "In this blog, I will share my Golden Kubestronaut journey, how I became the first and youngest Golden Kubestronaut from Nepal, what motivated me to pursue this path, and what it actually takes to earn the...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/10/16/putting-nepal-on-the-cncf-golden-kubestronaut-map/",
-    "publishedDate": "2026-10-16T11:30:00.000Z",
-    "domain": "infrastructure",
-    "topics": [
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "kyverno-91100de25d27",

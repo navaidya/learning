@@ -1,5 +1,42 @@
 [
   {
+    "id": "pydantic-ai-ec5fb94d76bf",
+    "title": "CLAI2 bleeding",
+    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
+    "publishedDate": "2026-11-20T20:49:57.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "cncf-video-43e8184007c5",
+    "title": "Kagent 1.0 with Agent Substrate - Peter Jausovec, Solo.io",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=iFcjmAT9oQs",
+    "publishedDate": "2026-11-20T20:18:17.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "cncf-video",
+    "releaseVersion": "1.0"
+  },
+  {
     "id": "cncf-video-23cebac9b6b3",
     "title": "WG-AIE: Upstreaming GPU Passthrough for NVIDIA AI-Factory Platforms - Lee Yarwood & Fan Zhang",
     "source": "CNCF YouTube",
@@ -71,25 +108,6 @@
     "releaseRelated": true,
     "releaseProject": "phoenix",
     "releaseVersion": "v21.3.0"
-  },
-  {
-    "id": "pydantic-ai-ec5fb94d76bf",
-    "title": "CLAI2 bleeding",
-    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-20T02:28:02.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai"
   },
   {
     "id": "cncf-video-363f78c960e3",
