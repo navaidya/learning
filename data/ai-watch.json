@@ -1,12 +1,85 @@
 [
   {
+    "id": "cncf-video-23cebac9b6b3",
+    "title": "WG-AIE: Upstreaming GPU Passthrough for NVIDIA AI-Factory Platforms - Lee Yarwood & Fan Zhang",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=Ju2Nzdi0DLU",
+    "publishedDate": "2026-11-20T05:42:04.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-041cfb12e4c2",
+    "title": "Multi-OS E2E Application testing with LLM Agents on Kubervirt - Vedant Padwal, Stealth Startup",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=q3n8IX_i5Ek",
+    "publishedDate": "2026-11-20T05:42:04.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "phoenix-e928ab0ce53f",
+    "title": "arize-phoenix: v22.0.0",
+    "summary": "22.0.0 (2026-11-20) MIGRATION Features add type column to generative_models (3047aab) cost-tracking: calculate costs for DECISION spans (#17764) (0f83453) cost-tracking: calculate costs for EMBEDDING spans (#17788) (0f39d64) cost-tracking: expose generative model type in GraphQL (#17766) (6b3ef74) cost-tracking: model types in the cost manifest and LiteLLM sync (#17765) (3639718) cost-tracking: sync embedding model prices into the cost manifest (#17787) (77f564d) cost-tracking: sync Gemini model",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v22.0.0",
+    "publishedDate": "2026-11-20T05:14:18.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v22.0.0"
+  },
+  {
+    "id": "phoenix-0fe31edbc004",
+    "title": "arize-phoenix: v21.3.0",
+    "summary": "21.3.0 (2026-11-20) Features brand: set the Arize Phoenix wordmark in Geist (#18086) (b176371) cli: add dataset label assignment commands (#17973) (0b821b2) pxi: refresh recommended models and preserve chat transcripts (#18101) (4270bce) Bug Fixes build: let the publish wheel check allow duplicate skill files (#18076) (9670b20) cost: update built-in model token prices (#17762) (74c52b3) pxi: keep view filters out of analytics SQL and narrow experiments skill trigger (#17730) (3df033a) server: pr",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v21.3.0",
+    "publishedDate": "2026-11-20T02:57:03.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v21.3.0"
+  },
+  {
     "id": "pydantic-ai-ec5fb94d76bf",
     "title": "CLAI2 bleeding",
     "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-19T21:16:46.000Z",
+    "publishedDate": "2026-11-20T02:28:02.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +90,162 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "cncf-video-363f78c960e3",
+    "title": "Agents Need a REPL: Programmatic Tool Calling with MCP - Ahmed Ibrahim, OpenAI",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=2H5QbeHalKo",
+    "publishedDate": "2026-11-20T01:43:31.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "video",
+      "infrastructure"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": false
+  },
+  {
+    "id": "cncf-video-690f8639f155",
+    "title": "Architecting the Agentic Data Plane: Scaling MCP - Nikita Verma & Harshita Varma",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=7U-_1VdbuH4",
+    "publishedDate": "2026-11-20T01:43:31.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "video",
+      "infrastructure"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": false
+  },
+  {
+    "id": "langgraph-c904fb0b26aa",
+    "title": "langgraph==1.2.24",
+    "summary": "Changes since 1.2.23 release(langgraph): 1.2.24 (#9752) fix(langgraph): handle REMOVE_ALL_MESSAGES in _messages_delta_reducer and None checkpoints in DeltaChannel (#9735)",
+    "source": "LangGraph",
+    "sourceId": "langgraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.24",
+    "publishedDate": "2026-11-20T01:10:26.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langgraph",
+    "releaseVersion": "1.2.24"
+  },
+  {
+    "id": "phoenix-370d7d37a2cb",
+    "title": "@arizeai/phoenix-cli@1.24.0",
+    "summary": "Minor Changes 0b821b2: Add px dataset-labels list, add, remove, and replace commands to manage existing label assignments by dataset name or GlobalID, including explicitly clearing all assignments. Patch Changes 4270bce: Limit PXI to two recommended models per provider: Claude Fable 5.2 and Opus 5.5, GPT-6.2 Sol and GPT-6.1 Terra, and Gemini 4 Carbon and Neon. 02ed180: Remove Slack community links from the package README Updated dependencies [02ed180] @arizeai/phoenix-client@8.0.2 @arizeai/phoen",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-cli%401.24.0",
+    "publishedDate": "2026-11-19T23:02:44.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "1.24.0"
+  },
+  {
+    "id": "phoenix-e157d66643c8",
+    "title": "@arizeai/phoenix-client@8.0.2",
+    "summary": "Patch Changes 02ed180: Remove Slack community links from the package README Updated dependencies [02ed180] @arizeai/phoenix-config@0.5.2 @arizeai/phoenix-otel@3.1.1",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-client%408.0.2",
+    "publishedDate": "2026-11-19T23:02:41.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "8.0.2"
+  },
+  {
+    "id": "phoenix-fda0c406d1a1",
+    "title": "@arizeai/phoenix-otel@3.1.1",
+    "summary": "Patch Changes 02ed180: Remove Slack community links from the package README Updated dependencies [02ed180] @arizeai/phoenix-config@0.5.2",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-otel%403.1.1",
+    "publishedDate": "2026-11-19T23:02:38.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "agent-observability",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "3.1.1"
+  },
+  {
+    "id": "phoenix-0c3be60b4ff9",
+    "title": "@arizeai/phoenix-evals@2.8.1",
+    "summary": "Patch Changes 02ed180: Remove Slack community links from the package README",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-evals%402.8.1",
+    "publishedDate": "2026-11-19T23:02:35.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "2.8.1"
+  },
+  {
+    "id": "phoenix-3746691544bb",
+    "title": "@arizeai/phoenix-config@0.5.2",
+    "summary": "Patch Changes 02ed180: Remove Slack community links from the package README",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-config%400.5.2",
+    "publishedDate": "2026-11-19T23:02:32.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "0.5.2"
   },
   {
     "id": "langfuse-6a09fc220344",
