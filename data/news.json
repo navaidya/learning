@@ -136,6 +136,24 @@
     "releaseRelated": false
   },
   {
+    "id": "cncf-31394c738f76",
+    "title": "How to support your app on Kubernetes environments you don’t control",
+    "summary": "Running an application in Kubernetes is one thing, but supporting that application in Kubernetes environments your customers run is something else entirely. You don’t control the cluster configuration, its upgrade schedule, the surrounding tooling, or the...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/11/19/how-to-support-your-app-on-kubernetes-environments-you-dont-control/",
+    "publishedDate": "2026-11-19T11:18:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
     "id": "loki-c4d0a84a7260",
     "title": "helm-loki-7.7.0: chore: Release loki helm chart 7.7.0 (#26577)",
     "summary": "Co-authored-by: loki-gh-app[bot] <160051081+loki-gh-app[bot]@users.noreply.github.com> Co-authored-by: Julie Stickler julie.stickler@grafana.com",
@@ -1210,6 +1228,24 @@
     "releaseRelated": true,
     "releaseProject": "cilium",
     "releaseVersion": "1.18.17"
+  },
+  {
+    "id": "cncf-b24a03747d72",
+    "title": "Your runtime security tool is not your baseline: Silos dressed as autonomy in cloud native teams",
+    "summary": "A deadline creates pressure, and a team decides to solve its part of the problem directly. I once saw this play out in a Kubernetes security initiative. The team had capable engineers, a clear objective and...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/11/16/your-runtime-security-tool-is-not-your-baseline-silos-dressed-as-autonomy-in-cloud-native-teams/",
+    "publishedDate": "2026-11-17T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "opentelemetry-def514b4167d",
@@ -7477,44 +7513,6 @@
     "releaseRelated": true,
     "releaseProject": "tempo",
     "releaseVersion": "v3.0.4"
-  },
-  {
-    "id": "vector-3f1941b13957",
-    "title": "vdev-v0.3.32",
-    "summary": "chore(vdev): Rewrite check-docs.sh to vdev (#26665)",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.32",
-    "publishedDate": "2026-10-16T19:26:52.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector"
-  },
-  {
-    "id": "pulumi-a474bf2895f2",
-    "title": "sdk/v3.270.0: Skip to 3.270.0 (#25263)",
-    "summary": "Restores 3.270.0 but doesn't add the lock file, so doesn't trigger a release. 🤖 Generated with Claude Code Co-authored-by: Claude Opus 5.5 noreply@anthropic.com",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.270.0",
-    "publishedDate": "2026-10-16T18:26:30.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.270.0"
   },
   {
     "id": "kyverno-91100de25d27",
