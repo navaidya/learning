@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-21T09:34:45.000Z",
+    "publishedDate": "2026-11-22T02:58:24.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,26 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "phoenix-91a3c00a09d4",
+    "title": "arize-phoenix: v22.0.1",
+    "summary": "22.0.1 (2026-11-21) Bug Fixes server: stop cancelled loader batches from freezing the server (#18111) (d561e7d)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v22.0.1",
+    "publishedDate": "2026-11-21T20:28:01.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v22.0.1"
   },
   {
     "id": "cncf-video-43e8184007c5",

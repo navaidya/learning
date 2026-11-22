@@ -1,5 +1,65 @@
 [
   {
+    "id": "holmesgpt-c04522e04db3",
+    "title": "0.47.0",
+    "summary": "What's Changed chore(deps): bump mcp to 1.30.0 by @nikunjmittal-msft in #2709 ROB-1511 Fix eval-blocking bugs and tag evals that separate model tiers by @naomi-robusta in #2695 ROB-1599 Run the Kubernetes MCP add-on inside the Holmes pod with a mounted kubeconfig, and require bash off there by @ezra-robusta in #2646 ROB-1511 Run the credential-blocked evals against self-hosted backends by @naomi-robusta in #2720 ROB-1761 Benchmark haiku-5.5-medium instead of haiku-4.5 by @RoiGlinik in #2706 ROB-",
+    "source": "HolmesGPT (Robusta)",
+    "sourceId": "holmesgpt",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.47.0",
+    "publishedDate": "2026-11-22T07:53:09.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "holmesgpt",
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "holmesgpt",
+    "releaseVersion": "0.47.0"
+  },
+  {
+    "id": "robusta-e9a48c144f37",
+    "title": "0.55.0",
+    "summary": "Security This release fixes two vulnerabilities in the runner. Upgrading is highly recommended. In-cluster endpoint allows privilege escalation Injection through action parameters in scan and kubectl actions What's Changed ROB-1751 Strip embedded tool-call markers from the answer text only by @avshyz in #2221 ROB-1788 Build MyST Markdown pages in the Sphinx docs by @ezra-robusta in #2218 ROB-1831 Bump pyasn1 to 0.6.5 and oauthlib to 4.0.1 (Vanta CVEs) by @moshemorad in #2222 ROB-1486 Document th",
+    "source": "Robusta",
+    "sourceId": "robusta",
+    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.55.0",
+    "publishedDate": "2026-11-21T22:33:27.000Z",
+    "domain": "aiops",
+    "topics": [
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "robusta",
+    "releaseVersion": "0.55.0"
+  },
+  {
+    "id": "robusta-450b13f48282",
+    "title": "0.55.0-alpha",
+    "summary": "Merge commit from fork Quote scan job arguments, validate kubectl resource names, limit scan job specs to scheduling fields, and take pod identity and scan arguments from configuration only. Signed-off-by: Arik Alon <alon.arik@gmail.com>",
+    "source": "Robusta",
+    "sourceId": "robusta",
+    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.55.0-alpha",
+    "publishedDate": "2026-11-21T20:57:07.000Z",
+    "domain": "aiops",
+    "topics": [
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "robusta",
+    "releaseVersion": "0.55.0-alpha"
+  },
+  {
     "id": "grafana-8f3be2c20612",
     "title": "From AI agents to fishing dashboards: The latest stories from Unprompted, the Grafana Labs engineering blog",
     "summary": "Some of the best technical insights come from sharing what you've built and what you've learned along the way.That's one of the core ideas behind Unprompted, the blog we launched on Medium earlier this year to give Grafana Labs engineers and our broader OSS community a space to showcase their work. From behind-the-scenes engineering stories and technical deep dives to creative use cases for Grafana (a fishing dashboard, anyone?), it's a place to share ideas and learn from one another.To give you",
@@ -7455,64 +7515,6 @@
     "releaseRelated": true,
     "releaseProject": "karpenter",
     "releaseVersion": "v1.14.2"
-  },
-  {
-    "id": "pulumi-58a8f24a333a",
-    "title": "pkg/v3.270.0: Changelog and go.mod updates for v3.270.0 (#25268)",
-    "summary": "Co-authored-by: github-actions github-actions@github.com",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.270.0",
-    "publishedDate": "2026-10-16T21:26:35.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.270.0"
-  },
-  {
-    "id": "pulumi-e408d5fad8a0",
-    "title": "v3.270.0",
-    "summary": "3.270.0 (2026-10-16) Bug Fixes [cli/env] Fix pulumi env edit, env set, env rm and env provider overwriting changes made after they read the environment; on a conflict, env edit reopens the editor with your edits and the current definition, and the others fail #24983 [cli] Report an unknown drift status in pulumi stack drift status when drift detection has never run #25172",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.270.0",
-    "publishedDate": "2026-10-16T20:28:10.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.270.0"
-  },
-  {
-    "id": "tempo-ec78160e2dbe",
-    "title": "v3.0.4",
-    "summary": "Security deps: Update Go to 1.26.9 (CVE-2026-56858, CVE-2026-56862, CVE-2026-56860, CVE-2026-56859, CVE-2026-56853, CVE-2026-33818, CVE-2026-97031, CVE-2026-94440, CVE-2026-78669, CVE-2026-78667, CVE-2026-78660, CVE-2026-78659), google.golang.org/grpc to v1.83.2 (CVE-2026-84445, CVE-2026-84304), github.com/apache/thrift to v0.24.0 (CVE-2026-43871), golang.org/x/net to v0.60.0 (CVE-2026-39821, CVE-2026-78669, CVE-2026-78660, CVE-2026-78659, CVE-2026-46600), golang.org/x/text to v0.42.0 (CVE-2026-",
-    "source": "Grafana Tempo",
-    "sourceId": "tempo",
-    "url": "https://github.com/grafana/tempo/releases/tag/v3.0.4",
-    "publishedDate": "2026-10-16T20:12:21.000Z",
-    "domain": "tracing",
-    "topics": [
-      "tempo",
-      "tracing",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "tempo",
-    "releaseVersion": "v3.0.4"
   },
   {
     "id": "kyverno-91100de25d27",
