@@ -1,11 +1,11 @@
 [
   {
     "project": "holmesgpt",
-    "version": "0.47.0",
-    "publishedDate": "2026-11-22T07:53:09.000Z",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.47.0",
+    "version": "0.47.1-alpha",
+    "publishedDate": "2026-11-22T08:50:24.000Z",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.47.1-alpha",
     "sourceId": "holmesgpt",
-    "title": "0.47.0"
+    "title": "0.47.1-alpha"
   },
   {
     "project": "robusta",

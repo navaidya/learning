@@ -1,5 +1,25 @@
 [
   {
+    "id": "holmesgpt-611eb1b1dacb",
+    "title": "0.47.1-alpha",
+    "summary": "Full Changelog: 0.47.0...0.47.1-alpha",
+    "source": "HolmesGPT (Robusta)",
+    "sourceId": "holmesgpt",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.47.1-alpha",
+    "publishedDate": "2026-11-22T08:50:24.000Z",
+    "domain": "aiops",
+    "topics": [
+      "holmesgpt",
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "holmesgpt",
+    "releaseVersion": "0.47.1-alpha"
+  },
+  {
     "id": "holmesgpt-c04522e04db3",
     "title": "0.47.0",
     "summary": "What's Changed chore(deps): bump mcp to 1.30.0 by @nikunjmittal-msft in #2709 ROB-1511 Fix eval-blocking bugs and tag evals that separate model tiers by @naomi-robusta in #2695 ROB-1599 Run the Kubernetes MCP add-on inside the Holmes pod with a mounted kubeconfig, and require bash off there by @ezra-robusta in #2646 ROB-1511 Run the credential-blocked evals against self-hosted backends by @naomi-robusta in #2720 ROB-1761 Benchmark haiku-5.5-medium instead of haiku-4.5 by @RoiGlinik in #2706 ROB-",
@@ -20,6 +40,24 @@
     "releaseRelated": true,
     "releaseProject": "holmesgpt",
     "releaseVersion": "0.47.0"
+  },
+  {
+    "id": "openai-de5cd1a6d51d",
+    "title": "Perplexity and Intelligence",
+    "summary": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/index/perplexity-and-intelligence",
+    "publishedDate": "2026-11-22T00:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "robusta-e9a48c144f37",
@@ -7475,46 +7513,6 @@
     "releaseRelated": true,
     "releaseProject": "kyverno",
     "releaseVersion": "v1.19.2-rc.2"
-  },
-  {
-    "id": "kyverno-0a9b387c4295",
-    "title": "v1.19.2-rc.4",
-    "summary": "[release-1.19] fix: preserve legacy generation scope and ownership (#…",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2-rc.4",
-    "publishedDate": "2026-10-17T18:11:03.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno",
-    "releaseVersion": "v1.19.2-rc.4"
-  },
-  {
-    "id": "karpenter-a6101ef554fa",
-    "title": "v1.14.2",
-    "summary": "Bug Fixes allow enqueue onto NodeRepair controller if label synced after create (#3366) #3366 (Ryan Mistretta) capacity buffer: watch scalableRef workloads so buffers resolve … (#3387) #3387 (Ryan Mistretta)",
-    "source": "Karpenter",
-    "sourceId": "karpenter",
-    "url": "https://github.com/kubernetes-sigs/karpenter/releases/tag/v1.14.2",
-    "publishedDate": "2026-10-16T21:52:03.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "karpenter",
-      "kubernetes",
-      "autoscaling"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "karpenter",
-    "releaseVersion": "v1.14.2"
   },
   {
     "id": "kyverno-91100de25d27",
