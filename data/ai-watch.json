@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-23T08:58:19.000Z",
+    "publishedDate": "2026-11-24T00:53:33.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,109 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "pydantic-ai-461d865018fd",
+    "title": "v2.72.0 (2026-11-23)",
+    "summary": "What's Changed ⚠️ Compatibility Notes Warn with DeprecatedModelWarning when a request targets a model Anthropic or OpenAI has deprecated by @dsfaccini in #14038 [cache] Surface OpenAI Responses input_transformations in provider_details and on the model request span by @dsfaccini in #14056 Raises the openai floor from 3.31.0 to 3.50.0 on every extra that installs openai. Add capabilities to Agent.override and export AgentInstructions and SourcedInstruction by @pydanty in #12551 The private Agent.",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.72.0",
+    "publishedDate": "2026-11-24T00:38:11.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.72.0"
+  },
+  {
+    "id": "phoenix-a7e638d32ba2",
+    "title": "arize-phoenix-client: v3.8.0",
+    "summary": "3.8.0 (2026-11-23) Features client: add secrets resource to the Python client (#17447) (fe8ed61) Bug Fixes client: serialize harbor agent path kwargs as posix paths (#17960) (a111c1d) Documentation remove Slack community links from READMEs (#18109) (02ed180)",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-client-v3.8.0",
+    "publishedDate": "2026-11-23T20:16:35.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v3.8.0"
+  },
+  {
+    "id": "phoenix-c6a6fca3f8a9",
+    "title": "@arizeai/phoenix-cli@1.24.1",
+    "summary": "Patch Changes Updated dependencies [ea5a688] @arizeai/phoenix-client@8.0.3",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-cli%401.24.1",
+    "publishedDate": "2026-11-23T18:50:21.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "1.24.1"
+  },
+  {
+    "id": "phoenix-aaa7c74cd910",
+    "title": "@arizeai/phoenix-client@8.0.3",
+    "summary": "Patch Changes ea5a688: Acceptance criteria results now report eligibleRunCount (non-skipped runs in the suite) next to sampleCount (runs that logged the criterion's annotation), and the reporter shows coverage as 70 of 100 runs. Pass/fail semantics are unchanged: a criterion is computed over the runs that logged its annotation.",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/%40arizeai%2Fphoenix-client%408.0.3",
+    "publishedDate": "2026-11-23T18:50:18.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "8.0.3"
+  },
+  {
+    "id": "langfuse-bf1ceda48735",
+    "title": "v4.84.0",
+    "summary": "What's Changed Features feat(mcp): add batchCreateAnnotationQueueItems tool by @tobi12345 in #20477 feat(web): show Intent topic shares in the tracing pulse chart header by @nmtrang29 in #20482 feat(billing): ship the billable_events ledger as a ClickHouse migration by @Steffen911 in #20458 feat(annotation-queue): Embed updated session view by @bezbac in #19225 feat(topics): describe how sentiment was expressed, not what it was about by @LysanderKie in #20410 feat(halo): show topic-related defau",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.84.0",
+    "publishedDate": "2026-11-23T12:22:31.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.84.0"
   },
   {
     "id": "phoenix-91a3c00a09d4",

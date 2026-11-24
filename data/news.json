@@ -1,5 +1,311 @@
 [
   {
+    "id": "opentelemetry-collector-86b26d492ef2",
+    "title": "v1.72.0/v0.166.0",
+    "summary": "Images and binaries here: https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.166.0 End User Changelog 💡 Enhancements 💡 pkg/configgrpc: Add the pick_first.shuffle_address_list option to shuffle the resolved address list for gRPC clients that use the pick_first balancer. (#16235) When enabled, clients that receive the same address list no longer all connect to the first address (gRFC A62). The option is disabled by default. pkg/configmiddleware: allow listener mid",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.166.0",
+    "publishedDate": "2026-11-23T22:26:33.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v1.72.0"
+  },
+  {
+    "id": "opentelemetry-collector-8a621883bb61",
+    "title": "service/telemetry/telemetrytest/v0.166.0",
+    "summary": "Module set beta, Version v0.166.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/service%2Ftelemetry%2Ftelemetrytest%2Fv0.166.0",
+    "publishedDate": "2026-11-23T22:26:12.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.166.0"
+  },
+  {
+    "id": "opentelemetry-collector-587825f83291",
+    "title": "service/hostcapabilities/v0.166.0",
+    "summary": "Module set beta, Version v0.166.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/service%2Fhostcapabilities%2Fv0.166.0",
+    "publishedDate": "2026-11-23T22:26:12.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.166.0"
+  },
+  {
+    "id": "opentelemetry-collector-b872294b934e",
+    "title": "service/v0.166.0",
+    "summary": "Module set beta, Version v0.166.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/service%2Fv0.166.0",
+    "publishedDate": "2026-11-23T22:26:11.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.166.0"
+  },
+  {
+    "id": "opentelemetry-collector-fdb62c51219b",
+    "title": "scraper/xscraper/v0.166.0",
+    "summary": "Module set beta, Version v0.166.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fxscraper%2Fv0.166.0",
+    "publishedDate": "2026-11-23T22:26:11.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.166.0"
+  },
+  {
+    "id": "opentelemetry-collector-eefd6e298da7",
+    "title": "scraper/scrapertest/v0.166.0",
+    "summary": "Module set beta, Version v0.166.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fscrapertest%2Fv0.166.0",
+    "publishedDate": "2026-11-23T22:26:11.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.166.0"
+  },
+  {
+    "id": "opentelemetry-collector-1df3bfeda0a0",
+    "title": "scraper/scraperhelper/xscraperhelper/v0.166.0",
+    "summary": "Module set beta, Version v0.166.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fscraperhelper%2Fxscraperhelper%2Fv0.166.0",
+    "publishedDate": "2026-11-23T22:26:11.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.166.0"
+  },
+  {
+    "id": "opentelemetry-collector-f96178dd34a7",
+    "title": "scraper/scraperhelper/v0.166.0",
+    "summary": "Module set beta, Version v0.166.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fscraperhelper%2Fv0.166.0",
+    "publishedDate": "2026-11-23T22:26:11.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.166.0"
+  },
+  {
+    "id": "opentelemetry-collector-0fa3538c9f93",
+    "title": "scraper/v0.166.0",
+    "summary": "Module set beta, Version v0.166.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/scraper%2Fv0.166.0",
+    "publishedDate": "2026-11-23T22:26:10.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.166.0"
+  },
+  {
+    "id": "opentelemetry-collector-c7b7f23a4e65",
+    "title": "receiver/xreceiver/v0.166.0",
+    "summary": "Module set beta, Version v0.166.0",
+    "source": "OpenTelemetry Collector",
+    "sourceId": "opentelemetry-collector",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/receiver%2Fxreceiver%2Fv0.166.0",
+    "publishedDate": "2026-11-23T22:26:10.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "collector",
+      "otel",
+      "observability"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentelemetry-collector",
+    "releaseVersion": "v0.166.0"
+  },
+  {
+    "id": "opentofu-74b9081d9889",
+    "title": "v1.13.10",
+    "summary": "1.13.10 SECURITY ADVISORIES: Upgrade Go toolchain to 1.27.4 to address GO-2026-6859, an HTTP/1 server crash due to a MaxBytesReader header race. (#4831) BUG FIXES: Overriding resources for indexed modules now works correctly during tofu test. (#4859) Fix symbol libraries preventing plan when used in modules. (#4816 Fix symbol libraries crash when uninitialized. (#4861) Full Changelog: v1.13.9...v1.13.10",
+    "source": "OpenTofu",
+    "sourceId": "opentofu",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.10",
+    "publishedDate": "2026-11-23T19:10:12.000Z",
+    "domain": "terraform",
+    "topics": [
+      "opentofu",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "opentofu",
+    "releaseVersion": "v1.13.10"
+  },
+  {
+    "id": "crossplane-9e297e8abeac",
+    "title": "apis/v2.5.0",
+    "summary": "Release v2.5.0",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.5.0",
+    "publishedDate": "2026-11-23T18:16:20.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.5.0"
+  },
+  {
+    "id": "crossplane-bf788b4f941a",
+    "title": "v2.5.0",
+    "summary": "Release v2.5.0",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.5.0",
+    "publishedDate": "2026-11-23T18:16:17.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.5.0"
+  },
+  {
+    "id": "kubernetes-17c082550a2d",
+    "title": "Kubernetes v1.38 Sneak Peek",
+    "summary": "As we get closer to the release date for Kubernetes v1.38, the project develops and matures, features may be deprecated, removed, or replaced with better ones for the project's overall health. This blog post outlines some of the planned changes for the Kubernetes v1.38 release that the release team feels you should be aware of for the continued maintenance of your Kubernetes environment and keeping up to date with the latest changes. The information listed below is based on the current status of",
+    "source": "Kubernetes",
+    "sourceId": "kubernetes",
+    "url": "https://kubernetes.io/blog/2026/11/23/kubernetes-v1-38-sneak-peek/",
+    "publishedDate": "2026-11-23T16:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes",
+    "releaseVersion": "v1.38"
+  },
+  {
+    "id": "openai-680b35173b97",
+    "title": "Richpanel helps companies automate 50% of support in 30 days",
+    "summary": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
+    "source": "OpenAI Developer Updates",
+    "sourceId": "openai",
+    "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+    "publishedDate": "2026-11-23T08:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "openai",
+      "ai-agent",
+      "mcp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "openai"
+  },
+  {
     "id": "holmesgpt-611eb1b1dacb",
     "title": "0.47.1-alpha",
     "summary": "Full Changelog: 0.47.0...0.47.1-alpha",
@@ -7273,248 +7579,6 @@
     "releaseRelated": false
   },
   {
-    "id": "grafana-d8e0ac0cbe2d",
-    "title": "From production problem to proposed fix: Implement autonomous operations with Grafana AI",
-    "summary": "You've just finished a deployment, and though your service is up, you start to notice some requests are getting slower. To address the lag, someone—or, more likely, some group of people on your team—needs to watch the dashboards, decide whether the change matters, investigate what happened, and turn the findings into a fix. At each step you're gathering context—and often explaining that context again to the next person or tool. To make matters worse for the team responsible for the service, all ",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/grafana-ai-autonomous-operations/",
-    "publishedDate": "2026-10-20T16:30:02.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "dashboards",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "grafana-cf8068e89d53",
-    "title": "Break the link between data volume and your observability bill with Adaptive Telemetry",
-    "summary": "In the AI era, where telemetry is generated by every model call, tool invocation, and agent step, organizations need more help than ever when it comes to navigating the economics of observability.For a lot of teams, the default response is a \"data diet\" of shorter retention, which leaves services or environments out of collection, or basic sampling, which is more guesswork than strategy. Either way, you end up cutting to control the bill, and you risk losing the very data you need during an inci",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/cut-costs-keep-what-you-need-adaptive-telemetry/",
-    "publishedDate": "2026-10-20T16:30:02.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "grafana-c9b5958e9a81",
-    "title": "Full-stack observability in Grafana Cloud: More connections, richer context, and faster investigations for users and agents",
-    "summary": "Most teams have telemetry from across their stack, but connecting those signals to understand what's happening and how it affects users isn't always easy. Critical context about service dependencies, ownership, and past incidents often lives across tools, runbooks, and conversations between team members.That’s why, today at ObservabilityCON 2026, we’re announcing new capabilities that advance full-stack observability across Grafana Cloud. Powering this experience is the Knowledge Graph, the runt",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/full-stack-observability-with-knowledge-graph/",
-    "publishedDate": "2026-10-20T16:30:02.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "grafana-5e1212ae4b05",
-    "title": "Grafana Pages: Turn data into interactive experiences with the next evolution of Grafana",
-    "summary": "Teams often spend as much time preparing information as discussing it: gathering charts, checking business reports, and finding the GitHub activity that explains a change. Every follow-up question can lead to yet another round of work. That's why, as part of ObservabilityCON 2026, we're excited to introduce Grafana Pages, a new feature in Grafana Cloud that gives you a canvas to describe what you need and build a live app in minutes, based on your real data, context, and interactions. From new t",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/grafana-ai-next-gen-visualization/",
-    "publishedDate": "2026-10-20T16:30:02.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "kyverno-f4ca9c599f95",
-    "title": "v1.19.2-rc.5",
-    "summary": "chore: pass GORELEASER_CURRENT_TAG to the goreleaser (#18124) Signed-off-by: aerosouund <aerosound161@gmail.com>",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2-rc.5",
-    "publishedDate": "2026-10-20T11:53:10.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno",
-    "releaseVersion": "v1.19.2-rc.5"
-  },
-  {
-    "id": "robusta-7990a0ff7f3d",
-    "title": "0.54.0-alpha",
-    "summary": "Remove the helm golden render tests (#2206) The golden files pinned the full rendered chart, so every change to any template failed CI until the files were regenerated. The targeted helm tests and the Holmes-only install tests stay; the shared values file they read moves to tests/holmes_values.yaml. Claude-Session: https://claude.ai/code/session_01QNTDU7nLkCv8qSJHW3kTE9 Signed-off-by: arik <alon.arik@gmail.com> Co-authored-by: Claude Fable 5.1 <noreply@anthropic.com>",
-    "source": "Robusta",
-    "sourceId": "robusta",
-    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.54.0-alpha",
-    "publishedDate": "2026-10-20T08:53:16.000Z",
-    "domain": "aiops",
-    "topics": [
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "robusta",
-    "releaseVersion": "0.54.0-alpha"
-  },
-  {
-    "id": "openai-a84b6a7bee5c",
-    "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
-    "summary": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/terminal-x",
-    "publishedDate": "2026-10-20T07:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "openai",
-    "releaseVersion": "88.6"
-  },
-  {
-    "id": "grafana-454b511e98cd",
-    "title": "6 improvements that make Grafana Assistant better at helping your workflows",
-    "summary": "When you ask Grafana Assistant to build a dashboard or investigate an alert, you're doing so because there's work to be done. To do that work effectively, you need the right data, changes you can inspect, and conclusions supported by evidence. You also want Assistant to avoid mistakes and act quickly.Over the past six months, our team has worked hard to improve what makes those outcomes possible. We’ve changed how agents find context, discover capabilities, edit dashboards, and recover from erro",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/six-improvements-that-make-grafana-assistant-better-at-helping-your-workflows/",
-    "publishedDate": "2026-10-19T18:10:01.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "dashboards",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "vector-c0bf55d11b2e",
-    "title": "v0.60.0",
-    "summary": "The COSE team is happy to announce Vector 0.60.0! 🚀 Vector is a lightweight, ultra-fast tool for building observability pipelines that puts you in control of your data. Thanks to the 15 contributors who made the 21 changes in this release: 2 breaking changes 1 security change 2 new features 6 enhancements 10 bug fixes Upgrading to 0.60? Read the upgrade guide. View the full release notes · See upcoming releases on the release calendar.",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/v0.60.0",
-    "publishedDate": "2026-10-19T17:55:58.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector",
-    "releaseVersion": "v0.60.0"
-  },
-  {
-    "id": "cncf-433dc84d1cf7",
-    "title": "How AI workloads are reshaping Kubernetes autoscaling",
-    "summary": "Kubernetes has quietly run much of the world’s containerized software on a division of labor between two control loops that rarely had to talk to each other. The scheduler places each pod on a node that...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/10/19/how-ai-workloads-are-reshaping-kubernetes-autoscaling/",
-    "publishedDate": "2026-10-19T11:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "opentelemetry-ab7b26b0e187",
-    "title": "Announcing the 2026 OpenTelemetry Governance Committee Election Candidates",
-    "summary": "The OpenTelemetry Election Committee is excited to announce the final list of candidates for the 2026 OpenTelemetry Governance Committee election! Eligible voters can help fill four Governance Committee seats through Helios Voting. Voting opens: 26 October 2026 at 12:00 UTC. Voting closes: 28 October 2026 at 23:59 Anywhere on Earth (AoE), equivalent to 29 October 2026 at 11:59 UTC. For candidate photos, GitHub profiles, and statements, see the candidates page. Antoine Toulme Dan Gomez Blanco Hux",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/gc-candidates/",
-    "publishedDate": "2026-10-19T10:59:07.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "kyverno-70498408f82d",
-    "title": "v1.19.2-rc3",
-    "summary": "What's Changed [release-1.19] fix(deps): update x/net for CVE-2026-97032 by @Sashang-debug in #18027 [release-1.19] fix(deps): update x/net for CVE-2026-78663 by @Sashang-debug in #18025 fix: repair the post-merge Tests workflow on main (#17761) by @aerosouund in #18035 test: expect the generation label protection webhook in chainsaw asserts by @aerosouund in #18039 [release-1.19] fix: preserve legacy generation scope and ownership by @sagark-nirmata in #17937 Full Changelog: v1.19.2-rc1...v1.19",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2-rc3",
-    "publishedDate": "2026-10-17T19:36:08.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno",
-    "releaseVersion": "v1.19.2-rc3"
-  },
-  {
-    "id": "kyverno-acbe3b7c4e23",
-    "title": "v1.19.2-rc.2",
-    "summary": "What's Changed feat: remove kyverno-json from test api by @eddycharly in #16929 feat: remove json scan command by @eddycharly in #16943 fix(policy): preserve validation warnings for generate rules in validateAction by @vishalmore90 in #16821 fix: bump oras.land/oras-go/v2 to v2.6.2 to resolve CVE-2026-50163 by @falloficaruss in #16945 chore(deps): bump zgosalvez/github-actions-ensure-sha-pinned-actions from 5.0.4 to 5.0.6 by @dependabot[bot] in #16933 chore(deps): bump Homebrew/actions/limit-pul",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/v1.19.2-rc.2",
-    "publishedDate": "2026-10-17T18:22:13.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno",
-    "releaseVersion": "v1.19.2-rc.2"
-  },
-  {
     "id": "kyverno-91100de25d27",
     "title": "v1.19.2-rc1: fix(pss): support user namespace pods in validate.podSecurity (#17913)",
     "summary": "fix(pss): map procMount_restricted for user namespace pods Map the PSA fork's new procMount_restricted check to the /proc Mount Type control so exclusions, PolicyExceptions and reports keep working, and add unit and CLI tests for hostUsers: false. Refs #15981 Depends on kyverno/pod-security-admission#6 Signed-off-by: Suhani suhani4630@gmail.com chore(deps): bump kyverno/pod-security-admission to 40bb0fb Pick up the Kubernetes 1.35 user namespace checks from kyverno/pod-security-admission#6, and ",
@@ -9758,45 +9822,5 @@
     "releaseRelated": true,
     "releaseProject": "holmesgpt",
     "releaseVersion": "0.40.0"
-  },
-  {
-    "id": "kubernetes-506ba8d37c8f",
-    "title": "Kubernetes v1.37: Garhwal",
-    "summary": "Editors: Arsh Sharma, Christopher Tineo, Kirti Goyal, Sophia Ugochukwu, Swathi Rao, Troy Connor Similar to previous releases, the release of Kubernetes v1.37 introduces new Stable, Beta, and Alpha features. The consistent delivery of high-quality releases underscores the strength of our development cycle and the vibrant support from our community. This release consists of 67 enhancements. Of those enhancements, 16 have graduated to Stable, 23 have graduated to Beta, 27 are entering Alpha, and 1 ",
-    "source": "Kubernetes",
-    "sourceId": "kubernetes",
-    "url": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/",
-    "publishedDate": "2026-08-26T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes"
-    ],
-    "importance": "critical",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "kubernetes",
-    "releaseVersion": "v1.37"
-  },
-  {
-    "id": "holmesgpt-16b28f48f20c",
-    "title": "0.40.0-alpha",
-    "summary": "What's Changed ROB-878 remove stale Sonnet 4.0/4.5 model recommendations from docs by @Sheeproid in #2378 Remove experimental Azure SQL toolset by @moshemorad in #2377 ROB-893 Fix command injection vulnerability in Kubernetes toolset by @naomi-robusta in #2382 Remove MariaDB MCP integration, consolidate to native MariaDB datasource by @moshemorad in #2389 Fix command injection in slab/kubevela/inspektor_gadget/aks toolsets (ROB-893 follow-up) by @naomi-robusta in #2386 Fix SSRF in internet/fetch",
-    "source": "HolmesGPT (Robusta)",
-    "sourceId": "holmesgpt",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.40.0-alpha",
-    "publishedDate": "2026-08-25T14:25:58.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "mcp",
-      "holmesgpt",
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "high",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "holmesgpt",
-    "releaseVersion": "0.40.0-alpha"
   }
 ]

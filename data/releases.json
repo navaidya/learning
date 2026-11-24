@@ -1,5 +1,37 @@
 [
   {
+    "project": "opentelemetry-collector",
+    "version": "v1.72.0",
+    "publishedDate": "2026-11-23T22:26:33.000Z",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.166.0",
+    "sourceId": "opentelemetry-collector",
+    "title": "v1.72.0/v0.166.0"
+  },
+  {
+    "project": "opentofu",
+    "version": "v1.13.10",
+    "publishedDate": "2026-11-23T19:10:12.000Z",
+    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.10",
+    "sourceId": "opentofu",
+    "title": "v1.13.10"
+  },
+  {
+    "project": "crossplane",
+    "version": "v2.5.0",
+    "publishedDate": "2026-11-23T18:16:20.000Z",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.5.0",
+    "sourceId": "crossplane",
+    "title": "apis/v2.5.0"
+  },
+  {
+    "project": "kubernetes",
+    "version": "v1.38",
+    "publishedDate": "2026-11-23T16:00:00.000Z",
+    "url": "https://kubernetes.io/blog/2026/11/23/kubernetes-v1-38-sneak-peek/",
+    "sourceId": "kubernetes",
+    "title": "Kubernetes v1.38 Sneak Peek"
+  },
+  {
     "project": "holmesgpt",
     "version": "0.47.1-alpha",
     "publishedDate": "2026-11-22T08:50:24.000Z",
@@ -72,14 +104,6 @@
     "title": "v9.14.0"
   },
   {
-    "project": "crossplane",
-    "version": "v2.5.0-rc.1",
-    "publishedDate": "2026-11-18T10:19:37.000Z",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.5.0-rc.1",
-    "sourceId": "crossplane",
-    "title": "v2.5.0-rc.1"
-  },
-  {
     "project": "opentelemetry",
     "version": "1.4",
     "publishedDate": "2026-11-17T18:23:18.000Z",
@@ -102,14 +126,6 @@
     "url": "https://github.com/cilium/cilium/releases/tag/v1.20.5",
     "sourceId": "cilium",
     "title": "1.20.5"
-  },
-  {
-    "project": "kubernetes",
-    "version": "1.29",
-    "publishedDate": "2026-11-16T18:35:00.000Z",
-    "url": "https://kubernetes.io/blog/2026/11/16/ipvs-removal/",
-    "sourceId": "kubernetes",
-    "title": "Scheduling the removal of the kube-proxy IPVS backend"
   },
   {
     "project": "vector",
@@ -168,14 +184,6 @@
     "title": "CNCF Hits Major Milestones with Global Community Growth, Record Industry Investment and a New Generation of Projects to Build AI Systems in Production"
   },
   {
-    "project": "opentelemetry-collector",
-    "version": "v1.71.0",
-    "publishedDate": "2026-11-06T23:42:20.000Z",
-    "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.165.0",
-    "sourceId": "opentelemetry-collector",
-    "title": "v1.71.0/v0.165.0"
-  },
-  {
     "project": "hashicorp",
     "version": "2.1.0",
     "publishedDate": "2026-11-06T08:00:00.000Z",
@@ -190,14 +198,6 @@
     "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.38.0-beta.0",
     "sourceId": "kubernetes-releases",
     "title": "v1.38.0-beta.0"
-  },
-  {
-    "project": "opentofu",
-    "version": "v1.13.9",
-    "publishedDate": "2026-11-05T19:09:38.000Z",
-    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.9",
-    "sourceId": "opentofu",
-    "title": "v1.13.9"
   },
   {
     "project": "prometheus",
