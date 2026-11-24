@@ -1,5 +1,13 @@
 [
   {
+    "project": "crossplane",
+    "version": "v2.4.4",
+    "publishedDate": "2026-11-24T10:58:58.000Z",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.4",
+    "sourceId": "crossplane",
+    "title": "v2.4.4"
+  },
+  {
     "project": "opentelemetry-collector",
     "version": "v1.72.0",
     "publishedDate": "2026-11-23T22:26:33.000Z",
@@ -14,14 +22,6 @@
     "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.10",
     "sourceId": "opentofu",
     "title": "v1.13.10"
-  },
-  {
-    "project": "crossplane",
-    "version": "v2.5.0",
-    "publishedDate": "2026-11-23T18:16:20.000Z",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.5.0",
-    "sourceId": "crossplane",
-    "title": "apis/v2.5.0"
   },
   {
     "project": "kubernetes",

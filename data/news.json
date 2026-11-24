@@ -1,5 +1,125 @@
 [
   {
+    "id": "crossplane-7437564676dd",
+    "title": "v2.4.4",
+    "summary": "v2.4.4 is a patch release scoped to fixing issues reported by users of Crossplane v2.4 and fixing security related issues in Crossplane's dependencies. 🎉 Highlights Namespaced XRs can no longer compose cluster scoped resources: A function could make a namespaced XR compose a cluster scoped resource by setting metadata.namespace on it, because the scope check only ran on composed resources without a namespace. Crossplane now checks the scope of every resource a namespaced XR composes, based on i",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.4",
+    "publishedDate": "2026-11-24T10:58:58.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.4.4"
+  },
+  {
+    "id": "crossplane-3b4a7508754e",
+    "title": "v2.3.8",
+    "summary": "v2.3.8 is a patch release scoped to fixing issues reported by users of Crossplane v2.3 and fixing security related issues in Crossplane's dependencies. 🎉 Highlights Namespaced XRs can no longer compose cluster scoped resources: A function could make a namespaced XR compose a cluster scoped resource by setting metadata.namespace on it, because the scope check only ran on composed resources without a namespace. Crossplane now checks the scope of every resource a namespaced XR composes, based on i",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.3.8",
+    "publishedDate": "2026-11-24T10:56:28.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.3.8"
+  },
+  {
+    "id": "crossplane-f580d7666b87",
+    "title": "v1.20.15",
+    "summary": "v1.20.15 is a patch release scoped to fixing issues reported by users of Crossplane v1.20 and fixing security related issues in Crossplane's dependencies. 🚨 v1.20 end-of-life (EOL) This is the final release of Crossplane v1.20. With the release of Crossplane v2.5, v1.20 has reached its end-of-life and will no longer receive any support or maintenance by the Crossplane project, as announced in the v2.4.0 release notes. Upgrade your control planes to Crossplane v2 to keep receiving fixes. Run cro",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v1.20.15",
+    "publishedDate": "2026-11-24T10:52:11.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v1.20.15"
+  },
+  {
+    "id": "crossplane-387ec1cf6167",
+    "title": "v2.5.0-rc.1",
+    "summary": "❗ Important Crossplane version v2.5.0-rc.1 is a release candidate intended to collect input from the community and offer users an opportunity to experiment with Crossplane in non-production environments before the official release of version v2.5.0. WarningThis is a pre-release; do not use it in production environments! To install Crossplane with this release: helm repo add crossplane-stable https://charts.crossplane.io/stable --force-update helm install crossplane --namespace crossplane-system ",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.5.0-rc.1",
+    "publishedDate": "2026-11-24T10:13:30.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.5.0-rc.1"
+  },
+  {
+    "id": "crossplane-7a8910b1c074",
+    "title": "apis/v2.3.8",
+    "summary": "Release v2.3.8",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.3.8",
+    "publishedDate": "2026-11-24T08:51:09.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.3.8"
+  },
+  {
+    "id": "crossplane-7164df09fa3e",
+    "title": "apis/v2.4.4",
+    "summary": "Release v2.4.4",
+    "source": "Crossplane",
+    "sourceId": "crossplane",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/apis%2Fv2.4.4",
+    "publishedDate": "2026-11-24T08:50:38.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "crossplane",
+      "platform-engineering",
+      "control-plane"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "crossplane",
+    "releaseVersion": "v2.4.4"
+  },
+  {
     "id": "opentelemetry-collector-86b26d492ef2",
     "title": "v1.72.0/v0.166.0",
     "summary": "Images and binaries here: https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.166.0 End User Changelog 💡 Enhancements 💡 pkg/configgrpc: Add the pick_first.shuffle_address_list option to shuffle the resolved address list for gRPC clients that use the pick_first balancer. (#16235) When enabled, clients that receive the same address list no longer all connect to the first address (gRFC A62). The option is disabled by default. pkg/configmiddleware: allow listener mid",
@@ -1159,26 +1279,6 @@
     "releaseRelated": true,
     "releaseProject": "backstage",
     "releaseVersion": "v1.57.1"
-  },
-  {
-    "id": "crossplane-387ec1cf6167",
-    "title": "v2.5.0-rc.1",
-    "summary": "❗ Important Crossplane version v2.5.0-rc.1 is a release candidate intended to collect input from the community and offer users an opportunity to experiment with Crossplane in non-production environments before the official release of version v2.5.0. WarningThis is a pre-release; do not use it in production environments! To install Crossplane with this release: helm repo add crossplane-stable https://charts.crossplane.io/stable --force-update helm install crossplane --namespace crossplane-system ",
-    "source": "Crossplane",
-    "sourceId": "crossplane",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.5.0-rc.1",
-    "publishedDate": "2026-11-18T10:19:37.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "crossplane",
-      "platform-engineering",
-      "control-plane"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "crossplane",
-    "releaseVersion": "v2.5.0-rc.1"
   },
   {
     "id": "pulumi-279a973ed885",
@@ -7483,67 +7583,6 @@
     "releaseVersion": "v2.10.9"
   },
   {
-    "id": "backstage-d979d354057c",
-    "title": "v1.56.0",
-    "summary": "These are the release notes for the v1.56.0 release of Backstage. A huge thanks to the whole team of maintainers and contributors as well as the amazing Backstage Community for the hard work in getting this release developed and done. Highlights BREAKING: Filter predicates must be objects at the root The FilterPredicate type, its zod schemas, and parseFilterPredicate in @backstage/filter-predicates now only accept objects at the root of a predicate. Primitive values such as \"component\" or true w",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.56.0",
-    "publishedDate": "2026-10-20T17:09:17.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "platform-engineering",
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.56.0"
-  },
-  {
-    "id": "kyverno-efb41f0befd1",
-    "title": "kyverno-policies-chart-3.9.2-rc.5: chore: bump chart to 3.9.2-rc.5 for v1.19.2-rc.5 (#18132)",
-    "summary": "Signed-off-by: aerosouund aerosound161@gmail.com Co-authored-by: Claude Opus 5.5 noreply@anthropic.com",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-policies-chart-3.9.2-rc.5",
-    "publishedDate": "2026-10-20T16:55:52.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno",
-    "releaseVersion": "3.9.2-rc.5"
-  },
-  {
-    "id": "kyverno-01c7d6755fb7",
-    "title": "kyverno-chart-3.9.2-rc.5: chore: bump chart to 3.9.2-rc.5 for v1.19.2-rc.5 (#18132)",
-    "summary": "Signed-off-by: aerosouund aerosound161@gmail.com Co-authored-by: Claude Opus 5.5 noreply@anthropic.com",
-    "source": "Kyverno",
-    "sourceId": "kyverno",
-    "url": "https://github.com/kyverno/kyverno/releases/tag/kyverno-chart-3.9.2-rc.5",
-    "publishedDate": "2026-10-20T16:55:52.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kyverno",
-      "kubernetes",
-      "policy"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kyverno",
-    "releaseVersion": "3.9.2-rc.5"
-  },
-  {
     "id": "grafana-ed12900797a7",
     "title": "Expand what’s possible with Grafana: The Grafana Marketplace is now generally available",
     "summary": "Earlier this year, we launched the Grafana Marketplace, a platform that gives independent software vendors, systems integrators, and developers in the Grafana community a new way to sell and distribute plugins built for Grafana.The Marketplace builds on our existing plugin catalog by enabling third-party partners and developers to earn revenue from their plugins and invest further in their development. For end users, these paid Marketplace plugins come with guarantees for ongoing updates and sup",
@@ -7560,23 +7599,6 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "grafana"
-  },
-  {
-    "id": "grafana-855b3da779df",
-    "title": "ObservabilityCON 2026: A guide to all the announcements from Grafana Labs",
-    "summary": "Today at ObservabilityCON 2026 in San Francisco, we unveiled a range of new Grafana Cloud capabilities designed to reshape cloud economics, bring richer context and deeper visibility across your systems and end-user experiences, and help teams move toward autonomous operations.Check out the keynote to learn more about the latest updates to the open agentic observability cloud, and read on for a quick recap of all the news from ObservabilityCON 2026.Autonomous operations with the help of AIWith G",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/observabilitycon-2026-announcements/",
-    "publishedDate": "2026-10-20T16:30:02.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "kyverno-91100de25d27",
@@ -9800,27 +9822,5 @@
     "releaseRelated": true,
     "releaseProject": "kubernetes-releases",
     "releaseVersion": "v1.37.0"
-  },
-  {
-    "id": "holmesgpt-ce4892e53606",
-    "title": "0.40.0",
-    "summary": "What's Changed ROB-878 remove stale Sonnet 4.0/4.5 model recommendations from docs by @Sheeproid in #2378 Remove experimental Azure SQL toolset by @moshemorad in #2377 ROB-893 Fix command injection vulnerability in Kubernetes toolset by @naomi-robusta in #2382 Remove MariaDB MCP integration, consolidate to native MariaDB datasource by @moshemorad in #2389 Fix command injection in slab/kubevela/inspektor_gadget/aks toolsets (ROB-893 follow-up) by @naomi-robusta in #2386 Fix SSRF in internet/fetch",
-    "source": "HolmesGPT (Robusta)",
-    "sourceId": "holmesgpt",
-    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.40.0",
-    "publishedDate": "2026-08-26T07:30:35.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "mcp",
-      "holmesgpt",
-      "robusta",
-      "ai-sre"
-    ],
-    "importance": "high",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "holmesgpt",
-    "releaseVersion": "0.40.0"
   }
 ]

@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-24T00:53:33.000Z",
+    "publishedDate": "2026-11-24T06:14:35.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,27 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "pydantic-ai-1465ceb18ab8",
+    "title": "v2.73.0 (2026-11-23)",
+    "summary": "What's Changed ⚠️ Compatibility Notes Warn with DeprecatedModelWarning when a request targets a model Anthropic or OpenAI has deprecated by @dsfaccini in #14038 [cache] Surface OpenAI Responses input_transformations in provider_details and on the model request span by @dsfaccini in #14056 Raises the openai floor from 3.31.0 to 3.50.0 on every extra that installs openai. Add capabilities to Agent.override and export AgentInstructions and SourcedInstruction by @pydanty in #12551 The private Agent.",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.73.0",
+    "publishedDate": "2026-11-24T03:53:12.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.73.0"
   },
   {
     "id": "pydantic-ai-461d865018fd",
@@ -7379,45 +7400,5 @@
     "releaseRelated": true,
     "releaseProject": "pydantic-ai",
     "releaseVersion": "v2.35.1"
-  },
-  {
-    "id": "pydantic-ai-597530d45df0",
-    "title": "v2.35.0 (2026-08-25)",
-    "summary": "What's Changed ⚠️ Compatibility Notes Deprecate RunContext.capability_loaded and available_capability_ids in favor of capability_active and active_capability_ids by @DouweM in #7454 Make inclusive integer maximum reachable in TestModel by @pydanty in #7697 🚀 Features Reduce the default Temporal metric export frequency by @dmontagu in #7768 🐛 Bug Fixes Preserve explicit empty Tool description instead of falling back to the function docstring by @mpfaffenberger in #7759 Full Changelog: v2.34.0..",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.35.0",
-    "publishedDate": "2026-08-26T03:10:03.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai",
-    "releaseVersion": "v2.35.0"
-  },
-  {
-    "id": "pydantic-ai-6fe776eb68e9",
-    "title": "v2.34.0 (2026-08-24)",
-    "summary": "What's Changed 🚀 Features Add a LangChain migration skill by @adtyavrdhn in #7679 Add GLM-5.3 support to ZaiModel by @aisk in #7600 🐛 Bug Fixes Fix TestModel generation for equal inclusive bounds by @pydanty in #7642 Render enum $refs as Literal in FunctionSignature by @pydanty in #7579 Fix TestModel generation of falsy JSON Schema const values by @pydanty in #7630 Fix stale UIEventStream part state on cancellation by @adtyavrdhn in #7675 Only strip logit_bias from Cerebras model settings by @",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.34.0",
-    "publishedDate": "2026-08-26T03:10:03.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai",
-    "releaseVersion": "v2.34.0"
   }
 ]
