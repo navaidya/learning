@@ -1,11 +1,19 @@
 [
   {
+    "project": "argo",
+    "version": "v3.5.9",
+    "publishedDate": "2026-11-24T17:59:43.000Z",
+    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.5.9",
+    "sourceId": "argo",
+    "title": "v3.5.9"
+  },
+  {
     "project": "crossplane",
-    "version": "v2.4.4",
-    "publishedDate": "2026-11-24T10:58:58.000Z",
-    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.4.4",
+    "version": "v2.5.0",
+    "publishedDate": "2026-11-24T11:10:39.000Z",
+    "url": "https://github.com/crossplane/crossplane/releases/tag/v2.5.0",
     "sourceId": "crossplane",
-    "title": "v2.4.4"
+    "title": "v2.5.0"
   },
   {
     "project": "opentelemetry-collector",
@@ -48,6 +56,14 @@
     "title": "0.55.0"
   },
   {
+    "project": "hashicorp",
+    "version": "2.0",
+    "publishedDate": "2026-11-20T17:00:00.000Z",
+    "url": "https://www.hashicorp.com/blog/nomad-in-2026-a-year-of-scale-security-and-ecosystem-velocity",
+    "sourceId": "hashicorp",
+    "title": "Nomad in 2026: A Year of Scale, Security, and Ecosystem Velocity"
+  },
+  {
     "project": "flux",
     "version": "v2.10.1",
     "publishedDate": "2026-11-20T13:10:16.000Z",
@@ -70,14 +86,6 @@
     "url": "https://github.com/etcd-io/etcd/releases/tag/v3.7.4",
     "sourceId": "etcd",
     "title": "v3.7.4"
-  },
-  {
-    "project": "argo",
-    "version": "v3.6.2",
-    "publishedDate": "2026-11-18T20:04:42.000Z",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.6.2",
-    "sourceId": "argo",
-    "title": "v3.6.2"
   },
   {
     "project": "backstage",
@@ -182,14 +190,6 @@
     "url": "https://www.cncf.io/announcements/2026/11/10/cncf-hits-major-milestones-with-global-community-growth-record-industry-investment-and-a-new-generation-of-projects-to-build-ai-systems-in-production/",
     "sourceId": "cncf",
     "title": "CNCF Hits Major Milestones with Global Community Growth, Record Industry Investment and a New Generation of Projects to Build AI Systems in Production"
-  },
-  {
-    "project": "hashicorp",
-    "version": "2.1.0",
-    "publishedDate": "2026-11-06T08:00:00.000Z",
-    "url": "https://www.hashicorp.com/blog/consul-210-advancing-secure-resilient-connectivity-for-modern-and-agentic-applica",
-    "sourceId": "hashicorp",
-    "title": "Consul 2.1.0: Advancing secure, resilient connectivity for modern and agentic applications"
   },
   {
     "project": "kubernetes-releases",

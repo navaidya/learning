@@ -1,12 +1,32 @@
 [
   {
+    "id": "pydantic-ai-031724e287b2",
+    "title": "v1.107.11 (2026-11-24)",
+    "summary": "What's Changed Full Changelog: v1.107.10...v1.107.11",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v1.107.11",
+    "publishedDate": "2026-11-24T21:24:35.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v1.107.11"
+  },
+  {
     "id": "pydantic-ai-ec5fb94d76bf",
     "title": "CLAI2 bleeding",
     "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-24T06:14:35.000Z",
+    "publishedDate": "2026-11-24T21:18:17.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +37,48 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "langfuse-8d81b5d23ae3",
+    "title": "v4.86.0",
+    "summary": "What's Changed chore(deps): bump msgpackr to 2.1.4 for BullMQ by @nimarb in #20773 feat(mcp): render charts inline as an MCP App, served by Next.js by @tobi12345 in #20727 fix(ingestion): match TypeScript tool-column normalization by @nkabardin in #20752 fix(web): Add no-capture to session entity header by @bezbac in #20755 refactor(web): Remove code only used by stories by @bezbac in #20785 ci(ai-gateway): narrow test-ai-gateway-e2e path filter by @wochinge in #20782 docs(query-ast): point new ",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.86.0",
+    "publishedDate": "2026-11-24T18:54:46.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.86.0"
+  },
+  {
+    "id": "langfuse-b585958bacbb",
+    "title": "v4.85.0",
+    "summary": "What's Changed Features feat(billing): meter Stripe from the billable units ledger by @Steffen911 in #20526 feat(web): Use unified session & trace view for session table by @bezbac in #20373 feat(skills): remove beta badge from skill management by @tobi12345 in #20715 feat(topics): allow Topics and events dispatch on self-hosted instances by @LysanderKie in #20652 feat(topics): estimate topic processing cost before setup by @LysanderKie in #20656 feat(dashboards): filter v2 observations widgets ",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.85.0",
+    "publishedDate": "2026-11-24T13:39:19.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.85.0"
   },
   {
     "id": "pydantic-ai-1465ceb18ab8",
