@@ -1,14 +1,34 @@
 [
   {
+    "id": "pydantic-ai-ec5fb94d76bf",
+    "title": "CLAI2 bleeding",
+    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
+    "publishedDate": "2026-11-25T08:06:43.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai"
+  },
+  {
     "id": "pydantic-ai-031724e287b2",
     "title": "v1.107.11 (2026-11-24)",
-    "summary": "What's Changed Full Changelog: v1.107.10...v1.107.11",
+    "summary": "What's Changed 🛡️ Security GHSA-7xcv-6766-v6v5 (medium, CVE-2026-136643): Online evaluation let OpenTelemetry baggage in the current context set attributes on its gen_ai.evaluation.result events that the evaluation left unset, such as error.type and gen_ai.evaluation.score.value, so a client sending a baggage header could have a passing evaluation recorded with an error type, or a failed one recorded with a score. You are affected if you run online evaluation in an application whose OpenTelemet",
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v1.107.11",
-    "publishedDate": "2026-11-24T21:24:35.000Z",
-    "domain": "agentic-operations",
+    "publishedDate": "2026-11-25T00:43:56.000Z",
+    "domain": "opentelemetry",
     "topics": [
+      "opentelemetry",
       "agent-development",
       "release",
       "agentic-operations"
@@ -20,13 +40,13 @@
     "releaseVersion": "v1.107.11"
   },
   {
-    "id": "pydantic-ai-ec5fb94d76bf",
-    "title": "CLAI2 bleeding",
-    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
+    "id": "pydantic-ai-0f7a3c43cc17",
+    "title": "v2.74.0 (2026-11-24)",
+    "summary": "What's Changed 🛡️ Security GHSA-wm3r-gc4c-q7qg (medium, CVE-2026-136639): Pydantic AI Harness's PlaywrightBrowser private-address block did not refuse IPv6 site-local addresses (fec0::/10), so on a network that still routes that range, a page or URL an attacker influences could make the browser open an internal address and return its content to the model. You are affected if you use PlaywrightBrowser with block_private_addresses=True, the default, to open pages an attacker can influence. Fixed ",
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-24T21:18:17.000Z",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.74.0",
+    "publishedDate": "2026-11-25T00:43:56.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -36,7 +56,24 @@
     "importance": "high",
     "architectureShift": false,
     "releaseRelated": true,
-    "releaseProject": "pydantic-ai"
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.74.0"
+  },
+  {
+    "id": "cncf-video-94ed3368bcee",
+    "title": "When in-toto Met OPA: Turning Attestations into E2E Security &... Snahil Singh & Trishank Kuppusamy",
+    "source": "CNCF YouTube",
+    "sourceId": "cncf-video",
+    "url": "https://www.youtube.com/watch?v=pabmGK3pwAo",
+    "publishedDate": "2026-11-25T00:38:12.000Z",
+    "domain": "infrastructure",
+    "topics": [
+      "video",
+      "infrastructure"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "langfuse-8d81b5d23ae3",
@@ -7441,26 +7478,5 @@
     "releaseRelated": true,
     "releaseProject": "langgraph",
     "releaseVersion": "0.4.4"
-  },
-  {
-    "id": "pydantic-ai-ad18bbee5d23",
-    "title": "v2.35.1 (2026-08-26)",
-    "summary": "What's Changed 🐛 Bug Fixes Carry Bedrock guardrail trace in ModelResponse.provider_details by @pydanty in #7562 Honor provider_factory when cancelling Temporal responses by @DouweM in #7000 Cap dbos below 2.31.0 to avoid a missing opentelemetry-instrumentation-logging import by @dsfaccini in #7804 Full Changelog: v2.35.0...v2.35.1",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.35.1",
-    "publishedDate": "2026-08-27T04:13:40.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai",
-    "releaseVersion": "v2.35.1"
   }
 ]

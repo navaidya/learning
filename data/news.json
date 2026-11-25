@@ -7599,6 +7599,27 @@
     "releaseVersion": "1.31.3"
   },
   {
+    "id": "istio-61cadedfd9b1",
+    "title": "Announcing Istio 1.30.7",
+    "summary": "This release contains security fixes. This release note describes what&rsquo;s different between Istio 1.30.6 and 1.30.7. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Security update For more information, see ISTIO-SECURITY-2026-008. Removed trust in the compromised eMudhra intermediate CA certificates. The CA bundle in the ubun",
+    "source": "Istio",
+    "sourceId": "istio",
+    "url": "https://istio.io/latest/news/releases/1.30.x/announcing-1.30.7/",
+    "publishedDate": "2026-10-21T00:00:00.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "service-mesh",
+      "istio",
+      "networking"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "istio",
+    "releaseVersion": "1.30.7"
+  },
+  {
     "id": "grafana-ed12900797a7",
     "title": "Expand what’s possible with Grafana: The Grafana Marketplace is now generally available",
     "summary": "Earlier this year, we launched the Grafana Marketplace, a platform that gives independent software vendors, systems integrators, and developers in the Grafana community a new way to sell and distribute plugins built for Grafana.The Marketplace builds on our existing plugin catalog by enabling third-party partners and developers to earn revenue from their plugins and invest further in their development. For end users, these paid Marketplace plugins come with guarantees for ongoing updates and sup",
@@ -9798,26 +9819,5 @@
     "releaseRelated": true,
     "releaseProject": "opentofu",
     "releaseVersion": "v1.13.0-beta1"
-  },
-  {
-    "id": "istio-71fa4346196e",
-    "title": "ISTIO-SECURITY-2026-006",
-    "summary": "Disclosure Details CVE(s) CVE-2026-73513 CVE-2026-73552 CVE-2026-73512 CVE-2026-73547 CVE-2026-73549 CVE-2026-50572 CVE-2026-73546 CVE-2026-48521 CVE-2026-73551 CVE-2026-73511 CVE-2026-73548 CVE-2026-73550 CVE-2026-73553 CVSS Impact Score 7.7 CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H Affected Releases 1.29.0 to 1.29.6 1.30.0 to 1.30.3 CVE Envoy CVEs CVE-2026-73513: (CVSS score 7.5): Fixed a heap use-after-free where an untrusted upstream could send HTTP/2 response trailers without the END_STR",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/security/istio-security-2026-006/",
-    "publishedDate": "2026-08-27T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "7.7"
   }
 ]
