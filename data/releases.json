@@ -1,5 +1,37 @@
 [
   {
+    "project": "kubernetes-releases",
+    "version": "v1.35.11",
+    "publishedDate": "2026-11-25T14:57:49.000Z",
+    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.35.11",
+    "sourceId": "kubernetes-releases",
+    "title": "v1.35.11"
+  },
+  {
+    "project": "backstage",
+    "version": "v1.58.0-next.0",
+    "publishedDate": "2026-11-25T13:32:26.000Z",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.58.0-next.0",
+    "sourceId": "backstage",
+    "title": "v1.58.0-next.0"
+  },
+  {
+    "project": "pulumi",
+    "version": "v3.278.0",
+    "publishedDate": "2026-11-25T12:39:32.000Z",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.278.0",
+    "sourceId": "pulumi",
+    "title": "v3.278.0"
+  },
+  {
+    "project": "oci-oke",
+    "version": "v9.15.0",
+    "publishedDate": "2026-11-25T12:30:03.000Z",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.15.0",
+    "sourceId": "oci-oke",
+    "title": "v9.15.0"
+  },
+  {
     "project": "argo",
     "version": "v3.5.9",
     "publishedDate": "2026-11-24T17:59:43.000Z",
@@ -88,30 +120,6 @@
     "title": "v3.7.4"
   },
   {
-    "project": "backstage",
-    "version": "v1.54.12",
-    "publishedDate": "2026-11-18T15:38:51.000Z",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.12",
-    "sourceId": "backstage",
-    "title": "v1.54.12"
-  },
-  {
-    "project": "pulumi",
-    "version": "v3.277.0",
-    "publishedDate": "2026-11-18T13:02:51.000Z",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.277.0",
-    "sourceId": "pulumi",
-    "title": "v3.277.0"
-  },
-  {
-    "project": "oci-oke",
-    "version": "v9.14.0",
-    "publishedDate": "2026-11-18T12:38:55.000Z",
-    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.14.0",
-    "sourceId": "oci-oke",
-    "title": "v9.14.0"
-  },
-  {
     "project": "opentelemetry",
     "version": "1.4",
     "publishedDate": "2026-11-17T18:23:18.000Z",
@@ -192,14 +200,6 @@
     "title": "CNCF Hits Major Milestones with Global Community Growth, Record Industry Investment and a New Generation of Projects to Build AI Systems in Production"
   },
   {
-    "project": "kubernetes-releases",
-    "version": "v1.38.0-beta.0",
-    "publishedDate": "2026-11-06T04:34:14.000Z",
-    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.38.0-beta.0",
-    "sourceId": "kubernetes-releases",
-    "title": "v1.38.0-beta.0"
-  },
-  {
     "project": "prometheus",
     "version": "3.16.0",
     "publishedDate": "2026-11-05T16:06:52.000Z",
@@ -230,14 +230,6 @@
     "url": "https://github.com/grafana/tempo/releases/tag/v3.1.1",
     "sourceId": "tempo",
     "title": "v3.1.1"
-  },
-  {
-    "project": "k8sgpt",
-    "version": "v0.4.41",
-    "publishedDate": "2026-10-21T10:16:28.000Z",
-    "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.41",
-    "sourceId": "k8sgpt",
-    "title": "v0.4.41"
   },
   {
     "project": "containerd",

@@ -1,5 +1,199 @@
 [
   {
+    "id": "vector-d4e7a956ced4",
+    "title": "vdev-v0.3.46",
+    "summary": "chore(config): remove docs::required and docs::optional metadata …",
+    "source": "Vector",
+    "sourceId": "vector",
+    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.46",
+    "publishedDate": "2026-11-25T20:30:13.000Z",
+    "domain": "logging",
+    "topics": [
+      "vector",
+      "logging",
+      "pipelines"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "vector"
+  },
+  {
+    "id": "kubernetes-releases-3a7df7682c48",
+    "title": "v1.35.11",
+    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
+    "source": "Kubernetes Releases",
+    "sourceId": "kubernetes-releases",
+    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.35.11",
+    "publishedDate": "2026-11-25T14:57:49.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes-releases",
+    "releaseVersion": "v1.35.11"
+  },
+  {
+    "id": "kubernetes-releases-7bb89922a2ee",
+    "title": "v1.36.7",
+    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
+    "source": "Kubernetes Releases",
+    "sourceId": "kubernetes-releases",
+    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.36.7",
+    "publishedDate": "2026-11-25T14:57:06.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes-releases",
+    "releaseVersion": "v1.36.7"
+  },
+  {
+    "id": "kubernetes-releases-4e80c822b625",
+    "title": "v1.37.3",
+    "summary": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
+    "source": "Kubernetes Releases",
+    "sourceId": "kubernetes-releases",
+    "url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.3",
+    "publishedDate": "2026-11-25T14:55:41.000Z",
+    "domain": "kubernetes",
+    "topics": [
+      "kubernetes",
+      "release"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "kubernetes-releases",
+    "releaseVersion": "v1.37.3"
+  },
+  {
+    "id": "backstage-d3bb556147cb",
+    "title": "v1.58.0-next.0",
+    "summary": "See docs/releases/v1.58.0-next.0-changelog.md for more information.",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.58.0-next.0",
+    "publishedDate": "2026-11-25T13:32:26.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.58.0-next.0"
+  },
+  {
+    "id": "pulumi-962730eaa6bc",
+    "title": "v3.278.0",
+    "summary": "3.278.0 (2026-11-24) Features [protobuf] Let providers send a product hint for a failure, starting with dynamic credentials #25783 [cli] Add notifications from Pulumi after commands, which pulumi notifications dismiss hides and PULUMI_HIDE_NOTIFICATIONS turns off #25686 Bug Fixes [sdk/nodejs] Flush OpenTelemetry traces when Node.js programs exit with errors #25800 [cli/policy] Explain typos, unknown stacks, change request IDs and invalid flags in the experimental pulumi policy exception commands",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/v3.278.0",
+    "publishedDate": "2026-11-25T12:39:32.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "opentelemetry",
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.278.0"
+  },
+  {
+    "id": "oci-oke-e378076b57aa",
+    "title": "v9.15.0",
+    "summary": "9.15.0 (November 25, 2026) Added Support for Thales HSM support for ADBD and ADB-CC Support for OCI GoldenGate deployment type: Oracle AI Data Catalog Support for Strengthening control-plane security, automation, scalability, and observability Support for standalone instance pool maintenance policy Support for OCI Batch Service capacity reservations Bug Fix DataSafe Audit profile management resource update and retention fix Correct Terraform compartment-name uniqueness documentation Preserve zer",
+    "source": "OCI / OKE",
+    "sourceId": "oci-oke",
+    "url": "https://github.com/oracle/terraform-provider-oci/releases/tag/v9.15.0",
+    "publishedDate": "2026-11-25T12:30:03.000Z",
+    "domain": "terraform",
+    "topics": [
+      "terraform",
+      "oci",
+      "oke",
+      "oracle"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "oci-oke",
+    "releaseVersion": "v9.15.0"
+  },
+  {
+    "id": "cncf-8f50bd579a11",
+    "title": "🚀 The story behind “Drone 2”: My KubeCon + CloudNativeCon North America 2026 keynote",
+    "summary": "An open source adventure featuring Kubernetes, agent-substrate, kagent, AI agents, drones, and more! Just 30 seconds before going live for the KubeCon + CloudNativeCon NA 2026 closing keynote, “Cloud Native Without Limits: What Can AI Agents...",
+    "source": "CNCF",
+    "sourceId": "cncf",
+    "url": "https://www.cncf.io/blog/2026/11/25/%f0%9f%9a%80-the-story-behind-drone-2-my-kubecon-cloudnativecon-north-america-2026-keynote/",
+    "publishedDate": "2026-11-25T12:30:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "cncf",
+      "cloud-native"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
+  },
+  {
+    "id": "pulumi-93b09b40405e",
+    "title": "sdk/v3.278.0: Update registry methods to use property.Map (#25850)",
+    "summary": "This updates the registry methods (like GetProviderName, SetProviderVersion) to work on property.Map instead of resource.PropertyMap. As property.Map is immutable the Set* methods now return a new map.",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.278.0",
+    "publishedDate": "2026-11-24T21:08:17.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.278.0"
+  },
+  {
+    "id": "pulumi-0d3d911b3b9d",
+    "title": "pkg/v3.278.0: Update registry methods to use property.Map (#25850)",
+    "summary": "This updates the registry methods (like GetProviderName, SetProviderVersion) to work on property.Map instead of resource.PropertyMap. As property.Map is immutable the Set* methods now return a new map.",
+    "source": "Pulumi",
+    "sourceId": "pulumi",
+    "url": "https://github.com/pulumi/pulumi/releases/tag/pkg%2Fv3.278.0",
+    "publishedDate": "2026-11-24T21:08:17.000Z",
+    "domain": "terraform",
+    "topics": [
+      "pulumi",
+      "iac"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pulumi",
+    "releaseVersion": "v3.278.0"
+  },
+  {
     "id": "argo-39d8cde063bb",
     "title": "v3.5.9",
     "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.9/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.5.9/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container imag",
@@ -7403,24 +7597,6 @@
     "releaseRelated": false
   },
   {
-    "id": "cncf-9301678f5697",
-    "title": "Distributed tracing for CI pipelines without touching a single workflow file",
-    "summary": "You’ve probably felt this one: GitHub Actions usage creeps up across your org, and your actual visibility into it doesn’t keep pace. Which workflows are slow? Which are flaky? How long are jobs sitting queued for...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/10/21/distributed-tracing-for-ci-pipelines-without-touching-a-single-workflow-file-2/",
-    "publishedDate": "2026-10-21T11:00:00.000Z",
-    "domain": "tracing",
-    "topics": [
-      "tracing",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
     "id": "prometheus-18695e59ebcc",
     "title": "v0.313.5",
     "summary": "v0.313.5",
@@ -7439,104 +7615,6 @@
     "releaseRelated": true,
     "releaseProject": "prometheus",
     "releaseVersion": "v0.313.5"
-  },
-  {
-    "id": "k8sgpt-31cc07cc431a",
-    "title": "v0.4.41",
-    "summary": "0.4.41 (2026-10-20) Features add Claude 4.5 and 5.x models for Amazon Bedrock (#1819) (a49636c) enable to source customHeaders from the config file (#1339) (37b87f1) prompt to auto-pull missing ollama models (#1766) (e977dc5) Bug Fixes accept an empty storageClassName in StatefulSet claim templates (#1830) (642c3a4) do not report an unsupported KEDA scaleTargetRef as missing (#1831) (7fd1b40) harden completion calls against empty responses and hangs (#1731) (dca17b9) honor matchExpressions in Ne",
-    "source": "K8sGPT",
-    "sourceId": "k8sgpt",
-    "url": "https://github.com/k8sgpt-ai/k8sgpt/releases/tag/v0.4.41",
-    "publishedDate": "2026-10-21T10:16:28.000Z",
-    "domain": "aiops",
-    "topics": [
-      "k8sgpt",
-      "ai-sre"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "k8sgpt",
-    "releaseVersion": "v0.4.41"
-  },
-  {
-    "id": "openai-d3f519557f32",
-    "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
-    "summary": "Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
-    "publishedDate": "2026-10-21T07:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "openai",
-      "ai-agent",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "openai-1de8e62ff715",
-    "title": "Using thousands of AI agents to uncover new leads in biological data",
-    "summary": "See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells.",
-    "source": "OpenAI Developer Updates",
-    "sourceId": "openai",
-    "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
-    "publishedDate": "2026-10-21T04:50:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "ai-agent",
-      "openai",
-      "mcp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "argo-d1f0d0c2ff53",
-    "title": "v3.3.17",
-    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.3.17/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.3.17/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container im",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.3.17",
-    "publishedDate": "2026-10-21T03:44:43.000Z",
-    "domain": "gitops",
-    "topics": [
-      "gitops",
-      "argo-cd",
-      "argo",
-      "argocd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "v3.3.17"
-  },
-  {
-    "id": "argo-95b00e8d259f",
-    "title": "v3.4.12",
-    "summary": "Quick Start Non-HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.4.12/manifests/install.yaml HA: kubectl create namespace argocd kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.4.12/manifests/ha/install.yaml Release Signatures and Provenance All Argo CD container images are signed by cosign. A Provenance is generated for container im",
-    "source": "Argo",
-    "sourceId": "argo",
-    "url": "https://github.com/argoproj/argo-cd/releases/tag/v3.4.12",
-    "publishedDate": "2026-10-21T00:42:15.000Z",
-    "domain": "gitops",
-    "topics": [
-      "gitops",
-      "argo-cd",
-      "argo",
-      "argocd"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "argo",
-    "releaseVersion": "v3.4.12"
   },
   {
     "id": "openai-9201054eeb4c",
@@ -7576,48 +7654,6 @@
     "releaseRelated": true,
     "releaseProject": "istio",
     "releaseVersion": "1.31.0"
-  },
-  {
-    "id": "istio-c0476567be45",
-    "title": "Announcing Istio 1.31.3",
-    "summary": "This release contains security fixes. This release note describes what&rsquo;s different between Istio 1.31.2 and 1.31.3. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Security update For more information, see ISTIO-SECURITY-2026-008. Removed trust in the compromised eMudhra intermediate CA certificates. The CA bundle in the ubun",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/releases/1.31.x/announcing-1.31.3/",
-    "publishedDate": "2026-10-21T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "1.31.3"
-  },
-  {
-    "id": "istio-61cadedfd9b1",
-    "title": "Announcing Istio 1.30.7",
-    "summary": "This release contains security fixes. This release note describes what&rsquo;s different between Istio 1.30.6 and 1.30.7. BEFORE YOU UPGRADE Things to know and prepare before upgrading. DOWNLOAD Download and install this release. DOCS Visit the documentation for this release. SOURCE CHANGES Inspect the full set of source code changes. Security update For more information, see ISTIO-SECURITY-2026-008. Removed trust in the compromised eMudhra intermediate CA certificates. The CA bundle in the ubun",
-    "source": "Istio",
-    "sourceId": "istio",
-    "url": "https://istio.io/latest/news/releases/1.30.x/announcing-1.30.7/",
-    "publishedDate": "2026-10-21T00:00:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes",
-      "service-mesh",
-      "istio",
-      "networking"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "istio",
-    "releaseVersion": "1.30.7"
   },
   {
     "id": "grafana-ed12900797a7",
@@ -9781,43 +9817,5 @@
     "releaseRelated": true,
     "releaseProject": "containerd",
     "releaseVersion": "1.12.0-rc.0"
-  },
-  {
-    "id": "kubernetes-f1d9baa9495e",
-    "title": "Kubernetes v1.37: Metrics API graduates to stable",
-    "summary": "Kubernetes v1.37 promotes the metrics.k8s.io API to stable (v1). This API provides CPU and memory usage for nodes and Pods, and is the API behind commands such as kubectl top and resource-metrics-based autoscaling. For cluster operators and application developers, this graduation means that the API now has the stability guarantees associated with a Kubernetes stable API. The v1 API has the same resource types and fields as v1beta1; this is an API-version graduation, not a change to the metrics t",
-    "source": "Kubernetes",
-    "sourceId": "kubernetes",
-    "url": "https://kubernetes.io/blog/2026/08/27/kubernetes-v1-37-metrics-api-ga/",
-    "publishedDate": "2026-08-27T18:30:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes"
-    ],
-    "importance": "critical",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "kubernetes",
-    "releaseVersion": "v1.37"
-  },
-  {
-    "id": "opentofu-872e2b0b2cd2",
-    "title": "v1.13.0-beta1",
-    "summary": "The v1.13.x release series is supported until August 1 2027. 1.13.0 (Unreleased) UPGRADE NOTES: The \"winrm\" connection type for provisioners is no longer supported. (#4012) This connection type was deprecated in OpenTofu v1.12, and now removed in v1.13. Some of the upstream libraries OpenTofu was using to implement these features are no longer maintained, so it's not viable for us to offer this anymore. Modern Windows versions now support OpenSSH, and so we suggest that anyone currently relying ",
-    "source": "OpenTofu",
-    "sourceId": "opentofu",
-    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1",
-    "publishedDate": "2026-08-27T18:01:40.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "opentofu",
-      "iac"
-    ],
-    "importance": "high",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "opentofu",
-    "releaseVersion": "v1.13.0-beta1"
   }
 ]
