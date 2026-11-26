@@ -1,5 +1,45 @@
 [
   {
+    "id": "pydantic-ai-ec5fb94d76bf",
+    "title": "CLAI2 bleeding",
+    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
+    "publishedDate": "2026-11-26T08:18:04.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "phoenix-fba81c19c353",
+    "title": "arize-phoenix: v22.1.0",
+    "summary": "22.1.0 (2026-11-26) Features api: add GET /spans/{span_identifier} endpoint to fetch a single span (#18229) (88ad514) cli: add px project create command (#17052) (d3eafcb), closes #12031 cli: add px setup doctor to diagnose connection problems (#18069) (697aaca) client: add model-provider listing helper (#15744) (da8995e) datasets: permanently delete dataset examples (#17968) (c822820) harbor: add eval-workflows tasks built on seeded Phoenix state (#17952) (8f1dd1e) make playground task timeout ",
+    "source": "Arize Phoenix",
+    "sourceId": "phoenix",
+    "url": "https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v22.1.0",
+    "publishedDate": "2026-11-26T07:57:33.000Z",
+    "domain": "tracing",
+    "topics": [
+      "tracing",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "phoenix",
+    "releaseVersion": "v22.1.0"
+  },
+  {
     "id": "langgraph-7a4f9d0d8c65",
     "title": "langgraph-cli==0.4.44",
     "summary": "Changes since cli==0.4.43 feat(cli): add url to deploy list --json (#9793) release(cli): 0.4.44 (#9794) fix(cli): omit an empty secrets list when updating a deployment (#9737) chore(deps): bump opentelemetry-api from 1.45.1 to 1.45.2 in /libs/cli (#9695) feat(cli): deploy to BYOC data planes with only an API key (#9692)",
@@ -39,25 +79,6 @@
     "releaseRelated": true,
     "releaseProject": "pydantic-ai",
     "releaseVersion": "v2.75.0"
-  },
-  {
-    "id": "pydantic-ai-ec5fb94d76bf",
-    "title": "CLAI2 bleeding",
-    "summary": "Sdists rebuilt from main for /update on the CLAI bleeding channel. Not a release.",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-25T17:32:34.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai"
   },
   {
     "id": "pydantic-ai-031724e287b2",
@@ -7459,45 +7480,5 @@
     "releaseRelated": true,
     "releaseProject": "pydantic-ai",
     "releaseVersion": "v2.36.0"
-  },
-  {
-    "id": "practical-ai-4e68028f529d",
-    "title": "Building the Foundation for the Agentic AI Era",
-    "summary": "How do we build an AI ecosystem where agents, tools, and systems can work together at scale? Angie Jones, VP of the Agentic AI Foundation, joins Chris to discuss the open standards and projects shaping the agentic future, including MCP, A2A, Goose, etc. They also explore what it takes to drive AI adoption across an entire organization, the importance of neutral standards, global perspectives on agentic AI, and how humans can find the right balance between what they delegate to AI and what they d",
-    "source": "Practical AI",
-    "sourceId": "practical-ai",
-    "url": "https://share.transistor.fm/s/123da941",
-    "publishedDate": "2026-08-28T09:00:00.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "mcp",
-      "podcast",
-      "agent-development"
-    ],
-    "importance": "high",
-    "architectureShift": true,
-    "releaseRelated": false
-  },
-  {
-    "id": "pydantic-ai-c55ebb237b56",
-    "title": "v2.35.3 (2026-08-27)",
-    "summary": "What's Changed 🐛 Bug Fixes Route Heroku GLM models through zai_model_profile by @LHMQ878 in #6837 Scope safe_download cookies to original hostnames by @Diwak4r in #7077 Fix DeferredToolRequests.remaining resolving cross-category result IDs by @pydanty in #7626 Identify rejected runtime toolsets in durable execution errors by @pydanty in #6784 Un-cap the dbos extra; add opentelemetry-instrumentation-logging as a test dependency instead by @dsfaccini in #7820 Full Changelog: v2.35.1...v2.35.3",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.35.3",
-    "publishedDate": "2026-08-28T00:39:29.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "agent-development",
-      "release",
-      "agentic-operations"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai",
-    "releaseVersion": "v2.35.3"
   }
 ]
