@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-26T08:18:04.000Z",
+    "publishedDate": "2026-11-26T22:07:34.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,67 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "langfuse-4f2ceafafab1",
+    "title": "v4.88.0",
+    "summary": "What's Changed Features feat(sharing): let orgs and instances disable public trace and session sharing by @marcklingen in #20463 feat(ai-gateway): link unpriced usage alert to organization models by @hassiebp in #20977 feat(mcp): record client capabilities and extensions on MCP spans by @tobi12345 in #20982 feat(ai-gateway): add redact guardrail action by @wochinge in #20848 feat(web): create the onboarding API key as a named Developer key by @AbdallahAHO in #20603 feat(web): sticky session navi",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.88.0",
+    "publishedDate": "2026-11-26T16:51:27.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "mcp",
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "critical",
+    "architectureShift": true,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.88.0"
+  },
+  {
+    "id": "langfuse-8832493babf8",
+    "title": "v4.87.0",
+    "summary": "What's Changed feat(evals): mark the evaluated observation in the sample trace view by @marliessophie in #20810 fix(topics): back off on summary rate limits instead of resending them by @LysanderKie in #20817 fix(ai-gateway): filter gateway key options by selected users by @wochinge in #20835 feat(ai-gateway): block or log requests whose last turn matches a guardrail by @wochinge in #20734 feat(ai-gateway): add reset budget action for users and API keys by @wochinge in #20735 refactor(web): remo",
+    "source": "Langfuse",
+    "sourceId": "langfuse",
+    "url": "https://github.com/langfuse/langfuse/releases/tag/v4.87.0",
+    "publishedDate": "2026-11-26T11:22:05.000Z",
+    "domain": "opentelemetry",
+    "topics": [
+      "agent-observability",
+      "release",
+      "opentelemetry"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "langfuse",
+    "releaseVersion": "v4.87.0"
+  },
+  {
+    "id": "practical-ai-7adef1ab4e31",
+    "title": "Humans in a Post-Human World",
+    "summary": "I’ve spent more than forty years writing software. AI agents now write it better than I do. My daughter Athena is fourteen and earns straight A’s in high school. How do I help her choose a career when her AI study partner will likely do that work better than she can?Today those agents are my teammates, and I still decide what we’re trying to build. If machines eventually do all the work, where does that leave me? And who earns the money to buy what they make?As an AI and autonomy research engine",
+    "source": "Practical AI",
+    "sourceId": "practical-ai",
+    "url": "https://share.transistor.fm/s/45701c1a",
+    "publishedDate": "2026-11-26T10:00:00.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agentic-operations",
+      "ai-agent",
+      "podcast",
+      "agent-development"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": false
   },
   {
     "id": "phoenix-fba81c19c353",

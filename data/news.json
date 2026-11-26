@@ -1,5 +1,106 @@
 [
   {
+    "id": "robusta-4852a0526917",
+    "title": "0.56.0-alpha",
+    "summary": "What's Changed Docs: make the Quick Diagnosis box readable in dark mode by @Sheeproid in #2234 Remove the unused outgoing action request helper by @naomi-robusta in #2235 Remove Helm releases monitoring by @naomi-robusta in #2242 Bump kube-prometheus-stack chart to 93.11.1 by @Avi-Robusta in #2247 Update kubewatch to v2.17.0 and holmes to 0.48.0 by @Avi-Robusta in #2245 Remove unused actions and add the commandActions setting by @naomi-robusta in #2230 Update KRR scan scheduling by @Avi-Robusta ",
+    "source": "Robusta",
+    "sourceId": "robusta",
+    "url": "https://github.com/robusta-dev/robusta/releases/tag/0.56.0-alpha",
+    "publishedDate": "2026-11-26T16:14:51.000Z",
+    "domain": "prometheus",
+    "topics": [
+      "prometheus",
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "robusta",
+    "releaseVersion": "0.56.0-alpha"
+  },
+  {
+    "id": "backstage-bafa1d79d703",
+    "title": "v1.57.3",
+    "summary": "This patch release fixes the following issues: Fixed same-origin absolute link URLs navigating to broken paths such as /https:/example.com/page through the legacy Backstage UI router bridge",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.57.3",
+    "publishedDate": "2026-11-26T14:41:27.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "platform-engineering",
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.57.3"
+  },
+  {
+    "id": "holmesgpt-5f8c0755a3ba",
+    "title": "0.48.0",
+    "summary": "What's Changed Build the macOS release binary on macos-15 by @Avi-Robusta in #2776 Connect realtime with the key the Supabase DAL logged in with by @Avi-Robusta in #2788 Update internet toolset fetch handling by @naomi-robusta in #2778 Full Changelog: 0.47.0...0.48.0",
+    "source": "HolmesGPT (Robusta)",
+    "sourceId": "holmesgpt",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.48.0",
+    "publishedDate": "2026-11-26T12:02:02.000Z",
+    "domain": "aiops",
+    "topics": [
+      "holmesgpt",
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "holmesgpt",
+    "releaseVersion": "0.48.0"
+  },
+  {
+    "id": "backstage-028649a35965",
+    "title": "v1.57.2",
+    "summary": "This patch release fixes the following issues: Fixed sub-pages with an empty path not rendering for paths below them, such as a detail route inside an index tab",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.57.2",
+    "publishedDate": "2026-11-26T11:10:35.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.57.2"
+  },
+  {
+    "id": "holmesgpt-334831726e22",
+    "title": "0.48.0-alpha",
+    "summary": "What's Changed Build the macOS release binary on macos-15 by @Avi-Robusta in #2776 Connect realtime with the key the Supabase DAL logged in with by @Avi-Robusta in #2788 Update internet toolset fetch handling by @naomi-robusta in #2778 Full Changelog: 0.47.0...0.48.0-alpha",
+    "source": "HolmesGPT (Robusta)",
+    "sourceId": "holmesgpt",
+    "url": "https://github.com/HolmesGPT/holmesgpt/releases/tag/0.48.0-alpha",
+    "publishedDate": "2026-11-26T10:04:56.000Z",
+    "domain": "aiops",
+    "topics": [
+      "holmesgpt",
+      "robusta",
+      "ai-sre"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "holmesgpt",
+    "releaseVersion": "0.48.0-alpha"
+  },
+  {
     "id": "vector-d4e7a956ced4",
     "title": "vdev-v0.3.46",
     "summary": "chore(config): remove docs::required and docs::optional metadata …",
@@ -7520,26 +7621,6 @@
     "releaseVersion": "v0.315.1"
   },
   {
-    "id": "backstage-4ac8733e4317",
-    "title": "v1.56.1",
-    "summary": "This patch release contains the following commits: fix(catalog): match URL locations in catalog rules in canonical form fix: improve placeholder repository validation",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.56.1",
-    "publishedDate": "2026-10-21T13:16:53.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.56.1"
-  },
-  {
     "id": "prometheus-775b5ff21bd1",
     "title": "3.13.5 / 2026-10-21",
     "summary": "[SECURITY] Container images: Update CA certificates to distrust \"emSign ECC Root CA - G3\" and \"Comodo AAA Services root\" following the compromise of eMudhra intermediate CA private keys. [SECURITY] Build with Go 1.26.10 to fix vulnerabilities in net/http, net/textproto, crypto/tls and html/template. [SECURITY] Bump golang.org/x/net to v0.60.0 to fix HTTP/2 vulnerabilities (GO-2026-6603, GO-2026-6610, GO-2026-6611, GO-2026-6612, GO-2026-6617). [SECURITY] Bump OpenTelemetry to v1.45.0 to fix expor",
@@ -7559,42 +7640,6 @@
     "releaseRelated": true,
     "releaseProject": "prometheus",
     "releaseVersion": "3.13.5"
-  },
-  {
-    "id": "opentelemetry-f3c3a7f0f19a",
-    "title": "The Humans of OpenTelemetry - KubeCon Japan 2026",
-    "summary": "We&rsquo;re back with our fifth edition of Humans of OpenTelemetry, and for the first time, from Japan! At KubeCon + CloudNativeCon Japan 2026 in Yokohama, I interviewed OpenTelemetry end users and practitioners from the Japanese cloud native community, and learned how they got involved with OTel: Yuzuru Ohira (LayerX) Chikahisa Mikata (Loglass) Yoshiki Fujikane (CyberAgent) Takashi Okamoto (NTT DATA) Kohei Sugimoto (MIXI) The interviews were conducted in Japanese, and the transcript below is an",
-    "source": "OpenTelemetry",
-    "sourceId": "opentelemetry",
-    "url": "https://opentelemetry.io/blog/2026/humans-of-otel-japan/",
-    "publishedDate": "2026-10-21T11:33:27.000Z",
-    "domain": "opentelemetry",
-    "topics": [
-      "opentelemetry",
-      "otel",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "cncf-a69027169a9a",
-    "title": "Before you evaluate an AI SRE, give your existing agent context",
-    "summary": "If you’re evaluating AI SRE products, you probably own most of one already. The coding agent your engineers use, whether that’s Claude Code, Codex or Cursor, can already investigate a Kubernetes cluster. What it usually lacks...",
-    "source": "CNCF",
-    "sourceId": "cncf",
-    "url": "https://www.cncf.io/blog/2026/10/21/before-you-evaluate-an-ai-sre-give-your-existing-agent-context/",
-    "publishedDate": "2026-10-21T11:00:00.000Z",
-    "domain": "aiops",
-    "topics": [
-      "aiops",
-      "cncf",
-      "cloud-native"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
   },
   {
     "id": "prometheus-18695e59ebcc",
@@ -9779,43 +9824,5 @@
     "releaseRelated": true,
     "releaseProject": "istio",
     "releaseVersion": "1.31.0"
-  },
-  {
-    "id": "kubernetes-62fba4389f31",
-    "title": "Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles",
-    "summary": "Pod Certificate / Cluster Trust Bundles Blog PostKubernetes brings a wealth of features that make it easy to run your production workloads securely and reliably. While aspects like scheduling, health checks and resource limits are probably at the front of your mind, one other important feature of Kubernetes is production identity — how your workload can authenticate to other systems in order to do its job. Up until now, the primary production identity mechanism built into Kubernetes has been ser",
-    "source": "Kubernetes",
-    "sourceId": "kubernetes",
-    "url": "https://kubernetes.io/blog/2026/08/28/kubernetes-v1-37-pod-certificates-and-cluster-trust-bundles/",
-    "publishedDate": "2026-08-28T18:30:00.000Z",
-    "domain": "kubernetes",
-    "topics": [
-      "kubernetes"
-    ],
-    "importance": "high",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "kubernetes",
-    "releaseVersion": "v1.37"
-  },
-  {
-    "id": "containerd-df2a0d49abb8",
-    "title": "containerd API 1.12.0-rc.0",
-    "summary": "Welcome to the api/v1.12.0-rc.0 release of containerd! This is a pre-release of containerd The 13th release for the containerd 1.x API aligns with the containerd 2.4 release. Highlights Include media type in content create event (#13833) Add parent path to runc checkpoint options (#13699) Deprecations Deprecate \"allow mount handlers\" in shim info and replace with mount capability extension (#14002) Fix sandbox task API endpoints for non-runc runtimes (#13360) Please try out the release binaries ",
-    "source": "containerd",
-    "sourceId": "containerd",
-    "url": "https://github.com/containerd/containerd/releases/tag/api%2Fv1.12.0-rc.0",
-    "publishedDate": "2026-08-28T17:59:38.000Z",
-    "domain": "containers",
-    "topics": [
-      "containers",
-      "containerd",
-      "runtime"
-    ],
-    "importance": "high",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "containerd",
-    "releaseVersion": "1.12.0-rc.0"
   }
 ]
