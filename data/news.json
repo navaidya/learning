@@ -1,5 +1,146 @@
 [
   {
+    "id": "loki-b0bd6e50210b",
+    "title": "v4.0.0-rc.6",
+    "summary": "4.0.0-rc.6 (2026-11-27) Bug Fixes frontend: Fail requests that cannot be encoded without closing the scheduler stream [release-4.0.0] (#26771) (765282b)",
+    "source": "Grafana Loki",
+    "sourceId": "loki",
+    "url": "https://github.com/grafana/loki/releases/tag/v4.0.0-rc.6",
+    "publishedDate": "2026-11-27T16:23:17.000Z",
+    "domain": "logging",
+    "topics": [
+      "loki",
+      "logging",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "loki",
+    "releaseVersion": "v4.0.0-rc.6"
+  },
+  {
+    "id": "loki-8578ce087b88",
+    "title": "v4.0.0-rc.5",
+    "summary": "4.0.0-rc.5 (2026-11-27) Features logql: Add a multi_tenant label to loki_logql_querystats_bytes_processed_total [release-4.0.0] (#26757) (17a6b50) storage: Allow GLACIER_IR and INTELLIGENT_TIERING S3 storage classes [release-4.0.0] (#26751) (901d470) Bug Fixes loghttp: Reject times before 1970 or after the int64 nanosecond limit [release-4.0.0] (#26754) (20e39ea) mixin: Add reason label to duplicate LokiCompactorHasNotSuccessfullyRunCompaction alerts [release-4.0.0] (#26749) (37f29fc) pattern: D",
+    "source": "Grafana Loki",
+    "sourceId": "loki",
+    "url": "https://github.com/grafana/loki/releases/tag/v4.0.0-rc.5",
+    "publishedDate": "2026-11-27T16:23:02.000Z",
+    "domain": "logging",
+    "topics": [
+      "loki",
+      "logging",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "loki",
+    "releaseVersion": "v4.0.0-rc.5"
+  },
+  {
+    "id": "loki-d66df21a4b6c",
+    "title": "v3.7.11",
+    "summary": "3.7.11 (2026-11-27) Bug Fixes compactor: Prevent FD leak on partial compaction failure [release-3.7.x] (#26494) (56f8c86) frontend: Fail requests that cannot be encoded without closing the scheduler stream [release-3.7.x] (#26770) (73a0f23) loghttp: Reject times before 1970 or after the int64 nanosecond limit [release-3.7.x] (#26760) (5aec99d) pattern: Drain aggregation Push buffer on Stop [release-3.7.x] (#26674) (3f0f973) pattern: Retry 429 and 5xx pushes and drop other client errors [release-",
+    "source": "Grafana Loki",
+    "sourceId": "loki",
+    "url": "https://github.com/grafana/loki/releases/tag/v3.7.11",
+    "publishedDate": "2026-11-27T15:07:01.000Z",
+    "domain": "logging",
+    "topics": [
+      "loki",
+      "logging",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "loki",
+    "releaseVersion": "v3.7.11"
+  },
+  {
+    "id": "loki-b1c8dfc67381",
+    "title": "v3.6.23",
+    "summary": "3.6.23 (2026-11-27) Bug Fixes frontend: Fail requests that cannot be encoded without closing the scheduler stream [release-3.6.x] (#26769) (0b8787c) loghttp: Reject times before 1970 or after the int64 nanosecond limit [release-3.6.x] (#26759) (124b579)",
+    "source": "Grafana Loki",
+    "sourceId": "loki",
+    "url": "https://github.com/grafana/loki/releases/tag/v3.6.23",
+    "publishedDate": "2026-11-27T15:03:53.000Z",
+    "domain": "logging",
+    "topics": [
+      "loki",
+      "logging",
+      "observability"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "loki",
+    "releaseVersion": "v3.6.23"
+  },
+  {
+    "id": "backstage-61661599daa6",
+    "title": "v1.56.7",
+    "summary": "The URL readers now match Azure Blob Storage URLs against integrations by exact account host, derive the base of Gerrit and Bitbucket Cloud request URLs from the parsed URL rather than the raw string, and reject SCM URLs whose repository, owner, or reference parts contain path traversal or URL query and fragment delimiter sequences. OIDC redirect URI and client ID patterns configured for the auth backend now match URL paths case-sensitively, while the host part of a URL stays case-insensitive as",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.56.7",
+    "publishedDate": "2026-11-27T13:56:53.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.56.7"
+  },
+  {
+    "id": "backstage-d5f95d1e3cfd",
+    "title": "v1.54.13",
+    "summary": "The URL readers now match Azure Blob Storage URLs against integrations by exact account host, derive the base of Gerrit and Bitbucket Cloud request URLs from the parsed URL rather than the raw string, and reject SCM URLs whose repository, owner, or reference parts contain path traversal or URL query and fragment delimiter sequences. The GitHub entity provider now percent-encodes the committed file paths and branch names in the catalog location URLs and refresh keys it builds, and ignores file pa",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.13",
+    "publishedDate": "2026-11-27T13:56:52.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.54.13"
+  },
+  {
+    "id": "backstage-1ee73afa5086",
+    "title": "v1.57.4",
+    "summary": "The URL readers and the SCM URL helpers now validate the owner, repository, and reference parts of the URLs they handle, and derive request base URLs from the parsed URL rather than the raw string. This is a minor release of @backstage/integration. GitHub App allowedInstallationOwners is now applied consistently, both when enumerating the app installations and in the publicAccess token fallback. Catalog location URLs and refresh keys built by the GitHub and Azure DevOps modules now percent-encod",
+    "source": "Backstage",
+    "sourceId": "backstage",
+    "url": "https://github.com/backstage/backstage/releases/tag/v1.57.4",
+    "publishedDate": "2026-11-27T12:55:09.000Z",
+    "domain": "platform-engineering",
+    "topics": [
+      "platform-engineering",
+      "backstage",
+      "developer-portal",
+      "idp"
+    ],
+    "importance": "medium",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "backstage",
+    "releaseVersion": "v1.57.4"
+  },
+  {
     "id": "robusta-4852a0526917",
     "title": "0.56.0-alpha",
     "summary": "What's Changed Docs: make the Quick Diagnosis box readable in dark mode by @Sheeproid in #2234 Remove the unused outgoing action request helper by @naomi-robusta in #2235 Remove Helm releases monitoring by @naomi-robusta in #2242 Bump kube-prometheus-stack chart to 93.11.1 by @Avi-Robusta in #2247 Update kubewatch to v2.17.0 and holmes to 0.48.0 by @Avi-Robusta in #2245 Remove unused actions and add the commandActions setting by @naomi-robusta in #2230 Update KRR scan scheduling by @Avi-Robusta ",
@@ -7465,140 +7606,6 @@
     "releaseRelated": true,
     "releaseProject": "tempo",
     "releaseVersion": "v3.0.5"
-  },
-  {
-    "id": "grafana-9e65cdc52c5b",
-    "title": "Spend less time on operational busywork and resolve incidents faster with Grafana Workflows",
-    "summary": "You're investigating checkout errors when someone asks who's coordinating the incident. Support needs an update, and another responder is looking for the runbook. You stop what you're doing to get everyone pointed in the same direction.They're all reasonable requests, but each one takes your attention away from understanding the problem. Yes, your team has a process for handling incidents, but carrying it out is another job for someone who's already busy.Grafana Workflows, available in public pr",
-    "source": "Grafana Labs",
-    "sourceId": "grafana",
-    "url": "https://grafana.com/blog/spend-less-time-on-operational-busywork-and-resolve-incidents-faster-with-grafana-workflows/",
-    "publishedDate": "2026-10-21T15:06:02.000Z",
-    "domain": "grafana",
-    "topics": [
-      "grafana",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": false
-  },
-  {
-    "id": "tempo-d5ac2425cf49",
-    "title": "v2.10.10",
-    "summary": "Security deps: Update Go to 1.26.10 (CVE-2026-111943) (#8146) (@mdisibio)",
-    "source": "Grafana Tempo",
-    "sourceId": "tempo",
-    "url": "https://github.com/grafana/tempo/releases/tag/v2.10.10",
-    "publishedDate": "2026-10-21T14:41:10.000Z",
-    "domain": "tracing",
-    "topics": [
-      "tempo",
-      "tracing",
-      "observability"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "tempo",
-    "releaseVersion": "v2.10.10"
-  },
-  {
-    "id": "opentofu-b2e6c7389ff9",
-    "title": "v1.13.2",
-    "summary": "SECURITY ADVISORIES: Previous versions of OpenTofu could potentially experience excessive CPU usage if connecting to an attacker-controlled HTTP2 server while installing dependencies in tofu init. (#4681) Filter out compromised intermediate certificates (#4750) BUG FIXES: Lifecycle destroy will no longer crash when given an expression with references (#4648) tofu workspace select and tofu workspace delete autocompletion predicts from the existing workspaces. This restores the behavior pre-v1.13 ",
-    "source": "OpenTofu",
-    "sourceId": "opentofu",
-    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.2",
-    "publishedDate": "2026-10-21T14:36:09.000Z",
-    "domain": "terraform",
-    "topics": [
-      "terraform",
-      "opentofu",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentofu",
-    "releaseVersion": "v1.13.2"
-  },
-  {
-    "id": "vector-55281962dfe2",
-    "title": "vdev-v0.3.33",
-    "summary": "fix(vdev): preserve build artifacts during test cleanup (#26736)",
-    "source": "Vector",
-    "sourceId": "vector",
-    "url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.33",
-    "publishedDate": "2026-10-21T14:27:41.000Z",
-    "domain": "logging",
-    "topics": [
-      "vector",
-      "logging",
-      "pipelines"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "vector"
-  },
-  {
-    "id": "backstage-9cc90d080fc2",
-    "title": "v1.54.10",
-    "summary": "This patch release contains the following commits: fix(catalog): match URL locations in catalog rules in canonical form fix: improve placeholder repository validation",
-    "source": "Backstage",
-    "sourceId": "backstage",
-    "url": "https://github.com/backstage/backstage/releases/tag/v1.54.10",
-    "publishedDate": "2026-10-21T13:45:28.000Z",
-    "domain": "platform-engineering",
-    "topics": [
-      "backstage",
-      "developer-portal",
-      "idp"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "backstage",
-    "releaseVersion": "v1.54.10"
-  },
-  {
-    "id": "pulumi-3ff7d1a93e8a",
-    "title": "sdk/v3.271.0: Add `env` commands to the generated automation APIs (#25073)",
-    "summary": "Remove the env exclusion from automation-overrides.json and regenerate the NodeJS, Python and Go automation APIs. 🤖 Generated with Claude Code Co-authored-by: Claude Opus 5.5 noreply@anthropic.com",
-    "source": "Pulumi",
-    "sourceId": "pulumi",
-    "url": "https://github.com/pulumi/pulumi/releases/tag/sdk%2Fv3.271.0",
-    "publishedDate": "2026-10-21T13:40:46.000Z",
-    "domain": "terraform",
-    "topics": [
-      "pulumi",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "pulumi",
-    "releaseVersion": "v3.271.0"
-  },
-  {
-    "id": "opentofu-df78af993cef",
-    "title": "v1.12.9",
-    "summary": "SECURITY ADVISORIES: Filter out compromised intermediate certificates (#4751)",
-    "source": "OpenTofu",
-    "sourceId": "opentofu",
-    "url": "https://github.com/opentofu/opentofu/releases/tag/v1.12.9",
-    "publishedDate": "2026-10-21T13:25:22.000Z",
-    "domain": "terraform",
-    "topics": [
-      "opentofu",
-      "iac"
-    ],
-    "importance": "medium",
-    "architectureShift": false,
-    "releaseRelated": true,
-    "releaseProject": "opentofu",
-    "releaseVersion": "v1.12.9"
   },
   {
     "id": "prometheus-bde7fb4f5c9c",
