@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-26T22:07:34.000Z",
+    "publishedDate": "2026-11-27T05:54:12.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,26 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "pydantic-ai-55838b19d9bb",
+    "title": "v2.76.0 (2026-11-26)",
+    "summary": "What's Changed ⚠️ Compatibility Notes Reveal tools mid-session in realtime sessions on models that take tool updates, via RealtimeModelProfile.supports_tool_updates and UpdateTools by @DouweM in #12440 RealtimeInput, the union RealtimeConnection.send accepts, gains UpdateTools, and DEFAULT_REALTIME_PROFILE gains supports_tool_updates: False. A session sends UpdateTools only to a connection whose model's profile sets supports_tool_updates, so an existing connection never receives it, but an exhau",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.76.0",
+    "publishedDate": "2026-11-26T23:49:06.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.76.0"
   },
   {
     "id": "langfuse-4f2ceafafab1",
@@ -7520,26 +7540,5 @@
     "releaseRelated": true,
     "releaseProject": "langfuse",
     "releaseVersion": "v4.25.0"
-  },
-  {
-    "id": "pydantic-ai-30252aeb76a7",
-    "title": "v2.36.0 (2026-08-28)",
-    "summary": "What's Changed ⚠️ Compatibility Notes Add --mcp-config support and tool-call streaming to clai by @Kludex in #1374 🚀 Features Add @durable_operation for capabilities and a public backend API for third-party durable execution engines by @DouweM in #6696 Give instruction parts a stable InstructionPart.id by @DouweM in #6887 Accept async iterables in RealtimeSession.send_audio() and move the voice example to listentome by @DouweM in #7860 Require an explicit operation name on @durable_operation by",
-    "source": "Pydantic AI",
-    "sourceId": "pydantic-ai",
-    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.36.0",
-    "publishedDate": "2026-08-29T01:25:08.000Z",
-    "domain": "agentic-operations",
-    "topics": [
-      "agentic-operations",
-      "mcp",
-      "agent-development",
-      "release"
-    ],
-    "importance": "critical",
-    "architectureShift": true,
-    "releaseRelated": true,
-    "releaseProject": "pydantic-ai",
-    "releaseVersion": "v2.36.0"
   }
 ]
