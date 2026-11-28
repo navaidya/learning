@@ -6,7 +6,7 @@
     "source": "Pydantic AI",
     "sourceId": "pydantic-ai",
     "url": "https://github.com/pydantic/pydantic-ai/releases/tag/clai2-bleeding",
-    "publishedDate": "2026-11-27T21:45:23.000Z",
+    "publishedDate": "2026-11-28T05:30:23.000Z",
     "domain": "agentic-operations",
     "topics": [
       "agent-development",
@@ -17,6 +17,26 @@
     "architectureShift": false,
     "releaseRelated": true,
     "releaseProject": "pydantic-ai"
+  },
+  {
+    "id": "pydantic-ai-e56c2efea2ec",
+    "title": "v2.77.0 (2026-11-27)",
+    "summary": "What's Changed ⚠️ Compatibility Notes Add SQLite, Postgres and MongoDB backends for ConversationStore, and rename the Pax session store to SqliteSessionStore by @DouweM in #10473 SqliteConversationStore and ConversationConflict in pydantic_ai_harness.step_persistence.conversations, the Pax session-browser store, are renamed SqliteSessionStore and SessionConflict. The old names still import, with a HarnessDeprecationWarning. Skip missing and unreadable skill libraries and skills by default, add S",
+    "source": "Pydantic AI",
+    "sourceId": "pydantic-ai",
+    "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.77.0",
+    "publishedDate": "2026-11-27T23:32:31.000Z",
+    "domain": "agentic-operations",
+    "topics": [
+      "agent-development",
+      "release",
+      "agentic-operations"
+    ],
+    "importance": "high",
+    "architectureShift": false,
+    "releaseRelated": true,
+    "releaseProject": "pydantic-ai",
+    "releaseVersion": "v2.77.0"
   },
   {
     "id": "pydantic-ai-55838b19d9bb",
